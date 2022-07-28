@@ -95,25 +95,25 @@ body {
 }
 
 #imgmain {
-  width: 490px;
-  height: 380px;
+  width: 250px;
+  height: 500px;
   border-radius: 20%;
   margin-left: 2%;
   position: absolute;
   margin-bottom: 2%;
 }
 
-.buttons {
-  align-items: center;
+.result {
+  width: 65%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 43%;
-  margin-top: 7%;
+  margin-left: 20%;
   position: relative;
-}
-
-#btnInfo,
-#btnNotice,
-#btnPokeArea {
-  margin-bottom: 36px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: rgb(36, 35, 35);
+  padding: 10px;
+  background-color: rgba(234, 220, 220, 0.204);
+  margin-bottom: 2%;
 }
