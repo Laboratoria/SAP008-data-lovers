@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>PokeLOVERS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/logo.png">
+    </div>
+
+    <ul class="navlist">
+      <li class="list-item"> <a>Sobre | </a></li>
+      <li class="list-item"> <a>Filmes | </a></li>
+      <li class="list-item"> <a>Pokemon GO | </a> </li>
+      <li class="list-item"> <a>Eventos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="find-pokemons">
+      <input type="text" id="findPokemon" name="fpokemon" placeholder="Digite o nome do Pokemon">
+
+      <select name="tipo" id="type">
+        <option value="type">Tipo</option>
+        <option value="pikachu">fogo</option>
+      </select>
+      <img id="pikachu" src="./img/pikachu2.png">
+      <button id="btn-find" class="btns">Buscar Pokemons</button>
+
+    </div>
+
+    <img id="imgmain" src="./img/pokemon.png">
+
+    <div class="buttons">
+      <button class='btns' id="btnInfo">PokeInfo</button>
+      <button class='btns' id="btnNotice">Notícias</button>
+      <button class='btns' id="btnPokeArea">PokeArena⚠️ </button>
+
+    </div>
+
+  </main>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
