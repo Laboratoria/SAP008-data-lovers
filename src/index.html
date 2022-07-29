@@ -25,13 +25,32 @@
     <div class="find-pokemons">
       <input type="search" id="findPokemon" name="fpokemon" placeholder="Digite o nome do Pokemon">
 
-      <select name="tipo" id="type">
-        <option value="type">Tipo</option>
-        <option value="pikachu">fogo</option>
+      <select class="tipo" id="type">
+        <option disabled selected value=" ">Tipo</option>
+        <option value="water">Água</option>
+        <option value="dragon">Dragão</option>
+        <option value="electric">Elétrico</option>
+        <option value="fairy">Fada</option>
+        <option value="ghost">Fantasma</option>
+        <option value="fire">Fogo</option>
+        <option value="ice">Gelo</option>
+        <option value="bug">Inseto</option>
+        <option value="fighting">Lutador</option>
+        <option value="stell">Metálico</option>
+        <option value="normal">Normal</option>
+        <option value="dark">Noturno</option>
+        <option value="rock">Pedra</option>
+        <option value="grass">Planta</option>
+        <option value="psychic">Psíquico</option>
+        <option value="ground">Terrestre</option>
+        <option value="poison">Venenoso</option>
+        <option value="flying">Voador</option>    
       </select>
-      <select name="pokemon-rarity" id="rarity">
-        <option value="legendary">Pokemon Rarity</option>
-        <option value="legendary">Johto</option>
+      <select class="pokemon-rarity" id="rarity">
+        <option disabled selected value =" ">Pokemon Rarity</option>
+        <option value="legendary">Legendário</option>
+        <option value="mythic">Mítico</option>
+        <option value="normal">Normal</option>
       </select>
       <img id="pikachu" src="./img/pikachu2.png">
       <button id="btn-find" class="btns">Buscar Pokemons</button>
