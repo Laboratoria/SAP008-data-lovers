@@ -1,9 +1,3 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
+export const menuSelectTipo = (buscarTipo, array) => {
+  return array.filter(pokemon => pokemon.type.includes(buscarTipo)); 
 };
