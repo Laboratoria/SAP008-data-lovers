@@ -19,3 +19,4 @@ for (let i = 0; i < data.pokemon.length; i++) {
 };*/
 //filter
 //map
+
