@@ -2,15 +2,20 @@ import data from './data/pokemon/pokemon.js';
 
 import { menuSelectTipo } from './data.js';
 
-const tipo = document.getElementById("ordenar-tipo");
-tipo.addEventListener("click", tipoPokemon);
+const tipo = document.getElementById("type");
 
-function tipoPokemon(event) {
-    event.preventDefault();
-    const buscarTipo = document.getElementById("type").value;
-    const pokemonTipo = menuSelectTipo(buscarTipo, data.pokemon);
-    const calculo = calculoTipo(buscarTipo, data.pokemon).toFixed(2); //casas usadas depois da virgula
-    const textPercent = `<p><strong>Os Pokémons de tipo ${buscarTipo} representam ${calculo} % da quantidade total de Pokémons.</strong></p>`
-    divCalculo.innerHTML = textPercent;
-    mostrarPokemon(pokemonTipo);
+console.log(data.pokemon[0].type)
+
+for (let i = 0; i < data.pokemon.length; i++) {
+    for (let j = 0; j < data.pokemon[i].type.length; j++) {
+        console.log("Pokemon " + data.pokemon[i].name + " type " + data.pokemon[i].type[j])
+    }
 }
+
+/*for (let pokemon of data.pokemon){
+    for ( let type of pokemon.type){
+        console.log("Pokemon " + pokemon.name + " type " + type)
+    }
+};*/
+//filter
+//map
