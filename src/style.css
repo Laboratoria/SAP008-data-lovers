@@ -108,16 +108,14 @@ body {
 }
 
 .result {
-  width: 98%;
+  width: 95%;
   height: 100%;
   display: block;
   margin: auto;
-  border: 1px solid white;
   border-radius: 5px;
   padding: 4%;
   color: rgb(77, 74, 74);
   padding-left: 25%;
-  background-color: rgba(234, 220, 220, 0.204);
   margin-bottom: 2%;
   align-items: center;
 }
@@ -127,31 +125,55 @@ body {
 }
 
 .container_item {
-  display: block;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
+  display: flex;
+  width: 15%;
+  float:left;
+  margin-bottom: 10px;
+  margin: 5px;
+  text-align: center;
 }
 
 .pokeNumber {
-  margin-left: 9.5%;
-  color: rgb(50, 50, 155);
+  color: rgba(28, 28, 101, 0.463);
+  text-align: end;
+  padding: 5px;
 }
 
-.boxImg {
-  display: flex;
+.boxImg, .listName, .listAbout {
+  display: block;
 }
 
 .poke-img {
-  width: 100px;
-  height: 100px;
-  padding: 5%;
-}
-
-.listName {
-  display: flex;
+  width: 130px;
+  height: 130px;
 }
 
 .items {
   margin-top: 2%;
+}
+
+.boxImg{
+  border: solid 1px rgb(187, 181, 181);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 2px rgb(164, 154, 154);
+}
+
+@media screen and (min-width: 360px ) {
+  .container_item {
+    display: flex;
+    width: 20%;
+    float:left;
+    margin-bottom: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container_item {
+    display: flex;
+    width: 20%;
+    float:left;
+    margin-bottom: 10px;
+    margin: 10px;
+  }
 }
