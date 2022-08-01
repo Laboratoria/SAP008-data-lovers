@@ -110,8 +110,8 @@ body {
 .result {
   width: 98%;
   height: 100%;
-  display: flex;
-  margin:auto;
+  display: block;
+  margin: auto;
   border: 1px solid white;
   border-radius: 5px;
   padding: 4%;
@@ -122,6 +122,36 @@ body {
   align-items: center;
 }
 
-#lovers{
-  color:red ;
+#lovers {
+  color: red;
+}
+
+.container_item {
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.pokeNumber {
+  margin-left: 9.5%;
+  color: rgb(50, 50, 155);
+}
+
+.boxImg {
+  display: flex;
+}
+
+.poke-img {
+  width: 100px;
+  height: 100px;
+  padding: 5%;
+}
+
+.listName {
+  display: flex;
+}
+
+.items {
+  margin-top: 2%;
 }
