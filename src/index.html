@@ -6,6 +6,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Studio Ghibli</h1>
+    </header>
+    <main>
+      <section class="description">
+        <div class="chihiro">
+          <img src="img/output.png">
+        </div>
+        <h3 class="decription-text">Aqui nós te ajudamos a curtir os filmes do Studio Ghibli!</h3>
+        <p class="decription-text">Você pode escolher o filme que mais combina com você usando nossos filtros de 
+          preferência ou mesmo saber um pouco mais dos detalhes de cada história! </p>
+      </section>
+
+      <section>
+        <select name="genre" class="btn-filter"> 
+          <option value="genre" selected>Gênero
+          <option value="feminino">Feminino
+          <option value="masculino">Masculino</option>
+        </select>
+        <select name="age" class="btn-filter"> 
+          <option value="age" selected>Idade
+          <option value="children">Crianças
+          <option value="adults">Adultos</option>
+        </select>
+        <select name="order" class="btn-filter"> 
+          <option value="order" selected>Ordenar por
+          <option value="rate">Avaliação
+          <option value="ano">Ano de Lançamento</option>
+        </select>
+      </section>
+
+      <!-- <section>
+        <div class="row">
+          <div class="film">
+            <div class="poster">
+              <img src="img/Castle_in_the_Sky.jpg" alt="Poster Castle in the Sky">
+              <h4>Castle in the Sky</h4>
+            </div>
+          </div>
+          <div class="film">
+            <div class="poster">
+            <img src="img/My_Neighbor_Totoro.jpg" alt="Poster My Neighbor Totoro">
+              <h4>My Neighbor Totoro</h4>
+            </div>
+          </div>
+          <div class="film">
+            <div class="poster">
+            <img src="img/Kiki's_Delivery_Service_(2).jpg" alt="Poster Kiki's Delivery Service">
+              <h4>Kiki's Delivery Service</h4>
+            </div>
+          </div>
+      </section>
+
+    </main> -->
+
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

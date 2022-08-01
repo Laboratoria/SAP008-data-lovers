@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    background-color: #1D1C38;
+    font: white;
+    background-image: url(img/mobile/cabecalho.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:100%;
+}
+
+.chihiro {
+    float: left;
+}
+
+.chihiro img {
+    max-width: 600px;
+    max-height: 850px;
+    width: auto;
+    height: auto;
+}
+
+.decription-text {
+    color: white;
+    float:right;
+
+}
+
