@@ -26,43 +26,43 @@
     <div class="find-pokemons">
       <input type="search" id="findPokemon" name="fpokemon" placeholder="Digite o nome do Pokemon">
 
-      <select class="tipo" id="type">
-        <option disabled selected value=" ">Tipo</option>
-        <option value="water">Água</option>
-        <option value="dragon">Dragão</option>
-        <option value="electric">Elétrico</option>
-        <option value="fairy">Fada</option>
-        <option value="ghost">Fantasma</option>
-        <option value="fire">Fogo</option>
-        <option value="ice">Gelo</option>
-        <option value="bug">Inseto</option>
-        <option value="fighting">Lutador</option>
-        <option value="stell">Metálico</option>
-        <option value="normal">Normal</option>
-        <option value="dark">Noturno</option>
-        <option value="rock">Pedra</option>
-        <option value="grass">Planta</option>
-        <option value="psychic">Psíquico</option>
-        <option value="ground">Terrestre</option>
-        <option value="poison">Venenoso</option>
-        <option value="flying">Voador</option>
+      <select name="select-tipe" class="tipo" id="tipo">
+        <option name="select-tipe" disabled selected value=" ">Tipo</option>
+        <option name="select-tipe" value="water">Água</option>
+        <option name="select-tipe" value="dragon">Dragão</option>
+        <option name="select-tipe" value="electric">Elétrico</option>
+        <option name="select-tipe" value="fairy">Fada</option>
+        <option name="select-tipe" value="ghost">Fantasma</option>
+        <option name="select-tipe" value="fire">Fogo</option>
+        <option name="select-tipe" value="ice">Gelo</option>
+        <option name="select-tipe" value="bug">Inseto</option>
+        <option name="select-tipe" value="fighting">Lutador</option>
+        <option name="select-tipe" value="stell">Metálico</option>
+        <option name="select-tipe" value="normal">Normal</option>
+        <option name="select-tipe" value="dark">Noturno</option>
+        <option name="select-tipe" value="rock">Pedra</option>
+        <option name="select-tipe" value="grass">Planta</option>
+        <option name="select-tipe" value="psychic">Psíquico</option>
+        <option name="select-tipe" value="ground">Terrestre</option>
+        <option name="select-tipe" value="poison">Venenoso</option>
+        <option name="select-tipe" value="flying">Voador</option>
       </select>
 
-      <select class="pokemon-rarity" id="rarity">
-        <option disabled selected value=" ">Pokemon Rarity</option>
-        <option value="legendary">Legendário</option>
-        <option value="mythic">Mítico</option>
-        <option value="normal">Normal</option>
+      <select name="select-rarity" class="pokemon-rarity" id="rarity">
+        <option name="select-rarity" disabled selected value=" ">Pokemon Rarity</option>
+        <option name="select-rarity" value="legendary">Legendário</option>
+        <option name="select-rarity" value="mythic">Mítico</option>
+        <option name="select-rarity" value="normal">Normal</option>
       </select>
 
       <img id="pikachu" src="./img/pika.gif">
-      <button id="btn-find" class="btns">Buscar Pokemons</button>
-      <button id="btn-clear" class="btns">Limpar</button>
+      <button type="submit" id="btn-find" class="btns">Buscar Pokemons</button>
+      <button id="btn-clean" class="btns">Limpar</button>
     </div>
 
     <img id="imgmain" src="./img/ash.png">
 
-    <div class="result">
+    <div class="result" id="result">
 
       <p>
         Pokémon fez 25 anos no dia 27! <span>😍</span> E hoje o Poke<span id="lovers">LOVERS</span> é especial, reunindo
