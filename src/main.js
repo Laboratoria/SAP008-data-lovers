@@ -1,6 +1,10 @@
 import data from "./data/pokemon/pokemon.js";
+
+//import { inputNome } from "./data.js";
+
 //const tipo = document.getElementById("type");
 //const searview = document.querySelector(".find-pokemons")
+
 const result = document.querySelector(".result")
 
 let itemType = [];
@@ -34,4 +38,30 @@ function getPokeList() {
 
 getPokeList()
 
+const buttonClean = document.getElementById("btn-clean");
+function cleanFilters() {
+    window.location.reload();
+}
+buttonClean.addEventListener("click", cleanFilters);
 
+
+
+/*const button = document.getElementById("btn-find"); 
+button.addEventListener("click", nomePokemon); 
+
+function nomePokemon(event) {
+    event.preventDefault(); 
+    const buscarPokemon = document.getElementById("findPokemon").value; 
+    const pokemonNome = inputNome(buscarPokemon, data.pokemon);
+    getPokeList(pokemonNome);
+}
+
+// Printar dados por Loop For
+const pokeTipo = document.getElementById("result")
+for (let i = 0; i < data.pokemon.length; i++) {
+    for (let j = 0; j < data.pokemon[i].type.length; j++) {
+        console.log("Pokemon " + data.pokemon[i].name + " type " + data.pokemon[i].type[j]);
+    pokeTipo.innerHTML += "Pokemon " + data.pokemon[i].name + " type " + data.pokemon[i].type[j]
+    }
+}
+*/
