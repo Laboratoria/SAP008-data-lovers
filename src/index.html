@@ -6,63 +6,66 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="top">
       <h1>Studio Ghibli</h1>
     </header>
-    <main>
+
+    <main class="container">
       <section class="description">
-        <div class="chihiro">
-          <img src="img/output.png">
+        <img class="description-img" src="img/output.png">
+        <div class="description-text">
+          <h3>Aqui nós te ajudamos a curtir os filmes do Studio Ghibli!</h3>
+          <p>Você pode escolher o filme que mais combina com você usando nossos filtros de 
+            preferência ou mesmo saber um pouco mais dos detalhes de cada história! </p>
         </div>
-        <h3 class="decription-text">Aqui nós te ajudamos a curtir os filmes do Studio Ghibli!</h3>
-        <p class="decription-text">Você pode escolher o filme que mais combina com você usando nossos filtros de 
-          preferência ou mesmo saber um pouco mais dos detalhes de cada história! </p>
       </section>
 
-      <section>
-        <select name="genre" class="btn-filter"> 
+      <section class="btn-catalogue">
+        <select name="genre" class="btn-catalogue-filter"> 
           <option value="genre" selected>Gênero
           <option value="feminino">Feminino
           <option value="masculino">Masculino</option>
         </select>
-        <select name="age" class="btn-filter"> 
+        <select name="age" class="btn-catalogue-filter"> 
           <option value="age" selected>Idade
           <option value="children">Crianças
           <option value="adults">Adultos</option>
         </select>
-        <select name="order" class="btn-filter"> 
+        <select name="order" class="btn-catalogue-filter"> 
           <option value="order" selected>Ordenar por
           <option value="rate">Avaliação
           <option value="ano">Ano de Lançamento</option>
         </select>
       </section>
 
-      <!-- <section>
-        <div class="row">
-          <div class="film">
-            <div class="poster">
-              <img src="img/Castle_in_the_Sky.jpg" alt="Poster Castle in the Sky">
-              <h4>Castle in the Sky</h4>
-            </div>
+      <section class="catalogue">
+        <div class="film">
+          <div class="poster">
+            <img class="poster-img" src="img/Castle_in_the_Sky.jpg" alt="Poster Castle in the Sky">
+            <h4>Castle in the Sky</h4>
           </div>
-          <div class="film">
-            <div class="poster">
-            <img src="img/My_Neighbor_Totoro.jpg" alt="Poster My Neighbor Totoro">
-              <h4>My Neighbor Totoro</h4>
-            </div>
+        </div>
+        <div class="film">
+          <div class="poster">
+          <img class="poster-img" src="img/My_Neighbor_Totoro.jpg" alt="Poster My Neighbor Totoro">
+            <h4>My Neighbor Totoro</h4>
           </div>
-          <div class="film">
-            <div class="poster">
-            <img src="img/Kiki's_Delivery_Service_(2).jpg" alt="Poster Kiki's Delivery Service">
-              <h4>Kiki's Delivery Service</h4>
-            </div>
+        </div>
+        <div class="film">
+          <div class="poster">
+          <img class="poster-img" src="img/Kiki's_Delivery_Service_(2).jpg" alt="Poster Kiki's Delivery Service">
+            <h4>Kiki's Delivery Service</h4>
           </div>
+        </div>
       </section>
 
-    </main> -->
+    </main>
+    <footer class="footer">
+      <!-- <img class="footer-img-logo" src="img/Studio_Ghibli_logo.svg"> -->
+      <img class="footer-img-totoro" src="img/totoro.png">
+    </footer>
 
-
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
     <script src="main.js" type="module"></script>
   </body>
 </html>
