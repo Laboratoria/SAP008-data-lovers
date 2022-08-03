@@ -9,3 +9,9 @@ export const anotherExample = () => {
 };
 
 Teste
+
+function angelica(valor1, valor2) {
+  let soma = valor1 + valor2
+  
+  
+}
