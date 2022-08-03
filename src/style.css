@@ -1,11 +1,10 @@
-body {
+body { 
     background-color: #1D1C38;
-    font: white;
     background-image: url(img/mobile/cabecalho.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size:100%;
-}
+} /*tirei font=white*/
 
 .top {
     /* border: solid 2px black; */
