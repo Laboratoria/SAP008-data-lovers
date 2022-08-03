@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     background-color: #1D1C38;
     background-image: url(img/mobile/cabecalho.svg);
