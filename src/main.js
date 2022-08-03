@@ -1,12 +1,9 @@
 import data from "./data/pokemon/pokemon.js";
 
-//import { inputNome } from "./data.js";
-
-//const tipo = document.getElementById("type");
-//const searview = document.querySelector(".find-pokemons")
+//import {BuscarPoke} from "./data.js";
 
 const result = document.querySelector(".result")
-
+let pokemons = filtrarTipo()
 let itemType = [];
 let itemRarity = [];
 
@@ -38,6 +35,40 @@ function getPokeList() {
 
 getPokeList()
 
+/*
+function todosPoke () {
+const pokeTipo = document.getElementById("result")
+let pokemons = filtrarTipo()
+for (let i = 0; i < pokemons.length; i++) {
+    pokeTipo.innerHTML += `<div class="container_item">
+    <div class="boxImg">
+   <p class="pokeNumber">${pokemons[i].num}</p>
+   <figure class= "pokeData">
+   <img class="poke-img" src='${pokemons[i].img}' alt=${pokemons[i].name}>
+   </figure>
+ <div class="items"></div>
+ <h4>  ${pokemons[i].name[0].toUpperCase() + pokemons[i].name.substr(1)}</h4>
+ <span class="listName"> Tipo: ${pokemons[i].type}</span>
+ <span class="listRarity"> Raridade: ${pokemons[i]["pokemon-rarity"]}</span>
+</div>
+</div>
+</div>
+`
+        }
+    } 
+    */
+
+ function filtrarTipo () {
+    let teste = data.pokemon.filter((pokemon) => {
+        
+        return pokemon.type.includes("ground")
+        }); 
+        console.log(teste)
+        return (teste)
+ }   
+
+ getPokeList();
+
 const buttonClean = document.getElementById("btn-clean");
 function cleanFilters() {
     window.location.reload();
@@ -45,23 +76,3 @@ function cleanFilters() {
 buttonClean.addEventListener("click", cleanFilters);
 
 
-
-/*const button = document.getElementById("btn-find"); 
-button.addEventListener("click", nomePokemon); 
-
-function nomePokemon(event) {
-    event.preventDefault(); 
-    const buscarPokemon = document.getElementById("findPokemon").value; 
-    const pokemonNome = inputNome(buscarPokemon, data.pokemon);
-    getPokeList(pokemonNome);
-}
-
-// Printar dados por Loop For
-const pokeTipo = document.getElementById("result")
-for (let i = 0; i < data.pokemon.length; i++) {
-    for (let j = 0; j < data.pokemon[i].type.length; j++) {
-        console.log("Pokemon " + data.pokemon[i].name + " type " + data.pokemon[i].type[j]);
-    pokeTipo.innerHTML += "Pokemon " + data.pokemon[i].name + " type " + data.pokemon[i].type[j]
-    }
-}
-*/
