@@ -9,5 +9,6 @@ export const anotherExample = () => {
 };
 
 function angelica {
-  
+  let ()
+
 }
