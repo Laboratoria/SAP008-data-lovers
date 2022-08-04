@@ -12,33 +12,35 @@ import data from './data/ghibli/ghibli.js';
 
 // console.log(data);
 
-const ghibli = data.films
-const films = Object.values(ghibli)
+data.films.forEach((film) => {
+    console.log(film.people[0].gender)
+})
 
-films.forEach((film) => console.log(film))
-
-// console.log(films[0].people)
-
-// films.forEach((film) => console.log(film)) // exibe todos os films
-
-const countUnique = (arr) => {
-    return new Set(arr).size;
+const countUnique = (array) => {
+    return new Set(array).size;
 }
 
-console.log(countUnique(films[0].people)) //contagem dos people/locations/vehicles por filme
+console.log(countUnique(data.films[0].people)) //contagem dos people/locations/vehicles por filme
 
-// console.log(countUnique(films[0].people[0].gender))
+// // console.log(countUnique(films[0].people[0].gender))
 
-var genderResult = {}
+// var genderResult = {}
 
-for(let {gender, name} of films[0].people)
-  genderResult[name] = {
-      name,
-      gender,
-      count: genderResult[name] ? genderResult[name].count + 1 : 1
-  }      
+// for(let {gender, name} of films[0].people)
+//   genderResult[name] = {
+//       name,
+//       gender,
+//       count: genderResult[name] ? genderResult[name].count + 1 : 1
+//   }      
 
-let result = Object.values(genderResult)
+// let result = Object.values(genderResult)
 
-console.log(result)
+// console.log(result)
+
+// let counter = 0;
+// for (const item of items) {
+//   if (item.status === 'Female') counter++;
+// }
+
+// console.log(counter); // 6
 
