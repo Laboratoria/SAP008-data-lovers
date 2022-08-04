@@ -43,4 +43,8 @@ console.log(countUnique(data.films[0].people)) //contagem dos people/locations/v
 // }
 
 // console.log(counter); // 6
+/*const ghibli = data.films
+const films = Object.values(ghibli)
+
+films.forEach((film) => console.log(film))*/
 

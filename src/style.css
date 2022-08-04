@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lato', sans-serif;
+   font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     color: white;
     text-align: center;
     margin: 10% 10% 0;
-    font-size: 32px;
+    font-size: 100%;
 }
 
 .container {
@@ -30,17 +30,17 @@ body {
 }
 
 h3 {
-    font-size: 37px;
+    font-size: 100%;
     color: white;
 }
 
 p {
-    font-size: 28px;
+    font-size: 80%;
     color: white;
 }
 
 .description-img {
-    width: 250px;
+    width: 30%;
 }
 
 .description-text {
@@ -55,15 +55,15 @@ p {
 
 .btn-catalogue-filter {
     border:none;
-    width: 30%;
-    height: 70px;
+    width: 33%;
+    height: 100%;
     margin: 8px;
     padding: 8px 16px;
     align-content: center;
     background-color: #e26c7a;
     color: white;
     text-align: center;
-    font-size: 22px;
+    font-size: 50%;
     font-weight: 600;
     cursor: pointer;
     border-radius: 5px;
@@ -87,7 +87,7 @@ p {
   
 .film {
     float: left;
-    width: 30%;
+    width: 28%;
 }
   
 .catalogue:after {
@@ -100,8 +100,9 @@ p {
 .poster {
     background-color: white;
     padding: 10px;
-    height: 350px;
+    height: 13%;
     text-align: center;
+    font-size: 50%;
 }
 
 .poster-img {
