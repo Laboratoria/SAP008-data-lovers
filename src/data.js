@@ -9,6 +9,6 @@ export const anotherExample = () => {
 };
 
 function angelica {
-  let ()
+  let angel = 
 
 }
