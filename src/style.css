@@ -1,10 +1,8 @@
 * {
-    font-family: 'Alata', sans-serif;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
 }
 
-body { 
+body {
     background-color: #1D1C38;
     background-image: url(img/mobile/cabecalho.svg);
     background-repeat: no-repeat;
