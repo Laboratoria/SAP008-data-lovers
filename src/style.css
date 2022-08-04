@@ -1,14 +1,15 @@
 * {
-    font-family: 'Alata', sans-serif;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
 
+
+@media only screen and (max-width: 900px){
 body { 
     background-color: #1D1C38;
-    background-image: url(img/mobile/cabecalho.svg);
-    background-repeat: no-repeat;
-    background-position: top;
+    background-image: url(img/mobile/cabecalho.svg), url(img/mobile/rodape.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
     background-size:100%;
 }
 
@@ -51,24 +52,25 @@ p {
 }
 
 .btn-catalogue {
-    /* border: solid 2px black; */
-    margin-top: 10%;
+    /*border: solid 2px black;*/
+    margin: 10% 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn-catalogue-filter {
     border:none;
-    width: 33%;
+    width: 31%;
     height: 100%;
-    margin: 8px;
     padding: 8px 16px;
     align-content: center;
     background-color: #e26c7a;
     color: white;
     text-align: center;
     font-size: 50%;
-    font-weight: 600;
+    font-weight: 600; /*RESOLVER ISSO*/
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px;   
 }
 
 .btn-catalogue-filter:hover {
@@ -76,20 +78,13 @@ p {
     color: #e26c7a;
 }
 
-.catalogue {
-    margin: 50px -16px;
-    /* background-color: white;
-    opacity: 0.2; */
-  }
-  
-.catalogue,
 .catalogue > .film {
-    padding: 8px;
+    padding: 6px;
   }
   
 .film {
     float: left;
-    width: 28%;
+    width: 33%;
 }
   
 .catalogue:after {
@@ -111,21 +106,9 @@ p {
     width: 100%;
 }
 
-.footer {
-    /* border: solid 2px red; */
-    background-image: url(img/mobile/rodape.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size:100%;
-    display: flex;
-    position:fixed;
-    bottom:0;
-    left:0;
-    right:0;
-    width:100%;
-}
-
 .footer-img-totoro {
+    bottom: 0;
     width: 30%;
     margin-left: 65%;
+}
 }
