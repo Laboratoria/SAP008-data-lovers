@@ -37,7 +37,7 @@ body {
 .find-pokemons {
   justify-content: space-around;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   position: relative;
 }
 
@@ -51,7 +51,7 @@ body {
   color: rgb(107, 102, 102);
 }
 
-#tipoPoke {
+#pokeType {
   height: 50px;
   width: 95px;
   border-radius: 5px;
@@ -113,7 +113,7 @@ body {
   display: block;
   margin: auto;
   border-radius: 5px;
-  padding: 4%;
+  padding: 2%;
   color: rgb(77, 74, 74);
   padding-left: 25%;
   margin-bottom: 2%;
@@ -156,6 +156,7 @@ body {
   border: solid 1px rgb(187, 181, 181);
   border-radius: 5px;
   box-shadow: 3px 3px 2px 2px rgb(164, 154, 154);
+  background-color: rgba(240, 248, 255, 0.33);
 }
 
 @media screen and (min-width: 360px ) {
