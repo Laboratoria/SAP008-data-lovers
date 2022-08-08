@@ -1,0 +1,80 @@
+body {
+  max-width: 70%;
+  margin: 20vw auto;
+  background-color: #1D1C38;
+  background-image: url(img/desktop/Cabeçalho.svg), url(img/mobile/rodape.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  background-size:100vw;
+  color: white;
+}
+
+.top-people {
+  text-align: center;
+  margin: 2vw 10vw 0;
+  font-size: 3vw;
+}
+
+.description-people {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-people-img {
+  width: 25vw;
+  margin: 0;
+}
+
+.description-people-text {
+  text-align: right;
+  width: 50vw;
+  margin: 0;
+}
+
+.people {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1vw;
+}
+
+.card {
+  height: 15vw;
+  width: 10vw;
+  object-fit: fill;
+  align-items: baseline;
+  box-shadow: 2px 1px 10px 1px black;
+  border-radius: 5%;
+  background-color: black;
+  display: flex;
+  justify-content: center; /*alinhar imagem verticalmente ao centro da div */
+  align-items: center; /*alinhar imagem verticalmente ao centro da div */
+  overflow: hidden; /*esconde a parte da imagem que ultrapassa a div*/
+}
+
+.card img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  width: 12vw;
+}
+
+h2 {
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+}
+
+.card:hover {
+  opacity: 0.7;
+}

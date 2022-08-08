@@ -2,30 +2,51 @@
 import data from './data/ghibli/ghibli.js';
 // console.log(data);
 
-let films = data.films;
-for (let i = 0; i < films.length; i++) {
-  // console.log (films[i].title);
-  
-  let genderForFilm = [];
-  for (let people of films[i].people){
-    genderForFilm.push(people.gender);
-  } 
-  // console.log(genderForFilm)
-  
-  function genderCount(arr) {
-    if (filterGender(arr, "Female").length > ((arr.length)/2)) {
-      return console.log ("Esse filme tem mais personagens femininos")
-    } else {
-      return console.log ("Esse filme tem mais personagens masculinos")
-    }
+const films = data.films;
+const div_poster = document.getElementsByClassName('poster');
+let selectedGender = document.getElementById("filter-gender");
+
+// const genderBtn = document.getElementById('filter-gender');
+
+// selected.addEventListener('clique', )
+
+selectedGender.addEventListener('change', () => {
+  genderFilter();
+  const cards = document.getElementsByClassName("poster");
+  for (let i = 0; i < cards.length; i++) {
+      if ((cards[i].classList.contains(selectedGender)) > -1) {
+          cards[i].classList.remove("d-none");
+      } else {
+          cards[i].classList.add("d-none");
+      }
   }
-  function filterGender (arr, query) {
-    return arr.filter (function(element) { 
-      return element.includes(query);
-  });
+});
+
+function genderFilter() { //essa parte cria o array de gênero para cada filme (masculino e feminino)
+  for (let i = 0; i < films.length; i++) {
+    let genderForFilm = [];
+    for (let people of films[i].people){
+      genderForFilm.push(people.gender);
+    }     
+    function genderCount(array) { // essa parte contabiliza se há mais personagens de gênero feminino ou masculino no filme
+      if (filterGender(array, 'Female').length > ((array.length)/2)) {
+        div_poster = div_poster.setAttribute('class','female');
+        // return console.log ("Esse filme tem mais personagens femininos");
+      } else {
+        div_poster = div_poster.setAttribute('class','male');
+        // return console.log ("Esse filme tem mais personagens masculinos");
+      }
+    }
+    
+    function filterGender (array, query) { //essa parte filtra os personagens do array criado na genderFilter e cria um novo array apenas com gênero feminino 
+      return array.filter (function(element) { 
+        return element.includes(query);
+      });
+    }
+  return genderCount(genderForFilm);
+  }
 }
-console.log(genderCount(genderForFilm));
-}
+
 
 
 //==========Expllicação==========
