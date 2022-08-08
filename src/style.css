@@ -170,6 +170,11 @@ button:active {
   background-color: rgba(240, 248, 255, 0.33);
 }
 
+.pokeCalc {
+  width: 98%;
+  height: 100%;
+}
+
 @media screen and (min-width: 360px) {
   .container_item {
     display: flex;
