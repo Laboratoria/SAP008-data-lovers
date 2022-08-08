@@ -1,6 +1,12 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import {characters} from './data.js';
+import data from './data/harrypotter/data.js';
 
-console.log(example, data);
+const btnResult = document.getElementById('btn-characters');
+btnResult.addEventListener('click',
+function displayResult(){
+    let result = characters.displayChars();
+
+    return document.getElementById('results').innerHTML = result;
+})
+
+console.log(data.characters)
