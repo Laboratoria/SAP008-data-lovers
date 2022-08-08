@@ -13,7 +13,8 @@ function addTela (filmsList) {
     const template = `
     <div class="poster">
       <img class="poster-img" src="${film.poster}" alt="${film.title}" name="${film.title}" >
-      <h7>${film.title}</h7>
+      <h7>${film.title}</h7><br>
+      <h7>${film.duration}min, Score ${film.rt_score}, ${film.release_date}</h7>
     </div>
     `;
     return template; 

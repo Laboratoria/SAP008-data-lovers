@@ -9,6 +9,7 @@ export default {
       "producer": "Isao Takahata",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
       "release_date": "1986",
+      "duration": "125",
       "rt_score": "95",
       "people": [
         {
@@ -211,6 +212,7 @@ export default {
       "producer": "Hayao Miyazaki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
       "release_date": "1988",
+      "duration": "88",
       "rt_score": "93",
       "people": [
         {
@@ -359,6 +361,7 @@ export default {
       "producer": "Hayao Miyazaki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg",
       "release_date": "1989",
+      "duration": "102",
       "rt_score": "96",
       "people": [
         {
@@ -485,6 +488,7 @@ export default {
       "producer": "Toru Hara",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
       "release_date": "1988",
+      "duration": "89",
       "rt_score": "97",
       "people": [
         {
@@ -549,6 +553,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
       "release_date": "1991",
+      "duration": "120",
       "rt_score": "100",
       "people": [
         {
@@ -685,6 +690,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg",
       "release_date": "1992",
+      "duration": "94",
       "rt_score": "94",
       "people": [
         {
@@ -806,6 +812,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg",
       "release_date": "1994",
+      "duration": "119",
       "rt_score": "78",
       "people": [
         {
@@ -880,6 +887,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7b/Whisper_of_the_Heart.jpg",
       "release_date": "1995",
+      "duration": "111",
       "rt_score": "91",
       "people": [
         {
@@ -996,6 +1004,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg",
       "release_date": "1997",
+      "duration": "133",
       "rt_score": "92",
       "people": [
         {
@@ -1140,6 +1149,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbors_the_Yamadas.jpg",
       "release_date": "1999",
+      "duration": "104",
       "rt_score": "75",
       "people": [
         {
@@ -1204,6 +1214,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
       "release_date": "2001",
+      "duration": "125",
       "rt_score": "97",
       "people": [
         {
@@ -1341,6 +1352,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Cat_Returns.jpg",
       "release_date": "2002",
+      "duration": "75",
       "rt_score": "89",
       "people": [
         {
@@ -1472,6 +1484,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg",
       "release_date": "2004",
+      "duration": "120",
       "rt_score": "87",
       "people": [
         {
@@ -1611,6 +1624,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/%C3%96v%C3%A4rlden.jpg",
       "release_date": "2006",
+      "duration": "116",
       "rt_score": "41",
       "people": [
         {
@@ -1717,6 +1731,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/5/50/Ponyo_on_the_Cliff_by_the_Sea.jpg",
       "release_date": "2008",
+      "duration": "103",
       "rt_score": "92",
       "people": [
         {
@@ -1867,6 +1882,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/f/f7/The_Secret_World_of_Arrietty.jpg",
       "release_date": "2010",
+      "duration": "95",
       "rt_score": "95",
       "people": [
         {
@@ -1984,6 +2000,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg",
       "release_date": "2011",
+      "duration": "91",
       "rt_score": "83",
       "people": [
         {
@@ -2090,6 +2107,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg",
       "release_date": "2013",
+      "duration": "127",
       "rt_score": "89",
       "people": [
         {
@@ -2209,6 +2227,7 @@ export default {
       "producer": "Yoshiaki Nishimura",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
       "release_date": "2013",
+      "duration": "138",
       "rt_score": "100",
       "people": [
         {
@@ -2315,6 +2334,7 @@ export default {
       "producer": "Yoshiaki Nishimura",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7a/When_Marnie_Was_There.jpg",
       "release_date": "2014",
+      "duration": "103",
       "rt_score": "92",
       "people": [
         {
