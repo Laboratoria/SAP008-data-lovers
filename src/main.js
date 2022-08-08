@@ -1,18 +1,13 @@
 import data from "./data/pokemon/pokemon.js";
 
-//import {filterData} from "./data.js";
-
-// COMENTÁRIO htmELLEN =) Abaixo deixei todos usando o Byid pra tdo usar o mesmo seletor
 const result = document.getElementById("result");
 const searchName = document.getElementById("findPokemon");
 const selectType = document.getElementById("pokeType");
 const selectRarity = document.getElementById("rarity");
-const buttonSearch = document.getElementById("btn-find");
 const buttonClean = document.getElementById("btn-clean");
-//const searchInput = document.querySelector("#searchPokemon") -> Esse estava no seu e eu não achei oq seria,depois vc valida...
 
 function printCards() {
-let pokemons = filterPokemon()
+  let pokemons = filterPokemon()
   result.innerHTML = pokemons.map((item) => {
     return `<div class="container_item">
              <div class="boxImg">
@@ -29,50 +24,46 @@ let pokemons = filterPokemon()
       </div>
       `
   })
-  .join('')
+    .join('')
 }
 
 printCards()
 
-// Function filter types/rarity/names
- function filterPokemon() {
-    result.innerHTML = ""
-    const dados = data.pokemon.filter((pokemon) => {
+function filterPokemon() {
 
-       if (selectRarity.value != "") {
-        if (!pokemon['pokemon-rarity'].includes(selectRarity.value)){
-            return false
-        }
-       } 
-       if (selectType.value != "") {
-        if (!pokemon.type.includes(selectType.value)){
-            return false
-        }
-       } 
-       if (searchName.value != "") {
-        if (!pokemon.name.includes(searchName.value)){
-            return false
-        }
-       }
-        return true
-        }); 
-        return dados
-        
- }   
- printCards() ;
+  const pokemonData = data.pokemon.filter((pokemon) => {
 
- // Eventlistener 
- selectRarity.addEventListener("change", printCards) // Se manter o butão de pesquisar, mudamos pro click
- selectType.addEventListener("change", printCards) // Se manter o butão de pesquisar, mudamos pro click
- //buttonSearch.addEventListener("click", printCards) -> COMENTÁRIO Htm Ellen =) Retirar botão de pesquisa?
- searchName.addEventListener("keypress",printCards) // Conforme digitamos ele já vai aparecendo na tela as sugestões.... 
+    if (selectRarity.value != "") {
+      if (!pokemon['pokemon-rarity'].includes(selectRarity.value)) {
+        return false
+      }
+    }
+    if (selectType.value != "") {
+      if (!pokemon.type.includes(selectType.value)) {
+        return false
+      }
+    }
+    if (searchName.value != "") {
+      if (!pokemon.name.includes(searchName.value)) {
+        return false
+      }
+    }
+    return true
+  });
+  return pokemonData
 
-//  Function clean search
-buttonClean.addEventListener("click", clean); 
+}
+printCards();
 
-function clean (){
-    selectType.value="";
-    selectRarity.value="";
-    searchName.value="";
-    printCards(data.pokemon);
+selectRarity.addEventListener("change", printCards)
+selectType.addEventListener("change", printCards)
+searchName.addEventListener("keypress", printCards)
+
+buttonClean.addEventListener("click", clean);
+
+function clean() {
+  selectType.value = "";
+  selectRarity.value = "";
+  searchName.value = "";
+  printCards(data.pokemon);
 }
