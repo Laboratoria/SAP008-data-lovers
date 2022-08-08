@@ -1,34 +1,19 @@
 import data from './data/ghibli/ghibli.js';
 const films = data.films;
 
-async function populate() {
-    // populateHeader(films);
-    populateCharacters(films);
-}
+async function construct() {
+    peoples(films);
+}      
 
-
-// function populateHeader(obj) {
-//     const header = document.querySelector('header');
-//     const myH1 = document.createElement('h1');
-//     for (const film of obj){
-//         myH1.textContent = film.title;
-//         header.appendChild(myH1);
-//     }
-    
-
-//     // const myPara = document.createElement('p');
-//     // myPara.textContent = `Hometown: ${obj.homeTown} // Formed: ${obj.formed}`;
-//     // header.appendChild(myPara);
-// }       
-
-function populateCharacters(obj) {
+function peoples(obj) {
     const section = document.querySelector('section');
-    // const people = obj.people;
 
-    for (const film of obj) {
-        for (let people of film.people) {
+    for (const o of obj) {
+        for (let people of o.people) {
             const myArticle = document.createElement('article');
+            const myDiv1 = document.createElement('div');
             const image = document.createElement('img');
+            const myDiv2 = document.createElement('div');
             const myH2 = document.createElement('h2');
             const myPara1 = document.createElement('p');
             const myPara2 = document.createElement('p');
@@ -36,7 +21,9 @@ function populateCharacters(obj) {
             const myPara4 = document.createElement('p');
             const myPara5 = document.createElement('p');
 
+            myDiv1.className = 'card'
             image.src = people.img;
+            myDiv2.className = 'overlay'
             myH2.textContent = people.name;
             myPara1.textContent = `Gênero: ${people.gender}`;
             myPara2.textContent = `Idade: ${people.age}`;
@@ -45,17 +32,18 @@ function populateCharacters(obj) {
             myPara5.textContent = `Espécie: ${people.specie}`;
 
 
-            myArticle.appendChild(image);
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-            myArticle.appendChild(myPara5);
-            // myArticle.appendChild(myList);
-
+            myArticle.appendChild(myDiv1);
+            myDiv1.appendChild(image);
+            myArticle.appendChild(myDiv2);
+            myDiv2.appendChild(myH2);
+            myDiv2.appendChild(myPara1);
+            myDiv2.appendChild(myPara2);
+            myDiv2.appendChild(myPara3);
+            myDiv2.appendChild(myPara4);
+            myDiv2.appendChild(myPara5);
             section.appendChild(myArticle);
         }
     }
 }
-populate()
+
+construct()
