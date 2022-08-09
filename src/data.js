@@ -1,14 +1,19 @@
-// estas funciones son de ejemplo
+import data from "./data/rickandmorty/rickandmorty.js";
 
-export const example = () => {
-  return 'example';
-};
+export const characters = {displayChars};
 
-export const anotherExample = () => {
-  return 'OMG';
-};
-
-function angelica {
-  let angel = 
-
+function displayChars() {
+  let personas = data.characters
+  return personas
 }
+
+
+
+
+
+
+/*export const example = () => {
+  return 'example';
+};*/
+
+

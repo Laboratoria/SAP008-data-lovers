@@ -1,0 +1,23 @@
+#statusBtn {
+    background-color: #00B5CC;
+    border-radius: 20px;
+    border: none;
+    color: #0A1823;
+    width: 150px;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;    
+}
+
+body {
+    color: #0A1823;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    background-image: url(background.jpg) ;    
+}
+
+#box-container {
+    width: 80%;
+    height: 80%;
+    background-color: #00B5CC;
+    margin: 20px 30px;
+    padding: 30px;
+}
