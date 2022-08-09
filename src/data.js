@@ -1,16 +1,38 @@
 import data from "./data/harrypotter/data.js";
 
-export const characters = {displayChars};
+export const mainFilters = {displayChars, displayBooks, displaySpells};
 
 function displayChars() {
-  let result = '';
-  let personas = data.characters;
+  let charactersResult = '';
+  let allCharacters = data.characters;
 
-  for(let i = 0; i < personas.length; i++){
-    let charactersList = personas[i].name;
-    result += charactersList
+  for(let i = 0; i < allCharacters.length; i++){
+    let charactersList = allCharacters[i].name;
+    charactersResult += charactersList
   }
-return result
+  return charactersResult
+}
+
+function displayBooks() {
+  let booksResult = '';
+  let allBooks = data.books;
+
+  for(let i = 0; i < allBooks.length; i++){
+    let booksList = allBooks[i].title;
+    booksResult += booksList
+  }
+  return booksResult
+}
+
+function displaySpells(){
+  let spellsResult = '';
+  let allSpells = data.spells;
+
+  for(let i = 0; i < allSpells.length; i++){
+    let spellsList = allSpells[i].name;
+    spellsResult += spellsList
+  }
+  return spellsResult
 }
 //.name é o valor do campo lá no data.js da pasta harrypotter, funciona pra imprimir os outros dados do msm jeito; futuramente, trocar isso pra ".filter()"
 //template string `string ${value}´
