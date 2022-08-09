@@ -1,14 +1,12 @@
-// estas funciones son de ejemplo
+import data from "./data/rickandmorty/rickandmorty.js"
 
 export const example = () => {
-  return 'example';
+  return 'OMG';
 };
 
 export const anotherExample = () => {
   return 'OMG';
 };
 
-function angelica {
-  let angel = 
 
-}
+
