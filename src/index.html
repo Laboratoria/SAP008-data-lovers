@@ -15,30 +15,31 @@
 
     <main class="container">
       <section class="description">
-        <img class="description-img" src="img/output.png">
+        <img class="description-img" src="img/dragon-chihiro1.png">
         <div class="description-text">
-          <h3>Aqui nós te ajudamos a curtir os filmes do Studio Ghibli!</h3>
+          <h2>Aqui nós te ajudamos a curtir os filmes do Studio Ghibli!</h2>
           <p>Você pode escolher o filme que mais combina com você usando nossos filtros de 
             preferência ou mesmo saber um pouco mais dos detalhes de cada história! </p>
         </div>
       </section>
 
       <section class="btn-catalogue">
-        <select id="filter-gender" name="gender" class="btn-catalogue-filter"> 
+        <!-- <select id="filter-gender" name="gender" class="btn-catalogue-filter"> 
           <option name="gender" value="Gender" selected>Gênero
           <option name="gender" value="Female">Feminino
           <option name="gender" value="Male">Masculino</option>
+        </select> -->
+        <select id="filter-duration" name="duration" class="btn-catalogue-filter"> 
+          <option name="duration" value="duration" selected>Duração
+          <option name="duration" value="90min">até 90 minutos
+          <option name="duration" value="120min">de 90 a 120 minutos
+          <option name="duration" value="150min">mais de 120 minutos</option>
         </select>
-        <select id="filter-age" name="age" class="btn-catalogue-filter"> 
-          <option name="age" value="age" selected>Idade
-          <option name="age" value="children">Crianças
-          <option name="age" value="adults">Adultos</option>
-        </select>
-        <select id="order-by" name="order" class="btn-catalogue-filter"> 
+        <!-- <select id="order-by" name="order" class="btn-catalogue-filter"> 
           <option name="order" value="order" selected>Ordenar por
           <option name="order" value="rt_score">Avaliação
           <option name="order" value="release_date">Ano Lançamento</option>
-        </select>
+        </select> -->
       </section>
 
       <div class="catalogue">
