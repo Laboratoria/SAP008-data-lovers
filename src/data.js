@@ -1,11 +1,11 @@
+import pokemon from "./data/pokemon/pokemon.js";
 import data from "./data/pokemon/pokemon.js";
 
 const result = document.getElementById("result");
 export const searchName = document.getElementById("findPokemon");
 export const selectType = document.getElementById("pokeType");
 export const selectRarity = document.getElementById("rarity");
-
-
+export const spanClose = document.querySelector("#close")
 
 export function printCards() {
   let pokemons = filterPokemon()
@@ -60,3 +60,9 @@ selectRarity.addEventListener("change", printCards)
 selectType.addEventListener("change", printCards)
 searchName.addEventListener("keypress", printCards)
 
+spanClose.addEventListener("click", hideModal);
+
+export function hideModal() {
+  const modalElement = document.getElementById('modal');
+  modalElement.classList.remove('show-modal');
+}
