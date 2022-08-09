@@ -1,5 +1,4 @@
 import {characters} from './data.js';
-import data from './data/harrypotter/data.js';
 
 const btnResult = document.getElementById('btn-characters');
 btnResult.addEventListener('click',
