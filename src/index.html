@@ -11,13 +11,13 @@
 <body>
   <header>
     <h1>Data Seekers</h1>
-    <button name="btnCharacter">Personagens</button>
-    <button name="btnBooks">Livros</button>
-    <button name="btnSpells">Feitiços</button>
-    <input type="text" id="searchBox" placeholder="Pesquisar na base de dados..." />
+    <button type="submit" id="btn-characters" class="btn-characters">Personagens</button>
+    <button type="submit" id="btn-books" class="btn-books">Livros</button>
+    <button type="submit" id="btn-spells" class="btn-spells">Feitiços</button>
+    <input type="text" id="search-box" placeholder="Pesquisar na base de dados..." />
   </header>
   <main>
-    <section>
+    <section id="welcome-section">
       <!-- Aqui vamos escrever nosso codigo com as infos que vamos pegar do data.js (lista de perso, detalhes de cada um) -->
       <h2>Bem-vinde ao Data Seeker!</h2>
       <h3>
@@ -27,12 +27,21 @@
       <p>Utilize o menu superior parar encontrar informações sobre conteúdos do
         mundo Harry Potter</p>
     </section>
-    <!-- Criar um style.display -->
-    <nav> Lista de personagens
+    <nav id="characters-list" style="display:none"> Lista de personagens
       <a href="/harrypotter/"> Harry Potter </a>
       <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
     </nav>
+    <nav id="books-list" style="display:none">Lista de livros
+      <a href="/harrypotter/"> Harry Potter e a Pedra Filosofal </a>
+    </nav>
+      <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
+    <nav id="spells-list" style="display:none"> Lista de feitiços
+      <a href="/harrypotter/"> Accio </a>
+    </nav>
+      <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
+
   </main>
+
   <footer>
     <p>DATA SEEKER</p>
     <p>CopyRight 2022, a Data Seekers creation</p>
