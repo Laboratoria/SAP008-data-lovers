@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-acale=1.0">
+    <title>PokeInfo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header id="header">
+      <nav class="dp-menu">
+        <ul>
+          <li><a class="pokeInfo" href="\index.html"><img src="\img\pokeinfo.PNG" alt=""></a></li>
+          <li><a href="#">Estimativa de CP</a></li>
+          <li><a href="#">Melhores</a>
+            <ul>
+              <li><a href="#">Ataques (ATK)</a></li>
+              <li><a href="#">Defesas (DEF)</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Quem somos</a>
+            <ul>
+              <li><a href="#">Sobre o site</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </li> 
+          </li>
+        </ul>
+      </nav>
+   </header>
+   <input type="text" placeholder="Buscar um Pokémon" id="search">
+    <div class="card" id="cards"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

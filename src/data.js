@@ -1,9 +1,16 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+export const filterData = (data, condition) =>{
+  let searchResult = data.filter((key) => key.type.includes(condition))
+  return searchResult
+  
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  /* export const example = (data) => {
+    console.log(data)
+    return 'example';
+  };
+  
+  export const anotherExample = () => {
+    return 'OMG';
+  }; */
