@@ -5,9 +5,40 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div id="root"></div>
-    <header>Bem-vinda!!!</header>
+   
+      <nav class= "navegação">
+        <ul class="links">
+         <li>Home</li>
+         <li>Sobre a série</li>
+         <li>Episódios</li>
+        </ul>
+      </nav> 
+
+    <header>
+      <img src="img/imagem_redimensionada.jpg">
+    </header>
+
+    <main>
+      <section>
+        <label for="Filtro">Espécie:</label>
+        <select name="filtro" id="espécie">
+        <option selected disable value="">Todos</option>
+        <option value="Human">Humano 🧑 </option>
+        <option value="Humanoid">Humanóide</option>
+        <option value="Alien">Alien</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Mytholog">Mitológico</option>
+        <option value="Animal">Animal</option>
+        <option value="Vampire">Vampiro</option>
+        <option value="Robot">Robô</option>
+        <option value="Cronenberg">Cronenberg</option>
+       </select>
+      </section>
+    </main>
+    
     <script src="main.js" type="module"></script>
   </body>
 </html>
