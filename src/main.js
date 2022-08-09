@@ -25,8 +25,8 @@ function pokeCalc() {
   const pokeLenght = data.pokemon.length
 
   for (let pokemons = 0; pokemons <= pokemonData.length; pokemons++) {
-    if (select === selectType.value) {
-      modalContentElement.innerHTML = `Existem, no total, <b> ${pokemons} </b>pokemons do tipo <b>${select}</b>. Isso representa uma média de <b> ${parseFloat((pokemons / pokeLenght) * (100)).toFixed(2)}%</b> de todos os Pokemons.`
+    if (select === select) {
+      modalContentElement.innerHTML = `Existe um total de: <b> ${pokemons} </b>pokemons do tipo <b>${select}</b>. Isso representa uma média de <b> ${parseFloat((pokemons / pokeLenght) * (100)).toFixed(2)}%</b> de todos os Pokemons.`
     }
   }
 
