@@ -4,7 +4,7 @@
 
 * [1. Preâmbulo](#1-preâmbulo)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [3. Histórias de usuário](#3-histórias-do-usuário)
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios mínimos de aceitação do
   projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
@@ -47,31 +47,37 @@ A) Obter mais informações sobre seus personagens favoritos, principalmente sob
 
 B) Entretenimento: Utilizam o produto quando querem dar risada, sair um pouco da realidade ou deixar o som da série de fundo.
 
+## 3. Histórias do usuário
 
 
 Iniciou-se o projeto determinando quatro (4) histórias de usuário:
 
-1 - História 1: “Como fã da série, tenho curiosidade em saber quais personagens estão vivos ou mortos"
+1 - História 1: "Como fã da série, gostaria de poder visualizar todos os personagens da série para que eu consiga ter acesso as suas principais características de forma mais fácil. "
 
-A partir dessa história, criou-se um botão de filtro de status que mostra para o usuário quais personagens estão vivos, mortos e indefinido.
+A partir dessa história, criou-se a funcionalidade de exibir os cards dos personagens na tela.
+
 
 2 - História 2: “Como fã da série, gostaria de saber quais personagens são alienígenas, pois eu amo ficção científica.”
 
-A partir dessa história, criou-se um botão de filtro de espécie que mostra para o usuário quais personagens são humanos, alienígenas e indefinidos.
-
-3 - História 3:
-“Eu como fã da série, gostaria de saber quantas personagens femininas existem, pois me sinto mais representada.”
-
-A partir dessa história, criou-se um botão de filtro de gênero que mostra para o usuário quais personagens são femininos, masculinos e indefinidos.
+A partir dessa história, criou-se a funcionalidade do botão espécie, onde o usuário pode verificar a quais espécies pertencem os personagens.
 
 
-4 - História 4: “Como fã de Rick and Morty, gostaria muito de encontrar os nomes dos personagens com facilidade, pois tenho muita dificuldade em memorizá-los.”
+3 - História 3: “Eu como estudante de Ciências Sociais, gostaria de saber a média de quantas personagens femininas existem na série para colocar nos dados do meu TCC.”
 
-A partir dessa história, criou-se uma caixa de pesquisa na qual permite o usuário pesquisar o seu personagem pelo nome.
+A partir dessa história, criou-se a funcionalidade de exibir a porcentagem dos personagens na tela de acordo com o filtro escolhido.
+
+
+4 - História 4:  “Como fã de Rick and Morty, gostaria muito de encontrar os nomes dos personagens com facilidade, pois tenho muita dificuldade em memorizá-los.”
+
+A partir dessa história, criou-se a funcionalidade de caixa de pesquisa na qual permite o usuário pesquisar o seu personagem pelo nome.
+
+
+## 3. Protótipos da interface
+
 
 Após definir as histórias de usuário, criou-se um protótipo de baixa fidelidade como consta na imagem abaixo:
 
-![esbocobaixafidelidade] (prototipobaixafidelidade.jpeg)
+![img] (prototipobaixafidelidade.png)
 
 Logo depois, criou-se no Figma um protótipo de alta fidelidade como consta na imagem abaixo:
 
