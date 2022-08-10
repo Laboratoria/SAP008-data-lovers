@@ -1,6 +1,14 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
+import { filterPokemon } from './data.js';
 import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
+const pokemon= [pokemon.data]
+console.log(pokemon.data)
+
+const string="oi"
+console.log(string)
+
+
+
+
+
+console.log(filterPokemon, data);
