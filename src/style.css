@@ -1,0 +1,48 @@
+html body {
+    width: 100%;
+    margin: 0;    
+    background-color: rgb(226, 53, 53);
+}
+
+.container-ram {
+    align-items: center;
+    background-color: #000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 120px;
+    font-family: "Patua One";
+}
+.container-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.container-pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;   
+}
+
+#btn-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.buscar{
+    background-color: rgb(161, 49, 49);
+    font-family: "Patua One";
+    color: white;
+    border: 0;
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0.55rem 2rem;
+}
+.menu-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}

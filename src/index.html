@@ -2,10 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Set Rick and Morty</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
   </head>
+
   <body>
+    <header class="container-ram">
+      
+      <nav class="container-nav">
+        <select id="btn-nav">  
+        <a href="index.html" class="menu-item">Genêro</a>
+          <option selected disabled value="">Genêro</option>
+          <option value="az" id="az">A - Z</option>
+          <option value="za" id="za">Z - A</option>
+        </select>
+        <select id="btn-nav">
+          <a href="about.html" class="menu-item">Espécie</a>
+          <option selected disabled value="">Espécie</option>
+          <option value="az" id="az"> A - Z</option>
+          <option value="za" id="za"> Z - A</option>
+        </select>
+        <select id="btn-nav">
+          <a href="contact.html" class="menu-item">Status</a>
+          <option selected disabled value="">Status</option>
+          <option value="az" id="az"> A - Z</option>
+          <option value="za" id="za"> Z - A</option>
+        </select>
+      </nav>
+      <section class="container-pesquisa">
+      <span>
+      <input class="pesquisar" type="text" placeholder=" ">  <button class="buscar" id="Buscar">Buscar</button>
+      </span>
+      </section>
+
+    </header>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
