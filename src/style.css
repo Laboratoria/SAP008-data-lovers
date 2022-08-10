@@ -1,0 +1,63 @@
+:root{
+    --cor-fundo : rgb(0, 74, 173);
+    --cor-hover : rgb(43, 157, 177);
+    --cor-primaria : rgb(255, 255, 255);   
+}
+
+body{
+background-color: rgb(221, 221, 221);
+}
+/*menu*/
+.pokeInfo{
+    
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s; 
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+}
+
+.dp-menu ul ul{
+    width: 150px;
+}
+
+.dp-menu ul ul li a{
+    display: block;
+}
+/*cards*/
+.card{
+    background-color: rgb(251, 251, 251);
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
