@@ -1,11 +1,23 @@
+
 // estas funciones son de ejemplo
 
-export const filterData = (data, condition) =>{
-  let searchResult = data.filter((key) => key.type.includes(condition))
-  return searchResult
-  
+export const filterType = (data, condition) =>{
+  return data.filter((key) => key.type.includes(condition))
 }
-<<<<<<< HEAD
+
+export const filterGeneration = (data, condition) =>{
+  return data.filter((key) => key.generation.name.includes(condition))
+}
+
+/* export const sortData = (data, sortBy) =>{
+  if(sortBy=="A-Z"){
+    return data.sort();
+  }else{
+    return data.sort().reverse();
+
+  }
+} */
+
 
   /* export const example = (data) => {
     console.log(data)
@@ -16,14 +28,3 @@ export const filterData = (data, condition) =>{
     return 'OMG';
   }; */
 
-=======
-
-  /* export const example = (data) => {
-    console.log(data)
-    return 'example';
-  };
-  
-  export const anotherExample = () => {
-    return 'OMG';
-  }; */
->>>>>>> 3217ea433365aa1571a771f03445644c24de3e85
