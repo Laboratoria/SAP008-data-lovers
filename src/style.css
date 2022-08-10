@@ -1,0 +1,187 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    max-width: 100%;
+    height: 4.3rem;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8rem;
+}
+
+
+.logo-riot {
+    width: 4.3rem;
+    height: 1.5rem;
+    position: relative left;
+    
+}
+
+.logo-lol {
+    width: 4.3rem;
+    height: 1.5rem;
+    position: relative;
+    right: 5%;
+}
+
+
+.navbar {
+    width: 11.2rem;
+    position: relative right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 0.8rem;
+}
+
+.mobile-navbar{
+    position: relative right;
+    cursor: pointer;
+    display: none;
+}
+
+.hamb1, .hamb2, .hamb3 {
+    width: 0.8rem;
+    height: 0.1rem;
+    background-color: #F9F9F9;
+    margin: 0.1rem 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+    .mobile-navbar {
+        display: inline-block;
+    }
+    .navbar {
+        display: none;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/jinx\ background2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20rem;
+}
+
+main h1 {
+    width: 18.7rem;
+    text-align: center;
+}
+
+main button {
+    width: 9.3rem;
+    height: 3.1rem;
+    border: none;
+    background-color: #C2902D;
+    color: #F9F9F9;
+    border-radius: 2.5rem;
+    font-size: larger;
+}
+
+main button:hover, .voltar:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/background-sobre.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.sobre {
+    max-width: 18.7rem;
+    height: 16.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #292929f1;
+    border-radius: 1.8rem;
+    color: #FFFFFF;
+    padding: 0 1.2rem;
+}
+
+.sobre h1 {
+    text-align: center;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+.modal .voltar {
+    width: 7.8rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: #006680;
+    border: none;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-size: medium;
+}
+
+
+footer {
+    max-width: 100%;
+    height: 12.5rem;
+    background-color: #292929;
+    border-top: #C2902D solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8rem;
+}
+
+.navbar-footer {
+    display: flex;
+    flex-direction: column;
+    height: 3.1rem;
+    justify-content: space-around;
+}
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 0.8rem;
+}
+
+.download-links {
+    height: 6.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.download-links img{
+    width: 9.3rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
