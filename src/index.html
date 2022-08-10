@@ -5,21 +5,25 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Projeto Data Lovers</h1>
+  <body>   
+    <div id="root">
+      <h1>Rick and Morty</h1>       
+        <main>
 
-      <select class="status-btn">
-          <option value="status" selected disabled>Status</option>
-          <option class="select-status" value="Alive">Vivo</option>
-          <option class="select-status" value="Dead">Morto</option>
-          <option class="select-status" value="unknown">Indefinido</option>
-     </select>
-    
-    </body>
+        <label>
+          <select id="statusBtn" >
+            <option value="" selected disabled hidden>STATUS</option>
+            <option id="vivoBtn" value="1">VIVO</option>
+            <option id="mortoBtn" value="2">MORTO</option>
+            <option id="desconhecidoBtn" value="3">DESCONHECIDO</option>      
+          </select>
+        </label>
+        <section id="box-container">        
 
+        </section>
+      </main>
+    </div>
+    <script src="main.js" type="module"></script> 
 
-    <div id="root"></div>
-   
-    <script src="main.js" type="module"></script>
   </body>
 </html>
