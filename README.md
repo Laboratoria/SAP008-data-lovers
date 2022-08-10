@@ -77,7 +77,7 @@ A partir dessa história, criou-se a funcionalidade de caixa de pesquisa na qual
 
 Após definir as histórias de usuário, criou-se um protótipo de baixa fidelidade como consta na imagem abaixo:
 
-![img] (prototipobaixafidelidade.png)
+![img](prototipobaixafidelidade.png)
 
 Logo depois, criou-se no Figma um protótipo de alta fidelidade como consta na imagem abaixo:
 
