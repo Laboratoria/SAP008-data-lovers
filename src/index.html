@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div id="root">
@@ -14,11 +16,23 @@
           <a href="#">SOBRE</a>
           <a href="https://www.leagueoflegends.com/pt-br/">SITE OFICIAL</a>
         </div>
+        <div class="mobile-navbar" onclick="changeNavbar(this)">
+          <div class="hamb1"></div>
+          <div class="hamb2"></div>
+          <div class="hamb3"></div>
+        </div>
       </header>
       <main>
         <h1>OLÁ, INVOCADOR. ESCOLHA SEU CAMPEÃO</h1>
         <button class="iniciar">INICIAR</button>
       </main>
+      <div class="modal">
+        <div class="sobre">
+          <h1>SOBRE</h1>
+          <p>O site foi desenvolvido com o objetivo de  ajudar os jogadores ou novos jogadores a conhecerem e escolherem os campeões presentes em Summoner’s Rift.</p>
+        </div>
+        <button class="voltar">VOLTAR</button>
+      </div>
       <footer>
         <div class="navbar-footer">
           <a href="#">SOBRE</a>
