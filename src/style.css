@@ -4,22 +4,20 @@
 }
 body { 
     background-color: #1D1C38;
-    background-image: url(img/desktop/Cabeçalho2.png), url(img/desktop/rodape1.png);
+    background-image: url(img/desktop/Cabeçalho2.png), url(img/desktop/rodape1.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: 100vw;
 }
 
 .top {
-    /* border: solid 2px black; */
     color: #f1faee;
     text-align: center;
     margin: 2vw 10vw 0;
-    font-size: 250%;
+    font-size: 2.5rem;
 }
 
 .container {
-    /* border: solid 2px red; */
     margin: 1vw 13vw;
 }
 
@@ -28,44 +26,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 155%;
+    font-size: 1.55rem;
     color:#f1faee;
     text-align: right;
 }
 
 .description-img {
-    width: 40vw;
-    /* margin: -1.7vw 0 0 -5vw; == coloquei a margem no de cima */ 
+    width: 40rem;
 }
 
-/* === PARECE QUE NÃO PRECISAMOS DESSA ===
-.description-text {
-    text-align: right;
-    width: 50vw;
-    margin: -2vw 2vw 0 1vw;
-} */
-
 .btn-catalogue {
-    /* border: solid 2px black; */
     margin: 7vw 2vw 2vw;
-    /* width: 100%; */
     height: 270%;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1vw;*/
 }
 
 .btn-catalogue-filter {
     margin: 0 38%;
     border:none;
-    /* min-width: 100%; */
     min-height: 100%;
     padding: 0.5vw 2vw;
-    /*align-content: center;*/
     background-color: #e26c7a;
     color: #f1faee;
     text-align: center;
-    font-size: 120%;
+    font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
     border-radius: 0.5vw;  
@@ -90,9 +73,8 @@ body {
     padding: 1vw;
     block-size: 100%;
     text-align: center;
-    font-size: 130%;
+    font-size: 1.3rem;
     border-radius: 0.3vw;
-    /*color: #1D1C38;*/
 }
 
 .poster-img {
@@ -109,84 +91,36 @@ body {
 
 @media only screen and (max-width: 600px){
 body { 
-    background-color: #1D1C38;
-    background-image: url(img/mobile/Cabeçalho3.svg), url(img/mobile/rodape.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top, bottom;
-    background-size:100vw;
+    background-image: url(img/mobile/Cabeçalho3.svg), url(img/mobile/rodape.svg);
 }
 
 .top {
-    /* border: solid 2px black; */
-    color: #f1faee;
-    text-align: center;
     margin: 8% 10% 0;
     font-size: 3vw;
-}
-
-.container {
-    /* border: solid 2px red; */
-    margin: 1vw 13vw;
 }
 
 .description {
     box-sizing: 100%;
     margin: -1.2vw 1.5vw 0 -9vw;
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
     font-size: 0.5em;
-    color:#f1faee;
-    text-align: right;
 }
 
 .description-img {
-    width: 55%;
-    /* margin: 0 -1.7vw 0 -8vw; == coloquei a margem no de cima */
+    width: 9rem;
 }
-
-/* === PARECE QUE NÃO PRECISAMOS DESSAS ===
-h2 {
-    color: #f1faee;
-}
-
-h4 {
-    font-size: 1.9vw;
-    color: #f1faee;
-} */
-
-/* .description-text {
-    text-align: right;
-    width: 55vw;
-    margin: 0 2vw 0 0.5vw;
-} */
 
 .btn-catalogue {
-    /*border: solid 2px black;*/
     margin: 7vw 2vw 4vw;
     height: 3.5vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:flex;
+    justify-content: center;
     column-gap: 1.5vw;
 }
 
 .btn-catalogue-filter {
-    border:none;
-    min-height: 100%;
-    padding: 0.5vw 2vw;
-    /*align-content: center;*/
-    background-color: #e26c7a;
-    color: #f1faee;
+    font-size: 0.4rem;
     text-align: center;
-    font-size: 1.5vw;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 0.5vw; 
-}
-
-.btn-catalogue-filter:hover {
-    background-color: #f1faee;
-    color: #e26c7a;
 }
 
 .catalogue {
@@ -198,25 +132,18 @@ h4 {
   
 
 .poster {
-    background-color: rgba( 245, 245, 245, 0.8);
-    padding: 1vw;
-    block-size: 100%;
     text-align: center;
-    font-size: 2vw;
-    border-radius: 0.3vw; 
-    /*color: #1D1C38;*/
+    font-size: 0.5rem;
 }
 
 .poster-img {
-    width: 100%;
-    max-height: 85%;
     margin-bottom: 1vw;
 }
 
 .footer-img-totoro {
     margin-top: -5vw;
     bottom: 0;
-    width: 30%;
+    width: 9rem;
     margin-left: 65%;
 }
 }
