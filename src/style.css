@@ -1,0 +1,13 @@
+#section-logo{
+    text-align: center;
+    margin: 1%;
+    background-color: black;
+    
+}
+
+#logo-pokemon{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    margin: 0%;
+}
