@@ -7,17 +7,22 @@
   <title>Data Seekers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+  @import url('http://fonts.cdnfonts.com/css/harry-potter');
+</style>
 
 <body>
   <header>
-    <h1>Data Seekers</h1>
-    <button type="submit" id="btn-characters" class="btn-characters">Personagens</button>
-    <button type="submit" id="btn-books" class="btn-books">Livros</button>
-    <button type="submit" id="btn-spells" class="btn-spells">Feitiços</button>
-    <input type="text" id="search-box" placeholder="Pesquisar na base de dados..." />
+    <h1>Data<br>Seekers</h1>
+    <section class="header-menu">
+      <button type="submit" id="btn-characters" class="btn-menu">Personagens</button>
+      <button type="submit" id="btn-books" class="btn-menu">Livros</button>
+      <button type="submit" id="btn-spells" class="btn-menu">Feitiços</button>
+      <input type="text" id="search-box" placeholder="Pesquisar na base de dados..."/>
+    </section>
   </header>
-  <main>
-    <section id="welcome-section">
+  <main class="flex-container">
+    <section id="welcome-section" class="flex-item">
       <!-- Aqui vamos escrever nosso codigo com as infos que vamos pegar do data.js (lista de perso, detalhes de cada um) -->
       <h2>Bem-vinde ao Data Seeker!</h2>
       <h3>
@@ -27,7 +32,7 @@
       <p>Utilize o menu superior parar encontrar informações sobre conteúdos do
         mundo Harry Potter</p>
     </section>
-    <nav id="characters-list" style="display:none"> Lista de personagens
+    <nav id="characters-list" class="flex-item" style="display:none"> Lista de personagens
       <a href="/harrypotter/"> Harry Potter </a>
       <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
     </nav>

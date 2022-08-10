@@ -24,7 +24,7 @@ function displayBooks() {
   return booksResult
 }
 
-function displaySpells(){
+function displaySpells() {
   let spellsResult = '';
   let allSpells = data.spells;
 

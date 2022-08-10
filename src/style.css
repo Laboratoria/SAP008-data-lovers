@@ -1,0 +1,23 @@
+header {
+    background-color: #700505;
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin-left: 20%;
+    margin-bottom: 0;
+    font-size: 5em;
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.header-menu {
+    margin-left: 35%;
+    margin-top: 11%;
+}
+main {
+    display: flex;
+}
