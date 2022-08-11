@@ -2,11 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Rick and Morty Wikia</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+    <header>
+      <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
+      <!-- <img class="image.logo"> -->
+      <navbar>
+        <select name="Gender" id="gender">
+          <option value="" disabled="" selected="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="undefined">Undefined</option>
+        </select>
+        <select name="Species" id="species">
+          <option value="" disabled="" selected="">Species</option>
+          <option value="human">Human</option>
+          <option value="alien">Alien</option>
+          <option value="undefined">Undefined</option>
+        </select>
+        <select name="Status" id="status">
+          <option value="" disabled="" selected="">Status</option>
+          <option value="male">Alive</option>
+          <option value="female">Dead</option>
+          <option value="undefined">Unknown</option>
+        </select>
+        <select name="Episode" id="episode">
+          <option value="" disabled="" selected="">Episode</option>
+          <option value="S0101">S01E01</option>
+          <option value="female">S01E02</option>
+          <option value="undefined">Unknown</option>
+        </select>
+      </navbar>
+      <textarea id="search" placeholder="Search"></textarea>
+    </header>
+    <p class="statistics">This category represents <b>2%</b> of the characters</p>
   </body>
 </html>
