@@ -3,12 +3,24 @@ import { example } from './data.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-const btnSobre= document.querySelector('#btn-sobre')
-btnSobre.addEventListener("click", function(){
-    const modal=document.querySelector("#modal");
-    modal.style.display = "flex";
-    const main = document.querySelector("#main-content");
-    main.style.display = "none";
+const btnSobre = document.querySelector('#btn-sobre');
+const main = document.querySelector("#main-content");
+const modal=document.querySelector("#modal");
+btnSobre.addEventListener('click', function(){
+    modal.style.display = 'flex';
+    main.style.display = 'none';
+})
+
+const btnVoltar = document.querySelector('#btn-voltar');
+btnVoltar.addEventListener('click', function(){
+    main.style.display = 'flex';
+    modal.style.display = 'none';
+})
+
+const voltarFooter = document.querySelector('#voltar-footer');
+voltarFooter.addEventListener('click', function(){
+    modal.style.display = 'flex';
+    main.style.display = 'none';
 })
 
 

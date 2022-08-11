@@ -12,14 +12,14 @@
       <header class="topo">
         <img class="logo-riot" src="./img/riotlogo.png" alt="riot logo">
         <img class="logo-lol" src="./img/logolol.png" alt="lol logo">
-        <div class="navbar">
-          <button id="btn-sobre" class="btn-sobre">SOBRE</button>
-          <a href="https://www.leagueoflegends.com/pt-br/">SITE OFICIAL</a>
-        </div>
-        <div class="mobile-navbar" onclick="changeNavbar(this)">
+        <div id="mobile-navbar" class="mobile-navbar">
           <div class="hamb1"></div>
           <div class="hamb2"></div>
           <div class="hamb3"></div>
+        </div>
+        <div id="navbar" class="navbar">
+          <button id="btn-sobre" class="btn-sobre">SOBRE</button>
+          <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">SITE OFICIAL</a>
         </div>
       </header>
       <main id="main-content">
@@ -32,16 +32,16 @@
           <h1>SOBRE</h1>
           <p>O site foi desenvolvido com o objetivo de  ajudar os jogadores ou novos jogadores a conhecerem e escolherem os campeões presentes em Summoner’s Rift.</p>
         </div>
-        <button class="voltar">VOLTAR</button>
+        <button id="btn-voltar" class="voltar">VOLTAR</button>
       </div>
       <footer>
         <div class="navbar-footer">
-          <a href="#">SOBRE</a>
-          <a href="https://www.leagueoflegends.com/pt-br/">SITE OFICIAL</a>
+          <a id="voltar-footer" href="#">SOBRE</a>
+          <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">SITE OFICIAL</a>
         </div>
         <div class="download-links">
-          <a href="#"><img src="./img/android.png" alt="playstore logo"></a>
-          <a href="#"><img src="./img/apple.png" alt="appstore logo"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&hl=pt_BR&gl=US" target="_blank"><img src="./img/android.png" alt="playstore logo"></a>
+          <a href="https://apps.apple.com/us/app/league-of-legends-friends/id1077150310" target="_blank"><img src="./img/apple.png" alt="appstore logo"></a>
         </div>
       </footer>
     </div>

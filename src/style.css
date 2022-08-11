@@ -55,7 +55,8 @@ html, body {
 }
 
 .mobile-navbar{
-    position: relative right;
+    position: absolute;
+    right: 1.8rem;
     cursor: pointer;
     display: none;
 }
@@ -68,9 +69,10 @@ html, body {
     transition: 0.4s;
 }
 
+
 @media (max-width: 600px) {
     .mobile-navbar {
-        display: inline-block;
+        display: block;
     }
     .navbar {
         display: none;
