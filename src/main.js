@@ -8,7 +8,7 @@ function displayCharsResult(){
     let charactersFormatted = characters.map((name) => {
         return `<li><a href='?${name}'> ${name} </a></li>`
     })
-    console.log(charactersFormatted)
+    
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('characters-list').style.display = 'block';
     const charactersResult = document.getElementById('characters-list');
