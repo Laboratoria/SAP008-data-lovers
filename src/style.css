@@ -9,6 +9,7 @@ html, body {
     background-color: #111111;
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1.8rem;
 }
@@ -19,16 +20,20 @@ html, body {
     height: 1.5rem;
     position: absolute;
     left: 1.8rem;
+    position: relative left;
 }
 
 .logo-lol {
     width: 4.3rem;
     height: 1.5rem;
+    position: relative;
+    right: 5%;
 }
 
 
 .navbar {
     width: 11.2rem;
+    position: relative right;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -118,6 +123,38 @@ main button:hover, .voltar:hover{
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+.sobre {
+    max-width: 18.7rem;
+    height: 16.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #292929f1;
+    border-radius: 1.8rem;
+    color: #FFFFFF;
+    padding: 0 1.2rem;
+}
+
+.sobre h1 {
+    text-align: center;
+}
+
+
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/background-sobre.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
 }
 
 .sobre {
