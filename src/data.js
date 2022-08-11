@@ -1,9 +1,9 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
+export const printCards = (arrayRickmorty) => {
   return 'example';
 };
 
-export const anotherExample = () => {
+export const filterData = () => {
   return 'OMG';
 };
