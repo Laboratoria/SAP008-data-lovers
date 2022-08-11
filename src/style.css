@@ -1,26 +1,109 @@
-header {
-    background-color: #700505;
-    margin: auto; 
-    padding: 0px 40px;
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    
 }
 
-.menu-btn {
-    display: flex;
-    margin-inline: 10px;
-    margin-block: 100px;
+body {
+    background-image: url('https://github.com/GabriellaViroli/SAP008-data-lovers/blob/css/src/Images/Fundo%20imagem.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
 
+.header {
+    position: static;
+    background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
+    background-position-x: 130px;
+    background-position-y: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #700505;
+    padding: 90px 50px;
+}
+
+.menu-btns {
+    left: 73%;
+    position: relative;
+    margin-inline: 10px;
+    margin-top: auto;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    border-color: #193833;
+    border-width: 2px;
+    border-radius: 8px;
+    font-family: 'Harry Potter';
+    font-weight: lighter;
+    font-size: 25px;
+    text-shadow: 2px 1px #1616162e;
+    background-color: #DC9F03;
+    color: #193833;
+}
+
+.menu-btns:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #0b1c19;
+    color: white;
+    text-shadow: 2px 1px #1616162e;
+    text-shadow: 2px 1px #1616162e;
+
+  }
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+
+.welcome {
+    display: flex;
+    text-align: center;
+    background-color: #dc9f03e0;
+    color: white;
+    display: block;
+    width: 25%;
+    position: relative;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 80px;
 }
 
 h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 51px;
+    font-weight: 150;
     font-family: 'Harry Potter';
-    color: white;
-    font-weight: 100;
-    font-size: 50px;
-    display: flex;
+    color: #193833;
+    text-shadow: 3px 3px #1616162e;
 }
 
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
 
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer {
+    position: static;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    background-color: #700505;
+    margin-bottom: 0px;
+    padding: 30px 0px;
+
+}
 /*background-color: #DC9F03;
     color: #193833;
 
