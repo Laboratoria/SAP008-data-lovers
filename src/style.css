@@ -1,0 +1,128 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+body { 
+    background-color: #1D1C38;
+    background-image: url(img/desktop/Cabeçalho2.png), url(img/desktop/rodape1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: 100vw;
+}
+.top {
+    color: #f1faee;
+    text-align: center;
+    margin: 2vw 10vw 0;
+    font-size: 2.5rem;
+}
+.container {
+    margin: 1vw 13vw;
+}
+.description {
+    margin: -1.5vw 1vw 0 -5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.55rem;
+    color:#f1faee;
+    text-align: right;
+}
+.description-img {
+    width: 40rem;
+}
+.btn-catalogue {
+    margin: 7vw 2vw 2vw;
+    height: 270%;
+}
+.btn-catalogue-filter {
+    margin: 0 38%;
+    border:none;
+    min-height: 100%;
+    padding: 0.5vw 2vw;
+    background-color: #e26c7a;
+    color: #f1faee;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.5vw;  
+}
+.btn-catalogue-filter:hover {
+    background-color: #f1faee;
+    color: #e26c7a;
+}
+.catalogue {
+    margin: 3vw 0 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1vw;
+    row-gap: 1vw;
+}
+  
+.poster {
+    background-color: rgba( 245, 245, 245, 0.8);
+    padding: 1vw;
+    block-size: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 0.3vw;
+}
+.poster-img {
+    width: 100%;
+    max-height: 85%;
+    margin-bottom: 0.4vw;
+}
+.footer-img-totoro {
+    bottom: 0;
+    width: 20%;
+    margin-left: 77%;
+}
+@media only screen and (max-width: 600px){
+body { 
+    background-image: url(img/mobile/Cabeçalho3.svg), url(img/mobile/rodape.svg);
+}
+.top {
+    margin: 8% 10% 0;
+    font-size: 3vw;
+}
+.description {
+    box-sizing: 100%;
+    margin: -1.2vw 1.5vw 0 -9vw;
+    display: flex;
+    font-size: 0.5em;
+}
+.description-img {
+    width: 9rem;
+}
+.btn-catalogue {
+    margin: 7vw 2vw 4vw;
+    height: 3.5vw;
+    display:flex;
+    justify-content: center;
+    column-gap: 1.5vw;
+}
+.btn-catalogue-filter {
+    font-size: 0.4rem;
+    text-align: center;
+}
+.catalogue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5vw;
+    row-gap: 1.5vw;
+}
+  
+.poster {
+    text-align: center;
+    font-size: 0.5rem;
+}
+.poster-img {
+    margin-bottom: 1vw;
+}
+.footer-img-totoro {
+    margin-top: -5vw;
+    bottom: 0;
+    width: 9rem;
+    margin-left: 65%;
+}
+}
