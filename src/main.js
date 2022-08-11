@@ -17,7 +17,7 @@ function addTela (filmsList) {
     return template; 
   }); 
   // console.log (filme);
-  catalogue.innerHTML = arrayFilms.join("");
+  catalogue.innerHTML = arrayFilms.join('');
 }
 addTela (films);
 
