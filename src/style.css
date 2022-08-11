@@ -8,7 +8,7 @@ html, body {
     height: 4.3rem;
     background-color: #111111;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 1.8rem;
 }
@@ -17,23 +17,30 @@ html, body {
 .logo-riot {
     width: 4.3rem;
     height: 1.5rem;
-    position: relative left;
-    
+    position: absolute;
+    left: 1.8rem;
 }
 
 .logo-lol {
     width: 4.3rem;
     height: 1.5rem;
-    position: relative;
-    right: 5%;
 }
 
 
 .navbar {
     width: 11.2rem;
-    position: relative right;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    right: 1.8rem;
+}
+
+.navbar .btn-sobre {
+    border: none;
+    color: #F9F9F9;
+    background-color: #111111;
+    cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .navbar a {
@@ -107,11 +114,10 @@ main button:hover, .voltar:hover{
     background-image: url(./img/background-sobre.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
 }
 
 .sobre {
