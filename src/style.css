@@ -1,23 +1,33 @@
 header{
     display: flex;
     background-color: #500909;
-    display: flex;
-    height: 250px;
-    width: 1400px;
+    height: 180px;
+    width: 1350px;
     align-items: center;
 }
-.titulogo{
-    background-image: url(src\Logoharry.png);
-}
+h1{
+    margin: auto; 
+ }
 main{
     background-color: #F1B415;
-    width: 1400px;
+    width: 1350px;
     height: 40px;
 }
+.select{
+    background-color: #F1B415;
+    width: 266px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #500909;
+    font-weight: 700;
+    font-size: small;
+}
 section{
-    background-image: url(src\backcastelo.png);
+    background-color: #2E2828;
+    width: 1350px;
 }
 button{
+    align-items: center;
     background-color: #F1B415;
     color: black;
     width: 160px;
@@ -27,17 +37,18 @@ button{
     font-size: small;
     border-color:yellow;
     border-radius: 10px;
-    align-items: center;
 }
 button:hover {
     transform: scale(0.9);
+}
+strong{
+   color:yellow;
+   font-size: small;
 }
 footer{
     background-color: #2E2828;
     color: grey;
     align-items: center;
     height: 300px;
-    width: 1400px;
+    width: 1350px;
 }
-.redessociais{
-    align-items: right;
