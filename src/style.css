@@ -1,40 +1,13 @@
-/*logo pokemon*/
-
 #section-logo{
-    background-color: rgba(243, 21, 21, 0.861);
     text-align: center;
     margin: 1%;
+    background-color: black;
+    
 }
 
 #logo-pokemon{
-    margin: 0%;
-    text-align: center;
-}
-
-/*botões da regiao Kanto e Johto*/
-
-.section-buttons{
-    text-align: center;
-}
-
-.button{
-    width: 400px;
+    position: relative;
+    width: 50%;
     height: 200px;
-    border-radius: 100px;
-    text-align: justify;
-    flex-wrap: wrap;
-}
-
-#button-kanto{
-    margin: 5%;
-    text-align: center;
-    background-image: url(Img/REGIAO_KANTO.jpg);
-    background-size: contain;
-}
-
-#button-johto{
-    margin: 5%; 
-    text-align: center;
-    background-image: url(Img/REGIAO_JOHTO.jpg);
-    background-size: contain;
+    margin: 0%;
 }
