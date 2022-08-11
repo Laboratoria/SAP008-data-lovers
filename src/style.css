@@ -1,19 +1,56 @@
 html body {
     width: 100%;
     margin: 0;    
-    background-color: rgb(226, 53, 53);
+    background-image: url(./img/espaco.jpg);
+    background-size: cover;
 }
 
 .container-ram {
     align-items: center;
     background-color: #000;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    height: 120px;
+    height: 5rem;
     font-family: "Patua One";
 }
-.container-nav {
+#img-logo{
+    float: none;
+    height: 2rem;
+    width: 8rem;
+    margin-top: 2rem;
+}
+.container-nav{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+.inicio{
+    background-color: black;
+    font-size: "Patua One";
+    color: white;
+}
+.sobre{
+    background-color: black;
+    font-size: "Patua One";
+    color: white;
+}
+
+.seletores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btn{
+    width: 13rem;
+    height: 2rem;
+    justify-content: space-around;
+    background-color: rgb(80, 49, 70);
+    font-family: "Patua One";
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
 }
 
 .container-pesquisa{
@@ -22,27 +59,13 @@ html body {
     margin-top: 1rem;   
 }
 
-#btn-nav{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
 .buscar{
-    background-color: rgb(161, 49, 49);
+    background-color: rgb(80, 49, 70);
     font-family: "Patua One";
     color: white;
     border: 0;
     text-align: center;
     border-radius: 0.25rem;
-    padding: 0.55rem 2rem;
-}
-.menu-item {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    color: #fff;
+    padding: 0.20rem 2rem;
+    
 }

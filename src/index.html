@@ -13,31 +13,38 @@
 
   <body>
     <header class="container-ram">
-      
+      <img src="img/ramlogo.jpg" alt="logo RAM" id="img-logo">
+
       <nav class="container-nav">
-        <select id="btn-nav">  
-        <a href="index.html" class="menu-item">Genêro</a>
-          <option selected disabled value="">Genêro</option>
-          <option value="az" id="az">A - Z</option>
-          <option value="za" id="za">Z - A</option>
-        </select>
-        <select id="btn-nav">
-          <a href="about.html" class="menu-item">Espécie</a>
-          <option selected disabled value="">Espécie</option>
-          <option value="az" id="az"> A - Z</option>
-          <option value="za" id="za"> Z - A</option>
-        </select>
-        <select id="btn-nav">
-          <a href="contact.html" class="menu-item">Status</a>
-          <option selected disabled value="">Status</option>
-          <option value="az" id="az"> A - Z</option>
-          <option value="za" id="za"> Z - A</option>
-        </select>
+        <button class="inicio" type="button">Início</button>
+        <button class="sobre" type="button">Sobre</button>
       </nav>
+      <div class="seletores">
+      <select class="btn">  
+        <option selected disabled value="">Genêro</option>
+        <option value="Male">Macho</option>
+        <option value="Female">Fêmea</option>
+        <option value="unknown">Indefinido</option>
+      </select>
+      <select class="btn">
+        <option selected disabled value="">Espécie</option>
+        <option value="Human"> Humano</option>
+        <option value="Humanoid"> Humanóide</option>
+        <option value="Alien"> Alien</option>
+        <option value="Animal"> Animal</option>
+      </select>
+      <select class="btn">
+        <option selected disabled value="">Status</option>
+        <option value="Alive"> Vivo</option>
+        <option value="Dead"> Morto</option>
+        <option value="unknown"> Indefinido</option>
+      </select>
+      
       <section class="container-pesquisa">
       <span>
-      <input class="pesquisar" type="text" placeholder=" ">  <button class="buscar" id="Buscar">Buscar</button>
+      <input class="pesquisar" type="text" placeholder="Pesquise por ... ">  <button class="buscar" id="Buscar">Buscar</button>
       </span>
+    </div>
       </section>
 
     </header>
