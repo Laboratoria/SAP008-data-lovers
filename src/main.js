@@ -1,16 +1,34 @@
-import { printCards, filterData } from './data.js';
-// import data from './data/lol/lol.js';
+import { example } from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
-const arrayRickmorty= data.rickandmorty;
+console.log(example, data);
 
-//Chamando a função printCards quando recarregar a página
-window.addEventListener("load", printCards(arrayRickmorty));
+// CRIAR CONST COM TODOS OS DADOS DOS PERSONAGENS: 
 
-//Acessando somente as species nos dados do rickandmorty.js
-const especies= arrayRickmorty.map(({ species }) => species)
-console.log(especies);
+const rickandmorty = data.results;
 
-let filtroEspecie= document.querySelector("#especie");
-filtroEspecie.addEventListener("click",filterData(arrayRickmorty));
+console.log(rickandmorty)
+
+// PRINTAR TODOS OS CARDS NA TELA:
+
+const exibir = rickandmorty.map(({name})=> name)
+
+document.getElementById("teste").innerHTML = exibir
+
+
+//window.addEventListener("load",printarcards())
+
+//function printarcards {
+
+ //   }
+    
+
+
+// SELECIONAR OPCÃO DE ESPÉCIE:
+
+//let filtroEspecie = document.querySelector("#especie").value
+
+//filtroEspecie.addEventListener("click",function())
+
+//switch

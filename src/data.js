@@ -7,3 +7,5 @@ export const printCards = (arrayRickmorty) => {
 export const filterData = () => {
   return 'OMG';
 };
+
+//function selecaoEspecie (especie)
