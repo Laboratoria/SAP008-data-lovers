@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,46 @@
     <title>Personagens</title>
     <link rel="stylesheet" href="characters.css" />
 </head>
+
 <body>
+
+    <header>
+        <img src="./img/studioghibli.jpg" alt="logo studio ghibli">
+    </header>
+
     <nav>
-      <button id="OrderAz" class="btn">Ordenar A - Z</button>
-      <button id="OrderZa" class="btn">Ordenar Z - A</button>
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <img src="./img/search5.png" id="btnBusca" alt="Buscar" />
+        </div>
+        <ul class="navMenu">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./movies.html">Filmes</a></li>
+            <li><a href="./characters.html">Personagens</a></li>
+        </ul>
     </nav>
+
+    <section class="filterCharacters">
+
+        <div class="filterDiv">
+            <label for="orderBtn" class="filterLabel">ORDENAR</label>
+        </div>
+
+        <select class="dropDownMenu" name="order" id="order">
+
+            <optgroup label="Ordem Alfabética">
+                <option value="ascending" class="title">A -> Z</option>
+                <option value="descending" class="title">Z -> A</option>
+            </optgroup>
+
+            <optgroup label="Gênero">
+                <option value="female" class="gender">Feminino</option>
+                <option value="male" class="gender">Masculino</option>
+            </optgroup>
+
+        </select>
+
+    </section>
 
     <script src="characters.js" type="module"></script>
 </body>
