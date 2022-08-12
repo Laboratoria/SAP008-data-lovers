@@ -6,9 +6,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Teste!
-      <p>Olá!</p>
+    <header>
+      <img id="title" src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/rick_and_morty_header.png?raw=true" alt="logo Rick and Morty">
+      <p>Rick and Morty traz as vivências do cientista Rick e seu neto, <br>Morty, nas infinitas possibilidades que o universo permite.<br>
+        Abordando relacionamentos, moralidade, filosofia, sociologia e<br>ciência, diversos personagens são apresentados e, aqui, você<br>
+        pode procurar e saber um pouco mais sobre cada um.</p>
     </header>
+
+    <nav>
+      <textarea id="key-words" placeholder="Palavras-chave"></textarea>
+      <button id="filter">FILTRAR</button>
+      <button id="search">BUSCAR</button>
+      <section id="filter-box">
+
+        <div id="status" class="filter-option">
+          <label for="status">Status:</label>
+
+          <input type="radio" id="alive" class="radio-filter">
+          <label for="alive">vivo</label>
+          <input type="radio" id="dead" class="radio-filter">
+          <label for="dead">morto</label>
+        </div>
+        
+        <div id="gender" class="filter-option">
+          <label for="gender">Gênero:</label>
+
+          <input type="radio" id="female" class="radio-filter">
+          <label for="female">feminino</label>
+          <input type="radio" id="male" class="radio-filter">
+          <label for="male">masculino</label>
+        </div>
+
+        <div id="species" class="filter-option">
+          <label for="species">Espécie:</label>
+
+          <input type="radio" id="human" class="radio-filter">
+          <label for="human">humano</label>
+          <input type="radio" id="non-human" class="radio-filter">
+          <label for="non-human">não humano</label>
+        </div>
+
+      </section>
+    </nav>
+
+    <footer>Developed by Érica Lopes e Isabela Nunes</footer>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
