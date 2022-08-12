@@ -1,15 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;    
+    box-sizing: border-box;    
 }
 
 body {
     background-image: url('https://github.com/GabriellaViroli/SAP008-data-lovers/blob/css/src/Images/Fundo%20imagem.png?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    padding: 0;
 }
 
 .header {
@@ -20,33 +18,55 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #700505;
-    padding: 90px 50px;
+    padding: 50px 30px;
+}
+
+.search-bar {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 71vw;
+    border-radius: 5px;
+    border-color: #700505;
+    padding: 10px 5px;
+}
+
+.search-icon {
+    color: #193833;
+    width: 35px;
+    height: 40px;
+    margin-inline: 3px;
+    background-color: #DC9F03;
+    border-radius: 5px;
+    border-color: #DC9F03;
+
 }
 
 .menu-btns {
-    left: 73%;
+    left: 69%;
     position: relative;
     margin-inline: 10px;
     margin-top: auto;
-    flex-wrap: wrap;
-    padding: 10px 15px;
-    border-color: #193833;
+    padding: 15px 15px;
+    border-color:#DC9F03;
     border-width: 2px;
-    border-radius: 8px;
+    border-radius: 18px;
     font-family: 'Harry Potter';
     font-weight: lighter;
-    font-size: 25px;
-    text-shadow: 2px 1px #1616162e;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 3px 1px #1616162e;
     background-color: #DC9F03;
     color: #193833;
 }
 
-.menu-btns:hover {
+.menu-btns:hover, .search-icon:hover {
     transition: 0.5s;
     cursor: pointer;
     background-color: #0b1c19;
+    border-color: #0b1c19;
     color: white;
-    text-shadow: 2px 1px #1616162e;
     text-shadow: 2px 1px #1616162e;
 
   }
@@ -55,7 +75,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 200px;
+    margin-top: 190px;
 }
 
 .welcome {
@@ -64,16 +84,14 @@ body {
     background-color: #dc9f03e0;
     color: white;
     display: block;
-    width: 25%;
+    width: 30%;
     position: relative;
-    margin: auto;
-    padding: 40px 30px;
+    padding: 50px 30px;
     border-radius: 80px;
 }
 
 h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     font-size: 51px;
     font-weight: 150;
     font-family: 'Harry Potter';
@@ -82,28 +100,31 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 24px;
 }
 
 p {
-    margin-bottom: 10px;
     font-size: 18px;
 }
 
 .footer {
     position: static;
     display: flex;
+    align-content: space-around;
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 92%;
-    width: 100%;
+    top: 91%;
+    width: 100vw;
+    text-shadow: 3px 2px #1616162e;
     background-color: #700505;
-    margin-bottom: 0px;
-    padding: 30px 0px;
-
+    padding: 23px;
+    color: white;
 }
-/*background-color: #DC9F03;
-    color: #193833;
 
+.github-logo {
+    margin-top: -10px;
+    margin-left: 550%;
+    shape-outside: margin-box;
+}
