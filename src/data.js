@@ -1,15 +1,11 @@
-import pokemon from "./data/pokemon/pokemon.js";
-import data from "./data/pokemon/pokemon.js";
+export {printCards, selectNameAz, selectNameZa}
 
-const result = document.getElementById("result");
-export const searchName = document.getElementById("findPokemon");
-export const selectType = document.getElementById("pokeType");
-export const selectRarity = document.getElementById("rarity");
-export const spanClose = document.querySelector("#close")
 
-export function printCards() {
-  let pokemons = filterPokemon()
-  result.innerHTML = pokemons.map((item) => {
+
+ function printCards(data, rarity, type, name) {
+
+  let pokemons = filterPokemon(data, rarity, type, name)
+   return pokemons.map((item) => {
     return `<div class="container_item">
              <div class="boxImg">
             <p class="pokeNumber">${item.num}</p>
@@ -28,41 +24,52 @@ export function printCards() {
     .join('')
 }
 
-printCards()
 
-export function filterPokemon() {
+
+
+function filterPokemon(data, rarity, type, name) {
 
   const pokemonData = data.pokemon.filter((pokemon) => {
 
-    if (selectRarity.value != "") {
-      if (!pokemon['pokemon-rarity'].includes(selectRarity.value)) {
+    if (rarity != "") {
+      if (!pokemon['pokemon-rarity'].includes(rarity)) {
         return false
       }
     }
-    if (selectType.value != "") {
-      if (!pokemon.type.includes(selectType.value)) {
+    if (type != "") {
+      if (!pokemon.type.includes(type)) {
         return false
       }
     }
-    if (searchName.value != "") {
-      if (!pokemon.name.includes(searchName.value)) {
+    if (name != "") {
+      if (!pokemon.name.includes(name)) {
         return false
       }
     }
+    
     return true
   });
   return pokemonData
 
 }
-printCards();
 
-selectRarity.addEventListener("change", printCards)
-selectType.addEventListener("change", printCards)
-searchName.addEventListener("keypress", printCards)
+const orderName = (a, b) => {
+    if (a.name > b.name) {
+      return 1;
+    } if (a.name < b.name) {
+      return -1;
+    }
+    return 0
+  };
 
-spanClose.addEventListener("click", hideModal);
+    const selectNameAz = (pokemon) => {
+    return pokemon.sort(orderName);
+  }
+  
+    const selectNameZa = (pokemon) => {
+    return pokemon.sort(orderName).reverse();
+  };
 
-export function hideModal() {
-  const modalElement = document.getElementById('modal');
-  modalElement.classList.remove('show-modal');
-}
+
+
+
