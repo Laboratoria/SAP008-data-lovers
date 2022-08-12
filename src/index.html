@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ghibli Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <header>
-        <img src="./img/studioghibli.jpg" alt="logo studio ghibli">
-      </header>
-      <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root">
+    <header>
+      <img src="./img/studioghibli.jpg" alt="logo studio ghibli">
+    </header>
+    <nav>
+      <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="./img/search5.png" id="btnBusca" alt="Buscar"/>
+      </div>
+        <ul class="navMenu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./movies.html">Filmes</a></li>
+          <li><a href="./characters.html">Personagens</a></li>
+        </ul>
+    </nav>
 
-        <div id="divBusca">
-          <input type="text" id="txtBusca" placeholder="Buscar..."/>
-          <img src="./img/search5.png" id="btnBusca" alt="Buscar"/>
-        </div>
-      </nav>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
 
-
-
-
-
-
-
-    </div>
-    <script src="main.js" type="module"></script>
-  </body>
 </html>
