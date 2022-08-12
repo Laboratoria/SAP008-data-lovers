@@ -15,9 +15,19 @@ const filterBox = document.querySelector('#filter-box');
 filterBox.hidden = true;
 buttonFilter.addEventListener ('click', () => {
     filterBox.hidden = false;
-
-    
 })
+
+// const radioFilterInputs = document.querySelectorAll('input[type="radio"]');
+// for (let i = 0, l = radioFilterInputs.length; i < l; i++){
+//   radioFilterInputs[i].checked = false;
+// }
+
+// const radioFiltersCheckUncheck = document.getElementByClassName('radio-filter');
+  
+// radioFiltersCheckUncheck.addEventListener ('click', () => {
+//     radioFiltersCheckUncheck.checked = false;
+//     radioFiltersCheckUncheck.innerHTML = "Unchecked";
+// })
 
 //console.log(example, data);
 
