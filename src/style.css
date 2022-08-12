@@ -16,7 +16,7 @@ body {
     width: 100vw;
     padding: 12vh;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
-    background-position-x: 80px;
+    background-position-x: 150px;
     background-position-y: 12px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
     width: 150px;
     height: 20px;
     top: 25px;
-    left: 43%;
+    left: 45%;
     border-radius: 5px;
     border-color: #700505;
     padding: 10px 5px;
@@ -40,11 +40,10 @@ body {
     width: 20px;
     height: 20px;
     top: 25px;
-    left: 43%;
+    left: 45%;
     background-color: #DC9F03;
     border-radius: 5px;
     border-color: #DC9F03;
-
 }
 
 .menu-btns {
@@ -71,8 +70,7 @@ body {
     border-color: #0b1c19;
     color: white;
     text-shadow: 2px 1px #1616162e;
-
-  }
+}
 
 .main-div {
     display: flex;
@@ -90,7 +88,7 @@ body {
     color: white;
     width: 45vw;
     height: 35vh;
-    padding: 10px;
+    padding: 18px;
     border-radius: 80px;
 }
 
@@ -131,15 +129,15 @@ body {
 .footer h3 {
     font-family: 'Harry Potter';
     font-weight: 100;
-    font-size: 10px;
-    margin-top: 5px;
-    margin-bottom: 8px;
+    font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     text-shadow: 3px 2px #1616162e;
     color: white;
-
 }
+
 .footer h4, h5 {
-    font-size: 8px;
+    font-size: 9px;
     font-weight: light;
     color: black;
 }
