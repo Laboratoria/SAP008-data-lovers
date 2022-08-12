@@ -12,14 +12,18 @@
   </head>
 
   <body>
-    <header class="container-ram">
-      <img src="img/ramlogo.jpg" alt="logo RAM" id="img-logo">
+    <header class="container-header">
 
-      <nav class="container-nav">
-        <button class="inicio" type="button">Início</button>
-        <button class="sobre" type="button">Sobre</button>
-      </nav>
-      <div class="seletores">
+      <!-- <div class="imagem-title"><img src="./img/titulose.png" width="300px"></div> -->
+    
+
+        <button class="inicio btn-header" type="button" style="width: 10rem; height: 2rem">C-137</button>
+        <button class="inicio btn-header" type="button" style="width: 10rem; height: 2rem">More</button>
+        <button class="inicio btn-header" type="button" style="width: 10rem; height: 2rem">Multiverso</button>
+    </header>
+
+      <section class="seletores">
+
       <select class="btn">  
         <option selected disabled value="">Genêro</option>
         <option value="Male">Macho</option>
@@ -39,15 +43,12 @@
         <option value="Dead"> Morto</option>
         <option value="unknown"> Indefinido</option>
       </select>
+    </section>
       
-      <section class="container-pesquisa">
-      <span>
-      <input class="pesquisar" type="text" placeholder="Pesquise por ... ">  <button class="buscar" id="Buscar">Buscar</button>
+      <span class="container-pesquisa">
+        <input class="pesquisar" type="text" placeholder="Pesquise por ... ">  <button class="buscar" id="Buscar">Buscar</button>
       </span>
-    </div>
-      </section>
 
-    </header>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

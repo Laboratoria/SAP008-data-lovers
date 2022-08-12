@@ -5,37 +5,57 @@ html body {
     background-size: cover;
 }
 
-.container-ram {
-    align-items: center;
-    background-color: #000;
+.container-header {
+    background-color:transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     height: 5rem;
     font-family: "Patua One";
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
-#img-logo{
+/* .container-header, imagem-title {
     float: none;
-    height: 2rem;
-    width: 8rem;
-    margin-top: 2rem;
-}
+    align-items: flex-start;
+    justify-content: left;
+} */
+/* 
 .container-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     
-}
-.inicio{
+} */
+.inicio {
     background-color: black;
-    font-size: "Patua One";
+    font-size: "Patua One" 10px;
     color: white;
-}
-.sobre{
-    background-color: black;
-    font-size: "Patua One";
-    color: white;
+    justify-content: center;
+    box-shadow:0 5px 0 #000000;
+    cursor: pointer;
+    text-transform: uppercase;
+
 }
 
-.seletores{
+.btn-header {
+    background:rgb(0, 0, 0);
+    color:#fff;
+    box-shadow:0 5px 0 #83016d;
+  }
+  .btn-green:hover {
+    background:rgb(190, 6, 190);
+    box-shadow:0 5px 0 #83016d;
+  }
+
+.btn-header:active {
+    position:relative;
+    top:5px;
+    box-shadow:none;
+  }
+
+.seletores {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -56,7 +76,7 @@ html body {
 .container-pesquisa{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;   
+    margin-top: 2rem;   
 }
 
 .buscar{
