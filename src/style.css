@@ -56,6 +56,16 @@ a {
   color: rgb(107, 102, 102);
 }
 
+.orderBy {
+  height: 50px;
+  width: 105px;
+  border-radius: 5px;
+  border: 1px solid rgb(125, 198, 209);
+  font-size: 14px;
+  color: rgb(107, 102, 102);
+  text-align: center;
+}
+
 #pokeType {
   height: 50px;
   width: 95px;

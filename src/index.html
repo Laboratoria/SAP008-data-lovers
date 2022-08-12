@@ -26,6 +26,12 @@
     <div class="find-pokemons">
       <input type="search" id="findPokemon" name="fpokemon" placeholder='Digite o nome do Pokemon'>
 
+      <select class="orderBy" id="order">
+        <option disabled selected value="">Ordenar por:</option>
+        <option value="nome-crescente"> A - Z </option> 
+        <option value="nome-decrescente"> Z - A </option>
+      </select>
+
       <select className="type" id="pokeType">
         <option disabled selected value="">Tipo</option>
         <option value="bug">Bug</option>
