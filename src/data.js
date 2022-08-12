@@ -1,6 +1,23 @@
-import data from "./data/rickandmorty/rickandmorty.js";
+/*import data from "./data/rickandmorty/rickandmorty.js";
 
-export const example = {displayChars};
+export consts = {displayResults};
+
+
+function displayResults() {
+
+    let resultado = '';
+    let todosOsDados = data.results;
+
+    for (let i = 0; i < todosOsDados.length; i++) {
+        const resultsList = todosOsDados[i];
+        resultado = resultado + resultsList
+        
+    }
+    
+    return resultado
+    
+}*/
+
 
 
 

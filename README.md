@@ -1,3 +1,25 @@
+function allCards(data) {
+    document.querySelector(".result").innerHTML = data.map(
+        (dado) => `
+  
+          <li class="cards">
+            <img class= "img-card" src="${dado.image}" alt="cards"></img>
+            <h1 class="card-name">${dado.name}</h1>
+            <ul class="info-list">
+              <li>Status: ${dado.status}</li>
+              <li>Gênero: ${dado.gender}</li>
+              <li>Espécie: ${dado.species}</li>
+              <li>Origem: ${dado.origin.name}</li>
+            </ul>
+          </li>
+        `
+      )
+      .join(" ")
+  }
+  
+  allCards(data.results);
+
+
 # Data Lovers
 
 ## Índice

@@ -14,10 +14,15 @@ body {
     background-image: url(background.jpg) ;    
 }
 
-#box-container {
+.catalogue {
     width: 80%;
     height: 80%;
     background-color: #00B5CC;
     margin: 20px 30px;
     padding: 30px;
+}
+
+.poster {
+    background-color: white;
+    border-radius: ;
 }
