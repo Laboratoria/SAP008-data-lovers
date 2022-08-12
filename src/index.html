@@ -26,28 +26,32 @@
 
       <select class="btn">  
         <option selected disabled value="">Genêro</option>
-        <option value="Male">Macho</option>
-        <option value="Female">Fêmea</option>
-        <option value="unknown">Indefinido</option>
+        <option id="gender" value="Male">Macho</option>
+        <option  id="gender"value="Female">Fêmea</option>
+        <option id="gender" value="unknown">Indefinido</option>
       </select>
       <select class="btn">
         <option selected disabled value="">Espécie</option>
-        <option value="Human"> Humano</option>
-        <option value="Humanoid"> Humanóide</option>
-        <option value="Alien"> Alien</option>
-        <option value="Animal"> Animal</option>
+        <option id="specie" value="Human"> Humano</option>
+        <option id="specie" value="Humanoid"> Humanóide</option>
+        <option id="specie" value="Alien"> Alien</option>
+        <option id="specie" value="Animal"> Animal</option>
       </select>
       <select class="btn">
         <option selected disabled value="">Status</option>
-        <option value="Alive"> Vivo</option>
-        <option value="Dead"> Morto</option>
-        <option value="unknown"> Indefinido</option>
+        <option id="status" value="Alive"> Vivo</option>
+        <option id="status" value="Dead"> Morto</option>
+        <option id="status" value="unknown"> Indefinido</option>
       </select>
     </section>
       
       <span class="container-pesquisa">
         <input class="pesquisar" type="text" placeholder="Pesquise por ... ">  <button class="buscar" id="Buscar">Buscar</button>
       </span>
+      
+      <main class="scroll">
+        <div id="read"></div>
+      </main>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
