@@ -1,25 +1,19 @@
-// import { example } from './data.js';
+import { ghibli } from './data.js';
 import data from './data/ghibli/ghibli.js';
 // console.log(data);
 
 const films = data.films;
 const catalogue = document.querySelector('.catalogue');
 
-function addTela (filmsList) {
-  const arrayFilms = filmsList.map(function (film) {
-    const template = `
-    <div class="poster">
-      <img class="poster-img" src="${film.poster}" alt="${film.title}" name="${film.title}" >
-      <h7>${film.title}</h7><br>
-      <h7>${film.duration}min, Score ${film.rt_score}, ${film.release_date}</h7>
-    </div>
-    `;
-    return template; 
-  }); 
-  // console.log (filme);
-  catalogue.innerHTML = arrayFilms.join("");
+
+function cartoes {
+  let cards = ghibli.addTela(films);
+  catalogue.innerHTML = cards;
 }
-addTela (films);
+
+// addTela (films);
+
+
 
 const filterDuration = document.querySelector('#filter-duration');
 filterDuration.addEventListener ('change', selectedDuration);
