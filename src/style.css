@@ -3,6 +3,15 @@
     src: url('k2d-v9-latin-regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Atma';
+    src: url('Atma-Bold.tff');
+    src: url('Atma-Light.tff');
+    src: url('Atma-Medium.tff');
+    src: url('Atma-Regular.tff');
+    src: url('Atma-SemiBold.tff'); 
+}
+
 body {
     background-image: url('https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/bg_img_galaxy.jpg?raw=true');
     background-size: contain;
@@ -25,6 +34,22 @@ p {
     resize: none;
     width: 500px;
     height: 44px;
+}
+
+#filter {
+    font-family: 'Atma';
+    font-size: 22px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #73D8CC;
+}
+
+#search {
+    font-family: 'Atma';
+    font-size: 22px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #78C742;
 }
 
 .filter-option {
