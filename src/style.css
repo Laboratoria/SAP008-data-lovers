@@ -16,8 +16,8 @@ body {
     width: 100vw;
     padding: 12vh;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
-    background-position-x: 150px;
-    background-position-y: 12px;
+    background-position-x: 9em;
+    background-position-y: 1em;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #700505;
@@ -25,41 +25,41 @@ body {
 
 .search-bar {
     position: relative;
-    width: 150px;
-    height: 20px;
-    top: 25px;
-    left: 45%;
-    border-radius: 5px;
+    width: 12em;
+    height: 2em;
+    top: 2em;
+    left: 43%;
+    border-radius: 1em;
     border-color: #700505;
-    padding: 10px 5px;
+    padding: 1em;
 }
 
 .search-icon {
     position: relative;
     color: #193833;
-    width: 20px;
-    height: 20px;
-    top: 25px;
-    left: 45%;
+    width: 2em;
+    height: 2em;
+    top: 2em;
+    left: 43%;
     background-color: #DC9F03;
-    border-radius: 5px;
+    border-radius: 3em;
     border-color: #DC9F03;
 }
 
 .menu-btns {
     left: 66%;
     position: relative;
-    margin-inline: 10px;
-    top: -40px;
-    padding: 8px 15px;
+    margin-inline: 1em;
+    top: -3em;
+    padding: 1%;
     border-color:#DC9F03;
-    border-width: 2px;
-    border-radius: 18px;
+    border-width: 1%;
+    border-radius: 1em;
     font-family: 'Harry Potter';
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
-    text-shadow: 3px 1px #1616162e;
+    text-shadow: 2px 1px #1616162e;
     background-color: #DC9F03;
     color: #193833;
 }
@@ -86,15 +86,15 @@ body {
     text-align: center;
     background-color: #dc9f03e0;
     color: white;
-    width: 45vw;
-    height: 35vh;
-    padding: 18px;
-    border-radius: 80px;
+    width: 43vw;
+    height: 32vh;
+    padding: 2em;
+    border-radius: 5em;
 }
 
 .welcome h1 {
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-bottom: 1em;
+    font-size: 25px;
     font-weight: 150;
     font-family: 'Harry Potter';
     color: #193833;
@@ -102,12 +102,12 @@ body {
 }
 
 .welcome h2 {
-    margin-bottom: 30px;
-    font-size: 20px;
+    margin-bottom: 2em;
+    font-size: 16px;
 }
 
 .welcome p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .footer {
@@ -116,7 +116,7 @@ body {
     right: 0;
     bottom: 1;
     top: 89vh;
-    padding-top: 2px;
+    padding: 1em;
     height: 12vh;
     width: 100vw;
     align-items: center;
@@ -130,8 +130,6 @@ body {
     font-family: 'Harry Potter';
     font-weight: 100;
     font-size: 13px;
-    margin-top: 2px;
-    margin-bottom: 2px;
     text-shadow: 3px 2px #1616162e;
     color: white;
 }
