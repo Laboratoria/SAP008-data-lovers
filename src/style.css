@@ -87,14 +87,14 @@ body {
     background-color: #dc9f03e0;
     color: white;
     width: 43vw;
-    height: 32vh;
+    height: 35vh;
     padding: 2em;
     border-radius: 5em;
 }
 
 .welcome h1 {
     margin-bottom: 1em;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 150;
     font-family: 'Harry Potter';
     color: #193833;
@@ -103,11 +103,11 @@ body {
 
 .welcome h2 {
     margin-bottom: 2em;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .welcome p {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .footer {
@@ -129,7 +129,7 @@ body {
 .footer h3 {
     font-family: 'Harry Potter';
     font-weight: 100;
-    font-size: 13px;
+    font-size: 1rem;
     text-shadow: 3px 2px #1616162e;
     color: white;
 }
