@@ -47,10 +47,15 @@ A fim de definir a aplicação, a partir das histórias de usuário, obtem-se a 
 ### Prototipagem
 O layout conta o `<h1>` "Rick and Morty" como título, uma `textarea` de valor "Palavras-chave", um `input` de valor "Filtros" que abre uma seção com `radio buttons` com as seleções Status (vivo/morto), Gênero (feminino/masculino) e Espécie (humano/não humano). O resultado segue abaixo:
   - Baixa fidelidade
+  
   ![baixa_fidelidade_web](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/prototype/low_web.gif) 
+  
   ![baixa_fidelidade_mobile](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/prototype/low_mobile.gif)
+  
   - Alta fidelidade
+  
   ![alta_fidelidade_web](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/prototype/high_web.gif)
+  
   ![alta_fidelidade_mobile](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/prototype/high_mobile.gif)
 ### Paleta de cores e imagens externas
 

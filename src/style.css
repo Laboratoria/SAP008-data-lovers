@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'K2D';
+    src: url('k2d-v9-latin-regular.ttf') format('truetype');
+}
+
+body {
+    background-image: url('https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/bg_img_galaxy.jpg?raw=true');
+    background-size: contain;
+}
+
+#title {
+   display: flex;
+   max-width: 578px;
+   max-height: 245px;
+}
+
+p {
+    text-align: center;
+    font-family: 'K2D';
+    font-size: 18px;
+    color: white;
+}
+
+#key-words {
+    resize: none;
+    width: 500px;
+    height: 44px;
+}
+
+.filter-option {
+    color: white;
+}
+
+footer {
+    color: white;
+}
