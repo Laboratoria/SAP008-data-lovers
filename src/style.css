@@ -12,31 +12,35 @@ body {
 
 .header {
     position: static;
+    height: 26vh;
+    width: 100vw;
+    padding: 12vh;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
-    background-position-x: 130px;
-    background-position-y: 15px;
+    background-position-x: 80px;
+    background-position-y: 12px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #700505;
-    padding: 50px 30px;
 }
 
 .search-bar {
     position: relative;
-    width: 300px;
-    height: 40px;
-    margin-top: 30px;
-    margin-left: 71vw;
+    width: 150px;
+    height: 20px;
+    top: 25px;
+    left: 43%;
     border-radius: 5px;
     border-color: #700505;
     padding: 10px 5px;
 }
 
 .search-icon {
+    position: relative;
     color: #193833;
-    width: 35px;
-    height: 40px;
-    margin-inline: 3px;
+    width: 20px;
+    height: 20px;
+    top: 25px;
+    left: 43%;
     background-color: #DC9F03;
     border-radius: 5px;
     border-color: #DC9F03;
@@ -44,17 +48,17 @@ body {
 }
 
 .menu-btns {
-    left: 69%;
+    left: 66%;
     position: relative;
     margin-inline: 10px;
-    margin-top: auto;
-    padding: 15px 15px;
+    top: -40px;
+    padding: 8px 15px;
     border-color:#DC9F03;
     border-width: 2px;
     border-radius: 18px;
     font-family: 'Harry Potter';
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 15px;
     text-align: center;
     text-shadow: 3px 1px #1616162e;
     background-color: #DC9F03;
@@ -62,7 +66,6 @@ body {
 }
 
 .menu-btns:hover, .search-icon:hover {
-    transition: 0.5s;
     cursor: pointer;
     background-color: #0b1c19;
     border-color: #0b1c19;
@@ -75,56 +78,72 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 190px;
 }
 
 .welcome {
-    display: flex;
+    position: relative;
+    flex-direction: row;
+    display: block;
+    margin-top: 15vh;
     text-align: center;
     background-color: #dc9f03e0;
     color: white;
-    display: block;
-    width: 30%;
-    position: relative;
-    padding: 50px 30px;
+    width: 45vw;
+    height: 35vh;
+    padding: 10px;
     border-radius: 80px;
 }
 
-h1 {
-    margin-bottom: 50px;
-    font-size: 51px;
+.welcome h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
     font-weight: 150;
     font-family: 'Harry Potter';
     color: #193833;
     text-shadow: 3px 3px #1616162e;
 }
 
-h2 {
-    margin-bottom: 50px;
-    font-size: 24px;
+.welcome h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
-p {
-    font-size: 18px;
+.welcome p {
+    font-size: 16px;
 }
 
 .footer {
-    position: static;
-    display: flex;
-    align-content: space-around;
-    text-align: center;
-    justify-content: center;
     position: absolute;
-    top: 91%;
+    left: 0;
+    right: 0;
+    bottom: 1;
+    top: 89vh;
+    padding-top: 2px;
+    height: 12vh;
     width: 100vw;
-    text-shadow: 3px 2px #1616162e;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #700505;
-    padding: 23px;
-    color: white;
 }
 
-.github-logo {
-    margin-top: -10px;
-    margin-left: 550%;
-    shape-outside: margin-box;
+.footer h3 {
+    font-family: 'Harry Potter';
+    font-weight: 100;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    text-shadow: 3px 2px #1616162e;
+    color: white;
+
+}
+.footer h4, h5 {
+    font-size: 8px;
+    font-weight: light;
+    color: black;
+}
+
+.footer a {
+    color: rgb(24, 24, 24);
 }
