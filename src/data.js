@@ -3,34 +3,34 @@ import data from "./data/harrypotter/data.js";
 export const mainFilters = {displayChars, displayBooks, displaySpells};
 
 function displayChars() {
-  let charactersResult = '';
+  let charactersResult = [];
   let allCharacters = data.characters;
 
   for(let i = 0; i < allCharacters.length; i++){
     let charactersList = allCharacters[i].name;
-    charactersResult += charactersList
+    charactersResult.push(charactersList);
   }
   return charactersResult
 }
 
 function displayBooks() {
-  let booksResult = '';
+  let booksResult = [];
   let allBooks = data.books;
 
   for(let i = 0; i < allBooks.length; i++){
     let booksList = allBooks[i].title;
-    booksResult += booksList
+    booksResult.push(booksList);
   }
   return booksResult
 }
 
 function displaySpells(){
-  let spellsResult = '';
+  let spellsResult = [];
   let allSpells = data.spells;
 
   for(let i = 0; i < allSpells.length; i++){
     let spellsList = allSpells[i].name;
-    spellsResult += spellsList
+    spellsResult.push(spellsList);
   }
   return spellsResult
 }

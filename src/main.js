@@ -4,11 +4,16 @@ const btnCharacters = document.getElementById('btn-characters');
 
 btnCharacters.addEventListener('click',
 function displayCharsResult(){
-    const characters = mainFilters.displayChars();
+    let characters = mainFilters.displayChars();
+    let charactersFormatted = characters.map((name) => {
+        return `<li><a href='?${name}'> ${name} </a></li>`
+    })
+    
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('characters-list').style.display = 'block';
     const charactersResult = document.getElementById('characters-list');
-    return charactersResult.innerHTML = characters;
+    return charactersResult.innerHTML = charactersFormatted;
+
 })
 
 const btnBooks = document.getElementById('btn-books');
