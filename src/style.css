@@ -1,0 +1,71 @@
+html body {
+    width: 100%;
+    margin: 0;    
+    background-image: url(./img/espaco.jpg);
+    background-size: cover;
+}
+
+.container-ram {
+    align-items: center;
+    background-color: #000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 5rem;
+    font-family: "Patua One";
+}
+#img-logo{
+    float: none;
+    height: 2rem;
+    width: 8rem;
+    margin-top: 2rem;
+}
+.container-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+.inicio{
+    background-color: black;
+    font-size: "Patua One";
+    color: white;
+}
+.sobre{
+    background-color: black;
+    font-size: "Patua One";
+    color: white;
+}
+
+.seletores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btn{
+    width: 13rem;
+    height: 2rem;
+    justify-content: space-around;
+    background-color: rgb(80, 49, 70);
+    font-family: "Patua One";
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.container-pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;   
+}
+
+.buscar{
+    background-color: rgb(80, 49, 70);
+    font-family: "Patua One";
+    color: white;
+    border: 0;
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0.20rem 2rem;
+    
+}

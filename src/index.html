@@ -2,10 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Set Rick and Morty</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
   </head>
+
   <body>
+    <header class="container-ram">
+      <img src="img/ramlogo.jpg" alt="logo RAM" id="img-logo">
+
+      <nav class="container-nav">
+        <button class="inicio" type="button">Início</button>
+        <button class="sobre" type="button">Sobre</button>
+      </nav>
+      <div class="seletores">
+      <select class="btn">  
+        <option selected disabled value="">Genêro</option>
+        <option value="Male">Macho</option>
+        <option value="Female">Fêmea</option>
+        <option value="unknown">Indefinido</option>
+      </select>
+      <select class="btn">
+        <option selected disabled value="">Espécie</option>
+        <option value="Human"> Humano</option>
+        <option value="Humanoid"> Humanóide</option>
+        <option value="Alien"> Alien</option>
+        <option value="Animal"> Animal</option>
+      </select>
+      <select class="btn">
+        <option selected disabled value="">Status</option>
+        <option value="Alive"> Vivo</option>
+        <option value="Dead"> Morto</option>
+        <option value="unknown"> Indefinido</option>
+      </select>
+      
+      <section class="container-pesquisa">
+      <span>
+      <input class="pesquisar" type="text" placeholder="Pesquise por ... ">  <button class="buscar" id="Buscar">Buscar</button>
+      </span>
+    </div>
+      </section>
+
+    </header>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
