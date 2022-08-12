@@ -9,6 +9,7 @@
 
 body {
   background-color: #2485af;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 
 header {
@@ -51,35 +52,208 @@ header {
   border-radius: 10px;
   padding: 3rem 3.8rem;
   text-align: center;
+  text-shadow: 0 1.3px 1.3px #363f5f;
 }
 
 .block-one-explication {
   width: 80rem;
   height: 10rem;
   display: flex;
+  border: none;
   text-align: center;
   justify-items: center;
   background-color: #fff;
-  font-family: "Familjen Grotesk", sans-serif, bold;
+  font-weight: bold;
   color: #2e5990;
   font-size: 2rem;
   border-radius: 10px;
   padding: 2.2rem 3rem;
   margin: auto;
   margin-top: -3.5rem;
+  text-shadow: 0 1.4px 1.4px #363f5f;
 }
 
 .block-two-title {
   width: 100%;
   height: 3rem;
   background-color: #ffcc03;
-  font-family: "Familjen Grotesk", sans-serif, bold;
+  font-weight: bold;
   color: #2e5990;
   font-size: 1.5rem;
   margin-top: 7rem;
-  padding: 0.5rem 2rem;
+  text-align: center;
+  padding: 0.4rem;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+}
+
+.cards-block-two {
+  display: flex;
+  justify-content: center;
+}
+
+.search-card {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  width: 37rem;
+  height: 40rem;
+  background: #e6d69a;
+  border-radius: 10px;
+  display: flex;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+}
+
+.filter {
+  width: 9rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2e5990;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+  border-radius: 10px 0px 0px;
+}
+
+.search-field {
+  width: 29rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2e5990;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.team-card {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  width: 37rem;
+  height: 30rem;
+  background: #e6d69a;
+  border-radius: 10px;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+}
+
+.selected-team {
+  width: 37rem;
+  height: 3rem;
+  background-color: #ffcc03;
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  color: #2e5990;
+  font-size: 1.3rem;
+  padding: 0.7rem 1.5rem;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.team-button {
+  width: 14rem;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #2e5990;
+  background-color: #ffcc03;
+  border-radius: 7px;
+  margin-top: 3rem;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+}
+
+.team-generation-components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7rem;
 }
 
 .result {
   margin-top: 7rem;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #fff;
+  font-weight: bold;
+  color: #2e5990;
+  border-top: 3px solid #ffcc03;
+  border-bottom: 3px solid #ffcc03;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.8rem;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+}
+
+.cards-block-three {
+  display: flex;
+  justify-content: center;
+}
+
+.card-generation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-team-result {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  width: 37rem;
+  height: 30rem;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.best-team {
+  width: 37rem;
+  height: 3rem;
+  background-color: #2e5990;
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.information-card {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  width: 37rem;
+  height: 30rem;
+  background: #e5d69a;
+  border-radius: 10px;
+  margin-left: 7rem;
+}
+
+.reset-button {
+  width: 12rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #2e5990;
+  border-radius: 7px;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.footer {
+  font-family: "Familjen Grotesk";
+  font-weight: bold;
+  padding: 4rem 0 2rem;
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
 }
