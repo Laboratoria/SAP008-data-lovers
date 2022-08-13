@@ -16,7 +16,7 @@ select {
     border-radius: 15px;
     border: none;
     outline: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(32, 29, 3, 0.25) 0px 6px 12px -2px, rgba(3, 3, 3, 0.3) 0px 3px 7px -3px;
 
 }
 
@@ -60,16 +60,53 @@ select:hover {
     width: 13%;
     height: 4%;
     left: 60%;
-    overflow-y: hidden;
 }
 
 .statistics{
   background-color: #83D2E4; 
   position: absolute;
+  text-align: center;
+  padding: 10px;
   left: 10%;
   top: 77%;
   width: 78%;
   height: 20px;
-  text-align: center;
-  padding: 10px;
+  box-shadow: rgba(3, 59, 71, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card {
+   background: linear-gradient(#8BCF21, #ffff);
+   border-radius: 30px;   
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    color: #304B72;
+    width: 204px;
+    height: 314px;
+    left: 190px;
+    top: 580px;
+    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.rick{
+    position:relative;
+    top: 30px;
+    border-radius: 200px; 
+    padding: 10px;
+    width: 139px;
+    height: 142px;
+    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    }
+
+.baseboard{
+    position:absolute;
+    top: 1000px;
+    background-color: #83D2E4; 
+    left: 10%;
+    width: 78%;
+    height: 50px;
+    text-align: center;
+
+    padding: 10px;
+
 }
