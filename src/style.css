@@ -34,28 +34,37 @@ p {
     resize: none;
     width: 500px;
     height: 44px;
+    border-radius: 15px;
+    font-family: 'K2D';
+    font-size: 18px;
+}
+
+#filter , #search {
+    font-family: 'Atma';
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-size: 22px;
+    border-color: transparent;
+    background-color: transparent;
+    font-weight: 600;
 }
 
 #filter {
-    font-family: 'Atma';
-    font-size: 22px;
-    border-color: transparent;
-    background-color: transparent;
-    color: #73D8CC;
+    -webkit-text-stroke-color: #73D8CC;
 }
-
 #search {
-    font-family: 'Atma';
-    font-size: 22px;
-    border-color: transparent;
-    background-color: transparent;
-    color: #78C742;
+    -webkit-text-stroke-color: #78C742;
 }
 
 .filter-option {
     color: white;
     font-family: 'K2D';
+}
+
+#filter-box {
     background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 footer {
