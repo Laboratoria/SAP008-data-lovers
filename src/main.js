@@ -3,31 +3,80 @@
 //import data from './data/pokemon/rickandmorty.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-//const keyWordsTextArea = document.querySelector('key-words')
+
 const buttonFilter = document.querySelector('#filter');
-//const buttonSearch = document.querySelector('search')
-
-//const radioAlive = document.querySelector('alive')
-//const radioDead = document.querySelector('dead')
-
-
 const filterBox = document.querySelector('#filter-box');
+
+//função para exibir <section> escondida que contém os filtros
 filterBox.hidden = true;
 buttonFilter.addEventListener ('click', () => {
     filterBox.hidden = false;
 })
 
-// const radioFilterInputs = document.querySelectorAll('input[type="radio"]');
-// for (let i = 0, l = radioFilterInputs.length; i < l; i++){
-//   radioFilterInputs[i].checked = false;
-// }
 
-// const radioFiltersCheckUncheck = document.getElementByClassName('radio-filter');
-  
-// radioFiltersCheckUncheck.addEventListener ('click', () => {
-//     radioFiltersCheckUncheck.checked = false;
-//     radioFiltersCheckUncheck.innerHTML = "Unchecked";
-// })
+//variáveis para funções checked dos radio buttons
+let checked = true;
+const radioButtonAlive = document.querySelector("#alive");
+const radioButtonDead = document.querySelector("#dead");
+const radioButtonFemale = document.querySelector("#female");
+const radioButtonMale = document.querySelector("#male");
+const radioButtonHuman = document.querySelector("#human");
+const radioButtonNonHuman = document.querySelector("#non-human");
+
+//função para radio button "vivo" marcar e desmarcar
+radioButtonAlive.addEventListener ('click', () => {
+    if (checked == true){
+        checked = false
+    } else {
+        checked = true
+    }
+    radioButtonAlive.checked = checked;
+});
+//função para radio button "morto" marcar e desmarcar
+radioButtonDead.addEventListener ('click', () => {
+    if (checked == true){
+        checked = false
+    } else {
+        checked = true
+    }
+    radioButtonDead.checked = checked;
+});
+//função para radio button "feminino" marcar e desmarcar
+radioButtonFemale.addEventListener ('click', () => {
+    if (checked == true){
+        checked = false
+    } else {
+        checked = true
+    }
+    radioButtonFemale.checked = checked;
+});
+//função para radio button "masculino" marcar e desmarcar
+radioButtonMale.addEventListener ('click', () => {
+    if (checked == true){
+        checked = false
+    } else {
+        checked = true
+    }
+    radioButtonMale.checked = checked;
+});
+//função para radio button "humano" marcar e desmarcar
+radioButtonHuman.addEventListener ('click', () => {
+    if (checked == true){
+        checked = false
+    } else {
+        checked = true
+    }
+    radioButtonHuman.checked = checked;
+});
+//função para radio button "não humano" marcar e desmarcar
+radioButtonNonHuman.addEventListener ('click', () => {
+    if (checked == true){
+        checked = false
+    } else {
+        checked = true
+    }
+    radioButtonNonHuman.checked = checked;
+});
 
 //console.log(example, data);
 
