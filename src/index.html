@@ -7,45 +7,48 @@
   <title>Data Seekers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+  @import url('http://fonts.cdnfonts.com/css/harry-potter');
+</style>
+<script src="https://kit.fontawesome.com/5828f9f420.js" crossorigin="anonymous"></script>
 
 <body>
-  <header>
-    <h1>Data Seekers</h1>
-    <button type="submit" id="btn-characters" class="btn-characters">Personagens</button>
-    <button type="submit" id="btn-books" class="btn-books">Livros</button>
-    <button type="submit" id="btn-spells" class="btn-spells">Feitiços</button>
-    <input type="text" id="search-box" placeholder="Pesquisar na base de dados..." />
+  <header class="header">  
+    <button type="submit" id="btn-characters" class="menu-btns">Personagens</button>
+    <button type="submit" id="btn-books" class="menu-btns">Livros</button>
+    <button type="submit" id="btn-spells" class="menu-btns">Feitiços</button>
+    <input type="text" id="search-box" placeholder="Pesquisar..." class="search-bar"></input>
+    <button type="submit" id="search-btn" class="search-icon"><i class="fa fa-search"></i></button>
   </header>
-  <main>
-    <section id="welcome-section">
-      <!-- Aqui vamos escrever nosso codigo com as infos que vamos pegar do data.js (lista de perso, detalhes de cada um) -->
-      <h2>Bem-vinde ao Data Seeker!</h2>
-      <h3>
+ 
+  <main class="main-div">
+    <section id="welcome-section" class="welcome">
+      <h1>Bem-vinde ao Data Seeker!</h1>      
+      <h2>
         Um catálogo de referência sobre o universo dos livros da saga Harry
         Potter.
-      </h3>
-      <p>Utilize o menu superior parar encontrar informações sobre conteúdos do
-        mundo Harry Potter</p>
+      </h2>
+      <p>Utilize o menu superior parar encontrar informações sobre os <i>personagens, livros</i> e <i>feitiços</i> do mundo Harry Potter.</p>
     </section>
-    <nav id="characters-list" style="display:none"> Lista de personagens
+    <nav id="characters-list" class="list-modal" style="display:none"> Lista de personagens
       <a href="/harrypotter/"> Harry Potter </a>
       <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
     </nav>
-    <nav id="books-list" style="display:none">Lista de livros
+    <nav id="books-list" class="list-modal" style="display:none">Lista de livros
       <a href="/harrypotter/"> Harry Potter e a Pedra Filosofal </a>
     </nav>
-      <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
-    <nav id="spells-list" style="display:none"> Lista de feitiços
+    <nav id="spells-list" class="list-modal" style="display:none"> Lista de feitiços
       <a href="/harrypotter/"> Accio </a>
     </nav>
-      <!-- Criar uma função para importar esses nomes do data.js e agrupar esses links com <ul> <li> -->
-
   </main>
-
-  <footer>
-    <p>DATA SEEKER</p>
-    <p>CopyRight 2022, a Data Seekers creation</p>
+  
+  <footer class="footer">
+    <a href="https://github.com/GabriellaViroli/SAP008-data-lovers"><img class="github-logo" src="https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/826a7ab08e86e31238253d8a68859f08e7a55ad6/src/Images/GitHub%20contact%20inffo.svg" width="20" height="19"></a>
+    <h2>DATA SEEKER</h2>
+    <h3>© CopyRight 2022.</h3>
+    <p>Powered by <a href=""https://github.com/GabriellaViroli/SAP008-data-lovers">Data Seeeker.</a></p>
   </footer>
+    
   <script src="main.js" type="module"></script>
 </body>
 
