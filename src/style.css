@@ -10,7 +10,6 @@
 }
 
 .header-container {
-    background-color: #B2DF28; 
     margin: 30px;
     padding: 20px;
     display: flex;
@@ -31,7 +30,7 @@
 
 }
 
-.btn {
+.btn-option {
     margin: 10px;
     background-color: #00B5CC;
     border-radius: 20px;
@@ -39,7 +38,20 @@
     color: #0A1823;
     width: 150px;
     height: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    text-align: center;   
+}
+
+.btn-search {
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    color: #0A1823;
+    width: 150px;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    text-align: center;   
 }
 
 .main-container {    
