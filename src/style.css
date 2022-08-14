@@ -9,9 +9,23 @@
     background-image: url(background.jpg) ;    
 }
 
+.rick-img {
+    height: 250px ;
+    width: 500px;
+}
+
+.img-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding:0px;
+}
+
 .header-container {
-    margin: 30px;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -24,8 +38,8 @@
     border-radius: 20px;
     border: none;
     color: #0A1823;
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;    
 
 }
@@ -58,8 +72,8 @@
     height: 60%;
     width: 90%;
     background-color: #0A1823;
-    margin: 20px 30px;
-    padding: 30px;
+    margin: 0px 30px;
+    padding: 0px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -90,7 +104,7 @@
     width: 200px;
     margin: 20px;
     border: 5px solid #B2DF28;    
-    border-radius: 50px;
+    border-radius: 40px;
     background-color: #B2DF28;  
     display: flex;  
     flex-direction: column;
@@ -98,17 +112,17 @@
     text-align: center;
     align-items: center;
     font-size: 10pt;
+    color:#0A1823;
     
 }
 
 .poster-img {
     height: 200px;
-    width: 150px;    
+    width: 190px;    
+    border-radius: 40px;
     
 }
 
-.card-text {
-    color: white;
-}
+
 
 
