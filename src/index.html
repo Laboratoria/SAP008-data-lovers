@@ -1,94 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>PokéTeam</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <title>PokéTeam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="block-one-information">
+
     <header>
       <img class="logo" src="img/logo.png" alt="Logo PokéTeam" />
     </header>
 
-    <!-- Bloco 1 -->
-    <section>
-      <div class="block-one-elements">
-        <img
-          class="img-background"
-          src="img/background.jpg"
-          alt="Imagem com quase todos os pokémons juntos"
-        />
-        <div class="display-background">
-          <div class="over-background">
-            <img
-              class="pokebola"
-              src="img/pokébola.png"
-              alt="Pokébola saindo raios"
-            />
-            <h2>SUA BATALHA NUNCA MAIS SERÁ A MESMA!</h2>
-          </div>
-        </div>
+    <img class="banner" src="img/banner.png"
+      alt="Imagem com quase todos os pokémons juntos, com um retangulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
+
+    <h3 class="explication">
+      Aqui você pode escolher os pokémons e se preparar contra o time
+      adversário ou estar pronto para vencer sua batalha com o time ideal!
+    </h3>
+  </section>
+
+  <section class="block-two-research">
+    <h3 class="orientation">
+      FILTRE, BUSQUE E CLIQUE NOS POKÉMONS ESCOLHIDOS
+    </h3>
+
+    <div class="cards-block-two">
+      <div class="search-card">
+        <select class="filter">
+          <option value="nome">NOME</option>
+          <option value="numero" selected>NÚMERO</option>
+          <option value="tipo">TIPO</option>
+        </select>
+        <input class="search-field" type="text" placeholder="PESQUISAR" required />
       </div>
 
-      <h3 class="block-one-explication">
-        Aqui você pode escolher os pokémons e se preparar contra o time
-        adversário ou estar pronto para vencer sua batalha com o time ideal!
-      </h3>
-    </section>
-
-    <!-- Bloco 2 -->
-    <section>
-      <h3 class="block-two-title">
-        FILTRE, BUSQUE E CLIQUE NOS POKÉMONS ESCOLHIDOS
-      </h3>
-
-      <div class="cards-block-two">
-        <div class="search-card">
-          <select class="filter">
-            <option value="nome">NOME</option>
-            <option value="numero" selected>NÚMERO</option>
-            <option value="tipo">TIPO</option>
-          </select>
-
-          <input
-            class="search-field"
-            type="text"
-            placeholder="PESQUISAR"
-            required
-          />
+      <div class="team-generation-components">
+        <div class="team-card">
+          <p class="selected-team">TIME SELECIONADO:</p>
         </div>
-
-        <div class="team-generation-components">
-          <div class="team-card">
-            <p class="selected-team">TIME SELECIONADO:</p>
-          </div>
-          <button class="team-button">GERAR TIME</button>
-        </div>
+        <button class="team-button">GERAR TIME</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Bloco 3 -->
-    <section>
-      <h3 class="result">RESULTADO</h3>
+  <section class="block-three-result">
 
-      <div class="cards-block-three">
-        <div class="card-generation">
-          <div class="card-team-result">
-            <p class="best-team">O MELHOR TIME PARA A BATALHA:</p>
-          </div>
-          <button class="reset-button">RESET</button>
+    <h3 class="result">RESULTADO</h3>
+
+    <div class="cards-block-three">
+      <div class="generated-card">
+        <div class="team-result-card">
+          <p class="best-team-card-title">O MELHOR TIME PARA A BATALHA:</p>
         </div>
-
-        <div class="information-card">
-          <!-- Nesta div aparecerá as informações sobre o pokemon (ao clicar no "+") -->
-        </div>
+        <button class="reset-button">RESET</button>
       </div>
-    </section>
 
-    <footer class="footer">PokéTeam</footer>
+      <div class="information-card">
+        <!-- Nesta div aparecerá as informações sobre o pokemon (ao clicar no "+") -->
+      </div>
+    </div>
+  </section>
 
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+  <footer class="footer">PokéTeam</footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
