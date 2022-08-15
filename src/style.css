@@ -9,9 +9,8 @@ html, body {
     background-color: #111111;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 1.8rem;
+
 }
 
 
@@ -20,14 +19,12 @@ html, body {
     height: 1.5rem;
     position: absolute;
     left: 1.8rem;
-    position: relative left;
+
 }
 
 .logo-lol {
     width: 4.3rem;
     height: 1.5rem;
-    position: relative;
-    right: 5%;
 }
 
 
@@ -127,34 +124,15 @@ html, body {
     display: none;
 }
 
-.sobre {
-    max-width: 18.7rem;
-    height: 16.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #292929f1;
-    border-radius: 1.8rem;
+.modal .voltar {
+    width: 7.8rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: #006680;
+    border: none;
+    border-radius: 1rem;
     color: #FFFFFF;
-    padding: 0 1.2rem;
-}
-
-.sobre h1 {
-    text-align: center;
-}
-
-
-.modal {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./img/background-sobre.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* display: none; */
+    font-size: medium;
 }
 
 .sobre {
@@ -175,17 +153,6 @@ html, body {
 
 .sobre p {
     text-align: justify;
-}
-
-.modal .voltar {
-    width: 7.8rem;
-    height: 2.5rem;
-    margin-top: 2.5rem;
-    background-color: #006680;
-    border: none;
-    border-radius: 1rem;
-    color: #FFFFFF;
-    font-size: medium;
 }
 
 #cards {
