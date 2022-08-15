@@ -47,6 +47,8 @@ select {
     width: 292px;
     background-color: #9c4085de;
     background-image: url(CARD.jpg);
+    background-repeat: no-repeat;
+    background-size: 292px 421px;
     border: 4px solid #810964;
     border-radius: 25px;
     padding: 15px 0;
@@ -68,19 +70,22 @@ select {
     width: 289px;   
 }
 
+.caixa-de-texto {
+    background-color: #c36676;
+    background-size: cover;
+    border-radius: 25px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
 .caixa-de-texto-status {
     position: absolute;
     top: 42px;
     left: 0;
-    background-color: #c36676;
-    border-radius: 25px;
     height: 31px;
     width: 280px;
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
     padding: 1%;
-    background-size: cover;
     margin-top: 10px;
 }
 
@@ -88,30 +93,18 @@ select {
     position: absolute;
     top: 4px;
     left: 0;
-    background-color: #c36676;
-    border-radius: 25px;
     height: 31px;
     width: 280px; 
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
     padding: 1%;
-    background-size: cover;
 }
 
 .caixa-de-texto-genero {
     position: absolute;
     top: 80px;
     left: 0;
-    background-color: #c36676;
-    border-radius: 25px;
     height: 31px;
     width: 280px; 
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
     padding: 1%;
-    background-size: cover;
     margin-top: 20px;
 }
 
@@ -125,14 +118,8 @@ select {
     position: absolute;
     top: 118px;
     left: 0;
-    background-color: #c36676;
-    border-radius: 25px;
     height: 31px;
     width: 280px; 
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
     padding: 1%;
-    background-size: cover;
     margin-top:30px; 
 }
