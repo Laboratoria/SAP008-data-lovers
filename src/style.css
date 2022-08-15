@@ -5,7 +5,7 @@ html body {
     width: 100%;
     margin: 0;    
     background-image: url(./img/espaco.jpg);
-    background-size: cover;
+    background-size: auto;
 }
 
 .container-header {
@@ -90,7 +90,7 @@ button:hover {
 }
 
 #read {
-    padding: 0em 12em;
+    padding: 0em 6em;
     text-align: center;
 }
 
