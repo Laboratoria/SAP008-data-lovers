@@ -10,9 +10,47 @@ filterDuration.addEventListener ('change', filterSelected);
 
 function filterSelected () {
   const selected = (filterDuration).value;
-  catalogue.innerHTML = selectedDuration(films, selected);
+  catalogue.innerHTML = selectedDuration(films, selected, filterDuration);
 }
 
+
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelectorAll('.close');
+const btnModal = document.querySelectorAll('.btn-modal');
+
+console.log (modal);
+
+// function showModal (){
+//   for (let i = 0; i < films.length; i++){
+//     modal[i].style.display = "block";
+//   }  
+// }
+
+// function hideModal (){
+//   for (let i = 0; i < films.length; i++){
+//     modal[i].style.display = "none";
+//   }
+// }
+function showModal (){
+  modal.style.display = "block";
+}
+
+function hideModal (){
+  modal.style.display = "none";
+}
+
+for (let i = 0; i < btnModal.length; i++){
+  btnModal[i].addEventListener ('click', showModal);
+  closeModal[i].addEventListener ('click', hideModal);
+}
+
+
+
+// function functionModal (){
+//   films.forEach(film => {
+//     modal.style.display = "block";
+//   }); 
+// }
 
 // ======== FILTRO DE GENERO PARA USAR NOS PERSONAGENS =========
 // let selectedGender = document.getElementById('filter-gender');

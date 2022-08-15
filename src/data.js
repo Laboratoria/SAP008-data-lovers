@@ -4,7 +4,14 @@ function addTela (filmsList) {
   const arrayFilms = filmsList.map(function (film) {
     const template = `
     <div class="poster">
-      <img class="poster-img" src="${film.poster}" alt="${film.title}" name="${film.title}" >
+      <button class= "btn-modal" type="button"> 
+      <img class="poster-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+        <p>${film.title}<br>${film.description}</p>
+        <p class="close">Sair</p>
+        </div> 
+      </div>
       <h7>${film.title}</h7><br>
       <h7>${film.duration}min, Score ${film.rt_score}, ${film.release_date}</h7>
     </div>
