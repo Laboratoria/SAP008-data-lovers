@@ -9,18 +9,21 @@ const cards = document.querySelector('#cards');
 btnSobre.addEventListener('click', function(){
     modal.style.display = 'flex';
     main.style.display = 'none';
+    cards.style.display = 'none';
 })
 
 const btnVoltar = document.querySelector('#btn-voltar');
 btnVoltar.addEventListener('click', function(){
     main.style.display = 'flex';
     modal.style.display = 'none';
+    cards.style.display = 'none';
 })
 
 const voltarFooter = document.querySelector('#voltar-footer');
 voltarFooter.addEventListener('click', function(){
     modal.style.display = 'flex';
     main.style.display = 'none';
+    cards.style.display = 'none'
 })
 
 const btnIniciar = document.querySelector('#iniciar');
