@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Rick and Morty Wikia</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href=/Users/andreadossantos/Desktop/SAP008-data-lovers/src/img/icon_RM.png" >
   </head>
+
   <body>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+ 
     <header>
       <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
       <navbar>
         <select name="Gender" id="gender">
           <option value="" disabled="" selected="">Gender</option>
-          <option value="male">Male</option>
           <option value="female">Female</option>
+          <option value="male">Male</option>
           <option value="undefined">Undefined</option>
         </select>
         <select name="Species" id="species">
           <option value="" disabled="" selected="">Species</option>
           <option value="human">Human</option>
           <option value="alien">Alien</option>
+          <option value="animal">Animal</option>
+          <option value="robot">Robot</option>
+          <option value="humanoid">Humanoid</option>
+          <option value="vampire">Vampire</option>
+          <option value="illness">Ilness</option>
+          <option value="mythology">Mythology</option>
+          <option value="poopybuthole">Poopybuthole</option>
+          <option value="cronenberg">Cronenberg</option>
           <option value="undefined">Undefined</option>
         </select>
         <select name="Status" id="status">
           <option value="" disabled="" selected="">Status</option>
-          <option value="male">Alive</option>
-          <option value="female">Dead</option>
-          <option value="undefined">Unknown</option>
+          <option value="alive">Alive</option>
+          <option value="dead">Dead</option>
+          <option value="unknown">Unknown</option>
         </select>
         <select name="Episode" id="episode">
           <option value="" disabled="" selected="">Episode</option>
-          <option value="S0101">S01E01</option>
-          <option value="female">S01E02</option>
+          <option value="s0101">S01E01</option>
+          <option value="s0102">S01E02</option>
+          <option value="s0103">S01E03</option>
+          <option value="s0104">S01E04</option>
+          <option value="s0105">S01E05</option>
+          <option value="s0106">S01E06</option>
+          <option value="s0107">S01E07</option>
+          <option value="s0108">S01E08</option>
+          <option value="s0109">S01E09</option>
           <option value="undefined">Unknown</option>
         </select>
       </navbar>
       <input id="search" placeholder="🔎 Search" wrap="off"></input>
     </header>
+
     <p class="statistics">This category represents <b>2%</b> of the characters</p>
-    <div class="card">
-      <img src= "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"  class="rick" alt="rickandmorty">
-      <header>Rick Sanchez </header>
-      <article>Human </article>
-      <footer>Male * Alive</footer>
+
+    <div class="flip-container" >
+      <div class="flipper" >
+        <div class="front">
+          <img src= "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"  class="rick" alt="rickandmorty">
+          <span><strong>Rick Sanchez</strong><br> Human<br>Male * Alive</span>
+        </div>
+        <div class="back">
+        <p>Episodes: <br>S01E01, S01E02, S01E05,  S01E10,  S02E13,
+          S02E13</p>
+        </div>
+      </div>
     </div>
-    <div class="baseboard">
-    <footer >Developed by Andrea dos Santos and Isabella Brambilla 
-     <br> Source code available on Github</footer>
-    </div>
+  
   </body>
+   
+  <div class="baseboard">
+    <footer >Developed by Andrea dos Santos and Isabella Brambilla 
+    <br> Source code available on Github</footer>
+  </div>
+
 </html>

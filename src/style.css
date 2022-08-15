@@ -7,7 +7,8 @@
 select {
     -webkit-appearance: none;
     appearance: none;
-    padding: 0.7%;
+    padding: 0.8%;'
+    position: relative;
     text-align: center;
     font-size: 20px;
     background-color: #E7E0DB;
@@ -17,7 +18,6 @@ select {
     border: none;
     outline: none;
     box-shadow: rgba(32, 29, 3, 0.25) 0px 6px 12px -2px, rgba(3, 3, 3, 0.3) 0px 3px 7px -3px;
-
 }
 
 select:hover {
@@ -26,22 +26,31 @@ select:hover {
 
 #gender{
     position: absolute;
-    left: 20%;
+    text-align: center;
+    left: 25%;
+    width: 9%;
+    height: 7%;
 }
 
 #species{
     position: absolute;
-    left: 30%;
+    left: 35%;
+    width: 9%;
+    height: 7%;
 }
 
 #status{
     position: absolute;
-    left: 40%;
+    left: 45%;
+    width: 9%;
+    height: 7%;
 }
 
 #episode{
     position: absolute;
-    left: 50%;
+    left: 55%;
+    width: 9%;
+    height: 7%;
 }
 
 #search{
@@ -57,9 +66,9 @@ select:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     padding: 0.7%;
     position: absolute;
-    width: 13%;
+    width: 17%;
     height: 4%;
-    left: 60%;
+    left: 65%;
 }
 
 .statistics{
@@ -73,31 +82,6 @@ select:hover {
   height: 20px;
   box-shadow: rgba(3, 59, 71, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
-.card {
-   background: linear-gradient(#8BCF21, #ffff);
-   border-radius: 30px;   
-    position: absolute;
-    text-align: center;
-    cursor: pointer;
-    color: #304B72;
-    width: 204px;
-    height: 314px;
-    left: 190px;
-    top: 580px;
-    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.rick{
-    position:relative;
-    top: 30px;
-    border-radius: 200px; 
-    padding: 10px;
-    width: 139px;
-    height: 142px;
-    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-    }
-
 .baseboard{
     position:absolute;
     top: 1000px;
@@ -106,7 +90,71 @@ select:hover {
     width: 78%;
     height: 50px;
     text-align: center;
+   ;
+  }
+  span{
+  margin: 45px;
+  padding: 10px;
+  display: inline-block;
+  }
 
-    padding: 10px;
+  .flip-container {
+    width: 204px;
+    height: 314px;
+    perspective: 1000px;
+   
+  }
 
+  .flipper{
+	width: 100%;
+	height: 100%;
+    transition: transform 0.9s;
+	transform-style: preserve-3d;
+    position: relative;
+    left: 140px;
 }
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+
+.front{
+    background: linear-gradient(#8BCF21, #ffff);
+    width: 100%;
+     height: 100%;
+     position: absolute;
+     backface-visibility: hidden;
+     border-radius: 30px;   
+     top: 140px;
+     color: #304B72;
+     text-align: center;
+     cursor: pointer;
+     box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.back{ 
+    background: linear-gradient(#304B72, #ffff);
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     transform: rotateY(180deg);
+     backface-visibility: hidden;
+     border-radius: 30px;   
+     top: 140px;
+     color: #E7E0DB;
+     text-align: center;
+     cursor: pointer;
+     box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.rick{
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    top: 30px;
+    border-radius: 200px; 
+    width: 139px;
+    height: 142px;
+    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+   
