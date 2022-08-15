@@ -22,6 +22,7 @@ font-family: "Caveat", cursive;
     list-style-type: none;
     padding: 0;
     background-color: var(--cor-fundo);
+    border-radius: 10px;
 }
 .dp-menu ul li{
     display: inline-block;
