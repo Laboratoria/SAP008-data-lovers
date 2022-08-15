@@ -1,9 +1,14 @@
 // estas funciones son de ejemplo
 
 export const example = () => {
-  return 'example';
-};
+  let athletes = example.athletes;
 
-export const anotherExample = () => {
-  return 'OMG';
+  let atletas = athletes.map(function (item, indice) {
+    return item.name;
+  });
+
+  return atletas;
 };
+/*export const anotherExample = () => {
+  return 'OMG';
+};*/
