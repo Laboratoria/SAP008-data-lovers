@@ -1,7 +1,5 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/rickandmorty.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { example } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
 
 const buttonFilter = document.querySelector('#filter');
@@ -12,6 +10,19 @@ filterBox.hidden = true;
 buttonFilter.addEventListener ('click', () => {
     filterBox.hidden = false;
 })
+
+
+const buttonSearch = document.querySelector('#search');
+const cards = document.querySelector('#cards')
+
+cards.hidden = true;
+buttonSearch.addEventListener ('click', () => {
+    cards.hidden = false;
+})
+
+
+
+
 
 
 //variáveis para funções checked dos radio buttons

@@ -7,14 +7,16 @@
   </head>
   <body>
     <header>
-      <img id="title" src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/rick_and_morty_header.png?raw=true" alt="logo Rick and Morty">
-      <p>Rick and Morty traz as vivências do cientista Rick e seu neto, <br>Morty, nas infinitas possibilidades que o universo permite.<br>
-        Abordando relacionamentos, moralidade, filosofia, sociologia e<br>ciência, diversos personagens são apresentados e, aqui, você<br>
-        pode procurar e saber um pouco mais sobre cada um.</p>
+      <img id="title" src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/rick_and_morty_header.png?raw=true" alt="logo Rick and Morty"><br>
+      Rick and Morty traz as vivências do cientista Rick e seu neto, <br>
+      Morty, nas infinitas possibilidades que o universo permite.<br>
+      Abordando relacionamentos, moralidade, filosofia, sociologia e<br>
+      ciência, diversos personagens são apresentados e, aqui, você<br>
+      pode procurar e saber um pouco mais sobre cada um.
     </header>
 
     <nav>
-      <textarea id="key-words" placeholder="Palavras-chave"></textarea>
+      <input type="text" id="key-words" placeholder="Palavras-chave"><br>
       <button id="filter">FILTRAR</button>
       <button id="search">BUSCAR</button>
       <section id="filter-box">
@@ -49,7 +51,16 @@
       </section>
 
       <section id="cards">
-        <div class=""></div>
+        <div class="cards">
+          <label for="par-status">Status:</label> 
+          <p id="par-status"></p>
+
+          <label for="par-gender">Gênero:</label>
+          <p id="par-gender"></p>
+
+          <label for="par-species">Espécie:</label>
+          <p id="par-species"></p>
+        </div>
       </section>
     </nav>
 
