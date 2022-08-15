@@ -11,12 +11,12 @@
 
 <body>
   <header>
-    <img id="banner" src="rickandmorty.jpeg" alt="banner Rick and Morty">
+    <img id="banner" src="rickandmorty.jpeg" alt="Banner Rick and Morty">
   </header>
   <main>
     <select>
       <optgroup label="STATUS">
-        <option id="STATUS" selected disabled hidden>STATUS</option>
+        <option id="status" selected disabled hidden>STATUS</option>
         <option>VIVO</option>
         <option>MORTO</option>
         <option>DESCONHECIDO</option>
@@ -24,7 +24,7 @@
 
     <select>
       <optgroup label="GÊNERO">
-        <option id="GÊNERO" selected disabled hidden>GÊNERO</option>
+        <option id="gender" selected disabled hidden>GÊNERO</option>
         <option>MASCULINO</option>
         <option>FEMININO</option>
         <option>SEM GÊNERO</option>
@@ -33,7 +33,7 @@
 
     <select>
       <optgroup label="ESPÉCIE">
-        <option id="ESPÉCIE" selected disabled hidden>ESPÉCIE</option>
+        <option id="specie" selected disabled hidden>ESPÉCIE</option>
         <option>ALIEN</option>
         <option>ANIMAL</option>
         <option>DESCONHECIDO</option>
@@ -49,37 +49,25 @@
     </select>
 
     <select>
-      <option id="ORDEM ALFABÉTICA" selected disabled hidden>ORDEM ALFABÉTICA</option>
+      <option id="sort" selected disabled hidden>ORDEM ALFABÉTICA</option>
       <option>↻ A-Z</option>
       <option>↺ Z-A</option>
     </select>
 
     <input type="submit" class="verificar" value="VERIFICAR">
 
-
     <input class="pesquisar" type="search" placeholder="🔎 PROCURAR">
 
-
     <div class="grupo-2 screen">
-      <div class="grupo-1">
-        <div class="quadro-card">
-          <div class="quadro-imagem"></div>
-          <div class="overLap-group">
-            <div class="caixa-de-texto-nome"><strong>Nome:</strong></div>
-            <div class="caixa-de-texto-status"><strong>Status:</strong></div>
-            <div class="caixa-de-texto-genero"><strong>Gênero:</strong></div>
-            <div class="caixa-de-texto-especie"><strong>Espécie:</strong></div>
-          </div>
-        </div>
+      <div class="grupo-1" id="cards">
+
       </div>
-    </div>
     </div>
   </main>
 
   <footer>
 
   </footer>
-
   <script src="main.js" type="module"></script>
 </body>
 

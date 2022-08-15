@@ -7,13 +7,6 @@ body {
     height: 250px;
 }
 
-/*.card {
-    width: 19%;
-    align-items: center;
-    margin-left: 0.6%;
-}
-*/
-
 select {
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,96 +27,55 @@ select {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     text-align: center;
-    margin-left: 2%;
-    background-color: #71D336;
-    border-color: #199c24;
-    border-radius: 15px;
-    border-style: outset;
-    border-width: 2px;
-    color: white;
-    width: 160px;
-    height: 40px;
-}
-
-.pesquisar {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    text-align: center;
     margin-left: 4%;
-    background-color: #71D336;
-    border-color: #199c24;
+    background-color:#71D336; 
+    border-color:#199c24; 
     border-radius: 15px;
     border-style: outset;
     border-width: 2px;
-    color: white;
-    width: 160px;
+    color:white; 
+    width: 160px; 
     height: 40px;
-}
-
-.group-2 {
-    align-items: flex-start;
-    display: flex;
-    min-width: 341px;
-}
-
-.hidden,
-.hidden * {
-    pointer-events: none;
-    visibility: hidden;
-}
-
-.group-1 {
-    align-items: flex-start;
-    display: flex;
-    height: 421px;
-    left: 0;
-    min-width: 341px;
-    position: fixed;
-    top: 0;
-    z-index: 1;
 }
 
 .quadro-card {
-    align-items: center;
-    background-color: #9c4085de;
-    border: 4px solid #810964;
-    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    height: 421px;
     overflow: hidden;
+    align-items: center;
+    height: 421px;
+    width: 292px;
+    background-color: #9c4085de;
+    background-image: url(CARD.jpg);
+    border: 4px solid #810964;
+    border-radius: 25px;
     padding: 15px 0;
-    width: 292px; 
-    background-image: url(imagem-card1.jpg);
-
 }
 
 .quadro-imagem {
     background-color: #eeb2e1e0;
     border: 4px solid #820a65;
-
     border-radius: 25px;
     height: 208px;
-    margin-top: 8px;
     width: 275px;
+    margin-top: 8px;
 }
 
 .overLap-group {
     height: 149px;
     margin-top: 10px; 
     position: relative;
-    width: 289px;
-    
+    width: 289px;   
 }
 
 .caixa-de-texto-status {
+    position: absolute;
+    top: 42px;
+    left: 0;
     background-color: #c36676;
     border-radius: 25px;
     height: 31px;
-    left: 0;
-    position: absolute;
-    top: 42px;
-    width: 280px; 
+    width: 280px;
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22px;
@@ -133,12 +85,12 @@ select {
 }
 
 .caixa-de-texto-nome {
+    position: absolute;
+    top: 4px;
+    left: 0;
     background-color: #c36676;
     border-radius: 25px;
     height: 31px;
-    left: 0;
-    position: absolute;
-    top: 4px;
     width: 280px; 
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -148,12 +100,12 @@ select {
 }
 
 .caixa-de-texto-genero {
+    position: absolute;
+    top: 80px;
+    left: 0;
     background-color: #c36676;
     border-radius: 25px;
     height: 31px;
-    left: 0;
-    position: absolute;
-    top: 80px;
     width: 280px; 
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -163,7 +115,6 @@ select {
     margin-top: 20px;
 }
 
-
 .valing-text-middle {
     display: flex;
     flex-direction: column;
@@ -171,12 +122,12 @@ select {
 }
 
 .caixa-de-texto-especie {
+    position: absolute;
+    top: 118px;
+    left: 0;
     background-color: #c36676;
     border-radius: 25px;
     height: 31px;
-    left: 0;
-    position: absolute;
-    top: 118px;
     width: 280px; 
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
