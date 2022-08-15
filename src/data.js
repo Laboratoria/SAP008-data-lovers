@@ -1,11 +1,9 @@
-export {printCards, selectNameAz, selectNameZa}
+export { printCards, selectNameAz, selectNameZa }
 
-
-
- function printCards(data, rarity, type, name) {
+function printCards(data, rarity, type, name) {
 
   let pokemons = filterPokemon(data, rarity, type, name)
-   return pokemons.map((item) => {
+  return pokemons.map((item) => {
     return `<div class="container_item">
              <div class="boxImg">
             <p class="pokeNumber">${item.num}</p>
@@ -23,9 +21,6 @@ export {printCards, selectNameAz, selectNameZa}
   })
     .join('')
 }
-
-
-
 
 function filterPokemon(data, rarity, type, name) {
 
@@ -46,29 +41,28 @@ function filterPokemon(data, rarity, type, name) {
         return false
       }
     }
-    
+
     return true
   });
   return pokemonData
-
 }
 
 const orderName = (a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    } if (a.name < b.name) {
-      return -1;
-    }
-    return 0
-  };
-
-    const selectNameAz = (pokemon) => {
-    return pokemon.sort(orderName);
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
   }
-  
-    const selectNameZa = (pokemon) => {
-    return pokemon.sort(orderName).reverse();
-  };
+  return 0
+};
+
+const selectNameAz = (pokemon) => {
+  return pokemon.sort(orderName);
+}
+
+const selectNameZa = (pokemon) => {
+  return pokemon.sort(orderName).reverse();
+};
 
 
 

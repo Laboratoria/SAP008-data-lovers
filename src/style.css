@@ -6,9 +6,16 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: aquamarine;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -37,6 +44,15 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+a:hover {
+  color: rgb(244, 244, 161);
+}
+
+main {
+  flex: 1 0 auto;
+  margin-bottom: 100%;
 }
 
 .find-pokemons {
@@ -117,13 +133,15 @@ button:active {
   z-index: 1;
 }
 
+.imgAsh {
+  display: flex;
+  position: absolute;
+}
+
 #imgmain {
   width: 250px;
   height: 500px;
-  border-radius: 20%;
-  margin-left: 1%;
-  position: absolute;
-  margin-top: 5%;
+  margin-top: 45%;
 }
 
 .result {
@@ -167,6 +185,11 @@ button:active {
 .poke-img {
   width: 130px;
   height: 130px;
+  cursor: pointer;
+}
+
+.poke-img:hover {
+  background-color: rgba(253, 253, 126, 0.985);
 }
 
 .items {
@@ -190,7 +213,6 @@ button:active {
   border-radius: 5px;
 }
 
-
 .modal {
   position: fixed;
   padding: 0;
@@ -212,7 +234,7 @@ button:active {
   background-color: rgb(222, 205, 181);
   padding: 30px 24px;
   width: 650px;
-  height: 200px;
+  height: 250px;
   border-radius: 0.5rem;
   text-align: center;
   font-size: 24px;
@@ -221,7 +243,7 @@ button:active {
 .modal span {
   position: relative;
   right: 30px;
-  bottom: 90px;
+  bottom: 120px;
   width: 24px;
   cursor: pointer;
 }
@@ -237,23 +259,230 @@ button:active {
   transform: scale(1.0);
 }
 
+.poke-img-info {
+  display: flex;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin-left: 35%;
+  margin-top: 120px;
+}
+
+.pokeMoreInfo {
+  padding: 10px;
+}
+
+.pokeInfoAbout {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+#title {
+  margin-left: 10px;
+  margin-bottom: 108px;
+}
+
+footer {
+  width: 100%;
+  flex-shrink: 0;
+  background-color: #a41111;
+}
+
+.foot {
+  justify-content: space-between;
+  color: #fff;
+  padding: 1%;
+}
+
+.foot p {
+  margin-left: 60%;
+}
+
+.foot img {
+  position: absolute;
+  margin-left: 25%;
+}
 
 @media screen and (min-width: 360px) {
   .container_item {
-    display: flex;
     width: 20%;
-    float: left;
-    margin-bottom: 10px;
-    margin: 10px;
+  }
+
+  .result {
+    padding-left: 30%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 490px) and (max-width:600px) {
   .container_item {
-    display: flex;
-    width: 20%;
-    float: left;
-    margin-bottom: 10px;
-    margin: 10px;
+    width: 35%;
+    margin: 32px;
+  }
+
+  .btns {
+    margin-top: 5px;
+  }
+
+  .result {
+    padding-left: 45%;
+  }
+
+  .foot img {
+    margin-left: 5px;
+  }
+
+  .foot #devTo {
+    margin-top: 80px;
+    margin-left: 5px;
+  }
+
+  .foot #developers {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .container_item {
+    width: 100%;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .navlist .list-item {
+    display: block;
+    padding: 10px 2px;
+  }
+
+  main {
+    display: block;
+    align-items: flex-start;
+  }
+
+  .btns {
+    margin-top: 5px;
+  }
+
+  .result {
+    margin-top: 170%;
+  }
+
+  footer {
+    display: block;
+    height: 100%;
+  }
+
+  .foot img {
+    margin-left: 5px;
+  }
+
+  .foot #devTo {
+    margin-top: 80px;
+    margin-left: 5px;
+  }
+
+  .foot #developers {
+    margin-left: 5px;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  .container_item {
+    width: 40%;
+    margin: 13%;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  main {
+    display: block;
+    align-items: flex-start;
+  }
+
+  .btns {
+    margin-top: 5px;
+  }
+
+  .container_item {
+    padding-left: 60px;
+  }
+
+  .foot img {
+    margin-left: 5px;
+  }
+
+  .foot #devTo {
+    margin-top: 80px;
+    margin-left: 5px;
+  }
+
+  .foot #developers {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container_item {
+    width: 30%;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  main {
+    display: block;
+    align-items: flex-start;
+  }
+
+  .btns {
+    margin-top: 5px;
+  }
+
+  .container_item {
+    padding-left: 60px;
+  }
+
+  .foot p {
+    margin-left: 60%;
+  }
+
+  .foot img {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .container_item {
+    width: 26%;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  main {
+    display: block;
+    align-items: flex-start;
+  }
+
+  .btns {
+    margin-top: 5px;
+  }
+
+  .container_item {
+    padding-left: 60px;
+  }
+
+  .foot p {
+    margin-left: 60%;
+  }
+
+  .foot img {
+    margin-left: 2%;
   }
 }
