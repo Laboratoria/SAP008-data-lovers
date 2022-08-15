@@ -1,8 +1,12 @@
-html body {
+html {
     width: 100%;
     margin: 0;    
-    background-image: url(./img/espaco.jpg);
-    background-size: cover;
+    background-image: url(./img/espacowe.jpg);
+    background-size: auto;
+}
+
+body {
+    background-image: url(./img/espacowe.jpg);
 }
 
 .container-header {
@@ -53,7 +57,7 @@ html body {
   }
 
 .btn-header:active {
-    position:relative;
+    display: flex;    
     top:5px;
     box-shadow:none;
   }
@@ -65,7 +69,7 @@ html body {
     margin-top: 1rem;
 }
 
-.btn{
+.btn {
     width: 13rem;
     height: 2rem;
     justify-content: space-around;
@@ -94,11 +98,12 @@ html body {
 }
 
 #read {
-    padding: 0em 12em;
+    padding: 0em 6em;
     text-align: center;
 }
 .card:hover .card-in {
     transform: rotateY(180deg);
+    background-image: url(./img/espacowe.jpg);
 }
 .card-in {
     width: 100%;
@@ -125,6 +130,7 @@ html body {
     margin-top: 50px;
     color: #fff;
 }
+
 .card-in {
     display: flex;
     flex-direction:row;
@@ -139,17 +145,18 @@ html body {
     border-radius: 10px;
 }
 .card-first, .back-card{
-    display:grid;
+    display:inline-block;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
+    
 }
 .card-first{
     text-align: center;
 }
 .back-card{
-    display:block;
+    display:grid;
     transform: rotateY(180deg);
     justify-content:center;
     font-size: 15px;
