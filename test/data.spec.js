@@ -1,23 +1,22 @@
-import { example, anotherExample } from '../src/data.js';
+import {addTela, selectedDuration} from '../src/data.js';
 
-
-describe('example', () => {
+describe('actions', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof addTela).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof selectedDuration).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  // it('should return 20 films`', () => {
+  //   expect(addTela().length).toBe(20);
+  // });
+
+  // const expected = ['My Neighbor Totoro'];
+  it('should containing Totoro', () => {
+    expect(selectedDuration([{title: "Castle in the Sky", duration: '125'}, 
+                                      {title: "Kiki's Delivery Service", duration: '102'}, 
+                                      {title: "My Neighbor Totoro", duration: '88'}], '90min')).toBe('My Neighbor Totoro');
   });
 });
