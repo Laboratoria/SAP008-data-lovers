@@ -3,8 +3,7 @@
 ## 1. Definição do Produto
 
 Neste projeto, contruímos uma _página web_ para visualizar um _conjunto
-(set) de dados_** que se adeque às necessidades de seu usuário. 
-Esta página web, permite **visualizar dados, filtrá-los, ordená-los e fazer algum cálculo agregado**, com foco na necessidade do usuário.
+(set) de dados_**. Esta página web, permite **visualizar dados, filtrá-los, ordená-los e fazer algum cálculo agregado**, com foco na necessidade do usuário.
 
 ## 2. Tema do Projeto e História - Studio Ghibli
 
