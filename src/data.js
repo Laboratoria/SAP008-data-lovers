@@ -1,9 +1,12 @@
-// estas funciones son de ejemplo
+
 
 export const example = () => {
-  return 'example';
+  return "example";
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
+export const filterByRegion = (pokemons, region) =>
+ pokemons.filter(pokemon => pokemon.generation.name === region) 
+
+
+
