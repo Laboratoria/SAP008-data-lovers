@@ -1,12 +1,8 @@
-html {
+html body {
     width: 100%;
     margin: 0;    
     background-image: url(./img/espacowe.jpg);
     background-size: auto;
-}
-
-body {
-    background-image: url(./img/espacowe.jpg);
 }
 
 .container-header {
@@ -101,16 +97,19 @@ body {
     padding: 0em 6em;
     text-align: center;
 }
+
 .card:hover .card-in {
     transform: rotateY(180deg);
     background-image: url(./img/espacowe.jpg);
 }
+
 .card-in {
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
+
 .card {
     background-image: url(./img/espacowe.jpg);
     display:inline-block;
