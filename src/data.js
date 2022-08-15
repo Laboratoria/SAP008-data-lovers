@@ -1,9 +1,23 @@
 import data from "./data/rickandmorty/rickandmorty.js";
 
 
-export const filtrarPorEspecie = (species) => {
-    return data.results.filter(personagem => personagem.species.toLowerCase() === species)
+
+export const filtrarPorStatus = (status) => {
+    const filtro = data.results.filter(personagem => personagem.status.toLowerCase() === status)
+    return filtro
 };
+
+export const filtrarPorEspecie = (species) => {
+    const filtro = data.results.filter(personagem => personagem.species.toLowerCase() === species)
+    return filtro
+};
+
+export const filtrarPorGenero = (gender) => {
+    const filtro = data.results.filter(personagem => personagem.gender.toLowerCase() === gender)
+    return filtro
+};
+
+
 
 //Criei uma constante que é uma funcáo, onde passei o parametro que quero que seja filtrado, que nesse caso é o status
 // essa arrow function indica que aqui dentro vai ter uma cocndicao que vai ser necessaria para filtrar cada elemento dentro da array.

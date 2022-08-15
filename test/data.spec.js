@@ -1,18 +1,18 @@
-import { example, anotherExample } from '../src/data.js';
+import {filtrarPorEspecie} from './src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+
+describe('displayResults', () => {
+  it('Deve retornar os cards corretamente', () => {
+    const expected = 
+    const actual = displayResults(data.results)
+    expect(actual).toBe(expected);
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
 });
 
 
-describe('anotherExample', () => {
+/*describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -20,4 +20,4 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+});*/
