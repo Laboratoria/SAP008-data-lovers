@@ -4,7 +4,7 @@
 
 * [1. Preâmbulo](#1-preâmbulo)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [3. Histórias de usuário](#3-histórias-do-usuário)
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios mínimos de aceitação do
   projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
@@ -36,59 +36,53 @@ parte direita.
 
 ## 2. Resumo do projeto
 
-Neste projeto você **construirá uma _página web_ para visualizar um _conjunto
-(set) de dados_** que se adeque às necessidades de seu usuário.
+Neste projeto decidimos criar um site dedicado aos fãs de Rick and Morty, 
+com o objetivo de catalogar todos os personagens da série, para que dessa forma o
+usuário consiga encontrá-los e obter mais informações sobre eles, de maneira fácil e prática.
 
-Como entregável final terá uma página web que permita **visualizar dados,
-filtrá-los, ordená-los e fazer algum cálculo agregado**. Por cálculo agregado
-nos referimos aos diversos cálculos que podem ser feitos com os dados para
-mostrar a informação mais relevante para os usuários (médias, valores máximos e
-mínimos, etc).
 
-Para este projeto trazemos uma série de dados de _temáticas diferentes_ para que
-você explore e decida com qual delas deseja trabalhar. Escolhemos
-especificamente estes conjuntos de dados porque cremos que se adequem bem a esta
-etapa de sua aprendizagem.
+Iniciou-se o projeto fazendo uma pesquisa sobre o usuário, e concluiu-se que os principais objetivos do usuário em relação ao produto são:
 
-Uma vez que você defina sua área de interesse, busque entender quem é seu
-usuário e o que exatamente ele necessita saber ou ver, para que assim possa
-construir a interface que o ajude a interagir e entender melhor os dados.
+A) Obter mais informações sobre seus personagens favoritos, principalmente sobre seu: nome, gênero, local de origem, espécie, imagem em quantos episódios aparecem e números de episódios.
 
-Este são os dados que propomos:
+B) Entretenimento: Utilizam o produto quando querem dar risada, sair um pouco da realidade ou deixar o som da série de fundo.
 
-* [Pokémon](src/data/pokemon/pokemon.json): Neste conjunto você encontrará uma
-  lista com os 151 Pokémon da região de Kanto, com suas respectivas estatísticas
-  utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
+## 3. Histórias do usuário
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json): Este
-  conjunto mostra a lista de jogadores de uma liga do jogo League of Legends
-  (LoL).
-  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt-BR.md)
 
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json). Lista de
-  personagens da série Rick & Morty. Você pode revisar a documentação da API
-  neste [link](https://rickandmortyapi.com).
-  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt-BR.md)
+Iniciou-se o projeto determinando quatro (4) histórias de usuário:
 
-* [Jogos Olímpicos do Rio de Janeiro](src/data/atletas/atletas.json).
-   Este conjunto nos fornece a lista de atletas que conquistaram medalhas nas
-   Olimpíadas do Rio de Janeiro.
-  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/atletas/README.pt-BR.md)
+1 - História 1: "Como fã da série, gostaria de poder visualizar todos os personagens da série para que eu consiga ter acesso as suas principais características de forma mais fácil. "
 
-* [Studio Ghibli](src/data/ghibli/ghibli.json).
-  Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
-  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
+A partir dessa história, criou-se a funcionalidade de exibir os cards dos personagens na tela.
 
-* [Harry Potter](src/data/harrypotter/harry.json).
- Este conjunto nos fornece uma lista dos personagens, livros e feitiços de toda
- a saga Harry Potter
-  [Harry Potter](https://harrypotter.fandom.com).
-  - [Pesquisa com seguidores de Harry Potter](src/data/harrypotter/README.md)
 
-O objetivo principal deste projeto é que aprenda a desenhar e construir uma
-interface web onde se possa visualizar e manipular dados, entendendo o que o
-usuário necessita.
+2 - História 2: “Como fã da série, gostaria de saber quais personagens são alienígenas, pois eu amo ficção científica.”
+
+A partir dessa história, criou-se a funcionalidade do botão espécie, onde o usuário pode verificar a quais espécies pertencem os personagens.
+
+
+3 - História 3: “Eu como estudante de Ciências Sociais, gostaria de saber a média de quantas personagens femininas existem na série para colocar nos dados do meu TCC.”
+
+A partir dessa história, criou-se a funcionalidade de exibir a porcentagem dos personagens na tela de acordo com o filtro escolhido.
+
+
+4 - História 4:  “Como fã de Rick and Morty, gostaria muito de encontrar os nomes dos personagens com facilidade, pois tenho muita dificuldade em memorizá-los.”
+
+A partir dessa história, criou-se a funcionalidade de caixa de pesquisa na qual permite o usuário pesquisar o seu personagem pelo nome.
+
+
+## 3. Protótipos da interface
+
+
+Após definir as histórias de usuário, criou-se um protótipo de baixa fidelidade como consta na imagem abaixo:
+
+![img](prototipobaixafidelidade.png)
+
+Logo depois, criou-se no Figma um protótipo de alta fidelidade como consta na imagem abaixo:
+
+![esbocoaltafidelidade] (.jpeg)
+
 
 ## 3. Objetivos de aprendizagem
 

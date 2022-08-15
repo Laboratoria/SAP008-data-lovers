@@ -5,8 +5,74 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+
+  <body class="body-container">   
+    <div id="root">
+      <header class="header-container">
+        <button class="btn-header">INÍCIO</button>
+        <button class="btn-header">SOBRE</button>
+        <button class="btn-header">NA MÍDIA</button>
+      </header>
+
+                  
+      <main class="main-container">          
+        
+          <div class="option-container">
+            <label>
+              <select id="select-status" class="btn-option">
+                <option value="" selected disabled hidden>STATUS</option>
+                <option id="status" value="alive">VIVO</option>
+                <option id="status" value="dead">MORTO</option>
+                <option id="status" value="unknown">DESCONHECIDO</option>  
+              </select>
+            </label>   
+
+            <label>
+              <select id="select-species" class="btn-option">
+                <option value="" selected disabled hidden>ESPÉCIE</option>
+                <option id="species" value="human">HUMANO</option>
+                <option id="species" value="alien">ALIENÍGENA</option>
+                <option id="species" value="unknown">DESCONHECIDO</option>      
+              </select>
+            </label>
+
+            <label>
+              <select id="select-gender" class="btn-option">
+                <option value="" selected disabled hidden>GÊNERO</option>
+                <option id="gender" value="male">MASCULINO</option>
+                <option id="gender" value="female">FEMININO</option>
+                <option id="gender" value="unknown">DESCONHECIDO</option>      
+              </select>
+            </label>
+
+            <label>
+              <select id="select-order" class="btn-option">
+                <option value="" selected disabled hidden>A-Z</option>
+                <option id="order" value="ascending">A-Z</option>
+                <option id="order" value="descending">Z-A</option>                      
+              </select>
+            </label>
+
+            <label>
+              <button class="btn-option">limpar                                   
+              </button>
+            </label>
+
+            <label>
+              <input class="btn-search" placeholder="pesquisar">                             
+              
+            </label>
+
+          </div>         
+
+          <div class="card-container">            
+                    
+  
+          </div>        
+        
+      </main>
+    </div>
+    <script src="main.js" type="module"></script> 
+
   </body>
 </html>
