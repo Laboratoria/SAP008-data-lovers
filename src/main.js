@@ -10,9 +10,12 @@ function displayCharsResult(){
     })
     
     document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('books-list').style.display = 'none';
+    document.getElementById('spells-list').style.display = 'none';
     document.getElementById('characters-list').style.display = 'block';
-    const charactersResult = document.getElementById('characters-list');
-    return charactersResult.innerHTML = charactersFormatted;
+
+    const charactersResult = document.getElementById('characters-content');
+    charactersResult.innerHTML = charactersFormatted;
 
 })
 
@@ -22,6 +25,8 @@ btnBooks.addEventListener('click',
 function displayBooksResult(){
     const books = mainFilters.displayBooks();
     document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('characters-list').style.display = 'none';
+    document.getElementById('spells-list').style.display = 'none';
     document.getElementById('books-list').style.display = 'block';
     const booksResult = document.getElementById('books-list');
     return booksResult.innerHTML = books;
@@ -34,6 +39,8 @@ btnSpells.addEventListener('click',
 function displaySpellsResult(){
     const spells = mainFilters.displaySpells();
     document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('books-list').style.display = 'none';
+    document.getElementById('characters-list').style.display = 'none';
     document.getElementById('spells-list').style.display = 'block';
     const spellsResult = document.getElementById('spells-list');
     return spellsResult.innerHTML = spells;

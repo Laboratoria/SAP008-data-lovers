@@ -13,41 +13,53 @@
 <script src="https://kit.fontawesome.com/5828f9f420.js" crossorigin="anonymous"></script>
 
 <body>
-  <header class="header">  
+  <header class="header">
     <button type="submit" id="btn-characters" class="menu-btns">Personagens</button>
     <button type="submit" id="btn-books" class="menu-btns">Livros</button>
     <button type="submit" id="btn-spells" class="menu-btns">Feitiços</button>
     <input type="text" id="search-box" placeholder="Pesquisar..." class="search-bar"></input>
     <button type="submit" id="search-btn" class="search-icon"><i class="fa fa-search"></i></button>
   </header>
- 
+
   <main class="main-div">
     <section id="welcome-section" class="welcome">
-      <h1>Bem-vinde ao Data Seeker!</h1>      
+      <h1>Bem-vinde ao Data Seeker!</h1>
       <h2>
         Um catálogo de referência sobre o universo dos livros da saga Harry
         Potter.
       </h2>
-      <p>Utilize o menu superior parar encontrar informações sobre os <i>personagens, livros</i> e <i>feitiços</i> do mundo Harry Potter.</p>
+      <p>Utilize o menu superior parar encontrar informações sobre os <i>personagens, livros</i> e <i>feitiços</i> do
+        mundo Harry Potter.</p>
     </section>
-    <nav id="characters-list" class="list-modal" style="display:none"> Lista de personagens
-      <a href="/harrypotter/"> Harry Potter </a>
-    </nav>
-    <nav id="books-list" class="list-modal" style="display:none">Lista de livros
+
+    <div id="characters-list" class="modal" style="display:none">
+
+      <h1 class="modal-header"> Lista de Personagens </h1>
+      <p>Escolha uma casa para filtrar os personagens pertencentes a ela</p>
+      <button type="submit" id="btn-gryffindor" class="modal-btn">Gryffindor</button>
+      <button type="submit" id="btn-slytherin" class="modal-btn">Slytherin</button>
+      <button type="submit" id="btn-hufflepuff" class="modal-btn">Hufflepuff</button>
+      <button type="submit" id="btn-ravenclaw" class="modal-btn">Ravenclaw</button>
+      <div id="characters-content" class="modal-content"></div>
+
+    </div>
+    <div id="books-list" class="list-modal" style="display:none">Lista de livros
       <a href="/harrypotter/"> Harry Potter e a Pedra Filosofal </a>
-    </nav>
-    <nav id="spells-list" class="list-modal" style="display:none"> Lista de feitiços
+    </div>
+    <div id="spells-list" class="list-modal" style="display:none"> Lista de feitiços
       <a href="/harrypotter/"> Accio </a>
-    </nav>
+      </nav>
   </main>
-  
+
   <footer class="footer">
-    <a href="https://github.com/GabriellaViroli/SAP008-data-lovers"><img class="github-logo" src="https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/826a7ab08e86e31238253d8a68859f08e7a55ad6/src/Images/GitHub%20contact%20inffo.svg" width="20" height="19"></a>
+    <a href="https://github.com/GabriellaViroli/SAP008-data-lovers"><img class="github-logo"
+        src="https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/826a7ab08e86e31238253d8a68859f08e7a55ad6/src/Images/GitHub%20contact%20inffo.svg"
+        width="20" height="19"></a>
     <h2>DATA SEEKER</h2>
     <h3>© CopyRight 2022.</h3>
-    <p>Powered by <a href=""https://github.com/GabriellaViroli/SAP008-data-lovers">Data Seeeker.</a></p>
+    <p>Powered by <a href="https://github.com/GabriellaViroli/SAP008-data-lovers">Data Seeeker.</a></p>
   </footer>
-    
+
   <script src="main.js" type="module"></script>
 </body>
 
