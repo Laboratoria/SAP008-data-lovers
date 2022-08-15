@@ -1,0 +1,125 @@
+body {
+    background-color: #bbdfd0;
+}
+
+.header {
+    width: 100%;
+    height: 250px;
+}
+
+select {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 4%;
+    background-color: #71D336;
+    border-color: #199c24;
+    border-radius: 15px;
+    border-style: outset;
+    border-width: 2px;
+    color: white;
+    width: 160px;
+    height: 40px;
+}
+
+.verificar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 4%;
+    background-color:#71D336; 
+    border-color:#199c24; 
+    border-radius: 15px;
+    border-style: outset;
+    border-width: 2px;
+    color:white; 
+    width: 160px; 
+    height: 40px;
+}
+
+.quadro-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    height: 421px;
+    width: 292px;
+    background-color: #9c4085de;
+    background-image: url(CARD.jpg);
+    background-repeat: no-repeat;
+    background-size: 292px 421px;
+    border: 4px solid #810964;
+    border-radius: 25px;
+    padding: 15px 0;
+}
+
+.quadro-imagem {
+    background-color: #eeb2e1e0;
+    border: 4px solid #820a65;
+    border-radius: 25px;
+    height: 208px;
+    width: 275px;
+    margin-top: 8px;
+}
+
+.overLap-group {
+    height: 149px;
+    margin-top: 10px; 
+    position: relative;
+    width: 289px;   
+}
+
+.caixa-de-texto {
+    background-color: #c36676;
+    background-size: cover;
+    border-radius: 25px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
+.caixa-de-texto-status {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 31px;
+    width: 280px;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.caixa-de-texto-nome {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 31px;
+    width: 280px; 
+    padding: 1%;
+}
+
+.caixa-de-texto-genero {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 31px;
+    width: 280px; 
+    padding: 1%;
+    margin-top: 20px;
+}
+
+.valing-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caixa-de-texto-especie {
+    position: absolute;
+    top: 118px;
+    left: 0;
+    height: 31px;
+    width: 280px; 
+    padding: 1%;
+    margin-top:30px; 
+}
