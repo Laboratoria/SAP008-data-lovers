@@ -51,4 +51,16 @@ function sorted(films, selection) {
   return addTela(sortedFilms)
 }
 
-// testes
+// ===== Contagem de elementos =====
+// const countFilms = Object.keys(films).length //count filmes;
+
+// function countPeople (films) {
+//   const count = films.map(film => {
+//     return Object.keys(film.people).length; //count personagens por filme;
+//   }); 
+//   count.join('')
+//     const sum = count.reduce((a,b) => a + b, 0);
+//     return sum;
+// }
+
+// console.log(countPeople(films)) //count personagens Ghibli;

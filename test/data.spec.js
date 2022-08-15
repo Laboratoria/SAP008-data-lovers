@@ -8,15 +8,21 @@ describe('actions', () => {
   it('is a function', () => {
     expect(typeof selectedDuration).toBe('function');
   });
-
-  // it('should return 20 films`', () => {
-  //   expect(addTela().length).toBe(20);
-  // });
-
-  // const expected = ['My Neighbor Totoro'];
-  it('should containing Totoro', () => {
-    expect(selectedDuration([{title: "Castle in the Sky", duration: '125'}, 
-                                      {title: "Kiki's Delivery Service", duration: '102'}, 
-                                      {title: "My Neighbor Totoro", duration: '88'}], '90min')).toEqual(expect.not.stringContaining("Kiki's Delivery Service"));
-  });
 });
+
+describe('filter', () => {
+  it("film filter by duration", () => {
+    const films = [
+      {title: "Castle in the Sky", duration: '125'}, 
+      {title: "Kiki's Delivery Service", duration: '102'}, 
+      {title: "My Neighbor Totoro", duration: '88'}
+  ];
+    expect(selectedDuration(films, '90min')).toEqual(expect.not.stringContaining("Kiki's Delivery Service")); // espera-se que o filtro não devolva o filme citado
+  });
+
+  it ()
+})
+
+// it('should return 3 films`', () => {
+//   expect(addTela().length).toBe(20);
+// });

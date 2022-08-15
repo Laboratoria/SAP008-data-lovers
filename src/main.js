@@ -1,6 +1,9 @@
 import {addTela, selectedDuration, sorted} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
+// ===== Intro e somatórios =====
+
+
 // ===== Exibir Cards =====
 const films = data.films;
 const catalogue = document.querySelector('.catalogue');
@@ -81,4 +84,3 @@ for (let i = 0; i < btnModal.length; i++){
 //   // console.log (filmesfiltrados);
 //   addTela (filmesfiltrados);
 // }
-
