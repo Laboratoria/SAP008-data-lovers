@@ -1,11 +1,18 @@
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+import data from './data/rickandmorty/rickandmorty.js';
+
+// export const printCards = (arrayRickmorty) => {
+//   return 'example';
+// };
+
+
+
+const rickandmorty = data.results;
+
+export const filterData = (species) => {
+  const filtro = rickandmorty.filter(item => item.species === species)
+  return filtro;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
 
-//function selecaoEspecie (especie)
+
