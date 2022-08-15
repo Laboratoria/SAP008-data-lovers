@@ -225,6 +225,7 @@ header {
 }
 
 .footer {
+  border-top: 2px solid #fff;
   font-family: "Familjen Grotesk";
   font-weight: bold;
   padding: 4rem 0 2rem;
