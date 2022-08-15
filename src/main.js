@@ -1,4 +1,4 @@
-import {filterGeneration, filterType, sortData} from './data.js';
+import {filterGeneration, filterType} from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 const arrayPokemon=data.pokemon;
