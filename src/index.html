@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcute icon" href="favrick.jpg" type="image/x-icon">
   </head>
-  <body>
+    <body>
+    <img src="RICKYANDMORTY.jpg" class="header">
+  <p>
+    <select> 
+      <optgroup label="STATUS">
+      <option id="STATUS" selected disabled hidden>STATUS</option>
+      <option>VIVO</option>
+      <option>MORTO</option> 
+    </select>
+
+    <select> 
+      <optgroup label="GÊNERO">
+      <option id="GENERO" selected disabled hidden>GÊNERO</option>
+      <option>FEMININO</option>
+      <option>MASCULINO</option> 
+      <option>INDEFINIDO</option>
+    </select>
+
+    <select> 
+      <optgroup label="ESPÉCIE">
+      <option id="ESPÉCIE" selected disabled hidden>ESPÉCIE</option>
+      <option>ALIEN</option>
+      <option>ANIMAL</option> 
+      <option>DESCONHECIDO</option>
+    </select>
+
+    <select> 
+      <optgroup label="A - Z">
+      <option id="A-Z" selected disabled hidden>A - Z</option>
+      <option>A - Z</option>
+      <option>Z - A</option> 
+    </select>
+
+    <input type="submit"
+           class="verificar"
+            value="VERIFICAR">
+
+    <input type="search" 
+            class="pesquisar"
+            placeholder=" PESQUISAR...">
+  </p>
+
+  <div class="grupo-2 screen">
+    <div class="grupo-1" id="cards" >
+
+      </div>
+      </div>
+  </div>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
+
