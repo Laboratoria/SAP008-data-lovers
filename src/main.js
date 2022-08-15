@@ -39,7 +39,7 @@ document.querySelector('#select-species').addEventListener('change', (event) => 
     const listaFiltrada = filtrarPorEspecie(value) // Criamos uma constante onde ela recebeu o valor da funçào que está no data.
     //O .value no final, estamos indicando que essa constante tem que receber o valor atribuido ao botão (const value), que sera disparado 
     //quando o usuario escolher no select qual a espécie. Por fim colocamos displayResults(listafiltrada) para mostrar o resultado final
-    // dessa lista filtrada.
+    // dessa lista filtradagit 
     
     displayResults(listaFiltrada)
 })
