@@ -90,7 +90,7 @@ const buttonAction = function (index) {
 };
 
 function moreInfo() {
-  const cardOnClick = document.getElementsByClassName("poke-img");
+  var cardOnClick = document.getElementsByClassName("poke-img");
   for (var i = 0; i < cardOnClick.length; i++) {
     cardOnClick[i].addEventListener('click', buttonAction(i), false);
   }

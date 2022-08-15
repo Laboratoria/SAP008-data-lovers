@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: #7fffd4;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
   display: flex;
   flex-direction: column;

@@ -54,7 +54,7 @@ a {
   height: 100%;
   font-weight: 400;
   border-radius: 10px;
-  background-color: rgba(240, 248, 255, 0.366);
+  background-color: #BBEDF0;
   padding: 1%;
   margin-bottom: 1%;
 }
@@ -86,8 +86,8 @@ a {
 }
 
 .spans {
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top: 2%;
+  margin-left: 2%;
   font-size: 25px;
   font-weight: 700;
 }
@@ -102,7 +102,7 @@ a {
 }
 
 #fontSizeSmall {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 footer {
