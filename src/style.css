@@ -18,12 +18,11 @@ body {
 }
 
 #title {
-   display: flex;
    max-width: 578px;
    max-height: 245px;
 }
 
-p {
+header {
     text-align: center;
     font-family: 'K2D';
     font-size: 18px;
@@ -37,9 +36,13 @@ p {
     border-radius: 15px;
     font-family: 'K2D';
     font-size: 18px;
+    font-weight: 500;
+    padding-left: 1%;
+    border: none;
+    background-color: white;
 }
 
-#filter , #search {
+#filter, #search {
     font-family: 'Atma';
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 1px;
@@ -67,7 +70,21 @@ p {
     padding: 10px;
 }
 
+.cards {
+
+}
+
+label[for=par-status], label[for=par-gender], label[for=par-spescies] {
+    color: white
+}
+
+p {
+    color: black;
+    font-family: "K2D";
+}
+
 footer {
     color: white;
     font-family: 'K2D';
+    text-align: center;
 }
