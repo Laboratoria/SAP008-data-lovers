@@ -1,8 +1,12 @@
+body{
+    background-color: whitesmoke;
+}
 #section-logo{
     text-align: center;
     margin: 1%;
-    background-color: black;
-    
+    height: 250px;
+    background-color: rgba(126, 201, 171, 0.68)
+
 }
 
 #logo-pokemon{
@@ -10,4 +14,31 @@
     width: 50%;
     height: 200px;
     margin: 0%;
+    margin-left: 6%;
+    
+}
+
+#logo-lovers{
+    position: relative;
+    width: 15%;
+    margin: 1%;
+}
+
+/* estilo dos buttons*/
+
+.section-buttons{
+    text-align: center;
+}
+
+.button{
+    margin: 3%;
+    width: 10%;
+    height: 40px;
+    border-radius: 45%;
+    font-size: medium;
+    border: white;
+}
+
+.button:hover {
+    background-color: #f6e652;
 }
