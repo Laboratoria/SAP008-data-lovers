@@ -22,17 +22,38 @@
           <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">SITE OFICIAL</a>
         </div>
       </header>
-      <main id="main-content">
+      <section id="main-content">
         <h1>OLÁ, INVOCADOR. ESCOLHA SEU CAMPEÃO</h1>
-        <button class="iniciar">INICIAR</button>
-      </main>
-      <div id="modal" class="modal">
+        <button id="iniciar" class="iniciar">INICIAR</button>
+      </section>
+      <section id="modal" class="modal">
         <div class="sobre">
           <h1>SOBRE</h1>
           <p>O site foi desenvolvido com o objetivo de  ajudar os jogadores ou novos jogadores a conhecerem e escolherem os campeões presentes em Summoner’s Rift.</p>
         </div>
         <button id="btn-voltar" class="voltar">VOLTAR</button>
-      </div>
+      </section>
+      <section id="cards">
+        <h1>ESCOLHENDO SEU CAMPEÃO</h1>
+        <form>
+          <label for="funcao">TODAS AS FUNÇÕES</label>
+          <select name="tipo-de-campeao" id="funcao">
+            <option value="ASSASSINOS">ASSASSINOS</option>
+            <option value="LUTADORES">LUTADORES</option>
+            <option value="MAGOS">MAGOS</option>
+            <option value="ATIRADORES">ATIRADORES</option>
+            <option value="SUPORTES">SUPORTES</option>
+            <option value="TANQUES">TANQUES</option>
+          </select>
+          <label for="dificuldade">NÍVEL DE DIFICULDADE</label>
+          <select name="nivel-de-dificuldade" id="dificuldade">
+            <option value="BAIXO">BAIXO</option>
+            <option value="MEDIO">MÉDIO</option>
+            <option value="ALTO">ALTO</option>
+          </select>
+        </form>
+        <div id="cardzinho"></div>
+      </section>
       <footer>
         <div class="navbar-footer">
           <a id="voltar-footer" href="#">SOBRE</a>
