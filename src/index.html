@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <p>Teste 2!!</p>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcute icon" href="favrick.png" type="image/x-icon">"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <img id="banner" src="rickandmorty.jpeg" alt="banner Rick and Morty">
+  </header>
+  <main>
+    <select>
+      <optgroup label="STATUS">
+        <option id="STATUS" selected disabled hidden>STATUS</option>
+        <option>VIVO</option>
+        <option>MORTO</option>
+        <option>DESCONHECIDO</option>
+    </select>
+
+    <select>
+      <optgroup label="GÊNERO">
+        <option id="GÊNERO" selected disabled hidden>GÊNERO</option>
+        <option>MASCULINO</option>
+        <option>FEMININO</option>
+        <option>SEM GÊNERO</option>
+        <option>DESCONHECIDO</option>
+    </select>
+
+    <select>
+      <optgroup label="ESPÉCIE">
+        <option id="ESPÉCIE" selected disabled hidden>ESPÉCIE</option>
+        <option>ALIEN</option>
+        <option>ANIMAL</option>
+        <option>DESCONHECIDO</option>
+        <option>HUMANO</option>
+        <option>HUMANÓIDE</option>
+        <option>PARASITA</option>
+        <option>ROBÔ</option>
+        <option>VAMPIRO</option>
+        <option>MITOLOGIA</option>
+        <option>POOPYBUTTHOLE</option>
+        <option>DOENÇA</option>
+        <option>CRONENBERG</option>
+    </select>
+
+    <select>
+      <option id="ORDEM ALFABÉTICA" selected disabled hidden>ORDEM ALFABÉTICA</option>
+      <option>↻ A-Z</option>
+      <option>↺ Z-A</option>
+    </select>
+
+    <input type="submit" class="verificar" value="VERIFICAR">
+
+
+    <input class="pesquisar" type="search" placeholder="🔎 PROCURAR">
+
+
+    <div class="grupo-2 screen">
+      <div class="grupo-1">
+        <div class="quadro-card">
+          <div class="quadro-imagem"></div>
+          <div class="overLap-group">
+            <div class="caixa-de-texto-nome"><strong>Nome:</strong></div>
+            <div class="caixa-de-texto-status"><strong>Status:</strong></div>
+            <div class="caixa-de-texto-genero"><strong>Gênero:</strong></div>
+            <div class="caixa-de-texto-especie"><strong>Espécie:</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
