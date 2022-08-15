@@ -1,10 +1,12 @@
-import {addTela, selectedDuration} from './data.js';
+import {addTela, selectedDuration, sorted} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
+// ===== Exibir Cards =====
 const films = data.films;
 const catalogue = document.querySelector('.catalogue');
 catalogue.innerHTML = addTela(films);
 
+// ===== Filtro Tempo =====
 const filterDuration = document.querySelector('#filter-duration');
 filterDuration.addEventListener ('change', filterSelected);
 
@@ -12,6 +14,13 @@ function filterSelected () {
   const selected = (filterDuration).value;
   catalogue.innerHTML = selectedDuration(films, selected);
 }
+
+// ===== Ordenação =====
+const orderFilms = document.querySelector('#order-by');
+orderFilms.addEventListener('change', () => {
+  let selection = orderFilms.value;
+  catalogue.innerHTML = sorted(films, selection);
+});
 
 
 // ======== FILTRO DE GENERO PARA USAR NOS PERSONAGENS =========
@@ -34,3 +43,4 @@ function filterSelected () {
 //   // console.log (filmesfiltrados);
 //   addTela (filmesfiltrados);
 // }
+

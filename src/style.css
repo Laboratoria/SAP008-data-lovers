@@ -31,13 +31,18 @@ body {
     width: 40rem;
 }
 .btn-catalogue {
-    margin: 7vw 2vw 2vw;
+    margin: 10% 0 10% 0;
     height: 270%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 .btn-catalogue-filter {
-    margin: 0 38%;
+    margin: auto;
     border:none;
     min-height: 100%;
+    width: 50%;
     padding: 0.5vw 2vw;
     background-color: #e26c7a;
     color: #f1faee;

@@ -1,5 +1,6 @@
-export {addTela, selectedDuration};
+export {addTela, selectedDuration, sorted};
 
+// ===== Inserir cards na Tela =====
 function addTela (filmsList) {
   const arrayFilms = filmsList.map(function (film) {
     const template = `
@@ -14,6 +15,7 @@ function addTela (filmsList) {
   return arrayFilms.join('');
 }
 
+// ===== Filtro Tempo =====
 function selectedDuration (filmsList, selected) {
   const filmsDuration = filmsList.filter(function (film){
     if (selected === '90min'){
@@ -26,4 +28,16 @@ function selectedDuration (filmsList, selected) {
     return film;
   })
   return addTela (filmsDuration);
+}
+
+// ===== Ordenação =====
+function sorted(films, selection) { 
+  const sortedFilms = films.sort((a,b) => {
+    if (selection == 'rt_score') {
+      return b.rt_score - a.rt_score;
+    } else if (selection == 'release_date') {
+      return b.release_date - a.release_date;
+    }
+  });
+  return addTela(sortedFilms)
 }
