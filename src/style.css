@@ -6,7 +6,11 @@
 .body-container {
     color: #0A1823;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    background-image: url(background.jpg) ;    
+    background-image: url(background.jpg);  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
 }
 
 .rick-img {

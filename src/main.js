@@ -26,7 +26,7 @@ function displayResults(resultsList) {
 
 displayResults(data.results);
 
-    
+
 
 /*função para um personagem
 
