@@ -40,10 +40,12 @@ function selectedDuration (filmsList, selected) {
 // ===== Ordenação =====
 function sorted(films, selection) { 
   const sortedFilms = films.sort((a,b) => {
-    if (selection == 'rt_score') {
+    if (selection === 'rt_score') {
       return b.rt_score - a.rt_score;
-    } else if (selection == 'release_date') {
+    } else if (selection === 'release_date') {
       return b.release_date - a.release_date;
+    } else if (selection === 'order') {
+      return a.release_date - b.release_date
     }
   });
   return addTela(sortedFilms)

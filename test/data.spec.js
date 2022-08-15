@@ -17,6 +17,6 @@ describe('actions', () => {
   it('should containing Totoro', () => {
     expect(selectedDuration([{title: "Castle in the Sky", duration: '125'}, 
                                       {title: "Kiki's Delivery Service", duration: '102'}, 
-                                      {title: "My Neighbor Totoro", duration: '88'}], '90min')).toBe('My Neighbor Totoro');
+                                      {title: "My Neighbor Totoro", duration: '88'}], '90min')).toEqual(expect.not.stringContaining("Kiki's Delivery Service"));
   });
 });

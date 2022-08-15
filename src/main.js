@@ -27,7 +27,7 @@ const modal = document.querySelector('.modal');
 const closeModal = document.querySelectorAll('.close');
 const btnModal = document.querySelectorAll('.btn-modal');
 
-console.log (modal);
+// console.log (modal);
 
 // function showModal (){
 //   for (let i = 0; i < films.length; i++){
