@@ -17,7 +17,7 @@ Em 1974 os dois se encontravam durante a produção de um anime de grande sucess
 Isso fez com que os dois percebessem que para fazer as animações de alta qualidade, como desejavam, precisariam de um tipo de mídia onde os prazos não fossem tão apertados como são nas séries de televisão. Foi assim que surgiu a ideia da criação de um estúdio para produzir filmes cuidadosamente desenhados, com enredo e qualidade impecáveis, e o mais importante, de seu próprio jeito.
 
 
-## 3. Histórias de usuário
+## 3. Histórias de usuários
 ![img](usuario.png)
 
 
