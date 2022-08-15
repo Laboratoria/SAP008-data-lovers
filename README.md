@@ -18,7 +18,7 @@ Isso fez com que os dois percebessem que para fazer as animações de alta quali
 
 
 ## 3. Histórias de usuário
-![img](historiadousuario.png)
+![img](usuario.png)
 
 
 ## 4. Protótipo
