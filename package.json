@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "data-lovers",
   "version": "1.0.0",
   "main": "src/index.html",
