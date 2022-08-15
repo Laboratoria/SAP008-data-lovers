@@ -74,7 +74,7 @@ html, body {
     }
 }
 
-main {
+#main-content {
     width: 100%;
     height: 100vh;
     background-color: #F9F9F9;
@@ -88,12 +88,12 @@ main {
     background-size: 20rem;
 }
 
-main h1 {
+#main-content h1 {
     width: 18.7rem;
     text-align: center;
 }
 
-main button {
+#main-content button {
     width: 9.3rem;
     height: 3.1rem;
     border: none;
@@ -103,7 +103,7 @@ main button {
     font-size: larger;
 }
 
-main button:hover, .voltar:hover{
+#main-content button:hover, .voltar:hover{
     transform: scale(1.1);
     transition: 0.5s;
     transition-delay: 0.2s;
@@ -153,6 +153,28 @@ main button:hover, .voltar:hover{
     font-size: medium;
 }
 
+#cards {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    display: none;
+    flex-direction: column;
+}
+
+#cardzinho {
+    width: 100%;
+    height: auto;
+}
+
+.card-container {
+    width: 12rem;
+    height: 22rem;
+}
+
+.card-container img {
+    width: 12rem;
+    height: 20rem;
+}
 
 footer {
     max-width: 100%;
