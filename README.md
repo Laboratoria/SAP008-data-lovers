@@ -63,6 +63,6 @@ Mas, conforme a pesquisa com os usuários, entendemos que os mesmos buscavam por
 
 <img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/PrototipoWeb.jpeg">
 
-## PROTÓTIPO BAIXA FIDELIDADE - mobile 
+## PROTÓTIPO ALTA FIDELIDADE - mobile 
 
 <img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/prototipoMobile.jpeg">
