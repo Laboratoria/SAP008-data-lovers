@@ -1,34 +1,63 @@
-import { example } from './data.js';
+//import { example } from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
-
-// CRIAR CONST COM TODOS OS DADOS DOS PERSONAGENS: 
-
+// IMPORTANDO TODOS OS DADOS DOS PERSONAGENS: 
 const rickandmorty = data.results;
 
-console.log(rickandmorty)
+// CRIANDO OS CARDS NA TELA
+function criaCard (personagens){
+const exibir = personagens.map((personagem) => {
+const template = `
+    <div class = "cards">
+        <div class = "imagem">
+         <img class = "imagemCard" src="${personagem.image}">
+         <div class = "name">${personagem.name}</div>
+        </div>
+        <ul class = "textoCard">
+         <li>Name: ${personagem.name}</li>
+         <li>Espécie: ${personagem.species}</li>
+         <li>Gênero: ${personagem.gender}</li>
+         <li>Status: ${personagem.status}</li>
+        </ul>
+    </div>
+    `
+    return template;
+});
 
-// PRINTAR TODOS OS CARDS NA TELA:
+document.querySelector("#exibirCards").innerHTML = exibir.join("<br>");
+}
 
-const exibir = rickandmorty.map(({name})=> name)
-
-document.getElementById("teste").innerHTML = exibir
+criaCard(rickandmorty);
 
 
-//window.addEventListener("load",printarcards())
+//PRINTAR TODOS OS CARDS NA TELA:
+//const exibir = rickandmorty.map(criaCard).join("");
 
-//function printarcards {
 
- //   }
+
+    //return personagem.name + " " + personagem.species + " " + personagem.gender + " " + personagem.status + "<br>";
+        `<div class = "cards">
+            <div class = "imagem">
+             <img id = "imagemCard" src= "${personagem.image}"></img>
+             <div class = "name">${personagem.name}</div>
+            </div>
+            <ul class = "textoCard">
+             <li>Espécie: ${personagem.species}</li>
+             <li>Gênero: ${personagem.gender}</li>
+             <li>Status: ${personagem.status}</li>
+            </ul>
+        </div>
+        `
+
+
+
+    
+    
     
 
 
-// SELECIONAR OPCÃO DE ESPÉCIE:
 
-//let filtroEspecie = document.querySelector("#especie").value
 
-//filtroEspecie.addEventListener("click",function())
 
-//switch
+

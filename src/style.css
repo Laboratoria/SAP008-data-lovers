@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Avocado;
+    src: url("./fonts/Hello\ Avocado.ttf");
+}
+
+main,option,nav{
+    font-family: Avocado;
+}
