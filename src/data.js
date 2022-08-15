@@ -3,7 +3,7 @@
 export consts = {displayResults};
 
 
-function displayResults() {
+functigit on displayResults() {
 
     let resultado = '';
     let todosOsDados = data.results;
