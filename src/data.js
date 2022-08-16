@@ -1,11 +1,9 @@
 
 import data from './data/rickandmorty/rickandmorty.js';
 
-// export const printCards = (arrayRickmorty) => {
-//   return 'example';
-// };
-
-
+ export const example = () => {
+  return 'example';
+ };
 
 const rickandmorty = data.results;
 
