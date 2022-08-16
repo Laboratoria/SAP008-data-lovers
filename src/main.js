@@ -56,6 +56,6 @@ document.querySelector("#status").addEventListener("change", (event) => {
 // document.querySelector("#ordemalfabetica").addEventListener("change", (event) => {
 //     const valor = event.target.value;
 //     const ordemalfabeticaFiltrada = função( , );
-  
+
 //     criaCard(ordemalfabeticaFiltrada);
 //   });
