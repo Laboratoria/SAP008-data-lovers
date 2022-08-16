@@ -4,7 +4,7 @@
 Durante a época de Halloween na Escola de Idiomas X, os alunos participam de uma gincana. Neste ano os alunos irão competir em equipes com quis sobre a saga de Harry Potter. Para isso, precisarão de um local que tenha as informações para responderem as perguntas sobre personagens, feitiços, poções e livros. Este projeto tem a intenção de criar um site que possa ser acessado por computador ou celular, e assim que eles consigam todas as informações necessárias para participar da gincana.
 Este projeto está sendo criado em função de como os alunos precisam dele para participar da gincana de Halloween.
 
-### 📋 *História de usuário*
+## 📋 *História de usuário*
 Eu, como aluno/visitante quero ter acesso as informações sobre os livros, personagens, poções e feitiços do Harry Potter.
 Eu, como aluno/visitante preciso ordenar os personagens por espécie, gênero e casa.
 Eu, como aluno/visitante preciso filtrar os feitiços por tipo de feitiço existente.
@@ -14,15 +14,16 @@ Deverá ter um menu onde o visitante possa percorrer todas as páginas com facil
 Deverá ter ordenação por espécie, gênero, casa em personagens para que o visitante possa ter mais facilidade ao acesso das informações.
 Deverá ter filtro pelo tipo de feitiços para que apareçam somente os filtros que o visitante deseja.
 
-### 🖼️ *Protótipos*
+## 🖼️ *Protótipos*
 Primeiro, foi criado um protótipo de baixa fidelidade onde foi desenvolvido e pensado o que este website deveria ter para corresponder as necessidades do cliente que solicitou o projeto.
-Protótipo de baixa fidelidade
-<img src="./prototipos/prototipobaixa.jpeg">
+
+### Protótipo de baixa fidelidade
+<img src= "C:Users/nanya/Desktop/sap008-data-lovers/prototipos/prototipobaixa.jpeg">
 
 E segundo passo, criamos um protótipo de alta fidelidade para que o cliente tivesse uma noção melhor de como ficaria e pudesse sugerir as modificações necessárias.
 Protótipo de alta fidelidade para Desktop
 
-Protótipo de alta fidelidade para Celular
+### Protótipo de alta fidelidade para Celular
 
 
 
