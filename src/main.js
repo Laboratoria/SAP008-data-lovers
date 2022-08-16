@@ -6,7 +6,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 function cardsData(data) {
     document.getElementById('read').innerHTML = data.map((item) => `
     <div class="card">
-      <div class="card-in">
+      <div class="card-in"> 
         <div class="card-first">
         <img src="${item.image}">
          <p><strong> Nome: ${item.name}</strong></p>

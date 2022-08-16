@@ -8,23 +8,19 @@ html body {
     background-size: auto;
 }
 
+.img-logo img {
+    width: 20rem;
+    height: auto;
+}
+
 .container-header {
     background-color:transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     height: 2rem;
     font-family: "Poppins", sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
+    flex-wrap: wrap; 
 }
-
-/* 
-.container-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-} */
 
 .container-header button {
     background:rgb(0, 0, 0);
@@ -33,13 +29,15 @@ html body {
     cursor: pointer;
     width: 10rem;
     height: 2rem;
-    margin: .7rem;
+    margin: .9rem;
     border: none;
     transition: all .3s ease-in-out;
+    margin-top: 3rem;
   }
 
 button:hover {
-    transform: translateY(-2px);
+    background: #3b065ca9;
+    transform: translateY(-3px);
     box-shadow: 0 5px 0 #3b065ca9;
   }
 
@@ -47,7 +45,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .btn {
@@ -104,6 +102,7 @@ button:hover {
     transition: transform 1s;
     transform-style: preserve-3d;
 }
+
 .card {
     background-image: url(./img/espacowe.jpg);
     display:inline-block;
