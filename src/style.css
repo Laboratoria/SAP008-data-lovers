@@ -13,42 +13,33 @@ html body {
     height: auto;
 }
 
-/* .imagem-title {
-    float: none;
-    height: 1rem;
-    width: 2rem;
-    align-items: flex-start;
-} */
-/* 
-.container-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+.container-header {
+    background-color:transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 2rem;
+    font-family: "Poppins", sans-serif
     
-} */
+.container-nav{
 
-.inicio {
-    background-color: black;
-    font-size: "Patua One" 10px;
-    color: white;
-    justify-content: center;
-    box-shadow:0 5px 0 #000000;
-    cursor: pointer;
-    text-transform: uppercase;
-
+    display: flex;
+    flex-wrap: wrap; 
 }
 
-.btn-header {
+.container-header button {
     background:rgb(0, 0, 0);
     color:#fff;
-    box-shadow:0 5px 0 #83016d;
-  }
-  .btn-green:hover {
-    background:rgb(190, 6, 190);
-    box-shadow:0 5px 0 #83016d;
+    box-shadow:0 3px 0 #3b065ca9;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+    margin: .9rem;
+    border: none;
+    transition: all .3s ease-in-out;
+    margin-top: 3rem;
   }
 
-  button:hover {
+
+button:hover {
     background: #3b065ca9;
     transform: translateY(-3px);
     box-shadow: 0 5px 0 #3b065ca9;
@@ -58,33 +49,44 @@ html body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 
 .btn {
     width: 13rem;
-    height: 2rem;
+    height: 2.3rem;
     justify-content: space-around;
-    background-color: rgb(80, 49, 70);
-    font-family: "Patua One";
+    background-color: #3b065c;
+    font-family: "Poppins", sans-serif;
     color: white;
     text-align: center;
-    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
 }
 
-.container-pesquisa{
+.container-pesquisa {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;   
+    margin-top: 2rem; 
 }
 
-.buscar{
-    background-color: rgb(80, 49, 70);
-    font-family: "Patua One";
+.pesquisar {
+    width: 15rem;
+    height: 1rem;
+    border: none;
+    padding: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #3b065cc5;
     color: white;
-    border: 0;
+}
+
+.buscar {
+    background-color: rgb(80, 49, 70);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
     text-align: center;
-    border-radius: 0.25rem;
     padding: 0.20rem 2rem;
     
 }
@@ -124,6 +126,7 @@ html body {
     box-shadow: 8px 8px 8px black;
     margin-top: 50px;
     color: #fff;
+    perspective: 1000px;
 }
 
 .card-in {
