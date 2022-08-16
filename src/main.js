@@ -1,4 +1,4 @@
-import { filterData } from "./data.js";
+import { filterData, filterData2, filterData3 } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -10,8 +10,8 @@ criaCard(rickandmorty);
 
 // CRIANDO OS CARDS NA TELA
 function criaCard(personagens) {
-  const exibir = personagens.map((personagem) => {
-    const template = `
+  const printarCard = personagens.map((personagem) => {
+    const criandoCard = `
         <div class = "cards">
             <div class = "imagem">
              <img class = "imagemCard" src="${personagem.image}">
@@ -24,10 +24,10 @@ function criaCard(personagens) {
             </ul>
         </div>
         `;
-    return template;
+    return criandoCard;
   });
 
-  document.querySelector("#exibirCards").innerHTML = exibir.join("");
+  document.querySelector("#exibirCards").innerHTML = printarCard.join("");
 }
 
 // PEGOU VALOR DO QUE USUÁRIO SELECIONOU DE TIPO DE ESPÉCIE:
@@ -38,3 +38,24 @@ document.querySelector("#especie").addEventListener("change", (event) => {
   // CHAMANDO A FUNÇÃO DO MAP E DANDO COMO PARÂMETRO A FUNÇÃO DO FILTER PARA PRINTAR NA TELA
   criaCard(especieFiltrada);
 });
+
+document.querySelector("#genero").addEventListener("change", (event) => {
+  const valor = event.target.value;
+  const generoFiltrado = filterData2(valor, rickandmorty);
+
+  criaCard(generoFiltrado);
+});
+
+document.querySelector("#status").addEventListener("change", (event) => {
+  const valor = event.target.value;
+  const statusFiltrado = filterData3(valor, rickandmorty);
+
+  criaCard(statusFiltrado);
+});
+
+// document.querySelector("#ordemalfabetica").addEventListener("change", (event) => {
+//     const valor = event.target.value;
+//     const ordemalfabeticaFiltrada = função( , );
+  
+//     criaCard(ordemalfabeticaFiltrada);
+//   });

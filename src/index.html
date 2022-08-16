@@ -36,10 +36,43 @@
         <option id="vampiro" value="Vampire">Vampiro</option>
         <option id="robo" value="Robot">Robô</option>
         <option id="cronenberg" value="Cronenberg">Cronenberg</option>
+        <option id="cronenberg" value="Disease">Doença</option>
+        <option id="cronenberg" value="Parasite">Parasita</option>
+        <option id="cronenberg" value="unknown">Desconhecido</option>
       </select>
-    </section>
+      <section>
 
-    <div id="exibirCards"></div>
+        <section>
+          <label for="Filtro2">Gênero:</label>
+          <select name="filtro2" id="genero">
+            <option selected disable value="">Todos</option>
+            <option value="Male">Masculino</option>
+            <option value="Female">Feminino</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="Filtro3">Status:</label>
+          <select name="filtro3" id="status">
+            <option selected disable value="">Todos</option>
+            <option value="Alive">Vivo</option>
+            <option value="Dead">Morto</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="Filtro4">Ordem Alfabética:</label>
+          <select name="filtro4" id="ordemalfabetica">
+            <option selected disable value="">Todos</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </section>
+
+
+        <div id="exibirCards"></div>
   </main>
 
   <script src="main.js" type="module"></script>
