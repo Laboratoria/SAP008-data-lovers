@@ -1,4 +1,3 @@
-
   
 export const dataFilter = (data,typeData, condition) => data.filter((character) => {
     return (character[typeData] === condition);

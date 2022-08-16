@@ -4,7 +4,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 function cardsData(data) {
-    document.getElementById('read').innerHTML = data.map((item) => `
+  document.getElementById('read').innerHTML = data.map((item) => `
     <div class="card">
       <div class="card-in">
         <div class="card-first">
@@ -23,12 +23,12 @@ function cardsData(data) {
     </div>
   </div>  
   `)
-  }
-  
-  cardsData(data.results);
-  
-  const selectGender = document.getElementById("gender");
-  const selectSpecies = document.getElementById("species");
-  const selectStatus = document.getElementById("status"); 
+}
+cardsData(data.results);
+
+
+const selectGender = document.getElementById("gender");
+const selectSpecies = document.getElementById("species");
+const selectStatus = document.getElementById("status");
 
 

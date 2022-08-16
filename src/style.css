@@ -1,13 +1,10 @@
-html {
+html body {
     width: 100%;
     margin: 0;    
     background-image: url(./img/espacowe.jpg);
     background-size: auto;
 }
 
-body {
-    background-image: url(./img/espacowe.jpg);
-}
 
 .container-header {
     background-color:transparent;
