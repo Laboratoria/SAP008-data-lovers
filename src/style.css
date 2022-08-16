@@ -33,7 +33,7 @@ header {
     resize: none;
     width: 500px;
     height: 44px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-family: 'K2D';
     font-size: 18px;
     font-weight: 500;
@@ -71,15 +71,17 @@ header {
 }
 
 .cards {
-
+    color: #73D8CC;
 }
 
-label[for=par-status], label[for=par-gender], label[for=par-spescies] {
-    color: white
+label[for=par-status], label[for=par-gender], label[for=par-species] {
+    color: white;
+    font-family: "K2D";
+    font-weight: 600;
 }
 
 p {
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: "K2D";
 }
 
