@@ -17,7 +17,10 @@ html body {
     background-color:transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     height: 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif
+    
+.container-nav{
+
     display: flex;
     flex-wrap: wrap; 
 }
@@ -34,6 +37,7 @@ html body {
     transition: all .3s ease-in-out;
     margin-top: 3rem;
   }
+
 
 button:hover {
     background: #3b065ca9;
@@ -94,6 +98,7 @@ button:hover {
 
 .card:hover .card-in {
     transform: rotateY(180deg);
+    background-image: url(./img/espacowe.jpg);
 }
 
 .card-in {
@@ -123,6 +128,7 @@ button:hover {
     color: #fff;
     perspective: 1000px;
 }
+
 .card-in {
     display: flex;
     flex-direction:row;
@@ -137,17 +143,18 @@ button:hover {
     border-radius: 10px;
 }
 .card-first, .back-card{
-    display:grid;
+    display:inline-block;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
+    
 }
 .card-first{
     text-align: center;
 }
 .back-card{
-    display:block;
+    display:grid;
     transform: rotateY(180deg);
     justify-content:center;
     font-size: 15px;

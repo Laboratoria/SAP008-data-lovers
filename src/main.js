@@ -32,4 +32,4 @@ function cardsData(data) {
   const selectSpecies = document.getElementById("species");
   const selectStatus = document.getElementById("status"); 
 
-console.log(example, data);
+
