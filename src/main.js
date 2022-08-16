@@ -1,68 +1,31 @@
-import {addTela, selectedDuration, sorted} from './data.js';
+import {ghibli} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
-// ===== Intro e somatórios =====
-
-
-// ===== Exibir Cards =====
 const films = data.films;
 const catalogue = document.querySelector('.catalogue');
-catalogue.innerHTML = addTela(films);
+catalogue.innerHTML = ghibli.printCatalogue(films);
 
-// ===== Filtro Tempo =====
-const filterDuration = document.querySelector('#filter-duration');
-filterDuration.addEventListener ('change', filterSelected);
+const btnFilterDuration = document.querySelector('#filter-duration');
+btnFilterDuration.addEventListener ('change', () => {
+  const selected = (btnFilterDuration).value;
+  catalogue.innerHTML = ghibli.filterDuration(films, selected);
+});
 
-function filterSelected () {
-  const selected = (filterDuration).value;
-  catalogue.innerHTML = selectedDuration(films, selected, filterDuration);
-}
-
-// ===== Ordenação =====
 const orderFilms = document.querySelector('#order-by');
 orderFilms.addEventListener('change', () => {
   let selection = orderFilms.value;
-  catalogue.innerHTML = sorted(films, selection);
+  catalogue.innerHTML = ghibli.sortedFilms(films, selection);
 });
 
+const resultCountFilms = document.querySelector('#count-films');
+const resultCountPeople = document.querySelector('#count-people');
+const resultCountLocations = document.querySelector('#count-locations');
+const resultCountVehicles = document.querySelector('#count-vehicles');
 
-const modal = document.querySelector('.modal');
-const closeModal = document.querySelectorAll('.close');
-const btnModal = document.querySelectorAll('.btn-modal');
-
-// console.log (modal);
-
-// function showModal (){
-//   for (let i = 0; i < films.length; i++){
-//     modal[i].style.display = "block";
-//   }  
-// }
-
-// function hideModal (){
-//   for (let i = 0; i < films.length; i++){
-//     modal[i].style.display = "none";
-//   }
-// }
-function showModal (){
-  modal.style.display = "block";
-}
-
-function hideModal (){
-  modal.style.display = "none";
-}
-
-for (let i = 0; i < btnModal.length; i++){
-  btnModal[i].addEventListener ('click', showModal);
-  closeModal[i].addEventListener ('click', hideModal);
-}
-
-
-
-// function functionModal (){
-//   films.forEach(film => {
-//     modal.style.display = "block";
-//   }); 
-// }
+resultCountFilms.innerHTML = ghibli.countFilms(films);
+resultCountPeople.innerHTML = ghibli.countPeople(films);
+resultCountLocations.innerHTML = ghibli.countLocations(films);
+resultCountVehicles.innerHTML = ghibli.countVehicles(films);
 
 // ======== FILTRO DE GENERO PARA USAR NOS PERSONAGENS =========
 // let selectedGender = document.getElementById('filter-gender');
@@ -83,4 +46,39 @@ for (let i = 0; i < btnModal.length; i++){
 //   })
 //   // console.log (filmesfiltrados);
 //   addTela (filmesfiltrados);
+// }
+
+// ==== Modal ====
+// const btnModal = document.querySelectorAll('.btn-modal');
+// const modal = document.querySelector('.modal');
+
+// for (let i = 0; i < films.length; i++){
+//   const showModal = prepareModal(films[i]);
+//   btnModal[i].addEventListener ('click', showModal);
+// }
+
+// function prepareModal (film) {
+//   return function (){
+//     modal.innerHTML = mostrarModal(film);
+//     const closeModal = document.querySelector('.close');
+//     closeModal.addEventListener ('click', btnHideModal);
+//     showModal();
+//   }
+// }
+
+// // const root = document.querySelector('.root');
+// modal.addEventListener ('click', hideModal);
+
+// function showModal(){
+//   modal.style.display = "block";
+// }
+
+// function btnHideModal(){
+//   modal.style.display = "none";
+// }
+
+// function hideModal(e){
+//   if (e.target == modal){
+//   modal.style.display = "none";
+//   }
 // }
