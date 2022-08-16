@@ -1,9 +1,5 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
+export const filtroDoSelect = (data, tagDoCampeao) => {
+  const filtroDaFuncao = data.filter(champion => champion.tags.includes(tagDoCampeao));
+  return filtroDaFuncao;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
