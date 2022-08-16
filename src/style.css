@@ -1,20 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
 html body {
     width: 100%;
     margin: 0;    
-    background-image: url(./img/espacowe.jpg);
+    background-image: url(./img/espaco.jpg);
     background-size: auto;
 }
 
-.container-header {
-    background-color:transparent;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    height: 5rem;
-    font-family: "Patua One";
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
+.img-logo img {
+    width: 20rem;
+    height: auto;
 }
 
 /* .imagem-title {
@@ -52,10 +48,10 @@ html body {
     box-shadow:0 5px 0 #83016d;
   }
 
-.btn-header:active {
-    display: flex;    
-    top:5px;
-    box-shadow:none;
+  button:hover {
+    background: #3b065ca9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #3b065ca9;
   }
 
 .seletores {
