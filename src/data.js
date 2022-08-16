@@ -2,7 +2,8 @@ export {rickAndMorty};
 
 // ==== objeto principal com as funções de mostrar cards e filtro =====
 const rickAndMorty = {
-    // ======= Função de mostrar cards na tela ======
+
+    // ======= Função de gerar templates ======
     displayCards:
     function displayCards(cardsList) {
         const arrayResults = cardsList.map((item) => {
@@ -30,8 +31,12 @@ const rickAndMorty = {
     // ===== Função de filtro por status ====
     filtrarPorStatus:    
     function filtrarPorStatus(status) {
-    const filtro = status.filter((status) => personagem.status.toLowerCase() === status)
-    return filtro
+    const filtro = data.results.filter(function(personagem) {
+        const filtrado = personagem.status.toLowerCase() === status;
+        return filtrado;
+    });
+
+    return this.displayCards(filtro)
     },
 
     // ===== Função de filtro por espécie ====
