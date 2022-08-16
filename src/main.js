@@ -27,31 +27,31 @@ function displayResults(resultsList) { //Essa function recebe uma lista para pro
 displayResults(data.results);
 
 document.querySelector('#select-status').addEventListener('change', (event) => {
-    const value = event.target.value
-    window.alert(value)
-})
+    const value = event.target.value;
+    window.alert(value);
+});
 
 
 
 document.querySelector('#select-species').addEventListener('change', (event) => {
-    const value = event.target.value
+    const value = event.target.value;
     
-    const listaFiltrada = filtrarPorEspecie(value) // Criamos uma constante onde ela recebeu o valor da funçào que está no data.
+    const listaFiltrada = filtrarPorEspecie(value); // Criamos uma constante onde ela recebeu o valor da funçào que está no data.
     //O .value no final, estamos indicando que essa constante tem que receber o valor atribuido ao botão (const value), que sera disparado 
     //quando o usuario escolher no select qual a espécie. Por fim colocamos displayResults(listafiltrada) para mostrar o resultado final
     // dessa lista filtradagit 
     
-    displayResults(listaFiltrada)
-})
+    displayResults(listaFiltrada);
+});
 
 document.querySelector('#select-gender').addEventListener('change', (event) => {
-    const value = event.target.value
-    window.alert(value)
-})
+    const value = event.target.value;
+    window.alert(value);
+});
 
 document.querySelector('#select-order').addEventListener('change', (event) => {
-    const value = event.target.value
-    window.alert(value)
+    const value = event.target.value;
+    window.alert(value);
 })
 
 

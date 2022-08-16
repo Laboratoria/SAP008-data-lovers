@@ -7,7 +7,8 @@ import data from "./data/rickandmorty/rickandmorty.js";
 
 
 export const filtrarPorEspecie = (species) => {
-    return data.results.filter(personagem => personagem.species.toLowerCase() === species)
+    const filtro = data.results.filter(personagem => personagem.species.toLowerCase() === species);
+    return filtro;   
 };
 
 //Criei uma constante que é uma funcáo, onde passei o parametro que quero que seja filtrado, que nesse caso é o status
