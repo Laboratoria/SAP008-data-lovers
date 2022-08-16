@@ -1,3 +1,4 @@
+import {filtroDoSelect} from "./data.js";
 import data from './data/lol/lol.js';
 
 let arrayCampeoes = Object.values(data.data);
@@ -53,5 +54,10 @@ function printCards(lol) {
         `    
     )
 }
-printCards(arrayCampeoes)
 
+
+const selectTag = document.querySelector('#funcao');
+selectTag.addEventListener('click', function() {
+    const valorSelecionado = funcao.value;
+    printCards(filtroDoSelect(arrayCampeoes, valorSelecionado));
+})
