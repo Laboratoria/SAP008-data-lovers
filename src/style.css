@@ -1,95 +1,94 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+>>>>>>> de25ddedb9516cc5bbf4f717d0e1d3de438e5692
 html body {
     width: 100%;
     margin: 0;    
-    background-image: url(./img/espacowe.jpg);
+    background-image: url(./img/espaco.jpg);
     background-size: auto;
 }
 
+<<<<<<< HEAD
+=======
+.img-logo img {
+    width: 20rem;
+    height: auto;
+}
+>>>>>>> de25ddedb9516cc5bbf4f717d0e1d3de438e5692
 
 .container-header {
     background-color:transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    height: 5rem;
-    font-family: "Patua One";
+    height: 2rem;
+    font-family: "Poppins", sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
+    flex-wrap: wrap; 
 }
 
-/* .imagem-title {
-    float: none;
-    height: 1rem;
-    width: 2rem;
-    align-items: flex-start;
-} */
-/* 
-.container-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-} */
-
-.inicio {
-    background-color: black;
-    font-size: "Patua One" 10px;
-    color: white;
-    justify-content: center;
-    box-shadow:0 5px 0 #000000;
-    cursor: pointer;
-    text-transform: uppercase;
-
-}
-
-.btn-header {
+.container-header button {
     background:rgb(0, 0, 0);
     color:#fff;
-    box-shadow:0 5px 0 #83016d;
-  }
-  .btn-green:hover {
-    background:rgb(190, 6, 190);
-    box-shadow:0 5px 0 #83016d;
+    box-shadow:0 3px 0 #3b065ca9;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+    margin: .9rem;
+    border: none;
+    transition: all .3s ease-in-out;
+    margin-top: 3rem;
   }
 
-.btn-header:active {
-    display: flex;    
-    top:5px;
-    box-shadow:none;
+button:hover {
+    background: #3b065ca9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #3b065ca9;
   }
 
 .seletores {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 
 .btn {
     width: 13rem;
-    height: 2rem;
+    height: 2.3rem;
     justify-content: space-around;
-    background-color: rgb(80, 49, 70);
-    font-family: "Patua One";
+    background-color: #3b065c;
+    font-family: "Poppins", sans-serif;
     color: white;
     text-align: center;
-    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
 }
 
-.container-pesquisa{
+.container-pesquisa {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;   
+    margin-top: 2rem; 
 }
 
-.buscar{
-    background-color: rgb(80, 49, 70);
-    font-family: "Patua One";
+.pesquisar {
+    width: 15rem;
+    height: 1rem;
+    border: none;
+    padding: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #3b065cc5;
     color: white;
-    border: 0;
+}
+
+.buscar {
+    background-color: rgb(80, 49, 70);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
     text-align: center;
-    border-radius: 0.25rem;
     padding: 0.20rem 2rem;
     
 }
@@ -98,16 +97,18 @@ html body {
     padding: 0em 6em;
     text-align: center;
 }
+
 .card:hover .card-in {
     transform: rotateY(180deg);
-    background-image: url(./img/espacowe.jpg);
 }
+
 .card-in {
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
+
 .card {
     background-image: url(./img/espacowe.jpg);
     display:inline-block;
@@ -126,8 +127,8 @@ html body {
     box-shadow: 8px 8px 8px black;
     margin-top: 50px;
     color: #fff;
+    perspective: 1000px;
 }
-
 .card-in {
     display: flex;
     flex-direction:row;
@@ -142,21 +143,19 @@ html body {
     border-radius: 10px;
 }
 .card-first, .back-card{
-    display:inline-block;
+    display:grid;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
-    
 }
 .card-first{
     text-align: center;
 }
 .back-card{
-    display:grid;
+    display:block;
     transform: rotateY(180deg);
     justify-content:center;
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
-
