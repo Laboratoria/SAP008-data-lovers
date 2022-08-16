@@ -23,7 +23,11 @@ Primeiro, foi criado um protótipo de baixa fidelidade onde foi desenvolvido e p
 E segundo passo, criamos um protótipo de alta fidelidade para que o cliente tivesse uma noção melhor de como ficaria e pudesse sugerir as modificações necessárias.
 Protótipo de alta fidelidade para Desktop
 
-### Protótipo de alta fidelidade para Celular
+### Protótipo de alta fidelidade
+
+### Usabilidade
+Mandamos o protótipo para várias pessoas testarem a usabilidade do projeto.
+Percebemos que alguns erros ortográficos e a falta de um botão para voltar ao menu inicial.
 
 
 
