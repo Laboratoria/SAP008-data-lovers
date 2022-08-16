@@ -7,8 +7,8 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 const rickandmorty = data.results;
 
-export const filterData = (species) => {
-  const filtro = rickandmorty.filter(item => item.species === species)
+export const filterData = (filtroSelecionado,array) => {
+  const filtro = array.filter(item => item.species === filtroSelecionado)
   return filtro;
 };
 
