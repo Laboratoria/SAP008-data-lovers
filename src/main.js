@@ -1,5 +1,14 @@
-import { example } from './data.js';
+import { filtrarNome } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
+
+const charactersName = data.results.map(elemento => elemento.name)
+// console.log(charactersName)
+
+const charactersStatus = data.results.map(elemento => elemento.status)
+// console.log(charactersStatus)
+
+//   let res = document.getElementById('par-name')
+//   res.innerHTML = filtro
 
 
 const buttonFilter = document.querySelector('#filter');
@@ -11,19 +20,16 @@ buttonFilter.addEventListener ('click', () => {
     filterBox.hidden = false;
 })
 
-
 const buttonSearch = document.querySelector('#search');
 const cards = document.querySelector('#cards')
 
 cards.hidden = true;
+
 buttonSearch.addEventListener ('click', () => {
     cards.hidden = false;
+    const filtro = filtrarNome (charactersName)
+    console.log(filtro)
 })
-
-
-
-
-
 
 //variáveis para funções checked dos radio buttons
 let checked = true;
