@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: 100vw;
+
 }
 .top {
     color: #f1faee;
@@ -19,18 +20,19 @@ body {
     margin: 1vw 13vw;
 }
 .description {
-    margin: 5vw 1vw 0 -5vw;
+    margin-top: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color:#f1faee;
     text-align: right;
-    flex-wrap: wrap;
 }
 .description-img {
-    width: 40rem;
+    margin: 0 0 0 -5vw;
+    width: 40vw;
 }
 .description-text {
+    margin: 0 1vw 0 0;
     width: 49%;
     font-size: 2.2rem;
 }
@@ -98,12 +100,15 @@ body {
     font-size: 3vw;
 }
 .description {
-    margin: -1.2vw 1.5vw 0 -9vw;
-    display: flex;
-    font-size: 0.5em;
+    margin-top: -1.2vw;
 }
-.description-img {
-    width: 9rem;
+.description-text {
+    font-size: 0.5rem;
+}
+.counter {
+    color: #e26c7a;
+    text-shadow: black 1.5px 1.5px 2px;
+    font-size: 0.6rem;
 }
 .btn-catalogue-filter {
     font-size: 0.4rem;
@@ -127,7 +132,7 @@ body {
     width: 9rem;
     margin-left: 65%;
 }
-}
+} 
 
 /* .close {
     color:  #1D1C38;
