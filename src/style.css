@@ -9,7 +9,7 @@
     src: url('Atma-Light.tff');
     src: url('Atma-Medium.tff');
     src: url('Atma-Regular.tff');
-    src: url('Atma-SemiBold.tff'); 
+    src: url('Atma-SemiBold.tff');
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 }
 
 #title {
-   max-width: 578px;
-   max-height: 245px;
+    max-width: 578px;
+    max-height: 245px;
 }
 
 header {
@@ -42,7 +42,8 @@ header {
     background-color: white;
 }
 
-#filter, #search {
+#filter,
+#search {
     font-family: 'Atma';
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 1px;
@@ -55,6 +56,7 @@ header {
 #filter {
     -webkit-text-stroke-color: #73D8CC;
 }
+
 #search {
     -webkit-text-stroke-color: #78C742;
 }
@@ -74,15 +76,15 @@ header {
     color: #73D8CC;
 }
 
-label[for=par-status], label[for=par-gender], label[for=par-species] {
+li {
     color: white;
     font-family: "K2D";
-    font-weight: 600;
 }
 
 p {
     color: rgb(255, 255, 255);
     font-family: "K2D";
+    font-weight: 600;
 }
 
 footer {

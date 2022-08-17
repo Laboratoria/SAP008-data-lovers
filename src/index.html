@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <img id="title" src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/rick_and_morty_header.png?raw=true" alt="logo Rick and Morty"><br>
-      Rick and Morty traz as vivências do cientista Rick e seu neto, <br>
-      Morty, nas infinitas possibilidades que o universo permite.<br>
-      Abordando relacionamentos, moralidade, filosofia, sociologia e<br>
-      ciência, diversos personagens são apresentados e, aqui, você<br>
-      pode procurar e saber um pouco mais sobre cada um.
-    </header>
 
-    <nav>
-      <input type="text" id="key-words" placeholder="Palavras-chave"><br>
-      <button id="filter">FILTRAR</button>
-      <button id="search">BUSCAR</button>
-      <section id="filter-box">
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div id="status" class="filter-option">
-          <label for="status">Status:</label><br>
+<body>
+  <header>
+    <img id="title"
+      src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/rick_and_morty_header.png?raw=true"
+      alt="logo Rick and Morty"><br>
+    Rick and Morty traz as vivências do cientista Rick e seu neto, <br>
+    Morty, nas infinitas possibilidades que o universo permite.<br>
+    Abordando relacionamentos, moralidade, filosofia, sociologia e<br>
+    ciência, diversos personagens são apresentados e, aqui, você<br>
+    pode procurar e saber um pouco mais sobre cada um.
+  </header>
+  <img>
+  <nav>
+    <input type="text" id="key-words" placeholder="Palavras-chave"><br>
+    <button id="filter">FILTRAR</button>
+    <button id="search">BUSCAR</button>
+    <section id="filter-box">
 
-          <input type="radio" id="alive" class="radio-filter">
-          <label for="alive">vivo</label><br>
-          <input type="radio" id="dead" class="radio-filter">
-          <label for="dead">morto</label>
-          <input type="radio" id="unknow" class="radio-filter">
-          <label for="dead">desconhecido</label>
-        </div>
-        
-        <div id="gender" class="filter-option">
-          <label for="gender">Gênero:</label><br>
+      <div id="status" class="filter-option">
+        <label for="status">Status:</label><br>
 
-          <input type="radio" id="female" class="radio-filter">
-          <label for="female">feminino</label><br>
-          <input type="radio" id="male" class="radio-filter">
-          <label for="male">masculino</label>
-        </div>
+        <input type="radio" id="alive" class="radio-filter">
+        <label for="alive">vivo</label><br>
+        <input type="radio" id="dead" class="radio-filter">
+        <label for="dead">morto</label>
+        <input type="radio" id="unknow" class="radio-filter">
+        <label for="dead">desconhecido</label>
+      </div>
 
-        <div id="species" class="filter-option">
-          <label for="species">Espécie:</label><br>
+      <div id="gender" class="filter-option">
+        <label for="gender">Gênero:</label><br>
 
-          <input type="radio" id="human" class="radio-filter">
-          <label for="human">humano</label><br>
-          <input type="radio" id="non-human" class="radio-filter">
-          <label for="non-human">não humano</label>
-        </div>
+        <input type="radio" id="female" class="radio-filter">
+        <label for="female">feminino</label><br>
+        <input type="radio" id="male" class="radio-filter">
+        <label for="male">masculino</label>
+      </div>
 
-      </section>
+      <div id="species" class="filter-option">
+        <label for="species">Espécie:</label><br>
 
-      <section id="cards">
-        <div class="cards">
-          <label for="par-status">Status:</label> 
-          <p id="par-status"></p>
+        <input type="radio" id="human" class="radio-filter">
+        <label for="human">humano</label><br>
+        <input type="radio" id="non-human" class="radio-filter">
+        <label for="non-human">não humano</label>
+      </div>
 
-          <label for="par-gender">Gênero:</label>
-          <p id="par-gender"></p>
+    </section>
 
-          <label for="par-species">Espécie:</label>
-          <p id="par-species"></p>
+    <main id="cards">
 
-        </div>
-      </section>
-    </nav>
+    </main>
+  </nav>
 
-    <footer>Developed by Érica Lopes e Isabela Nunes</footer>
+  <footer>Developed by Érica Lopes e Isabela Nunes</footer>
 
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

@@ -6,10 +6,13 @@
 //   return 'OMG';
 // };
 
-export function filtrarNome (dados) {
-  for (let i = 0; i < dados.length; i++) {
-    return dados
-  }
+export function filterData (data) {
+    // var charactersName = data.results.map(elemento => elemento.name)
+    // var charactersStatus = data.results.map(elemento => elemento.status)
+    // var charactersSpecies = data.results.map(elemento => elemento.species)
+
+    
+    // return charactersName, charactersStatus, charactersSpecies
 }
 
 export function filtroAlive (dados) {
