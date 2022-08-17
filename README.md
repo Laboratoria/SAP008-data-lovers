@@ -58,7 +58,7 @@ Inicialmente o primeiro desenho da aplicação foi pensado com um campo de pesqu
 
 Além disso, possuia botões na tela inicial, com link de informações, novidades, etc...
 
-<img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/prototipo_baixa.jpeg">
+<img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/PrototipoWEB_baixa.jpg">
 
 Mas, conforme a pesquisa com os usuários, entendemos que os mesmos buscavam por uma aplicação de fácil interação e resultado, onde além de não ter necessidade de fazer login, as filtragens ou buscas tivessem uma resposta melhor, desta forma, entendemos a necessidade de mudar a busca pelo evento "change" e "key press", assim quando o user alterasse as informações nos filtros a resposta seria automática na tela. Com isso, obtivemos a versão final do protótipo.
 
