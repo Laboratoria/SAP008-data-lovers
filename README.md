@@ -4,19 +4,20 @@ Este projeto foi desenvolvido durante o curso da Laborátoria, pelas alunas: Ell
 
 Pokémon GO é um game grátis de realidade aumentada para Android e iPhone (iOS), que permite ao jogador viver uma aventura real, usando o mapa do mundo onde vivemos, para caçar e capturar Pokémon ao longo do caminho.
 
-Com o objetivo de inteirar os usuários do jogo e também aos amantes do desenho, desenvolvemos o PokéLovers.
-O site possui informações sobre as novidades do Pokémon GO, playlist dos filmes, e também o link da home (Pokedex), onde os usuários do jogo podem visualizar os principais Pokémons da região Kanto, fazer filtro por nome, por tipo o qual também permite que o usuário obtenha informações sobre a % de Pokémons deste determinado gênero, e também filtro por raridade.
+Com o objetivo de inteirar os usuários do jogo e amantes do desenho, desenvolvemos o PokéLovers.
+O site possui informações sobre as novidades do Pokémon GO, playlist dos filmes, e principal, na home contém uma pokedex, onde os usuários do jogo podem visualizar os principais Pokémons da região Kanto e Johto, fazer filtro por nome, por tipo, por raridade, por ordem alfabética de AaZ e ZaA, além disso, o filtro por tipo permite que o usuário obtenha informações sobre a % de Pokémons deste determinado gênero.
+E para proporcionar ainda mais conhecimento ao user, ele pode obter mais informações sobre o pokémon clicando no card do pokémon escolhido.
 
-Com os dados disponibilizado na home (Pokedex), poderá auxiliar o usuário do jogo a conhecer quais Pokémons mais raros, por exemplo, para que assim ele possa montar um planejamento para busca do mesmo.
-E o tipo, para a escolha do Pokémon mais adequado para o combate.
+Os dados disponibilizado na home (Pokedex), auxiliará o usuário do jogo a conhecer quais Pokémons mais raros, por exemplo, para que assim ele possa montar um planejamento para a busca do mesmo.
+E filtro tipo, ajudará na escolha do Pokémon mais adequado para o combate.
 
 Para o desenvolvimento do projeto, realizamos pesquisas com os usuários do jogo, coletando as principais necessidades de dados para auxiliar em um maior desempenho pelas buscas e escolhas dos Pokémons para as batalhas.
 
 Para acessar o site, clique em um dos links abaixo:
-LINK GITHUB PAGE VANESSA
-LINK GITHUB PAGE ELLEN
+Github Vanessa Bueck
+Github Ellen Cavalcante
 
-E para melhorar a navegação, abaixo segue o menu das sessões a seguir:
+E para melhorar a navegação no readme, abaixo segue o menu das sessões a seguir:
 
 ## Ferramentas utilizadas
 
@@ -25,6 +26,7 @@ E para melhorar a navegação, abaixo segue o menu das sessões a seguir:
 ## Protótipos
 
 ## Testes de usabilidade
+
 # Ferramentas utilizadas
 
 Inicialmente fizemos uma reunião de brainstorm, para que pudéssemos entender quais as ideias que tínhamos e quais seriam viáveis seguir, com o filtro de todas ideias e quando identificamos que seguiríamos com um site com dados d Pokémon, iniciamos as demais atividades por meio das ferramentas abaixo:
@@ -51,6 +53,7 @@ No site também tem um menu a direita, onde o usuário poderá saber as novidade
 # Protótipos
 
 ## PROTÓTIPO BAIXA FIDELIDADE:
+
 Inicialmente o primeiro desenho da aplicação foi pensado com um campo de pesquisa, onde o usuário poderia buscar os pokémns por nome, um filtro por tipo e o botão pesquisar, então todo tipo de pesquisa ou filtragem era necessário o ususário apertar o botão "Buscar Pokemons" para obter o resultado.
 
 Além disso, possuia botões na tela inicial, com link de informações, novidades, etc...
@@ -61,8 +64,16 @@ Mas, conforme a pesquisa com os usuários, entendemos que os mesmos buscavam por
 
 ## PROTÓTIPO ALTA FIDELIDADE - web
 
-<img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/PrototipoWeb.jpeg">
+<img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/prototiposWeb.jpg">
 
-## PROTÓTIPO ALTA FIDELIDADE - mobile 
+## PROTÓTIPO ALTA FIDELIDADE - mobile
 
-<img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/prototipoMobile.jpeg">
+<img src="https://github.com/vanessabuecker/SAP008-data-lovers/blob/main/src/img/prototiposMobile.jpg">
+
+# Testes de usabilidade
+
+- Foi retirado o botão buscar Pokémons, pois estava sem usabilidade após colocarmos a mudança dos eventos como "change" ou "keypress".
+
+- Linguagens diferentes no site foram identificadas pelos usuários, então atualizamos o mesmo para que contenha apenas uma linguagem.
+
+- Atualizamos as Cards para que quando o usuário passe com o mouse em cima de uma card, ela fique com a cor "amarela", assim facilitando que a visualiação do card selecionado.

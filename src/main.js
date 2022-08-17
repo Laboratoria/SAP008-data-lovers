@@ -1,5 +1,5 @@
 import data from "./data/pokemon/pokemon.js";
-import { pokeCalc, printCards, selectNameAz, selectNameZa } from './data.js'
+import {printCards, selectNameAz, selectNameZa, pokeCalc} from './data.js'
 
 const buttonClean = document.getElementById("newSearch");
 const orderPokemon = document.getElementById("order");
@@ -21,39 +21,15 @@ spanClose.addEventListener("click", hideModal);
 spanCloseAbout.addEventListener("click", hideModalAbout);
 selectType.addEventListener("change", displayCalc);
 
-function newSearch() {
-  window.location.reload();
-}
-
-function displayCalc() {
-  const select = selectType.value
-  const modalContentElement = document.getElementById('modal_content');
-  const modalElement = document.getElementById('modal');
-  const pokemonData = data.pokemon.filter((pokemon) => pokemon.type.includes(select))
-  const pokeLenght = data.pokemon.length
-  modalElement.classList.add('show-modal');
-
-  for (let pokemons = 0; pokemons <= pokemonData.length; pokemons++) {
-    let result = pokeCalc(pokeLenght, pokemons)
-    modalContentElement.innerHTML = `Existem um total de: <b> ${pokemons} </b>pokemons do tipo <b>${select[0].toUpperCase() + select.substr(1)}</b>. Isso representa uma média de <b> ${result}%</b> de todos os Pokemons.`
-  }
-}
-
-function hideModalAbout() {
-  const modalElement = document.querySelector('#modal_about');
-  modalElement.classList.remove('show-modal');
-}
-
-function hideModal() {
-  const modalElement = document.querySelector('.modal');
-  modalElement.classList.remove('show-modal');
-}
-
 function displayCard() {
   result.innerHTML = printCards(data, selectRarity.value, selectType.value, searchName.value)
 }
 
-export function pokemonOrder() {
+function newSearch() {
+  window.location.reload();
+}
+
+function pokemonOrder() {
   const order = orderPokemon.value;
 
   if (order === "name-az") {
@@ -66,6 +42,30 @@ export function pokemonOrder() {
     displayCard();
     moreInfo()
   }
+}
+
+function displayCalc() {
+  const select = selectType.value
+  const modalContentElement = document.getElementById('modal_content');
+  const modalElement = document.getElementById('modal');
+  const pokemonData = data.pokemon.filter((pokemon) => pokemon.type.includes(select))
+  const pokeLenght = data.pokemon.length
+  modalElement.classList.add('show-modal');
+
+  for (let pokemons = 0; pokemons <= pokemonData.length; pokemons++) {
+    let result = pokeCalc(pokeLenght, pokemons)
+    modalContentElement.innerHTML = `There are a total of: <b> ${pokemons} </b>Pokémons type <b>${select[0].toUpperCase() + select.substr(1)}</b>. This represents an average of <b> ${result}%</b> of all Pokémons.`
+  }
+}
+
+function hideModalAbout() {
+  const modalElement = document.querySelector('#modal_about');
+  modalElement.classList.remove('show-modal');
+}
+
+function hideModal() {
+  const modalElement = document.querySelector('.modal');
+  modalElement.classList.remove('show-modal');
 }
 
 let buttonAction = function (index) {

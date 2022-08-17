@@ -1,4 +1,4 @@
-import { filterPokemon, selectNameAz, selectNameZa, printCards, pokeCalc } from "../src/data";
+import { printCards, filterPokemon, selectNameAz, selectNameZa, pokeCalc } from "../src/data";
 
 const cardMock =
 
@@ -10,8 +10,8 @@ const cardMock =
             </figure>
           <div class="items"></div>
           <h4>  Pikachu</h4>
-          <span class="listName"> Tipo: eletric</span>
-          <span class="listRarity"> Raridade: normal</span>
+          <span class="listName"> Type: eletric</span>
+          <span class="listRarity"> Rarity: normal</span>
         </div>
       </div>
       </div>

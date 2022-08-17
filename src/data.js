@@ -1,4 +1,4 @@
-export { printCards, selectNameAz, selectNameZa }
+export {printCards, filterPokemon, selectNameAz, selectNameZa, pokeCalc}
 
 function printCards(data, rarity, type, name) {
 
@@ -12,8 +12,8 @@ function printCards(data, rarity, type, name) {
             </figure>
           <div class="items"></div>
           <h4>  ${item.name[0].toUpperCase() + item.name.substring(1)}</h4>
-          <span class="listName"> Tipo: ${item.type}</span>
-          <span class="listRarity"> Raridade: ${item["pokemon-rarity"]}</span>
+          <span class="listName"> Type: ${item.type}</span>
+          <span class="listRarity"> Rarity: ${item["pokemon-rarity"]}</span>
         </div>
       </div>
       </div>
@@ -22,7 +22,7 @@ function printCards(data, rarity, type, name) {
     .join('')
 }
 
-export function filterPokemon(data, rarity, type, name) {
+function filterPokemon(data, rarity, type, name) {
 
   const pokemonData = data.pokemon.filter((pokemon) => {
 
@@ -47,7 +47,7 @@ export function filterPokemon(data, rarity, type, name) {
   return pokemonData
 }
 
-export const orderName = (a, b) => {
+const orderName = (a, b) => {
   if (a.name > b.name) {
     return 1;
   } if (a.name < b.name) {
@@ -64,7 +64,7 @@ const selectNameZa = (pokemon) => {
   return pokemon.sort(orderName).reverse();
 };
 
-export const pokeCalc = (pokeLenght, filterLenght) =>{
+const pokeCalc = (pokeLenght, filterLenght) =>{
   const percent = (filterLenght / pokeLenght) * 100
   const rounded = Math.round(percent * 100) / 100
   return rounded
