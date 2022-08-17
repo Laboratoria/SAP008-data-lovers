@@ -38,6 +38,7 @@
         <form>
           <label for="funcao">TODAS AS FUNÇÕES</label>
           <select name="tipo-de-campeao" id="funcao">
+            <option desable></option>
             <option value="Assassin">ASSASSINOS</option>
             <option value="Fighter">LUTADORES</option>
             <option value="Mage">MAGOS</option>
@@ -50,6 +51,11 @@
             <option value="baixo">BAIXO</option>
             <option value="medio">MÉDIO</option>
             <option value="alto">ALTO</option>
+          </select>
+          <label for="sort-champ">Ordenando</label>
+          <select name="ordenando" id="sort-champ">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
           </select>
         </form>
         <div id="cardzinho"></div>
