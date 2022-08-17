@@ -1,23 +1,13 @@
-import {filtrarPorEspecie} from './src/data.js';
+import {rickAndMorty} from '../src/data.js';
 
-
-
-describe('displayResults', () => {
-  it('Deve retornar os cards corretamente', () => {
-    const expected = 
-    const actual = displayResults(data.results)
-    expect(actual).toBe(expected);
+describe('actions', () => {
+  it('rickAndMorty is a object', () => {
+    expect(typeof rickAndMorty).toBe('object');
+  })
+  it('displayCards is a function', () => {
+    expect(typeof rickAndMorty.displayCards).toBe('function');
   });
-
+  it('filtrarPorStatus is a function', () => {
+    expect(typeof rickAndMorty.filtrarPorStatus).toBe('function');
+  });  
 });
-
-
-/*describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});*/
