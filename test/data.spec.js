@@ -3,7 +3,7 @@ import { filtroDoSelect } from '../src/data.js';
 
 describe('filtroDoSelect', () => {
   it('Deveria ser uma constante', () => {
-    expect(typeof 'filtroDoSelect').toBe('constant');
+    expect(typeof filtroDoSelect).toBe('function');
   });
 
 
@@ -34,11 +34,11 @@ describe('filtroDoSelect', () => {
     
     const resultado = [
       {
-        name: "Nami",
         tags: [
           "Support",
           "Mage"
-        ]
+        ],
+        name: "Nami"
       },
       {
         name: "Taric",
@@ -48,6 +48,6 @@ describe('filtroDoSelect', () => {
         ]
       }
     ];
-    expect(filtroDoSelect(dados, "Support")).toBe(resultado);
+    expect(filtroDoSelect(dados, "Support")).toStrictEqual(resultado);
   });
 });
