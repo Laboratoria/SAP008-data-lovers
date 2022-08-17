@@ -82,36 +82,27 @@ select:hover {
   height: 20px;
   box-shadow: rgba(3, 59, 71, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.baseboard{
-    position:absolute;
-    top: 1000px;
-    background-color: #83D2E4; 
-    left: 10%;
-    width: 78%;
-    height: 50px;
-    text-align: center;
-   ;
-  }
-  span{
-  margin: 45px;
-  padding: 10px;
-  display: inline-block;
-  }
 
-  .flip-container {
+.flip-container {
     width: 204px;
     height: 314px;
     perspective: 1000px;
-   
-  }
+    display: inline-block;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-  .flipper{
+.flipper{
 	width: 100%;
 	height: 100%;
     transition: transform 0.9s;
 	transform-style: preserve-3d;
     position: relative;
-    left: 140px;
+    flex: 0 1 auto;
+    
 }
 
 .flip-container:hover .flipper{
@@ -121,33 +112,29 @@ select:hover {
 .front{
     background: linear-gradient(#8BCF21, #ffff);
     width: 100%;
-     height: 100%;
-     position: absolute;
-     backface-visibility: hidden;
-     border-radius: 30px;   
-     top: 140px;
-     color: #304B72;
-     text-align: center;
-     cursor: pointer;
-     box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 30px;   
+    top: 140px;
+    cursor: pointer;
+    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .back{ 
     background: linear-gradient(#304B72, #ffff);
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     transform: rotateY(180deg);
-     backface-visibility: hidden;
-     border-radius: 30px;   
-     top: 140px;
-     color: #E7E0DB;
-     text-align: center;
-     cursor: pointer;
-     box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 30px;   
+    top: 140px;
+    cursor: pointer;
+    box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.rick{
+.image{
     position: relative;
     padding: 10px 10px 10px 10px;
     top: 30px;
@@ -155,6 +142,42 @@ select:hover {
     width: 139px;
     height: 142px;
     box-shadow: rgba(20, 77, 33, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    }
+}
 
+h3{
+    color: #304B72;
+    text-align: center;
+}
+
+p{
+    color: #304B72;
+    text-align: center;
+}
+
+h2{
+    color: #E7E0DB;
+    text-align: center;
+}
+
+.baseboard{
+    position:absolute;
+    top: 1000px;
+    background-color: #83D2E4; 
+    left: 10%;
+    width: 78%;
+    height: 50px;
+    text-align: center;
+}
+ 
+#listening {
+    padding: 0em 12em;
+    text-align: center;
+ }
    
+ @media (max-width: 600px) {
+     
+ }
+
+ @media(min-width: 200px) {
+
+ }
