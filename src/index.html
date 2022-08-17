@@ -19,12 +19,12 @@
   </nav>
 
   <header>
-    <img src="img/imagem_redimensionada.jpg">
+    <div id="divHeader"><img id="imagemHeader"src="img/imagem_redimensionada.jpg"></div>
   </header>
 
   <main>
     <section>
-      <label for="Filtro">Espécie:</label>
+      <label for="Filtro" class="filtros">Espécie:</label>
       <select name="filtro" id="especie">
         <option selected disable value="">Todos</option>
         <option id="humano" value="Human">Humano 🧑 </option>
@@ -43,7 +43,7 @@
       <section>
 
         <section>
-          <label for="Filtro2">Gênero:</label>
+          <label for="Filtro2" class="filtros">Gênero:</label>
           <select name="filtro2" id="genero">
             <option selected disable value="">Todos</option>
             <option value="Male">Masculino</option>
@@ -53,7 +53,7 @@
         </section>
 
         <section>
-          <label for="Filtro3">Status:</label>
+          <label for="Filtro3" class="filtros">Status:</label>
           <select name="filtro3" id="status">
             <option selected disable value="">Todos</option>
             <option value="Alive">Vivo</option>
@@ -63,7 +63,7 @@
         </section>
 
         <section>
-          <label for="Filtro4">Ordem Alfabética:</label>
+          <label for="Filtro4" class="filtros">Ordem Alfabética:</label>
           <select name="filtro4" id="ordemalfabetica">
             <option selected disable value="">Todos</option>
             <option value="A-Z">A-Z</option>

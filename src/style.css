@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
 @font-face {
   font-family: Avocado;
   src: url("./fonts/Hello\ Avocado.ttf");
@@ -8,3 +14,30 @@ option,
 nav {
   font-family: Avocado;
 }
+
+nav {
+  list-style-type: none;
+  background-color: rgba(217, 205, 169, 1);
+
+}
+
+li {
+  display:inline-block;
+  padding: 10px;
+  font-size: 22px;
+  color: rgba(124, 140, 90, 1);
+}
+
+li:hover{
+  color:rgba(140, 83, 32, 1);
+  }
+
+
+.filtros {
+display:inline-block;
+}
+
+
+select {
+  border-radius: 5px;
+} 
