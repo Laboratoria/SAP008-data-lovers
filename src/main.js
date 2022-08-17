@@ -15,26 +15,21 @@ cardContainer.innerHTML = rickAndMorty.displayCards(list);
 // ===== evento para filtrar por status ====
 selectStatus.addEventListener('change', (event) => {
     const value = event.target.value;
-<<<<<<< Updated upstream
-    const listaFiltrada = rickAndMorty.filtrarPorStatus(value);
-    /*document.querySelector('.card-container').innerHTML = rickAndMorty.displayCards(listaFiltrada);*/
-    console.log(listaFiltrada);
-      
-=======
     const listaFiltrada = rickAndMorty.filtrarPorStatus(list, value);
     //tive que acrescentar o data.results pois o filtrar por status agora recebe 2 parametros,
     //o data.results para que o filtro acesse os itens do objeto que estão no data e o value
     //valor da ação do usuário quando escolhe um dos status..
-    document.querySelector('#card-container').innerHTML = listaFiltrada;
+    cardContainer.innerHTML = rickAndMorty.displayCards(listaFiltrada);
+    return listaFiltrada;
         
->>>>>>> Stashed changes
+
 });
 
 // ===== evento para filtrar por especie ====
 selectSpecies.addEventListener('change', (event) => {
      
     const value = event.target.value;
-    const listaFiltrada = rickAndMorty.filtrarPorEspecie(value);
+    const listaFiltrada = rickAndMorty.filtrarPorEspecie(list, value);
     cardContainer.innerHTML = rickAndMorty.displayCards(listaFiltrada);
     return listaFiltrada;
     //O .value no final, estamos indicando que essa constante tem que receber o valor atribuido ao botão (const value), que sera disparado 
@@ -46,7 +41,7 @@ selectSpecies.addEventListener('change', (event) => {
 // ===== evento para filtrar por genero ====
 selectGender.addEventListener('change', (event) => {
     const value = event.target.value;
-    const listaFiltrada = rickAndMorty.filtrarPorGenero(value);
+    const listaFiltrada = rickAndMorty.filtrarPorGenero(list, value);
     cardContainer.innerHTML = rickAndMorty.displayCards(listaFiltrada);
     return listaFiltrada;
 
