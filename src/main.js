@@ -8,7 +8,6 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 
 function cardsData(data) {
-
   return data.map((item) => `
 
     <div class="card">
