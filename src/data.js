@@ -1,12 +1,10 @@
 
+export const filterByRegion = (pokemons, region) => 
+        pokemons.filter(pokemon => pokemon.generation.name===region)
+        
 
-export const example = () => {
-  return "example";
+export const anotherExample = () => {
+  return 'OMG';
 };
 
-
-export const filterByRegion = (pokemons, region) =>
- pokemons.filter(pokemon => pokemon.generation.name === region) 
-
-
-
+console.log(anotherExample)
