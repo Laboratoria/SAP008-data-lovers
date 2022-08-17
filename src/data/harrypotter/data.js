@@ -282,7 +282,7 @@ export default {
       "id": 18,
       "name": "Avery II",
       "birth": "Late 1950s or early 1960s, Great Britain or Ireland",
-      "death": null,
+      "death": null, 
       "species": "Human",
       "ancestry": "Pure-blood or Half-blood",
       "gender": "Male",
