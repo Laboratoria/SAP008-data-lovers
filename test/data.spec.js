@@ -1,5 +1,7 @@
 import {rickAndMorty} from '../src/data.js';
 
+/*VE ESSA MERDA AI*/
+
 const arrayTest = [
   {
   "status": "Alive",
