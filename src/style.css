@@ -1,0 +1,100 @@
+:root{
+    --cor-fundo : rgb(0, 74, 173);
+    --cor-hover : rgb(43, 157, 177);
+    --cor-primaria : rgb(255, 255, 255);   
+}
+
+body{
+background-color: rgb(221, 221, 221);
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: "Caveat", cursive;
+}
+
+/*menu*/
+.pokeInfo img{
+    max-width: 10vw; 
+    border-radius: 10px;
+    min-width: 100px;
+}
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+}
+.dp-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.dp-menu ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s; 
+}
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+    border-radius: 10px;
+}
+
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.dp-menu ul li:hover ul{
+    display: block;
+}
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a{
+    display: block;
+}
+
+/*busca*/
+.buscar{
+    display: block;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/*cards*/
+.card{
+    align-content: center;
+    display: grid;
+    text-transform: capitalize;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1vw;
+    filter: drop-shadow(0 5px 3px rgb(0, 0, 0));
+    max-width: 70vw;
+}
+.cardPokemon{
+    background-color: rgb(255, 255, 255);
+    border-radius: 3vw;
+    box-shadow: 0 1vw 1vw rgb(106, 105, 105);
+    border-top: 0.1vw solid rgb(106, 105, 105);
+    border-bottom: 0.1vw solid rgb(106, 105, 105);
+    margin: 1vw;
+    padding: auto;
+    left: 15vw;
+    right: 10vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.imgCard img{
+    border: solid 2px rgb(225, 12, 12);
+    margin-top: 20px;
+    max-width: 10vw;
+    filter: drop-shadow(0 5px 3px rgb(0, 0, 0));
+}
+.tipo{
+    display: grid;
+    box-sizing: border-box;
+}
