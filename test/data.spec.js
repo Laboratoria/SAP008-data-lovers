@@ -1,23 +1,53 @@
-import { example, anotherExample } from '../src/data.js';
+import { filtroDoSelect } from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('filtroDoSelect', () => {
+  it('Deveria ser uma constante', () => {
+    expect(typeof 'filtroDoSelect').toBe('constant');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('Deveria retornar os campeões que contém a tag Suporte', () => {
+    const dados = [
+      {
+        name: "Nami",
+        tags: [
+          "Support",
+          "Mage"
+        ]
+      },
+      {
+        name: "Blitzcrank",
+        tags: [
+          "Tank",
+          "Fighter"
+        ]
+      },
+      {
+        name: "Taric",
+        tags: [
+          "Support",
+          "Fighter"
+        ]
+      }
+    ];
+    
+    const resultado = [
+      {
+        name: "Nami",
+        tags: [
+          "Support",
+          "Mage"
+        ]
+      },
+      {
+        name: "Taric",
+        tags: [
+          "Support",
+          "Fighter"
+        ]
+      }
+    ];
+    expect(filtroDoSelect(dados, "Support")).toBe(resultado);
   });
 });

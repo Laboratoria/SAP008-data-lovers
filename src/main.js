@@ -58,6 +58,6 @@ function printCards(lol) {
 
 const selectTag = document.querySelector('#funcao');
 selectTag.addEventListener('click', function() {
-    const valorSelecionado = funcao.value;
+    const valorSelecionado = selectTag.value;
     printCards(filtroDoSelect(arrayCampeoes, valorSelecionado));
 })
