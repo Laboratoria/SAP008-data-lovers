@@ -8,7 +8,6 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: 100vw;
-
 }
 .top {
     color: #f1faee;
@@ -85,6 +84,34 @@ body {
     max-height: 85%;
     margin-bottom: 0.4vw;
 }
+.btn-modal {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.btn-modal:hover {
+    opacity: 0.5;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 245, 245, 245, 0.8);
+}
+.modal-content {
+    margin: 20% 25%;
+    background-color: #1D1C38;
+    color: rgba( 245, 245, 245, 0.8);
+}
+.close {
+    color:  rgba( 245, 245, 245, 1);
+    font-weight: 600;
+    cursor: pointer;
+}
 .footer-img-totoro {
     bottom: 0;
     width: 20%;
@@ -118,7 +145,6 @@ body {
     column-gap: 1.5vw;
     row-gap: 1.5vw;
 }
-
 .card {
     text-align: center;
     font-size: 0.5rem;
@@ -133,29 +159,3 @@ body {
     margin-left: 65%;
 }
 } 
-
-/* .close {
-    color:  #1D1C38;
-    font-weight: 600;
-    cursor: pointer;
-}
-.modal {
-    display: none; 
-    position: fixed; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba( 245, 245, 245, 0.8);
-}
-.modal-content {
-    margin: 20% 25%;
-    background-color: #1D1C38;
-    color: rgba( 245, 245, 245, 0.8);
-}
-.btn-modal {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-} */
