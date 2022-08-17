@@ -1,5 +1,5 @@
 import data from "./data/pokemon/pokemon.js";
-import { printCards, selectNameAz, selectNameZa } from './data.js'
+import { pokeCalc, printCards, selectNameAz, selectNameZa } from './data.js'
 
 const buttonClean = document.getElementById("newSearch");
 const orderPokemon = document.getElementById("order");
@@ -8,48 +8,44 @@ const searchName = document.getElementById("findPokemon");
 const selectType = document.getElementById("pokeType");
 const selectRarity = document.getElementById("rarity");
 const spanClose = document.querySelector("#close");
+const spanCloseAbout = document.querySelector("#closeAbout");
 
 displayCard()
 
 buttonClean.addEventListener("click", newSearch);
 orderPokemon.addEventListener("change", pokemonOrder);
-selectRarity.addEventListener("change", displayCard)
-selectType.addEventListener("change", displayCard)
-searchName.addEventListener("keypress", displayCard)
+selectRarity.addEventListener("change", displayCard);
+selectType.addEventListener("change", displayCard);
+searchName.addEventListener("keypress", displayCard);
 spanClose.addEventListener("click", hideModal);
-selectType.addEventListener("change", pokeCalc);
-
-/*function newSearch() {
-  selectType.value = "";
-  selectRarity.value = "";
-  searchName.value = "";
-  selectNameAz.value = "";
-  selectNameZa.value = "";
-  displayCard()
-} */
+spanCloseAbout.addEventListener("click", hideModalAbout);
+selectType.addEventListener("change", displayCalc);
 
 function newSearch() {
   window.location.reload();
 }
 
-function pokeCalc() {
+function displayCalc() {
+  const select = selectType.value
   const modalContentElement = document.getElementById('modal_content');
   const modalElement = document.getElementById('modal');
-  modalElement.classList.add('show-modal');
-
-  const select = selectType.value
   const pokemonData = data.pokemon.filter((pokemon) => pokemon.type.includes(select))
   const pokeLenght = data.pokemon.length
+  modalElement.classList.add('show-modal');
 
   for (let pokemons = 0; pokemons <= pokemonData.length; pokemons++) {
-    if (select === selectType.value) {
-      modalContentElement.innerHTML = `Existem um total de: <b> ${pokemons} </b>pokemons do tipo <b>${select}</b>. Isso representa uma média de <b> ${parseFloat((pokemons / pokeLenght) * (100)).toFixed(2)}%</b> de todos os Pokemons.`
-    }
+    let result = pokeCalc(pokeLenght, pokemons)
+    modalContentElement.innerHTML = `Existem um total de: <b> ${pokemons} </b>pokemons do tipo <b>${select[0].toUpperCase() + select.substr(1)}</b>. Isso representa uma média de <b> ${result}%</b> de todos os Pokemons.`
   }
 }
 
+function hideModalAbout() {
+  const modalElement = document.querySelector('#modal_about');
+  modalElement.classList.remove('show-modal');
+}
+
 function hideModal() {
-  const modalElement = document.getElementById('modal');
+  const modalElement = document.querySelector('.modal');
   modalElement.classList.remove('show-modal');
 }
 
@@ -57,35 +53,38 @@ function displayCard() {
   result.innerHTML = printCards(data, selectRarity.value, selectType.value, searchName.value)
 }
 
-function pokemonOrder() {
+export function pokemonOrder() {
   const order = orderPokemon.value;
 
   if (order === "name-az") {
     selectNameAz(data.pokemon);
     displayCard();
+    moreInfo()
 
   } else if (order === "name-za") {
     selectNameZa(data.pokemon);
     displayCard();
+    moreInfo()
   }
 }
 
-const buttonAction = function (index) {
+let buttonAction = function (index) {
   return function () {
     const pokemonData = data.pokemon
 
-    const modalContentElement = document.getElementById('modal_content');
-    const modalElement = document.getElementById('modal');
-    modalElement.classList.add('show-modal');
+    const modalContentElementAbout = document.getElementById('modal_content_about');
+    const modalElementAbout = document.getElementById('modal_about');
+    modalElementAbout.classList.add('show-modal');
 
-    modalContentElement.innerHTML =
+    modalContentElementAbout.innerHTML =
       ` <figure class= "pokeData">
          <img class="poke-img-info" src='${pokemonData[index].img}' alt=${pokemonData[index].name}>
-          <h4 id="title">  ${pokemonData[index].name[0].toUpperCase() + pokemonData[index].name.substr(1)}</h4>
+          <h4 id="title">  ${pokemonData[index].name[0].toUpperCase() + pokemonData[index].name.substring(1)}</h4>
         </figure>
        <div class="pokeMoreInfo">
         <span class="pokeInfoAbout">${pokemonData[index].about}</span>
        </div> `
+
   }
 };
 
@@ -96,5 +95,4 @@ function moreInfo() {
   }
 }
 moreInfo()
-
 

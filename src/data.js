@@ -11,7 +11,7 @@ function printCards(data, rarity, type, name) {
             <img class="poke-img" src='${item.img}' alt=${item.name}>
             </figure>
           <div class="items"></div>
-          <h4>  ${item.name[0].toUpperCase() + item.name.substr(1)}</h4>
+          <h4>  ${item.name[0].toUpperCase() + item.name.substring(1)}</h4>
           <span class="listName"> Tipo: ${item.type}</span>
           <span class="listRarity"> Raridade: ${item["pokemon-rarity"]}</span>
         </div>
@@ -22,7 +22,7 @@ function printCards(data, rarity, type, name) {
     .join('')
 }
 
-function filterPokemon(data, rarity, type, name) {
+export function filterPokemon(data, rarity, type, name) {
 
   const pokemonData = data.pokemon.filter((pokemon) => {
 
@@ -47,7 +47,7 @@ function filterPokemon(data, rarity, type, name) {
   return pokemonData
 }
 
-const orderName = (a, b) => {
+export const orderName = (a, b) => {
   if (a.name > b.name) {
     return 1;
   } if (a.name < b.name) {
@@ -64,6 +64,8 @@ const selectNameZa = (pokemon) => {
   return pokemon.sort(orderName).reverse();
 };
 
-
-
-
+export const pokeCalc = (pokeLenght, filterLenght) =>{
+  const percent = (filterLenght / pokeLenght) * 100
+  const rounded = Math.round(percent * 100) / 100
+  return rounded
+}

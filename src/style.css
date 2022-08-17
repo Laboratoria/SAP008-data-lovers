@@ -28,8 +28,8 @@ body {
 }
 
 .logo img {
-  width: 280px;
-  height: 80px;
+  width: 240px;
+  height: 60px;
 }
 
 .navlist {
@@ -232,6 +232,16 @@ button:active {
 
 .modal_content {
   background-color: rgb(222, 205, 181);
+  padding: 75px 24px;
+  width: 650px;
+  height: 250px;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+#modal_content_about {
+  background-color: rgb(222, 205, 181);
   padding: 30px 24px;
   width: 650px;
   height: 250px;
@@ -301,6 +311,7 @@ footer {
 .foot img {
   position: absolute;
   margin-left: 25%;
+
 }
 
 @media screen and (min-width: 360px) {

@@ -30,8 +30,8 @@ body {
 }
 
 .logo img {
-  width: 280px;
-  height: 80px;
+  width: 240px;
+  height: 60px;
 }
 
 .navlist {
@@ -54,7 +54,7 @@ a {
   height: 100%;
   font-weight: 400;
   border-radius: 10px;
-  background-color: #BBEDF0;
+  background-color: #ddfdff;
   padding: 1%;
   margin-bottom: 1%;
 }
