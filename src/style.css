@@ -3,7 +3,7 @@
 
 html body {
     width: 100%;
-    margin: 0;    
+    margin: 0;
     background-image: url(./img/espaco.jpg);
     background-size: auto;
 }
@@ -14,18 +14,18 @@ html body {
 }
 
 .container-header {
-    background-color:transparent;
+    background-color: transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     height: 2rem;
     font-family: "Poppins", sans-serif;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .container-header button {
-    background:rgb(0, 0, 0);
-    color:#fff;
-    box-shadow:0 3px 0 #3b065ca9;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    box-shadow: 0 3px 0 #3b065ca9;
     cursor: pointer;
     width: 10rem;
     height: 2rem;
@@ -33,13 +33,13 @@ html body {
     border: none;
     transition: all .3s ease-in-out;
     margin-top: 3rem;
-  }
+}
 
 button:hover {
     background: #3b065ca9;
     transform: translateY(-3px);
     box-shadow: 0 5px 0 #3b065ca9;
-  }
+}
 
 .seletores {
     display: flex;
@@ -63,7 +63,7 @@ button:hover {
 .container-pesquisa {
     display: flex;
     justify-content: center;
-    margin-top: 2rem; 
+    margin-top: 2rem;
 }
 
 .pesquisar {
@@ -84,7 +84,7 @@ button:hover {
     border: none;
     text-align: center;
     padding: 0.20rem 2rem;
-    
+
 }
 
 #read {
@@ -94,7 +94,7 @@ button:hover {
 
 .card {
     background-image: url(./img/espacowe.jpg);
-    display:inline-block;
+    display: inline-block;
     padding: 25px;
     margin-bottom: 15px;
     width: 300px;
@@ -119,7 +119,7 @@ button:hover {
 
 .card-in {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 1100px;
@@ -136,9 +136,8 @@ button:hover {
     border-radius: 10px;
 }
 
-.card-first, 
+.card-first,
 .back-card {
-    display:grid;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -150,9 +149,8 @@ button:hover {
 }
 
 .back-card {
-    display:flex;
     transform: rotateY(180deg);
-    justify-content:center;
+    justify-content: center;
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
