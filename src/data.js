@@ -30,20 +30,32 @@ const rickAndMorty = {
 
     // ===== Função de filtro por status ====
     filtrarPorStatus:    
-    function filtrarPorStatus(status) {
-    const filtro = data.results.filter(function(personagem) {
-        const filtrado = personagem.status.toLowerCase() === status;
-        return filtrado;
-    });
+    function filtrarPorStatus(list, status) {
+        //Aqui adicionei no parâmetro o data, pq ele recebe uma lista e ele vai retornar essa lista que ele recebeu filtrada.
+        //isso é necessario para fazermos os testes e é o recomendado pelo read.me no src/data.js
+        const filtro = list.filter(function(personagem) {
+        //Aqui coloquei data pois agora a lista está vindo através do main.js.
+        const statusFiltrado = personagem.status.toLowerCase() === status; //Alterei o nome da constante para ficar mais claro de identificarmos
+        
+        return statusFiltrado; 
 
-    return this.displayCards(filtro)
+    });
+        
+        return this.displayCards(filtro); //Aqui no retorno esse this significa que ele (o objeto) está se referindo a
+        //a ele mesmo, e está retornando o template html da lista filtrada.
+        
     },
 
     // ===== Função de filtro por espécie ====
     filtrarPorEspecie:    
-    function filtrarPorEspecie(species) {
-        const filtro = data.results.filter(personagem => personagem.species.toLowerCase() === species);
-        return filtro;   
+    function filtrarPorEspecie(list, species) {
+        const filtro = list.filter(function(personagem) {
+            const especieFiltrado = personagem.species.toLowerCase() === species;
+            return especieFiltrado;   
+        })
+        
+        return this.displayCards(filtro)
+
     },
 
     // ===== Função de filtro por gênero ====
@@ -61,5 +73,35 @@ const rickAndMorty = {
 // obs - .filter também é um loop que percorre todos os elementos do array.
 // pedi para retornar essa condiçao em forma de filtro, onde estou acessando o elemento personagem dentro do array,
 //ai coloquei personagem.status.toLowerCase (coloquei tolowercase, strings minusculas) para facilitar a validacao junto com ()
-//para indicar a função, os === sao para bater o valor identico de tipo e valor.
-//
+//para indicar a função, os === sao para bater o valor identico de tipo e valor
+
+const arrayTest = [
+    {
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
+    
+    },
+  
+    {
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male",
+      
+    },
+  
+    {
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Female",
+    },    
+    {
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Female",
+      
+    } 
+  ];
+  
+const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "Alive");
+console.log(expectedStatus)
