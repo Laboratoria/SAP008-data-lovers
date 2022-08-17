@@ -1,5 +1,14 @@
 import data from './data/ghibli/ghibli.js';
-let characters = data.films
+let movies = data.films
+let characters = movies.reduce(function(chars, film){ 
+  const people = film.people.map(function(char){
+      char.title = film.title
+
+      return char 
+  }) ;
+ return chars.concat(people)
+
+}, []);
 
 function showCharacters(data) {
   const CharactersInfo = data.map((item) => {
