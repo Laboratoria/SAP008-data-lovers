@@ -92,17 +92,6 @@ button:hover {
     text-align: center;
 }
 
-.card:hover .card-in {
-    transform: rotateY(180deg);
-}
-
-.card-in {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
 .card {
     background-image: url(./img/espacowe.jpg);
     display:inline-block;
@@ -123,33 +112,48 @@ button:hover {
     color: #fff;
     perspective: 1000px;
 }
-.card-in {
+
+.card:hover .card-face {
+    transform: rotateY(180deg);
+}
+
+.card-face {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 1100px;
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
+
 .list-card {
     list-style: none;
     padding: 0px;
     border-radius: 10px;
 }
-.card-first, .back-card{
+
+.card-face-front, .card-face-back {
     display:grid;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
 }
-.card-first{
+
+.card-face-front {
     text-align: center;
+    z-index: 0;
 }
-.back-card{
+
+.card-face-back {
     display:block;
     transform: rotateY(180deg);
     justify-content:center;
     font-size: 15px;
     color: rgb(255, 255, 255);
+    z-index: 1;
 }

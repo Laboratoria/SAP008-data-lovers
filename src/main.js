@@ -5,24 +5,24 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 function cardsData(data) {
     document.getElementById('read').innerHTML = data.map((item) => `
-    <div class="card">
-      <div class="card-in"> 
-        <div class="card-first">
-        <img src="${item.image}">
-         <p><strong> Nome: ${item.name}</strong></p>
-      </div> 
-      
-      <div class="back-card">
-        <ul class="list-card">
-          <li>Nome: ${item.name}</li>
-          <li>Status: ${item.status}</li>
-          <li>Espécie: ${item.species}</li>
-          <li>Gênero: ${item.gender}</li>      
-          <li>Localização: ${item.location.name}</li>
-        </ul>
-      </div>
-    </div>
-  </div>  
+      <section class="card">
+        <div class="card-face">
+          <div class="card-face-front">
+          <img src="${item.image}">
+          <p><strong>${item.name}</strong></p>
+          </div>
+
+          <div class="card-face-back">
+            <ul class="list-card">
+              <li>Nome: ${item.name}</li>
+              <li>Status: ${item.status}</li>
+              <li>Espécie: ${item.species}</li>
+              <li>Gênero: ${item.gender}</li>      
+              <li>Localização: ${item.location.name}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
   `)
   }
   
