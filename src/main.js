@@ -3,8 +3,14 @@ import { dataFilter, nameFilter, computeStats } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
+
+
+
+
 function cardsData(data) {
-  document.getElementById('read').innerHTML = data.map((item) => `
+
+  return data.map((item) => `
+
     <div class="card">
       <div class="card-in"> 
         <div class="card-first">
@@ -24,9 +30,10 @@ function cardsData(data) {
     </div>
   </div>  
   `)
-}
-cardsData(data.results);
 
+  .join('')
+}
+document.getElementById('read').innerHTML = cardsData(data.results);
 
 const selectGender = document.getElementById("gender");
 const selectSpecies = document.getElementById("species");
