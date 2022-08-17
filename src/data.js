@@ -1,13 +1,13 @@
-export const ghibli = {printCatalogue, printModal, filterDuration, sortedFilms, countFilms, countLocations, countPeople, countVehicles};
+export const ghibli = {printCatalogue, printModal, filterDuration, sortedFilms, countFilms, countPeopleModal, countLocations, countPeople, countVehicles};
 
 function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
     const template = `
     <div class="card">
     <button class= "btn-modal" type="button"> 
-    <img class="poster-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
-      <h7>${film.title}</h7><br>
-      <h7>${film.duration}min, Score ${film.rt_score}, ${film.release_date}</h7>
+    <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
+      <br><h7>${film.title}</h7><br>
+      <h7>${film.release_date}</h7>
     </div>
     `;
     return template; 
@@ -18,8 +18,17 @@ function printCatalogue(filmsList) {
 function printModal (film) {
   return `
   <div class="modal-content">
-    <p>${film.title}<br>${film.description}</p>
-    <p class="close">Sair</p>
+    <h1>${film.title}</h1>
+    <p class="modal-director">Dirigido por ${film.director}</p>
+    <div class="modal-score-duration">
+      <p>${film.duration}min</p>
+      <p>Score: ${film.rt_score}</p> 
+    </div>
+    <div class="modal-description">
+      <p>${film.description}</p>
+      <p><strong>${(film.people).length} personagens ajudam a contar essa história!</strong></p>
+    </div>
+    <button class="close">Sair</button>
   </div> 
   `
 }
@@ -53,6 +62,12 @@ function sortedFilms(films, selection) {
 
 function countFilms (films) {
   return Object.keys(films).length;
+}
+
+function countPeopleModal (films) {
+  const count = films.map((film) => {
+    return (film.people).length;
+});
 }
 
 function countPeople (films) {
