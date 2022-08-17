@@ -1,6 +1,5 @@
- 
-
 export {rickAndMorty};
+
 // ==== objeto principal com as funções de mostrar cards e filtro =====
 const rickAndMorty = {
 
@@ -66,7 +65,6 @@ const rickAndMorty = {
 
     },
 };
-
 
 //Criei uma constante que é uma funcáo, onde passei o parametro que quero que seja filtrado, que nesse caso é o status
 // essa arrow function indica que aqui dentro vai ter uma cocndicao que vai ser necessaria para filtrar cada elemento dentro da array.

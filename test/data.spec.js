@@ -11,5 +11,3 @@ describe('actions', () => {
     expect(typeof rickAndMorty.filtrarPorStatus).toBe('function');
   });  
 });
-
-
