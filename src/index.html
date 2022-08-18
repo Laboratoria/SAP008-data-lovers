@@ -16,13 +16,13 @@
     <header>
       <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
       <navbar>
-        <select name="Gender" id="gender">
-          <option value="" disabled="" selected="">Gender</option>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-          <option value="undefined">Undefined</option>
+        <select class="select" id="gender">
+          <option value="gender" selected disabled>Gender</option>
+          <option class= "selec-gender" value="female">Female</option>
+          <option class= "selec-gender"value="male">Male</option>
+          <option class= "selec-gender"value="undefined">Undefined</option>
         </select>
-        <select name="Species" id="species">
+        <select class="select"name="Species" id="species">
           <option value="" disabled="" selected="">Species</option>
           <option value="human">Human</option>
           <option value="alien">Alien</option>
@@ -62,7 +62,7 @@
     <p class="statistics">This category represents <b>2%</b> of the characters</p>
 
     <main class="scroll">
-      <div id= "show-calculation"></div>
+      <!--<div id= "show-calculation"></div>-->
       <div id="listening"></div>
     </main>
   </body>

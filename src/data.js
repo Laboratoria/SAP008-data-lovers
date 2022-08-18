@@ -4,7 +4,7 @@ export const sortByAZ = (data) => alphabeticOrder(data).slice(0, 494);
 
 export const sortByZA = (data) => sortByAZ(data).reverse();
   
-export const filterData = (data,typeData, condition) => data.filter((character) => {
+export const filterData = (data,typeData,condition) => data.filter((character) => {
    return (character[typeData] === condition);
 })
 

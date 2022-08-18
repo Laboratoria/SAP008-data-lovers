@@ -25,30 +25,30 @@ select:hover {
 }
 
 #gender{
-    position: absolute;
+    position: relative;
     text-align: center;
-    left: 25%;
+    left: 20%;
     width: 9%;
     height: 7%;
 }
 
 #species{
-    position: absolute;
-    left: 35%;
+    position: relative;
+    left: 30%;
     width: 9%;
     height: 7%;
 }
 
 #status{
-    position: absolute;
-    left: 45%;
+    position: relative;
+    left: 11%;
     width: 9%;
     height: 7%;
 }
 
 #episode{
-    position: absolute;
-    left: 55%;
+    position: relative;
+    left: 21%;
     width: 9%;
     height: 7%;
 }
@@ -68,7 +68,7 @@ select:hover {
     position: absolute;
     width: 17%;
     height: 4%;
-    left: 65%;
+    left: 62%;
 }
 
 .statistics{
@@ -88,11 +88,12 @@ select:hover {
     height: 314px;
     perspective: 1000px;
     display: inline-block;
-    margin: auto;
+    margin: 5px 5px 5px 5px;
     justify-content: center;
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .flipper{
