@@ -1,4 +1,4 @@
-import { dataFilter, nameFilter, computeStats } from './data.js';
+import { sortAz, sortZa, filterName, speciesFilter, genderFilter, statusFilter, calculationInte, filterName, orderAz } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/rickandmorty/rickandmorty.js';
