@@ -25,7 +25,9 @@ body {
 }
 
 .horizontal-center {
-
+    margin: 0 auto;
+    width: 60%;
+    
 }
 
 .search-bar {
