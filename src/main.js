@@ -1,6 +1,30 @@
 import {rickAndMorty} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
+// ======= Função de gerar templates ======
+function displayCards(list) {
+    const arrayResults = list.map((item) => {
+        const template = `
+        <div class="card">
+
+            <img class="poster-img" src="${item.image}" alt="${item.name}">
+
+            <ul class="card-text" style="list-style: none">                       
+            <li>Name: ${item.name}</li>
+            <li>Status: ${item.status}</li>
+            <li>Species: ${item.species}</li>
+            <li>Gender: ${item.gender}</li>
+            <li>Location: ${item.origin.name}</li>
+           
+            </ul>                
+
+        </div>
+        `;
+        return template;
+    });
+    return arrayResults.join(""); 
+}
+
 // ==== constantes e DOM's=====
 const list = data.results;
 const cardContainer = document.querySelector('#card-container');
@@ -16,27 +40,26 @@ cardContainer.innerHTML = rickAndMorty.displayCards(list);
 selectStatus.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorStatus(list, value);
-    //tive que acrescentar o data.results pois o filtrar por status agora recebe 2 parametros,
-    //o data.results para que o filtro acesse os itens do objeto que estão no data e o value
-    //valor da ação do usuário quando escolhe um dos status..
-    document.querySelector('#card-container').innerHTML = listaFiltrada;
-  
-      
+    const cards = displayCards(listaFiltrada);    
+    document.querySelector('#card-container').innerHTML = cards;     
+
 });
 
 // ===== evento para filtrar por especie ====
-selectSpecies.addEventListener('change', (event) => {
+selectSpecies.addEventListener('change', (event) => {     
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorEspecie(list, value);
-    document.querySelector('#card-container').innerHTML = listaFiltrada;
-    
+    const cards = displayCards(listaFiltrada);
+    document.querySelector('#card-container').innerHTML = cards;   
+
 });
 
 // ===== evento para filtrar por genero ====
 selectGender.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorGenero(list, value);
-    document.querySelector('#card-container').innerHTML = listaFiltrada;
+    const cards = displayCards(listaFiltrada);
+    document.querySelector('#card-container').innerHTML = cards;
 
 });
 

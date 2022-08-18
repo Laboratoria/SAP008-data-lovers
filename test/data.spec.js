@@ -2,25 +2,29 @@ import {rickAndMorty} from '../src/data.js';
 
 const arrayTest = [
   {
+  name: "Rick Sanchez",
   "status": "Alive",
   "species": "Human",
   "gender": "Male",
   },
 
   {
+    name: "Morty Smith",
     "status": "Alive",
     "species": "Human",
     "gender": "Male",
   },
 
   {
+    name: "Beth Smith",
     "status": "Alive",
     "species": "Human",
     "gender": "Female",
   },
 
   {
-    "status": "Alive",
+    name: "Tiny Rick",
+    "status": "Dead",
     "species": "Human",
     "gender": "Female",
   } 
@@ -53,25 +57,29 @@ describe('filtrarPorStatus', () => {
 
   });
 
-  it('filtra o status dos personagens', () => {
-    const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "Alive");
-    expect(expectedStatus).toEqual([{
-      "status": "Alive",
-      "species": "Human",
-      "gender": "Male",
-    }]);
+  it('filtra o status dos personagens mortos', () => {
+    const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "dead");
+    expect(expectedStatus.length).toEqual(1);
+    expect(expectedStatus).toEqual([arrayTest[3]]);
+    expect(expectedStatus[0]).toEqual(arrayTest[3]);    
   });
+
+  it('filtra o status dos personagens vivos', () => {
+    const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "alive");
+    expect(expectedStatus.length).toEqual(3);
+  });
+
+
 });
     
-/*describe('filtrarPorStatus', () => {
 
-    it('should be a function', () => {
-      expect(typeof rickAndMorty.filtrarPorStatus).toBe('function');
-    });
-    
-    it('should return "tal" for "tal" ', () => {
-      expect(rickAndMorty.filtrarPorStatus()).toBe();
-    });
-    
-  });*/
+  describe('buscar por nome', () => {
+
+    it('deve buscar por um nome', () => {
+      const personagens = rickAndMorty.buscarPorNome(arrayTest, "Rick");
+      expect(personagens.length).toEqual(2);
+
+
+    })
+  })
 
