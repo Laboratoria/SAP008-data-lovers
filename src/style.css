@@ -1,4 +1,32 @@
-body {
-   background-color: rgb(103, 103, 248); 
-   text-align: center;
+.homebackground{
+      background-image: url("https://i.pinimg.com/originals/b2/2d/ad/b22dad8f6c8190dc92cde5d1e250073e.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+      color: white;
+      text-align: center;
+}
+
+.moviesbackground {
+      background-color: rgb(150, 129, 133);
+      color: white;
+      text-align: center;
+}
+
+.charactersbackground {
+      background-color: pink;
+      color: white;
+      text-align: center;
+
+}
+.aboutbackground {
+      background-color: purple;
+      color: white;
+      text-align: center;
+}
+
+.morebackground {
+      background-color: aqua;
+      color: white;
+      text-align: center;
+
 }
