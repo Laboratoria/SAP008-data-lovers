@@ -6,13 +6,11 @@
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Histórias de usuário](#3-histórias-do-usuário)
 * [4. Protótipos da interface](#4-prototipos)
-* [5. Critérios mínimos de aceitação do
-  projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Pistas, dicas e leituras
-  complementares](#8-pistas-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+* [5. Testes Unitários](#5-testes-unitarios)
+* [6. Testes de Usabilidade](#6-testes-de-usabilidade)
+* [7. XXXX](#7-considerações-técnicas)
+* [8. YYYY](#8-pistas-dicas-e-leituras-complementares)
+* [9. ZZZZZ](#9-checklist)
 
 ***
 
