@@ -21,8 +21,8 @@ Isso fez com que os dois percebessem que para fazer as animações de alta quali
 
 
 ## 4. Desenvolvendo nosso Protótipo
-![img] (fluxogramaprototipo1.png)
-![img] (fluxogramaprototipo2.png)
+![img](fluxogramaprototipo1.png)
+![img](fluxogramaprototipo2.png)
 ## 5. Interface do Usuário
 
 ## 6. Estrutura e organização dos arquivos
