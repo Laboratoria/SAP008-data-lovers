@@ -32,8 +32,8 @@ Ideias design:
 
 ## 2. Protótipos de baixa fidelidade:
 
-![mobile](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png =30x50)
-![desktop](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png =50x30)
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png" width = 10>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png" width = 30>
 
 ## 3. Histórias de Usuário:
 
@@ -102,38 +102,16 @@ Passo a passo do algoritmo:
 #### Card Filme:
 ![cardfilmes](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Screen%20Shot%202022-08-18%20at%2009.30.59.png)
 
-*Ideia de como criar o cartão do filme:*
+*Ideia de como criar o cartão:*
 - Criar a estrutura do card ampliado em html e estilizar no css;
-- Capturar o 'valor' do título do filme no array films e inseri-lo em um h3 (innerHTML);
-- Capturar o valor das chaves description, director, poster, release_date, rt_score, e inserí-los em campos específicos do html (innerHTML);
-- realizar uma contagem de elementos do array people para gerar a contagem de personagens do filme;
-- realizar um count unique dos valores de specie de personagens no array people para ver quais espécies há naquele filme;
-
-#### Card Personagens:
-img card personagens
-
-*Ideia de como criar o cartão:*
-Criar a estrutura do card ampliado em html e estilizar no css;
-Capturar o 'valor' das chaves name, img, gender, age, eye_color, hair_color e specie de cada personagem no array people e inserí-la no html (innerHTML);
-
-#### Card Locais:
-img card Locais
-
-*Ideia de como criar o cartão:*
-criar a estrutura do card ampliado em html e estilizar no css;
-Capturar o 'valor' das chaves name e residentes;
-
-#### Card Veículos:
-img card Veículos
-
-*Ideia de como criar o cartão:*
-criar a estrutura do card ampliado em html e estilizar no css;
-Capturar o 'valor' das chaves name, img, gender, age, eye_color, hair_color e specie de cada personagem no array people e inserí-la no html (innerHTML);
+- Capturar os valor das chaves (ex: description, director, poster, release_date, rt_score) e inserí-los em campos específicos do html (innerHTML);
+- realizar uma contagem de elementos do array (ex: people) para gerar a contagem de personagens do filme;
+- realizar um count unique dos valores (ex: specie de personagens no array people) para ver quais espécies há naquele filme;
 
 ## 5. Protótipos de alta fidelidade:
 
-![versao1](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png =30x50)
-![versaofinal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png =30x50)
+![versao1](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png)
+![versaofinal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png)
 ![paginainial](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png)
 ![filmes](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png)
 ![modal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png)
