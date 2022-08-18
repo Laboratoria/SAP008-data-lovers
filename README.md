@@ -32,10 +32,17 @@ Ideias design:
 
 ## 2. Protótipos de baixa fidelidade:
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png" width = 10>
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png" width = 30>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png" width = 100>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png" width = 150>
 
 ## 3. Histórias de Usuário:
+
+Definição de pronto:
+- o código está de acordo com o guia e estilos;
+- o código está no repositório;
+- o código tem e passa os testes necessários;
+- o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
+- a história implementada foi testada com, pelo menos 3 usuários, e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade.
 
 ### História 1: 
 #### Como usuário quero escolher um filme pela duração para que caiba no meu tempo livre atual.
@@ -49,12 +56,7 @@ Elementos:
 - comunicação com os novos dados;
 - possibilidade de ordenar o resultado por nota/ano (prioridade baixa);
 
-Definição de pronto:
-- o código está de acordo com o guia e estilos;
-- o código está no repositório;
-- o código tem e passa os testes necessários;
-- o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
-- a história implementada foi testada com, pelo menos 3 usuários, e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade.
+Definição de pronto()
 
 ### História 2: 
 ##### Como usuário quero ler a sinopse do filme para tomar a decisão de qual assistir.
@@ -66,12 +68,7 @@ Elementos:
 - Comunicação com os novos dados;
 - caixa pop up (modal);
 
-Definição de pronto:
-- o código está de acordo com o guia e estilos;
-- o código está no repositório;
-- o código tem e passa os testes necessários;
-- o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
-- a história implementada foi testada com, pelo menos 3 usuários, e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade.
+Definição de pronto()
 
 ### História 3: 
 #### Como pessoa usuária gostaria de escolher um filme onde as personagens principais são mulheres e crianças, para discutir gênero com minha filha. (Adulto)
@@ -87,20 +84,15 @@ Elementos:
 - Botão para efetivar a filtragem (?)
 - Comunicação com os dados;
 
-Definição de pronto:
-- o código está de acordo com o guia e estilos;
-- o código está no repositório;
-- o código tem e passa os testes necessários;
-- o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
-- a história implementada foi testada com, pelo menos 3 usuários, e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade.
+Definição de pronto()
 
 ## 4. Estrutura dos Dados:
 
 Passo a passo do algoritmo:
-- Iterar o objeto para capturar o nome de cada filme (chave title e seu valor) e seu poster (chave poster e seu valor - src da img) correspondente para gerar a miniatura no catálogo geral da página principal.
+- Iterar o objeto para capturar os nome de cada filme (chave title e seu valor) e seu poster (chave poster e seu valor - src da img) correspondente para gerar a miniatura no catálogo geral da página principal.
 
 #### Card Filme:
-![cardfilmes](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Screen%20Shot%202022-08-18%20at%2009.30.59.png)
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Screen%20Shot%202022-08-18%20at%2009.30.59.png" width = 150>
 
 *Ideia de como criar o cartão:*
 - Criar a estrutura do card ampliado em html e estilizar no css;
@@ -110,10 +102,16 @@ Passo a passo do algoritmo:
 
 ## 5. Protótipos de alta fidelidade:
 
-![versao1](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png)
-![versaofinal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png)
-![paginainial](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png)
-![filmes](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png)
-![modal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png)
-![personagens](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png)
-![veiculoslocais](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png)
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png width = 100>
+
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png width = 100>
+
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png width = 150>
+
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png width = 150>
+
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png width = 150>
+
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png width = 150>
+
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png width = 150>
