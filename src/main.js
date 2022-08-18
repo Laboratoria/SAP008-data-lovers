@@ -2,8 +2,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 function gerarCard(personagem) {
     return `
-        <div class="grupo-2 screen">
-            <div class="grupo-1">
+            <div>
                 <div class="quadro-card">
                     <div>
                         <img class="quadro-imagem" src="${personagem.image}">
@@ -16,7 +15,6 @@ function gerarCard(personagem) {
                     </div>
                 </div>
             </div>
-        </div>
     `;
 }
 
