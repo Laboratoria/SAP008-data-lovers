@@ -2,31 +2,31 @@ import {rickAndMorty} from '../src/data.js';
 
 const arrayTest = [
   {
-  name: "Rick Sanchez",
-  "status": "Alive",
-  "species": "Human",
-  "gender": "Male",
+    name: "Rick Sanchez",
+    status: "Alive",
+    species: "Human",
+    gender: "unknown"
   },
 
   {
     name: "Morty Smith",
-    "status": "Alive",
-    "species": "Human",
-    "gender": "Male",
+    status: "Alive",
+    species: "unknown",
+    gender: "Male"
   },
 
   {
     name: "Beth Smith",
-    "status": "Alive",
-    "species": "Human",
-    "gender": "Female",
+    status: "Alive",
+    species: "Human",
+    gender: "Female"
   },
 
   {
     name: "Tiny Rick",
-    "status": "Dead",
-    "species": "Human",
-    "gender": "Female",
+    status: "Dead",
+    species: "Alien",
+    gender: "Female"
   } 
 ];
 
@@ -69,17 +69,47 @@ describe('filtrarPorStatus', () => {
     expect(expectedStatus.length).toEqual(3);
   });
 
-
 });
+
+  describe('filtrarPorExpecie', () => {
+    it('é uma função', () => {
+      expect(typeof rickAndMorty.filtrarPorEspecie).toBe('function');
+   });
+
+   it('filtra a espécie dos personagens alienígenas', () => {
+    const personagem = rickAndMorty.filtrarPorEspecie(arrayTest, "alien");
+    expect(personagem.length).toEqual(1);
+    expect(personagem).toEqual([arrayTest[3]]);
     
+   });
+
+   it('filtra a espécie dos personagens desconhecidos', () => {
+    const personagem = rickAndMorty.filtrarPorEspecie(arrayTest, "unknown");
+    expect(personagem.length).toEqual(1);
+    expect(personagem).toEqual([arrayTest[1]]);
+
+   });
+
+  });
+
+    describe('filtrarPorGênero', () => {
+      it('é uma função', () => {
+        expect(typeof rickAndMorty.filtrarPorGenero).toBe('function');
+      });
+
+      it('filtra o gênero dos personagens femininos', () => {
+        const personagem = rickAndMorty.filtrarPorGenero(arrayTest, "female");
+        expect(personagem.length).toEqual(2);
+        expect(personagem).toEqual([arrayTest[2],arrayTest[3]]);
+      });
+    });
+
 
   describe('buscar por nome', () => {
 
     it('deve buscar por um nome', () => {
       const personagens = rickAndMorty.buscarPorNome(arrayTest, "Rick");
       expect(personagens.length).toEqual(2);
-
-
-    })
-  })
+    });
+  });
 

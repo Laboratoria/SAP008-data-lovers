@@ -34,7 +34,7 @@ const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
 
 // ===== evento para mostrar os cards na tela ====
-cardContainer.innerHTML = rickAndMorty.displayCards(list);
+cardContainer.innerHTML = displayCards(list);
 
 // ===== evento para filtrar por status ====
 selectStatus.addEventListener('change', (event) => {
