@@ -1,6 +1,5 @@
-import { filterData } from './data.js';
-import { showCards } from './data.js'; 
-import data from './data/rickandmorty/rickandmorty.js'; 
+import { filterData, showCards } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
 const buttonFilter = document.querySelector('#filter');
 const filterBox = document.querySelector('#filter-box');
@@ -11,22 +10,20 @@ buttonFilter.addEventListener('click', () => { //botão FILTRAR (exibe filtros)
 
 const buttonSearch = document.querySelector('#search');
 const cards = document.querySelector('#cards');
-
-buttonSearch.addEventListener('click', () => { //botão BUSCAR (filtra, exibe cards)
-    
-    const x = filterData(data, "status", "Alive")
-    console.log(x)
- 
-    document.querySelector('#cards').innerHTML = showCards(data.results)
-}); 
-
-//variáveis, eventos e funções para marcar e desmarcar radio buttons:
-const radioButtonAlive = document.querySelectorAll("#alive");
+const radioButtonAlive = document.querySelector("#alive");
 const radioButtonDead = document.querySelector("#dead");
 const radioButtonFemale = document.querySelector("#female");
 const radioButtonMale = document.querySelector("#male");
 const radioButtonHuman = document.querySelector("#human");
 const radioButtonNonHuman = document.querySelector("#non-human");
+
+buttonSearch.addEventListener('click', () => { //botão BUSCAR (filtra, exibe cards)
+
+    const x = filterData(data, "status", "Alive")
+    console.log(x)
+
+    cards.innerHTML = showCards(data.results)
+});
 
 let checked = true;
 radioButtonAlive.addEventListener('click', () => {
