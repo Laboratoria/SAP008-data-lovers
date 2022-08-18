@@ -1,9 +1,12 @@
-// estas funciones son de ejemplo
+const inputSearch = document.querySelector ("#search")
+const navMenu = document.querySelector ("[data-type='nav-menu']")
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+inputSearch.addEventListener("input", function(){
+  const str = this.value;
+  if(str){
+    filterData(str)
+  }
+  else {
+    showAllItens()
+  }
+})
