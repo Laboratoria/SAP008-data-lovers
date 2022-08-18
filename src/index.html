@@ -17,7 +17,7 @@
     <button type="submit" id="btn-characters" class="menu-btns">Personagens</button>
     <button type="submit" id="btn-books" class="menu-btns">Livros</button>
     <button type="submit" id="btn-spells" class="menu-btns">Feitiços</button>
-    <input type="text" id="search-box" placeholder="Pesquisar..." class="search-bar"></input>
+    <input type="text" id="search-box" placeholder="Pesquisar..." class="search-bar">
     <button type="submit" id="search-btn" class="search-icon"><i class="fa fa-search"></i></button>
   </header>
 
@@ -36,10 +36,12 @@
 
       <h1 class="modal-header"> Lista de Personagens </h1>
       <p>Escolha uma casa para filtrar os personagens pertencentes a ela</p>
-      <button type="submit" id="btn-gryffindor" class="modal-btn">Gryffindor</button>
-      <button type="submit" id="btn-slytherin" class="modal-btn">Slytherin</button>
-      <button type="submit" id="btn-hufflepuff" class="modal-btn">Hufflepuff</button>
-      <button type="submit" id="btn-ravenclaw" class="modal-btn">Ravenclaw</button>
+      <div class="horizontal-center">
+        <button type="submit" id="btn-gryffindor" class="modal-btn">Gryffindor</button>
+        <button type="submit" id="btn-slytherin" class="modal-btn">Slytherin</button>
+        <button type="submit" id="btn-hufflepuff" class="modal-btn">Hufflepuff</button>
+        <button type="submit" id="btn-ravenclaw" class="modal-btn">Ravenclaw</button>
+      </div>
       <div id="characters-content" class="modal-content"></div>
 
     </div>
@@ -48,7 +50,7 @@
     </div>
     <div id="spells-list" class="list-modal" style="display:none"> Lista de feitiços
       <a href="/harrypotter/"> Accio </a>
-      </nav>
+    </div>
   </main>
 
   <footer class="footer">

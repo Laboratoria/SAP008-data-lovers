@@ -24,6 +24,10 @@ body {
     background-color: #700505;
 }
 
+.horizontal-center {
+
+}
+
 .search-bar {
     position: relative;
     width: 12vw;
@@ -144,11 +148,13 @@ body {
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
     justify-content: center;
     display: flex;
-    align-items: center
+    border-radius: 5px;
+    
 }
 
 .modal-content {
     position: relative;
+    border-radius: 5px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -158,10 +164,7 @@ body {
     font-family: "Franklin Gothic Medium";
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
+    
   }
 
   h1.modal-header {
@@ -172,12 +175,14 @@ body {
     background: #DC9E00;
     text-align: center;
     font-family: "Harry Potter";
+    color:#193833;
 
   }
 
   .modal p {
     width: 100%;
     text-align: center;
+    margin: 5px 20px 5px;
     font-family: "Nunito";
     color: #F7F7F7;
     font-size: 15px;
@@ -185,7 +190,9 @@ body {
     }
   
   .modal-btn {
+    display: inline-block;
     padding: 0px 10px 0px;
+    margin: 5px auto 5px;   
     border-color:#DC9F03;
     border-width: 3px;
     border-radius: 20px;
@@ -193,7 +200,6 @@ body {
     font-weight: lighter;
     font-size: 14px;
     text-align: center;
-    margin-left: 20px;
     text-shadow: 2px 1px #1616162e;
     background-color: #DC9F03;
     color: #193833;
