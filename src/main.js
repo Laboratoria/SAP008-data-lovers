@@ -1,7 +1,6 @@
 import {ghibli} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
-// ===== Exibir Cards =====
 const films = data.films;
 const modal = document.querySelector('.modal');
 
@@ -67,6 +66,8 @@ resultCountPeople.innerHTML = ghibli.countPeople(films);
 resultCountLocations.innerHTML = ghibli.countLocations(films);
 resultCountVehicles.innerHTML = ghibli.countVehicles(films);
 
+const cataloguePeople = document.querySelector('.catalogue-people');
+cataloguePeople.innerHTML = ghibli.printCataloguePeople(films);
 
 // ======== FILTRO DE GENERO PARA USAR NOS PERSONAGENS =========
 // let selectedGender = document.getElementById('filter-gender');

@@ -17,8 +17,8 @@
       <section class="description">
         <img class="description-img" src="img/dragon-chihiro1.png">
         <div class="description-text">
-          <p>Um universo formado por <strong id="count-films" class="counter"></strong> longas, onde <strong id="count-people" class="counter"></strong> personagens dão forma a 
-            histórias fantásticas no cotidiano japonês ou em reinos distantes, pilotam <strong id="count-vehicles" class="counter"></strong> veículos singulares e 
+          <p>Um universo revelado em <strong id="count-films" class="counter"></strong> longas, nos quais <strong id="count-people" class="counter"></strong> personagens dão forma a 
+            histórias fantásticas sobre o cotidiano japonês ou reinos distantes, pilotam <strong id="count-vehicles" class="counter"></strong> veículos singulares e 
             transitam por <strong id="count-locations" class="counter"></strong> locais extraordinários.</p>
         </div>
       </section>
@@ -28,21 +28,55 @@
           <option name="gender" value="Female">Feminino
           <option name="gender" value="Male">Masculino</option>
         </select> -->
+        <select id="order-by" name="order" class="btn-catalogue-filter"> 
+          <option name="order" value="order" selected>Ordenar por</option>
+          <option name="order" value="rt_score">Avaliação (Z-A)</option>
+          <option name="order" value="release_date">Ano Lançamento</option>
+        </select>
         <select id="filter-duration" name="duration" class="btn-catalogue-filter"> 
           <option name="duration" value="duration" selected>Duração</option>
           <option name="duration" value="90min">até 90 minutos</option>
           <option name="duration" value="120min">de 90 a 120 minutos</option>
           <option name="duration" value="150min">mais de 120 minutos</option>
         </select>
-        <select id="order-by" name="order" class="btn-catalogue-filter"> 
-          <option name="order" value="order" selected>Ordenar por</option>
-          <option name="order" value="rt_score">Avaliação</option>
-          <option name="order" value="release_date">Ano Lançamento</option>
-        </select>
       </section>
 
       <div class="catalogue"></div>
       <div class="modal"></div>
+
+      <section class="description-people">
+        <img class="description-img-people" src="img/personagens.png">
+      </section>
+      <section class="btn-catalogue-film">
+        <select id="choose-film" name="choose" class="btn-catalogue-film-options"> 
+          <option name="choose-film" value="choose-film" selected>Filme</option>
+          <option name="choose-film" value="title">Castle in the Sky</option>
+          <option name="choose-film" value="title">My Neighbor Totoro</option>
+          <option name="choose-film" value="title">Kiki's Delivery Service</option>
+          <option name="choose-film" value="title">Grave of the Fireflies</option>
+          <option name="choose-film" value="title">Only Yesterday</option>
+          <option name="choose-film" value="title">Porco Rosso</option>
+          <option name="choose-film" value="title">Pom Poko</option>
+          <option name="choose-film" value="title">Whisper of the Heart</option>
+          <option name="choose-film" value="title">Princess Mononoke</option>
+          <option name="choose-film" value="title">My Neighbors the Yamadas</option>
+          <option name="choose-film" value="title">Spirited Away</option>
+          <option name="choose-film" value="title">The Cat Returns</option>
+          <option name="choose-film" value="title">Howl's Moving Castle</option>
+          <option name="choose-film" value="title">Tales from Earthsea</option>
+          <option name="choose-film" value="title">Ponyo on the Cliff by the Sea</option>
+          <option name="choose-film" value="title">The Secret World of Arrietty</option>
+          <option name="choose-film" value="title">From Up on Poppy Hill</option>
+          <option name="choose-film" value="title">The Wind Rises</option>
+          <option name="choose-film" value="title">The Tale of the Princess Kaguya</option>
+          <option name="choose-film" value="title">When Marnie Was There</option>
+        </select>
+      </section>
+      <div class="catalogue-people"></div>
+
+      <section class="description-loc">
+      </section>
+      <div class="catalogue-loc"></div>
     </main>
     <footer class="footer">
       <img class="footer-img-totoro" src="img/totoro.png">

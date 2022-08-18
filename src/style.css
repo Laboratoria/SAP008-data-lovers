@@ -46,7 +46,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.btn-catalogue-filter {
+.btn-catalogue-filter, .btn-catalogue-film-options {
     margin: auto;
     border:none;
     min-height: 100%;
@@ -60,7 +60,7 @@ body {
     cursor: pointer;
     border-radius: 0.5vw;  
 }
-.btn-catalogue-filter:hover {
+.btn-catalogue-filter:hover, .btn-catalogue-film-options:hover {
     background-color: #f1faee;
     color: #e26c7a;
 }
@@ -144,6 +144,37 @@ body {
     bottom: 0;
     width: 20%;
     margin-left: 77%;
+}
+
+/*Personagens*/
+.btn-catalogue-film {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btn-catalogue-film-options {
+    width: 30% !important;
+}
+.catalogue-people {
+    border: solid 0.5vw black;
+    margin: 3vw 0 2vw;
+    display: grid;
+    grid-auto-rows: minmax(2%,auto);
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 0.5vw;
+    row-gap: 0.5vw;
+}
+.card-people {
+    background-color: rgb(129, 147, 168);
+    padding: 0.5vw;
+    block-size: 100%;
+    border-radius: 0.3vw;
+    text-align: center;
+    min-height: 10%;
+}
+.card-people-img {
+    width: 80%;
+    max-height: 60%;
 }
 
 @media only screen and (max-width: 600px){
