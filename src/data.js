@@ -4,11 +4,12 @@ export const ghibli = {printCatalogue, printModal, filterDuration, sortedFilms,
 function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
     const template = `
-    <button class= "btn-modal" type="button"><div class="card">
-    <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > 
+    <div class="card">
+      <button class= "btn-modal" type="button">
+      <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
       <br><h7>${film.title}</h7><br>
       <h7>(${film.release_date})</h7>
-    </div></button>
+    </div>
     `;
     return template; 
   }); 

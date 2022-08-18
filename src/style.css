@@ -72,7 +72,8 @@ body {
     row-gap: 1vw;
 }
 .card {
-    background-color: rgb(129, 147, 168);
+    background-color: #8193A8;
+    /* background-color: rgb(129, 147, 168); */
     padding: 1vw;
     block-size: 100%;
     text-align: center;
