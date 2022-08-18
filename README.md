@@ -32,8 +32,7 @@ Ideias design:
 
 ## 2. Protótipos de baixa fidelidade:
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png" width = 100>
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png" width = 150>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png" width = 200><img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png" width = 250>
 
 ## 3. Histórias de Usuário:
 
@@ -92,9 +91,9 @@ Passo a passo do algoritmo:
 - Iterar o objeto para capturar os nome de cada filme (chave title e seu valor) e seu poster (chave poster e seu valor - src da img) correspondente para gerar a miniatura no catálogo geral da página principal.
 
 #### Card Filme:
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Screen%20Shot%202022-08-18%20at%2009.30.59.png" width = 150>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Screen%20Shot%202022-08-18%20at%2009.30.59.png" width = 250>
 
-*Ideia de como criar o cartão:*
+Ideia de como criar o cartão:
 - Criar a estrutura do card ampliado em html e estilizar no css;
 - Capturar os valor das chaves (ex: description, director, poster, release_date, rt_score) e inserí-los em campos específicos do html (innerHTML);
 - realizar uma contagem de elementos do array (ex: people) para gerar a contagem de personagens do filme;
@@ -102,16 +101,10 @@ Passo a passo do algoritmo:
 
 ## 5. Protótipos de alta fidelidade:
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png width = 100>
-
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png width = 100>
-
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png width = 150>
-
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png width = 150>
-
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png width = 150>
-
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png width = 150>
-
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png width = 150>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png" width = 200>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png" width = 200>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png" width = 250>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png" width = 250>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png" width = 250>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png" width = 250>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png width = 250>
