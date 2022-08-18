@@ -1,4 +1,4 @@
-export const ghibli = {printCatalogue, printModal, printCatalogueLoc, function printCatalogueVeh, function printCataloguePeople, 
+export const ghibli = {printCatalogue, printModal, printCatalogueLoc, printCatalogueVeh, printCataloguePeople, 
 filterDuration, sortedFilms, countFilms, countPeopleModal, countLocations, countPeople, countVehicles};
 
 function printCatalogue(filmsList) {
