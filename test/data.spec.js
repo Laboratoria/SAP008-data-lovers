@@ -61,12 +61,13 @@ describe('filtrarPorStatus', () => {
     const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "dead");
     expect(expectedStatus.length).toEqual(1);
     expect(expectedStatus).toEqual([arrayTest[3]]);
-    expect(expectedStatus[0]).toEqual(arrayTest[3]);    
+        
   });
 
   it('filtra o status dos personagens vivos', () => {
     const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "alive");
     expect(expectedStatus.length).toEqual(3);
+    expect(expectedStatus).toEqual([arrayTest[0],arrayTest[1],arrayTest[2]]);
   });
 
 });
