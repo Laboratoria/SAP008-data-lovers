@@ -32,19 +32,19 @@ const rickAndMorty = {
     function filtrarPorGenero (list, gender) {
         const filtro = list.filter(function(personagem) {
             const generoFiltrado = personagem.gender.toLowerCase() === gender;
-            return generoFiltrado
+            return generoFiltrado;
 
         });
         return filtro;
 
     },
-
+    // ===== Função buscar por nome ====
     buscarPorNome: function (list, name) {
         const filtro = list.filter(function(personagem) {
-            const generoFiltrado = personagem.name.toLowerCase().includes(name.toLowerCase());
-            return generoFiltrado
+            const buscaFiltrada = personagem.name.toLowerCase().includes(name.toLowerCase());
+            return buscaFiltrada;
         });
         return filtro;
-    }
+    },
 };  
 
