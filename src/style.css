@@ -87,6 +87,19 @@ p {
     font-weight: 600;
 }
 
+p#names {
+    font-family: 'Atma' ;
+    text-transform: uppercase;
+    font-family: 'Atma';
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    font-size: 22px;
+    border-color: transparent;
+    background-color: transparent;
+    font-weight: 600;
+}
+
 footer {
     color: white;
     font-family: 'K2D';
