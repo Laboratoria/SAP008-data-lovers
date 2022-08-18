@@ -1,14 +1,14 @@
-export const ghibli = {printCatalogue, printModal, filterDuration, sortedFilms, countFilms, countPeopleModal, countLocations, countPeople, countVehicles};
+export const ghibli = {printCatalogue, printModal, filterDuration, sortedFilms, 
+  countFilms, countPeopleModal, countLocations, countPeople, countVehicles};
 
 function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
     const template = `
-    <div class="card">
-    <button class= "btn-modal" type="button"> 
-    <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
+    <button class= "btn-modal" type="button"><div class="card">
+    <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > 
       <br><h7>${film.title}</h7><br>
-      <h7>${film.release_date}</h7>
-    </div>
+      <h7>(${film.release_date})</h7>
+    </div></button>
     `;
     return template; 
   }); 
@@ -96,3 +96,4 @@ function countVehicles (films) {
     const sum = count.reduce((a,b) => a + b, 0);
     return sum;
 }
+

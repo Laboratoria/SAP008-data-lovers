@@ -76,7 +76,7 @@ body {
     padding: 1vw;
     block-size: 100%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-radius: 0.3vw;
 }
 .card-img {
@@ -93,7 +93,7 @@ body {
     max-height: 85%; */
 }
 .btn-modal:hover {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .modal {
     display: none; 
@@ -108,7 +108,8 @@ body {
     min-width: 60%;
     min-height: 45%;
     margin: 7% 20%;
-    background-color: rgb(40, 100, 168);
+    background-color: #2864A8;
+    /* rgb(40, 100, 168); */
     color: #f1faee;
     padding: 2vw 4vw 2.5vw;
     text-align: center;
