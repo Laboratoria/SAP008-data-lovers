@@ -24,7 +24,7 @@
       <select class="btn">  
         <option selected disabled value="">GÊNERO</option>
         <option id="gender" value="Male">Macho</option>
-        <option  id="gender"value="Female">Fêmea</option>
+        <option id="gender" value="Female">Fêmea</option>
         <option id="gender" value="unknown">Indefinido</option>
       </select>
       <select class="btn">
@@ -40,15 +40,21 @@
         <option id="status" value="Dead"> Morto</option>
         <option id="status" value="unknown"> Indefinido</option>
       </select>
+      <select class="btn" id="orderAz">  
+        <option selected disabled value="">Ordenar</option>
+        <option value="orderAZ">A-Z</option>
+        <option  value="orderZA">Z-A</option>
+      </select>
     </section> 
       
       <span class="container-pesquisa">
         <input class="pesquisar" type="text" placeholder="Pesquise por... ">  
-        <button class="buscar" id="Buscar">Buscar</button>
+        <button class="buscar" id="buscar">Buscar</button>
       </span>
       
       <main class="scroll">
         <div id="read"></div>
+        <div id="calculation"></div>
       </main>
 
     <div id="root"></div>
