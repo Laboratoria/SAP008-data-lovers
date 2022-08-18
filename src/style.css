@@ -88,9 +88,7 @@
     padding: 20px 0;
 }
 
-.card-atleta-1,
-.card-atleta-2,
-.card-atleta-3 {
+.card-atleta {
     width: 300px;
     height: 400px;
     margin: 0 50px;
