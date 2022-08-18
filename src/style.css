@@ -94,7 +94,7 @@ button:hover {
 
 .card {
     background-image: url(./img/espacowe.jpg);
-    display: flex;
+    display: inline-block;
     padding: 25px;
     width: 300px;
     height: 350px;
