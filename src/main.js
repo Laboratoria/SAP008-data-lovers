@@ -21,3 +21,5 @@ function gerarCard(personagem) {
 data.results.forEach(personagem => {
     document.getElementById('cards').insertAdjacentHTML('beforeend', gerarCard(personagem));
 });
+
+
