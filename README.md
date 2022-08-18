@@ -32,8 +32,8 @@ Ideias design:
 
 ## 2. Protótipos de baixa fidelidade:
 
-![mobile] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png)
-![desktop] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png)
+![mobile](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png)
+![desktop](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png)
 
 ## 3. Histórias de Usuário:
 
@@ -132,9 +132,9 @@ Capturar o 'valor' das chaves name, img, gender, age, eye_color, hair_color e sp
 
 ## 5. Protótipos de alta fidelidade:
 
-![versao1] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png)
-![versaofinal] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png)
-![paginainial] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png)
-![modal] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png)
-![personagens] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png)
-![veiculoslocais] (https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png)
+![versao1](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Primeira%20vers%C3%A3o.png)
+![versaofinal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Vers%C3%A3o%20final%20-%20historia%201.png)
+![paginainial](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png)
+![modal](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png)
+![personagens](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png)
+![veiculoslocais](https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png)
