@@ -19,33 +19,27 @@
         <button class="btn-header">Multiverso</button>
     </header>
 
-      <section class="seletores">
-
-      <select class="btn">  
-        <option selected disabled value="">GÊNERO</option>
-        <option id="gender" value="Male">Macho</option>
-        <option id="gender" value="Female">Fêmea</option>
-        <option id="gender" value="unknown">Indefinido</option>
+      <aside class="s
+        <select class="select-gender btn">  
+          <option value="gender" selected disabled>GÊNERO</option>
+          <option  id="select-gender" value="Male">Macho</option>
+          <option  id="select-gender"value="Female">Fêmea</option>
+          <option id="select-gender" value="unknown">Indefinido</option>
+        </select>
+      <select class="select-specie btn">
+        <option value="specie" selected disabled>ESPÉCIE</option>
+        <option class="select-specie" value="Human"> Humano</option>
+        <option class="select-specie" value="Humanoid"> Humanóide</option>
+        <option class="select-specie" value="Alien"> Alien</option>
+        <option class="select-specie" value="Animal"> Animal</option>
       </select>
-      <select class="btn">
-        <option selected disabled value="">ESPÉCIE</option>
-        <option id="specie" value="Human"> Humano</option>
-        <option id="specie" value="Humanoid"> Humanóide</option>
-        <option id="specie" value="Alien"> Alien</option>
-        <option id="specie" value="Animal"> Animal</option>
+      <select class="select-status btn">
+        <option value="status" selected disabled>STATUS</option>
+        <option class="status" value="Alive"> Vivo</option>
+        <option class="status" value="Dead"> Morto</option>
+        <option class="status" value="unknown"> Indefinido</option>
       </select>
-      <select class="btn">
-        <option selected disabled value="">STATUS</option>
-        <option id="status" value="Alive"> Vivo</option>
-        <option id="status" value="Dead"> Morto</option>
-        <option id="status" value="unknown"> Indefinido</option>
-      </select>
-      <select class="btn" id="orderAz">  
-        <option selected disabled value="">Ordenar</option>
-        <option value="orderAZ">A-Z</option>
-        <option  value="orderZA">Z-A</option>
-      </select>
-    </section> 
+      </aside> 
       
       <span class="container-pesquisa">
         <input class="pesquisar" type="text" placeholder="Pesquise por... ">  
@@ -54,7 +48,7 @@
       
       <main class="scroll">
         <div id="read"></div>
-        <div id="calculation"></div>
+        <div id="teste"></div>
       </main>
 
     <div id="root"></div>

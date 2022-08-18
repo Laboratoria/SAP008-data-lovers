@@ -10,7 +10,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 function cardsData(data) {
   document.getElementById('read').innerHTML = data.map((item) => `
 
-    <div class="card">
+    <section class="card">
       <div class="card-in"> 
         <div class="card-first">
         <img src="${item.image}">
@@ -27,68 +27,35 @@ function cardsData(data) {
         </ul>
       </div>
     </div>
-  </div>  
+  </section>  
   `)
-
-    .join('')
 }
 cardsData(data.results);
 
-////// SELETORES
-const genderResults = document.getElementById("gender");
-const statusResults = document.getElementById("status");
-const speciesResults = document.getElementById("species");
-const arrayOrder = document.getElementById("orderAz");
-const calculoIntegrado = document.getElementById("calculation");
-const resultsNames = document.getElementById("buscar");
 
-function showPercentage(data) {
-  calculoIntegrado.innerHTML = `Essa categoria representa ${data}`;
+const selectGender = document.querySelector(".select-gender");
+const selectSpecie = document.querySelector(".select-specie");
+const selectStatus = document.querySelector(".select-status");
+const teste = document.getElementById("teste");
+
+
+
+function genderFiltro() {
+  teste.style.display = "flex";
+  /*teste.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`*/
+  return cardsData(dataFilter(data.results, "gender", selectGender.value));
 }
 
-function printGenderFilter(e) {
-  const genderResult = genderFilter(data.results, e.target.value);
-
-  const percentageText = `${percentCalc(
-    data.results.length,
-    genderResult.length
-  )}% dos personagens`;
-  showPercentage(percentageText);
-  return cardsData(genderResult);
+function specieFiltro() {
+  teste.style.display = "flex";
+  /*teste.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecie.value)}`*/
+  return cardsData(dataFilter(data.results, "species", selectSpecie.value));
 }
-genderResults.addEventListener("change", printGenderFilter);
-
-function printStatusFilter(e) {
-  const statusResults = statusFilter(data.results, e.target.value);
-  const percentageText = `${percentCalc(
-    data.results.length,
-    statusResults.length
-  )}% dos personagens`;
-  showPercentage(percentageText);
-  return cardsData(statusResults);
+function statusFiltro() {
+  teste.style.display = "flex";
+  return cardsData(dataFilter(data.results, "status", selectStatus.value));
 }
-statusResults.addEventListener("change", printStatusFilter);
 
-function printSpeciesFilter(e) {
-  //console.log(e.target.name)
-  const speciesResults = speciesFilter(data.results, e.target.value);
-  const percentageText = `${percentCalc(
-    data.results.length,
-    speciesResults.length
-  )}% dos personagens`;
-  showPercentage(percentageText);
-  return cardsData(speciesResults);
-}
-speciesResults.addEventListener("change", printSpeciesFilter);
-
-function printOrderFilterAz(e) {
-  const orderAz = orderAz(data.results, e.target.value);
-  return cardsData(arrayOrder);
-}
-arrayOrder.addEventListener("change", printOrderFilterAz);
-
-function searchCharacterNames(e) {
-  const resultsNames = filterName(data.results, e.target.value);
-  return cardsData(resultsNames);
-}
-resultsNames.addEventListener("keyup", searchCharacterNames);
+selectGender.addEventListener("change", genderFiltro);
+selectSpecie.addEventListener("change", specieFiltro);
+selectStatus.addEventListener("change", statusFiltro);
