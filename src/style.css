@@ -100,8 +100,13 @@ p#names {
     font-weight: 600;
 }
 
+img#portal{
+    mix-blend-mode: lighten;
+    display: flex;
+}
+
 footer {
-    color: white;
+    color: rgba(255, 255, 255, 0.3);
     font-family: 'K2D';
     text-align: center;
 }
