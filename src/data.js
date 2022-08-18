@@ -103,7 +103,7 @@ function printCataloguePeople(films) {
     const people = film.people.map((person) => {
       const templatePerson = `
       <div class="card-people">
-        <img class="card-people-img" src="${person.img}" alt="${person.name}" name="${person.name}" >
+        <img class="card-people-img" src="${person.img}" alt="${person.name}" name="${person.name}">
         <nav class="person-details">
           <h7>${person.name}</h7><br>
           <ul>
@@ -121,19 +121,37 @@ function printCataloguePeople(films) {
   return arrayPeople.join('');
 }
 
-// function printCatalogueLoc(films) {
-//   const arrayLoc = films.map((film) => {
-//     const locations = film.locations.map((loc) => {
-//       const templateLoc = `
-//       <div class="card-Loc">
-//       <button class= "btn-modal-loc" type="button"> 
-//       <img class="img-loc" src="${loc.img}" alt="${loc.name}" name="${loc.name}" > </button>
-//         <br><h7>${loc.name}</h7><br>
-//       </div>
-//       `;
-//       return templateLoc;
-//     }); 
-//     return loc.join('');
-//   })
-//   return arrayLoc.join('');
-// }
+function printCatalogueLoc(films) {
+  const arrayLoc = films.map((film) => {
+    const locations = film.locations.map((loc) => {
+      const templateLoc = `
+      <div class="card-Loc">
+      <button class= "btn-modal-loc" type="button"> 
+      <img class="img-loc" src="${loc.img}" alt="${loc.name}" name="${loc.name}"></button>
+        <br><h7>${loc.name}</h7><br>
+      </div>
+      `;
+      return templateLoc ;
+    });
+    return locations.join('');
+  })
+  return arrayLoc.join('');
+}
+
+function printCatalogueVeh(films) {
+  const arrayVeh = films.map((film) => {
+    const vehicles = film.vehicles.map((veh) => {
+      const templateVeh = `
+      <div class="card-Loc">
+      <button class= "btn-modal-loc" type="button"> 
+      <img class="img-loc" src="${veh.img}" alt="${veh.name}" name="${veh.name}" > </button>
+        <br><h7>${veh.name}</h7><br>
+      </div>
+      `;
+      return templateVeh;
+    });
+    return vehicles.join('');
+  })
+  return arrayVeh.join('');
+}
+
