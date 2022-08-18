@@ -5,15 +5,18 @@
   <meta charset="utf-8">
   <title>Rick and Morty</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcute icon" href="favrick.png" type="image/x-icon">"
+  <link rel="shortcute icon" href="favrick.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <header>
+    <div class="banner">
     <img id="banner" src="rickandmorty.jpeg" alt="Banner Rick and Morty">
+  </div>
   </header>
   <main>
+    <div class="buttons">
     <select>
       <optgroup label="STATUS">
         <option id="status" selected disabled hidden>STATUS</option>
@@ -49,7 +52,7 @@
     </select>
 
     <select>
-      <option id="sort" selected disabled hidden>ORDEM ALFABÉTICA</option>
+      <option id="sort" selected disabled hidden>ORDEM</option>
       <option>↻ A-Z</option>
       <option>↺ Z-A</option>
     </select>
@@ -57,13 +60,11 @@
     <input type="submit" class="verificar" value="VERIFICAR">
 
     <input class="pesquisar" type="search" placeholder="🔎 PROCURAR">
+  </div>
 
-    <div class="grupo-2 screen">
-      <div class="grupo-1" id="cards">
-
-      </div>
+    <div class="cards" id="cards">
     </div>
-  </main>
+  
 
   <footer>
 
