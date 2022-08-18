@@ -1,4 +1,9 @@
-.homebackground{
+body {
+      font-family: 'font';
+      color: white;
+}
+
+.homebackground {
       background-image: url("https://i.pinimg.com/originals/b2/2d/ad/b22dad8f6c8190dc92cde5d1e250073e.gif");
       background-repeat: no-repeat;
       background-size: 100% 100vh;
@@ -29,4 +34,10 @@
       color: white;
       text-align: center;
 
+}
+
+@font-face {
+      font-family: font;
+      src: url('fonte/font.ttf');
+      format('truetype');
 }
