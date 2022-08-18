@@ -91,7 +91,7 @@ Passo a passo do algoritmo:
 - Iterar o objeto para capturar os nome de cada filme (chave title e seu valor) e seu poster (chave poster e seu valor - src da img) correspondente para gerar a miniatura no catálogo geral da página principal.
 
 #### Card Filme:
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/CardFilme.png" width = 400>
+<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/CardFilme.png" width = 450>
 
 Ideia de como criar o cartão:
 - Criar a estrutura do card ampliado em html e estilizar no css;
@@ -101,7 +101,6 @@ Ideia de como criar o cartão:
 
 ## 5. Protótipos de alta fidelidade:
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Versao%201.png" width = 300>   <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Versao%20final%20-%20historia1.png" width = 300><br>
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png" width = 600><br>
+    <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png" width = 600><br>
 <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png" width = 400>     <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png" width = 400><br>
 <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png" width = 400>     <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png" width = 400>
