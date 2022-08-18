@@ -5,14 +5,14 @@ body {
 img {
     width: 100%;
 
-}
+    }
 
 .buttons {
     display:flex;
     flex-flow: wrap;
     justify-content:space-around;
     margin-top: 10px;
-   }
+}
 
 select {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
