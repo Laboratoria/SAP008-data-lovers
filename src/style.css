@@ -24,6 +24,12 @@ body {
     background-color: #700505;
 }
 
+.horizontal-center {
+    margin: 0 auto;
+    width: 60%;
+    
+}
+
 .search-bar {
     position: relative;
     width: 12vw;
@@ -134,6 +140,74 @@ body {
 .footer a {
     color: rgb(24, 24, 24);
 }
+
+.modal-list {
+    position: relative;
+    width: 704px;
+    height: 650px;
+    align-items: center;
+    background: rgba(95, 1, 1, 0.83);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    
+}
+
+.modal-content {
+    position: relative;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 592px;
+    height: 469px;
+    font-family: "Franklin Gothic Medium";
+    background: rgba(245, 245, 245, 0.8);
+    z-index: 99999;
+    overflow: scroll;
+    
+  }
+
+  h1.modal-header {
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    background: #DC9E00;
+    text-align: center;
+    font-family: "Harry Potter";
+    color:#193833;
+
+  }
+
+  .modal-text {
+    width: 100%;
+    text-align: center;
+    margin: 5px 20px 5px;
+    font-family: "Nunito";
+    color: #F7F7F7;
+    font-size: 15px;
+    font-style: normal;
+    }
+  
+  .modal-btn {
+    display: inline-block;
+    padding: 0px 10px 0px;
+    margin: 5px auto 5px;   
+    border-color:#DC9F03;
+    border-width: 3px;
+    border-radius: 20px;
+    font-family: 'Harry Potter';
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 1px #1616162e;
+    background-color: #DC9F03;
+    color: #193833;
+  }
+
 
 @media only screen and (max-width: 600px){
 
