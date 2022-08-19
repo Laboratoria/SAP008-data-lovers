@@ -29,7 +29,7 @@ header {
     color: white;
 }
 
-#key-words {
+input[name=keywords] {
     resize: none;
     width: 500px;
     height: 44px;
@@ -66,29 +66,31 @@ header {
     font-family: 'K2D';
 }
 
-#filter-box {
+#filterbox {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     padding: 10px;
+    width: max-content;
 }
 
 .cards {
-    color: #73D8CC;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50vh;
 }
 
 li {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "K2D";
 }
 
 p {
     color: rgb(255, 255, 255);
     font-family: "K2D";
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p#names {
-    font-family: 'Atma' ;
+    font-family: 'Atma';
     text-transform: uppercase;
     font-family: 'Atma';
     -webkit-text-fill-color: black;
@@ -100,7 +102,7 @@ p#names {
     font-weight: 600;
 }
 
-img#portal{
+img#portal {
     mix-blend-mode: lighten;
     display: flex;
 }
