@@ -39,17 +39,6 @@ describe('rickAndMorty', () => {
   });
 });
   
-  
-/*describe('rickAndMorty.displayCards', () => {
-  it('should be a function', () => {
-    expect(typeof rickAndMorty.displayCards).toBe('function');
-  });
-
-  it('should return 493 characters', () => {
-    expect(rickAndMorty.displayCards().length).toBe(493)
-  })
-
-});*/
 
 describe('filtrarPorStatus', () => {
   it('é uma função', () => {
@@ -72,7 +61,7 @@ describe('filtrarPorStatus', () => {
 
 });
 
-  describe('filtrarPorExpecie', () => {
+  describe('filtrarPorEspecie', () => {
     it('é uma função', () => {
       expect(typeof rickAndMorty.filtrarPorEspecie).toBe('function');
    });
@@ -93,7 +82,7 @@ describe('filtrarPorStatus', () => {
 
   });
 
-    describe('filtrarPorGênero', () => {
+    describe('filtrarPorGenero', () => {
       it('é uma função', () => {
         expect(typeof rickAndMorty.filtrarPorGenero).toBe('function');
       });
