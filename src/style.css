@@ -1,0 +1,39 @@
+.nav-bar{
+    background-color:navy;
+    font-size: 15px;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-direction: row;
+}
+
+body{
+background-image: url("https://i.pinimg.com/736x/8d/bc/c4/8dbcc40722da852bb63e3f1f7e965ccb.jpg");
+
+}
+
+.pokemonList{
+    
+    top: 170px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    flex-flow:row nowrap;
+}
+
+
+    
+
+    
+
+
+
+
