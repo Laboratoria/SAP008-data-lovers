@@ -8,7 +8,7 @@ const content = document.querySelector('.cards-main');
 // const data2 = [data.athletes[0], data.athletes[1], data.athletes[2]]
 const arrAtletas = data.athletes
 
-arrAtletas.forEach((element, index) => {
+arrAtletas.forEach((element, index) => { // inicio do forEach
     if (index <= 8) {
         const template = `
             <div class="card-atleta" id="card-atleta">
