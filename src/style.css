@@ -3,7 +3,6 @@
   padding: 0px;
 }
 
-
 @font-face {
   font-family: Avocado;
   src: url("./fonts/Hello\ Avocado.ttf");
@@ -15,29 +14,46 @@ nav {
   font-family: Avocado;
 }
 
-nav {
+.navegação {
   list-style-type: none;
   background-color: rgba(217, 205, 169, 1);
-
-}
-
-li {
-  display:inline-block;
-  padding: 10px;
-  font-size: 22px;
   color: rgba(124, 140, 90, 1);
 }
 
-li:hover{
-  color:rgba(140, 83, 32, 1);
-  }
-
-
-.filtros {
-display:inline-block;
+.linha {
+  display: inline-block;
+  padding: 10px;
+  font-size: 22px;
 }
 
+.linha:hover {
+  color: rgba(140, 83, 32, 1);
+}
+
+.links {
+  margin-left: 1200px;
+}
 
 select {
   border-radius: 5px;
-} 
+}
+
+.imagemHeader {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  border-radius: 10px;
+  width: 1000px;
+  height: 560px;
+  background-size: cover;
+}
+
+.divHeader {
+  background-color: rgba(217, 205, 169, 1);
+  margin-bottom: 2vw;
+}
+
+.filtros {
+  display: inline-block;
+  padding: 10px;
+  font-size: 22px;
+}
