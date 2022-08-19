@@ -1,9 +1,15 @@
-// estas funciones son de ejemplo
+import rickAndMortyData from './data/rickandmorty/rickandmorty.js'
 
-export const rickandmorty = () => {
-  return 'results';
+const getCharacters = (gender) => {
+  let characters = rickAndMortyData.results;
+  
+  if (gender !== '0') {
+    characters = characters.filter(character => {
+      return character.gender.toLowerCase() === gender.toLowerCase();
+    });
+  }
+  console.log(typeof gender);
+  return characters;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export default getCharacters;
