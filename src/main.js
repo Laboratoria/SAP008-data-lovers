@@ -2,59 +2,6 @@ import {ghibli} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films;
-const modal = document.querySelector('.modal');
-
-function montarTela (films){
-  const catalogue = document.querySelector('.catalogue');
-  catalogue.innerHTML = ghibli.printCatalogue(films);
-
-  const btnModal = document.querySelectorAll('.btn-modal');
-
-  for (let i = 0; i < films.length; i++){
-    const showModal = prepareModal(films[i]);
-    btnModal[i].addEventListener ('click', showModal);
-  }
-}
-montarTela(films);
-
-function prepareModal (film) {
-  return function (){
-    modal.innerHTML = ghibli.printModal(film);
-    const closeModal = document.querySelector('.close');
-    closeModal.addEventListener ('click', btnHideModal);
-    showModal ();
-  }
-}
-
-modal.addEventListener ('click', hideModal);
-
-function showModal(){
-  modal.style.display = "block";
-}
-
-function btnHideModal(){
-  modal.style.display = "none";
-}
-
-function hideModal(e){
-  if (e.target == modal){
-  modal.style.display = "none";
-  }
-}
-
-const btnFilterDuration = document.querySelector('#filter-duration');
-btnFilterDuration.addEventListener ('change', () => {
-  const selected = (btnFilterDuration).value;
-  const filterDuration = ghibli.filterDuration(films, selected);
-  montarTela(filterDuration);
-});
-
-const btnOrderFilms = document.querySelector('#order-by');
-btnOrderFilms.addEventListener('change', () => {
-  let selection = btnOrderFilms.value;
-  const sortedFilms = ghibli.sortedFilms(films, selection);
-  montarTela(sortedFilms);
-});
 
 const resultCountFilms = document.querySelector('#count-films');
 const resultCountPeople = document.querySelector('#count-people');
@@ -66,8 +13,6 @@ resultCountPeople.innerHTML = ghibli.countPeople(films);
 resultCountLocations.innerHTML = ghibli.countLocations(films);
 resultCountVehicles.innerHTML = ghibli.countVehicles(films);
 
-const cataloguePeople = document.querySelector('.catalogue-people');
-cataloguePeople.innerHTML = ghibli.printCataloguePeople(films);
 
 // ======== FILTRO DE GENERO PARA USAR NOS PERSONAGENS =========
 // let selectedGender = document.getElementById('filter-gender');

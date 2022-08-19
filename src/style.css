@@ -2,26 +2,25 @@
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
-body { 
+.body-inicial { 
     background-color: #1D1C38;
-    background-image: url(img/desktop/Cabeçalho2.png), url(img/desktop/rodape1.png), url(img/personagemcomcabecalho.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top, bottom, 0rem 165rem;
-    background-size:contain;
-    max-height: 100%;
+    background-image: url(img/desktop/Cabeçalho2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:100vw;
+    max-height: fit-content;
 }
 .top {
     color: #f1faee;
     text-align: center;
-    margin: 3vw 10vw 0;
+    margin: 3vw 10vw -1.5vw;
     font-size: 2.5rem;
 }
 .container {
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     margin: 1vw 13vw;
 }
 .description {
-    margin-top: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,26 +32,27 @@ body {
     width: 40vw;
 }
 .description-text {
-    margin: 0 1vw 0 0;
+    margin: -1vw 1vw 0 0;
     width: 49%;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
 .counter {
     color: #e26c7a;
     text-shadow: black 1.5px 1.5px 2px;
     font-size: 2.4rem;
 }
-.btn-catalogue {
-    margin: 10% 0;
-    width: 100%;
+.div-btn-inicial {
+    width: 57%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: -4vw 0 0 32vw;
+    column-gap: 1vw;
 }
-.btn-catalogue-filter, .btn-catalogue-film-options {
+.btn-inicial{
     margin: auto;
     border:none;
     min-height: 100%;
-    width: 65%;
+    width: 100%;
     padding: 0.5vw 2vw;
     background-color: #e26c7a;
     color: #f1faee;
@@ -60,227 +60,42 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 0.5vw;  
+    border-radius: 0.5vw; 
+    text-decoration: none;
 }
-.btn-catalogue-filter:hover, .btn-catalogue-film-options:hover {
+.btn-inicial:hover {
     background-color: #f1faee;
     color: #e26c7a;
 }
-.test-catalogue {
-    display: absolute;
-}
-.catalogue {
-    margin: 3vw 0 2vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1vw;
-    row-gap: 1vw;
-    grid-template-rows: 380px 380px 380px 380px;
-}
-.card {
-    background-color: #8193A8;
-    /* background-color: rgb(129, 147, 168); */
-    padding: 1vw;
-    block-size: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-    border-radius: 0.3vw;
-}
-.card-img {
-    width: 100%;
-    max-height: 85%;
-    margin-bottom: 0.4vw;
-}
-.btn-modal {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    /* width: 100%;
-    max-height: 85%; */
-}
-.btn-modal:hover {
-    opacity: 0.4;
-}
-.modal {
-    display: none; 
-    position: fixed; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-content {
-    min-width: 60%;
-    min-height: 45%;
-    margin: 7% 20%;
-    background-color: #2864A8;
-    /* rgb(40, 100, 168); */
-    color: #f1faee;
-    padding: 2vw 4vw 2.5vw;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-.modal-director {
-    margin: -1vw 0 0;
-}
-.modal-score-duration {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: -1vw -5vw;
-}
-.close {
-    color:#f1faee;
-    font-weight: 600;
-    cursor: pointer;
-    background-color:rgb(40, 100, 168);
-    padding: 0.5vw 2vw;
-    border-radius: 0.5vw;
-    font-size: 1.2rem;
-    margin-top: 1vw;
-    border: 1px solid #f1faee;
-}
-.close:hover {
-    background-color: #f1faee;
-    color: rgb(40, 100, 168);
-}
-.footer-img-totoro {
-    bottom: 0;
-    width: 20%;
-    margin-left: 77%;
-}
-
-/*Personagens*/
-.description-people {
-    padding: 5vw;
-    text-align: center;
-    font-size: 3rem;
-    color: #f1faee;
-    margin-top: 11vw;
-}
-/* .description-img-people{
-   width: 100%;
-   margin: 0 -30vw 0 -15vw;
-} */
-.btn-catalogue-film {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.btn-catalogue-film-options {
-    width: 30% !important;
-}
-.catalogue-people {
-    border: solid 0.5vw black;
-    margin: 3vw -5vw 2vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 0.5vw;
-    row-gap: 0.5vw;
-}
-.card-people {
-    background-color: rgb(129, 147, 168);
-    border-radius: 0.3vw;
-    text-align: center;
-    padding: 1vw;
-    align-content: center;
-    /* width: 80%; */
-}
-.teste{
-    width: 100%; 
-    height: 65%;
-}
-
-.div-img-people{
-    width: 100%;
-    height: 100%;
-    object-fit: none;
-    object-position:100% 10%;
-}
-.card-people-img {
-    width: 100%; 
-    height: 100%;
-    object-fit: none;
-    object-position: 45% 5%;
-}
-/* .cropped2 {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: 20px 10px;
-    border: 5px solid black;
-} */
-
-.person-details{
-    font-size: 0.9rem;
-    margin: 1vw -5vw 0;
-    line-height: 0.3;
-
-}
-
 @media only screen and (max-width: 600px){
-body { 
-    background-image: url(img/mobile/Cabeçalho3.svg), url(img/mobile/rodape.svg);
+    body { 
+        background-image: url(img/mobile/Cabeçalho3.svg);
+    }
+    .top {
+        margin: 2% 10% 0;
+        font-size: 3vw;
+    }
+    .description {
+        margin-top: -5vw;
+    }
+    .description-text {
+        margin: -1vw 1vw 0 2vw;
+        font-size: 0.5rem;
+    }
+    .counter {
+        color: #e26c7a;
+        text-shadow: black 1.5px 1.5px 2px;
+        font-size: 0.6rem;
+    }
+    .btn-inicial{
+        min-height: 100%;
+        width: 100%;
+        padding: 0.5vw 2vw;
+        font-size: 0.3rem;
+        font-weight: 600;
+    }
+    .btn-inicial:hover {
+        background-color: #f1faee;
+        color: #e26c7a;
+    }
 }
-.top {
-    margin: 8% 10% 0;
-    font-size: 3vw;
-}
-.description {
-    margin-top: -1.2vw;
-}
-.description-text {
-    font-size: 0.5rem;
-}
-.counter {
-    color: #e26c7a;
-    text-shadow: black 1.5px 1.5px 2px;
-    font-size: 0.6rem;
-}
-.btn-catalogue-filter {
-    font-size: 0.4rem;
-}
-.catalogue {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1.5vw;
-    row-gap: 1.5vw;
-}
-.card {
-    text-align: center;
-    font-size: 0.5rem;
-}
-.card-img {
-    margin-bottom: 1vw;
-}
-.modal-content {
-    min-width: 80%;
-    min-height: 35%;
-    margin: 30% 10%;
-    font-size: 0.8rem;
-    padding: 2vw 4vw 4vw;
-}
-.modal-director {
-    margin: -3vw 0 0;
-}
-.modal-score-duration {
-    margin: -1vw -10vw -3vw;
-}
-.close {
-    font-size: 0.8rem;
-}
-.footer-img-totoro {
-    margin-top: -5vw;
-    bottom: 0;
-    width: 9rem;
-    margin-left: 65%;
-}
-/* .img-logo {
-    margin-top: 7vw;
-    bottom: 0;
-    width: 9rem;
-    margin-left: 2%;
-} */
-} 

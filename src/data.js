@@ -1,5 +1,5 @@
 export const ghibli = {printCatalogue, printModal, filterDuration, sortedFilms, countFilms, countPeopleModal, 
-  countLocations, countPeople, countVehicles, printCataloguePeople};
+  countLocations, countPeople, countVehicles, filmPeople};
 
 function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
@@ -98,29 +98,13 @@ function countVehicles (films) {
   return sum;
 }
 
-function printCataloguePeople(films) {
-  const arrayPeople = films.map((film) => {
-    const people = film.people.map((person) => {
-      const templatePerson = `
-        <div class="card-people">
-        <div class="teste">
-          <div class="div-img-people">
-            <img class="card-people-img" src="${person.img}" alt="${person.name}" name="${person.name}" >
-          </div>
-          </div>
-          <div class="person-details">
-            <h7>${person.name}</h7>
-              <p>${person.gender}</p>
-              <p>${person.age}</p>
-              <p>${person.specie}</p>
-          </div> 
-        </div>
-        `;
-      return templatePerson;
-    }); 
-  return people.join('');
+function filmPeople (films, btn) {
+  const filmSelected = films.filter((film) => {
+    if (btn === film.title){
+      return film.people;
+    }
   })
-return arrayPeople.join('');
+  return filmSelected;
 }
 
 /* <nav class="person-details">
