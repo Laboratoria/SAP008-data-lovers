@@ -14,29 +14,29 @@ const everyPokemon = data.pokemon;
 const createCards = listPokemon => {
     let infoPokemon = listPokemon.map((pokemon) =>
 
-    `<div>
-        <div class="one-container">
-            <div class= "second-container">
-                <div class="three-container">
-                    <p class= "one-line-card" ><b>${pokemon.num} ${pokemon.name}</b><br>
-                        rarity:${pokemon["pokemon-rarity"]} Type:${pokemon.type}
-                    </p>
+    `<div class="one-container">
 
-                    <img class = "image-pokemon" src=${pokemon.img} />
+        <div class= "second-container">
 
-                    <p class = "pokemon-stats" >max-cp: ${pokemon.stats["max-cp"]} max-hp:${pokemon.stats["max-hp"]} 
-                        Height:${pokemon.size.height} Weight:${pokemon.size.weight}
-                    </p>
-                </div>
-
-                <p class = "text-about">
-                    About: ${pokemon.about}
+            <div class="three-container">
+                <p class= "text-name-number" ><b>${pokemon.num} ${pokemon.name}</b><br>
+                    rarity:${pokemon["pokemon-rarity"]} Type:${pokemon.type}
                 </p>
 
-                <p class = "text-egg">egg: ${pokemon.egg} 
-                    buddy distance km: ${pokemon["buddy-distance-km"]}
+                <img class = "image-pokemon" src=${pokemon.img} />
+
+                <p class = "text-pokemon-stats" >max-cp: ${pokemon.stats["max-cp"]} max-hp:${pokemon.stats["max-hp"]} 
+                    Height:${pokemon.size.height} Weight:${pokemon.size.weight}
                 </p>
             </div>
+
+            <p class = "text-about">
+                About: ${pokemon.about}
+            </p>
+
+            <p class = "text-egg">egg: ${pokemon.egg} 
+                buddy distance km: ${pokemon["buddy-distance-km"]}
+            </p>
         </div>
     </div>
     `)

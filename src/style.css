@@ -1,23 +1,51 @@
+/*seção logo e fundo*/
+
+body{
+    background-color: rgba(216, 240, 239, 1);
+    text-align: center;
+}
+
 #section-logo {
     text-align: center;
-    margin: 1%;
-    background-color: black;
-
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    background-image: url(img/fundo\ logo\ pokemon\ 1680-PhotoRoom.jpg);
 }
 
 #logo-pokemon {
     position: relative;
     width: 50%;
-    height: 200px;
-    margin: 0%;
+    height: 240px;
+    margin-top: -1%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
-
-.buttongreen {
-color: green;
+#logo-lovers{
+    height: 50px;
+    margin-left: 40%;
+    margin-bottom: 1%;
+    margin-top: -3%;
 }
 
-/*cards*/
+/*botões*/
+
+.section-buttons {
+    background-color: rgba(253, 221, 226, 1);
+    height: 70px;
+    margin-top: -1%;
+    text-align: center;
+}
+
+/*Introdução - main*/
+
+#img-pokemon{
+    height: 20%;
+    margin-top: 0%;
+}
+
+/*Estilização dos cards - output*/
 
 .one-container{
     position:static;
@@ -59,7 +87,7 @@ color: green;
  
 }
 
-.one-line-card{
+.text-name-number{
     text-align: center;
     margin: 3%;
     font-family: Arial, Helvetica, sans-serif;
@@ -73,14 +101,19 @@ color: green;
   
 }
 
-.pokemon-stats{
+.test-pokemon-stats{
     text-align: center;
     margin: 3%;
     font-family: Arial, Helvetica, sans-serif;
     word-spacing: 6px;
-
 }
 
+.one-container{
+    display: inline-flex;
+    margin-left: 3%;
+    margin-right: 0%;
+    margin-top: 3%;
+}
 
 
 
