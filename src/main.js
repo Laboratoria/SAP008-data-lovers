@@ -1,4 +1,4 @@
-import { dataFilter, nameFilter, computeStats } from './data.js';
+import { dataFilter, nameFilter, computeStats, orderAz } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -30,11 +30,13 @@ function cardsData(data) {
 }
 cardsData(data.results);
 
+// SELETORES
 
 const selectGender = document.querySelector(".select-gender");
 const selectSpecie = document.querySelector(".select-specie");
 const selectStatus = document.querySelector(".select-status");
 const teste = document.getElementById("teste");
+const showOrder = document.getElementById("orderAz")
 
 
 
@@ -53,7 +55,12 @@ function statusFiltro() {
   teste.style.display = "flex";
   return cardsData(dataFilter(data.results, "status", selectStatus.value));
 }
+function sortByAz() {
+  teste.style.display = "none";
+  return cardsData(orderAz(data.results))
+}
 
 selectGender.addEventListener("change", genderFiltro);
 selectSpecie.addEventListener("change", specieFiltro);
 selectStatus.addEventListener("change", statusFiltro);
+showOrder.addEventListener("change", sortByAz);
