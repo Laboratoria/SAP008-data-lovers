@@ -8,6 +8,17 @@ body{
       font-size: medium;
 }
 
+.filtro-todos-botoes{
+      display: flex;
+      flex-direction: row;
+}
+
+.filtro-individual-botao{
+      display: flex;
+      flex-direction: row;
+      
+}
+
 .impressao-todos-cards{
       display: flex;
       flex direction: row;
@@ -18,11 +29,10 @@ body{
       row-gap: 10px;
       column-gap: 30px;
       text-align: center;
-      
 }
 
 @font-face {
       font-family: font;
       src: url('fonte/font.ttf');
-      format('truetype');
+      format("truetype');
 }
