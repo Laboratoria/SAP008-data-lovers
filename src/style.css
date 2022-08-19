@@ -1,9 +1,36 @@
-body {
+body{
+      background-color: rgba(226, 59, 218, 0.925);
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
       font-family: 'font';
-      color: black;
+      color: white;
+      text-align: center;
+      font-size: medium;
 }
 
-.homebackground {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.homebackground{
       background-image: url("https://i.pinimg.com/originals/b2/2d/ad/b22dad8f6c8190dc92cde5d1e250073e.gif");
       background-repeat: no-repeat;
       background-size: 100% 100vh;
@@ -11,30 +38,12 @@ body {
       text-align: center;
 }
 
-.moviesbackground {
+.moviesbackground{
       background-color: rgb(150, 129, 133);
       color: white;
       text-align: center;
 }
 
-.charactersbackground {
-      background-color: pink;
-      color: white;
-      text-align: center;
-
-}
-.aboutbackground {
-      background-color: purple;
-      color: white;
-      text-align: center;
-}
-
-.morebackground {
-      background-color: aqua;
-      color: white;
-      text-align: center;
-
-}
 
 @font-face {
       font-family: font;
