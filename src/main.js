@@ -19,7 +19,7 @@ const createCards = listPokemon => {
         <div class= "second-container">
 
             <div class="three-container">
-                <p class= "text-name-number" ><b>${pokemon.num} ${pokemon.name}</b><br>
+                <p class= "text-name-number" ><b>${pokemon.num} ${pokemon.name.toUpperCase()}</b><br>
                     rarity:${pokemon["pokemon-rarity"]} Type:${pokemon.type}
                 </p>
 
