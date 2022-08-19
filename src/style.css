@@ -16,3 +16,26 @@
 .buttongreen {
 color: green;
 }
+
+.one-container{
+    position:static;
+    width: 25%;
+    height: 568px;
+    left: 17px;
+    margin-top: 10%;
+    background: linear-gradient(0deg, #CDBD44, #CDBD44), linear-gradient(0deg, rgba(126, 201, 171, 0.78), rgba(126, 201, 171, 0.78)), linear-gradient(0deg, rgba(126, 201, 171, 0.78), rgba(126, 201, 171, 0.78)), rgba(126, 201, 171, 0.78);
+    border-radius: 31px;
+    padding: 10px;
+    margin: 2%;
+}
+
+.second-container{
+    padding-top: 2%;
+    padding-top: -5%;
+    margin: 4%;
+    height: 95%;
+    background-color: rgba(190, 217, 88, 1);
+    border-radius: 31px;
+    
+}
+
