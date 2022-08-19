@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Set Rick and Morty</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <header class="container-header">
-      <figure aria-sort="ascending" class="img-logo"><img src="img/titulose.png" alt="Logo"></figure>
-        <button class="btn-header">C-137</button>
-        <button class="btn-header">More</button>
-        <button class="btn-header">Multiverso</button>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Set Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+</head>
 
-      <aside class="seletores">
+<body>
+  <header class="container-header">
+    <figure aria-sort="ascending" class="img-logo"><img src="img/titulose.png" alt="Logo"></figure>
+    <button class="btn-header">C-137</button>
+    <button class="btn-header">More</button>
+    <button class="btn-header">Multiverso</button>
+  </header>
 
-        <select class="select-gender btn">  
-          <option value="gender" selected disabled>GÊNERO</option>
-          <option  id="select-gender" value="Male">Macho</option>
-          <option  id="select-gender"value="Female">Fêmea</option>
-          <option id="select-gender" value="unknown">Indefinido</option>
-        </select>
-        <select class="select-specie btn">
-        <option value="specie" selected disabled>ESPÉCIE</option>
-        <option class="select-specie" value="Human"> Humano</option>
-        <option class="select-specie" value="Humanoid"> Humanóide</option>
-        <option class="select-specie" value="Alien"> Alien</option>
-        <option class="select-specie" value="Animal"> Animal</option>
-        </select>
-        <select class="select-status btn">
-        <option value="status" selected disabled>STATUS</option>
-        <option class="status" value="Alive"> Vivo</option>
-        <option class="status" value="Dead"> Morto</option>
-        <option class="status" value="unknown"> Indefinido</option>
-        </select>
-      </aside> 
-      
-      <span class="container-pesquisa">
-        <input class="pesquisar" type="text" placeholder="Pesquise por... ">  
-        <button class="buscar" id="buscar">Buscar</button>
-      </span>
-      
-      <main class="scroll">
-        <div id="read"></div>
-        <div id="teste"></div>
-      </main>
+  <aside class="seletores">
 
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+    <select class="select-gender btn">
+      <option value="gender" selected disabled>GÊNERO</option>
+      <option id="select-gender" value="Male">Macho</option>
+      <option id="select-gender" value="Female">Fêmea</option>
+      <option id="select-gender" value="unknown">Indefinido</option>
+    </select>
+    <select class="select-specie btn">
+      <option value="specie" selected disabled>ESPÉCIE</option>
+      <option class="select-specie" value="Human"> Humano</option>
+      <option class="select-specie" value="Humanoid"> Humanóide</option>
+      <option class="select-specie" value="Alien"> Alien</option>
+      <option class="select-specie" value="Animal"> Animal</option>
+    </select>
+    <select class="select-status btn">
+      <option value="status" selected disabled>STATUS</option>
+      <option class="status" value="Alive"> Vivo</option>
+      <option class="status" value="Dead"> Morto</option>
+      <option class="status" value="unknown"> Indefinido</option>
+    </select>
+    <select class="btn" id="orderAz">
+      <option selected disabled value="">Ordenar</option>
+      <option value="orderAZ">A-Z</option>
+      <option value="orderZA">Z-A</option>
+    </select>
+  </aside>
+
+  <span class="container-pesquisa">
+    <input class="pesquisar" type="text" placeholder="Pesquise por... ">
+    <button class="buscar" id="buscar">Buscar</button>
+  </span>
+
+  <main class="scroll">
+    <div id="read"></div>
+    <div id="teste"></div>
+  </main>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
