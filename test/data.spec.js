@@ -36,7 +36,7 @@ describe('rickAndMorty', () => {
     expect(typeof rickAndMorty).toBe('object');
   });
 });
-  
+ 
  
 describe('filtrarPorStatus', () => {
   it('é uma função', () => {
@@ -58,7 +58,7 @@ describe('filtrarPorStatus', () => {
 
 });
 
-describe('filtrarPorExpecie', () => {
+describe('filtrarPorEspecie', () => {
     it('é uma função', () => {
       expect(typeof rickAndMorty.filtrarPorEspecie).toBe('function');
    });
@@ -79,7 +79,7 @@ describe('filtrarPorExpecie', () => {
 
 });
 
-describe('filtrarPorGênero', () => {
+describe('filtrarPorGenero', () => {
   it('é uma função', () => {
     expect(typeof rickAndMorty.filtrarPorGenero).toBe('function');
   });

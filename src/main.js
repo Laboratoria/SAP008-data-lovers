@@ -32,6 +32,7 @@ const selectStatus = document.querySelector('#select-status');
 const selectSpecies = document.querySelector('#select-species');
 const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
+const percentage = document.querySelector('#percentage')
 
 // ===== evento para mostrar os cards na tela ====
 cardContainer.innerHTML = displayCards(list);
@@ -41,7 +42,11 @@ selectStatus.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorStatus(list, value);
     const cards = displayCards(listaFiltrada);    
-    document.querySelector('#card-container').innerHTML = cards;     
+    cardContainer.innerHTML = cards;  
+    
+    // === evento para porcentagem ====
+    const porcentagem = rickAndMorty.calcularPorcentagem(list, listaFiltrada);    
+    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";   
 
 });
 
@@ -50,7 +55,11 @@ selectSpecies.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorEspecie(list, value);
     const cards = displayCards(listaFiltrada);
-    document.querySelector('#card-container').innerHTML = cards;   
+    cardContainer.innerHTML = cards;
+
+    // === evento para porcentagem ====
+    const porcentagem = rickAndMorty.calcularPorcentagem(list, listaFiltrada);    
+    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";   
 
 });
 
@@ -58,13 +67,43 @@ selectSpecies.addEventListener('change', (event) => {
 selectGender.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorGenero(list, value);
+
     const cards = displayCards(listaFiltrada);
-    document.querySelector('#card-container').innerHTML = cards;
+    cardContainer.innerHTML = cards;
+
+    // === evento para porcentagem ====
+    const porcentagem = rickAndMorty.calcularPorcentagem(list, listaFiltrada);    
+    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";
 
 });
+
 
 // ===== evento para ordenar ====
 selectOrder.addEventListener('change', (event) => {
     const value = event.target.value;
     window.alert(value);
 });
+
+//====== teste reduce ======
+
+/*const sumIds = list.reduce(
+    (prevValue, current) => prevValue + current.id, 
+    0);
+
+console.log(sumIds);*/
+
+/*const arrayPersonagensMortos = [1, 3, 4, 52];
+const sumArrayPersonagensMortos = arrayPersonagensMortos.reduce(
+    (prevValue, currentValue) => prevValue + currentValue
+, 0);
+
+console.log(sumArrayPersonagensMortos)
+
+const arrayTodosOsPersonagens = [1, 3, 4, 52, 69, 78, 95];
+const sumArrayTodosOsPersonagens = arrayTodosOsPersonagens.reduce(
+    (prevValue, currentValue) => prevValue + currentValue
+, 0);
+
+console.log(sumArrayTodosOsPersonagens);*/
+
+
