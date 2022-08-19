@@ -17,12 +17,10 @@
     color: #f1faee;
     text-align: center;
     width: 100%;
-    /* top:0;
-    left: 0; */
-    /* position:relative; */
   }
 .img-top-films{
     width: 100vw;
+    margin-top: 2vw;
     margin-left: -10px;
   }
 .title-films{
@@ -68,7 +66,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1vw;
     row-gap: 1vw;
-    grid-template-rows: 24% 24% 24% 24%;
+    grid-template-rows: auto;
 }
 .card {
     background-color: #8193A8;
@@ -153,7 +151,6 @@
     }
     .catalogue {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
         column-gap: 1.5vw;
         row-gap: 1.5vw;
         margin: 0 -2vw;

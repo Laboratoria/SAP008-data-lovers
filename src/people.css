@@ -1,13 +1,8 @@
-/*Personagens*/
 * {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
-/* html {
-  width: 100vw;
-} */
 .container {
-  /* border: 1px solid #000000; */
   margin: 1vw 13vw;
 }
 .body-people {
@@ -21,9 +16,6 @@
   color: #f1faee;
   text-align: center;
   width: 100%;
-  /* top:0;
-  left: 0; */
-  /* position:relative; */
 }
 .img-top{
   width: 99.7vw;
@@ -42,6 +34,7 @@
 .film-people {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   column-gap: 1vw;
   row-gap: 1vw;
   width: 100%;
@@ -61,7 +54,6 @@
   font-size: 1.1rem;
   font-weight: 400;
   cursor: pointer;
-  /* border-radius: 50%; */
   border-radius: 0.3vw;
 }
 .btn-film-people:hover {
@@ -69,7 +61,6 @@
   color: #508b52;
 }
 .catalogue-people {
-  /* border: solid 0.5vw black; */
   margin: 0 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -82,9 +73,7 @@
   border-radius: 0.3vw;
   text-align: center;
   padding: 1vw;
-  /* align-content: center; */
   min-height: 100%;
-  /* width: 80%; */
 }
 .div-img-people{
   width: 100%; 
@@ -103,10 +92,6 @@
   line-height: 0.3;
   margin: 0;
 }
-/* .footer{
-  width: 100vh;
-  margin-right: -10px;
-} */
 .footer-img-totoro{
   width: 20vw;
   margin-left: 75%;
@@ -119,12 +104,6 @@
   }
   .film-people {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* column-gap: 1vw;
-    row-gap: 1vw;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    margin: 5vw 0 -5vw; */
   }
   .btn-film-people {
     padding: 0.7vw 1.5vw;
@@ -132,13 +111,11 @@
   }
   .catalogue-people {
     margin: 10vw 5vw 40vw;
-    /* border: solid 0.5vw black; */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 35% 35% 35% 35% 35% 35%;
+    grid-template-rows: auto;
     min-height: 100%;
   }
   .card-people {
-    /* padding: 1vw; */
     align-content: center;  
     height: 100%;
   }
