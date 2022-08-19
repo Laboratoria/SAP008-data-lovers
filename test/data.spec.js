@@ -39,17 +39,6 @@ describe('rickAndMorty', () => {
   });
 });
   
-  
-/*describe('rickAndMorty.displayCards', () => {
-  it('should be a function', () => {
-    expect(typeof rickAndMorty.displayCards).toBe('function');
-  });
-
-  it('should return 493 characters', () => {
-    expect(rickAndMorty.displayCards().length).toBe(493)
-  })
-
-});*/
 
 describe('filtrarPorStatus', () => {
   it('é uma função', () => {
@@ -61,17 +50,18 @@ describe('filtrarPorStatus', () => {
     const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "dead");
     expect(expectedStatus.length).toEqual(1);
     expect(expectedStatus).toEqual([arrayTest[3]]);
-    expect(expectedStatus[0]).toEqual(arrayTest[3]);    
+        
   });
 
   it('filtra o status dos personagens vivos', () => {
     const expectedStatus = rickAndMorty.filtrarPorStatus(arrayTest, "alive");
     expect(expectedStatus.length).toEqual(3);
+    expect(expectedStatus).toEqual([arrayTest[0],arrayTest[1],arrayTest[2]]);
   });
 
 });
 
-  describe('filtrarPorExpecie', () => {
+  describe('filtrarPorEspecie', () => {
     it('é uma função', () => {
       expect(typeof rickAndMorty.filtrarPorEspecie).toBe('function');
    });
@@ -92,7 +82,7 @@ describe('filtrarPorStatus', () => {
 
   });
 
-    describe('filtrarPorGênero', () => {
+    describe('filtrarPorGenero', () => {
       it('é uma função', () => {
         expect(typeof rickAndMorty.filtrarPorGenero).toBe('function');
       });
@@ -105,7 +95,11 @@ describe('filtrarPorStatus', () => {
     });
 
 
-  describe('buscar por nome', () => {
+  describe('buscarPorNome', () => {
+
+    it('é uma função', () => {
+      expect(typeof rickAndMorty.buscarPorNome).toBe('function');
+    });
 
     it('deve buscar por um nome', () => {
       const personagens = rickAndMorty.buscarPorNome(arrayTest, "Rick");
