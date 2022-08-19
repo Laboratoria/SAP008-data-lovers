@@ -24,18 +24,13 @@ function showCards(infos) { //exibe cards
       <div class="cards">
       <img id="photos" src="${elem.image}" alt="imagem do personagem"><br>
       <p id="names">${elem.name}</p><br>
-
         <ul class="cards-list">
-
           <p>Status: </p>
           <li>${elem.status}</li>
-
           <p>Gênero: </p>
           <li>${elem.gender}</li>
-
           <p>Espécie: </p>
           <li>${elem.species}</li>
-
         </ul>
         </div>
         `
