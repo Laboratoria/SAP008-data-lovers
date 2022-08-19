@@ -13,7 +13,7 @@ criaCard(rickandmorty);
 function criaCard(personagens) {
   const printarCard = personagens.map((personagem) => {
     const criandoCard = `
-        <div class = "cards">
+        <div class = "cardsBox">
             <div class = "imagem">
              <img class = "imagemCard" src="${personagem.image}">
              <div class = "name">${personagem.name}</div>

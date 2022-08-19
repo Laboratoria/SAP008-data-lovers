@@ -8,66 +8,56 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <header>
 
-  <nav class="navegação">
+  <nav class="navegacao">
     <ul class="links">
       <li class="linha">Home</li>
       <li class="linha">Sobre a série</li>
       <li class="linha">Episódios</li>
     </ul>
-    <img class="imagemtitulo" src="img/imagemtitulo2.jpg">
   </nav>
 
-  <header>
-    <div class="divHeader"><img class="imagemHeader" src="img/imagemg.jpg">
+  
+    <div class="divHeader"><img class="imagemHeader" src="img/tamanhoorigin.jpg">
 
     </div>
   </header>
 
   <main>
-    <section>
-      <label for="Filtro" class="filtros">Espécie:</label>
+    <section class="sec">
+      <label for="Filtro" class="filtros1">Espécie:</label>
       <select name="filtro" id="especie">
         <option selected disable value="">Todos</option>
-        <option id="humano" value="Human">Humano 🙎‍♂️ 🧑</option>
-        <option id="humanoide" value="Humanoid">Humanóide 🧟 😵 </option>
+        <option id="humano" value="Human">Humano 🙎‍♂️ </option>
+        <option id="humanoide" value="Humanoid">Humanóide 🧟 </option>
         <option id="alien" value="Alien">Alien 👽 </option>
-        <option id="poopybutthole" value="Poopybutthole">Poopybutthole 💩</option>
-        <option id="mitologico" value="Mytholog">Mitológico 🦄 🏹 </option>
-        <option id="animal" value="Animal">Animal 🐶 🦊 </option>
+        <option id="poopybutthole" value="Poopybutthole">Poopybutthole 💩 </option>
+        <option id="mitologico" value="Mytholog">Mitológico 🦄 </option>
+        <option id="animal" value="Animal">Animal 🦊 </option>
         <option id="vampiro" value="Vampire">Vampiro 🧛 </option>
         <option id="robo" value="Robot">Robô 🤖 </option>
-        <option id="cronenberg" value="Cronenberg">Cronenberg 🦑 👾 </option>
-        <option id="cronenberg" value="Disease">Doença 🤒 💉 </option>
-        <option id="cronenberg" value="Parasite">Parasita 🦠 🐛 </option>
-        <option id="cronenberg" value="unknown">Desconhecido ❔ 👤 </option>
+        <option id="cronenberg" value="Cronenberg">Cronenberg 👾 </option>
+        <option id="cronenberg" value="Disease">Doença 🤒 </option>
+        <option id="cronenberg" value="Parasite">Parasita 🦠 </option>
+        <option id="cronenberg" value="unknown">Desconhecido ❔ </option>
       </select>
-      <section>
-
-        <section>
-          <label for="Filtro2" class="filtros">Gênero:</label>
-          <select name="filtro2" id="genero">
-            <option selected disable value="">Todos</option>
-            <option value="Male">Masculino</option>
-            <option value="Female">Feminino</option>
-            <option value="unknown">Desconhecido</option>
-          </select>
-        </section>
-
-        <section>
-          <label for="Filtro3" class="filtros">Status:</label>
+      <label for="Filtro2" class="filtros2">Gênero:</label>
+      <select name="filtro2" id="genero">
+        <option selected disable value="">Todos</option>
+        <option value="Male">Masculino</option>
+        <option value="Female">Feminino</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+          <label for="Filtro3" class="filtros3">Status:</label>
           <select name="filtro3" id="status">
             <option selected disable value="">Todos</option>
             <option value="Alive">Vivo</option>
             <option value="Dead">Morto</option>
             <option value="unknown">Desconhecido</option>
           </select>
-        </section>
-
-        <section>
-          <label for="Filtro4" class="filtros">Ordem Alfabética:</label>
-          <select name="filtro4" id="ordemalfabetica">
+          <label for="Filtro4" class="filtros4">Ordem Alfabética:</label>
+          <select class="filtro4"name="filtro4" id="ordemalfabetica">
             <option selected disable value="">Todos</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
@@ -75,7 +65,7 @@
         </section>
 
 
-        <div id="exibirCards"></div>
+        <div class="cards"id="exibirCards"></div>
   </main>
 
   <script src="main.js" type="module"></script>
