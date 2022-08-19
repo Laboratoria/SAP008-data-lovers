@@ -32,7 +32,7 @@ const selectStatus = document.querySelector('#select-status');
 const selectSpecies = document.querySelector('#select-species');
 const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
-const percentage = document.querySelector('#percentage'
+const percentage = document.querySelector('#percentage');
 const searchForName = document.querySelector('#btn-search');
 
 // ===== evento para mostrar os cards na tela ====
