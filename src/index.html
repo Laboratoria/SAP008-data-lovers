@@ -17,7 +17,7 @@
   </header>
   <main>
     <div class="buttons">
-    <select>
+    <select id="status">
       <optgroup label="STATUS">
         <option id="status" selected disabled hidden>STATUS</option>
         <option>VIVO</option>
@@ -25,16 +25,15 @@
         <option>DESCONHECIDO</option>
     </select>
 
-    <select>
+    <select id="gender">
       <optgroup label="GÊNERO">
-        <option id="gender" selected disabled hidden>GÊNERO</option>
-        <option>MASCULINO</option>
-        <option>FEMININO</option>
-        <option>SEM GÊNERO</option>
-        <option>DESCONHECIDO</option>
+        <option value="0" selected disabled hidden>GÊNERO</option>
+        <option value="Male">MASCULINO</option>
+        <option value="Female">FEMININO</option>
+        <option value="unknown">DESCONHECIDO</option>
     </select>
 
-    <select>
+    <select id="specie">
       <optgroup label="ESPÉCIE">
         <option id="specie" selected disabled hidden>ESPÉCIE</option>
         <option>ALIEN</option>
