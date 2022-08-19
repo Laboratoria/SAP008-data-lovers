@@ -14,30 +14,31 @@ const everyPokemon = data.pokemon;
 const createCards = listPokemon => {
     let infoPokemon = listPokemon.map((pokemon) =>
 
-    `<div class="one-container">
-        <div class= "second-container">
-            <div class="three-container">
-                <p class= "one-line-card" >rarity:${pokemon["pokemon-rarity"]} 
-                    <b>${pokemon.num} ${pokemon.name}</b> Type:${pokemon.type}
+    `<div>
+        <div class="one-container">
+            <div class= "second-container">
+                <div class="three-container">
+                    <p class= "one-line-card" ><b>${pokemon.num} ${pokemon.name}</b><br>
+                        rarity:${pokemon["pokemon-rarity"]} Type:${pokemon.type}
+                    </p>
+
+                    <img class = "image-pokemon" src=${pokemon.img} />
+
+                    <p class = "pokemon-stats" >max-cp: ${pokemon.stats["max-cp"]} max-hp:${pokemon.stats["max-hp"]} 
+                        Height:${pokemon.size.height} Weight:${pokemon.size.weight}
+                    </p>
+                </div>
+
+                <p class = "text-about">
+                    About: ${pokemon.about}
                 </p>
 
-                <img class = "image-pokemon" src=${pokemon.img} />
-
-                <p class = "pokemon-stats" >max-cp: ${pokemon.stats["max-cp"]} max-hp:${pokemon.stats["max-hp"]} 
-                    Height:${pokemon.size.height} Weight:${pokemon.size.weight}
+                <p class = "text-egg">egg: ${pokemon.egg} 
+                    buddy distance km: ${pokemon["buddy-distance-km"]}
                 </p>
             </div>
-
-            <p class = "info.about">
-                ${pokemon.about}
-            </p>
-
-            <p class = "pokemon-egg-buddy">egg: ${pokemon.egg} 
-                buddy distance km: ${pokemon["buddy-distance-km"]}
-            </p>
         </div>
     </div>
-
     `)
     return infoPokemon.join(" ")
 }
