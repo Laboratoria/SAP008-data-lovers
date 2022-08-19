@@ -32,7 +32,8 @@ const selectStatus = document.querySelector('#select-status');
 const selectSpecies = document.querySelector('#select-species');
 const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
-const percentage = document.querySelector('#percentage')
+const percentage = document.querySelector('#percentage'
+const searchForName = document.querySelector('#btn-search');
 
 // ===== evento para mostrar os cards na tela ====
 cardContainer.innerHTML = displayCards(list);
@@ -84,26 +85,11 @@ selectOrder.addEventListener('change', (event) => {
     window.alert(value);
 });
 
-//====== teste reduce ======
-
-/*const sumIds = list.reduce(
-    (prevValue, current) => prevValue + current.id, 
-    0);
-
-console.log(sumIds);*/
-
-/*const arrayPersonagensMortos = [1, 3, 4, 52];
-const sumArrayPersonagensMortos = arrayPersonagensMortos.reduce(
-    (prevValue, currentValue) => prevValue + currentValue
-, 0);
-
-console.log(sumArrayPersonagensMortos)
-
-const arrayTodosOsPersonagens = [1, 3, 4, 52, 69, 78, 95];
-const sumArrayTodosOsPersonagens = arrayTodosOsPersonagens.reduce(
-    (prevValue, currentValue) => prevValue + currentValue
-, 0);
-
-console.log(sumArrayTodosOsPersonagens);*/
-
+// ===== evento para buscar por nome ====
+searchForName.addEventListener('keyup', function(event) { 
+    const value = event.target.value;
+    const listaFiltrada = rickAndMorty.buscarPorNome(list, value);
+    const cards = displayCards(listaFiltrada);
+    cardContainer.innerHTML = cards;
+});
 
