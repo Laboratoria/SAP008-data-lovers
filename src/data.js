@@ -9,11 +9,12 @@ export const computeStats = (data, typeData, condition) => data.reduce((initialT
     return initialType + (totalType[typeData] === condition);
 }, 0)
 
-export const orderAz = (data, order) => {
-    const arrayOrder = [...data]
-    if (order === "a-z") {
-        return arrayOrder.sort((a, z) => (a.name > z.name ? 1 : -1));
+export const orderAz = (data, sortBy, order) => {
+    
+    if (order === "A-Z") {
+        return data.sort((a, b) => a[sortBy] > b[sortBy] ? 1 : -1);
     } else {
-        return arrayOrder.sort((a, z) => (a.name < z.name ? 1 : -1));
+
+        return data.sort((a, b) => a[sortBy] < b[sortBy] ? 1 : -1);
     }
 };
