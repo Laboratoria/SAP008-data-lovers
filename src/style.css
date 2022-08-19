@@ -140,11 +140,26 @@ body {
     background-color: #f1faee;
     color: rgb(40, 100, 168);
 }
-.footer-img-totoro {
+.footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-between;*/
+    align-items: flex-end;
     bottom: 0;
-    width: 20%;
-    margin-left: 77%;
 }
+.footer-img-log {
+    max-width: 30%;
+    height: auto;
+}
+.footer-txt{
+    font-size: 1rem;
+    color: white;
+}
+.footer-img-totoro {
+    width: 20rem;
+    height: auto;  
+}
+
 
 /*Personagens*/
 .btn-catalogue-film {

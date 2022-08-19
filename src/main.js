@@ -1,4 +1,4 @@
-import {ghibli} from './data.js';
+import { ghibli } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films;
@@ -89,4 +89,9 @@ cataloguePeople.innerHTML = ghibli.printCataloguePeople(films);
 //   // console.log (filmesfiltrados);
 //   addTela (filmesfiltrados);
 // }
+const vehiclesInfos = ghibli.printCatalogueVeh(films);
+const locationsInfos = ghibli.printCatalogueLoc(films);
+const locationsVehicles = locationsInfos.concat(vehiclesInfos);
 
+const catalogueLoc = document.querySelector('.catalogue-loc');
+catalogueLoc.innerHTML = locationsVehicles;

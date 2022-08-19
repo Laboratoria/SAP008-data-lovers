@@ -1,5 +1,6 @@
 export const ghibli = {printCatalogue, printModal, printCatalogueLoc, printCatalogueVeh, printCataloguePeople, 
-filterDuration, sortedFilms, countFilms, countPeopleModal, countLocations, countPeople, countVehicles};
+                        filterDuration, sortedFilms, countFilms, countPeopleModal, countLocations, countPeople, 
+                        countVehicles};
 
 function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
@@ -144,7 +145,7 @@ function printCatalogueVeh(films) {
       const templateVeh = `
       <div class="card-Loc">
       <button class= "btn-modal-loc" type="button"> 
-      <img class="img-loc" src="${veh.img}" alt="${veh.name}" name="${veh.name}" > </button>
+      <img class="img-loc" src="${veh.img}" alt="${veh.name}" name="${veh.name}"> </button>
         <br><h7>${veh.name}</h7><br>
       </div>
       `;
@@ -154,4 +155,3 @@ function printCatalogueVeh(films) {
   })
   return arrayVeh.join('');
 }
-
