@@ -166,6 +166,7 @@ body {
     font-family: "Franklin Gothic Medium";
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
+    overflow: scroll;
     
   }
 
