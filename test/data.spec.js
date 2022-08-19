@@ -30,15 +30,12 @@ const arrayTest = [
   } 
 ];
 
-
-
 describe('rickAndMorty', () => {
 
   it('rickAndMorty is a object', () => {
     expect(typeof rickAndMorty).toBe('object');
   });
 });
-  
 
 describe('filtrarPorStatus', () => {
   it('é uma função', () => {
@@ -61,7 +58,8 @@ describe('filtrarPorStatus', () => {
 
 });
 
-  describe('filtrarPorEspecie', () => {
+describe('filtrarPorEspecie', () => {
+
     it('é uma função', () => {
       expect(typeof rickAndMorty.filtrarPorEspecie).toBe('function');
    });
@@ -80,30 +78,32 @@ describe('filtrarPorStatus', () => {
 
    });
 
+});
+
+
+describe('filtrarPorGenero', () => {
+  it('é uma função', () => {
+    expect(typeof rickAndMorty.filtrarPorGenero).toBe('function');
   });
 
-    describe('filtrarPorGenero', () => {
-      it('é uma função', () => {
-        expect(typeof rickAndMorty.filtrarPorGenero).toBe('function');
-      });
 
-      it('filtra o gênero dos personagens femininos', () => {
-        const personagem = rickAndMorty.filtrarPorGenero(arrayTest, "female");
-        expect(personagem.length).toEqual(2);
-        expect(personagem).toEqual([arrayTest[2],arrayTest[3]]);
-      });
-    });
+  it('filtra o gênero dos personagens femininos', () => {
+    const personagem = rickAndMorty.filtrarPorGenero(arrayTest, "female");
+    expect(personagem.length).toEqual(2);
+    expect(personagem).toEqual([arrayTest[2],arrayTest[3]]);    
+  });
+});
 
+describe('buscarPorNome', () => {
 
-  describe('buscarPorNome', () => {
-
-    it('é uma função', () => {
+  it('é uma função', () => {
       expect(typeof rickAndMorty.buscarPorNome).toBe('function');
-    });
+  });
 
-    it('deve buscar por um nome', () => {
+  it('deve buscar por um nome', () => {
       const personagens = rickAndMorty.buscarPorNome(arrayTest, "Rick");
       expect(personagens.length).toEqual(2);
-    });
   });
+});
+
 

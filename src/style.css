@@ -94,6 +94,14 @@
     
 }
 
+.percentage-container {
+    background-color: white;
+}
+
+.percentage {
+    color: red;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
