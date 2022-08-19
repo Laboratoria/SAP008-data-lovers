@@ -4,10 +4,11 @@
 }
 body { 
     background-color: #1D1C38;
-    background-image: url(img/desktop/Cabeçalho2.png), url(img/desktop/rodape1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top, bottom;
-    background-size: 100vw;
+    background-image: url(img/desktop/Cabeçalho2.png), url(img/desktop/rodape1.png), url(img/personagemcomcabecalho.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top, bottom, 0rem 165rem;
+    background-size:contain;
+    max-height: 100%;
 }
 .top {
     color: #f1faee;
@@ -16,6 +17,7 @@ body {
     font-size: 2.5rem;
 }
 .container {
+    border: 1px solid #000000;
     margin: 1vw 13vw;
 }
 .description {
@@ -64,12 +66,16 @@ body {
     background-color: #f1faee;
     color: #e26c7a;
 }
+.test-catalogue {
+    display: absolute;
+}
 .catalogue {
     margin: 3vw 0 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1vw;
     row-gap: 1vw;
+    grid-template-rows: 380px 380px 380px 380px;
 }
 .card {
     background-color: #8193A8;
@@ -147,6 +153,17 @@ body {
 }
 
 /*Personagens*/
+.description-people {
+    padding: 5vw;
+    text-align: center;
+    font-size: 3rem;
+    color: #f1faee;
+    margin-top: 11vw;
+}
+/* .description-img-people{
+   width: 100%;
+   margin: 0 -30vw 0 -15vw;
+} */
 .btn-catalogue-film {
     display: flex;
     width: 100%;
@@ -157,24 +174,51 @@ body {
 }
 .catalogue-people {
     border: solid 0.5vw black;
-    margin: 3vw 0 2vw;
+    margin: 3vw -5vw 2vw;
     display: grid;
-    grid-auto-rows: minmax(2%,auto);
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     column-gap: 0.5vw;
     row-gap: 0.5vw;
 }
 .card-people {
     background-color: rgb(129, 147, 168);
-    padding: 0.5vw;
-    block-size: 100%;
     border-radius: 0.3vw;
     text-align: center;
-    min-height: 10%;
+    padding: 1vw;
+    align-content: center;
+    /* width: 80%; */
+}
+.teste{
+    width: 100%; 
+    height: 65%;
+}
+
+.div-img-people{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position:100% 10%;
 }
 .card-people-img {
-    width: 80%;
-    max-height: 60%;
+    width: 100%; 
+    height: 100%;
+    object-fit: none;
+    object-position: 45% 5%;
+}
+/* .cropped2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 20px 10px;
+    border: 5px solid black;
+} */
+
+.person-details{
+    font-size: 0.9rem;
+    margin: 1vw -5vw 0;
+    line-height: 0.3;
+
 }
 
 @media only screen and (max-width: 600px){
