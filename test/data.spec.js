@@ -95,7 +95,11 @@ describe('filtrarPorStatus', () => {
     });
 
 
-  describe('buscar por nome', () => {
+  describe('buscarPorNome', () => {
+
+    it('é uma função', () => {
+      expect(typeof rickAndMorty.buscarPorNome).toBe('function');
+    });
 
     it('deve buscar por um nome', () => {
       const personagens = rickAndMorty.buscarPorNome(arrayTest, "Rick");
