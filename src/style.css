@@ -1,11 +1,27 @@
 body{
-      background-color: rgba(226, 59, 218, 0.925);
+      background-color: rgba(8, 7, 61, 0.925);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
       font-family: 'font';
       color: white;
       text-align: center;
       font-size: medium;
+}
+
+header{
+      background-color: rgb(196, 44, 196);
+
+}
+
+nav a{
+      text-transform: uppercase;
+      color: white;
+      font-weight: bolder;
+      font-size: 20px;
+      text-decoration: none;
+      position:absolute
+      left: 60px;
+
 }
 
 .filtro-todos-botoes{
@@ -20,6 +36,18 @@ body{
 }
 
 .impressao-todos-cards{
+      display: flex;
+      flex direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      row-gap: 10px;
+      column-gap: 30px;
+      text-align: center;
+}
+
+.impressao-todos-cards-personagens{
       display: flex;
       flex direction: row;
       justify-content: center;
