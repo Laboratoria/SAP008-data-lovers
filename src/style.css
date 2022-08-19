@@ -8,16 +8,15 @@
   src: url("./fonts/Hello\ Avocado.ttf");
 }
 
-main,
-option,
-nav {
+body {
   font-family: Avocado;
+  background-color: rgba(217, 205, 169, 1);
 }
 
 .navegação {
   list-style-type: none;
-  background-color: rgba(217, 205, 169, 1);
-  color: rgba(124, 140, 90, 1);
+  background-color: rgba(124, 140, 90, 1);
+  color: rgba(217, 205, 169, 1);
 }
 
 .linha {
@@ -55,5 +54,7 @@ select {
 .filtros {
   display: inline-block;
   padding: 10px;
-  font-size: 22px;
+  font-size: 25px;
+
+
 }
