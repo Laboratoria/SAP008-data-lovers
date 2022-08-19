@@ -14,6 +14,6 @@ export const orderAz = (data, order) => {
     if (order === "a-z") {
         return arrayOrder.sort((a, z) => (a.name > z.name ? 1 : -1));
     } else {
-        return arrayOrder.sort((a, z) => (a.name < z.name ? -1 : 1));
+        return arrayOrder.sort((a, z) => (a.name < z.name ? 1 : -1));
     }
 };
