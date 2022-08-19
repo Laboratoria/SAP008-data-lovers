@@ -73,3 +73,37 @@ function filmPeople (films, btn) {
   })
   return filmSelected;
 }
+
+function printCatalogueLoc(films) {
+  const arrayLoc = films.map((film) => {
+    const locations = film.locations.map((loc) => {
+      const templateLoc = `
+      <div class="card-Loc">
+      <button class= "btn-modal-loc" type="button"> 
+      <img class="img-loc" src="${loc.img}" alt="${loc.name}" name="${loc.name}"></button>
+        <br><h7>${loc.name}</h7><br>
+      </div>
+      `;
+      return templateLoc ;
+    });
+    return locations.join('');
+  })
+  return arrayLoc.join('');
+}
+
+function printCatalogueVeh(films) {
+  const arrayVeh = films.map((film) => {
+    const vehicles = film.vehicles.map((veh) => {
+      const templateVeh = `
+      <div class="card-Loc">
+      <button class= "btn-modal-loc" type="button"> 
+      <img class="img-loc" src="${veh.img}" alt="${veh.name}" name="${veh.name}" > </button>
+        <br><h7>${veh.name}</h7><br>
+      </div>
+      `;
+      return templateVeh;
+    });
+    return vehicles.join('');
+  })
+  return arrayVeh.join('');
+}
