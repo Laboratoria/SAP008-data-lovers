@@ -93,17 +93,16 @@ Criou-se um teste para verificar se o objeto 'rickAndMorty', que contém todas a
 Logo depois, criou-se testes para as funções de filtro dos personagens por: status, gênero, espécie e busca por nome. 
 
 ### Teste de status: 
-Primeiramente, criou-se um teste para verificar se o filtro se tratava de uma função. Depois definiu-se um teste para verificar a quantidade de objetos que continham o status 'morto' na nossa array mock. Logo depois, foi testado em qual posição os objetos que continham o status 'morto' se encontravam na array mock. Fizemos o mesmo para testar o status 'vivo'.
+Primeiramente, criou-se um teste para verificar se o filtro se tratava de uma função. Depois definiu-se um teste para verificar a quantidade de objetos que continham o status 'morto' na array mock. Logo depois, foi testado em qual posição os objetos que continham o status 'morto' se encontravam na array mock. Fizemos o mesmo para testar o status 'vivo'.
 
 ### Teste de espécie: 
 Criou-se um teste para verificar se o filtro se tratava de uma função. Depois definiu-se um teste para verificar a quantidade de objetos que continham o espécie 'alien' na nossa array mock. Logo depois, foi testado em qual posição os objetos que continham o espécie 'alien'  se encontravam na array mock. Fizemos o mesmo para testar o status 'unknown'.
 
 ### Teste de gênero: 
-Criou-se um teste para verificar se o filtro se tratava de uma função. Depois definiu-se um teste para verificar a quantidade de objetos que continham o gênero 'female' na nossa array mock. Logo depois, foi testado em qual posição os objetos que continham o gênero 'female'  se encontravam na array mock. 
+Criou-se um teste para verificar se o filtro se tratava de uma função. Depois definiu-se um teste para verificar a quantidade de objetos que continham o gênero 'female' na array mock. Logo depois, foi testado em qual posição os objetos que continham o gênero 'female'  se encontravam na array mock. 
 
-### Busca por nome: 
-não terminada (fizemos TDD); - adicionar aqui quando testar de verdade.
-  
+### Teste de buscar por nome: 
+Criou-se um teste para verificar se o filtro se tratava de uma função. Além disso, definiu-se um teste para verificar a quantidade de objetos que continham o nome 'Rick' na array mock.
 
 ## 6. XXXXXXX
 
