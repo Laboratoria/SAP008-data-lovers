@@ -1,4 +1,4 @@
-import {filtroDoSelect} from "./data.js";
+import {filtroDoSelect, ordenandoCampeoes} from "./data.js";
 import data from './data/lol/lol.js';
 
 let arrayCampeoes = Object.values(data.data);
@@ -33,7 +33,6 @@ btnIniciar.addEventListener('click', function(){
     cards.style.display = 'flex';
 })
 
-
 function printCards(lol) {
     document.getElementById('cardzinho').innerHTML = lol.map((key) => 
         `
@@ -64,3 +63,13 @@ selectTag.addEventListener('change', function() {
     printCards(filtroDoSelect(arrayCampeoes, valorSelecionado));
 })
 
+const selectAZ = document.querySelector('#sort');
+selectAZ.addEventListener('change', function() {
+    const sortSelecionado = selectAZ.value;
+    const ordem = ordenandoCampeoes(arrayCampeoes);
+    if (sortSelecionado === 'az') {
+        printCards(ordem.reverse())
+    } else {
+        printCards(ordem)
+    }
+})
