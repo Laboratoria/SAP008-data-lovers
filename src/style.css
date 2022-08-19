@@ -141,7 +141,7 @@ body {
     color: rgb(24, 24, 24);
 }
 
-.modal {
+.modal-list {
     position: relative;
     width: 704px;
     height: 650px;
@@ -182,7 +182,7 @@ body {
 
   }
 
-  .modal p {
+  .modal-text {
     width: 100%;
     text-align: center;
     margin: 5px 20px 5px;

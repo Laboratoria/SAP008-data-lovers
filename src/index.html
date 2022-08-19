@@ -22,20 +22,21 @@
   </header>
 
   <main class="main-div">
-    <section id="welcome-section" class="welcome">
-      <h1>Bem-vinde ao Data Seeker!</h1>
-      <h2>
+    <section id="welcome-section" class="welcome newclass">
+      <h1 class="title-welcome">Bem-vinde ao Data Seeker!</h1>
+      <h2 class="text-welcome">
         Um catálogo de referência sobre o universo dos livros da saga Harry
         Potter.
       </h2>
-      <p>Utilize o menu superior parar encontrar informações sobre os <i>personagens, livros</i> e <i>feitiços</i> do
+      <p class="last-text-welcome">Utilize o menu superior parar encontrar informações sobre os <i>personagens,
+          livros</i> e <i>feitiços</i> do
         mundo Harry Potter.</p>
     </section>
 
-    <section id="characters-list" class="modal" style="display:none">
+    <section id="characters-list" class="modal-list" style="display:none">
 
       <h1 class="modal-header"> Lista de Personagens </h1>
-      <p>Escolha uma casa para filtrar os personagens pertencentes a ela</p>
+      <p class="modal-text">Escolha uma casa para filtrar os personagens pertencentes a ela</p>
       <div class="horizontal-center">
         <button type="submit" id="btn-gryffindor" class="modal-btn">Gryffindor</button>
         <button type="submit" id="btn-slytherin" class="modal-btn">Slytherin</button>
@@ -45,11 +46,9 @@
       <div id="characters-content" class="modal-content"></div>
 
     </section>
-    <section id="books-list" class="list-modal" style="display:none">Lista de livros
-      <a href="/harrypotter/"> Harry Potter e a Pedra Filosofal </a>
+    <section id="books-list" class="modal-list" style="display:none">Lista de livros
     </section>
-    <section id="spells-list" class="list-modal" style="display:none"> Lista de feitiços
-      <a href="/harrypotter/"> Accio </a>
+    <section id="spells-list" class="modal-list" style="display:none"> Lista de feitiços
     </section>
   </main>
 
