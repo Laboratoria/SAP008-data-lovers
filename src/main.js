@@ -76,4 +76,3 @@ searchForName.addEventListener('keyup', function(event) { //Keyup é o evento pa
     const cards = displayCards(listaFiltrada);
     cardContainer.innerHTML = cards;
 });
-
