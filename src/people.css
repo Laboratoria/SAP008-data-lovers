@@ -1,80 +1,140 @@
-body {
-  max-width: 70%;
-  margin: 20vw auto;
+* {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  margin: 1vw 13vw;
+}
+.body-people {
   background-color: #1D1C38;
-  background-image: url(img/desktop/Cabeçalho.svg), url(img/mobile/rodape.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top, bottom;
+  background-image: url(img/desktop/rodapecomlogo.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size:100vw;
-  color: white;
 }
-
 .top-people {
+  color: #f1faee;
   text-align: center;
-  margin: 2vw 10vw 0;
-  font-size: 3vw;
-}
-
-.description-people {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.description-people-img {
-  width: 25vw;
-  margin: 0;
-}
-
-.description-people-text {
-  text-align: right;
-  width: 50vw;
-  margin: 0;
-}
-
-.people {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  /* border: 2px solid black; */
-  padding: 2%;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 1vw;
-}
-
-.card {
-  height: 15vw;
-  width: 10vw;
-  object-fit: fill;
-  align-items: baseline;
-  box-shadow: 2px 1px 10px 1px black;
-  border-radius: 5%;
-  background-color: black;
-  display: flex;
-  justify-content: center; /*alinhar imagem verticalmente ao centro da div */
-  align-items: center; /*alinhar imagem verticalmente ao centro da div */
-  overflow: hidden; /*esconde a parte da imagem que ultrapassa a div*/
-}
-
-.card img {
-  vertical-align: middle;
   width: 100%;
-  height: auto;
+}
+.img-top{
+  width: 99.7vw;
+  margin-left: -10px;
+}
+.title-people{
+  font-size: 4.5vw;
+  margin: -10vw 0 0;
+}
+.description-people {
+  padding: 5vw 0 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #f1faee;
+}
+.film-people {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1vw;
+  row-gap: 1vw;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin: 5vw 0;
+}
+.btn-film-people {
+  margin: auto;
+  border:none;
+  min-height: 100%;
+  width: 100%;
+  padding: 0.7vw 1.5vw;
+  background-color: #508b52c7;
+  color: #f1faee;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 0.3vw;
+}
+.btn-film-people:hover {
+  background-color: #f1faee;
+  color: #508b52;
+}
+.catalogue-people {
+  margin: 0 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1vw;
+  row-gap: 1vw;
+  justify-content: center;
+}
+.card-people {
+  background-color: rgba(156, 171, 151, 0.876);
+  border-radius: 0.3vw;
+  text-align: center;
+  padding: 1vw;
+  min-height: 100%;
+}
+.div-img-people{
+  width: 100%; 
+  height: 70%;
+}
+.card-people-img {
+  width: 100%; 
+  height: 100%;
+  object-fit: none;
+  object-position: 45% 5%;
+  padding: 0;
+}
+.person-details{
+  font-size: 1.2rem;
+  padding: 0.8vw 0;
+  line-height: 0.3;
+  margin: 0;
+}
+.footer-img-totoro{
+  width: 20vw;
+  margin-left: 75%;
+  bottom: 0;
 }
 
-.overlay {
-  width: 12vw;
-}
-
-h2 {
-  font-size: medium;
-}
-
-p {
-  font-size: small;
-}
-
-.card:hover {
-  opacity: 0.7;
+@media only screen and (max-width: 600px){
+  .description-people {
+    font-size: 1rem;
+  }
+  .film-people {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .btn-film-people {
+    padding: 0.7vw 1.5vw;
+    font-size: 0.4rem;
+  }
+  .catalogue-people {
+    margin: 10vw 5vw 40vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100%;
+  }
+  .card-people {
+    align-content: center;  
+    height: 100%;
+  }
+  .div-img-people{
+    width: 100%; 
+    height: 70%;
+  }
+  .card-people-img {
+    width: 100%; 
+    height: 100%;
+    object-fit: none;
+    object-position: 45% 5%;
+  }
+  .person-details{
+    font-size: 0.6rem;
+    margin: 2vw -5vw 0;
+  }
+  .footer{
+    width: 99.7vw;
+    bottom: 0;
+  }
 }

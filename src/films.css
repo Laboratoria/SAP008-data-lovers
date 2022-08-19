@@ -1,0 +1,177 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+  }
+.body-films {
+    background-color: #1D1C38;
+    background-image: url(img/desktop/rodapecomlogo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw;
+  }
+.container {
+    margin: 1vw 13vw;
+  }
+.top-films {
+    color: #f1faee;
+    text-align: center;
+    width: 100%;
+  }
+.img-top-films{
+    width: 100vw;
+    margin-top: 2vw;
+    margin-left: -10px;
+  }
+.title-films{
+    font-size: 4.5vw;
+    margin: -42vw 0 0;
+  }
+.films-description {
+    margin: 10vw 1vw 0 0;
+    width: 65%;
+    font-size: 2.2rem;
+    color: #f1faee;
+    font-weight: 400;
+    padding: 2vw;
+}
+.btn-catalogue {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3vw 3vw 3.3vw;
+}
+.btn-catalogue-filter{
+    margin: auto;
+    border:none;
+    min-height: 100%;
+    width: 65%;
+    padding: 0.5vw 2vw;
+    background-color: #e26c7a;
+    color: #f1faee;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.5vw;  
+}
+.btn-catalogue-filter:hover {
+    background-color: #f1faee;
+    color: #e26c7a;
+}
+.catalogue {
+    margin: 3vw 0 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1vw;
+    row-gap: 1vw;
+    grid-template-rows: auto;
+}
+.card {
+    background-color: #8193A8;
+    padding: 1vw;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 0.3vw;
+}
+.card-img {
+    width: 100%;
+    max-height: 85%;
+    margin-bottom: 0.4vw;
+}
+.btn-modal {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.btn-modal:hover {
+    opacity: 0.4;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    min-width: 60%;
+    min-height: 45%;
+    margin: 7% 20%;
+    background-color: #2864A8;
+    color: #f1faee;
+    padding: 2vw 4vw 2.5vw;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.modal-director {
+    margin: -1vw 0 0;
+}
+.modal-score-duration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: -1vw -5vw;
+}
+.close {
+    color:#f1faee;
+    font-weight: 600;
+    cursor: pointer;
+    background-color:rgb(40, 100, 168);
+    padding: 0.5vw 2vw;
+    border-radius: 0.5vw;
+    font-size: 1.2rem;
+    margin-top: 1vw;
+    border: 1px solid #f1faee;
+}
+.close:hover {
+    background-color: #f1faee;
+    color: rgb(40, 100, 168);
+}
+.footer-img-totoro{
+    width: 20vw;
+    margin-left: 75%;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .films-description {
+        font-size: 0.6rem;
+        padding: 0 0 1.3vw;
+    }
+    .btn-catalogue-filter {
+        font-size: 0.4rem;
+    }
+    .catalogue {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 1.5vw;
+        row-gap: 1.5vw;
+        margin: 0 -2vw;
+    }
+    .card {
+        text-align: center;
+        font-size: 0.5rem;
+    }
+    .card-img {
+        margin-bottom: 1vw;
+    }
+    .modal-content {
+        min-width: 80%;
+        min-height: 35%;
+        margin: 30% 10%;
+        font-size: 0.8rem;
+        padding: 2vw 4vw 4vw;
+    }
+    .modal-director {
+        margin: -3vw 0 0;
+    }
+    .modal-score-duration {
+        margin: -1vw -10vw -3vw;
+    }
+    .close {
+        font-size: 0.8rem;
+    }
+    } 

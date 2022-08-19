@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ghibli</title>
+    <link rel="stylesheet" href="films.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+  </head>
+  <body class="body-films">
+    <header class="top-films">
+      <img class="img-top-films" src="img/desktop/cabecalhofilm.png">
+      <h1 class="title-films">Filmografia</h1>
+    </header>
+    <main class="container">
+      <p class="films-description">Escolha o filme que mais combina com você usando 
+        nossos filtros de preferência ou mesmo saber um pouco mais dos detalhes de cada história! </p>
+      <section class="btn-catalogue">
+        <select id="order-by" name="order" class="btn-catalogue-filter"> 
+          <option name="order" value="order" selected>Ordenar por</option>
+          <option name="order" value="rt_score">Avaliação (Z-A)</option>
+          <option name="order" value="release_date">Ano Lançamento</option>
+        </select>
+        <select id="filter-duration" name="duration" class="btn-catalogue-filter"> 
+          <option name="duration" value="duration" selected>Duração</option>
+          <option name="duration" value="90min">até 90 minutos</option>
+          <option name="duration" value="120min">de 90 a 120 minutos</option>
+          <option name="duration" value="150min">mais de 120 minutos</option>
+        </select>
+      </section>
+      <div class="test-catalogue"><div class="catalogue"></div></div>
+      <div class="modal"></div>
+    </main>
+    <footer class="footer">
+        <img class="footer-img-totoro" src="img/totoro.png">
+    </footer>
+    <script src="films.js" type="module"></script>
+  </body>
+</html>
