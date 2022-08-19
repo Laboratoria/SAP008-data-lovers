@@ -36,7 +36,7 @@ const selectGender = document.querySelector(".select-gender");
 const selectSpecie = document.querySelector(".select-specie");
 const selectStatus = document.querySelector(".select-status");
 const teste = document.getElementById("teste");
-const showOrder = document.getElementById("orderAz")
+const selectOrder = document.getElementById("orderAz")
 
 
 
@@ -57,10 +57,10 @@ function statusFiltro() {
 }
 function sortByAz() {
   teste.style.display = "none";
-  return cardsData(orderAz(data.results))
+  return cardsData(orderAz(data.results, "name", selectOrder.value))
 }
 
 selectGender.addEventListener("change", genderFiltro);
 selectSpecie.addEventListener("change", specieFiltro);
 selectStatus.addEventListener("change", statusFiltro);
-showOrder.addEventListener("change", sortByAz);
+selectOrder.addEventListener("change", sortByAz);
