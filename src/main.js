@@ -13,12 +13,33 @@ const everyPokemon = data.pokemon;
 //templates dos cards//
 const createCards = listPokemon => {
     let infoPokemon = listPokemon.map((pokemon) =>
-    `<h3>Number:${pokemon.num} Name:${pokemon.name}</h3>
-    <img src=${pokemon.img} />
-    <p>Pokemon-rarity:${pokemon["pokemon-rarity"]} Type:${pokemon.type}</p>
-    <p>Height:${pokemon.size.height} Weight:${pokemon.size.weight} <p>
-    <p>${pokemon.about} </p>
-    `);
+
+    `<div class="one-container">
+
+        <div class= "second-container">
+
+            <div class="three-container">
+                <p class= "text-name-number" ><b>${pokemon.num} ${pokemon.name.toUpperCase()}</b><br>
+                    rarity:${pokemon["pokemon-rarity"]} Type:${pokemon.type}
+                </p>
+
+                <img class = "image-pokemon" src=${pokemon.img} />
+
+                <p class = "text-pokemon-stats" >max-cp: ${pokemon.stats["max-cp"]} max-hp:${pokemon.stats["max-hp"]} 
+                    Height:${pokemon.size.height} Weight:${pokemon.size.weight}
+                </p>
+            </div>
+
+            <p class = "text-about">
+                About: ${pokemon.about}
+            </p>
+
+            <p class = "text-egg">egg: ${pokemon.egg} 
+                buddy distance km: ${pokemon["buddy-distance-km"]}
+            </p>
+        </div>
+    </div>
+    `)
     return infoPokemon.join(" ")
 }
 

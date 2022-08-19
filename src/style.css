@@ -1,18 +1,122 @@
+/*seção logo e fundo*/
+
+body{
+    background-color: rgba(216, 240, 239, 1);
+    text-align: center;
+}
+
 #section-logo {
     text-align: center;
-    margin: 1%;
-    background-color: black;
-
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    background-image: url(img/fundo\ logo\ pokemon\ 1680-PhotoRoom.jpg);
 }
 
 #logo-pokemon {
     position: relative;
     width: 50%;
-    height: 200px;
-    margin: 0%;
+    height: 240px;
+    margin-top: -1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#logo-lovers{
+    height: 50px;
+    margin-left: 40%;
+    margin-bottom: 1%;
+    margin-top: -3%;
+}
+
+/*botões*/
+
+.section-buttons {
+    background-color: rgba(253, 221, 226, 1);
+    height: 70px;
+    margin-top: -1%;
+    text-align: center;
+}
+
+/*Introdução - main*/
+
+#img-pokemon{
+    height: 20%;
+    margin-top: 0%;
+}
+
+/*Estilização dos cards - output*/
+
+.one-container{
+    position:static;
+    width: 25%;
+    height: 568px;
+    left: 17px;
+    margin-top: 10%;
+    background: yellow;
+    border-radius: 31px;
+    padding: 10px;
+    margin: 2%;
+    margin-top: 10%;
+    box-shadow: inset 0 0 2em rgb(255, 0, 204);;
+}
+
+.second-container{
+    position: sticky;
+    padding-top: 5%;
+    margin: 2%;
+    height: 95%;
+    background-color: rgba(190, 217, 88, 1);
+    border-radius: 31px;
+}
+
+.text-about, .text-egg{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.buttongreen {
-color: green;
+.three-container{
+    position: relative;
+    padding: 1%;
+    background-color: rgba(254, 200, 2, 1);
+    border-radius: 8px;
+    width: 90%;
+    margin-top: -1%;
+    margin-left: 4%;
+ 
 }
+
+.text-name-number{
+    text-align: center;
+    margin: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 10px;
+}
+
+.image-pokemon{
+    background-color: rgba(108, 141, 94, 1);
+    width: 90%;
+    margin-left: 5%;
+  
+}
+
+.test-pokemon-stats{
+    text-align: center;
+    margin: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 6px;
+}
+
+.one-container{
+    display: inline-flex;
+    margin-left: 3%;
+    margin-right: 0%;
+    margin-top: 3%;
+}
+
+
+
+
+
+
