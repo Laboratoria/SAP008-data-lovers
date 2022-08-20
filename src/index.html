@@ -26,34 +26,30 @@
 
     <section id="filterbox">
 
-      <div id="status" class="filter-option">
-        <label for="status">Status:</label><br>
+      <p>Selecione um filtro:</p>
+      <select name="filter_options">
+        <option value="alive">Status</option>
+        <option value="unknown">Gênero</option>
+        <option value="unknown">Espécie</option>
+        <option value="dead" selected>Mostrar tudo</option><br>
+      </select>
 
-        <input type="checkbox" id="alive" name="status" value="alive">
-        <label for="alive">vivo</label><br>
-        <input type="checkbox" id="dead" name="status" value="dead">
-        <label for="dead">morto</label><br>
-        <input type="checkbox" id="unknow" name="status" value="unknown">
-        <label for="dead">desconhecido</label>
-      </div>
+      <p>Selecione uma opção:</p>
+      <select name="status_options">
+        <option value="alive" selected>Vivo</option>
+        <option value="dead">Morto</option>
+        <option value="unknown">Desconhecido</option><br>
+      </select>
 
-      <div id="gender" class="filter-option">
-        <label for="gender">Gênero:</label><br>
+      <select name="gender_options">
+        <option value="female" selected>Feminino</option>
+        <option value="male">Masculino</option><br>
+      </select>
 
-        <input type="checkbox" id="female" name="gender" value="female">
-        <label for="female">feminino</label><br>
-        <input type="checkbox" id="male" name="gender" value="male">
-        <label for="male">masculino</label>
-      </div>
-
-      <div id="species" class="filter-option">
-        <label for="species">Espécie:</label><br>
-
-        <input type="checkbox" id="human" name="species" value="human">
-        <label for="human">humano</label><br>
-        <input type="checkbox" id="nonhuman" name="species" value="non-human">
-        <label for="non-human">não humano</label>
-      </div>
+      <select name="status_options">
+        <option value="human" selected>Humano</option>
+        <option value="non_human">Não humano</option><br>
+      </select>
 
     </section>
 
