@@ -1,5 +1,4 @@
-import { sortAz, sortZa, filterSearch, speciesFilter, genderFilter, 
-  statusFilter, calculationInte } from '../src/data.js';
+import { dataFilter, nameFilter, computeStats, orderAz } from '../src/data.js';
 
   const charactersData = [
     {

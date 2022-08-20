@@ -26,8 +26,8 @@ function cardsData(data) {
       </div>
     </div>
   </section>  
-  `) 
-  .join('')
+  `)
+    .join('')
 }
 cardsData(data.results);
 
@@ -37,7 +37,8 @@ const selectGender = document.querySelector(".select-gender");
 const selectSpecie = document.querySelector(".select-specie");
 const selectStatus = document.querySelector(".select-status");
 const showComputeStats = document.getElementById("calculation");
-const selectOrder = document.getElementById("orderAz")
+const selectOrder = document.getElementById("orderAz");
+const filterSearch = document.getElementById("search-container")
 
 
 
@@ -59,10 +60,14 @@ function statusFiltro() {
 }
 function sortByAz() {
   showComputeStats.style.display = "none";
-  return cardsData(orderAz(data.results, "name", selectOrder.value))
+  return cardsData(orderAz(data.results, "name", selectOrder.value));
+}
+function searchName() {
+  return cardsData(nameFilter(data.results, filterSearch.value));
 }
 
 selectGender.addEventListener("change", genderFiltro);
 selectSpecie.addEventListener("change", specieFiltro);
 selectStatus.addEventListener("change", statusFiltro);
 selectOrder.addEventListener("change", sortByAz);
+filterSearch.addEventListener("keypress", searchName);
