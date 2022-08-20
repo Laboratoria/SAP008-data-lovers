@@ -68,7 +68,7 @@ O processo de prototipagem foi dividido em duas etapas; na primeira, em baixa fi
   ![alta_fidelidade_mobile](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/prototype/high_mobile.gif)
 ### Paleta de cores e imagens externas
 A paleta de cores foi feita por intermédio da ferramenta [Adobe Color](https://color.adobe.com/pt/create/color-wheel) e resultou no seguinte:
-![paleta_data_lovers]()
+![paleta_data_lovers](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/paleta_data_lovers.png?raw=true)
 Também foram utilizadas a imagem de uma [galáxia](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/bg_img_galaxy.jpg) para o background e um gif do [portal](https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/portal_gif.gif) de teletransporte contido na série.
 
 ## 4. Repositório
