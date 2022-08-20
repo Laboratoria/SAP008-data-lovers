@@ -26,7 +26,8 @@ function cardsData(data) {
       </div>
     </div>
   </section>  
-  `)
+  `) 
+  .join('')
 }
 cardsData(data.results);
 
@@ -35,28 +36,29 @@ cardsData(data.results);
 const selectGender = document.querySelector(".select-gender");
 const selectSpecie = document.querySelector(".select-specie");
 const selectStatus = document.querySelector(".select-status");
-const teste = document.getElementById("teste");
+const showComputeStats = document.getElementById("calculation");
 const selectOrder = document.getElementById("orderAz")
 
 
 
 function genderFiltro() {
-  teste.style.display = "flex";
-  /*teste.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`*/
+  showComputeStats.style.display = "flex";
+  showComputeStats.innerHTML = `O número de personagens dessa categoria é: ${computeStats(data.results, "gender", selectGender.value)}`
   return cardsData(dataFilter(data.results, "gender", selectGender.value));
 }
 
 function specieFiltro() {
-  teste.style.display = "flex";
-  /*teste.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecie.value)}`*/
+  showComputeStats.style.display = "flex";
+  showComputeStats.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecie.value)}`
   return cardsData(dataFilter(data.results, "species", selectSpecie.value));
 }
 function statusFiltro() {
-  teste.style.display = "flex";
+  showComputeStats.style.display = "flex";
+  showComputeStats.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "status", selectStatus.value)}`
   return cardsData(dataFilter(data.results, "status", selectStatus.value));
 }
 function sortByAz() {
-  teste.style.display = "none";
+  showComputeStats.style.display = "none";
   return cardsData(orderAz(data.results, "name", selectOrder.value))
 }
 

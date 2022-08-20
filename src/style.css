@@ -84,7 +84,21 @@ button:hover {
     border: none;
     text-align: center;
     padding: 0.20rem 2rem;
+}
 
+#calculation {
+    display: inline-block;
+    justify-content: center;
+    font-family:'Patua One';
+    font-size: 15px;
+    text-align: center;
+    margin: 2% 30% 2% 30%;
+    background-color: rgb(80, 49, 70);
+    border: 5px solid #000000;
+    border-radius: 9px;
+    color: white;
+    padding: 0.20rem 2rem;
+    flex-flow: row nowrap;
 }
 
 #read {
@@ -95,7 +109,7 @@ button:hover {
 .card {
     background-image: url(./img/espacowe.jpg);
     display: inline-block;
-    padding: 25px;
+    padding: 35px;
     width: 300px;
     height: 350px;
     border: 2px solid #000000;
@@ -151,3 +165,4 @@ button:hover {
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
+
