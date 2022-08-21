@@ -33,6 +33,8 @@ const selectSpecies = document.querySelector('#select-species');
 const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
 const percentage = document.querySelector('#percentage');
+
+const sortAscending = document.querySelector('#ascending')
 const searchForName = document.querySelector('#btn-search');
 
 // ===== evento para mostrar os cards na tela ====
