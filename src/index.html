@@ -12,8 +12,9 @@
 </style>
 <script src="https://kit.fontawesome.com/5828f9f420.js" crossorigin="anonymous"></script>
 
-<body>
+<body style="font-size:10px">
   <header class="header">
+    <img src="Project Images/Logo.svg" class="page-logo" width="270" height="130">
     <button type="submit" id="btn-characters" class="menu-btns">Personagens</button>
     <button type="submit" id="btn-books" class="menu-btns">Livros</button>
     <button type="submit" id="btn-spells" class="menu-btns">Feitiços</button>
@@ -21,14 +22,14 @@
     <button type="submit" id="search-btn" class="search-icon"><i class="fa fa-search"></i></button>
   </header>
 
-  <main class="main-div">
-    <section id="welcome-section" class="welcome newclass">
-      <h1 class="title-welcome">Bem-vinde ao Data Seeker!</h1>
-      <h2 class="text-welcome">
+  <main class="main-container">
+    <section id="welcome-section" class="welcome">
+      <h1 class="welcome-title">Bem-vinde ao Data Seeker!</h1>
+      <h2 class="welcome-description">
         Um catálogo de referência sobre o universo dos livros da saga Harry
         Potter.
       </h2>
-      <p class="last-text-welcome">Utilize o menu superior parar encontrar informações sobre os <i>personagens,
+      <p class="welcome-ptext">Utilize o menu superior parar encontrar informações sobre os <i>personagens,
           livros</i> e <i>feitiços</i> do
         mundo Harry Potter.</p>
     </section>
@@ -44,8 +45,8 @@
         <button type="submit" id="btn-ravenclaw" class="modal-btn">Ravenclaw</button>
       </div>
       <div id="characters-content" class="modal-content"></div>
-
     </section>
+
     <section id="books-list" class="modal-list" style="display:none">Lista de livros
     </section>
     <section id="spells-list" class="modal-list" style="display:none"> Lista de feitiços
@@ -53,12 +54,9 @@
   </main>
 
   <footer class="footer">
-    <a href="https://github.com/GabriellaViroli/SAP008-data-lovers"><img class="github-logo"
-        src="https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/826a7ab08e86e31238253d8a68859f08e7a55ad6/src/Images/GitHub%20contact%20inffo.svg"
-        width="20" height="19"></a>
-    <h2>DATA SEEKER</h2>
-    <h3>© CopyRight 2022.</h3>
-    <p>Powered by <a href="https://github.com/GabriellaViroli/SAP008-data-lovers">Data Seeeker.</a></p>
+    <a href="https://github.com/GabriellaViroli/SAP008-data-lovers"><img src="Project Images/GitHub contact info.svg" class="github-logo" width="20" height="19"></a>
+    <h1 class="footer-title">Data Seeker</h2>
+    <h2 class="footer-copyright">© 2022 <a href="https://github.com/GabriellaViroli/SAP008-data-lovers">Data Seeeker</a></h2>
   </footer>
 
   <script src="main.js" type="module"></script>
