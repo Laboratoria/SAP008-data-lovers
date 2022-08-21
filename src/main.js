@@ -1,4 +1,4 @@
-import data from './data/rickandmorty/rickandmorty.js';
+import getCharacters from './data.js';
 
 function gerarCard(personagem) {
     return `
@@ -18,6 +18,25 @@ function gerarCard(personagem) {
     `;
 }
 
-data.results.forEach(personagem => {
-    document.getElementById('cards').insertAdjacentHTML('beforeend', gerarCard(personagem));
-});
+const listarCards = () => {
+    let selectGender = document.getElementById('gender');
+    let optionGender = selectGender.options[selectGender.selectedIndex];
+
+    let characters = getCharacters(optionGender.value);  
+
+    let cards = document.getElementById('cards');
+    cards.innerHTML = '';
+    characters.forEach(character => {
+        cards.insertAdjacentHTML('beforeend', gerarCard(character));
+    });
+};
+
+let selectGender = document.getElementById('gender');
+selectGender.addEventListener('change',listarCards);
+
+listarCards();    
+
+
+
+
+
