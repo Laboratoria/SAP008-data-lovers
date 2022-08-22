@@ -1,4 +1,5 @@
 import { filterByRegion } from "./data.js";
+import { filterByType } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 //.log(example, data);
@@ -9,6 +10,8 @@ const btnKanto = document.getElementById("button-kanto");
 const btnJohto = document.getElementById("button-johto");
 const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
+const select = document.getElementById("selectType");
+
 
 //templates dos cards//
 const createCards = listPokemon => {
@@ -58,11 +61,13 @@ const createCards = listPokemon => {
     return infoPokemon.join(" ")
 }
 
+let pokemonsToBeShow= []
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
+    pokemonsToBeShow = infoKanto
     console.log(infoKanto)
 });
 
@@ -71,6 +76,7 @@ btnJohto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "johto")
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
+    pokemonsToBeShow = infoJohto
     console.log(infoJohto)
 });
 
@@ -78,4 +84,26 @@ btnJohto.addEventListener("click", function () {
 btnWorld.addEventListener("click", function () {
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
+    pokemonsToBeShow= infoPokemons 
 });
+
+select.addEventListener("change", function(){
+    let result = filterByType(pokemonsToBeShow,"grass")
+    let pokeGrass = createCards(result)
+    cards.innerHTML = pokeGrass;
+    console.log (pokeGrass)
+
+
+//     const selectElement = document.querySelector('.ice-cream');
+
+// selectElement.addEventListener('change', (event) => {
+//   const result = document.querySelector('.result');
+//   result.textContent = `You like ${event.target.value}`;
+// })
+
+
+      // const pokemons = []
+        // const pokemonsByRegion= filterByRegion(pokemons, "kanto")
+        // const filteredRegionNType = filterByType(pokemonsByRegion, "grass") 
+    console.log(select.value)
+})
