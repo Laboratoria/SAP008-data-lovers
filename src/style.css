@@ -166,3 +166,100 @@ a:hover {
   color: rgb(217, 205, 169);
 }
 
+/* Dúvidas OH
+
+tablet (responsividade)
+1- espaçamento itens nav
+2- barra menu e calculo quebrada na responsividade
+3- Deslocar imagem p esquerda
+4- Filtros alinhados na responsividade
+
+mobile (responsividade)
+1- Menu 
+2- filtros
+3- espaçamento entre os cards
+4- deslocar imagem p esquerda
+
+Outras:
+1- posição logo
+2 -espaçamento entre imagem e calculo agregado
+3 - imagem expandir? */
+
+/*Responsividade tablet:*/
+@media (max-width: 768px) {
+  .filtros1 {
+    margin-left: 1vw;
+  }
+  .filtros2 {
+    margin-left: 1vw;
+  }
+  .filtros3 {
+    margin-left: 1vw;
+  }
+  .filtros4 {
+    margin-left: 1vw;
+  }
+  .filtros1,
+  .filtros2,
+  .filtros3,
+  .filtros4 {
+    display: inline;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .calculo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    display: none;
+  }
+
+  .nav ul li {
+    width: 100%;
+    margin-right: 1px;
+    display: inline;
+  }
+
+  .menu,
+  .calculo,
+  .filtros1,
+  .filtros2,
+  .filtros3,
+  .filtros4 {
+    font-size: 40px;
+  }
+
+  .cardsBox {
+    width: 330px;
+    height: 430px;
+    justify-content: space-between;
+  }
+
+  .imagemCard {
+    height: 250px;
+    width: 250px;
+  }
+
+  .textoCard {
+    font-size: 25px;
+  }
+
+  .nameCard {
+    font-size: 25px;
+  }
+
+  .filtros1,
+  .filtros2,
+  .filtros3,
+  .filtros4 {
+    display: block;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
