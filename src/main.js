@@ -69,6 +69,13 @@ resultCountVehicles.innerHTML = ghibli.countVehicles(films);
 const cataloguePeople = document.querySelector('.catalogue-people');
 cataloguePeople.innerHTML = ghibli.printCataloguePeople(films);
 
+const vehiclesInfos = ghibli.printCatalogueVeh(films);
+const locationsInfos = ghibli.printCatalogueLoc(films);
+const locationsVehicles = locationsInfos.concat(vehiclesInfos);
+
+const catalogueLoc = document.querySelector('.catalogue-loc');
+catalogueLoc.innerHTML = locationsVehicles;
+
 // ======== FILTRO DE GENERO PARA USAR NOS PERSONAGENS =========
 // let selectedGender = document.getElementById('filter-gender');
 // selectedGender.addEventListener('change', genderFilter);
@@ -89,9 +96,3 @@ cataloguePeople.innerHTML = ghibli.printCataloguePeople(films);
 //   // console.log (filmesfiltrados);
 //   addTela (filmesfiltrados);
 // }
-const vehiclesInfos = ghibli.printCatalogueVeh(films);
-const locationsInfos = ghibli.printCatalogueLoc(films);
-const locationsVehicles = locationsInfos.concat(vehiclesInfos);
-
-const catalogueLoc = document.querySelector('.catalogue-loc');
-catalogueLoc.innerHTML = locationsVehicles;

@@ -1,15 +1,14 @@
 import {ghibli} from '../src/data.js';
 
-describe('actions', () => {
+describe('should be a function/object', () => {
   it('ghibli is a object', () => {
     expect(typeof ghibli).toBe('object');
-  })
-  it('addTela is a function', () => {
-    expect(typeof ghibli.printCatalogue).toBe('function');
   });
+
   it('selectDuration is a function', () => {
     expect(typeof ghibli.filterDuration).toBe('function');
   });
+
   it('sorted is a function', () => {
     expect(typeof ghibli.sortedFilms).toBe('function');
   });
@@ -39,28 +38,52 @@ const filmsTest = [
   }
 ];
 
-describe('filters', () => {
+describe('should be a filter', () => {
   it("film filter by short duration", () => {
-    expect(ghibli.filterDuration(filmsTest, '90min')).toEqual(expect.not.stringContaining("Kiki's Delivery Service"));
+    const shortDuration = ghibli.filterDuration(filmsTest, '90min');
+
+    expect(shortDuration.length).toEqual(1);
+    expect(shortDuration[0].duration).toEqual('88');
   });
+
   it("film filter by long duration", () => {
-    expect(ghibli.filterDuration(filmsTest, '150min')).toEqual(expect.not.stringContaining("My Neighbor Totoro"));
-  });
-  it("order by", () => {
-    expect(ghibli.sortedFilms(filmsTest, 'release_date')).not.toEqual(ghibli.sortedFilms(filmsTest, 'order'));
+    const longDuration = ghibli.filterDuration(filmsTest, '150min');
+
+    expect(longDuration.length).toEqual(1);
+    expect(longDuration[0].duration).toEqual('125');
   });
 })
 
-describe('aggregate calculations', () => {
+describe('should order the films', () => {
+  it("should sort films by score", () => {
+    const sorted = ghibli.sortedFilms(filmsTest, 'rt_score')
+
+    expect(sorted.length).toEqual(3);
+    expect(sorted[0].rt_score).toEqual('96');
+    expect(sorted[2].rt_score).toEqual('93');
+  });
+})
+
+describe('should return aggregate calculations', () => {
+
   it("count films", () => {
-    expect(ghibli.countFilms(filmsTest)).toBe(3);
+    const filmsTotal = ghibli.countFilms(filmsTest);
+
+    expect(filmsTotal).toBe(3);
   });
+
   it("count people", () => {
-    expect(ghibli.countPeople(filmsTest)).toBe(9);
+    const peopleTotal = ghibli.countPeople(filmsTest);
+
+    expect(peopleTotal).toBe(9);
   });
+
   it("count locations", () => {
-    expect(ghibli.countLocations(filmsTest)).toBe(9);
+    const locationsTotal = ghibli.countLocations(filmsTest)
+
+    expect(locationsTotal).toBe(9);
   });
+  
   it("count vehicles", () => {
     expect(ghibli.countVehicles(filmsTest)).toBe(1);
   })

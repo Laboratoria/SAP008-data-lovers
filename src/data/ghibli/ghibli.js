@@ -1863,7 +1863,7 @@ export default {
         {
           "id": "923d70c9-8f15-4972-ad53-0128b261d628",
           "name": "Sosuke's Boat",
-          "img": "https://static.wikia.nocookie.net/ponyo/images/1/16/Ponyo_och_Sosuke_i_b%C3%A5ten_som_Titanic_eller_Vasa.jpg",
+          "img": "https://www.ghibli.jp/gallery/ponyo044.jpg",
           "description": "A toy boat where Sosuke plays",
           "vehicle_class": "Boat",
           "length": "10",
@@ -1981,7 +1981,7 @@ export default {
         {
           "id": "f2148ab5-f272-4057-b05a-1321e35227b4",
           "name": "Karigurashi's house",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5c/Karigurashi_019.jpg",
+          "img": "https://www.ghibli.jp/gallery/karigurashi019.jpg",
           "climate": "Warm",
           "terrain": "Under the floorboards",
           "surface_water": "10",
