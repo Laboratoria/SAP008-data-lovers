@@ -1,0 +1,115 @@
+html body {
+    width: 100%;
+    margin: 0;
+    background-image: url(./img/espaco.jpg);
+    background-size: auto;
+}
+
+.img-logo img {
+    width: 20rem;
+    height: auto;
+}
+
+.container-header {
+    background-color: transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 2rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-header button {
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 5px 2px #3b065ca9;
+    cursor: pointer;
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    transition: all .3s ease-in-out;
+    margin-top: 3rem;
+}
+
+button:hover {
+    background: #3b065ca9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #3b065ca9;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/*Responsividade - Menu*/
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .btn-header{
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        width: 2rem;
+        float: right;
+        margin-right: 2rem;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        display: block;
+        padding-top: 1.2rem;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        float: right;
+        transition: all .3s ease-in-out;
+        background-color: #3b065c8c;
+        width: 200px;
+        height: auto;
+    }
+
+    .mobile-menu .nav-link:hover {
+        background-color: #3b065c;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 0 #3b065c;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+}
