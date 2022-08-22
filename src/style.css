@@ -11,7 +11,6 @@ body {
   background-color: rgb(217, 205, 169);
 }
 
-/*menu*/
 .navegacao ul {
   list-style-type: none;
   background-color: rgb(124, 140, 90);
@@ -19,35 +18,36 @@ body {
   margin-left: none;
   margin-right: none;
   border-radius: 10px;
-  padding: 1vw;
+  padding: none;
   margin-top: 0.1vw;
 }
 
 .navegacao ul li {
   display: inline-block;
+  margin-right: 2vw;
+  cursor: pointer;
 }
 
 .linha {
-  padding: 1px;
-  font-size: 25px;
+  padding: 5px;
+  font-size: 22px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .linha:hover {
-  color: rgb(86, 72, 115);
+  color: rgb(168, 213, 232);
 }
 
 select {
   border-radius: 5px;
-}
-
-.imagemHeader {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  border-radius: 10px;
-  width: 1000px;
-  height: 560px;
-  background-size: cover;
+  font-family: Avocado;
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
 }
 
 .divHeader {
@@ -66,32 +66,51 @@ select {
 .cards {
   align-content: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
+  cursor: pointer;
+  margin-top: 50px;
 }
 
 .filtros1 {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 10vw;
 }
 
 .filtros2 {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 5vw;
 }
 
 .filtros3 {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 5vw;
 }
 
 .filtros4 {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 5vw;
 }
 
 .filtro4 {
   margin-right: 10vw;
+}
+
+.calculo {
+  background-color: rgb(124, 140, 90);
+  color: rgb(217, 205, 169);
+  border-radius: 1vw;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 40vw;
+  margin-top: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.calculo:hover {
+  color: rgb(168, 213, 232);
 }
 
 .cardsBox {
