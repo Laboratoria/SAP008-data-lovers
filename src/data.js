@@ -5,9 +5,7 @@ export const filterByRegion = (pokemons, region) =>
 export const filterByType = (pokemons, type) => 
         pokemons.filter(pokemon => pokemon.type.includes(type))
         
-        // const pokemons = []
-        // const pokemonsByRegion= filterByRegion(pokemons, "kanto")
-        // const filteredRegionNType = filterByType(pokemonsByRegion, "grass") 
+      
 
 
 
