@@ -74,6 +74,6 @@ Mas, conforme a pesquisa com os usuários, entendemos que os mesmos buscavam por
 
 - Foi retirado o botão buscar Pokémons, pois estava sem usabilidade após colocarmos a mudança dos eventos como "change" ou "keypress".
 
-- Linguagens diferentes no site foram identificadas pelos usuários, então atualizamos o mesmo para que contenha apenas uma linguagem.
+- Linguagens diferentes no site foram identificadas pelos usuários, então atualizamos para que contenha apenas uma linguagem.
 
-- Atualizamos as Cards para que quando o usuário passe com o mouse em cima de uma card, ela fique com a cor "amarela", assim facilitando que a visualiação do card selecionado.
+- Atualizamos as Cards para que quando o usuário passe com o mouse em cima de um card, ele fique com a cor "amarela", assim facilitando a visualiação do card selecionado.
