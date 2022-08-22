@@ -1,19 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Studio Ghibli Wiki</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Sura:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Ghibli Lovers</title>
   </head>
   <body>
-    <img src="studioghibli.jpg" alt="" />
-    <header>
-      <h1>Ghibli Wiki</h1>
-    </header>
-    <div id="root"></div>
-    <footer>
-      <p>Todos os direitos reservados.</p>
+    <div class="wrapper">
+      <header class="container-header">
+        <nav class="menu">
+          <img
+            class="image-logo"
+            src="./assets/image/logo.gif"
+            alt="Gif Studio Ghibli"
+          />
+          <div class="menu-group">
+            <a class="menu-group-item" href="./index.html">
+              <i class="fa-solid fa-house-chimney fa-2xl"></i>
+              Home
+            </a>
+            <a class="menu-group-item" href="./about.html">
+              <i class="fa-solid fa-fire fa-2xl"></i>
+              Studio Ghibli
+            </a>
+            <a class="menu-group-item" href="./movies.html">
+              <i class="fa-solid fa-film fa-2xl"></i>
+              Movies
+            </a>
+          </div>
+        </nav>
+      </header>
+      <section class="container-home">
+        <h2 class="title">
+          <img src=./assets/image/TotoroPngGif.webp> ❤Studio Ghibli❤
+        </h2>
+        <img
+          class="background-home"
+          src="./assets/image/anime-studio-ghibli.gif"
+        />
+        <h3 class="subtitle">Welcome to Ghibli Lovers!!!</h3>
+        <p>
+          Website developed for Studio Ghibli lovers. Here we have some
+          information about Studio Ghibli! Browse our menu on the left to check
+          it out. Feel free to research and learn more about the movies and
+          characters.
+        </p>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>
+        Project developed by
+        <a href="https://github.com/kauanelenzr"
+          ><i class="fa-brands fa-github"></i> Kauane Lenz Rosa</a
+        >
+        and
+        <a href="https://github.com/NatyEvelyn"
+          ><i class="fa-brands fa-github"></i> Natália Evelyn de Moura</a
+        >
+        -
+        <a href="https://www.laboratoria.la/br"
+          ><img class="image-lab" src="./assets/image/Laboratoria-Logo.png"
+        /></a>
+        - SAP008 - 2022.
+      </p>
     </footer>
-    <script src="main.js" type="module"></script>
   </body>
 </html>
