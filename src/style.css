@@ -1,0 +1,44 @@
+html body {
+  background-color: #f9b798;
+  text-align: center;
+  font-family: open sans, sans-serif;
+  color: #000000;
+  margin: 0px 0px 30px 0px;
+}
+
+img {
+  max-width: 80%;
+}
+
+.rostoRick {
+  width: 20%;
+}
+
+.radio {
+  margin: 0 auto;
+  height: 40px;
+  max-width: 60%;
+}
+
+p {
+  background: #d9d9d9;
+  border: #000000;
+  margin: 0 auto;
+  height: 110px;
+  max-width: 60%;
+}
+
+.rickAndMortyOlhos {
+  width: 40%;
+}
+
+.personagens {
+  padding: 1rem 2rem;
+  border: 2px solid #87cc22;
+  border-radius: 10px;
+  margin-top: 20px;
+  background: #d9d9d9;
+  color: #87cc22;
+  font-size: 40px;
+  -webkit-text-stroke: 1px black;
+}
