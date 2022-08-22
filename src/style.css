@@ -1,67 +1,57 @@
-* {
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url('https://github.com/GabriellaViroli/SAP008-data-lovers/blob/css/src/Images/Fundo%20imagem.png?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header {
-    position: static;
-    width: 100vw;
-    height: 18vh;
-    padding: 4.5em;
-    background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
-    background-position-x: 7vw;
-    background-position-y: 1.5vh;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
     background-color: #700505;
+    height: 19vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
 }
 
-.horizontal-center {
-    margin: 0 auto;
-    width: 60%;
-    
+.page-logo {
+    margin-block-start: 0.5rem;
+    margin-inline-start: -4rem;
+    margin-inline-end: 25rem;
 }
-
+/* 
 .search-bar {
-    position: relative;
-    width: 12vw;
-    height: 2vh;
-    top: 3.5vh;
-    left: 36.2vw;
-    padding: 0.85em;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 0.5rem;
     border-color: #700505;
 }
 
 .search-icon {
-    position: relative;
+    padding: 0.25rem;
+    font-size: 1rem;
     color: #193833;
-    width: 2vw;
-    height: 3vh;
-    top: 3.5vh;
-    left: 36.5vw;
     background-color: #DC9F03;
-    border-radius: 25px;
+    border-radius: 5px;
     border-color: #DC9F03;
-}
+} */
 
 .menu-btns {
-    left: 57vw;
-    position: relative;
-    margin-inline: 0.5em;
-    top: -6vh;
-    padding: 0.4em;
+    text-align: center;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
     border-color:#DC9F03;
     border-width: 3px;
-    border-radius: 20px;
+    border-radius: 5px;
     font-family: 'Harry Potter';
     font-weight: lighter;
     font-size: 1.3rem;
@@ -79,27 +69,29 @@ body {
     text-shadow: 2px 1px #1616162e;
 }
 
-.main-div {
+.horizontal-center {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.main-container {
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 
 .welcome {
-    display: block;
     text-align: center;
     background-color: #dc9f03c9;
     color: white;
-    width: 43vw;
-    height: 40.5vh;
-    padding: 3em 1.5em;
-    border-radius: 75px;
+    border-radius: 25px;
+    padding: 0.10rem 1.2rem;
+    max-width: 36%;
 }
 
-.welcome h1 {
-    margin-bottom: 0.1em;
+.welcome-title {
     font-size: 2.2rem;
     font-weight: 150;
     font-family: "Harry Potter";
@@ -107,38 +99,44 @@ body {
     text-shadow: 3px 3px #1616162e;
 }
 
-.welcome h2 {
-    margin-bottom: 0.9em;
+.welcome-description {
+    margin-top: -0.8rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
-.footer {
-    position: static;
-    padding: 0.6em;
-    height: 12.5vh;
-    width: 100vw;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #700505;
+.welcome-text {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
-.footer h2 {
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #700505;
+    height: 3.1rem;
+    padding-bottom: 0.2rem;
+    min-width: 100%;
+    bottom: 0;
+    gap: 0.5rem;
+}
+
+.footer-title, .footer-link {
     font-family: "Harry Potter";
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     text-shadow: 3px 2px #1616162e;
     color: white;
+    margin-block-start: 1.8rem;
 }
 
-.footer h3, h4 {
-    font-size: 0.7rem;
+.footer-copyright {
+    color:#ad7d01;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
     font-weight: light;
-}
-
-.footer a {
-    color: rgb(24, 24, 24);
+    margin-block-start: 1.2rem;
 }
 
 .modal-list {
@@ -151,7 +149,6 @@ body {
     justify-content: center;
     display: flex;
     border-radius: 5px;
-    
 }
 
 .modal-content {
@@ -167,7 +164,6 @@ body {
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
     overflow: scroll;
-    
   }
 
   h1.modal-header {
@@ -179,7 +175,6 @@ body {
     text-align: center;
     font-family: "Harry Potter";
     color:#193833;
-
   }
 
   .modal-text {
@@ -213,34 +208,37 @@ body {
 
 body {
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/74ecbef506eb47d586e4378197498aef80494a6c/src/Images/Mobile%20Background%20version.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header {
-    height: 25vh;
-    justify-content: center;
-    position: relative;
-    padding: 5.4em;
+    min-width: 100%;
+    max-height: 25vh;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
     background-position-x: 50%;
-    background-position-y: 2vh;
+    background-position-y: 1.5vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
+}
+
+.page-logo {
+   visibility: hidden;
 }
 
 .menu-btns {
-    top: 16vh;
-    left: 5vw;
-    margin-inline: 0.2em;
-    padding: 0.3em 0.3em;
+    margin-block-start: 1rem;
+    padding: 0.3rem 0.3rem;
     border-width: 1.5px;
     border-radius: 30px;
     font-size: 0.8rem;
 }
-
+/* 
 .search-icon {
-    position: relative;
+    margin-inline-start: -12rem;
     color: #fff;
     font-size: 1.8em;
-    top: -13vh;
-    left: 54vw;
     background-color: #dc9f0306;
     border-radius: 25px;
     border-color: #dc9f0309;
@@ -248,34 +246,44 @@ body {
 
 .search-bar {
     visibility: hidden;
-}
+} */
 
 .welcome {
-    position: relative;
-    flex-direction: row;
-    display: block;
-    text-align: center;
+    margin-block-start: 1.2rem;
     color: white;
-    width: 90vw;
-    height: 25vh;
-    padding: 1.1em;
+    max-width: 70%;
+    max-height: 35%;
+    padding: 0.5rem;
     border-radius: 15px;
 }
 
-.welcome h1 {
-    margin-bottom: 5px;
-    font-size: 1.5rem;
+.welcome-title {
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.3rem;
+    font-size: 1.2rem;
     font-weight: 150;
 }
 
-.welcome h2, h3 {
-    margin-bottom: 4px;
-    font-size: 1rem;
+.welcome-description, .welcome-text {
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.2rem;
+    font-size: 0.85rem;
 }
 
 .footer {
-    height: 15vh;
-    font-size: 0.9rem;
+    min-width: 100%;
+    min-height: 2.5rem;
+}
+
+.footer-link {
+    margin-block-end: 0.9rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-copyright{
+    color: #ad7d01;
+    font-size: 0.7rem;
 }
 
 }
