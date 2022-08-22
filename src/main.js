@@ -1,4 +1,4 @@
-import {ghibli} from './data.js';
+import { ghibli } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films;

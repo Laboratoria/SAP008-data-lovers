@@ -16,13 +16,14 @@ function filterDuration (films, selection) {
 }
 
 function sortedFilms(films, selection) { 
-  const sorted = films.sort((a,b) => {
+  const copy = [...films]
+  const sorted = copy.sort((a,b) => {
     if (selection === 'rt_score') {
       return b.rt_score - a.rt_score;
     } else if (selection === 'release_date') {
-        return b.release_date - a.release_date;
+      return b.release_date - a.release_date;
     } else if (selection === 'order') {
-        return a.release_date - b.release_date
+      return a.release_date - b.release_date;
     }
   });
   return sorted;
@@ -32,11 +33,11 @@ function countFilms (films) {
   return Object.keys(films).length;
 }
 
-function countPeopleModal (films) {
-  const count = films.map((film) => {
-    return (film.people).length;
-  });
-}
+// function countPeopleModal (films) {
+//   const count = films.map((film) => {
+//     return (film.people).length;
+// });
+// }
 
 function countPeople (films) {
   const count = films.map((film) => {
@@ -72,38 +73,4 @@ function filmPeople (films, btn) {
     }
   })
   return filmSelected;
-}
-
-function printCatalogueLoc(films) {
-  const arrayLoc = films.map((film) => {
-    const locations = film.locations.map((loc) => {
-      const templateLoc = `
-      <div class="card-Loc">
-      <button class= "btn-modal-loc" type="button"> 
-      <img class="img-loc" src="${loc.img}" alt="${loc.name}" name="${loc.name}"></button>
-        <br><h7>${loc.name}</h7><br>
-      </div>
-      `;
-      return templateLoc ;
-    });
-    return locations.join('');
-  })
-  return arrayLoc.join('');
-}
-
-function printCatalogueVeh(films) {
-  const arrayVeh = films.map((film) => {
-    const vehicles = film.vehicles.map((veh) => {
-      const templateVeh = `
-      <div class="card-Loc">
-      <button class= "btn-modal-loc" type="button"> 
-      <img class="img-loc" src="${veh.img}" alt="${veh.name}" name="${veh.name}" > </button>
-        <br><h7>${veh.name}</h7><br>
-      </div>
-      `;
-      return templateVeh;
-    });
-    return vehicles.join('');
-  })
-  return arrayVeh.join('');
 }

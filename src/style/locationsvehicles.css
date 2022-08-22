@@ -1,0 +1,205 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+:root {
+    --background: #1D1C38;
+    --background-items: #e26c7a;
+    --background-items-hover: #f1faee;
+    --color-cards: #8193A8;
+    --color-font: #f1faee;
+}
+body {
+    background-color: var(--background);
+    background-image: url(/src/img/loc-veh1-png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+}
+.navbar {
+    font-size: medium;
+    text-align: right;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 10px;
+}
+.navbar a {
+    color: var(--color-font);
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    float: right;
+    display: block;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+  
+.navbar a.active {
+    color: var(--background-items);
+    text-shadow:3px 3px 3px black;
+}
+.header {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.header h1 {
+    font-size: 6vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.img-header {
+    width: 100%;
+}
+.top-locations-vehicles {
+    color: var(--color-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container-locations-vehicles {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 375px;
+    padding: 30px 0;
+}
+.catalogue-locations-vehicles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+.card-loc, .card-veh {
+    margin: 0.5vw;
+    background-color: var(--color-cards);
+    padding: 15px;
+    border-radius: 0.2vw;
+}
+.card-loc > h7, .card-veh > h7 {
+    font-weight: 600;
+}
+.img-loc, .img-veh {
+    width:auto;
+    max-width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+.btn-locations, .btn-vehicles {
+    color: var(--color-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border:none;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    margin: 50px;
+    padding: 0.5vw 2vw;
+    width: 10%;
+    background-color: var(--background-items);
+}
+.btn-locations:hover, .btn-vehicles:hover {
+    background-color: var(--background-items-hover);
+    color: var(--background-items);
+}
+.back {
+    margin: 5%;
+}
+.back-top {
+    color: var(--color-font);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.back-top:hover {
+    text-shadow:4px 4px 4px var(--background-items);
+}
+.footer {
+    color: var(--color-font);
+    font-size: 1rem;
+    width: 100%;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    background-color: var(--background-items);
+}
+.logo-ghibli {
+    width: 180px;
+}
+.totoro {
+    width: 10rem;
+}
+.links {
+    color: var(--color-font);
+    text-decoration: none;
+}
+.links:hover {
+    text-shadow:3px 3px 3px black;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-size:auto;
+    }
+    .header h1 {
+        font-size: 3vh;
+    }
+    .navbar a {
+        font-size: 14px;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .top-locations-vehicles {
+       margin-bottom: 20px;
+    }
+    .btn-locations, .btn-vehicles {
+        width: 25%;
+    }
+    .catalogue-locations-vehicles {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-size: auto;
+    }
+    .header h1 {
+        font-size: 18px;
+    }
+    .navbar a {
+        font-size: 12px;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .top-locations-vehicles {
+       margin-bottom: 10px;
+    }
+    .btn-locations, .btn-vehicles {
+        font-size: 0.8rem;
+        margin: 10px;
+        width: 20%;
+    }
+    .catalogue-locations-vehicles {
+        grid-template-columns: repeat(2, 0.5fr);
+    }
+    .footer {
+        font-size: 0.6rem;
+    }
+    .logo-ghibli, .totoro {
+        width: 5rem;
+    }
+}
