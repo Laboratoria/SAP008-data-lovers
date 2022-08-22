@@ -36,6 +36,15 @@ const rickAndMorty = {
         return filtro;
 
     },
+    ordenar: function(list, sortBy) {
+        if(sortBy === "ascending") {
+            return rickAndMorty.ordenarCrescente(list)
+        }
+        else if(sortBy === "descending" ) {
+            return rickAndMorty.ordenarDecrescente(list)
+        };
+
+    },
 
     // ===== Função de ordenar de forma crescente ====
     ordenarCrescente: function(list) {
