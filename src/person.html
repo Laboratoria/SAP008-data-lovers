@@ -6,38 +6,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
 
     <div class="cabecalho">
+    <img src="imagens/tentativa1.png" alt="logo escrito 'Rick and Morty'" class="logo">
+    </div>
 
-    <img src="imagens/tentativa1.png" alt="logo escrito 'Rick and Morty'">
-
-<section id="radio">
-
-  <div>
-    <ul>
-      <li>
-      <input type="radio" placeholder="A-Z" list="opcoesAZ">
-      <label>A-Z</label>
-    </li>
-    </ul>
-  </div>
-  
-    <div>
-    <ul>
-      <li>
-      <input type="radio" placeholder="Z-A" list="opcoesZA">
-      <label>Z-A</label>
-    </li>
-    </ul>
-  </div>
-
+<section class="botaoOrder">
+    <input type="radio">
+    <label>A-Z</label>
+    <input type="radio">
+    <label>Z-A</label>
 </section>
 
-<section id="ordem">
-
+<section class="filtro">
 <ul>
-    <input type="text" placeholder="Gênero" list="opcoesGenero">
+  <input type="text" placeholder="Gênero" list="opcoesGenero">
   <datalist id="opcoesGenero">
       <option value="Female">Female</option>
       <option value="Male">Male</option>
@@ -55,6 +38,7 @@
       <option value="Humanoid">Humanoid</option>
   </datalist>
 </ul>
+
 <ul>
   <input type="text" placeholder="Origem" list="opcoesOrigem">
   <datalist id="opcoesOrigem">
@@ -62,7 +46,6 @@
   </datalist>
 </ul>
 
-  <div>
   <ul>
       <input type="text" placeholder="Status" list="opcoesStatus">
     <datalist id="opcoesStatus">
@@ -71,17 +54,14 @@
         <option value="Unknown">Unknown</option>
     </datalist>
   </ul>
-</div>
-
   </section>
 
-  <button id="limpar" class="limpar">Limpar</button>
+  <div>
+  <button id="limpar" class="btn">Limpar</button>
+  <button id="enviar" class="btn">Enviar</button>
+  </div>
 
-  <button id="enviar" class="enviar">Enviar</button>
-
-    </div>
-
-
+  
     <script src="main.js" type="module"></script>
   </body>
 </html>
