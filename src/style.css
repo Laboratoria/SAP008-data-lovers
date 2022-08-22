@@ -142,16 +142,23 @@ body {
 .modal-list {
     position: relative;
     width: 704px;
-    height: 650px;
+    height: 530px;
     align-items: center;
     background: rgba(95, 1, 1, 0.83);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
     justify-content: center;
     display: flex;
     border-radius: 5px;
-}
+    }
 
 .modal-content {
+    column-count: 2;
+    cursor: pointer;
+    overflow-x: scroll; /* Hide horizontal scrollbar */
+    overflow-y: hidden; /* Add vertical scrollbar */
+    font-size:15px;
+    margin: 0 auto;
+    padding: 10px;
     position: relative;
     border-radius: 5px;
     top: 0;
@@ -159,11 +166,11 @@ body {
     bottom: 0;
     left: 0;
     width: 592px;
-    height: 469px;
-    font-family: "Franklin Gothic Medium";
+    height: 360px;
+    font-family: "Roboto";
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
-    overflow: scroll;
+    
   }
 
   h1.modal-header {
@@ -174,6 +181,7 @@ body {
     background: #DC9E00;
     text-align: center;
     font-family: "Harry Potter";
+    font-size: 20px;
     color:#193833;
   }
 
