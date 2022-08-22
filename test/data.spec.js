@@ -1,23 +1,41 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterByRegion } from "../src/data.js";
 
+const mockPokemons = [
+    {
+      generation: {
+        num: "generation i",
+        name: "kanto",
+      }
+    },
+    {     
+      generation: {
+        num: "generation ii",
+        name: "johto",
+      }
+    },
+  ];
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe("filterByRegion", () => {
+  it("is a function", () => {
+    expect(typeof filterByRegion).toBe("function");
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it("returns a new array, filtered by region Kanto", () => {
+    const result = filterByRegion(mockPokemons, "kanto");
+    const expected = [
+      { 
+        generation: {
+          num: "generation i",
+          name: "kanto",
+        }
+      },
+    ];
+
+    expect(result).toEqual(expected);
   });
 });
 
+//it("returns a new array, filtered by region Johto", () => {
+ // expect(filterByRegion(pokemons, "johto")).toBe("example");
+//});
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
