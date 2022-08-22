@@ -15,7 +15,7 @@ function criaCard(personagens) {
     const criandoCard = `
         <div class = "cardsBox">
             <div class = "imagem">
-             <img class = "imagemCard" src="${personagem.image}">
+             <img class = "imagemCard" src="${personagem.image}" alt="Imagem personagem">
              <div class = "name">${personagem.name}</div>
             </div>
             <ul class = "textoCard">

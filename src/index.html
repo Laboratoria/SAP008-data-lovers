@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Data Lovers</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Rick and Morty</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -12,6 +13,7 @@
 
   <header>
     <nav class="navegacao">
+      <img class="imagemCabecalho" src="img/rick-and-morty.png" alt="Logo Rick and Morty">
       <ul class="links">
         <li class="linha">Home</li>
         <li class="linha">Sobre a série</li>
@@ -19,7 +21,8 @@
       </ul>
     </nav>
 
-    <div class="divHeader"><img class="imagemHeader" src="img/tamanhoorigin.jpg" alt="Imagem Rick and Morty"></div>
+    <div class="divHeader"><img class="imagemHeader" src="img/tamanhoorigin.jpg" alt="Imagem Rick and Morty">
+    </div>
   </header>
 
   <main>
@@ -43,16 +46,18 @@
       <label for="Filtro2" class="filtros2">Gênero:</label>
       <select name="filtro2" id="genero">
         <option selected disable value="">Todos</option>
-        <option value="Male">Masculino</option>
-        <option value="Female">Feminino</option>
-        <option value="unknown">Desconhecido</option>
+        <option value="Male">Masculino 👦 </option>
+        <option value="Female">Feminino 👧 </option>
+        <option value="unknown">Desconhecido ❔ </option>
       </select>
       <label for="Filtro3" class="filtros3">Status:</label>
       <select name="filtro3" id="status">
         <option selected disable value="">Todos</option>
-        <option value="Alive">Vivo</option>
-        <option value="Dead">Morto</option>
-        <option value="unknown">Desconhecido</option>
+
+        <option value="Alive">Vivo ❤️ </option>
+        <option value="Dead">Morto 💀 </option>
+        <option value="unknown">Desconhecido ❔ </option>
+
       </select>
       <label for="Filtro4" class="filtros4">Ordem Alfabética:</label>
       <select class="filtro4" name="filtro4" id="ordemalfabetica">
@@ -64,6 +69,13 @@
 
     <p class="calculo">Cálculo Agregado</p>
     <div class="cards" id="exibirCards"></div>
+
+    <div class="cards" id="exibirCards"></div>
+    <footer class="footer">
+      <p> &copy; Copyright Rick and Morty desenvolvido por <a href="https://github.com/ClareanaRibeiro"
+          target="_blank">CLAREANA RIBEIRO</a> e <a href="https://github.com/Bellalimalima" target="_blank">ISABELLA
+          LIMA</a> - 2022 </p>
+    </footer>
 
   </main>
 

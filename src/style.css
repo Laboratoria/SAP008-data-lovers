@@ -25,12 +25,15 @@ body {
 .navegacao ul li {
   display: inline-block;
   margin-right: 2vw;
+
   cursor: pointer;
 }
 
 .linha {
   padding: 5px;
+
   font-size: 22px;
+
   display: inline-block;
   cursor: pointer;
 }
@@ -39,15 +42,31 @@ body {
   color: rgb(168, 213, 232);
 }
 
+.imagemCabecalho {
+  height: 100px;
+  object-fit: scale-down;
+  float: right;
+}
+
 select {
   border-radius: 5px;
   font-family: Avocado;
+
   font-size: 16px;
   width: 100px;
   height: 30px;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+}
+
+.imagemHeader {
+  margin-left: 22vw;
+
+  margin-right: 15vw;
+  border-radius: 10px;
+  height: 380px;
+  object-fit: scale-down;
 }
 
 .divHeader {
@@ -67,6 +86,7 @@ select {
   align-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   list-style-type: none;
   cursor: pointer;
   margin-top: 50px;
@@ -74,21 +94,25 @@ select {
 
 .filtros1 {
   font-size: 20px;
+
   margin-left: 10vw;
 }
 
 .filtros2 {
   font-size: 20px;
+
   margin-left: 5vw;
 }
 
 .filtros3 {
   font-size: 20px;
+
   margin-left: 5vw;
 }
 
 .filtros4 {
   font-size: 20px;
+
   margin-left: 5vw;
 }
 
@@ -125,6 +149,15 @@ select {
   right: 10vw;
   text-align: center;
   overflow: hidden;
+  width: 230px;
+
+  height: 330px;
+}
+
+.cardsBox:hover {
+  font-size: 18px;
+  background-color: rgb(106, 105, 105);
+  color: aliceblue;
 }
 
 .textoCard {
@@ -134,4 +167,25 @@ select {
 
 .imagemCard {
   border-radius: 3vw;
+
+  height: 200px;
+
+  width: 200px;
+}
+
+.footer {
+  margin-top: 10px;
+  background-color: rgb(124, 140, 90);
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(217, 205, 169);
 }
