@@ -4,7 +4,6 @@
 }
 
 body {
-
   font-family: Avocado;
   align-items: center;
   justify-content: center;
@@ -21,35 +20,55 @@ body {
   margin-left: none;
   margin-right: none;
   border-radius: 10px;
-  padding: 1vw;
+  padding: none;
   margin-top: 0.1vw;
 }
 
 .navegacao ul li {
   display: inline-block;
+  margin-right: 2vw;
+  /* afastei elementos nav  */
+  cursor: pointer;
+  /* coloquei mãozinha  */
 }
 
 .linha {
-  padding: 1px;
-  font-size: 25px;
+  padding: 5px;
+  /* alterei tam   */
+  font-size: 22px;
+  /* alterei tam   */
   display: inline-block;
+  cursor: pointer;
 }
 
 .linha:hover {
-  color: rgb(86, 72, 115);
+  color: rgb(168, 213, 232);
+  /* alterei roxo p azul rgb(86, 72, 115);  */
+}
+
+.imagemCabecalho {
+  /*tentativa logo,falta alinhar posição  */
+  height: 100px;
+  object-fit: scale-down;
+  float: right;
 }
 
 select {
   border-radius: 5px;
+  font-family: Avocado;
+  /*inclui fonte nas opçoes, aumentei letra e mexi altura e comprimento box*/
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
 }
 
 .imagemHeader {
-  margin-left: 15vw;
+  margin-left: 22vw;
+  /* alterei margin-left, tirei width, alterei height, tirei background e acrescentei object-fit */
   margin-right: 15vw;
   border-radius: 10px;
-  width: 1000px;
-  height: 560px;
-  background-size: cover;
+  height: 380px;
+  object-fit: scale-down;
 }
 
 .divHeader {
@@ -68,27 +87,33 @@ select {
 .cards {
   align-content: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /*tentar colocar 5 cards por vez*/
   list-style-type: none;
 }
 
 .filtros1 {
-  font-size: 25px;
+  font-size: 20px;
+  /*MODIFIQUEI pq ficou mais delicado com novo tam dos cards*/
   margin-left: 10vw;
+  /*MODIFIQUEI AQUI PQ O ULTIMO FILTRO ESTAVA NA OUTRA LINHA*/
 }
 
 .filtros2 {
-  font-size: 25px;
+  font-size: 20px;
+  /*MODIFIQUEI pq ficou mais delicado com novo tam dos cards*/
   margin-left: 5vw;
 }
 
 .filtros3 {
-  font-size: 25px;
+  font-size: 20px;
+  /*MODIFIQUEI pq ficou mais delicado com novo tam dos cards*/
   margin-left: 5vw;
 }
 
 .filtros4 {
-  font-size: 25px;
+  font-size: 20px;
+  /*MODIFIQUEI pq ficou mais delicado com novo tam dos cards*/
   margin-left: 5vw;
 }
 
@@ -108,6 +133,17 @@ select {
   right: 10vw;
   text-align: center;
   overflow: hidden;
+  width: 230px;
+  /*tentativa diminuir tam cards */
+  height: 330px;
+}
+
+
+.cardsBox:hover {
+  /*interação qndo passa mouse nos cards */
+  font-size: 18px;
+  background-color: rgb(106, 105, 105);
+  color: aliceblue;
 }
 
 .textoCard {
@@ -117,4 +153,28 @@ select {
 
 .imagemCard {
   border-radius: 3vw;
+  height: 200px;
+  /*diminui tam dos cards */
+  width: 200px;
+}
+
+.footer {
+  /*criei footer */
+  margin-top: 10px;
+  background-color: rgb(124, 140, 90);
+  ;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+a {
+  /* tirar sublinhado link */
+  text-decoration: none;
+}
+
+a:hover {
+  /* mudando cor qndo passa mouse em cima link */
+  color: rgb(217, 205, 169);
 }
