@@ -152,11 +152,12 @@ body {
     }
 
 .modal-content {
-    column-count: 2;
     cursor: pointer;
-    overflow-x: scroll; /* Hide horizontal scrollbar */
-    overflow-y: hidden; /* Add vertical scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
     font-size:15px;
+    font-family: "Roboto";
+    color:rgb(45, 45, 238);
+    text-decoration: underline;
     margin: 0 auto;
     padding: 10px;
     position: relative;
@@ -167,7 +168,6 @@ body {
     left: 0;
     width: 592px;
     height: 360px;
-    font-family: "Roboto";
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
     

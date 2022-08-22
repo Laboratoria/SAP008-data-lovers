@@ -16,7 +16,7 @@ function displayCharsResult(){
     document.getElementById('characters-list').style.display = 'block';
  
     const charactersResult = document.getElementById('characters-content');
-    return charactersResult.innerHTML = charactersNames.map(names => `<li> ${names}</li>`).join('');
+    return charactersResult.innerHTML = charactersNames.map(names => `<ul><li> ${names}</li></ul>`).join('');
 })
  
 // const btnBooks = document.getElementById('btn-books');
