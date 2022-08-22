@@ -33,6 +33,19 @@ describe("filterByRegion", () => {
 
     expect(result).toEqual(expected);
   });
+
+  it("returns a new array, filtered by region johto", ()=> {
+    const result = filterByRegion(mockPokemons, "johto");
+    const expected = [
+      {
+        generation: {
+          num: "generation ii",
+          name: "johto",
+        }
+      },
+    ];
+    expect(result).toEqual(expected);
+  })
 });
 
 //it("returns a new array, filtered by region Johto", () => {
