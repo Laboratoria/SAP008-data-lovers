@@ -4,29 +4,28 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <!--inserindo favicon e alterei nome title-->
   <title>Rick and Morty</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+
   <header>
+
 
     <nav class="navegacao">
       <img class="imagemCabecalho" src="img/rick-and-morty.png" alt="Logo Rick and Morty">
-      <!--inserindo logo-->
+
       <ul class="links">
         <li class="linha">Home</li>
         <li class="linha">Sobre a série</li>
         <li class="linha">Episódios</li>
       </ul>
     </nav>
-
-
     <div class="divHeader"><img class="imagemHeader" src="img/tamanhoorigin.jpg" alt="Imagem Rick and Morty">
-      <!--descrevendo img-->
-
     </div>
+
   </header>
 
   <main>
@@ -34,18 +33,18 @@
       <label for="Filtro" class="filtros1">Espécie:</label>
       <select name="filtro" id="especie">
         <option selected disable value="">Todos</option>
-        <option id="humano" value="Human">Humano 🙎‍♂️ </option>
-        <option id="humanoide" value="Humanoid">Humanóide 🧟 </option>
-        <option id="alien" value="Alien">Alien 👽 </option>
-        <option id="poopybutthole" value="Poopybutthole">Poopybutthole 💩 </option>
-        <option id="mitologico" value="Mytholog">Mitológico 🦄 </option>
-        <option id="animal" value="Animal">Animal 🦊 </option>
-        <option id="vampiro" value="Vampire">Vampiro 🧛 </option>
-        <option id="robo" value="Robot">Robô 🤖 </option>
-        <option id="cronenberg" value="Cronenberg">Cronenberg 👾 </option>
-        <option id="cronenberg" value="Disease">Doença 🤒 </option>
-        <option id="cronenberg" value="Parasite">Parasita 🦠 </option>
-        <option id="cronenberg" value="unknown">Desconhecido ❔ </option>
+        <option value="Human">Humano 🙎‍♂️ </option>
+        <option value="Humanoid">Humanóide 🧟 </option>
+        <option value="Alien">Alien 👽 </option>
+        <option value="Poopybutthole">Poopybutthole 💩 </option>
+        <option value="Mytholog">Mitológico 🦄 </option>
+        <option value="Animal">Animal 🦊 </option>
+        <option value="Vampire">Vampiro 🧛 </option>
+        <option value="Robot">Robô 🤖 </option>
+        <option value="Cronenberg">Cronenberg 👾 </option>
+        <option value="Disease">Doença 🤒 </option>
+        <option value="Parasite">Parasita 🦠 </option>
+        <option value="unknown">Desconhecido ❔ </option>
       </select>
       <label for="Filtro2" class="filtros2">Gênero:</label>
       <select name="filtro2" id="genero">
@@ -57,9 +56,11 @@
       <label for="Filtro3" class="filtros3">Status:</label>
       <select name="filtro3" id="status">
         <option selected disable value="">Todos</option>
+
         <option value="Alive">Vivo ❤️ </option>
         <option value="Dead">Morto 💀 </option>
         <option value="unknown">Desconhecido ❔ </option>
+
       </select>
       <label for="Filtro4" class="filtros4">Ordem Alfabética:</label>
       <select class="filtro4" name="filtro4" id="ordemalfabetica">
@@ -69,11 +70,16 @@
       </select>
     </section>
 
-
+    <p class="calculo">Cálculo Agregado</p>
     <div class="cards" id="exibirCards"></div>
+
+
     <footer class="footer">
-      <p> &copy; Copyright Rick and Morty desenvolvido por <a href="https://github.com/ClareanaRibeiro" target="_blank">CLAREANA RIBEIRO</a> e <a href="https://github.com/Bellalimalima" target="_blank">ISABELLA LIMA</a> - 2022 </p>
+      <p> &copy; Copyright Rick and Morty desenvolvido por <a href="https://github.com/ClareanaRibeiro"
+          target="_blank">CLAREANA RIBEIRO</a> e <a href="https://github.com/Bellalimalima" target="_blank">ISABELLA
+          LIMA</a> - 2022 </p>
     </footer>
+
   </main>
 
   <script src="main.js" type="module"></script>
