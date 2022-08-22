@@ -13,19 +13,7 @@ const rickAndMorty = {
 
         return filtro;  
     },
-
-    /*const filtroStatus = filtrarPorStatus();
-
-    media: function (list, status) {
-        const tamanhoStatus = status.length;
-        const tamanhoTotal = list.length;
-        const resultPercentage = (tamanhoStatus * 100)/tamanhoTotal;
-        console.log(resultPercentage);
-
-        return resultPercentage;
-    };
-    media();*/
-   
+     
     // ===== Função de filtro por espécie ====
     filtrarPorEspecie: function (list, species) {
         const filtro = list.filter(function(personagem) {
@@ -48,6 +36,46 @@ const rickAndMorty = {
         return filtro;
 
     },
+
+    // ===== Função de ordenar de forma crescente ====
+    ordenarCrescente: function(list) {
+        const ordem = list.sort(function (a, b) {
+            if (a.name === b.name){
+                return 0;
+            }
+            /*return a.name > b.name ? 1 : -1 ;*/
+
+            if (a.name > b.name) {
+              return 1;
+            }else {
+              return -1;
+            }            
+            
+          });          
+        return ordem;
+
+    },   
+    // ===== Função de ordenar de forma decrescente ====
+    ordenarDecrescente: function(list) {
+        const ordem = list.sort(function (a, b) {
+            if (a.name === b.name){
+                return 0;
+            }
+            /*return a.name > b.name ? 1 : -1 ;*/
+
+            if (a.name > b.name) {
+              return -1;
+            }else {
+              return 1;
+            }            
+            
+          });          
+        return ordem;
+
+    },
+    
+
+
     // ===== Função buscar por nome ====
     buscarPorNome: function (list, name) {
         const filtro = list.filter(function(personagem) {
@@ -56,19 +84,14 @@ const rickAndMorty = {
         });
         return filtro;
     },
-
-    
+  
 
     // ===== função de porcentagem dos personagens filtrados =====
     
-    calcularPorcentagem: function(list, listaFiltrada) {
-        const tamanhoList = list.length;        
-        const tamanhoListaFiltrada = listaFiltrada.length;        
+    calcularPorcentagem: function(tamanhoList, tamanhoListaFiltrada) {            
 
-        const result = Math.round((tamanhoListaFiltrada*100)/tamanhoList);
-        
-        return result;
-
+        return Math.round((tamanhoListaFiltrada*100)/tamanhoList);
+               
     }
     
 };  

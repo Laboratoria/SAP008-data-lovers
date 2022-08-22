@@ -32,9 +32,9 @@ const selectStatus = document.querySelector('#select-status');
 const selectSpecies = document.querySelector('#select-species');
 const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
+const optionAscending = document.querySelector('#ascending');
+const optionDescending = document.querySelector('#descending');
 const percentage = document.querySelector('#percentage');
-
-const sortAscending = document.querySelector('#ascending')
 const searchForName = document.querySelector('#btn-search');
 
 // ===== evento para mostrar os cards na tela ====
@@ -48,7 +48,7 @@ selectStatus.addEventListener('change', (event) => {
     cardContainer.innerHTML = cards;  
     
     // === evento para porcentagem ====
-    const porcentagem = rickAndMorty.calcularPorcentagem(list, listaFiltrada);    
+    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);    
     percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";   
 
 });
@@ -61,7 +61,7 @@ selectSpecies.addEventListener('change', (event) => {
     cardContainer.innerHTML = cards;
 
     // === evento para porcentagem ====
-    const porcentagem = rickAndMorty.calcularPorcentagem(list, listaFiltrada);    
+    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);    
     percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";   
 
 });
@@ -75,16 +75,29 @@ selectGender.addEventListener('change', (event) => {
     cardContainer.innerHTML = cards;
 
     // === evento para porcentagem ====
-    const porcentagem = rickAndMorty.calcularPorcentagem(list, listaFiltrada);    
+    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);    
     percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";
 
 });
 
-
-// ===== evento para ordenar ====
-selectOrder.addEventListener('change', (event) => {
+// ===== evento para ordenar crescente ====
+optionAscending.addEventListener('change', (event) => {
     const value = event.target.value;
-    window.alert(value);
+    const listaCrescente = rickAndMorty.ordenarCrescente(list);
+    
+    const cards = displayCards(listaCrescente);
+    cardContainer.innerHTML = cards;
+    
+});
+
+// ===== evento para ordenar decrescente ====
+optionDescending.addEventListener('change', (event) => {
+    const value = event.target.value;
+    const listaDecrescente= rickAndMorty.ordenarDecrescente(list);
+
+    const cards = displayCards(listaDecrescente);
+    cardContainer.innerHTML = cards;
+    
 });
 
 // ===== evento para buscar por nome ====
@@ -94,4 +107,3 @@ searchForName.addEventListener('keyup', function(event) {
     const cards = displayCards(listaFiltrada);
     cardContainer.innerHTML = cards;
 });
-
