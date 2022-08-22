@@ -1,6 +1,6 @@
 html, body {
     max-width: 100%;
-    max-height: 100vh;
+    min-height: 100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ html, body {
 .header {
     display: flex;
     background-color: #700505;
-    height: 20%;
+    height: 19vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -22,30 +22,27 @@ html, body {
 }
 
 .page-logo {
-    margin-top: 1rem;
-    margin-left: -4rem;
-    margin-right: 25rem;
+    margin-block-start: 0.5rem;
+    margin-inline-start: -4rem;
+    margin-inline-end: 25rem;
 }
-
+/* 
 .search-bar {
-    max-width: fit-content;
     border-radius: 5px;
     padding: 0.5rem;
     border-color: #700505;
 }
 
 .search-icon {
-    max-width: fit-content;
     padding: 0.25rem;
     font-size: 1rem;
     color: #193833;
     background-color: #DC9F03;
     border-radius: 5px;
     border-color: #DC9F03;
-}
+} */
 
 .menu-btns {
-    max-width: fit-content;
     text-align: center;
     padding: 0.2rem;
     margin-left: 0.3rem;
@@ -77,9 +74,8 @@ html, body {
 .main-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    min-height: 30rem;
+    min-height: 73vh;
     flex-wrap: wrap;
 }
 
@@ -87,8 +83,8 @@ html, body {
     text-align: center;
     background-color: #dc9f03c9;
     color: white;
-    border-radius: 55px;
-    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    padding: 0.10rem 1.2rem;
     max-width: 40%;
 }
 
@@ -115,33 +111,30 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color: #700505;
-    padding-top: 0.8rem;
-    min-width: 100vw;
-    max-height: 4.5rem;
-    position: static;
+    height: 3.1rem;
+    padding-bottom: 0.2rem;
+    min-width: 100%;
+    position: relative;
     bottom: 0;
+    gap: 0.5rem;
 }
 
-.github-logo {
-    margin-bottom: -0.5rem;
-}
-
-.footer-title {
+.footer-title, .footer-link {
     font-family: "Harry Potter";
     font-weight: 100;
     font-size: 1.4rem;
     text-shadow: 3px 2px #1616162e;
     color: white;
-    margin-bottom: -0.4rem;
-    margin-top: 0.8rem;
+    margin-block-start: 1.8rem;
 }
 
 .footer-copyright {
+    color:#ad7d01;
     margin-top: 0.3rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: light;
+    margin-block-start: 1.2rem;
 }
 
 .modal-list {
@@ -154,7 +147,6 @@ html, body {
     justify-content: center;
     display: flex;
     border-radius: 5px;
-    
 }
 
 .modal-content {
@@ -212,18 +204,17 @@ html, body {
 
 @media only screen and (max-width: 600px){
 
-body {
-    height: 100vh;
-    margin: 0;
+html, body {
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/74ecbef506eb47d586e4378197498aef80494a6c/src/Images/Mobile%20Background%20version.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header {
-    display: inline-block;
-    max-width: 100%;
+    min-width: 100%;
     max-height: 25vh;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
-    background-position-x: 12vw;
+    background-position-x: 50%;
     background-position-y: 1.5vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -235,17 +226,15 @@ body {
 }
 
 .menu-btns {
-    margin-inline-start: 3.2rem;
-    margin-block-start: 2.5rem;
+    margin-block-start: 1rem;
     padding: 0.3rem 0.3rem;
     border-width: 1.5px;
     border-radius: 30px;
     font-size: 0.8rem;
 }
-
+/* 
 .search-icon {
-    visibility: hidden;
-    margin-inline-start: 20rem;
+    margin-inline-start: -12rem;
     color: #fff;
     font-size: 1.8em;
     background-color: #dc9f0306;
@@ -255,14 +244,14 @@ body {
 
 .search-bar {
     visibility: hidden;
-}
+} */
 
 .main-container {
-    max-height: 55vh;
-
+    min-height: 75vh;
 }
 
 .welcome {
+    margin-block-start: 1.2rem;
     color: white;
     max-width: 45%;
     padding: 1.1em;
@@ -275,23 +264,25 @@ body {
 }
 
 .welcome-description, .welcome-ptext {
-    margin-bottom: 4px;
+    margin-block-end: 4px;
     font-size: 0.78rem;
 }
 
 .footer {
+    position: absolute;
     min-width: 100%;
-    max-height: 3.5rem;
-    position: fixed;
+    min-height: 2.5rem;
 }
 
-.footer-title {
-    font-size: 1.2rem;
-    margin-bottom: -1.5rem;
+.footer-link {
+    margin-block-end: 0.9rem;
+    color: white;
+    font-size: 1rem;
 }
 
 .footer-copyright{
-    visibility: hidden;
+    color: #ad7d01;
+    font-size: 0.7rem;
 }
 
 }
