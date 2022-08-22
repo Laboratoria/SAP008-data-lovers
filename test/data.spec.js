@@ -30,6 +30,8 @@ const arrayTest = [
   } 
 ];
 
+
+
 describe('rickAndMorty', () => {
 
   it('rickAndMorty is a object', () => {
@@ -94,6 +96,84 @@ describe('filtrarPorGenero', () => {
   });
 });
 
+
+describe('ordenar', () => {
+  it('é uma função', () => {
+    expect(typeof rickAndMorty.ordenar).toBe('function');
+
+  });
+
+  it('ordenar de forma crescente de A-Z', () => {
+    const personagem = rickAndMorty.ordenar(arrayTest, 'ascending')
+    expect(personagem.length).toEqual(4); 
+    expect(personagem).toEqual([
+      {
+        name: "Beth Smith",
+        status: "Alive",
+        species: "Human",
+        gender: "Female"
+      },
+
+      {
+        name: "Morty Smith",
+        status: "Alive",
+        species: "unknown",
+        gender: "Male"
+      },
+
+      {
+        name: "Rick Sanchez",
+        status: "Alive",
+        species: "Human",
+        gender: "unknown"
+      },
+
+      {
+        name: "Tiny Rick",
+        status: "Dead",
+        species: "Alien",
+        gender: "Female"
+      } 
+    ]);
+  });
+    
+  it('ordenar de forma decrescente de Z-A', () => {
+    const personagem = rickAndMorty.ordenar(arrayTest, 'descending')
+    expect(personagem.length).toEqual(4); 
+    expect(personagem).toEqual([
+      {
+        name: "Tiny Rick",
+        status: "Dead",
+        species: "Alien",
+        gender: "Female"
+      },
+
+      {
+        name: "Rick Sanchez",
+        status: "Alive",
+        species: "Human",
+        gender: "unknown"
+      },
+
+      {
+        name: "Morty Smith",
+        status: "Alive",
+        species: "unknown",
+        gender: "Male"
+      },
+
+      {
+        name: "Beth Smith",
+        status: "Alive",
+        species: "Human",
+        gender: "Female"
+      }  
+    ]);
+  });
+
+});
+
+
 describe('buscarPorNome', () => {
 
   it('é uma função', () => {
@@ -104,6 +184,7 @@ describe('buscarPorNome', () => {
       const personagens = rickAndMorty.buscarPorNome(arrayTest, "Rick");
       expect(personagens.length).toEqual(2);
   });
+  
 });
 
 

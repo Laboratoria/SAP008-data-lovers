@@ -42,7 +42,7 @@ const rickAndMorty = {
         }
         else if(sortBy === "descending" ) {
             return rickAndMorty.ordenarDecrescente(list)
-        };
+        }
 
     },
 
