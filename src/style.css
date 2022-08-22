@@ -1,7 +1,10 @@
 * {
     font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
-}
+    text-align: center;
+  }
 .body-inicial { 
     background-color: #1D1C38;
     background-image: url(img/desktop/Cabeçalho2.png);
@@ -25,15 +28,16 @@
     align-items: center;
     color:#f1faee;
     text-align: right;
+    flex-wrap: wrap;
 }
 .description-img {
-    margin: 0 0 0 -5vw;
-    width: 40vw;
+    margin: 2vw 0 0 -7vw;
+    width: 40rem;
 }
 .description-text {
-    margin: -1vw 1vw 0 0;
-    width: 49%;
-    font-size: 2.1rem;
+    margin: 5vw 1vw 0 0;
+    width: 52%;
+    font-size: 2rem;
 }
 .counter {
     color: #e26c7a;
@@ -41,10 +45,10 @@
     font-size: 2.4rem;
 }
 .div-btn-inicial {
-    width: 57%;
+    width: 120%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: -4vw 0 0 32vw;
+    margin: 3vw 5vw 0 -5vw;
     column-gap: 1vw;
 }
 .btn-inicial{
@@ -52,12 +56,12 @@
     border:none;
     min-height: 100%;
     width: 100%;
-    padding: 0.5vw 2vw;
+    padding: 0.5vw;
     background-color: #e26c7a;
     color: #f1faee;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     border-radius: 0.5vw; 
     text-decoration: none;
@@ -66,35 +70,46 @@
     background-color: #f1faee;
     color: #e26c7a;
 }
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 900px){
     body { 
         background-image: url(img/mobile/Cabeçalho3.svg);
     }
     .top {
-        margin: 2% 10% 0;
-        font-size: 3vw;
+        font-size: 1.5rem;
     }
-    .description {
-        margin-top: -5vw;
+    .description-img {
+        width: 20rem;
     }
     .description-text {
-        margin: -1vw 1vw 0 2vw;
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .counter {
-        color: #e26c7a;
-        text-shadow: black 1.5px 1.5px 2px;
-        font-size: 0.6rem;
+        font-size: 1.2rem;
     }
     .btn-inicial{
-        min-height: 100%;
-        width: 100%;
-        padding: 0.5vw 2vw;
+        font-size: 0.8rem;
+    } 
+}
+@media only screen and (max-width: 420px){
+    body { 
+        background-image: url(img/mobile/Cabeçalho3.svg);
+    }
+    .top {
+        font-size: 0.9rem;
+    }
+    .description-img {
+        width: 10rem;
+        margin: 0 1vw 0 -8vw;
+    }
+    .description-text {
+        font-size: 0.5rem;
+        margin: 3vw -3vw 0 1vw;
+    }
+    .counter {
+        font-size: 0.7rem;
+    }
+    .btn-inicial{
         font-size: 0.3rem;
-        font-weight: 600;
-    }
-    .btn-inicial:hover {
-        background-color: #f1faee;
-        color: #e26c7a;
-    }
+    } 
 }

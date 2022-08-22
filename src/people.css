@@ -1,16 +1,16 @@
 * {
   font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
-}
-.container {
-  margin: 1vw 13vw;
+  text-align: center;
 }
 .body-people {
   background-color: #1D1C38;
-  background-image: url(img/desktop/rodapecomlogo.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:100vw;
+}
+.container {
+  margin: 1vw 13vw;
+  min-height: 125vw;
 }
 .top-people {
   color: #f1faee;
@@ -18,29 +18,52 @@
   width: 100%;
 }
 .img-top{
-  width: 99.7vw;
+  width: 100vw;
   margin-left: -10px;
 }
 .title-people{
   font-size: 4.5vw;
   margin: -10vw 0 0;
 }
+.navbar {
+  margin: 6vw 35vw 4vw 25vw;
+  font-size: medium;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+.navbar a {
+  color: #f1faee;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  float: right;
+  display: block;
+}
+.navbar a:hover {
+  text-decoration: underline;
+} 
+.navbar a.active {
+  color:  #e26c7a;
+  text-shadow:3px 3px 3px black;
+}
 .description-people {
-  padding: 5vw 0 0;
+  padding: 0;
   text-align: center;
   font-size: 2rem;
   color: #f1faee;
 }
 .film-people {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   column-gap: 1vw;
   row-gap: 1vw;
   width: 100%;
   justify-content: center;
   align-content: center;
-  margin: 5vw 0;
+  margin: 4vw 0;
 }
 .btn-film-people {
   margin: auto;
@@ -63,7 +86,7 @@
 .catalogue-people {
   margin: 0 5vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 1vw;
   row-gap: 1vw;
   justify-content: center;
@@ -76,8 +99,8 @@
   min-height: 100%;
 }
 .div-img-people{
-  width: 100%; 
-  height: 70%;
+  width: 15vw; 
+  height: 15vw;
 }
 .card-people-img {
   width: 100%; 
@@ -88,53 +111,125 @@
 }
 .person-details{
   font-size: 1.2rem;
-  padding: 0.8vw 0;
-  line-height: 0.3;
-  margin: 0;
+  padding-top: 1vw;
 }
-.footer-img-totoro{
-  width: 20vw;
-  margin-left: 75%;
+.back {
+  margin: 5%;
+  text-align: center;
+}
+.back-top {
+  color: #f1faee;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.back-top:hover {
+  text-shadow:4px 4px 4px #e26c7a;
+}
+.footer {
+  max-width: 100%;
+  color:  #f1faee;
+  font-size: 1rem;
   bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 5vw;
+  align-items: center;
+  background-color: #e26c7a;
 }
-
-@media only screen and (max-width: 600px){
+.logo-ghibli {
+  width: 180px;
+}
+.totoro {
+  width: 10rem;
+}
+.links {
+  color:  #f1faee;
+  text-decoration: none;
+}
+.links:hover {
+  text-shadow:3px 3px 3px black;
+}
+@media only screen and (max-width: 900px){
+  .navbar {
+    margin: 6vw 25vw 0 20vw;
+  }
+  .navbar a {
+    font-size: 14px;
+  }
   .description-people {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .film-people {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
   .btn-film-people {
-    padding: 0.7vw 1.5vw;
-    font-size: 0.4rem;
+    padding: 0.7vw 3vw;
+    font-size: 0.9rem;
   }
   .catalogue-people {
-    margin: 10vw 5vw 40vw;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    min-height: 100%;
-  }
-  .card-people {
-    align-content: center;  
-    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
   }
   .div-img-people{
-    width: 100%; 
-    height: 70%;
-  }
-  .card-people-img {
-    width: 100%; 
-    height: 100%;
-    object-fit: none;
-    object-position: 45% 5%;
+    width: 22vw; 
+    height: 25vw;
   }
   .person-details{
-    font-size: 0.6rem;
-    margin: 2vw -5vw 0;
+    font-size: 1rem;
   }
-  .footer{
-    width: 99.7vw;
-    bottom: 0;
+  .back-top {
+    font-size: 0.8rem;
+  }
+  .footer {
+    font-size: 0.7rem;
+  }
+  .logo-ghibli {
+    width: 120px;
+  }
+  .totoro {
+    width: 7rem;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .navbar {
+    margin: 6vw 20vw;
+  }
+  .navbar a {
+    font-size: 10px;
+    padding: 5px 3px;
+  }
+  .description-people {
+    font-size: 0.8rem;
+  }
+  .film-people {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-film-people {
+    padding: 1vw 1.5vw;
+    font-size: 0.6rem;
+  }
+  .catalogue-people {
+    margin: 10vw 5vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .div-img-people{
+    width: 35vw; 
+    height: 55vw;
+  }
+  .person-details{
+    font-size: 0.8rem;
+  }
+  .back-top {
+    font-size: 0.65rem;
+  }
+  .footer {
+    font-size: 0.47rem;
+  }
+  .logo-ghibli {
+    width: 60px;
+  }
+  .totoro {
+    width: 5rem;
   }
 }

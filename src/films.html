@@ -3,19 +3,31 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Ghibli</title>
-    <link rel="stylesheet" href="src/style/films.css" />
+    <link rel="stylesheet" href="films.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
   </head>
   <body class="body-films">
     <header class="top-films">
-      <img class="img-top-films" src="img/desktop/cabecalhofilm.png">
-      <h1 class="title-films">Filmografia</h1>
+      <div class="header">
+        <img class="img-top-films" src="img/desktop/cabecalhofilm.png">
+        <h1 class="title-films">Filmografia</h1>
+      </div> 
+      <!-- <div class="navbar" id="navbas"> -->
+        <nav class="navbar" id="navbar">
+          <a href="index.html">Home</a>
+          <a href="films.html">Filmes</a>
+          <a href="#top" class="active">Personagens</a>
+          <a href="locationsvehicles.html">Veículos e Locais</a>
+          <!-- <a class="icon">
+            <i class="fa fa-bars"></i>
+          </a> -->
+        </nav>
     </header>
     <main class="container">
       <p class="films-description">Escolha o filme que mais combina com você usando 
-        nossos filtros de preferência ou mesmo saber um pouco mais dos detalhes de cada história! </p>
+        nossos filtros de preferência e descubra um pouco mais dos detalhes de cada história! </p>
       <section class="btn-catalogue">
         <select id="order-by" name="order" class="btn-catalogue-filter"> 
           <option name="order" value="order" selected>Ordenar por</option>
@@ -32,9 +44,15 @@
       <div class="test-catalogue"><div class="catalogue"></div></div>
       <div class="modal"></div>
     </main>
+    <nav class="back">
+      <a class="back-top" href="#top"> Voltar ao topo</a>
+    </nav>
     <footer class="footer">
-        <img class="footer-img-totoro" src="img/totoro.png">
+      <a href="https://www.ghibli.jp/" target="_blank"><img class="logo-ghibli" src="img/Studio_Ghibli_logo.svg"></a>
+      <p class="footer-txt">Elaborado por <a href="https://github.com/marinamassaneiro" target="_blank" class="links">Marina Massaneiro </a>e <a href="https://github.com/kabianca" target="_blank" class="links">Karla Oliveira</a><br>
+        Bootcamp de Desenvolvimento Web da Laboratória | Turma SP008 | 2022</p>
+      <img class="totoro" src="img/totoro1.png">
     </footer>
-    <script src="js/films.js" type="module"></script>
+    <script src="films.js" type="module"></script>
   </body>
 </html>

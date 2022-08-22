@@ -10,8 +10,8 @@ function printCatalogue(filmsList) {
       <div class="card">
         <button class= "btn-modal" type="button"> 
         <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
-        <br><h7>${film.title}</h7><br>
-        <h7>${film.release_date}</h7>
+        <br><h7><strong>${film.title}</strong></h7><br>
+        <h7>(${film.release_date})</h7>
       </div>
       `;
     return template; 
@@ -29,7 +29,7 @@ function printModal (film) {
       <p>Score: ${film.rt_score}</p> 
     </div>
     <div class="modal-description">
-      <p>${film.description}</p>
+      <p>${film.description}</p><br>
       <p><strong>${(film.people).length} personagens ajudam a contar essa história!</strong></p>
     </div>
     <button class="close">Sair</button>

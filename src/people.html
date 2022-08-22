@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Ghibli</title>
-    <link rel="stylesheet" href="style/people.css" />
+    <link rel="stylesheet" href="people.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
@@ -12,6 +12,15 @@
     <header class="top-people">
       <img class="img-top" src="img/personagemcomcabecalho.png">
       <h1 class="title-people">Personagens</h1>
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="films.html">Filmes</a>
+        <a href="#top" class="active">Personagens</a>
+        <a href="locationsvehicles.html">Veículos e Locais</a>
+        <a class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
     </header>
 
     <main class="container">
@@ -42,9 +51,15 @@
           </section>
           <div class="catalogue-people"></div>
     </main>
+    <nav class="back">
+      <a class="back-top" href="#top"> Voltar ao topo</a>
+    </nav>
     <footer class="footer">
-      <img class="footer-img-totoro" src="img/totoro.png">
+      <a href="https://www.ghibli.jp/" target="_blank"><img class="logo-ghibli" src="img/Studio_Ghibli_logo.svg"></a>
+      <p class="footer-txt">Elaborado por <a href="https://github.com/marinamassaneiro" target="_blank" class="links">Marina Massaneiro </a>e <a href="https://github.com/kabianca" target="_blank" class="links">Karla Oliveira</a><br>
+        Bootcamp de Desenvolvimento Web da Laboratória | Turma SP008 | 2022</p>
+      <img class="totoro" src="img/totoro1.png">
     </footer>
-    <script src="js/people.js" type="module"></script>
+    <script src="people.js" type="module"></script>
   </body>
 </html>
