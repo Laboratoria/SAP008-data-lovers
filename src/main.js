@@ -2,8 +2,8 @@ import {mainFilters} from './data.js';
 import data from './data/harrypotter/data.js';
  
 const dataBaseCharacters = data.characters;
-// const dataBaseBooks = data.books;
-// const dataBaseSpells = data.spells;
+const dataBaseBooks = data.books;
+// const dataBaseSpells = data.spells; 
  
 const btnCharacters = document.getElementById('btn-characters');
  
@@ -19,19 +19,20 @@ function displayCharsResult(){
     return charactersResult.innerHTML = charactersNames.map(names => `<ul><li> ${names}</li></ul>`).join('');
 })
  
-// const btnBooks = document.getElementById('btn-books');
+const btnBooks = document.getElementById('btn-books');
  
-// btnBooks.addEventListener('click',
-// function displayBooksResult(){
-//     mainFilters.displayBooksList(dataBaseBooks);
-//     document.getElementById('welcome-section').style.display = 'none';
-//     document.getElementById('characters-list').style.display = 'none';
-//     document.getElementById('spells-list').style.display = 'none';
-//     document.getElementById('books-list').style.display = 'block';
-//     const booksResult = document.getElementById('books-list');
-//     return booksResult.innerHTML = books;
+btnBooks.addEventListener('click',
+function displayBooksList(){
+    const bookTitles = mainFilters.displayBooksList(dataBaseBooks);
+    document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('characters-list').style.display = 'none';
+    document.getElementById('spells-list').style.display = 'none';
+    document.getElementById('books-list').style.display = 'block';
+
+    const booksResult = document.getElementById('books-content');
+    return booksResult.innerHTML = bookTitles.map(title => `<ul><li> ${title}</li></ul>`).join('');
  
-// })
+})
  
 // const btnSpells = document.getElementById('btn-spells');
  
