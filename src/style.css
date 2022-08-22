@@ -115,7 +115,6 @@ html, body {
     height: 3.1rem;
     padding-bottom: 0.2rem;
     min-width: 100%;
-    position: relative;
     bottom: 0;
     gap: 0.5rem;
 }
