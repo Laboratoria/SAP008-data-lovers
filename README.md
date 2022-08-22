@@ -104,6 +104,9 @@ Criou-se um teste para verificar se o filtro se tratava de uma função. Depois 
 ### Teste de buscar por nome: 
 Criou-se um teste para verificar se o filtro se tratava de uma função. Além disso, definiu-se um teste para verificar a quantidade de objetos que continham o nome 'Rick' na array mock.
 
+### Teste para ordenar: 
+Criou-se um teste para verificar se a função de ordenar se tratava de uma função. Além disso, definiu-se um teste para verificar a quantidade de objetos que retornavam na array mock quando a função era chamada. Por fim, criou-se um teste para verificar os objetos que retornavam os nomes dos personagens em ordem alfabética de forma crescente e descrescente.
+
 ## 6. XXXXXXX
 
 
