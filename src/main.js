@@ -14,9 +14,9 @@ function gerarCard(personagem) {
                     </div>
                     <div class="overLap-group">
                         <div class="caixa-de-texto caixa-de-texto-status">Status: ${personagem.status}</div>
-                        <div class="caixa-de-texto caixa-de-texto-nome">Nome: ${personagem.name}</div>
-                        <div class="caixa-de-texto caixa-de-texto-genero">Gênero: ${personagem.gender}</div>
-                        <div class="caixa-de-texto caixa-de-texto-especie">Espécie: ${personagem.species}</div>
+                        <div class="caixa-de-texto caixa-de-texto-nome">Name: ${personagem.name}</div>
+                        <div class="caixa-de-texto caixa-de-texto-genero">Gender: ${personagem.gender}</div>
+                        <div class="caixa-de-texto caixa-de-texto-especie">Species: ${personagem.species}</div>
                     </div>
                 </div>
             </div>
@@ -55,5 +55,7 @@ selectOrderAz.addEventListener('change', listarCards);
 listarCards();
 
 
-
+let buttonClear = document.querySelector('clear').value;
+let clearPage = buttonClear.
+buttonClear.addEventListener('click', )
 
