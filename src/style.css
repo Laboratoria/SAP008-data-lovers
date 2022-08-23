@@ -84,10 +84,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  body {
-    background-image: url(img/mobile/Cabeçalho3.svg);
-  }
-
   .top {
     font-size: 1.6rem;
   }

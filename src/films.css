@@ -17,10 +17,12 @@
 
 body {
   background-color: #1D1C38;
-  background-image: url(img/mononoke.png);
+  background-image: url(img/kiks.png);
   background-repeat: no-repeat;
-  background-size: 20vw;
-  background-position: 65vw 18vw;
+  background-size: 40vw;
+  background-position: 62vw 10vw;
+  /* background-size: 40vw;
+  background-position: 57vw 14vw; */
   display: fixed;
 }
 
