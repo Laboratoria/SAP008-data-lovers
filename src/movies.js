@@ -16,7 +16,7 @@ function showFilms(data) {
            <li><strong>Description: </strong>${item.description}</li>
            <li><strong>Director: </strong>${item.director}</li>
            <li><strong>Producer: </strong>${item.producer}</li>
-           <li><strong>Release date: </strong>${item.release_date}</li>      
+           <li><strong>Release date: </strong>${item.release_date}</li>
            <li><strong>Score: </strong>${item.rt_score}</li>
          </ul>
           </div>
@@ -27,4 +27,6 @@ function showFilms(data) {
   document.getElementById('cards').innerHTML = filmsInfo;
 }
 
-showFilms(movies)
+showFilms(movies);
+
+

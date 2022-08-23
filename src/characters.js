@@ -12,7 +12,7 @@ let characters = movies.reduce(function(chars, film){
 }, []);
 
 function showCharacters(data) {
-  const CharactersInfo = data.map((item) => {
+  const charactersInfo = data.map((item) => {
     return `
   <div class="flipCard">
          <div class="flipCardFront">
@@ -33,10 +33,10 @@ function showCharacters(data) {
 
   `}).join('')
 
-  document.getElementById('cards').innerHTML = CharactersInfo;
+  document.getElementById('cards').innerHTML = charactersInfo;
 }
 
-showCharacters(characters);
+showCharacters(characters)
 
 //ORDENAR //
 
@@ -46,8 +46,6 @@ selectElement.addEventListener('change', (event) => {
   const value = event.target.value
   console.log(event.target.value)
   const orderedList = alphabeticOrder(characters, value)
-  document.getElementById('cards').innerHTML = CharactersInfo;
   showCharacters(orderedList)
 });
-
 
