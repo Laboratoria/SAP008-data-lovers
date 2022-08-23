@@ -1,0 +1,23 @@
+body{
+    background-color: #04ADBF;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    max-width: 300%;
+    max-height: 300%;
+}
+   .cat {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards{
+    border-radius: 150px;
+}
