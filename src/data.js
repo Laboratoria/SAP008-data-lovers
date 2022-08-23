@@ -16,11 +16,3 @@ export const computeStats = (data,typeData, condition) => data.reduce((initialTy
  return initialType + (totalType[typeData] === condition);
 },0)
 
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};

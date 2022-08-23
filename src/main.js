@@ -25,25 +25,37 @@ printCards(data.results);
 
 const selectGender = document.querySelector(".select-gender");
 const selectSpecies = document.querySelector(".select-species");
-//const selectStatus = document.querySelector(".select-status"); 
-//const searchName = document.getElementById("typed-text");
+const selectStatus = document.querySelector(".select-status"); 
+const searchName = document.getElementById("typed-text");
 const stats = document.querySelector(".stats");
 
 
 function printGenderFiltered() {
   stats.style.display = "flex";
-  stats.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "gender", selectGender.value)}`
+  stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "gender", selectGender.value)}`
   return printCards(filterData(data.results, "gender", selectGender.value));
 }
 
 function printSpeciesFiltered() {
   stats.style.display = "flex";
-  stats.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`
+  stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "species", selectSpecies.value)}`
   return printCards(filterData(data.results, "species", selectSpecies.value));
 }
 
+function printStatusFiltered() {
+   stats.style.display = "flex";
+   stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "status", selectStatus.value)}`
+   return printCards(filterData(data.results, "status", selectStatus.value));
+ }
 
+ function filterByName() {
+   return printCards(filterName(data.results, searchName.value));
+ }
+ 
 
 selectGender.addEventListener("change", printGenderFiltered);
 selectSpecies.addEventListener("change", printSpeciesFiltered);
+selectStatus.addEventListener("change", printStatusFiltered);
+searchName.addEventListener("keydown", printSearch); 
+   //return printCards(data.results);
 
