@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcute icon" href="favrick.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <div class="banner">
+    <img id="banner" src="rickandmorty.jpeg" alt="Banner Rick and Morty">
+  </div>
+  </header>
+  <main>
+    <div class="buttons">
+    <select id="status">
+      <optgroup label="STATUS">
+        <option value="0" selected disabled hidden>STATUS</option>
+        <option value="Alive">ALIVE</option>
+        <option value="Dead">DEAD</option>
+        <option value="unknown">UNKDOWN</option>
+    </select>
+
+    <select id="gender">
+      <optgroup label="GENDER">
+        <option value="0" selected disabled hidden>GENDER</option>
+        <option value="Male">MALE</option>
+        <option value="Female">FEMALE</option>
+        <option value="unknown">UNKDOWN</option>
+    </select>
+
+    <select id="specie">
+      <optgroup label="SPECIE">
+        <option value="0" selected disabled hidden>SPECIE</option>
+        <option value="Alien">ALIEN</option>
+        <option value="Animal">ANIMAL</option>
+        <option value="unknown">UNKDOWN</option>
+        <option value="Human">HUMAN</option>
+        <option value="Humanoid">HUMANOID</option>
+        <option value="Parasite">PARASITE</option>
+        <option value="Robot">ROBOT</option>
+        <option value="Mytholog">MYTHOLOG</option>
+        <option value="Poopybutthole">POOPYBUTTHOLE</option>
+        <option value="Disease" >DISEASE</option>
+        <option value="Cronenberg">CRONENBERG</option>
+        <option value="Vampire">VAMPIRE</option>
+    </select>
+
+    <select id="order">
+      <optgroup label="ORDER">
+      <option value="0" selected disabled hidden>ORDER</option>
+      <option value="crescente">↻ A-Z</option>
+      <option value="decrescente">↺ Z-A</option>
+    </select>
+
+    <input type="submit" class="clear" value="CLEAR">
+
+    <input class="pesquisar" type="search" placeholder="SEARCH 🔎">
+  </div>
+
+    <div class="cards" id="cards">
+    </div>
+  
+
+  <footer>
+
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
