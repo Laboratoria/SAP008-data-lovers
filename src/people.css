@@ -1,235 +1,285 @@
 * {
-  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
   text-align: center;
 }
-.body-people {
-  background-color: #1D1C38;
+
+:root {
+  --background: #1D1C38;
+  --background-items: #e26c7a;
+  --background-people: #508b52c7;
+  --background-items-hover: #f1faee;
+  --color-cards: rgba(156, 171, 151, 0.876);
+  --color-font: #f1faee;
 }
-.container {
-  margin: 1vw 13vw;
-  min-height: 125vw;
+
+body {
+  background-color: var(--background);
 }
-.top-people {
-  color: #f1faee;
-  text-align: center;
+
+.top {
   width: 100%;
 }
-.img-top{
-  width: 100vw;
+
+.top-img {
+  width: 100%;
   margin-left: -10px;
 }
-.title-people{
-  font-size: 4.5vw;
-  margin: -10vw 0 0;
+
+.top h1 {
+  margin: -9vw 0 0;
+  color: var(--color-font);
+  font-size: 7vh;
 }
+
 .navbar {
-  margin: 6vw 35vw 4vw 25vw;
-  font-size: medium;
-  text-align: center;
   overflow: hidden;
   max-width: 100%;
+  padding: 6vw 0 2vw 50vw;
+  font-size: medium;
 }
+
 .navbar a {
-  color: #f1faee;
-  font-size: 19px;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
-  float: right;
   display: block;
+  float: left;
+  padding: 1vw;
+  color: var(--color-font);
+  font-size: 1.1rem;
+  text-decoration: none;
 }
+
 .navbar a:hover {
   text-decoration: underline;
-} 
+}
+
 .navbar a.active {
-  color:  #e26c7a;
-  text-shadow:3px 3px 3px black;
+  color: var(--background-items);
+  text-shadow: 3px 3px 3px black;
 }
-.description-people {
+
+.container {
+  margin: 1vw 13vw;
+}
+
+.description {
   padding: 0;
-  text-align: center;
+  color: var(--color-font);
   font-size: 2rem;
-  color: #f1faee;
 }
-.film-people {
+
+.btn-films {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   column-gap: 1vw;
   row-gap: 1vw;
-  width: 100%;
   justify-content: center;
   align-content: center;
   margin: 4vw 0;
 }
-.btn-film-people {
+
+.btn-film {
+  background-color: var(--background-people);
   margin: auto;
-  border:none;
+  border: none;
+  padding: 0.7vw 1.5vw;
   min-height: 100%;
   width: 100%;
-  padding: 0.7vw 1.5vw;
-  background-color: #508b52c7;
-  color: #f1faee;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 400;
   cursor: pointer;
   border-radius: 0.3vw;
+  color: var(--color-font);
+  font-size: 1.1rem;
+  font-weight: 400;
 }
-.btn-film-people:hover {
-  background-color: #f1faee;
-  color: #508b52;
+
+.btn-film:hover {
+  background-color: var(--background-items-hover);
+  color: var(--background-people);
 }
-.catalogue-people {
-  margin: 0 5vw;
+
+.catalogue {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1vw;
   row-gap: 1vw;
   justify-content: center;
+  margin: 0 5vw;
 }
-.card-people {
-  background-color: rgba(156, 171, 151, 0.876);
-  border-radius: 0.3vw;
-  text-align: center;
+
+.card {
+  background-color: var(--color-cards);
   padding: 1vw;
-  min-height: 100%;
+  border-radius: 0.3vw;
 }
-.div-img-people{
-  width: 15vw; 
-  height: 15vw;
+
+.card-img-cut {
+  width: 15vw;
+  height: 13vw;
 }
-.card-people-img {
-  width: 100%; 
+
+.card-img {
+  width: 100%;
   height: 100%;
   object-fit: none;
   object-position: 45% 5%;
-  padding: 0;
 }
-.person-details{
-  font-size: 1.2rem;
+
+.card-txt {
   padding-top: 1vw;
+  font-size: 1.2rem;
 }
-.back {
-  margin: 5%;
-  text-align: center;
-}
+
 .back-top {
-  color: #f1faee;
-  font-size: 1.3rem;
+  margin: 5%;
+}
+
+.back-top a {
   text-decoration: none;
+  color: var(--color-font);
+  font-size: 1.3rem;
 }
-.back-top:hover {
-  text-shadow:4px 4px 4px #e26c7a;
+
+.back-top a:hover {
+  text-shadow: 4px 4px 4px var(--background-items);
 }
-.footer {
-  max-width: 100%;
-  color:  #f1faee;
-  font-size: 1rem;
-  bottom: 0;
+
+footer {
+  background-color: var(--background-items);
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: auto;
   column-gap: 5vw;
   align-items: center;
-  background-color: #e26c7a;
+  max-width: 100%;
+  bottom: 0;
+  color: var(--color-font);
+  font-size: 1rem;
 }
-.logo-ghibli {
+
+.img-logo-ghibli,
+.img-totoro {
   width: 180px;
 }
-.totoro {
-  width: 10rem;
-}
+
 .links {
-  color:  #f1faee;
   text-decoration: none;
+  color: var(--color-font);
 }
+
 .links:hover {
-  text-shadow:3px 3px 3px black;
+  text-shadow: 3px 3px 3px black;
 }
-@media only screen and (max-width: 900px){
+
+@media only screen and (max-width: 800px) {
+  .top h1 {
+    margin: -10vw 0 0;
+    font-size: 3.5vh;
+  }
+
   .navbar {
-    margin: 6vw 25vw 0 20vw;
+    padding: 6vw 0 2vw 35vw;
   }
+
   .navbar a {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
-  .description-people {
-    font-size: 1.2rem;
+
+  .description {
+    font-size: 1.4rem;
   }
-  .film-people {
+
+  .container {
+    min-height: 130vw;
+  }
+
+  .btn-films {
     grid-template-columns: repeat(4, 1fr);
   }
-  .btn-film-people {
+
+  .btn-film {
     padding: 0.7vw 3vw;
     font-size: 0.9rem;
   }
-  .catalogue-people {
+
+  .catalogue {
     grid-template-columns: repeat(3, 1fr);
   }
-  .div-img-people{
-    width: 22vw; 
-    height: 25vw;
+
+  .card-img-cut {
+    width: 22vw;
+    height: 22vw;
   }
-  .person-details{
+
+  .card-txt {
     font-size: 1rem;
   }
+
   .back-top {
     font-size: 0.8rem;
   }
-  .footer {
+
+  footer {
     font-size: 0.7rem;
   }
-  .logo-ghibli {
-    width: 120px;
-  }
+
+  .logo-ghibli,
   .totoro {
-    width: 7rem;
+    width: 120px;
   }
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 420px) {
+  .top h1 {
+    margin: -11vw 0 0;
+    font-size: 2.5vh;
+  }
+  
   .navbar {
-    margin: 6vw 20vw;
+    padding: 6vw 0 2vw 30vw;
   }
+
   .navbar a {
-    font-size: 10px;
-    padding: 5px 3px;
-  }
-  .description-people {
-    font-size: 0.8rem;
-  }
-  .film-people {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .btn-film-people {
-    padding: 1vw 1.5vw;
-    font-size: 0.6rem;
-  }
-  .catalogue-people {
-    margin: 10vw 5vw;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .div-img-people{
-    width: 35vw; 
-    height: 55vw;
-  }
-  .person-details{
-    font-size: 0.8rem;
-  }
-  .back-top {
     font-size: 0.65rem;
   }
-  .footer {
-    font-size: 0.47rem;
+
+  .description {
+    padding: 2vw;
+    font-size: 1rem;
   }
-  .logo-ghibli {
-    width: 60px;
+
+  .btn-films{
+    grid-template-columns: repeat(2, 1fr);
   }
-  .totoro {
-    width: 5rem;
+
+  .btn-film {
+    min-height: 14vw;
+    font-size: 0.8rem;
+  }
+
+  .catalogue {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10vw 5vw;
+  }
+
+  .card-img-cut {
+    width: 35vw;
+    height: 55vw;
+  }
+
+  .card-txt {
+    font-size: 0.8rem;
+  }
+
+  .back-top a {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+  }
+
+  .img-logo-ghibli, .img-totoro {
+    width: 80px;
   }
 }
