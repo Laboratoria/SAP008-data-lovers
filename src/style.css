@@ -71,7 +71,7 @@ button:hover {
     justify-content: center;
     margin-top: 2rem;
 }
- 
+
 .pesquisar {
     width: 15rem;
     height: 1rem;
@@ -101,7 +101,7 @@ button:hover {
     border-radius: 9px;
     color: white;
     flex-flow: row nowrap;
-    
+
 }
 
 #read {
@@ -181,7 +181,7 @@ button:hover {
 }
 
 @media screen and (max-width: 1140px) {
-    .btn-header{
+    .btn-header {
         display: none;
     }
 

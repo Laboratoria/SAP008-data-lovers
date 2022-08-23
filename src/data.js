@@ -3,7 +3,6 @@ export const dataFilter = (data, typeData, condition) => data.filter((character)
     return (character[typeData] === condition);
 })
 export const nameFilter = (data, search) => data.filter(character => {
-    console.log(nameFilter)
     return character.name.toLowerCase().includes(search.toLowerCase());
 })
 export const computeStats = (data, typeData, condition) => data.reduce((initialType, totalType) => {
@@ -11,7 +10,7 @@ export const computeStats = (data, typeData, condition) => data.reduce((initialT
 }, 0)
 
 export const orderAz = (data, sortBy, order) => {
-    
+
     if (order === "A-Z") {
         return data.sort((a, b) => a[sortBy] > b[sortBy] ? 1 : -1);
     } else {
