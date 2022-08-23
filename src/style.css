@@ -4,6 +4,8 @@
 }
 
 body {
+  padding: 0%;
+  margin: 0%;
   font-family: Avocado;
   align-items: center;
   justify-content: center;
@@ -69,7 +71,7 @@ select {
 
 .divHeader {
   background-color: rgb(217, 205, 169);
-  margin-bottom: 2vw;
+  margin-bottom: 0vw;
 }
 
 .cards {
@@ -187,6 +189,10 @@ Outras:
 
 /*Responsividade tablet:*/
 @media (max-width: 768px) {
+  body {
+    padding: 0%;
+    margin: 0%;
+  }
   .filtros1 {
     margin-left: 1vw;
   }
@@ -215,6 +221,11 @@ Outras:
 }
 
 @media (max-width: 320px) {
+  body {
+    padding: 0%;
+    margin: 0%;
+  }
+
   .logo {
     display: none;
   }
