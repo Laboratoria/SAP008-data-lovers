@@ -1,9 +1,9 @@
  
-export const mainFilters = {displayCharactersList, displayBooksList
+export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList
   
 
 };
-// displaySpellsList, filterCharactersByHouses 
+//  filterCharactersByHouses 
 
 function displayCharactersList(names){
   return names.map((characters) => characters.name)
@@ -11,10 +11,11 @@ function displayCharactersList(names){
  
 function displayBooksList(books) {
   return books.map((book) => book.title) 
-
-  
 }
  
+function displaySpellsList(spells) {
+  return spells.map((spell) => spell.name) 
+}
 // function displaySpellsList(dataBaseSpells){
 //   let spellsResult = [];
 //   let allSpells = data.spells;

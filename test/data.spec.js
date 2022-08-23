@@ -1,7 +1,5 @@
 import { mainFilters } from '../src/data.js'
 
-// cria uma lista unica de characters pra poder testar (mock do data.js), futuramente incluir isso em uma outra pasta
-
 const charactersData = [{
   "id": 622,
   "name": "Bellatrix Lestrange",
@@ -60,28 +58,28 @@ const booksData = [{
     "description": "Harry discovers a powerful book and, while trying to discover its origins, collaborates with Dumbledore in the search for a series of magical objects that will aid in the destruction of Lord Voldemort."
   }]
 
-  // const spellsData = [{
-  //   "id": 305,
-  //   "name": "Wingardium Leviosa",
-  //   "other_name": "Levitation Charm",
-  //   "pronunciation": "win-GAR-dee-um lev-ee-OH-sa",
-  //   "spell_type": "Charm",
-  //   "description": "Makes objects fly, or levitate.",
-  //   "mention": "This spell is taught in early first-year charms classes; this came into good use later in that year, when Ron Weasley performed the spell to knock out a mountain troll; six years later, Harry uses the charm to levitate the side-car of his godfather's flying motorbike; Ron used it again this year to make a twig poke a tree.",
-  //   "etymology": "\"Wingardium\" almost certainly contains English wing, meaning \"fly\". \"Leviosa\" probably originates from Latin levis, meaning \"light\".",
-  //   "note": null
-  // }, 
-  // {
-  //   "id": 285,
-  //   "name": "Toenail-growing hex",
-  //   "other_name": null,
-  //   "pronunciation": null,
-  //   "spell_type": "Hex",
-  //   "description": "Causes the toenails to grow at an extreme and uncontrollable rate.",
-  //   "mention": "In 1996, Harry used this to much applause from classmates, on Vincent Crabbe.",
-  //   "etymology": null,
-  //   "note": "This is a hex that is probably not approved by the Ministry of Magic, as it was invented by Severus Snape."
-  // }]
+  const spellsData = [{
+    "id": 305,
+    "name": "Wingardium Leviosa",
+    "other_name": "Levitation Charm",
+    "pronunciation": "win-GAR-dee-um lev-ee-OH-sa",
+    "spell_type": "Charm",
+    "description": "Makes objects fly, or levitate.",
+    "mention": "This spell is taught in early first-year charms classes; this came into good use later in that year, when Ron Weasley performed the spell to knock out a mountain troll; six years later, Harry uses the charm to levitate the side-car of his godfather's flying motorbike; Ron used it again this year to make a twig poke a tree.",
+    "etymology": "\"Wingardium\" almost certainly contains English wing, meaning \"fly\". \"Leviosa\" probably originates from Latin levis, meaning \"light\".",
+    "note": null
+  }, 
+  {
+    "id": 285,
+    "name": "Toenail-growing hex",
+    "other_name": null,
+    "pronunciation": null,
+    "spell_type": "Hex",
+    "description": "Causes the toenails to grow at an extreme and uncontrollable rate.",
+    "mention": "In 1996, Harry used this to much applause from classmates, on Vincent Crabbe.",
+    "etymology": null,
+    "note": "This is a hex that is probably not approved by the Ministry of Magic, as it was invented by Severus Snape."
+  }]
 
 
 describe('mainFilters', () => {
@@ -123,18 +121,18 @@ describe('mainFilters.displayBooksList', () => {
 
 });
 
-// describe('mainFilters.displaySpellsList', () => {
+describe('mainFilters.displaySpellsList', () => {
 
-//   it('should be a function', () => {
-//     expect(typeof mainFilters.displaySpellsList).toBe('function');
-//   });
+  it('should be a function', () => {
+    expect(typeof mainFilters.displaySpellsList).toBe('function');
+  });
 
-//   it('should return 305 spells', () => {
-//     expect(mainFilters.displaySpellsList(spellsData).length).toBe(2)
-//   })
+  it('should return 2 spells', () => {
+    expect(mainFilters.displaySpellsList(spellsData).length).toBe(2)
+  })
 
-//   it('should return Wingardium Leviosa', () => {
-//     expect(mainFilters.displaySpellsList(spellsData).includes('Wingardium Leviosa')).toBe(true)
-//   })
+  it('should return Wingardium Leviosa', () => {
+    expect(mainFilters.displaySpellsList(spellsData).includes('Wingardium Leviosa')).toBe(true)
+  })
 
-// });
+});
