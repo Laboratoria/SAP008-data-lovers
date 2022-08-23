@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('./Images/');
+    background-image: url('./Images/BGDesktop.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -214,7 +214,7 @@ body {
 @media only screen and (max-width: 600px){
 
 body {
-    background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/74ecbef506eb47d586e4378197498aef80494a6c/src/Images/Mobile%20Background%20version.svg');
+    background-image: url('./Images/MobileDesktop.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
