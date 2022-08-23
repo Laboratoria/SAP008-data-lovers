@@ -36,12 +36,18 @@ const rickAndMorty = {
         return filtro;
 
     },
+
+    // ===== Função de ordenar ====
     ordenar: function(list, sortBy) {
+        //uso do spread: crio um array novo para que o array original não seja modificado
+        //com o o uso do sort;
+        const copy = [...list]; 
+
         if(sortBy === "ascending") {
-            return rickAndMorty.ordenarCrescente(list)
+            return rickAndMorty.ordenarCrescente(copy)
         }
         else if(sortBy === "descending" ) {
-            return rickAndMorty.ordenarDecrescente(list)
+            return rickAndMorty.ordenarDecrescente(copy)
         }
 
     },
@@ -49,11 +55,6 @@ const rickAndMorty = {
     // ===== Função de ordenar de forma crescente ====
     ordenarCrescente: function(list) {
         const ordem = list.sort(function (a, b) {
-            if (a.name === b.name){
-                return 0;
-            }
-            /*return a.name > b.name ? 1 : -1 ;*/
-
             if (a.name > b.name) {
               return 1;
             }else {
@@ -64,14 +65,10 @@ const rickAndMorty = {
         return ordem;
 
     },   
+
     // ===== Função de ordenar de forma decrescente ====
     ordenarDecrescente: function(list) {
-        const ordem = list.sort(function (a, b) {
-            if (a.name === b.name){
-                return 0;
-            }
-            /*return a.name > b.name ? 1 : -1 ;*/
-
+        const ordem = list.sort(function (a, b) {            
             if (a.name > b.name) {
               return -1;
             }else {
@@ -81,9 +78,7 @@ const rickAndMorty = {
           });          
         return ordem;
 
-    },
-    
-
+    },   
 
     // ===== Função buscar por nome ====
     buscarPorNome: function (list, name) {
@@ -95,8 +90,7 @@ const rickAndMorty = {
     },
   
 
-    // ===== função de porcentagem dos personagens filtrados =====
-    
+    // ===== função de porcentagem dos personagens filtrados =====    
     calcularPorcentagem: function(tamanhoList, tamanhoListaFiltrada) {            
 
         return Math.round((tamanhoListaFiltrada*100)/tamanhoList);

@@ -106,71 +106,15 @@ describe('ordenar', () => {
   it('ordenar de forma crescente de A-Z', () => {
     const personagem = rickAndMorty.ordenar(arrayTest, 'ascending')
     expect(personagem.length).toEqual(4); 
-    expect(personagem).toEqual([
-      {
-        name: "Beth Smith",
-        status: "Alive",
-        species: "Human",
-        gender: "Female"
-      },
-
-      {
-        name: "Morty Smith",
-        status: "Alive",
-        species: "unknown",
-        gender: "Male"
-      },
-
-      {
-        name: "Rick Sanchez",
-        status: "Alive",
-        species: "Human",
-        gender: "unknown"
-      },
-
-      {
-        name: "Tiny Rick",
-        status: "Dead",
-        species: "Alien",
-        gender: "Female"
-      } 
-    ]);
+    expect(personagem).toEqual([arrayTest[2], arrayTest[1], arrayTest[0], arrayTest[3]]);
   });
-    
+     
   it('ordenar de forma decrescente de Z-A', () => {
     const personagem = rickAndMorty.ordenar(arrayTest, 'descending')
     expect(personagem.length).toEqual(4); 
-    expect(personagem).toEqual([
-      {
-        name: "Tiny Rick",
-        status: "Dead",
-        species: "Alien",
-        gender: "Female"
-      },
-
-      {
-        name: "Rick Sanchez",
-        status: "Alive",
-        species: "Human",
-        gender: "unknown"
-      },
-
-      {
-        name: "Morty Smith",
-        status: "Alive",
-        species: "unknown",
-        gender: "Male"
-      },
-
-      {
-        name: "Beth Smith",
-        status: "Alive",
-        species: "Human",
-        gender: "Female"
-      }  
-    ]);
+    expect(personagem).toEqual([arrayTest[3], arrayTest[0], arrayTest[1], arrayTest[2]]);
   });
-
+ 
 });
 
 
@@ -185,6 +129,27 @@ describe('buscarPorNome', () => {
       expect(personagens.length).toEqual(2);
   });
   
+});
+
+describe('calcularPorcentagem', () => {
+
+  it('é uma função', () => {
+    expect(typeof rickAndMorty.calcularPorcentagem).toBe('function');
+
+  });
+
+  it('deve calcular a média dos personagens vivos', () => {
+    const porcentagem = rickAndMorty.calcularPorcentagem(arrayTest.length, 3);
+    expect(porcentagem).toEqual(75);
+
+  });
+
+  it('deve calcular a média dos personagens mortos', () => {
+    const porcentagem = rickAndMorty.calcularPorcentagem(arrayTest.length, 1);
+    expect(porcentagem).toEqual(25);
+
+  });
+
 });
 
 

@@ -34,6 +34,7 @@ const selectGender = document.querySelector('#select-gender');
 const selectOrder = document.querySelector('#select-order');
 const percentage = document.querySelector('#percentage');
 const searchForName = document.querySelector('#btn-search');
+const reset = document.querySelector('#reset');
 
 // ===== evento para mostrar os cards na tela ====
 cardContainer.innerHTML = displayCards(list);
@@ -78,16 +79,19 @@ selectGender.addEventListener('change', (event) => {
 
 });
 
-// ===== evento para ordenar crescente ====
+// ===== evento para ordenar ====
 selectOrder.addEventListener('change', (event) => {
     const value = event.target.value;
-
-
     const listaOrdenada = rickAndMorty.ordenar(list, value);
         const cards = displayCards(listaOrdenada);
         cardContainer.innerHTML = cards;
 });
 
+// ===== evento para limpar filtros ====
+reset.addEventListener('click', (event) => {
+    location.reload(event);    
+
+});
 
 
 // ===== evento para buscar por nome ====
