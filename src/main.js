@@ -1,5 +1,10 @@
 import getCharacters from './data.js';
 
+let selectGender = document.getElementById('gender');
+let selectStatus = document.getElementById('status');
+let selectSpecie = document.getElementById('specie');
+let selectOrderAz = document.getElementById('order');
+
 function gerarCard(personagem) {
     return `
             <div>
@@ -19,10 +24,18 @@ function gerarCard(personagem) {
 }
 
 const listarCards = () => {
-    let selectGender = document.getElementById('gender');
+
+    let optionStatus = selectStatus.options[selectStatus.selectedIndex];
+
     let optionGender = selectGender.options[selectGender.selectedIndex];
 
-    let characters = getCharacters(optionGender.value);  
+    let optionSpecie = selectSpecie.options[selectSpecie.selectedIndex];
+
+    let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex];
+
+    
+
+    let characters = getCharacters(optionGender.value, optionStatus.value, optionSpecie.value, optionOrderAz.value);  //agrupa
 
     let cards = document.getElementById('cards');
     cards.innerHTML = '';
@@ -31,11 +44,15 @@ const listarCards = () => {
     });
 };
 
-let selectGender = document.getElementById('gender');
-selectGender.addEventListener('change',listarCards);
+selectGender.addEventListener('change', listarCards);
 
-listarCards();    
+selectStatus.addEventListener('change', listarCards);
 
+selectSpecie.addEventListener('change', listarCards);
+
+selectOrderAz.addEventListener('change', listarCards); 
+
+listarCards();
 
 
 
