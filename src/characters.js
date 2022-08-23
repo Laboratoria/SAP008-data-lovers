@@ -1,3 +1,4 @@
+import { alphabeticOrder } from './data.js';
 import data from './data/ghibli/ghibli.js';
 let movies = data.films
 let characters = movies.reduce(function(chars, film){
@@ -36,4 +37,17 @@ function showCharacters(data) {
 }
 
 showCharacters(characters);
+
+//ORDENAR //
+
+const selectElement = document.querySelector('#order');
+
+selectElement.addEventListener('change', (event) => {
+  const value = event.target.value
+  console.log(event.target.value)
+  const orderedList = alphabeticOrder(characters, value)
+  document.getElementById('cards').innerHTML = CharactersInfo;
+  showCharacters(orderedList)
+});
+
 
