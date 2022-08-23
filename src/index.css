@@ -1,3 +1,4 @@
+/* HEADER */
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #439be5;
@@ -79,11 +80,7 @@ body {
   color: #fff;
 }
 
-.icon-about {
-  width: 36px;
-  height: 32px;
-}
-
+/* MAIN */
 .container-home {
   display: flex;
   justify-content: center;
@@ -125,6 +122,8 @@ body {
 img {
   width: 10%;
 }
+
+/* FOOTER */
 .footer {
   border-top: 2px solid #cdcdcd;
   padding: 20px 15px;
