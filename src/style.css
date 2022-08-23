@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('https://github.com/GabriellaViroli/SAP008-data-lovers/blob/css/src/Images/Fundo%20imagem.png?raw=true');
+    background-image: url('./Project Images/BGDesktop.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -215,7 +215,7 @@ body {
 @media only screen and (max-width: 600px){
 
 body {
-    background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/74ecbef506eb47d586e4378197498aef80494a6c/src/Images/Mobile%20Background%20version.svg');
+    background-image: url('./Project Images/BGMobile.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -223,7 +223,7 @@ body {
 .header {
     min-width: 100%;
     max-height: 25vh;
-    background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
+    background-image: url('./Project Images/Logo.svg');
     background-position-x: 50%;
     background-position-y: 1.5vh;
     background-size: contain;

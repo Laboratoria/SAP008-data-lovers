@@ -28,11 +28,11 @@ function displaySpellsList(spells) {
 // }
  
 // function filterCharactersByHouses(characters, houses){
-//   const filterResult = [];
+//   const filterResult = []
 //   characters.filter((character) => {
 //     if (character.house === houses){
-//       filterResult.push(character.name);
+//       filterResult.push(character.name)
 //     }
-//   });
-//   return filterResult;
+//   })
+//   return filterResult
 // }
