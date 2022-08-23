@@ -18,6 +18,8 @@ function mostrarPersonagens (data){
 
 ).join('')
 }
+
+filtro 
 mostrarPersonagens(data.results)
 
 
