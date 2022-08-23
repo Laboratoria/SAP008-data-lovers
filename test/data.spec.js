@@ -1,29 +1,30 @@
 import { dataFilter, nameFilter, computeStats, orderAz } from '../src/data.js';
-// import { menuShow } from '../src/menu.js';
+import menuShow from '../src/menu.js';
 
-const personagens = [ 
+const personagens = [
   {
-  "id": 1,
-  "name": "Rick Sanchez",
-  "status": "Alive",
-  "species": "Human",
-  "gender": "Male",
-},
-{
-  "id": 2,
-  "name": "Morty Smith",
-  "status": "Alive",
-  "species": "Human",
-  "type": "",
-  "gender": "Male"
-},
-{ "id": 3,
-  "name": "Summer Smith",
-  "status": "Alive",
-  "species": "Human",
-  "type": "",
-  "gender": "Female",
-},
+    "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
+  },
+  {
+    "id": 2,
+    "name": "Morty Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "name": "Summer Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+  },
 
 ]
 
@@ -40,7 +41,7 @@ describe("orderAz", () => {
   });
 
   it("returns object in Az", () => {
-    expect(orderAz(personagens)).toEqual([Morty, Rick, Summer]); 
+    expect(orderAz(personagens)).toEqual([Morty, Rick, Summer]);
   });
   it("returns words in reverse Za", () => {
     expect(orderAz([Morty, Rick, Summer])).toEqual([Summer, Rick, Morty]);
@@ -54,7 +55,7 @@ describe('Filter objects as chosen by the conditions of buttons', () => {
 });
 
 it('returns objects in type of data that it was chosen', () => {
-  expect(dataFilter(personagens,"gender", "Female")).toEqual([Summer]);
+  expect(dataFilter(personagens, "gender", "Female")).toEqual([Summer]);
 });
 
 describe('Filter characters by name', () => {
@@ -76,3 +77,10 @@ describe('Show in numbers datas of chosen category', () => {
     expect(computeStats(personagens, "status", "Alive")).toEqual(3);
   })
 });
+
+describe('menuShow', () => {
+  it('should be a function', () => {
+    expect(typeof menuShow).toBe('function');
+  }
+  )
+})
