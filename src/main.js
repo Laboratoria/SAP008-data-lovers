@@ -1,5 +1,6 @@
 import { filterByRegion } from "./data.js";
 import { filterByType } from "./data.js";
+import { orderByMaxHp } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 //.log(example, data);
@@ -11,6 +12,7 @@ const btnJohto = document.getElementById("button-johto");
 const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
+const selectOrder = document.getElementById("")
 
 //templates dos cards//
 const createCards = listPokemon => {
