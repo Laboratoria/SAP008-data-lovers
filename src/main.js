@@ -12,8 +12,6 @@ const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
 
-let pokemonsToBeShown= []
-
 //templates dos cards//
 const createCards = listPokemon => {
     let infoPokemon = listPokemon.map((pokemon) =>
@@ -88,6 +86,7 @@ btnWorld.addEventListener("click", function () {
     pokemonsToBeShown= infoPokemons
 });
 
+let pokemonsToBeShown= []
 select.addEventListener("change", function(){
     let type = select.value
     let result = filterByType(pokemonsToBeShown,type)
@@ -96,6 +95,16 @@ select.addEventListener("change", function(){
     console.log (type);
 
 });
+
+selectOrder.addEventListener("change", function(){
+    let orderCpHp = selectOrder.value
+    console.log(orderCpHp)
+    let result = sortBy(everyPokemon, stats["max-cp"])
+    let pokeCpHp = createCards(result)
+    cards.innerHTML = pokeCpHp;
+    console.log(orderCpHp)
+    console.log(result)
+})
 
 
    
