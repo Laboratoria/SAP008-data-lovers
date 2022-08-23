@@ -54,7 +54,7 @@ Para a escrita das histórias, decidimos por uma liguagem simples e de poucas se
 
 Sendo assim, o resultado final do processo de criação das nossas histórias de usuário pode ser observado abaixo:
 
-![histórias-de-usuário-postits](Images/HistoriasUsuarios.png "Historias")
+![histórias-de-usuário-postits](./src/Images/HistoriasUsuarios.png)
 
 ## 4. Processo de prototipação
 
@@ -95,7 +95,7 @@ Após todas as etapas do processo de prototipação, e da inclusão de mudanças
 
 Versões Desktop e Mobile:
 
-![foto-do-protótipo-versões-desktop-mobile](Images/Prototipos.png "Prototipos")
+![foto-do-protótipo-versões-desktop-mobile](./src/Images/Prototipos.png)
 
 
 ## 7. Objetivos e funcionamento da aplicação (implementação da interface de usuário)
