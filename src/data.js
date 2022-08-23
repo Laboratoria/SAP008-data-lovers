@@ -1,23 +1,21 @@
  
-export const mainFilters = {displayCharactersList
-  //displayBooksList, displaySpellsList, filterCharactersByHouses
+export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList
+  
+
 };
- 
+//  filterCharactersByHouses 
+
 function displayCharactersList(names){
   return names.map((characters) => characters.name)
  }
  
-// function displayBooksList(dataBaseBooks) {
-//   let booksResult = [];
-//   let allBooks = data.books;
+function displayBooksList(books) {
+  return books.map((book) => book.title) 
+}
  
-//   for(let i = 0; i < allBooks.length; i++){
-//     let booksList = allBooks[i].title;
-//     booksResult.push(booksList);
-//   }
-//   return booksResult
-// }
- 
+function displaySpellsList(spells) {
+  return spells.map((spell) => spell.name) 
+}
 // function displaySpellsList(dataBaseSpells){
 //   let spellsResult = [];
 //   let allSpells = data.spells;
