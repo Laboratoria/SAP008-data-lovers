@@ -1,177 +1,373 @@
 * {
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-  }
-.body-films {
-    background-color: #1D1C38;
-    background-image: url(img/desktop/rodapecomlogo.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100vw;
-  }
-.container {
-    margin: 1vw 13vw;
-  }
-.top-films {
-    color: #f1faee;
-    text-align: center;
-    width: 100%;
-  }
-.img-top-films{
-    width: 100vw;
-    margin-top: 2vw;
-    margin-left: -10px;
-  }
-.title-films{
-    font-size: 4.5vw;
-    margin: -42vw 0 0;
-  }
-.films-description {
-    margin: 10vw 1vw 0 0;
-    width: 65%;
-    font-size: 2.2rem;
-    color: #f1faee;
-    font-weight: 400;
-    padding: 2vw;
-}
-.btn-catalogue {
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3vw 3vw 3.3vw;
-}
-.btn-catalogue-filter{
-    margin: auto;
-    border:none;
-    min-height: 100%;
-    width: 65%;
-    padding: 0.5vw 2vw;
-    background-color: #e26c7a;
-    color: #f1faee;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 0.5vw;  
-}
-.btn-catalogue-filter:hover {
-    background-color: #f1faee;
-    color: #e26c7a;
-}
-.catalogue {
-    margin: 3vw 0 2vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1vw;
-    row-gap: 1vw;
-    grid-template-rows: auto;
-}
-.card {
-    background-color: #8193A8;
-    padding: 1vw;
-    text-align: center;
-    font-size: 1.2rem;
-    border-radius: 0.3vw;
-}
-.card-img {
-    width: 100%;
-    max-height: 85%;
-    margin-bottom: 0.4vw;
-}
-.btn-modal {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-.btn-modal:hover {
-    opacity: 0.4;
-}
-.modal {
-    display: none; 
-    position: fixed; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-content {
-    min-width: 60%;
-    min-height: 45%;
-    margin: 7% 20%;
-    background-color: #2864A8;
-    color: #f1faee;
-    padding: 2vw 4vw 2.5vw;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-.modal-director {
-    margin: -1vw 0 0;
-}
-.modal-score-duration {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: -1vw -5vw;
-}
-.close {
-    color:#f1faee;
-    font-weight: 600;
-    cursor: pointer;
-    background-color:rgb(40, 100, 168);
-    padding: 0.5vw 2vw;
-    border-radius: 0.5vw;
-    font-size: 1.2rem;
-    margin-top: 1vw;
-    border: 1px solid #f1faee;
-}
-.close:hover {
-    background-color: #f1faee;
-    color: rgb(40, 100, 168);
-}
-.footer-img-totoro{
-    width: 20vw;
-    margin-left: 75%;
-    bottom: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
-@media only screen and (max-width: 600px){
-    .films-description {
-        font-size: 0.6rem;
-        padding: 0 0 1.3vw;
-    }
-    .btn-catalogue-filter {
-        font-size: 0.4rem;
-    }
-    .catalogue {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        column-gap: 1.5vw;
-        row-gap: 1.5vw;
-        margin: 0 -2vw;
-    }
-    .card {
-        text-align: center;
-        font-size: 0.5rem;
-    }
-    .card-img {
-        margin-bottom: 1vw;
-    }
-    .modal-content {
-        min-width: 80%;
-        min-height: 35%;
-        margin: 30% 10%;
-        font-size: 0.8rem;
-        padding: 2vw 4vw 4vw;
-    }
-    .modal-director {
-        margin: -3vw 0 0;
-    }
-    .modal-score-duration {
-        margin: -1vw -10vw -3vw;
-    }
-    .close {
-        font-size: 0.8rem;
-    }
-    } 
+:root {
+  --background: #1D1C38;
+  --background-items: #e26c7a;
+  --background-items-hover: #f1faee;
+  --color-cards: #8193A8;
+  --color-font: #f1faee;
+  --color-modal: #2864A8;
+}
+
+body {
+  background-color: #1D1C38;
+  background-image: url(img/kiks.png);
+  background-repeat: no-repeat;
+  background-size: 40vw;
+  background-position: 62vw 10vw;
+  /* background-size: 40vw;
+  background-position: 57vw 14vw; */
+  display: fixed;
+}
+
+.top {
+  width: 100%;
+}
+
+.top-img {
+  width: 100%;
+  margin-top: 2vw;
+  margin-left: -10px;
+}
+
+.top h1 {
+  margin: -10vw 0 0;
+  color: var(--color-font);
+  font-size: 8vh;
+}
+
+.navbar {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 7vw 0 0vw 15vw;
+  font-size: medium;
+}
+
+.navbar a {
+  display: block;
+  float: left;
+  padding: 1vw;
+  color: var(--color-font);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar a.active {
+  color: var(--background-items);
+  text-shadow: 3px 3px 3px black;
+}
+
+.container {
+  margin: 1vw 13vw;
+}
+
+.description {
+  margin:0;
+  padding: 1vw 25vw 1.5vw 2vw;
+  color: var(--color-font);
+  font-size: 1.7rem;
+  font-weight: 350;
+  text-align: left;
+  text-indent: 10vw;
+}
+
+.btn-catalogue {
+  margin: 1vw 0 2vw 5vw;
+  text-align: left;
+}
+
+.btn-catalogue-filter {
+  background-color: var(--background-items);
+  margin: 1vw;
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  color: var(--color-font);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-catalogue-filter:hover {
+  background-color: var(--background-items-hover);
+  color: var(--background-items);
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  column-gap: 1vw;
+  row-gap: 1vw;
+  justify-content: center;
+  margin: 3vw 0 2vw;
+}
+
+.card {
+  background-color: var(--color-cards);
+  padding: 1vw;
+  border-radius: 0.3vw;
+}
+
+.btn-modal {
+  background: none;
+  border: none;
+  width: 12vw;
+  height: 18vw;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-txt {
+  padding: 1vw 0;
+  font-size: 1.2rem;
+}
+
+.btn-modal:hover {
+  opacity: 0.4;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: var(--color-modal);
+  margin: 7% 20%;
+  padding: 2vw 4vw 2.5vw;
+  min-width: 60%;
+  min-height: 45%;
+  color: var(--color-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal-director {
+  margin: 1vw;
+}
+
+.modal-score-duration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: -1vw -5vw 1vw;
+}
+
+.close {
+  background-color: var(--color-modal);
+  margin-top: 3vw;
+  border: 1px solid var(--color-font);
+  padding: 0.5vw 2vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: var(--color-font);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.close:hover {
+  background-color:var(--color-font);
+  color: var(--color-modal);
+}
+
+.back-top {
+  margin: 5%;
+}
+
+.back-top a {
+  text-decoration: none;
+  color: var(--color-font);
+  font-size: 1.3rem;
+}
+
+.back-top a:hover {
+  text-shadow: 4px 4px 4px var(--background-items);
+}
+
+footer {
+  background-color: var(--background-items);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: 5vw;
+  align-items: center;
+  max-width: 100%;
+  bottom: 0;
+  color: var(--color-font);
+  font-size: 1rem;
+}
+
+.img-logo-ghibli,
+.img-totoro {
+  width: 180px;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--color-font);
+}
+
+.links:hover {
+  text-shadow: 3px 3px 3px black;
+}
+
+@media only screen and (max-width: 800px) {
+  .top h1 {
+    margin: -10vw 0 0;
+    font-size: 3.5vh;
+  }
+  .navbar {
+    padding: 5vw 0 0 15vw;
+  }
+  .navbar a {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 20vw 1vw 0;
+  }
+
+  .container {
+    min-height: 130vw;
+  }
+
+  .btn-catalogue-filter {
+    font-size: 0.8rem;
+  }
+
+  .catalogue {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .btn-modal {
+    width: 15vw;
+    height: 22vw;
+  }
+
+  .card-txt {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    margin: 35% 20%;
+    padding: 2vw 4vw 2.5vw;
+    min-height: 25%;
+    font-size: 0.85rem;
+  }
+
+  .modal-director {
+    margin: 1vw;
+  }
+
+  .modal-score-duration {
+    margin: 1vw -5vw;
+  }
+
+  .close {
+    font-size: 0.8rem;
+  }
+
+  .back-top {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+
+  .logo-ghibli,
+  .totoro {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .top h1 {
+    margin: -12vw 0 0;
+    font-size: 2.5vh;
+  }
+
+  .navbar {
+    padding: 7vw 0 0 10vw;
+  }
+
+  .navbar a {
+    font-size: 0.4rem;
+  }
+
+  .description {
+    font-size: 0.65rem;
+    padding: 1vw 25vw 2vw 0;
+  }
+
+  .btn-catalogue-filter {
+    font-size: 0.4rem;
+  }
+
+  .catalogue {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2.2vw -2vw;
+  }
+
+  .btn-modal {
+    width: 25vw;
+    height: 37vw;
+  }
+
+  .card-txt {
+    font-size: 0.8rem;
+  }
+
+  .modal-content {
+    margin: 30% 10%;
+    padding: 2vw 4vw 4vw;
+    min-height: 15%;
+    font-size: 0.6rem;
+   }
+
+  .modal-director {
+    margin: 1vw 0;
+  }
+
+  .modal-score-duration {
+    margin: 2vw -3vw 3vw;
+  }
+
+  .close {
+    font-size: 0.6rem;
+  }
+
+  .back-top a {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+  }
+
+  .img-logo-ghibli, .img-totoro {
+    width: 80px;
+  }
+
+}

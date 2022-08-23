@@ -8,10 +8,13 @@ function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
     const template = `
       <div class="card">
-        <button class= "btn-modal" type="button"> 
-        <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > </button>
-        <br><h7>${film.title}</h7><br>
-        <h7>${film.release_date}</h7>
+          <button class= "btn-modal" type="button"> 
+            <img class="card-img" src="${film.poster}" alt="${film.title}" name="${film.title}" > 
+          </button>
+        <div class="card-txt">
+          <h4>${film.title}</h4>
+          <p>(${film.release_date})</p>
+        </div>
       </div>
       `;
     return template; 
@@ -29,7 +32,7 @@ function printModal (film) {
       <p>Score: ${film.rt_score}</p> 
     </div>
     <div class="modal-description">
-      <p>${film.description}</p>
+      <p>${film.description}</p><br>
       <p><strong>${(film.people).length} personagens ajudam a contar essa história!</strong></p>
     </div>
     <button class="close">Sair</button>

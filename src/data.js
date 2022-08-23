@@ -1,4 +1,4 @@
-export const ghibli = {filterDuration, sortedFilms, countFilms, countPeopleModal, 
+export const ghibli = {filterDuration, sortedFilms, countFilms,
   countLocations, countPeople, countVehicles, filmPeople};
 
 function filterDuration (films, selection) {
@@ -32,12 +32,6 @@ function sortedFilms(films, selection) {
 function countFilms (films) {
   return Object.keys(films).length;
 }
-
-// function countPeopleModal (films) {
-//   const count = films.map((film) => {
-//     return (film.people).length;
-// });
-// }
 
 function countPeople (films) {
   const count = films.map((film) => {

@@ -1,100 +1,134 @@
 * {
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
-.body-inicial { 
-    background-color: #1D1C38;
-    background-image: url(img/desktop/Cabeçalho2.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size:100vw;
-    max-height: fit-content;
+
+:root {
+  --background: #1D1C38;
+  --background-items: #e26c7a;
+  --background-items-hover: #f1faee;
+  --color-font: #f1faee;
 }
+
+.body{
+  background-color: var(--background);
+  background-image: url(img/desktop/Cabeçalho2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw;
+  max-height: fit-content;
+}
+
 .top {
-    color: #f1faee;
-    text-align: center;
-    margin: 3vw 10vw -1.5vw;
-    font-size: 2.5rem;
+  color: var( --color-font);
+  margin: 4vw 10vw -1.5vw;
+  font-size: 5vh;
 }
+
 .container {
-    margin: 1vw 13vw;
+  margin: 1vw 11vw;
 }
+
 .description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color:#f1faee;
-    text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var( --color-font);
+  text-align: right;
+  flex-wrap: wrap;
 }
+
 .description-img {
-    margin: 0 0 0 -5vw;
-    width: 40vw;
+  margin: 2vw 0 0 -7vw;
+  width: 40vw;
 }
+
 .description-text {
-    margin: -1vw 1vw 0 0;
-    width: 49%;
-    font-size: 2.1rem;
+  margin: 5vw 0 0 2vw;
+  width: 52%;
+  font-size: 2rem;
 }
+
 .counter {
-    color: #e26c7a;
-    text-shadow: black 1.5px 1.5px 2px;
-    font-size: 2.4rem;
+  color: var(--background-items);
+  font-size: 2.2rem;
+  text-shadow: black 1.5px 1.5px 2px;
 }
-.div-btn-inicial {
-    width: 57%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: -4vw 0 0 32vw;
-    column-gap: 1vw;
+
+.div-btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3vw 0 0 -1.5vw;
+  padding: 0 2vw;
+  column-gap: 1vw;
 }
-.btn-inicial{
-    margin: auto;
-    border:none;
-    min-height: 100%;
-    width: 100%;
-    padding: 0.5vw 2vw;
-    background-color: #e26c7a;
-    color: #f1faee;
-    text-align: center;
+
+.btn {
+  background-color: var(--background-items);
+  margin: 0;
+  padding: 0.5vw 1vw;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  color: var(--color-font);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #f1faee;
+  color: #e26c7a;
+}
+
+@media only screen and (max-width: 800px) {
+  .top {
+    font-size: 1.6rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .counter {
     font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 0.5vw; 
-    text-decoration: none;
+  }
+  .div-btn {
+    margin: 3vw -6vw 0 -6vw;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
 }
-.btn-inicial:hover {
-    background-color: #f1faee;
-    color: #e26c7a;
-}
-@media only screen and (max-width: 600px){
-    body { 
-        background-image: url(img/mobile/Cabeçalho3.svg);
-    }
-    .top {
-        margin: 2% 10% 0;
-        font-size: 3vw;
-    }
-    .description {
-        margin-top: -5vw;
-    }
-    .description-text {
-        margin: -1vw 1vw 0 2vw;
-        font-size: 0.5rem;
-    }
-    .counter {
-        color: #e26c7a;
-        text-shadow: black 1.5px 1.5px 2px;
-        font-size: 0.6rem;
-    }
-    .btn-inicial{
-        min-height: 100%;
-        width: 100%;
-        padding: 0.5vw 2vw;
-        font-size: 0.3rem;
-        font-weight: 600;
-    }
-    .btn-inicial:hover {
-        background-color: #f1faee;
-        color: #e26c7a;
-    }
+
+@media only screen and (max-width: 420px) {
+  .top {
+    font-size: 0.8rem;
+  }
+  .container {
+    margin: 1vw 13vw;
+  }
+  .description-img {
+    width: 10rem;
+    margin: 0 1vw 0 -8vw;
+  }
+
+  .description-text {
+    font-size: 0.5rem;
+    margin: 3vw -3vw 0 1vw;
+  }
+
+  .counter {
+    font-size: 0.7rem;
+  }
+
+  .div-btn {
+    margin: 3vw -6vw 0 -7vw;
+  }
+
+  .btn {
+    font-size: 0.4rem;
+  }
 }
