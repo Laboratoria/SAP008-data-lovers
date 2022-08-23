@@ -1,38 +1,40 @@
-html, body {
-    max-width: 100%;
-    max-height: 100rem;
+body {
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('https://github.com/GabriellaViroli/SAP008-data-lovers/blob/css/src/Images/Fundo%20imagem.png?raw=true');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('./Images/');
     background-repeat: no-repeat;
     background-size: cover;
 }
- 
+
 .header {
     display: flex;
     background-color: #700505;
-    min-height: 10rem;
-    min-width: 100%;
+    height: 19vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
     flex-wrap: wrap;
 }
- 
+
 .page-logo {
-    margin-top: 1rem;
-    margin-left: -4rem;
-    margin-right: 25rem;
+    margin-block-start: 0.5rem;
+    margin-inline-start: -4rem;
+    margin-inline-end: 25rem;
 }
- 
+/* 
 .search-bar {
     border-radius: 5px;
     padding: 0.5rem;
     border-color: #700505;
 }
- 
 .search-icon {
     padding: 0.25rem;
     font-size: 1rem;
@@ -40,8 +42,8 @@ html, body {
     background-color: #DC9F03;
     border-radius: 5px;
     border-color: #DC9F03;
-}
- 
+} */
+
 .menu-btns {
     text-align: center;
     padding: 0.2rem;
@@ -57,7 +59,7 @@ html, body {
     background-color: #DC9F03;
     color: #193833;
 }
- 
+
 .menu-btns:hover, .search-icon:hover {
     cursor: pointer;
     background-color: #0b1c19;
@@ -65,29 +67,29 @@ html, body {
     color: white;
     text-shadow: 2px 1px #1616162e;
 }
- 
+
 .horizontal-center {
     margin: 0 auto;
     width: 60%;
 }
- 
+
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30rem;
+    height: 100vh;
     flex-wrap: wrap;
 }
- 
+
 .welcome {
     text-align: center;
     background-color: #dc9f03c9;
     color: white;
-    border-radius: 55px;
-    padding: 0.5rem 1.5rem;
-    max-width: 40%;
+    border-radius: 25px;
+    padding: 0.10rem 1.2rem;
+    max-width: 36%;
 }
- 
+
 .welcome-title {
     font-size: 2.2rem;
     font-weight: 150;
@@ -95,65 +97,68 @@ html, body {
     color: #193833;
     text-shadow: 3px 3px #1616162e;
 }
- 
+
 .welcome-description {
     margin-top: -0.8rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
- 
-.welcome-ptext {
+
+.welcome-text {
     margin-bottom: 1.5rem;
     font-size: 1rem;
 }
- 
+
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color: #700505;
-    padding-top: 0.8rem;
-    min-width: 100vw;
-    max-height: 4.5rem;
-    position: absolute;
+    height: 3.1rem;
+    padding-bottom: 0.2rem;
+    min-width: 100%;
     bottom: 0;
+    gap: 0.5rem;
 }
- 
-.github-logo {
-    margin-bottom: -0.5rem;
-}
- 
-.footer-title {
+
+.footer-title, .footer-link {
     font-family: "Harry Potter";
     font-weight: 100;
     font-size: 1.4rem;
     text-shadow: 3px 2px #1616162e;
     color: white;
-    margin-bottom: -0.4rem;
-    margin-top: 0.8rem;
+    margin-block-start: 1.8rem;
 }
- 
+
 .footer-copyright {
+    color:#ad7d01;
     margin-top: 0.3rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: light;
+    margin-block-start: 1.2rem;
 }
- 
+
 .modal-list {
     position: relative;
     width: 704px;
-    height: 650px;
+    height: 530px;
     align-items: center;
     background: rgba(95, 1, 1, 0.83);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
     justify-content: center;
     display: flex;
     border-radius: 5px;
-   
-}
- 
+    }
+
 .modal-content {
+    cursor: pointer;
+    overflow-y: scroll; /* Add vertical scrollbar */
+    font-size:15px;
+    font-family: "Roboto";
+    color:rgb(45, 45, 238);
+    text-decoration: underline;
+    margin: 0 auto;
+    padding: 10px;
     position: relative;
     border-radius: 5px;
     top: 0;
@@ -161,13 +166,12 @@ html, body {
     bottom: 0;
     left: 0;
     width: 592px;
-    height: 469px;
-    font-family: "Franklin Gothic Medium";
+    height: 360px;
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
-    overflow: scroll;
+    
   }
- 
+
   h1.modal-header {
     padding-top: 10px;
     position: relative;
@@ -176,9 +180,10 @@ html, body {
     background: #DC9E00;
     text-align: center;
     font-family: "Harry Potter";
+    font-size: 20px;
     color:#193833;
   }
- 
+
   .modal-text {
     width: 100%;
     text-align: center;
@@ -188,11 +193,11 @@ html, body {
     font-size: 15px;
     font-style: normal;
     }
- 
+  
   .modal-btn {
     display: inline-block;
     padding: 0px 10px 0px;
-    margin: 5px auto 5px;  
+    margin: 5px auto 5px;   
     border-color:#DC9F03;
     border-width: 3px;
     border-radius: 20px;
@@ -204,90 +209,87 @@ html, body {
     background-color: #DC9F03;
     color: #193833;
   }
- 
- 
+
+
 @media only screen and (max-width: 600px){
- 
+
 body {
-    height: 100vh;
-    margin: 0;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/74ecbef506eb47d586e4378197498aef80494a6c/src/Images/Mobile%20Background%20version.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
- 
+
 .header {
-    display: inline-block;
-    max-width: 100%;
+    min-width: 100%;
     max-height: 25vh;
     background-image: url('https://raw.githubusercontent.com/GabriellaViroli/SAP008-data-lovers/14263bd25c09ef87d974706eac631e7e28a3465c/src/Images/Logo.svg');
-    background-position-x: 12vw;
+    background-position-x: 50%;
     background-position-y: 1.5vh;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 9999;
 }
- 
+
 .page-logo {
    visibility: hidden;
 }
- 
+
 .menu-btns {
-    margin-inline-start: 3.2rem;
-    margin-block-start: 2.5rem;
+    margin-block-start: 1rem;
     padding: 0.3rem 0.3rem;
     border-width: 1.5px;
     border-radius: 30px;
     font-size: 0.8rem;
 }
- 
+/* 
 .search-icon {
-    visibility: hidden;
-    margin-inline-start: 20rem;
+    margin-inline-start: -12rem;
     color: #fff;
     font-size: 1.8em;
     background-color: #dc9f0306;
     border-radius: 25px;
     border-color: #dc9f0309;
 }
- 
 .search-bar {
     visibility: hidden;
-}
- 
-.main-container {
-    max-height: 55vh;
- 
-}
- 
+} */
+
 .welcome {
+    margin-block-start: 1.2rem;
     color: white;
-    max-width: 45%;
-    padding: 1.1em;
+    max-width: 70%;
+    max-height: 35%;
+    padding: 0.5rem;
     border-radius: 15px;
 }
- 
+
 .welcome-title {
-    font-size: 1.1rem;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.3rem;
+    font-size: 1.2rem;
     font-weight: 150;
 }
- 
-.welcome-description, .welcome-ptext {
-    margin-bottom: 4px;
-    font-size: 0.78rem;
+
+.welcome-description, .welcome-text {
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.2rem;
+    font-size: 0.85rem;
 }
- 
+
 .footer {
     min-width: 100%;
-    max-height: 3.5rem;
-    position: fixed;
+    min-height: 2.5rem;
 }
- 
-.footer-title {
-    font-size: 1.2rem;
-    margin-bottom: -1.5rem;
+
+.footer-link {
+    margin-block-end: 0.9rem;
+    color: white;
+    font-size: 1rem;
 }
- 
+
 .footer-copyright{
-    visibility: hidden;
+    color: #ad7d01;
+    font-size: 0.7rem;
 }
- 
+
 }
