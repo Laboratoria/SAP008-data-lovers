@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('./Project Images/BGDesktop.png');
+    background-image: url('./Images/BGDesktop.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -35,7 +35,6 @@ body {
     padding: 0.5rem;
     border-color: #700505;
 }
-
 .search-icon {
     padding: 0.25rem;
     font-size: 1rem;
@@ -215,7 +214,7 @@ body {
 @media only screen and (max-width: 600px){
 
 body {
-    background-image: url('./Project Images/BGMobile.png');
+    background-image: url('./Images/BGMobile.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -223,7 +222,7 @@ body {
 .header {
     min-width: 100%;
     max-height: 25vh;
-    background-image: url('./Project Images/Logo.svg');
+    background-image: url('./Images/Logo.svg');
     background-position-x: 50%;
     background-position-y: 1.5vh;
     background-size: contain;
@@ -251,7 +250,6 @@ body {
     border-radius: 25px;
     border-color: #dc9f0309;
 }
-
 .search-bar {
     visibility: hidden;
 } */

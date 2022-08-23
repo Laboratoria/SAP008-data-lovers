@@ -16,17 +16,7 @@ function displayBooksList(books) {
 function displaySpellsList(spells) {
   return spells.map((spell) => spell.name) 
 }
-// function displaySpellsList(dataBaseSpells){
-//   let spellsResult = [];
-//   let allSpells = data.spells;
- 
-//   for(let i = 0; i < allSpells.length; i++){
-//     let spellsList = allSpells[i].name;
-//     spellsResult.push(spellsList);
-//   }
-//   return spellsResult
-// }
- 
+
 // function filterCharactersByHouses(characters, houses){
 //   const filterResult = []
 //   characters.filter((character) => {
