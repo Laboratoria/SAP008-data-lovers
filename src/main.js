@@ -11,6 +11,7 @@ const btnJohto = document.getElementById("button-johto");
 const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
+
 let pokemonsToBeShown= []
 
 //templates dos cards//
@@ -67,7 +68,7 @@ btnKanto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
-    pokemonsToBeShown = infoKanto
+    pokemonsToBeShown = result
     console.log(infoKanto)
 });
 
@@ -76,7 +77,7 @@ btnJohto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "johto")
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
-    pokemonsToBeShown = infoJohto
+    pokemonsToBeShown = result
     console.log(infoJohto)
 });
 
@@ -84,38 +85,18 @@ btnJohto.addEventListener("click", function () {
 btnWorld.addEventListener("click", function () {
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
-    pokemonsToBeShown= infoPokemons 
+    pokemonsToBeShown= infoPokemons
 });
-
-console.log(select.value)
 
 select.addEventListener("change", function(){
     let type = select.value
     let result = filterByType(pokemonsToBeShown,type)
     let pokeType = createCards(result)
     cards.innerHTML = pokeType;
-    console.log (type)
+    console.log (type);
+
+});
 
 
-})
-
-// Exemplo feito durante a OH
-    // const pokemons = []
-     // const pokemonsByRegion= filterByRegion(pokemons, "kanto")
-    // const filteredRegionNType = filterByType(pokemonsByRegion, "grass") 
-
-
-        // let select = document.querySelector('#lang');
-        // let result = document.querySelector('#result');
-        // select.addEventListener('change', function () {
-        //     result.textContent = this.value;
-
-
-
-//     const selectElement = document.querySelector('.ice-cream');
-
-// selectElement.addEventListener('change', (event) => {
-//   const result = document.querySelector('.result');
-//   result.textContent = `You like ${event.target.value}`;
-// })
+   
 
