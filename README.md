@@ -54,7 +54,7 @@ Para a escrita das histórias, decidimos por uma liguagem simples e de poucas se
 
 Sendo assim, o resultado final do processo de criação das nossas histórias de usuário pode ser observado abaixo:
 
-![histórias-de-usuário-postits](https://github.com/GabriellaViroli/SAP008-data-lovers/blob/imagens/src/Images%20Prot%C3%B3tipos%20e%20Hist%C3%B3rias/Hist%C3%B3rias%20de%20Usu%C3%A1rios.png?raw=true)
+![histórias-de-usuário-postits](Images/HistoriasUsuarios.png?raw=true "Historias")
 
 ## 4. Processo de prototipação
 
@@ -95,7 +95,7 @@ Após todas as etapas do processo de prototipação, e da inclusão de mudanças
 
 Versões Desktop e Mobile:
 
-![foto-do-protótipo-versões-desktop-mobile](https://github.com/GabriellaViroli/SAP008-data-lovers/blob/imagens/src/Images%20Prot%C3%B3tipos%20e%20Hist%C3%B3rias/Prot%C3%B3tipos.png?raw=true)
+![foto-do-protótipo-versões-desktop-mobile](Images/Prototipos.png?raw=true "Prototipos")
 
 
 ## 7. Objetivos e funcionamento da aplicação (implementação da interface de usuário)
