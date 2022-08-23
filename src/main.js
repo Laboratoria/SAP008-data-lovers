@@ -2,8 +2,19 @@ import {sortByAZ, sortByZA, filterData, filterName, computeStats} from './data.j
 import data from './data/rickandmorty/rickandmorty.js';
 
 function printCards(data) {
-  document.getElementById('listening').innerHTML = data.map((item) => `
-  <div class="flip-container">
+  let episode = [];
+  document.getElementById('listening').innerHTML = data.map(
+    (item) => {
+    const ep = item.episode[0];
+      fetch(ep)
+        .then(function(response) {
+          return response.json();})
+        .then(function(info) {
+          console.log(info.episode)
+           return episode = info.episode;
+          })
+          console.log(episode)
+    return `<div class="flip-container">
      <div class="flipper">
         <div class="front">
            <img  class= "image" src="${item.image}">
@@ -14,10 +25,10 @@ function printCards(data) {
         </div> 
         <div class="back">
         <h2>${item.name}</h2>
+        <p class="text">${item.episode}</p>
         </div>
     </div>
-</div>  
-`)
+</div>`  })
 }
 
 printCards(data.results);
