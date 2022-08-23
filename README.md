@@ -52,22 +52,22 @@ Iniciou-se o projeto determinando quatro (4) histórias de usuário:
 
 1 - História 1: "Como fã da série, gostaria de poder visualizar todos os personagens da série para que eu consiga ter acesso as suas principais características de forma mais fácil. "
 
-A partir dessa história, criou-se a funcionalidade de exibir os cards dos personagens na tela.
+A partir dessa história, criou-se a funcionalidade de exibir os cards dos personagens na tela. Definiu-se que essa história estava finalizada quando   os cards de todos os personagens foram printados na tela do navegador.
 
 
 2 - História 2: “Como fã da série, gostaria de saber quais personagens são alienígenas, pois eu amo ficção científica.”
 
-A partir dessa história, criou-se a funcionalidade do botão espécie, onde o usuário pode verificar a quais espécies pertencem os personagens.
+A partir dessa história, criou-se a funcionalidade do botão espécie, onde o usuário pode verificar a quais espécies pertencem os personagens. Definiu-se que essa história estava pronta quando os cards dos personagens filtrados por espécie (alienígena, humano e desconhecido) foram exibidos na tela do navegador.
 
 
 3 - História 3: “Eu como estudante de Ciências Sociais, gostaria de saber a média de quantas personagens femininas existem na série para colocar nos dados do meu TCC.”
 
-A partir dessa história, criou-se a funcionalidade de exibir a porcentagem dos personagens na tela de acordo com o filtro escolhido.
+A partir dessa história, criou-se a funcionalidade de exibir a porcentagem dos personagens na tela de acordo com o filtro escolhido. Definiu-se que essa história estava finalizada quando foi exibido na tela do navegador a média dos personagens com base no filtro selecionado.
 
 
 4 - História 4:  “Como fã de Rick and Morty, gostaria muito de encontrar os nomes dos personagens com facilidade, pois tenho muita dificuldade em memorizá-los.”
 
-A partir dessa história, criou-se a funcionalidade de caixa de pesquisa na qual permite o usuário pesquisar o seu personagem pelo nome.
+A partir dessa história, criou-se a funcionalidade de caixa de pesquisa na qual permite o usuário pesquisar o seu personagem pelo nome. Definiu-se que essa história estava finalizada quando, ao escrever o nome de um personagem na caixa de pesquisa, os cards referentes ao nome pesquisado eram exibidos na tela do navegador.
 
 
 ## 4. Protótipos da interface
