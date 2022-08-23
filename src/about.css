@@ -55,7 +55,7 @@ button:hover {
 }
 
 @media screen and (max-width: 1140px) {
-    .btn-header{
+    .btn-header {
         display: none;
     }
 
