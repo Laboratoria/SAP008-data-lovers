@@ -27,18 +27,12 @@ function displaySpellsList(spells) {
 //   return spellsResult
 // }
  
-// function filterCharactersByHouses(dataBaseCharacters){
+// function filterCharactersByHouses(characters, houses){
 //   const filterResult = [];
-//   dataBaseCharacters.filter((character) => {
-//     if (character.house === 'Gryffindor'){
-//       filterResult.push(character.name);
-//     }else if (character.house === 'Ravenclaw'){
-//       filterResult.push(character.name);
-//     }else if (character.house === 'Hufflepuff'){
-//       filterResult.push(character.name);
-//     }else if (character.house === 'Slytherin'){
+//   characters.filter((character) => {
+//     if (character.house === houses){
 //       filterResult.push(character.name);
 //     }
 //   });
-//   return filterResult.join('');
+//   return filterResult;
 // }
