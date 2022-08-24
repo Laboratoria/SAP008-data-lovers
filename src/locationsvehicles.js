@@ -1,6 +1,12 @@
 import data from '../data/ghibli/ghibli.js';
 
 const films = data.films;
+const catalogue = document.querySelector('.catalogue');
+const btnLocations = document.querySelector('.btn-locations');
+const btnVehicles = document.querySelector('.btn-vehicles');
+const vehiclesInfos = printCatalogueVehicles(films);
+const locationsInfos = printCatalogueLocations(films);
+const locationsVehicles = locationsInfos.concat(vehiclesInfos);
 
 function printCatalogueLocations(films) {
   const arrayLocations = films.map((film) => {
@@ -45,12 +51,6 @@ function printCatalogueVehicles(films) {
   return arrayVehicles.join('');
 }
 
-const catalogue = document.querySelector('.catalogue');
-const btnLocations = document.querySelector('.btn-locations');
-const btnVehicles = document.querySelector('.btn-vehicles');
-const vehiclesInfos = printCatalogueVehicles(films);
-const locationsInfos = printCatalogueLocations(films);
-const locationsVehicles = locationsInfos.concat(vehiclesInfos);
 catalogue.innerHTML = locationsVehicles;
 
 btnLocations.addEventListener('click', () => {

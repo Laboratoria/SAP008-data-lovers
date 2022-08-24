@@ -3,6 +3,8 @@ import data from '../data/ghibli/ghibli.js';
 
 const films = data.films;
 const modal = document.querySelector('.modal');
+const btnFilterDuration = document.querySelector('#filter-duration');
+const btnOrderFilms = document.querySelector('#order-by');
 
 function printCatalogue(filmsList) {
   const arrayFilms = filmsList.map((film) => {
@@ -76,14 +78,12 @@ function hideModal(e){
   }
 }
 
-const btnFilterDuration = document.querySelector('#filter-duration');
 btnFilterDuration.addEventListener ('change', () => {
   const selected = (btnFilterDuration).value;
   const filterDuration = ghibli.filterDuration(films, selected);
   printCards(filterDuration);
 });
 
-const btnOrderFilms = document.querySelector('#order-by');
 btnOrderFilms.addEventListener('change', () => {
   let selection = btnOrderFilms.value;
   const sortedFilms = ghibli.sortedFilms(films, selection);

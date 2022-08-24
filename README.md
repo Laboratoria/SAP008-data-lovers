@@ -93,6 +93,7 @@ Definição de pronto:
 ✅ **Resolução**: desafio superado após estudarmos sobre *filter*. Assim, escrevemos uma fnção que extrai dos dados de cada filme um array de personagens. Em seguida, filtra apenas personagens de gênero feminino. Depois compara o tamanho do array filtrado com o array original e caso o array filtrado seja maior que 50% do array original afirmamos que há mais personagens de gênero feminino no filme em questão.
 
 ❗**OBS 1**: Apenas 2 de 171 personagens possuíam gênero indefinido.
+
 ❗**OBS 2:** Ao final esse filtro foi removido pois ele não agregou o valor que esperávamos. Os filmes tendem a ter uma representatividade equilibrada de gêneros. Deste modo, optamos por manter apenas o filtro de minutagem e a função de ordenar os dados, sobretudo por avaliação elaborados nas histórias de usuário posteriores.
 
 ## 4. **Protótipo de Baixa Fidelidade**
@@ -155,9 +156,6 @@ Definição de pronto:
 Critérios de aceitação:
 - conseguir visualizar todos os personagens de um filme específico;
 - visualizar informações de foto, nome, idade, gênero e espécie para cada personagem.
-
-Desafio:
-- 
 
 Definição de pronto:
 - Cards de personagens;

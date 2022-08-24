@@ -2,6 +2,8 @@ import { ghibli } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films;
+const cataloguePeople = document.querySelector('.catalogue');
+const btnFilms = document.querySelectorAll('.btn-film');
 
 function printCataloguePeople(films) {
   const arrayPeople = films.map((film) => {
@@ -26,8 +28,6 @@ function printCataloguePeople(films) {
   return arrayPeople.join('');
 }
 
-const cataloguePeople = document.querySelector('.catalogue');
-const btnFilms = document.querySelectorAll('.btn-film');
 for (let i = 0; i < btnFilms.length; i++) {
   btnFilms[i].addEventListener('click', () => {
     const filmPeople = ghibli.filmPeople(films, btnFilms[i].value);
