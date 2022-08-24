@@ -1,5 +1,5 @@
-import {ghibli} from '../data.js';
-import data from '../data/ghibli/ghibli.js';
+import {ghibli} from './data.js';
+import data from './data/ghibli/ghibli.js';
 
 const films = data.films;
 const modal = document.querySelector('.modal');

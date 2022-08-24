@@ -313,12 +313,16 @@ footer {
   }
 
   .navbar a {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 
   .description {
     font-size: 0.65rem;
     padding: 1vw 25vw 2vw 0;
+  }
+
+  .container {
+    min-height: 130vw;
   }
 
   .btn-catalogue-filter {
