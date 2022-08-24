@@ -17,12 +17,10 @@
 
 body {
   background-color: #1D1C38;
-  background-image: url(img/kiks.png);
+  background-image: url(img/kiks\ 1.svg);
   background-repeat: no-repeat;
   background-size: 40vw;
-  background-position: 62vw 10vw;
-  /* background-size: 40vw;
-  background-position: 57vw 14vw; */
+  background-position: 5vw 10vw;
   display: fixed;
 }
 
@@ -45,7 +43,7 @@ body {
 .navbar {
   overflow: hidden;
   max-width: 100%;
-  padding: 7vw 0 0vw 15vw;
+  padding: 6vw 0 0 60vw;
   font-size: medium;
 }
 
@@ -73,17 +71,17 @@ body {
 
 .description {
   margin:0;
-  padding: 1vw 25vw 1.5vw 2vw;
+  padding: 1vw 0 1.5vw 30vw;
   color: var(--color-font);
   font-size: 1.7rem;
   font-weight: 350;
-  text-align: left;
+  text-align: right;
   text-indent: 10vw;
 }
 
 .btn-catalogue {
-  margin: 1vw 0 2vw 5vw;
-  text-align: left;
+  margin: 1vw 2vw 2vw 0;
+  text-align: right;
 }
 
 .btn-catalogue-filter {
@@ -237,7 +235,7 @@ footer {
     font-size: 3.5vh;
   }
   .navbar {
-    padding: 5vw 0 0 15vw;
+    padding: 6vw 0 2vw 50vw;
   }
   .navbar a {
     font-size: 0.8rem;
@@ -245,7 +243,7 @@ footer {
 
   .description {
     font-size: 1rem;
-    padding: 0 20vw 1vw 0;
+    padding: 0 0 1vw 25vw;
   }
 
   .container {
@@ -303,13 +301,16 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  body {
+    background-position: -1vw 10vw;
+  }
   .top h1 {
     margin: -12vw 0 0;
     font-size: 2.5vh;
   }
 
   .navbar {
-    padding: 7vw 0 0 10vw;
+    padding: 7vw 0 2vw 42vw;
   }
 
   .navbar a {
@@ -318,7 +319,8 @@ footer {
 
   .description {
     font-size: 0.65rem;
-    padding: 1vw 25vw 2vw 0;
+    margin: 1vw -5vw 2vw 0;
+    padding: 0 0 0 18vw;
   }
 
   .container {
