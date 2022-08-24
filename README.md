@@ -23,17 +23,17 @@ Dados escolhidos:
 
 ## 1. **Apresentação**
 
-O projeto apresenta o universo dos Studio Ghibli a partir de 20 longas, suas sinopses, informação de personagens, locais e veículos únicos. Na página é possível filtrar os filmes por minutagem, onde será possível escolher um filme que caiba no seu tempo disponível. Ordená-los por nota e visualizar os filmes que possuem uma maior aceitação pelo público. Com isso, a pessoa usuária terá a possibilidade de analisar os filmes que já visualizou ou mesmo decidir qual próximo filme gostaria de assistir.
+O projeto apresenta o universo dos Studio Ghibli a partir de 20 longas, suas sinopses, informação de personagens, locais e veículos únicos. Na página é possível filtrar os filmes por minutagem, onde será possível escolher um filme que caiba no seu tempo disponível. Ordená-los por nota e visualizar os filmes que possuem uma maior aceitação pelo público. Assim, é possível visualizar quais filmes você já assistiu ou mesmo decidir qual próximo filme gostaria de assistir.
 
 ## 2. **Idealização do Projeto**
 
-O primeiro passo foi entender como os nossos dados estavam estruturados, neste caso um array de objetos, nos quais alguns valores também eram compostos de array de outros objetos. Ou seja, para alcançar algumas informações precisaríamos entender como realizar iterações em arrays de objetos, e em alguns casos, mergulhar um pouco mais e acessar dados em array de objetos alocados em valores dos objetos anteriores. 
+O primeiro passo foi entender como os nossos dados estavam estruturados, neste caso um array de objetos, nos quais alguns valores também eram compostos de array de outros objetos. Ou seja, para alcançar algumas informações precisaríamos entender como realizar iterações em arrays de objetos, e em alguns casos, realizar iterações dentro de iterações para acessar dados em array alocados em valores de objetos. 
 
 - Object Studio Ghibli:
   - Films => cada *film* um objeto que entre suas propriedades possui:
     - People => cada *people* um objeto
     - Location => cada *location* um objeto
-    - Vehicles => cada *vehicles* um objeto
+    - Vehicles => cada *vehicle* um objeto
 
 ### 2.1 Ideia inicial para o card de cada filme:
 
@@ -43,7 +43,7 @@ Ideia de como criar o cartão:
 - Criar a estrutura do card ampliado em html e estilizar no css;
 - Capturar os valores das chaves (ex: description, director, release_date, rt_score) e inserí-los em campos específicos do html (**Template String**);
 - realizar uma contagem de elementos do array (ex: people) para gerar a contagem de personagens do filme (Pesquisar sobre como realizar contagem de elementos em array);
-- realizar um contagem dos valores (ex: specie de personagens no array people) para ver quais espécies há naquele filme (Como realizar contagem de objetos dentro de array dentro de objetos dentro de array);
+- realizar um contagem dos valores (ex: specie de personagens no array people) para ver quais espécies há naquele filme (Como realizar contagem de objetos dentro de array);
 
 
 ## 3. **Projeto Inicial**
@@ -68,23 +68,32 @@ Definição de pronto:
 - o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
 - a história implementada foi testada com, pelo menos 3 usuários, e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade.
 
+🛑 **Desafio**: entender como *automatizar* a inserção desses dados no html e não criar cartão por cartão manualmente, copiando os dados do objeto.
+
+✅ **Resolução**: desafio superado após entendermos como manusear *template strings*.
+
 ### 3.2 **História de Usuário 2**
 
 > Como pessoa usuária gostaria de escolher um filme onde as personagens principais são do gênero feminino (os dados de idade não possuem padrão e apresentam números e faixa etária misturados), para discutir gênero com minha filha.
 
-Critérios de aceitação:
+**Critérios de aceitação:**
 - Filtro para gênero;
 - Usuário consegue filtrar filmes que possuem mais personagens de um gênero específico;
 - Catálogo de filmes;
 - Ocultar filmes que não se encaixam na característica escolhida;
 
-Definição de pronto:
+**Definição de pronto:**
 - botão de filtragem funcionando;
 - filtragem devolvendo apenas os filmes que se encaixem na escolha do usuário;
 - o código tem e passa nos testes necessários;
 - o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
 
-❗**OBS:** Ao final esse filtro foi removido pois ele não agregou o valor que esperávamos. Os filmes tendem a ter uma representatividade equilibrada de gêneros. Deste modo, optamos por manter apenas o filtro de minutagem e a função de ordenar os dados, sobretudo por avaliação elaborados nas histórias de usuário posteriores.
+🛑 **Desafio**: realizar uma contagem de personagens por gênero e por filme, depois calcular se há mais personagens de gênero feminino ou masculino em cada filme e em seguida construir um filtro que alcance essa informação.
+
+✅ **Resolução**: desafio superado após estudarmos sobre *filter*. Assim, escrevemos uma fnção que extrai dos dados de cada filme um array de personagens. Em seguida, filtra apenas personagens de gênero feminino. Depois compara o tamanho do array filtrado com o array original e caso o array filtrado seja maior que 50% do array original afirmamos que há mais personagens de gênero feminino no filme em questão.
+
+❗**OBS 1**: Apenas 2 de 171 personagens possuíam gênero indefinido.
+❗**OBS 2:** Ao final esse filtro foi removido pois ele não agregou o valor que esperávamos. Os filmes tendem a ter uma representatividade equilibrada de gêneros. Deste modo, optamos por manter apenas o filtro de minutagem e a função de ordenar os dados, sobretudo por avaliação elaborados nas histórias de usuário posteriores.
 
 ## 4. **Protótipo de Baixa Fidelidade**
 
@@ -116,14 +125,15 @@ De modo a atender *histórias de usuários* mais detalhadas, assim como tornar a
 Critérios de aceitação:
 - filtro para minutos
 
-Desafio:
-- inserir minutagem na base de dados (duração);
-
 Definição de pronto:
 - botão de filtragem funcionando;
 - filtragem devolvendo apenas os filmes que se encaixam na escolha do usuário;
 - o código tem e passa nos testes necessários;
 - o código foi feito, ao menos em parte, em pair programming e/ou feito em code review;
+
+🛑 **Desafio:** inserir minutagem na base de dados (duração);
+
+✅ **Resolução**: o site do Studio Ghibli possui as informações de minutagem, como nossos dados possuíam apenas 20 filmes optamos por inserir essa informação em nossa base.
 
 ### 6.2 **História de Usuário 4**
 > Como pessoa usuária quero ler a sinopse do filme para tomar a decisão de qual assistir.
@@ -135,6 +145,10 @@ Definição de pronto:
 - caixa pop up (modal);
 - Informações específicas para cada um dos filmes do catálogo;
 
+🛑 **Desafio:** uma modal única para cada filme;
+
+✅ **Resolução**: associar a template string da modal com a template string original que insere os pôsteres dos filmes na tela. Assim cada modal permanecerá associada ao seu filme e o pôster do filme tornou-se o botão que dá acesso a essas informações adicionais.
+
 ### 6.3 **História de Usuário 5**
 > Como pessoa usuária gostaria de visualizar informações de personagens do filme que assisti para aprender o nome de todos.
 
@@ -143,11 +157,15 @@ Critérios de aceitação:
 - visualizar informações de foto, nome, idade, gênero e espécie para cada personagem.
 
 Desafio:
-- substituir imagem de personagens com link quebrado;
+- 
 
 Definição de pronto:
 - Cards de personagens;
 - Informações textuais relacionadas ao card de cada personagem;
+
+🛑 **Desafio:** muitas imagens de personagens estavam com o link quebrado.
+
+✅ **Resolução**: concordamos que a imagem de personagens por filme incluiria bastante valor ao projeto, então decidimos substituir os links quebrados buscando no mesmo site da base de dados ou no site oficial do Studio Ghibli.
 
 # 7. Resultado Final
 

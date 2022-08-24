@@ -2,6 +2,7 @@ import { ghibli } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films;
+
 function printCataloguePeople(films) {
   const arrayPeople = films.map((film) => {
     const people = film.people.map((person) => {

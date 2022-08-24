@@ -2,61 +2,61 @@ import data from '../data/ghibli/ghibli.js';
 
 const films = data.films;
 
-function printCatalogueLoc(films) {
-  const arrayLoc = films.map((film) => {
-    const locations = film.locations.map((loc) => {
-      const templateLoc = `
+function printCatalogueLocations(films) {
+  const arrayLocations = films.map((film) => {
+    const locations = film.locations.map((location) => {
+      const templateLocations = `
             <div class="card">
               <div class="card-img-cut">
-                <img class="card-img" src="${loc.img}" alt="${loc.name}" name="${loc.name}"></button>
+                <img class="card-img" src="${location.img}" alt="${location.name}" name="${location.name}"></button>
               </div>
               <div class="card-txt">
                 <h4>${film.title}</h4>
-                <p>${loc.name}</p>
+                <p>${location.name}</p>
               </div>
             </div>
             `;
-      return templateLoc;
+      return templateLocations;
     });
     return locations.join('');
   })
-  return arrayLoc.join('');
+  return arrayLocations.join('');
 }
 
-function printCatalogueVeh(films) {
-  const arrayVeh = films.map((film) => {
-    const vehicles = film.vehicles.map((veh) => {
-      const templateVeh = `
+function printCatalogueVehicles(films) {
+  const arrayVehicles = films.map((film) => {
+    const vehicles = film.vehicles.map((vehicle) => {
+      const templateVehicles = `
             <div class="card">
                 <div class="card-img-cut">
-                <img class="card-img" src="${veh.img}" alt="${veh.name}" name="${veh.name}"> </button>
+                <img class="card-img" src="${vehicle.img}" alt="${vehicle.name}" name="${vehicle.name}"> </button>
               </div>
               <div class="card-txt">
                 <h4>${film.title}</h4>
-                <p>${veh.name}<p>
-                <p>${veh.vehicle_class}<p>
+                <p>${vehicle.name}<p>
+                <p>${vehicle.vehicle_class}<p>
               </div>
             </div>
             `;
-      return templateVeh;
+      return templateVehicles;
     });
     return vehicles.join('');
   })
-  return arrayVeh.join('');
+  return arrayVehicles.join('');
 }
 
 const catalogue = document.querySelector('.catalogue');
 const btnLocations = document.querySelector('.btn-locations');
 const btnVehicles = document.querySelector('.btn-vehicles');
-const vehiclesInfos = printCatalogueVeh(films);
-const locationsInfos = printCatalogueLoc(films);
+const vehiclesInfos = printCatalogueVehicles(films);
+const locationsInfos = printCatalogueLocations(films);
 const locationsVehicles = locationsInfos.concat(vehiclesInfos);
 catalogue.innerHTML = locationsVehicles;
 
 btnLocations.addEventListener('click', () => {
-  catalogue.innerHTML = printCatalogueLoc(films);
+  catalogue.innerHTML = printCatalogueLocations(films);
 })
 
 btnVehicles.addEventListener('click', () => {
-  catalogue.innerHTML = printCatalogueVeh(films);
+  catalogue.innerHTML = printCatalogueVehicles(films);
 })
