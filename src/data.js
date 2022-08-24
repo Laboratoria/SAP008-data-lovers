@@ -1,9 +1,23 @@
-// estas funciones son de ejemplo
+import data from './data/harrypotter/data.js';
 
-export const example = () => {
-  return 'example';
-};
+const filters = {
+  filterHouse,
+  filterTodos,
+}
+function filterHouse(house){
+  let listHouse = data.characters.filter((user, index, array) => user.house === house)
+  let listaPersonagens = listHouse.map((user, index, array) => {return user.name})
+       
+    return listaPersonagens
+  }
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+function filterTodos(valor){
+  if (valor === 'VerTodos') {
+    let todosPersonagens = data.characters.map((user, index, array) => {return user.name})
+
+    return todosPersonagens
+
+  }
+}
+
+export default filters;

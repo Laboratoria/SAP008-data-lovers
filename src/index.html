@@ -8,70 +8,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div id="root">
-  <header>
-    <h1 class="titulologo"><img src="logoharry.png"></h1>
+  <div id="root">
+    <header class="flex-container">
+      <h1 class="titulologo"><img src="logoharry.png"></h1>
+      <nav>
+        <ul class="navbar">
+          <a href="home.html">INICIO</a> |
+          <a target="_blank" href="https://www.hbomax.com/br/pt/harry-potter?countryRedirect=1&utm_id=sa%7c71700000085056423%7c58700007207970536%7cp66001139249&gclid=Cj0KCQjwxveXBhDDARIsAI0Q0x245efopt0KFfdQIZJZjZv_Fs3YZX4yn6ssLbmWykQGbE6iYGeiphgaAqfFEALw_wcB&gclsrc=aw.ds"> FILMES</a> |
+          <a target="_blanck" href="https://www.hogwartslegacy.com/pt-br">JOGOS</a>
+        </ul>
+      </nav>  
   </header>
-  <main>
-    <label>
-    <select class="select">
-      <option value="PERSONAGENS"> PERSONAGENS</option>
-      <option value="tudo"> Ver Todos</option>
-      <option value="filtrar"> Filtrar</option>
-      <option value="ordenar"> Ordenar A-Z</option>
+  <main class="buttonselect" id = "main-Select">
+    <select class="select" id="Select-Filtros">
+      <option disabled selected value="">FILTRAR POR</option>
+      <option value="VerTodos" id="Ver-Todos"> Ver Todos</option>
+      <option value="Gryffindor" id="FiltrarGrynffindor"> Filtrar por GRYNFFINDOR</option>
+      <option value="Ravenclaw" id="FiltrarRavenclaw"> Filtrar por RAVENCLAW</option>
+      <option value="Slytherin" id="FiltrarSlytherin"> Filtrar por SLYTHERIN</option>
+      <option value="Hufflepuff" id="FiltrarWeasley"> Filtrar por HUFFLEPUFF</option>
     </select>
-    <select class="select">
-      <option value="PERSONAGENS"> LIVROS</option>
-      <option value="tudo"> Ver Todos</option>
-      <option value="filtrar"> Filtrar</option>
-      <option value="ordenar"> Ordenar A-Z</option>
+    <select class="select" id="Select-Ordenar">
+      <option disabled selected value="">ORDENAR</option>
+      <option value="tudo" id="az"> A-Z</option>
+      <option value="filtrar" id="za"> Z-A</option>
     </select>
-    <select class="select">
-      <option value="PERSONAGENS"> PORÇÕES</option>
-      <option value="tudo"> Ver Todos</option>
-      <option value="filtrar"> Filtrar</option>
-      <option value="ordenar"> Ordenar A-Z</option>
-    </select>
-    <select  class="select">
-      <option value="PERSONAGENS"> FEITIÇOS</option>
-      <option value="tudo"> Ver Todos</option>
-      <option value="filtrar"> Filtrar</option>
-      <option value="ordenar"> Ordenar A-Z</option>
-    </select>
-    <select class="select">
-      <option value="PERSONAGENS"> CURIOSIDADES</option>
-      <option value="tudo"> Ver Todos</option>
-      <option value="filtrar"> Filtrar</option>
-      <option value="ordenar"> Ordenar A-Z</option>
-    </select>
-    </label>
+    <input type="search" id="buscar" class="campodebusca" name="harrypt" placeholder="Buscar...">
   </main>
-  <section id="corpoweb" class="imgback">
-    <img src="backcastelo1350.png">
-    <strong>_______</strong>  <button id="explorar" class="btnexplore">EXPLORE MAIS</button>  <strong>_______</strong>
-  </section>
+  <table id="lista" class="corpoweb">
+  </table>
   </div>
-  <footer>
-  <br><br>
-  <p>&copy; Developed Andresa e Tamyres</p>
-  <p>Procurando informações detalhadas? World the Harry potter é a nova casa oficial de Harry Potter.</p>
-  <p>Junte-se ao fã-clube e traga suas características com você. </p>
-  <p>Entregando as últimas caracteristicas e curiosidades da saga Harry potter.</p>
-  <ul class="redes sociais">
-      <li>
-      <a href="https://www.instagram.com/harrypotterfilm/?hl=en">
-      </a>
-      </li>
-    <li class="youtube">
-      <a href="https://www.youtube.com/c/WizardingWorld/videos">
-      </a>
-      </li>
-    <li class="twitter">
-      <a href="https://twitter.com/wizardingworld">
-      </a>
-      </li>
-  </ul>
+  <footer class="rodape">
+    <p class="developed">&copy; Developed Andresa e Tamyres</p>
+    <p class="developed">Junte-se ao fã-clube e traga suas características com você.</p>
+    <p class="developed">Entregando as últimas caracteristicas e curiosidades da saga Harry potter.</p>
+    <section class="RedesSociais">
+      <a href="https://www.instagram.com/harrypotterfilm/?hl=en" target="tela"><img src="logo-instagram.jpg" alt="instagram"></img></a>
+      <a href="https://www.youtube.com/c/WizardingWorld/videos" target="tela"><img src="logo-youtube.jpg" alt="youtube"></img></a>
+      <a href="https://twitter.com/wizardingworld" target="tela"><img src="logo-twitter.jpg" alt="twitter"></img></a>
+    </section>
   </footer>
   <script src="main.js" type="module"></script>
+  <script src="inicio.html" type="module"></script>
 </body>
 </html>
