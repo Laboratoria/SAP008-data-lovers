@@ -27,18 +27,17 @@ select:hover {
 
 .btn{
     border: none;
-    background: scroll#ffffff;
+    background: #ffffff;
     color: #304B72;
-    font-size: 15px;
-    text-align: right;
-    top: 70%;
-
-}
-
-.open-menu{
+    font-size: 25px;
     position: absolute;
     top: 88%;
     left: 75%;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #83D2E4
 }
 
 #gender{
@@ -178,6 +177,11 @@ p{
 }
 
 h2{
+    color: #E7E0DB;
+    text-align: center;
+}
+
+h4{
     color: #E7E0DB;
     text-align: center;
 }
