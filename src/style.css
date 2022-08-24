@@ -1,23 +1,43 @@
+/*common breakpoints-pesquisar sobre mediaqueries */
 * {
     margin: 0;
     padding:0;
+    
 }
 
 
-.body-container {
+.body-container {    
+    width: 100%;
+    height: 100%;
     color: #0A1823;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    width: 100%;
-    height: 400px;
     background-image: url(background.jpg);
     background-color: #0A1823;
     background-size: cover;    
-    display:flex;
-    justify-content: center;
+    /*display:flex;    
+    flex-direction: column;
+    justify-content: space-around;    
     align-items: center;
-    flex-wrap: wrap;  
-    margin: 0;
-    padding: 0;
+    align-content: center;
+    flex-wrap: wrap;  */
+    margin: auto;
+    padding: auto;
+    border: red 10px solid;
+    
+}
+
+.flex-container {
+    width: 80vw;
+    height: 80vw;
+    margin: auto;
+    border: green 10px solid;
+    display:flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;     
+
 }
 
 .header-container {
@@ -153,14 +173,14 @@
 
 .footer-container {
     margin-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     padding: 10px 10px;
-    background-color: #00B5CC;
+    background-color: #0A1823;
     border-radius: 20px;
     border: none;
-    color: #0A1823;
-    width: 90%;
-    height: auto;
+    color: white;
+    width: 40vw;
+    height: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
