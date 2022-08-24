@@ -19,7 +19,7 @@ function mostrarPersonagens (data){
 ).join('')
 }
 
-filtro 
+filtro ()
 mostrarPersonagens(data.results)
 
 
