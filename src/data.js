@@ -16,29 +16,13 @@ function displayBooksList(books) {
 function displaySpellsList(spells) {
   return spells.map((spell) => spell.name) 
 }
-// function displaySpellsList(dataBaseSpells){
-//   let spellsResult = [];
-//   let allSpells = data.spells;
- 
-//   for(let i = 0; i < allSpells.length; i++){
-//     let spellsList = allSpells[i].name;
-//     spellsResult.push(spellsList);
-//   }
-//   return spellsResult
-// }
- 
-// function filterCharactersByHouses(dataBaseCharacters){
-//   const filterResult = [];
-//   dataBaseCharacters.filter((character) => {
-//     if (character.house === 'Gryffindor'){
-//       filterResult.push(character.name);
-//     }else if (character.house === 'Ravenclaw'){
-//       filterResult.push(character.name);
-//     }else if (character.house === 'Hufflepuff'){
-//       filterResult.push(character.name);
-//     }else if (character.house === 'Slytherin'){
-//       filterResult.push(character.name);
+
+// function filterCharactersByHouses(characters, houses){
+//   const filterResult = []
+//   characters.filter((character) => {
+//     if (character.house === houses){
+//       filterResult.push(character.name)
 //     }
-//   });
-//   return filterResult.join('');
+//   })
+//   return filterResult
 // }
