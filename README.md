@@ -148,7 +148,7 @@ Definição de pronto:
 
 🛑 **Desafio:** uma modal única para cada filme;
 
-✅ **Resolução**: associar a template string da modal com a template string original que insere os pôsteres dos filmes na tela. Assim cada modal permanecerá associada ao seu filme e o pôster do filme tornou-se o botão que dá acesso a essas informações adicionais.
+✅ **Resolução**: superamos esse desafio ao associar a template string do modal com a template string original que insere os pôsteres dos filmes na tela. O pôster do filme tornou-se o botão que daria acesso às informações adicionais. Ao final entendemos que o modal seria um só, porém teria informações que seriam substituídas de acordo com o filme clicado. 
 
 ### 6.3 **História de Usuário 5**
 > Como pessoa usuária gostaria de visualizar informações de personagens do filme que assisti para aprender o nome de todos.

@@ -237,6 +237,10 @@ footer {
     font-size: 0.6rem;
   }
 
+  .container {
+    min-height: 130vw;
+  }
+
   .catalogue {
     grid-template-columns: repeat(2, 1fr);
   }
