@@ -11,7 +11,15 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: rgb(217, 205, 169);
+  width: 100vw;
+  height: 100vh;
 }
+
+img{
+  max-width:100%;
+}
+
+
 
 .nav ul {
   list-style-type: none;
@@ -19,8 +27,8 @@ body {
   color: rgb(217, 205, 169);
   margin-left: none;
   margin-right: none;
-  border-radius: 10px;
-  padding-top: 1px;
+  border-radius: 1vw;
+  padding-top: 0vw;
   margin-top: 0vw;
   margin-bottom: 0vw;
 }
@@ -32,7 +40,7 @@ body {
 }
 
 .menu {
-  padding: 5px;
+  padding: 0.4vw;
   font-size: 22px;
   display: inline-block;
   cursor: pointer;
@@ -43,44 +51,45 @@ body {
 }
 
 .logo {
-  height: 100px;
+  height: 13vh;
   object-fit: scale-down;
-  float: right;
+
   margin-right: 5vw;
   margin-bottom: 0vw;
 }
 
 select {
-  border-radius: 5px;
+  border-radius: 0.6vw;
   font-family: Avocado;
   font-size: 13px;
-  width: 100px;
-  height: 30px;
+  width: 8vw;
+  height: 4vh;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
 }
 
 .imagemprincipal {
-  margin-left: 25vw;
-  margin-right: auto;
-  border-radius: 10px;
-  height: 380px;
+  
+
+  height: 55vh;
   object-fit: scale-down;
 }
 
 .divHeader {
+  display: flex;
   background-color: rgb(217, 205, 169);
   margin-bottom: 0vw;
+  justify-content: center;
 }
 
 .cards {
-  align-content: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 2vh;
+  flex-wrap: wrap;
 }
 
 .filtros1 {
@@ -107,7 +116,7 @@ select {
   background-color: rgb(124, 140, 90);
   color: rgb(217, 205, 169);
   border-radius: 1vw;
-  padding: 10px;
+  padding: 0.6vw;
   text-align: center;
   margin-top: 0vw;
   font-size: 20px;
@@ -121,17 +130,12 @@ select {
 .cardsBox {
   background-color: rgb(124, 140, 90);
   border-radius: 3vw;
-  box-shadow: 0 1vw 1vw rgb(106, 105, 105);
+  box-shadow: 0 1vw 1vw rgb(106 105 105);
   border-top: 0.1vw solid rgb(124, 140, 90);
   border-bottom: 0.1vw solid rgb(124, 140, 90);
-  margin: 1vw;
-  padding: auto;
-  left: 15vw;
-  right: 10vw;
   text-align: center;
-  overflow: hidden;
-  width: 230px;
-  height: 330px;
+  margin: 15px;
+ 
 }
 
 .cardsBox:hover {
@@ -147,17 +151,17 @@ select {
 
 .imagemCard {
   border-radius: 3vw;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 13vw;
 }
 
 .footer {
-  margin-top: 10px;
+  margin-top: 1vw;
   background-color: rgb(124, 140, 90);
-  height: 40px;
-  border-radius: 10px;
+  height: 5vh;
+  border-radius: 1vw;
   text-align: center;
-  padding-top: 1px;
+  padding-top: 0.1vw;
 }
 
 a {
@@ -168,63 +172,60 @@ a:hover {
   color: rgb(217, 205, 169);
 }
 
-/* Dúvidas OH
-
-tablet (responsividade)
-1- espaçamento itens nav
-2- barra menu e calculo quebrada na responsividade
-3- Deslocar imagem p esquerda
-4- Filtros alinhados na responsividade
-
-mobile (responsividade)
-1- Menu 
-2- filtros
-3- espaçamento entre os cards
-4- deslocar imagem p esquerda
-
-Outras:
-1- posição logo
-2 -espaçamento entre imagem e calculo agregado
-3 - imagem expandir? */
-
-/*Responsividade tablet:*/
 @media (max-width: 768px) {
   body {
     padding: 0%;
     margin: 0%;
   }
+
+  
+.imagemprincipal {
+    margin-left: 12vw;
+    margin-right: 15vw;
+  }
+  .calculo {
+    width: 100vw;
+  }
+
   .filtros1 {
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
   .filtros2 {
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
   .filtros3 {
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
   .filtros4 {
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
   .filtros1,
   .filtros2,
   .filtros3,
   .filtros4 {
-    display: inline;
+    display: inline-block;
   }
 
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .calculo {
-    width: 100%;
+
+  .cardsBox {
+    width: 25vw;
+    height: 50vh;
+  }
+
+  .imagemCard {
+    height: 27vh;
+    width: 19vw;
   }
 }
 
 @media (max-width: 320px) {
-  body {
+  /* body {
     padding: 0%;
     margin: 0%;
-  }
+  } */
 
   .logo {
     display: none;
@@ -246,14 +247,15 @@ Outras:
   }
 
   .cardsBox {
-    width: 330px;
-    height: 430px;
-    justify-content: space-between;
+    width: 90vw;
+    height: 70vh;
+    margin-left: 15vw;
+    margin-bottom: 15vw;
   }
 
   .imagemCard {
-    height: 250px;
-    width: 250px;
+    height: 40vh;
+    width: 65vw;
   }
 
   .textoCard {
@@ -274,3 +276,4 @@ Outras:
     grid-template-columns: 1fr 1fr;
   }
 }
+
