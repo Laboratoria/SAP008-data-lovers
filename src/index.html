@@ -6,86 +6,98 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   
-  <body class="body-container">   
-      <header class="header-container">
-        <button class="btn-header">INÍCIO</button>
-        <button class="btn-header">SOBRE</button>
-        <button class="btn-header">NA MÍDIA</button>
-      </header>
+  <body class="body-container">         
 
-      <div class="img-container">
-        <img class="rick-img" src="rick-and-morty.png" alt="rick and morty image">
-      </div>
-
-                  
-      <main class="main-container">          
+      <section class="flex-container">  
         
-          <div class="option-container">
-            <label>
-              <select id="select-status" class="btn-option">
-                <option value="" selected disabled hidden>STATUS</option>
-                <option value="alive">VIVO</option>
-                <option value="dead">MORTO</option>
-                <option value="unknown">DESCONHECIDO</option>  
-              </select>
-            </label>   
-
-            <label>
-              <select id="select-species" class="btn-option">
-                <option value="" selected disabled hidden>ESPÉCIE</option>
-                <option value="human">HUMANO</option>
-                <option value="alien">ALIENÍGENA</option>
-                <option value="unknown">DESCONHECIDO</option>      
-              </select>
-            </label>
-
-            <label>
-              <select id="select-gender" class="btn-option">
-                <option value="" selected disabled hidden>GÊNERO</option>
-                <option value="male">MASCULINO</option>
-                <option value="female">FEMININO</option>
-                <option value="unknown">DESCONHECIDO</option>      
-              </select>
-            </label>
-
-            <label>
-              <select id="select-order" class="btn-option">
-                <option value="" selected disabled hidden>A-Z</option>
-                <option value="ascending" id="ascending">A-Z</option>
-                <option value="descending" id="descending">Z-A</option>                      
-              </select>
-            </label>
-
-            <label>
-              <button id="reset" class="btn-option">limpar                                   
-              </button>
-            </label>
-
-            <label>
-
-              <input type="text" id="btn-search" class="btn-search" placeholder="buscar por nome">
-              
-            </label>
-
-          </div>
-
-          <div class="percentage-container" id="percentage-container" >
-            <strong><p class="percentage" id="percentage"></p></strong>
-
-          </div>         
-
-          <div class="card-container" id="card-container">        
-                
+        <div class="flex-item">
+          <header class="header-container">
+            <button class="btn-header">INÍCIO</button>
+            <button class="btn-header">SOBRE</button>
+            <button class="btn-header">NA MÍDIA</button>
+          </header>
+        </div>
+        
+        <div class="flex-item">
+          <section class="img-container">
+            <img class="rick-img" src="rick-and-morty.png" alt="rick and morty image">
+          </section>
+        </div>      
   
-          </div>        
+        <div class="flex-item">
+          <main class="main-container">          
+          
+            <div class="option-container">
+              <label>
+                <select id="select-status" class="btn-option">
+                  <option value="" selected disabled hidden>STATUS</option>
+                  <option value="alive">VIVO</option>
+                  <option value="dead">MORTO</option>
+                  <option value="unknown">DESCONHECIDO</option>  
+                </select>
+              </label>   
+  
+              <label>
+                <select id="select-species" class="btn-option">
+                  <option value="" selected disabled hidden>ESPÉCIE</option>
+                  <option value="human">HUMANO</option>
+                  <option value="alien">ALIENÍGENA</option>
+                  <option value="unknown">DESCONHECIDO</option>      
+                </select>
+              </label>
+  
+              <label>
+                <select id="select-gender" class="btn-option">
+                  <option value="" selected disabled hidden>GÊNERO</option>
+                  <option value="male">MASCULINO</option>
+                  <option value="female">FEMININO</option>
+                  <option value="unknown">DESCONHECIDO</option>      
+                </select>
+              </label>
+  
+              <label>
+                <select id="select-order" class="btn-option">
+                  <option value="" selected disabled hidden>A-Z</option>
+                  <option value="ascending" id="ascending">A-Z</option>
+                  <option value="descending" id="descending">Z-A</option>                      
+                </select>
+              </label>
+  
+              <label>
+                <button id="reset" class="btn-option">limpar                                   
+                </button>
+              </label>
+  
+              <label>
+  
+                <input type="text" id="btn-search" class="btn-search" placeholder="buscar por nome">
+                
+              </label>
+  
+            </div>
+  
+            <div class="percentage-container" id="percentage-container" >
+              <strong><p class="percentage" id="percentage"></p></strong>
+  
+            </div>         
+  
+            <div class="card-container" id="card-container">        
+                  
+    
+            </div>        
+          
+        </main>
+        </div>     
         
-      </main>
-
-      <footer class="footer-container">
-        <address><p class="footer-text">Desenvolvido por Amanda Holanda e Angelica Melo</p>
-        </address>        
-
-      </footer>
+        <div class="flex-item">
+          <footer class="footer-container">
+            <address><p class="footer-text">Desenvolvido por Amanda Holanda e Angelica Melo</p>
+            </address>        
+    
+          </footer>
+        </div>
+        
+      </section>     
     
     <script src="main.js" type="module"></script> 
 
