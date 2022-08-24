@@ -13,7 +13,8 @@ export const orderAz = (data, sortBy, order) => {
 
     if (order === "A-Z") {
         return data.sort((a, b) => a[sortBy] > b[sortBy] ? 1 : -1);
-    } else {
+    }
+    if (order === "Z-A")  {
 
         return data.sort((a, b) => a[sortBy] < b[sortBy] ? 1 : -1);
     }
