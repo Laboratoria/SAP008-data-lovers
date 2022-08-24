@@ -9,7 +9,35 @@
     </div>
     <div> <input type="text" placeholder="Buscar por nome...">
     </div>
- 
+        <section class="filter">
+      <select id="selectOrdem" class="btn-filtro">
+        <option value="" disabled selected>Ordenar</option>
+        <option value="ordenarAZ">A-Z</option>
+        <option value="ordernarZA">Z-A</option>
+      </select>
+    </select>
+      <select id="selectGenero" class="btn-filtro">
+        <option value="" disabled selected>Genero</option>
+        <option value="Female">Femea</option>
+        <option value="Male">Macho</option>
+        <option value="unknown">Indefinido</option>
+      </select>
+      <select id="selectStatus" class="btn-filtro">
+        <option value="" disabled selected>Status</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Morto</option>
+        <option value="unknown">Indefinido</option>
+      </select>
+      <select id="selectEspecie" class="btn-filtro">
+        <option value="" disabled selected>Especie</option>
+        <option value="unknown">Desconhecido</option>
+        <option value="Human">Humano</option>
+        <option value="Alien">Alien</option>
+        <option value="Robot">Robo</option>
+      </select>
+      <input type="reset" id="limparFiltro" class="btn-filtro" value="Limpar Filtros">
+    </section>
+
   </head>
   <body>
     <main id="root"> 
