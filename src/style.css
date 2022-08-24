@@ -4,11 +4,17 @@
 }
 
 body {
+  padding: 0%;   
+  margin: 0%;
   font-family: Avocado;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: rgb(217, 205, 169);
+}
+
+img{
+  max-width:100%;
 }
 
 .nav ul {
@@ -27,7 +33,6 @@ body {
   display: inline-block;
   margin-right: 2vw;
   cursor: pointer;
-
 }
 
 .menu {
@@ -41,13 +46,13 @@ body {
   color: rgb(168, 213, 232);
 }
 
+
 .logo {
-  height: 100px;
+  height: 13vh;
   object-fit: scale-down;
-  float: right;
+
   margin-right: 5vw;
   margin-bottom: 0vw;
-
 }
 
 select {
@@ -61,47 +66,42 @@ select {
   text-align: center;
 }
 
+
 .imagemprincipal {
-  margin-left: 25vw;
-  margin-right: auto;
-  border-radius: 10px;
-  height: 380px;
+  
+
+  height: 55vh;
   object-fit: scale-down;
 }
 
 .divHeader {
+  display: flex;
   background-color: rgb(217, 205, 169);
-  margin-bottom: 2vw;
+  margin-bottom: 0vw;
+  justify-content: center;
 }
 
 .cards {
-  align-content: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 2vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.filtros1 {
+.filtros{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+.filtros1, .filtros2, .filtros3, .filtros4 {
   font-size: 20px;
-  margin-left: 10vw;
 }
 
-.filtros2 {
-  font-size: 20px;
-  margin-left: 10vw;
-}
-
-.filtros3 {
-  font-size: 20px;
-  margin-left: 10vw;
-}
-
-.filtros4 {
-  font-size: 20px;
-  margin-left: 10vw;
-}
 
 .calculo {
   background-color: rgb(124, 140, 90);
@@ -168,39 +168,30 @@ a:hover {
   color: rgb(217, 205, 169);
 }
 
-
-/* Dúvidas OH
-
-tablet (responsividade)
-1- espaçamento itens nav
-2- barra menu e calculo quebrada na responsividade
-3- Deslocar imagem p esquerda
-4- Filtros alinhados na responsividade
-
-mobile (responsividade)
-1- Menu 
-2- filtros
-3- espaçamento entre os cards
-4- deslocar imagem p esquerda
-
-Outras:
-1- posição logo
-2 -espaçamento entre imagem e calculo agregado
-3 - imagem expandir? */
-
 /*Responsividade tablet:*/
 @media (max-width: 768px){
+  body{                        
+    padding: 0%;
+    margin: 0%;
+  } 
+
   .filtros1{margin-left: 1vw}
   .filtros2{margin-left: 1vw}
   .filtros3{margin-left: 1vw}
   .filtros4{margin-left: 1vw}
   .filtros1,.filtros2,.filtros3,.filtros4{display: inline}
-
-  .cards{grid-template-columns: 1fr 1fr 1fr 1fr}
   .calculo{width: 100%}
 }
 
+
+/*Responsividade celular:*/
 @media (max-width:320px){
+
+  body{                     
+    padding: 0%;
+    margin: 0%;
+  }
+
   .logo{
     display:none;
   }
@@ -212,13 +203,13 @@ Outras:
   }
 
    .menu,.calculo,.filtros1,.filtros2,.filtros3,.filtros4{
-    font-size:40px;
+    font-size:20px;
    }
 
    .cardsBox{
     width: 330px;
     height: 430px;
-    justify-content: space-between;
+    justify-content: space-between; 
    }
   
    .imagemCard{
@@ -235,7 +226,12 @@ Outras:
    }
 
   .filtros1,.filtros2,.filtros3,.filtros4{display: block}
-  .cards{grid-template-columns: 1fr 1fr}
+
+  .cards{
+    align-items: center; 
+    flex-direction: column;
+    
+  }
   
  
 }
