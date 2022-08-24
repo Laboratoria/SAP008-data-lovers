@@ -52,6 +52,21 @@ describe('should be a filter', () => {
     expect(longDuration.length).toEqual(1);
     expect(longDuration[0].duration).toEqual('125');
   });
+
+  it("film filter by medium duration", () => {
+    const mediumDuration = ghibli.filterDuration(filmsTest, '120min');
+
+    expect(mediumDuration.length).toEqual(1);
+    expect(mediumDuration[0].duration).toEqual('102');
+  });
+
+  it ("characters filter by film", () => {
+    const characters = ghibli.filmPeople(filmsTest, "Kiki's Delivery Service");
+
+    expect(characters[0].people.length).toEqual(3);
+    expect(characters[0].people[0].name).toEqual("Kiki");
+    expect(characters[0].people[2].name).toEqual("Ursula");
+  })
 })
 
 describe('should order the films', () => {
@@ -62,6 +77,14 @@ describe('should order the films', () => {
     expect(sorted[0].rt_score).toEqual('96');
     expect(sorted[2].rt_score).toEqual('93');
   });
+
+  it("should sort films by date", () => {
+    const sortedDate = ghibli.sortedFilms(filmsTest, 'release_date')
+    
+    expect(sortedDate.length).toEqual(3);
+    expect(sortedDate[0].release_date).toEqual('1989');
+    expect(sortedDate[2].release_date).toEqual('1986');
+  })
 })
 
 describe('should return aggregate calculations', () => {
