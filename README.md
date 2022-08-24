@@ -6,6 +6,7 @@
 * [4. Protótipo de Baixa Fidelidade](#4-protótipo-de-baixa-fidelidade)
 * [5. Protótipo de Alta Fidelidade](#5-protótipo-de-alta-fidelidade)
 * [6. Projeto Final: ampliação da proposta inicial](#6-projeto-final-pós-ampliação-da-proposta-inicial)
+* [7. Resultado Final](#7-resultado-final)
 ***
 
 **Objetivo principal:** 
@@ -21,12 +22,10 @@ Dados escolhidos:
   - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
 
 ## 1. **Apresentação**
----
 
 O projeto apresenta o universo dos Studio Ghibli a partir de 20 longas, suas sinopses, informação de personagens, locais e veículos únicos. Na página é possível filtrar os filmes por minutagem, onde será possível escolher um filme que caiba no seu tempo disponível. Ordená-los por nota e visualizar os filmes que possuem uma maior aceitação pelo público. Com isso, a pessoa usuária terá a possibilidade de analisar os filmes que já visualizou ou mesmo decidir qual próximo filme gostaria de assistir.
 
 ## 2. **Idealização do Projeto**
----
 
 O primeiro passo foi entender como os nossos dados estavam estruturados, neste caso um array de objetos, nos quais alguns valores também eram compostos de array de outros objetos. Ou seja, para alcançar algumas informações precisaríamos entender como realizar iterações em arrays de objetos, e em alguns casos, mergulhar um pouco mais e acessar dados em array de objetos alocados em valores dos objetos anteriores. 
 
@@ -38,7 +37,7 @@ O primeiro passo foi entender como os nossos dados estavam estruturados, neste c
 
 ### 2.1 Ideia inicial para o card de cada filme:
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/CardFilme.png" width = 450>
+![card do filme](https://raw.githubusercontent.com/marinamassaneiro/Data-lovers/main/CardFilme.png)
 
 Ideia de como criar o cartão:
 - Criar a estrutura do card ampliado em html e estilizar no css;
@@ -48,7 +47,6 @@ Ideia de como criar o cartão:
 
 
 ## 3. **Projeto Inicial**
----
 
 Como ideia inicial focamos na construção de uma página única com a função de exibir os pôsteres dos filmes e informações detalhadas de cada um deles. Proposta suficiente para atender as necessidades das nossas *História de Usuário 1 e 2*. Desta ideia surgiu nosso protótipo inicial de baixa e alta fidelidade. O **principal desafio** desta etapa foi entender como manipular objetos e printar suas informações em tags específicas.
 
@@ -89,17 +87,14 @@ Definição de pronto:
 ❗**OBS:** Ao final esse filtro foi removido pois ele não agregou o valor que esperávamos. Os filmes tendem a ter uma representatividade equilibrada de gêneros. Deste modo, optamos por manter apenas o filtro de minutagem e a função de ordenar os dados, sobretudo por avaliação elaborados nas histórias de usuário posteriores.
 
 ## 4. **Protótipo de Baixa Fidelidade**
----
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20mobile.png" width = 200>      <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/baixa%20fidelidade%20desktop.png" width = 350>
+![protótipo de baixa fidelidade](https://raw.githubusercontent.com/marinamassaneiro/Data-lovers/main/prototipo_baixa_fidelidade.png)
 
 ## 5. **Protótipo de Alta Fidelidade**
----
 
-<inserir imagem do primeiro protótipo>
+![protótipo de alta fidelidade](https://raw.githubusercontent.com/marinamassaneiro/Data-lovers/main/versoes_prototipo_alta_fidelidade.png)
 
 ## 6. **Projeto Final Pós Ampliação da Proposta Inicial**
----
 
 De modo a atender *histórias de usuários* mais detalhadas, assim como tornar a navegabilidade mais fluída optamos por dividir as informações (filmes, personagens e veículos/locais) em páginas específicas e alcançamos a seguinte estrutura:
 
@@ -113,9 +108,7 @@ De modo a atender *histórias de usuários* mais detalhadas, assim como tornar a
 
 ### 6.1 **Protótipos de Alta Fidelidade (Versão Final)**
 
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Pagina%20incial%20-%20expandido.png" width = 600><br>
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Filmes%20-%20expandido.png" width = 400><img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Modal%20-%20vers%C3%A3o%20final.png" width = 400><br>
-<img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Personagens%20-%20expandido.png" width = 400>     <img src="https://github.com/marinamassaneiro/Data-lovers/blob/readme/src/img/Readme/Locais%20e%20Veiculos%20-%20expandido.png" width = 400>
+![protótipo de alta fidelidade](https://raw.githubusercontent.com/marinamassaneiro/Data-lovers/main/versoes_prototipo_alta_fidelidade_final.png)
 
 ### 6.1 **História de Usuário 3**
 > Como usuário quero escolher um filme pela duração para que caiba no meu tempo livre atual.
@@ -155,3 +148,7 @@ Desafio:
 Definição de pronto:
 - Cards de personagens;
 - Informações textuais relacionadas ao card de cada personagem;
+
+# 7. Resultado Final
+
+O resultado final do projeto pode ser visitado [aqui](https://marinamassaneiro.github.io/Data-lovers/index.html).
