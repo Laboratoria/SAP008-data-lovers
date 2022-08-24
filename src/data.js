@@ -2,20 +2,25 @@ export const filterByRegion = (pokemons, region) =>
   pokemons.filter((pokemon) => pokemon.generation.name === region);
 
 export const filterByType = (pokemons, type) =>
-      pokemons.filter((pokemon) => pokemon.type.includes(type));
-
-export const sortByMaxHp = (pokemons,hp ) =>
-   pokemons.sort((a, b)=> a[pokemon.stats[hp]] - b[pokemon.stats[hp]]);
+  pokemons.filter((pokemon) => pokemon.type.includes(type));
 
 export const calcPercentage = (pokemonsLength, typeLength) =>
-  pokemonsLength * typeLength/ 100
-   
+  pokemonsLength * typeLength / 100
 
-// export const sortBy = (pokemons, prop) =>{
-//   console.log(pokemons)
-//   return pokemons.sort((a, b)=> a[prop] - b[prop])
+export const sortBy = (pokemons, value) => {
+  console.log(pokemons, value)
+  return pokemons.sort((a, b) => {
+    if (value == "biggest-max-cp") {
+      return b.stats["max-cp"] - a.stats["max-cp"];
+    }
+    if (value == "smallest-max-cp") {
+      return a.stats["max-cp"] - b.stats["max-cp"];
+    }
 
-// }
-// Variação da função
-//export const filterByType = (pokemons, type) =>
- // pokemons.filter((pokemon) => pokemon.type === type);
+    return 0;
+  });
+}
+
+
+
+

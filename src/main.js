@@ -1,6 +1,6 @@
-import {filterByRegion } from "./data.js";
+import { filterByRegion } from "./data.js";
 import { filterByType } from "./data.js";
-import { sortByMaxHp } from "./data.js";
+import { sortBy } from "./data.js";
 import { calcPercentage } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
@@ -13,20 +13,20 @@ const btnJohto = document.getElementById("button-johto");
 const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
-const selectOrderHP = document.getElementById("selectHP")
+let selectOrder = document.getElementById("select-cp");
 const statsType = document.getElementById("statsType")
 
 //templates dos cards//
 const createCards = listPokemon => {
     let infoPokemon = listPokemon.map((pokemon) =>
 
-    `<div class="one-container">
-
-        <div class= "second-container">
-
-            <div class="third-container">
-                <p class= "text-name-number" >
-                 rarity:${pokemon["pokemon-rarity"]}
+        `<div class="one-container">
+    
+    <div class= "second-container">
+    
+    <div class="third-container">
+    <p class= "text-name-number" >
+    rarity:${pokemon["pokemon-rarity"]}
                 <b>${pokemon.num} ${pokemon.name.toUpperCase()}</b>
                  type:${pokemon.type}
                 </p>
@@ -34,44 +34,44 @@ const createCards = listPokemon => {
                 <img class = "image-pokemon" src=${pokemon.img} />
 
                 <p class = "text-pokemon-stats" >max-cp: ${pokemon.stats["max-cp"]} max-hp:${pokemon.stats["max-hp"]} 
-                    height:${pokemon.size.height} weight:${pokemon.size.weight}
+                height:${pokemon.size.height} weight:${pokemon.size.weight}
                 </p>
-            </div>
+                </div>
 
-            <p class = "text-about">
+                <p class = "text-about">
                 About: ${pokemon.about}
-            </p>
-            <p class = "text-egg">egg: ${pokemon.egg}. 
+                </p>
+                <p class = "text-egg">egg: ${pokemon.egg}. 
                 buddy distance km: ${pokemon["buddy-distance-km"]}
-            </p>
+                </p>
             <hr>
             <div>
-                <p class="text-resistant">
-                resistant: ${pokemon.resistant}
-                weaknesses: ${pokemon.weaknesses}
-                </p>
-                <p class="attack-defense-stamina">
-                base attack:${pokemon.stats["base-attack"]}
-                base defense:${pokemon.stats["base-defense"]}
-                base stamina:${pokemon.stats["base-stamina"]}
-                </p>
+            <p class="text-resistant">
+            resistant: ${pokemon.resistant}
+            weaknesses: ${pokemon.weaknesses}
+            </p>
+            <p class="attack-defense-stamina">
+            base attack:${pokemon.stats["base-attack"]}
+            base defense:${pokemon.stats["base-defense"]}
+            base stamina:${pokemon.stats["base-stamina"]}
+            </p>
             </div>
 
-
-        </div>
-    </div>
-    `)
+            
+            </div>
+            </div>
+            `)
     return infoPokemon.join(" ")
 }
 
-let pokemonsToBeShown= []
+
+let pokemonsToBeShown = []
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
     pokemonsToBeShown = result
-    console.log(infoKanto)
 });
 
 //Botão da Região Johto//
@@ -80,41 +80,42 @@ btnJohto.addEventListener("click", function () {
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
     pokemonsToBeShown = result
-    console.log(infoJohto)
 });
 
 //Cards de todos os pokemon na tela//
 btnWorld.addEventListener("click", function () {
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
-    pokemonsToBeShown= infoPokemons
+    pokemonsToBeShown = everyPokemon
 });
 
-let resultType= []
+//Filtro por tipo//
+let resultType = []
 
-select.addEventListener("change", function(){
+select.addEventListener("change", function () {
     let type = select.value
-    resultType = filterByType(pokemonsToBeShown,type)
+    resultType = filterByType(pokemonsToBeShown, type)
     let pokeType = createCards(resultType)
     cards.innerHTML = pokeType;
-    console.log (type);
+    console.log(type);
 
 });
 
-selectOrderHP.addEventListener("change", function(){
-    let orderByMaxHp = selectOrderHP.value
-    console.log(orderByMaxHp)
-    let result = sortBy(everyPokemon, stats["max-cp"])
+//Ordernar//
+selectOrder.addEventListener("change", function () {
+    let maxCp = selectOrder.value
+    console.log(maxCp)
+    let result = sortBy(pokemonsToBeShown, maxCp)
     let pokeCpHp = createCards(result)
     cards.innerHTML = pokeCpHp;
-    console.log(orderCpHp)
     console.log(result)
 })
 
+//Porcentagem por tipo//
 console.log(resultType.length)
 let num = 251
-let typePercentage = calcPercentage (num, resultType.length)
+let typePercentage = calcPercentage(num, resultType.length)
 statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
 
-   
+
 
