@@ -73,6 +73,14 @@ selectTag.addEventListener('change', function() {
 //     }
 // })
 
+// const selectDiff = document.querySelector('#dificuldade');
+// selectDiff.addEventListener('change', function() {
+//     const diffSelecionado = selectDiff.value;
+//     if (diffSelecionado === 'baixo'){
+//         printCards(filterData(arrayCampeoes, 1, 'difficulty'))
+//     }
+// })
+
 const selectAZ = document.querySelector('#sort');
 selectAZ.addEventListener('change', function() {
     const sortSelecionado = selectAZ.value;
