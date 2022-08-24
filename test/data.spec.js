@@ -41,10 +41,10 @@ describe("orderAz", () => {
   });
 
   it("returns object in Az", () => {
-    expect(orderAz(personagens)).toEqual([Morty, Rick, Summer]);
+    expect(orderAz([Morty, Rick, Summer], "name", "A-Z")).toEqual([Morty, Rick, Summer]);
   });
   it("returns words in reverse Za", () => {
-    expect(orderAz([Morty, Rick, Summer])).toEqual([Summer, Rick, Morty]);
+    expect(orderAz([Morty, Rick, Summer], "name", "Z-A")).toEqual([Summer, Rick, Morty]);
   });
 });
 
