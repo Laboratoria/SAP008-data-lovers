@@ -4,21 +4,18 @@
 }
 
 body {
-  padding: 0%;
+  padding: 0%;   
   margin: 0%;
   font-family: Avocado;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: rgb(217, 205, 169);
-  width: 100vw;
-  height: 100vh;
 }
 
 img{
   max-width:100%;
 }
-
 
 
 .nav ul {
@@ -27,8 +24,8 @@ img{
   color: rgb(217, 205, 169);
   margin-left: none;
   margin-right: none;
-  border-radius: 1vw;
-  padding-top: 0vw;
+  border-radius: 10px;
+  padding-top: 1px;
   margin-top: 0vw;
   margin-bottom: 0vw;
 }
@@ -40,7 +37,7 @@ img{
 }
 
 .menu {
-  padding: 0.4vw;
+  padding: 5px;
   font-size: 22px;
   display: inline-block;
   cursor: pointer;
@@ -50,28 +47,27 @@ img{
   color: rgb(168, 213, 232);
 }
 
+
 .logo {
   height: 13vh;
   object-fit: scale-down;
-
   margin-right: 5vw;
   margin-bottom: 0vw;
 }
 
 select {
-  border-radius: 0.6vw;
+  border-radius: 5px;
   font-family: Avocado;
   font-size: 13px;
-  width: 8vw;
-  height: 4vh;
+  width: 100px;
+  height: 30px;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
 }
 
-.imagemprincipal {
-  
 
+.imagemprincipal {
   height: 55vh;
   object-fit: scale-down;
 }
@@ -90,37 +86,30 @@ select {
   cursor: pointer;
   margin-top: 2vh;
   flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
-.filtros1 {
+.filtros{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+.filtros1, .filtros2, .filtros3, .filtros4 {
   font-size: 20px;
-  margin-left: 10vw;
 }
 
-.filtros2 {
-  font-size: 20px;
-  margin-left: 10vw;
-}
-
-.filtros3 {
-  font-size: 20px;
-  margin-left: 10vw;
-}
-
-.filtros4 {
-  font-size: 20px;
-  margin-left: 10vw;
-}
 
 .calculo {
   background-color: rgb(124, 140, 90);
   color: rgb(217, 205, 169);
   border-radius: 1vw;
-  padding: 0.6vw;
+  padding: 10px;
   text-align: center;
   margin-top: 0vw;
   font-size: 20px;
-  cursor: pointer;
 }
 
 .calculo:hover {
@@ -151,17 +140,17 @@ select {
 
 .imagemCard {
   border-radius: 3vw;
-  height: 25vh;
-  width: 13vw;
+  height: 200pxh;
+  width: 200px;
 }
 
 .footer {
-  margin-top: 1vw;
+  margin-top: 10px;
   background-color: rgb(124, 140, 90);
-  height: 5vh;
-  border-radius: 1vw;
+  height: 40px;
+  border-radius: 10px;
   text-align: center;
-  padding-top: 0.1vw;
+  padding-top: 1px;
 }
 
 a {
@@ -172,108 +161,67 @@ a:hover {
   color: rgb(217, 205, 169);
 }
 
-@media (max-width: 768px) {
-  body {
+
+/*Responsividade tablet:*/
+@media (max-width: 768px){
+  body{                        
     padding: 0%;
     margin: 0%;
-  }
+  } 
 
-  
-.imagemprincipal {
-    margin-left: 12vw;
-    margin-right: 15vw;
-  }
-  .calculo {
-    width: 100vw;
-  }
+  .filtros1,.filtros2,.filtros3,.filtros4{
+     display: inline;
+     margin-left: 1vw}
 
-  .filtros1 {
-    margin-left: 2vw;
-  }
-  .filtros2 {
-    margin-left: 2vw;
-  }
-  .filtros3 {
-    margin-left: 2vw;
-  }
-  .filtros4 {
-    margin-left: 2vw;
-  }
-  .filtros1,
-  .filtros2,
-  .filtros3,
-  .filtros4 {
-    display: inline-block;
-  }
-
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .cardsBox {
-    width: 25vw;
-    height: 50vh;
-  }
-
-  .imagemCard {
-    height: 27vh;
-    width: 19vw;
-  }
+  .calculo{width: 100%}
 }
 
-@media (max-width: 320px) {
-  /* body {
+
+/*Responsividade celular:*/
+@media (max-width:320px){
+
+  body{                     
     padding: 0%;
     margin: 0%;
-  } */
-
-  .logo {
-    display: none;
   }
 
-  .nav ul li {
+  .logo{
+    display:none;
+  }
+
+  .nav ul li{
     width: 100%;
     margin-right: 1px;
     display: inline;
   }
 
-  .menu,
-  .calculo,
-  .filtros1,
-  .filtros2,
-  .filtros3,
-  .filtros4 {
-    font-size: 40px;
-  }
+   .menu,.calculo,.filtros1,.filtros2,.filtros3,.filtros4{
+    font-size:20px;
+   }
 
-  .cardsBox {
-    width: 90vw;
-    height: 70vh;
-    margin-left: 15vw;
-    margin-bottom: 15vw;
-  }
+   .cardsBox{
+    width: 330px;
+    height: 430px;
+    justify-content: space-between; 
+   }
+  
+   .imagemCard{
+    height: 250px;
+    width: 250px;
+   }
 
-  .imagemCard {
-    height: 40vh;
-    width: 65vw;
-  }
-
-  .textoCard {
+   .textoCard{
     font-size: 25px;
-  }
+   }
 
-  .nameCard {
+   .nameCard{
     font-size: 25px;
-  }
+   }
 
-  .filtros1,
-  .filtros2,
-  .filtros3,
-  .filtros4 {
-    display: block;
-  }
-  .cards {
-    grid-template-columns: 1fr 1fr;
+  .filtros1,.filtros2,.filtros3,.filtros4{display: block}
+
+  .cards{
+    align-items: center; 
+    flex-direction: column;
   }
 }
-
