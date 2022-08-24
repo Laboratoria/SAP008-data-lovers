@@ -1,4 +1,4 @@
-import {filtroDoSelect, ordenandoCampeoes} from "./data.js";
+import {computerStats, filterData, sortData} from "./data.js";
 import data from './data/lol/lol.js';
 
 let arrayCampeoes = Object.values(data.data);
@@ -60,13 +60,23 @@ window.addEventListener('load', () => printCards(arrayCampeoes));
 const selectTag = document.querySelector('#funcao');
 selectTag.addEventListener('change', function() {
     const valorSelecionado = selectTag.value;
-    printCards(filtroDoSelect(arrayCampeoes, valorSelecionado));
+    let arrayCampeoesFiltrados = filterData(arrayCampeoes, valorSelecionado, 'tags');
+    printCards(arrayCampeoesFiltrados)
+    computerStats(valorSelecionado, arrayCampeoesFiltrados)
 })
+
+// const selectDiff = document.querySelector('#dificuldade');
+// selectDiff.addEventListener('change', function() {
+//     const diffSelecionado = selectDiff.value;
+//     if (diffSelecionado === 'baixo'){
+//         printCards(filterData(arrayCampeoes, 1, 'difficulty'))
+//     }
+// })
 
 const selectAZ = document.querySelector('#sort');
 selectAZ.addEventListener('change', function() {
     const sortSelecionado = selectAZ.value;
-    const ordem = ordenandoCampeoes(arrayCampeoes);
+    const ordem = sortData(arrayCampeoes);
     if (sortSelecionado === 'az') {
         printCards(ordem.reverse())
     } else {
