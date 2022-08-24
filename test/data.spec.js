@@ -1,4 +1,4 @@
-import { filtroDoSelect } from '../src/data.js';
+import { filtroDoSelect, ordenandoCampeoes} from '../src/data.js';
 
 
 describe('filtroDoSelect', () => {
@@ -51,3 +51,42 @@ describe('filtroDoSelect', () => {
     expect(filtroDoSelect(dados, "Support")).toStrictEqual(resultado);
   });
 });
+
+describe('ordenandoCampeoes', () => {
+  it('Deveria ser uma função', () => {
+    expect(typeof ordenandoCampeoes).toBe('function');
+  });
+
+
+  it('Deveria retornar os campeões em ordem decrescente', () => {
+    const dados = [
+      {
+        name: "Nami",
+        
+      },
+      {
+        name: "Blitzcrank",
+       
+      },
+      {
+        name: "Taric",
+        
+      }
+    ];
+    
+    const resultado = [
+      {
+        
+        name: "Taric"
+      },
+      {
+        name: "Nami",
+        
+      },
+      {
+        name: "Blitzcrank"
+      }
+    ];
+    expect(ordenandoCampeoes(dados)).toStrictEqual(resultado)
+  });
+})
