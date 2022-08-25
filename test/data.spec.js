@@ -18,63 +18,47 @@ const charactersData = [{
 },
 {
   "name": "Luna Lovegood",
-  "house": "Ravenclaw",
+  "house": "Ravenclaw"
 },
 {
   "name": "Albus Dumbledore",
-  "house": "Gryffindor",
+  "house": "Gryffindor"
 },
 {
   "name": "Severus Snape",
-  "house": "Slytherin",
+  "house": "Slytherin"
+},
+{
+  "name": "Sirius Black",
+  "house": "Gryffindor"
 },
 {
   "name": "Cedric Diggory",
-  "house": "Hufflepuff",
+  "house": "Hufflepuff"
 }, 
 {
   "name": "Harry Potter",
-  "house": "Gryffindor",
+  "house": "Gryffindor"
+},
+{
+  "name": "Albus Potter",
+  "house": "Slytherin"
 }]
 
 const booksData = [{
-  
-    "id": 3,
     "title": "Harry Potter and the Prisoner of Azkaban",
-    "releseDay": "July 8, 1999",
-    "author": "J. K. Rowling",
-    "description": "Harry's third year of studies at Hogwarts is threatened by Sirius Black's escape from Azkaban prison. Apparently, it is a dangerous wizard who was an accomplice of Lord Voldemort and who will try to take revenge on Harry Potter."
   },
-
   {
-    "id": 6,
     "title": "Harry Potter and the Half-Blood Prince",
-    "releaseDay": "July 16, 2005",
-    "author": "J. K. Rowling",
-    "description": "Harry discovers a powerful book and, while trying to discover its origins, collaborates with Dumbledore in the search for a series of magical objects that will aid in the destruction of Lord Voldemort."
   }]
 
   const spellsData = [{
-    "id": 305,
     "name": "Wingardium Leviosa",
-    "other_name": "Levitation Charm",
-    "pronunciation": "win-GAR-dee-um lev-ee-OH-sa",
     "spell_type": "Charm",
-    "description": "Makes objects fly, or levitate.",
-    "mention": "This spell is taught in early first-year charms classes; this came into good use later in that year, when Ron Weasley performed the spell to knock out a mountain troll; six years later, Harry uses the charm to levitate the side-car of his godfather's flying motorbike; Ron used it again this year to make a twig poke a tree.",
-    "etymology": "\"Wingardium\" almost certainly contains English wing, meaning \"fly\". \"Leviosa\" probably originates from Latin levis, meaning \"light\".",
-    "note": null
   }, 
   {
-    "id": 285,
     "name": "Toenail-growing hex",
-    "other_name": null,
-    "pronunciation": null,
     "spell_type": "Hex",
-    "description": "Causes the toenails to grow at an extreme and uncontrollable rate.",
-    "mention": "In 1996, Harry used this to much applause from classmates, on Vincent Crabbe.",
-    "etymology": null,
-    "note": "This is a hex that is probably not approved by the Ministry of Magic, as it was invented by Severus Snape."
   }]
 
 
@@ -91,8 +75,8 @@ describe('mainFilters.displayCharactersList', () => {
     expect(typeof mainFilters.displayCharactersList).toBe('function');
   });
 
-  it('should return 06 characters', () => {
-    expect(mainFilters.displayCharactersList(charactersData).length).toBe(6)
+  it('should return 08 characters', () => {
+    expect(mainFilters.displayCharactersList(charactersData).length).toBe(8)
   })
 
   it('should return Bellatrix Lestrange', () => {
@@ -138,15 +122,17 @@ describe('mainFilters.filterCharactersByHouses', () => {
     expect(typeof mainFilters.filterCharactersByHouses).toBe('function')
   });
 
-  it('should return Albus Dumbledore and Harry Potter from house Gryffindor', () => {
+  it('should return Albus Dumbledore, Sirius Black and Harry Potter from house Gryffindor', () => {
     const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Gryffindor')
     expect(gryffindorCharacters[0].name).toEqual('Albus Dumbledore')
-    expect(gryffindorCharacters[1].name).toEqual('Harry Potter')
+    expect(gryffindorCharacters[1].name).toEqual('Sirius Black')
+    expect(gryffindorCharacters[2].name).toEqual('Harry Potter')
   });
 
-  it('should return Severus Snape from house Slytherin', () => {
+  it('should return Severus Snape and Albus Potter from house Slytherin', () => {
     const slytherinCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Slytherin')
       expect(slytherinCharacters[0].name).toEqual('Severus Snape')
+      expect(slytherinCharacters[1].name).toEqual('Albus Potter')
   });
 
   it('should return Luna Lovegood from house Ravenclaw', () => {
@@ -159,8 +145,13 @@ describe('mainFilters.filterCharactersByHouses', () => {
       expect(hufflepuffCharacters[0].name).toEqual('Cedric Diggory')
   });
 
-  it('should return 02 characters from house Gryffindor', () => {
+  it('should return 03 characters from house Gryffindor', () => {
     const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Gryffindor')
+      expect(gryffindorCharacters.length).toBe(3)
+  });
+
+  it('should return 02 characters from house Slytherin', () => {
+    const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Slytherin')
       expect(gryffindorCharacters.length).toBe(2)
   });
 });
