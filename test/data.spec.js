@@ -1,23 +1,15 @@
-import { example, anotherExample } from '../src/data.js';
+import { pokemonByType } from '../src/data.js';
+import data from '../src/data/pokemon/pokemon.js';
 
+let pokemons = data.pokemon;
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('Testing pokemonByType filter', () => {
+  it('Must return all water pokemon', () => {
+    const waterPokemons = pokemonByType(pokemons,'water');
+    const isTypeWater = waterPokemons.map((item) => { 
+      return item.type.includes('water')
+    });
+
+    expect(isTypeWater).not.toContain(false);
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+})

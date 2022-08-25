@@ -7,7 +7,11 @@
   </head>
     
   <body>
-     <form class="nav-bar">
+    <nav class="nav-bar">
+          <a href="./index.html">
+          </a>
+    <div class="flex-container">
+     <form class="form-search">
         <select id="typeFilter">
           <option value disabled selected>Tipo</option>
           <option value="water">Água</option>
@@ -30,7 +34,6 @@
           <option value disabled selected>Raridade</option>
           <option value="legendary">Legendário</option>
           <option value="mythic">Mítico</option>
-          <option value="normal">Normal</option>
           <option value="shiny">Shiny</option>
         </select>
         <select id="eggsFilter">
@@ -42,12 +45,13 @@
           <option value="10 km">10Km</option>
          </select>
         <select id="orderFilter">
-          <option value disabled selected>A - Z</option>
+          <option value disabled selected>Ordem Alfabética</option>
           <option value="a-z">A - Z</option>
         </select>
         <input type="text" placeholder="Nome do Pokémon" id="nameFilter">
         <button type="reset" id="clearButton">Limpar</button>
       </form>
+    </div>
   
 
     <main>
