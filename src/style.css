@@ -70,6 +70,8 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pesquisar {
@@ -90,18 +92,19 @@ button:hover {
 }
 
 #calculation {
-    display: inline-block;
+    display: none;
+    width: 28rem;
+    height: 2rem;
+    margin-top: 2rem;
     justify-content: center;
     font-family: 'Patua One';
     font-size: 20px;
     text-align: center;
-    margin: 2px 20px 20px 2px;
     background-color: #3b065c;
-    border: 5px solid #000000;
+    border: 5px solid #00000090;
     border-radius: 9px;
     color: rgb(255, 255, 255); 
     flex-flow: row nowrap;
-
 }
 
 #read {
