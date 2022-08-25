@@ -113,3 +113,27 @@ button:hover {
     }
 
 }
+
+.title {
+    color: #fff;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 200px;
+    text-shadow: 10px 10px 10px black;
+    width: 90%;
+    word-wrap: break-word;
+   
+
+}
+
+.graficos {
+    flex-wrap: nowrap;
+
+}
+.text p {
+    font-size: 22px;
+    text-shadow: 5px 5px 5px black;
+    word-wrap: break-word;
+    padding: 50px;
+    text-align: justify;
+}
