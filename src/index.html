@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -11,14 +11,13 @@
 
 <body>
   <header>
-    <div class="banner">
+    <a href="second_page.html" class="INFO" value="INFO">INFO</a>
     <img id="banner" src="rickandmorty.jpeg" alt="Banner Rick and Morty">
-  </div>
   </header>
   <main>
     <div class="buttons">
     <select id="status">
-      <optgroup label="STATUS">
+      <optgroup label="STATUS"></optgroup>
         <option value="0" selected disabled hidden>STATUS</option>
         <option value="Alive">ALIVE</option>
         <option value="Dead">DEAD</option>
@@ -26,7 +25,7 @@
     </select>
 
     <select id="gender">
-      <optgroup label="GENDER">
+      <optgroup label="GENDER"></optgroup>
         <option value="0" selected disabled hidden>GENDER</option>
         <option value="Male">MALE</option>
         <option value="Female">FEMALE</option>
@@ -34,7 +33,7 @@
     </select>
 
     <select id="specie">
-      <optgroup label="SPECIES">
+      <optgroup label="SPECIES"></optgroup>
         <option value="0" selected disabled hidden>SPECIES</option>
         <option value="Alien">ALIEN</option>
         <option value="Animal">ANIMAL</option>
@@ -51,25 +50,24 @@
     </select>
 
     <select id="order">
-      <optgroup label="ORDER">
+      <optgroup label="ORDER"></optgroup>
       <option value="0" selected disabled hidden>ORDER</option>
       <option value="crescente">↻ A-Z</option>
       <option value="decrescente">↺ Z-A</option>
     </select>
 
+    
+    <input class="search" type="search" placeholder="🔎 SEARCH...">
+    <input type="button" class="searchButton" value="SEARCH">
     <input type="button" class="clear" value="CLEAR" onClick="window.location = location">
-
-    <input class="pesquisar" type="search" placeholder="SEARCH 🔎">
   </div>
 
     <div class="cards" id="cards">
     </div>
   
-
-  <footer>
-
-  </footer>
+  </main>
+  </body>
   <script src="main.js" type="module"></script>
-</body>
+
 
 </html>
