@@ -103,7 +103,8 @@ button:hover {
     background-color: #3b065c;
     border: 5px solid #00000090;
     border-radius: 9px;
-    color: white;
+    color: rgb(255, 255, 255); 
+    flex-flow: row nowrap;
 }
 
 #read {
