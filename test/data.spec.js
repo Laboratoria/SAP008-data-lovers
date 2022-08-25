@@ -46,19 +46,19 @@ const charactersData = [{
 }]
 
 const booksData = [{
-    "title": "Harry Potter and the Prisoner of Azkaban",
+    "title": "Harry Potter and the Prisoner of Azkaban"
   },
   {
-    "title": "Harry Potter and the Half-Blood Prince",
+    "title": "Harry Potter and the Half-Blood Prince"
   }]
 
   const spellsData = [{
     "name": "Wingardium Leviosa",
-    "spell_type": "Charm",
+    "spell_type": "Charm"
   }, 
   {
     "name": "Toenail-growing hex",
-    "spell_type": "Hex",
+    "spell_type": "Hex"
   }]
 
 
