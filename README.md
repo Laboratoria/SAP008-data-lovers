@@ -115,7 +115,7 @@ O repositório é o espaço digital que armazena um código e as versões que po
 - Rodar o comando `git clone <url-do-repositório>`.
 
 ### Fork and Knife
-Em razão deste projeto ter sido realizado em trio, o `fork` foi feito por apenas uma das partes. A aluna Gabriela Sene realizou o fork, e então as demais integrantes Bruna Lima e Polyana Guimarães, clonaram o mesmo [repositório](https://github.com/devgabrielasene/data-lovers) para suas respectivas máquinas.
+Em razão deste projeto ter sido realizado em trio, o `fork` foi feito por apenas uma das partes. A aluna Gabriela Sene realizou o fork, e então as demais integrantes Bruna Lima e Polyana Magalhães, clonaram o mesmo [repositório](https://github.com/devgabrielasene/data-lovers) para suas respectivas máquinas.
 
 ## 5. Deploy
 `Deploy` é a ação de colocar o código no ar. Quando um código/aplicação é "deployado", significa que ele já está disponível para ser acessado como qualquer outro site, por intermédio da URL colocada na barra de endereço do navegador. Para "deployar", basta:
