@@ -1,3 +1,4 @@
+
 export const pokemonByType = (data, type) => {
   const filteredType = data.filter(pokemonType => pokemonType.type.find(item => item === type) === type)
   return filteredType;
