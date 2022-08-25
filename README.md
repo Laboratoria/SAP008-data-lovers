@@ -76,21 +76,28 @@ Abaixo da header, nosso `<body>` traz os botões `<select>` que dão origem aos 
 A prototipagem foi dividida em baixa fidelidade, feito à mão para ter um esboço, e alta fidelidade, feito utilizando a ferramenta [Figma] (https://www.figma.com/) e acessando recursos para desenvolver um protótipo mais fiel ao nosso projeto, pensando em UX e UI.
 Abaixo são algumas imagens de ambos protótipos, tanto na versão desktop, quanto versão mobile: 
   
-  • Baixa fidelidade
+  • Baixa fidelidade Desktop
   
-  ![Baixa fidelidade Desktop](desktopbaixa.jpeg) 
+  ![Baixa fidelidade Desktop](desktopbaixa%20(1).jpeg) 
+
+  • Baixa fidelidade Mobile
   
   ![Baixa fidelidade Mobile](mobilebaixa.jpeg)
   
-  • Alta fidelidade
+  • Alta fidelidade Desktop
   
   ![Alta fidelidade Desktop](desktopalta%20(1).png)
+
+  • Alta fidelidade Mobile
   
   ![Alta fidelidade Mobile](mobilelalta.png)
 
 ### Paleta de cores
 A paleta de cores foi impressa pelo [Adobe Color](https://color.adobe.com/pt/create/color-wheel): 
 ![paleta](paleta.png) 
+
+• Gradiente 
+
 ![gradiente](gradiente.png) 
 
 ## 4. Repositório
