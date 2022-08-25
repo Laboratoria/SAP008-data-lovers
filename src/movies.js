@@ -1,3 +1,4 @@
+import { alphabeticOrderMovies} from './data.js';
 import data from './data/ghibli/ghibli.js';
 let movies = data.films
 
@@ -24,9 +25,18 @@ function showFilms(data) {
         </div>
   `}).join('')
 
-  document.getElementById('cards').innerHTML = filmsInfo;
+  document.getElementById('cards').innerHTML = filmsInfo
 }
 
 showFilms(movies);
 
+//ORDENAR //
 
+const selectElement = document.querySelector('#order');
+
+selectElement.addEventListener('change', (event) => {
+  const value = event.target.value
+  console.log(event.target.value)
+  const orderedList = alphabeticOrderMovies(movies, value)
+  showFilms(orderedList)
+});
