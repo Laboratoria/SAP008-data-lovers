@@ -4,7 +4,7 @@ import data from './data/harrypotter/data.js';
 const dataBaseCharacters = data.characters;
 const dataBaseBooks = data.books;
 const dataBaseSpells = data.spells; 
- 
+
 const btnCharacters = document.getElementById('btn-characters'); 
 btnCharacters.addEventListener('click',
 function displayCharsResult(){
