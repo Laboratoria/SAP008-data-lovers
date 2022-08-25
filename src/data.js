@@ -1,9 +1,7 @@
  
-export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList
-  
-
+export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList, filterCharactersByHouses
 };
-//  filterCharactersByHouses 
+
 
 function displayCharactersList(names){
   return names.map((characters) => characters.name)
@@ -17,12 +15,11 @@ function displaySpellsList(spells) {
   return spells.map((spell) => spell.name) 
 }
 
-// function filterCharactersByHouses(characters, houses){
-//   const filterResult = []
-//   characters.filter((character) => {
-//     if (character.house === houses){
-//       filterResult.push(character.name)
-//     }
-//   })
-//   return filterResult
-// }
+function filterCharactersByHouses(characters, houses){
+  const filteredCharacters = characters.filter((character) => {
+    if (character.house === houses){
+      return characters
+    }
+  })
+  return filteredCharacters
+}

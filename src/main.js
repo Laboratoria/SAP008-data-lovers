@@ -4,9 +4,9 @@ import data from './data/harrypotter/data.js';
 const dataBaseCharacters = data.characters;
 const dataBaseBooks = data.books;
 const dataBaseSpells = data.spells; 
- 
+
 const btnCharacters = document.getElementById('btn-characters');
- 
+
 btnCharacters.addEventListener('click',
 function displayCharsResult(){
     const charactersNames = mainFilters.displayCharactersList(dataBaseCharacters);
@@ -33,7 +33,7 @@ function displayBooksList(){
     return booksResult.innerHTML = bookTitles.map(title => `<ul><li> ${title}</li></ul>`).join('');
  
 })
- 
+
 const btnSpells = document.getElementById('btn-spells');
  
 btnSpells.addEventListener('click',
