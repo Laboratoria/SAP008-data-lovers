@@ -13,7 +13,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     background-image: url(background.jpg);
     background-color: #0A1823;
-    background-size: cover;    
+    background-size: fill;    
     /*display:flex;    
     flex-direction: column;
     justify-content: space-around;    
@@ -26,7 +26,7 @@
     
 }
 
-.flex-container {
+/*.flex-container {
     width: 80vw;
     height: 80vw;
     margin: auto;
@@ -39,18 +39,21 @@
     align-content: center;     
 
 }
+*/
 
-.header-container {
+.header-container { /*contém os botões: início, sobre e na mídia*/
     margin: 0px;
     padding: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    flex-direction: row; /* Adicionado - ajusta o conteúdo em uma fileira */
+    flex-wrap: wrap;  /* Adicionado*/
     
 }
 
-.btn-header {
-    margin: 40px;
+.btn-header { /*botões: início, sobre e na mídia*/
+    margin: 15px; /*diminui essa margem para ajustá-los na responsividade do site, antes estava 40px, muito longe um do outro*/
     background-color: #00B5CC;
     border-radius: 20px;
     border: none;
@@ -63,8 +66,8 @@
 }
 
 .rick-img {
-    height: 250px;
-    width: 500px;       
+    height: 300px; /*Alterei altura e largura para a imagem ir ajustando conforme a tela for diminuindo, tbm especifiquei abaixo no media queries*/ 
+    width: 100%;       
 }
 
 .img-container {
@@ -101,11 +104,11 @@
     text-align: center;   
 }
 
-.main-container {    
+.main-container {     /*Conteúdo dos cards*/
     height: auto;
-    width: 90%;
+    width: auto; 
     background-color: #0A1823;
-    margin: 0px;
+    margin: 0 8vw;
     padding: 0px;
     border-radius: 40px;
     display: flex;
@@ -113,6 +116,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border: rgb(219, 158, 17) 10px solid;
 }
 
 .option-container {
@@ -144,7 +148,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-        
+    max-height: 100%;
+    border: rgb(237, 27, 177) 10px solid;
 }
 
 .card {
@@ -161,6 +166,7 @@
     align-items: center;
     font-size: 10pt;
     color:#0A1823;
+    border: rgb(255, 255, 255) 10px solid;
     
 }
 
@@ -169,17 +175,17 @@
     width: 190px;    
     border-radius: 40px;
     
+    
 }
 
 .footer-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 0 auto;
     padding: 10px 10px;
     background-color: #0A1823;
     border-radius: 20px;
     border: none;
     color: white;
-    width: 40vw;
+    width: 100vw;
     height: 2vw;
     display: flex;
     justify-content: center;
@@ -187,6 +193,12 @@
 
 }
 
+@media all and (max-width: 500px) { /*Aqui especifiquei que a imagem quando chegar em 500px ela vai diminuir e se ajustar a tela*/
+    .rick-img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
 
 
