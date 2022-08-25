@@ -1,7 +1,4 @@
- 
-export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList, filterCharactersByHouses
-};
-
+export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList, filterCharactersByHouses};
 
 function displayCharactersList(names){
   return names.map((characters) => characters.name)
