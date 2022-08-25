@@ -91,31 +91,34 @@ btnWorld.addEventListener("click", function () {
 
 //Filtro por tipo//
 let resultType = []
-
+let a = ""
+//console.log(a)
 select.addEventListener("change", function () {
     let type = select.value
     resultType = filterByType(pokemonsToBeShown, type)
     let pokeType = createCards(resultType)
     cards.innerHTML = pokeType;
-    console.log(type);
+    a = resultType.length
+    //console.log(a);
+   
 
 });
 
 //Ordernar//
 selectOrder.addEventListener("change", function () {
     let maxCp = selectOrder.value
-    console.log(maxCp)
+    //console.log(maxCp)
     let result = sortBy(pokemonsToBeShown, maxCp)
     let pokeCpHp = createCards(result)
     cards.innerHTML = pokeCpHp;
-    console.log(result)
+   // console.log(result)
 })
 
 //Porcentagem por tipo//
-console.log(resultType.length)
 let num = 251
-let typePercentage = calcPercentage(num, resultType.length)
+let typePercentage = calcPercentage(num,a)
 statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
+
 
 
 
