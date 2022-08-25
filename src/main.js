@@ -53,7 +53,7 @@ function displayCharactersByHouse(house){
     document.getElementById('header-modal-characters').innerText = 'Lista de personagens por casa'
     
     const charactersByHouseResult = document.getElementById('characters-content');
-    return charactersByHouseResult.innerHTML = charactersListsByHouse.map((name) => `<ul><li>${name.name}</li></ul>`).join('');
+    return charactersByHouseResult.innerHTML = charactersListsByHouse.map((character) => `<ul><li>${character.name}</li></ul>`).join('');
 }
 
 const btnGryffindor = document.getElementById('btn-gryffindor')
