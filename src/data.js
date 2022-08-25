@@ -17,10 +17,13 @@ export const sortBy = (pokemons, value) => {
     if (value == "smallest-max-cp") {
       return a.stats["max-cp"] - b.stats["max-cp"];
     }
+    if (value == "biggest-max-hp") {
+      return b.stats["max-hp"] - a.stats["max-hp"];
+    }
+    if (value == "smallest-max-hp") {
+      return a.stats["max-hp"] - b.stats["max-hp"];
+    }
     return 0;
   });
 }
-
-
-
 

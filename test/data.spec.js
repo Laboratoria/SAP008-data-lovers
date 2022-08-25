@@ -2,6 +2,7 @@ import { filterByRegion } from "../src/data.js";
 import { filterByType } from "../src/data.js";
 import { sortBy } from "./data.js";
 
+//teste filtro por região//
 const mockPokemons = [
   {
     generation: {
@@ -16,7 +17,7 @@ const mockPokemons = [
     },
   },
 ];
-//
+
 describe("filterByRegion", () => {
   it("is a function", () => {
     expect(typeof filterByRegion).toBe("function");
@@ -50,7 +51,7 @@ describe("filterByRegion", () => {
   });
 });
 
-//Filtro por Type//
+//teste filtro por Type//
 
 const mockType = [
   {
