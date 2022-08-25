@@ -1,4 +1,6 @@
 import getCharacters from './data.js';
+import rickandmorty from './data/rickandmorty/rickandmorty.js';
+import rickAndMortyData from './data/rickandmorty/rickandmorty.js'
 
 let selectGender = document.getElementById('gender');
 let selectStatus = document.getElementById('status');
@@ -14,9 +16,9 @@ function gerarCard(personagem) {
                     </div>
                     <div class="overLap-group">
                         <div class="caixa-de-texto caixa-de-texto-status">Status: ${personagem.status}</div>
-                        <div class="caixa-de-texto caixa-de-texto-nome">Nome: ${personagem.name}</div>
-                        <div class="caixa-de-texto caixa-de-texto-genero">Gênero: ${personagem.gender}</div>
-                        <div class="caixa-de-texto caixa-de-texto-especie">Espécie: ${personagem.species}</div>
+                        <div class="caixa-de-texto caixa-de-texto-nome">Name: ${personagem.name}</div>
+                        <div class="caixa-de-texto caixa-de-texto-genero">Gender: ${personagem.gender}</div>
+                        <div class="caixa-de-texto caixa-de-texto-especie">Species: ${personagem.species}</div>
                     </div>
                 </div>
             </div>
@@ -54,6 +56,35 @@ selectOrderAz.addEventListener('change', listarCards);
 
 listarCards();
 
+
+const buttonSearch = document.querySelector(".searchButton")
+buttonSearch.addEventListener("click", (e) => 
+{
+    let searchText = document.querySelector(".search").value;
+    searchName (searchText)
+})
+
+function searchName (searchTF) {
+    let characters = rickandmorty.results;
+    
+    for (const obj of characters) {
+        console.log(`${obj.name}`)
+    }
+
+    let searchText = document.querySelector(".search").value;
+
+    for (const obj of characters) {
+
+        if (obj.name.includes(searchText)) {
+        console.log("Personagem encontrado.")        
+        }
+        else {
+        console.log("Personagem não encontrado.")
+    }
+    }
+
+    
+}
 
 
 

@@ -6,6 +6,20 @@ img {
     width: 100%;
 }
 
+.HOME, .INFO {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #bbdfd0;
+    justify-content: space-between;
+    
+    font-size: 25px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: double, black;
+    margin-bottom: 1%;
+
+}
+
 .buttons {
     display:flex;
     flex-flow: wrap;
@@ -31,7 +45,6 @@ select {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     text-align: center;
-    margin-left: 2%;
     background-color:#71D336; 
     border-color:#199c24; 
     border-radius: 15px;
@@ -41,15 +54,13 @@ select {
     height: 40px;
 }
 
-.pesquisar {
+.search, .searchButton {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     text-align: center;
-    margin-left: 4%;
     background-color:#71D336; 
     border-color:#199c24; 
     border-radius: 15px;
-    border-style: outset;
     border-width: 2px;
     color:white; 
     width: 160px; 
