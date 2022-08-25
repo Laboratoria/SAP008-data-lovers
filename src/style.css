@@ -1,0 +1,247 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    max-width: 100%;
+    height: 4.3rem;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.logo-riot {
+    width: 4.3rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1.8rem;
+
+}
+
+.logo-lol {
+    width: 4.3rem;
+    height: 1.5rem;
+}
+
+
+.navbar {
+    width: 11.2rem;
+    position: relative right;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 1.8rem;
+}
+
+.navbar .btn-sobre {
+    border: none;
+    color: #F9F9F9;
+    background-color: #111111;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 0.8rem;
+}
+
+.mobile-navbar{
+    position: absolute;
+    right: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hamb1, .hamb2, .hamb3 {
+    width: 0.8rem;
+    height: 0.1rem;
+    background-color: #F9F9F9;
+    margin: 0.1rem 0;
+    transition: 0.4s;
+}
+
+
+@media (max-width: 600px) {
+    .mobile-navbar {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+}
+
+#main-content {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/jinx\ background2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20rem;
+}
+
+#main-content h1 {
+    width: 18.7rem;
+    text-align: center;
+}
+
+#main-content button {
+    width: 9.3rem;
+    height: 3.1rem;
+    border: none;
+    background-color: #C2902D;
+    color: #F9F9F9;
+    border-radius: 2.5rem;
+    font-size: larger;
+}
+
+#main-content button:hover, .voltar:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/background-sobre.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal .voltar {
+    width: 7.8rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: #006680;
+    border: none;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-size: medium;
+}
+
+.sobre {
+    max-width: 18.7rem;
+    height: 16.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #292929f1;
+    border-radius: 1.8rem;
+    color: #FFFFFF;
+    padding: 0 1.2rem;
+}
+
+.sobre h1 {
+    text-align: center;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+#cards {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards .titulo-carde-page {
+    align-items: center;
+    width: 10rem;
+}
+
+.titulo-carde-page h1 {
+
+}
+
+#cardzinho {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.card-container {
+    width: 10rem;
+    height: 12.5rem;
+    background-color: #061C25;
+}
+
+.card-container img {
+    width: 10rem;
+    height: 10.5rem;
+    /* object-fit: cover; */
+}
+
+.card-container h2 {
+    width: 100%;
+    margin: 0%;
+    color: #F9F9F9;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.card-hover {
+    display: none;
+}
+
+footer {
+    max-width: 100%;
+    height: 12.5rem;
+    background-color: #292929;
+    border-top: #C2902D solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8rem;
+}
+
+.navbar-footer {
+    display: flex;
+    flex-direction: column;
+    height: 3.1rem;
+    justify-content: space-around;
+}
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 0.8rem;
+}
+
+.download-links {
+    height: 6.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.download-links img{
+    width: 9.3rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+

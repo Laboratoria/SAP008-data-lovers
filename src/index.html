@@ -4,9 +4,75 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header class="topo">
+        <img class="logo-riot" src="./img/riotlogo.png" alt="riot logo">
+        <img class="logo-lol" src="./img/logolol.png" alt="lol logo">
+        <div id="mobile-navbar" class="mobile-navbar">
+          <div class="hamb1"></div>
+          <div class="hamb2"></div>
+          <div class="hamb3"></div>
+        </div>
+        <div id="navbar" class="navbar">
+          <button id="btn-sobre" class="btn-sobre">SOBRE</button>
+          <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">SITE OFICIAL</a>
+        </div>
+      </header>
+      <section id="main-content">
+        <h1>OLÁ, INVOCADOR. ESCOLHA SEU CAMPEÃO</h1>
+        <button id="iniciar" class="iniciar">INICIAR</button>
+      </section> 
+      <section id="modal" class="modal">
+        <div class="sobre">
+          <h1>SOBRE</h1>
+          <p>O site foi desenvolvido com o objetivo de  ajudar os jogadores ou novos jogadores a conhecerem e escolherem os campeões presentes em Summoner’s Rift.</p>
+        </div>
+        <button id="btn-voltar" class="voltar">VOLTAR</button>
+      </section>
+      <section id="cards">
+        <div class="titulo-card-page">
+          <h1>ESCOLHENDO SEU CAMPEÃO</h1>
+        </div>
+        <form>
+          <label for="funcao">TODAS AS FUNÇÕES</label>
+          <select name="tipo-de-campeao" id="funcao">
+            <option desable></option>
+            <option value="Assassin">ASSASSINOS</option>
+            <option value="Fighter">LUTADORES</option>
+            <option value="Mage">MAGOS</option>
+            <option value="Marksman">ATIRADORES</option>
+            <option value="Support">SUPORTES</option>
+            <option value="Tank">TANQUES</option>
+          </select>
+          <label for="dificuldade">NÍVEL DE DIFICULDADE</label>
+          <select name="nivel-de-dificuldade" id="dificuldade">
+            <option value="baixo">BAIXO</option>
+            <option value="medio">MÉDIO</option>
+            <option value="alto">ALTO</option>
+          </select>
+          <label for="sort-champ">Ordenando</label>
+          <select name="ordenando" id="sort">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+        </form>
+        <div id="cardzinho"></div>
+      </section>
+      <footer>
+        <div class="navbar-footer">
+          <a id="voltar-footer" href="#">SOBRE</a>
+          <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">SITE OFICIAL</a>
+        </div>
+        <div class="download-links">
+          <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&hl=pt_BR&gl=US" target="_blank"><img src="./img/android.png" alt="playstore logo"></a>
+          <a href="https://apps.apple.com/us/app/league-of-legends-friends/id1077150310" target="_blank"><img src="./img/apple.png" alt="appstore logo"></a>
+        </div>
+      </footer>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
