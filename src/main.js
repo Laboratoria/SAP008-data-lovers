@@ -58,8 +58,7 @@ listarCards();
 
 
 const buttonSearch = document.querySelector(".searchButton")
-buttonSearch.addEventListener("click", (e) => 
-{
+buttonSearch.addEventListener("click", (e) => {
     let searchText = document.querySelector(".search").value;
     searchName (searchText)
 })
@@ -67,23 +66,33 @@ buttonSearch.addEventListener("click", (e) =>
 function searchName (searchTF) {
     let characters = rickandmorty.results;
     
-    for (const obj of characters) {
+   /* for (const obj of characters) {
         console.log(`${obj.name}`)
-    }
+    } */
 
     let searchText = document.querySelector(".search").value;
+    let searchName = searchText.charAt(0).toUpperCase() + searchText.slice(1)
 
-    for (const obj of characters) {
 
-        if (obj.name.includes(searchText)) {
+    const exibirNomes = characters.map(characters => `${characters.name}`)
+        console.log(exibirNomes
+    )
+
+
+    if (exibirNomes.includes(searchName)) {
         console.log("Personagem encontrado.")        
         }
-        else {
+         else {
         console.log("Personagem não encontrado.")
     }
-    }
+            
 
-    
+    if (searchName === ("")) {
+        alert ("Insira o nome do personagem.")
+        }
+        else {
+        alert (`${searchName}`)
+    }
 }
 
 
