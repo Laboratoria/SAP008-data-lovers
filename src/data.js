@@ -1,6 +1,4 @@
- 
 export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList, filterCharactersByHouses};
-  
 
 function displayCharactersList(names){
   return names.map((characters) => characters.name)
@@ -15,12 +13,10 @@ function displaySpellsList(spells) {
 }
 
 function filterCharactersByHouses(characters, houses){
-  const filterResult = []
-  characters.filter((character) => {
+  const filteredCharacters = characters.filter((character) => {
     if (character.house === houses){
-      filterResult.push(character.name)
+      return characters
     }
   })
-  
-  return filterResult
+  return filteredCharacters
 }
