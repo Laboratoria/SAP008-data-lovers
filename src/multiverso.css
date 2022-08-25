@@ -123,6 +123,7 @@ button:hover {
     height: 100vh;
     justify-content: center;
     align-content: center;
+    margin-top: 2rem;
 }
 
 /*Cards-Gabi*/
@@ -261,10 +262,24 @@ button:hover {
 }
 
 .cards-poly:hover .filtro h3 {
-    margin-top: 8rem;
+    margin-top: 10rem;
     padding: .3rem;
 }
 
 .cards-poly:hover .filtro img {
     cursor: pointer;
+}
+
+/* Responsividade-Cards */
+
+@media screen and (max-width: 625px) {
+    .cards-container {
+        width: 100vw;
+        margin-top: 30vh;
+    }
+
+    .img-logo img {
+        width: 12rem;
+        height: auto;
+    }
 }
