@@ -1,7 +1,7 @@
 import { filterByRegion } from "./data.js";
 import { filterByType } from "./data.js";
 import { sortBy } from "./data.js";
-//import { calcPercentage } from "./data.js";
+import { calcPercentage } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 //.log(example, data);
@@ -14,8 +14,7 @@ const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
 let selectOrder = document.getElementById("select-cp");
-//const statsType = document.getElementById("statsType")
-//let a = parseInt(everyPokemon.length)
+const statsType = document.getElementById("statsType")
 
 //templates dos cards//
 const createCards = listPokemon => {
@@ -93,20 +92,20 @@ btnWorld.addEventListener("click", function () {
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
     pokemonsToBeShown = everyPokemon
-    resultType = everyPokemon
     sortpokemon = everyPokemon
 });
 
 //Filtro por tipo//
-let resultType = []
 
 select.addEventListener("change", function () {
-    let type = select.value
-    resultType = filterByType(pokemonsToBeShown, type)
-    let pokeType = createCards(resultType)
+    const type = select.value
+    const resultType = filterByType(pokemonsToBeShown, type)
+    const pokeType = createCards(resultType)
     cards.innerHTML = pokeType;
     sortpokemon = resultType
-
+    
+    let typePercentage = calcPercentage(everyPokemon.length,resultType.length)
+    statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
 });
 
 //Ordernar//
@@ -117,13 +116,5 @@ selectOrder.addEventListener("change", function () {
     cards.innerHTML = pokeCpHp;
    
 })
-
-// //Porcentagem por tipo//
-
-// let typePercentage = calcPercentage(a, b )
-// console.log(a, b)
-// statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
-
-
 
 
