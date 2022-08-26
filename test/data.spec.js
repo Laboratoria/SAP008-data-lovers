@@ -60,6 +60,12 @@ describe('should be a filter', () => {
     expect(mediumDuration[0].duration).toEqual('102');
   });
 
+  it("should not filter films", () => {
+    const allFilms = ghibli.filterDuration(filmsTest, 'duration');
+
+    expect(allFilms.length).toEqual(3);
+  });
+
   it ("characters filter by film", () => {
     const characters = ghibli.filmPeople(filmsTest, "Kiki's Delivery Service");
 
@@ -71,11 +77,11 @@ describe('should be a filter', () => {
 
 describe('should order the films', () => {
   it("should sort films by score", () => {
-    const sorted = ghibli.sortedFilms(filmsTest, 'rt_score')
+    const sortedScore = ghibli.sortedFilms(filmsTest, 'rt_score')
 
-    expect(sorted.length).toEqual(3);
-    expect(sorted[0].rt_score).toEqual('96');
-    expect(sorted[2].rt_score).toEqual('93');
+    expect(sortedScore.length).toEqual(3);
+    expect(sortedScore[0].rt_score).toEqual('96');
+    expect(sortedScore[2].rt_score).toEqual('93');
   });
 
   it("should sort films by date", () => {
@@ -84,6 +90,14 @@ describe('should order the films', () => {
     expect(sortedDate.length).toEqual(3);
     expect(sortedDate[0].release_date).toEqual('1989');
     expect(sortedDate[2].release_date).toEqual('1986');
+  })
+
+  it("should not sort films", () => {
+    const sorteBy = ghibli.sortedFilms(filmsTest, 'order')
+    
+    expect(sorteBy.length).toEqual(3);
+    expect(sorteBy[0].title).toEqual('Castle in the Sky');
+    expect(sorteBy[2].title).toEqual('My Neighbor Totoro');
   })
 })
 

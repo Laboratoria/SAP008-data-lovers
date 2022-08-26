@@ -22,8 +22,8 @@ function sortedFilms(films, selection) {
       return b.rt_score - a.rt_score;
     } else if (selection === 'release_date') {
       return b.release_date - a.release_date;
-    } else if (selection === 'order') {
-      return a.release_date - b.release_date;
+    } else {
+      return films;
     }
   });
   return sorted;
