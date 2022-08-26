@@ -1,10 +1,11 @@
 import getCharacters from './data.js';
 
-let selectGender = document.getElementById('gender');
-let selectStatus = document.getElementById('status');
-let selectSpecie = document.getElementById('specie');
-let selectOrderAz = document.getElementById('order');
+const selectGender = document.getElementById('gender');
+const selectStatus = document.getElementById('status');
+const selectSpecie = document.getElementById('specie');
+const selectOrderAz = document.getElementById('order');
 const inputName = document.getElementById('name');
+
 function gerarCard(personagem) {
     return `
             <div>

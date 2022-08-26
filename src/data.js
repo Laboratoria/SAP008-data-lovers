@@ -21,6 +21,7 @@ const getCharacters = (gender, status, specie, order, name) => {
     });
   }
   //=== Ordenação ====//
+
   if (order !== '0') {       //se order for diferente de 0 deve retornar//
     characters = characters.sort((a, b) => {
       if (a.name > b.name) {
@@ -38,12 +39,15 @@ const getCharacters = (gender, status, specie, order, name) => {
       }
     });
   }
+//=== Busca pelo nome ===//
 
   if (name !== ' ') {
     characters = characters.filter(character => {
-      return character.name.includes(name);
+      return character.name.toLowerCase().includes(name.toLowerCase());
     })
   }
+//=== Calculo porcentagem ===/
+
   return characters;
 };
 
