@@ -15,10 +15,11 @@
 <body>
   <header class="container-header">
     <figure aria-sort="ascending" class="img-logo"><img src="img/titulose.png" alt="Logo"></figure>
-    <button class="btn-header"><a href="index.html" class="nav-link">C-137</a></button>
-    <button class="btn-header"><a href="about.html" target="_blank" class="nav-link">More</a></button>
-    <button class="btn-header"><a href="multiverso.html" target="_blank"
-        class="nav-link">Multiverso</a></button>
+    <ul>
+      <li class="btn-header"><a href="index.html" class="nav-link">C-137</a></li>
+      <li class="btn-header"><a href="about.html" class="nav-link">More</a></li>
+      <li class="btn-header"><a href="multiverso.html" class="nav-link">Multiverso</a></li>
+    </ul>
   </header>
 
   <!-- responsividade -->
@@ -37,7 +38,7 @@
 
   <aside class="seletores">
 
-    <select  id="select-gender" class="select-gender btn">
+    <select id="select-gender" class="select-gender btn">
       <option value="gender" selected disabled>Gênero</option>
       <option class="select-gender" value="Male">Macho</option>
       <option class="select-gender" value="Female">Fêmea</option>
@@ -67,7 +68,7 @@
     <input id="search-container" class="pesquisar" type="text" placeholder="Pesquise por... ">
     <div id="calculation"></div>
   </span>
-  
+
   <main class="scroll">
     <div id="read"></div>
   </main>
