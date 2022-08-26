@@ -103,21 +103,25 @@ button:hover {
     background-color: #3b065c;
     border: 5px solid #00000090;
     border-radius: 9px;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     flex-flow: row nowrap;
 }
 
 #read {
-    padding: 0em 6em;
     text-align: center;
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
 }
 
 .card {
     background-image: url(./img/espacowe.jpg);
     display: inline-block;
     padding: 35px;
-    width: 300px;
-    height: 350px;
+    width: 200px;
+    height: 250px;
     border: 2px solid #000000;
     border-radius: 15px;
     text-align: center;

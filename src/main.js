@@ -11,7 +11,7 @@ function cardsData(data) {
     <section class="card">
       <div class="card-in"> 
         <div class="card-first">
-        <img src="${item.image}">
+        <img class="card-img" src="${item.image}">
          <p><strong> Nome: ${item.name}</strong></p>
       </div> 
       
