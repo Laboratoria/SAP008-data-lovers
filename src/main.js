@@ -5,11 +5,11 @@ import data from './data/athletes/athletes.js';
 
 const content = document.querySelector('.cards-main');
 
-// const data2 = [data.athletes[0], data.athletes[1], data.athletes[2]]
 const arrAtletas = data.athletes
 
 arrAtletas.forEach((element, index) => { // inicio do forEach
-    if (index <= 8) {
+    //  if (index <= 8) {
+    if (element.sport == "Boxing") {
         const template = `
             <div class="card-atleta" id="card-atleta">
                 <div class="atributos-atleta">
@@ -18,6 +18,7 @@ arrAtletas.forEach((element, index) => { // inicio do forEach
                     <p class="esporte">${element.sport}</p>
                     <p class="pais">${element.team}</p>
                     <p class="medalha">${element.medal}</p>
+                    <p class="medalha">${element.event}</p>
                 </div>
             </div>
             `
