@@ -50,7 +50,6 @@ img{
 .logo {
   height: 13vh;
   object-fit: scale-down;
-
   margin-right: 5vw;
   margin-bottom: 0vw;
 }
@@ -66,10 +65,7 @@ select {
   text-align: center;
 }
 
-
 .imagemprincipal {
-  
-
   height: 55vh;
   object-fit: scale-down;
 }
@@ -102,7 +98,6 @@ select {
   font-size: 20px;
 }
 
-
 .calculo {
   background-color: rgb(124, 140, 90);
   color: rgb(217, 205, 169);
@@ -111,7 +106,6 @@ select {
   text-align: center;
   margin-top: 0vw;
   font-size: 20px;
-  cursor: pointer;
 }
 
 .calculo:hover {
@@ -124,14 +118,8 @@ select {
   box-shadow: 0 1vw 1vw rgb(106, 105, 105);
   border-top: 0.1vw solid rgb(124, 140, 90);
   border-bottom: 0.1vw solid rgb(124, 140, 90);
-  margin: 1vw;
-  padding: auto;
-  left: 15vw;
-  right: 10vw;
   text-align: center;
-  overflow: hidden;
-  width: 230px;
-  height: 330px;
+  margin: 15px;
 }
 
 .cardsBox:hover {
@@ -168,6 +156,24 @@ a:hover {
   color: rgb(217, 205, 169);
 }
 
+/* FALTA AJUSTAR CSS GERAL:
+- Logo
+- Fazer responsividade para telas grandes, delimitar conteúdo
+
+FALTA AJUSTAR TABLET:
+- Barra navegação estranha, diferente de barra do cálculo agregado
+
+FALTA AJUSTAR CELULAR:
+- Barra navegação estranha, diferente de barra do cálculo agregado
+- Tirar espaçamento entre imagem e nav e cálculo agregado
+- Resultado cálculo agregado escapando box, talvez diminuir letra
+- Filtros um abaixo do outro
+- Centralizar cards
+-Footer: aumentar altura */
+
+
+
+
 /*Responsividade tablet:*/
 @media (max-width: 768px){
   body{                        
@@ -175,11 +181,10 @@ a:hover {
     margin: 0%;
   } 
 
-  .filtros1{margin-left: 1vw}
-  .filtros2{margin-left: 1vw}
-  .filtros3{margin-left: 1vw}
-  .filtros4{margin-left: 1vw}
-  .filtros1,.filtros2,.filtros3,.filtros4{display: inline}
+  .filtros1,.filtros2,.filtros3,.filtros4{
+  display: inline;
+  margin-left:1vw}
+  
   .calculo{width: 100%}
 }
 

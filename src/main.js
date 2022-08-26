@@ -1,5 +1,5 @@
 
-import { filterData, filterData2, filterData3 } from "./data.js";
+import { filterData1, filterData2, filterData3 } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -36,7 +36,7 @@ document.querySelector("#especie").addEventListener("change", (event) => {
 
   const valor = event.target.value;
   // CHAMANDO A FUNÇÃO DO FILTERDATA E DANDO O VALUE E A ARRAY COMO PARÂMETRO
-  const especieFiltrada = filterData(valor, rickandmorty);
+  const especieFiltrada = filterData1(valor, rickandmorty);
   // CHAMANDO A FUNÇÃO DO MAP E DANDO COMO PARÂMETRO A FUNÇÃO DO FILTER PARA PRINTAR NA TELA
   criaCard(especieFiltrada);
 });
