@@ -2,8 +2,7 @@ import { dataFilter, nameFilter, computeStats, orderAz } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/rickandmorty/rickandmorty.js';
-
-
+import menuShow from './menu.js';
 
 function cardsData(data) {
   document.getElementById('read').innerHTML = data.map((item) => `
@@ -42,6 +41,7 @@ const filterSearch = document.getElementById("search-container")
 
 
 
+
 function genderFiltro() {
   showComputeStats.style.display = "flex";
   showComputeStats.innerHTML = `O número de personagens dessa categoria é: ${computeStats(data.results, "gender", selectGender.value)}`
@@ -66,8 +66,14 @@ function searchName() {
   return cardsData(nameFilter(data.results, filterSearch.value));
 }
 
+
 selectGender.addEventListener("change", genderFiltro);
 selectSpecie.addEventListener("change", specieFiltro);
 selectStatus.addEventListener("change", statusFiltro);
 selectOrder.addEventListener("change", sortByAz);
 filterSearch.addEventListener("keypress", searchName);
+
+
+const menuShowM = document.querySelector(".btnmenu");
+menuShowM.addEventListener("click", menuShow);
+
