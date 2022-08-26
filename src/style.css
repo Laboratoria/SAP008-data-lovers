@@ -1,9 +1,23 @@
+.caixa-cabecalho{
+    height: auto;
+    width: 100%;
+    padding-top:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0;
+  }
 
-body {
 
+
+
+  .column-nowrap {
 background-image: url(Imagem/fundo.png);
 background-repeat: no-repeat;
 background-size: 100%;
 
 }
+
+
 
