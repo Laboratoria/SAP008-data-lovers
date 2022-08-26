@@ -1,7 +1,9 @@
 import rickAndMortyData from './data/rickandmorty/rickandmorty.js'
 
-const getCharacters = (gender, status, specie, order) => {
+const getCharacters = (gender, status, specie, order, name) => {
   let characters = rickAndMortyData.results;
+
+  //=== Filtros ===//
 
   if (status !== '0') {
     characters = characters.filter(character => {
@@ -18,8 +20,8 @@ const getCharacters = (gender, status, specie, order) => {
       return character.species.toLowerCase() === specie.toLowerCase();
     });
   }
-
-  if (order !== '0') {
+  //=== Ordenação ====//
+  if (order !== '0') {       //se order for diferente de 0 deve retornar//
     characters = characters.sort((a, b) => {
       if (a.name > b.name) {
         if (order === 'crescente') {
@@ -35,6 +37,12 @@ const getCharacters = (gender, status, specie, order) => {
         }
       }
     });
+  }
+
+  if (name !== ' ') {
+    characters = characters.filter(character => {
+      return character.name.includes(name);
+    })
   }
   return characters;
 };
