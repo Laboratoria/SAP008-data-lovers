@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes</title>
-    <link rel="stylesheet" href="movies.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -16,8 +16,8 @@
     </header>
 
     <nav>
-      <div id="divBusca">
-        <input type="text" id="txtBusca" placeholder="Buscar... 🔎"/>
+      <div id="divSearch">
+        <input type="text" id="txtSearch" placeholder="Buscar... 🔎"/>
       </div>
       <ul class="navMenu">
             <li><a href="./index.html">Início</a></li>
@@ -35,13 +35,13 @@
         <select class="dropDownMenu" name="order" id="order">
             <optgroup label="Ordem Alfabética">
               <option value="default" selected class="title">Selecione</option>
-                <option value="asc" class="title">A - Z</option>
-                <option value="desc" class="title">Z - A</option>
+                <option value="asc_title" class="title">A - Z</option>
+                <option value="desc_title" class="title">Z - A</option>
             </optgroup>
 
             <optgroup label="Data de lançamento">
-                <option value="asc" class="release_date">Mais antigos</option>
-                <option value="desc" class="release_date">Mais recentes</option>
+                <option value="asc_date" class="release_date">Mais antigos</option>
+                <option value="desc_date" class="release_date">Mais recentes</option>
             </optgroup>
 
             <optgroup label="Direção">
@@ -54,8 +54,8 @@
             </optgroup>
 
             <optgroup label="Nota de avaliação">
-                <option value="asc" class="rt_score">Menor nota - Maior nota</option>
-                <option value="desc" class="rt_score">Maior nota - Menor nota</option>
+                <option value="asc_score" class="rt_score">Menor nota - Maior nota</option>
+                <option value="desc_score" class="rt_score">Maior nota - Menor nota</option>
             </optgroup>
         </select>
 

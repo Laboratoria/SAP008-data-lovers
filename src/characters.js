@@ -1,4 +1,4 @@
-import {  alphabeticOrderChars } from './data.js';
+import { alphabeticOrderChars, searchName } from './data.js';
 import data from './data/ghibli/ghibli.js';
 let movies = data.films
 let characters = movies.reduce(function(chars, film){
@@ -38,7 +38,7 @@ function showCharacters(data) {
 
 showCharacters(characters)
 
-//ORDENAR //
+//SORT BY ALPHABETIC //
 
 const selectElement = document.querySelector('#order');
 
@@ -47,4 +47,13 @@ selectElement.addEventListener('change', (event) => {
   const orderedList = alphabeticOrderChars(characters, value)
   showCharacters(orderedList)
 });
+
+//SEARCH CHARACTERS//
+const searchNames = document.getElementById("txtSearch");
+function filtroPesquisa(event) {
+  const charactersByName = searchName(characters, event.target.value);
+  showCharacters(charactersByName);
+}
+searchNames.addEventListener("keyup", filtroPesquisa);
+
 
