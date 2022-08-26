@@ -21,20 +21,27 @@ html body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
-.container-header button {
+.container-header .btn-header {
     background: rgb(0, 0, 0);
     box-shadow: 2px 5px 2px #3b065ca9;
     cursor: pointer;
-    width: 15rem;
-    height: 2.5rem;
+    width: 12rem;
+    height: 2rem;
     border: none;
     transition: all .3s ease-in-out;
     margin-top: 3rem;
+    list-style: none;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
 }
 
-button:hover {
+.btn-header:hover {
     background: #3b065ca9;
     transform: translateY(-3px);
     box-shadow: 0 5px 0 #3b065ca9;
@@ -44,7 +51,7 @@ button:hover {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .seletores {
@@ -188,7 +195,7 @@ button:hover {
 }
 
 @media screen and (max-width: 1140px) {
-    .btn-header {
+    .container-header .btn-header {
         display: none;
     }
 
