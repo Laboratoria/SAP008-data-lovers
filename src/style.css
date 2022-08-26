@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 0%;   
+  padding: 0%;
   margin: 0%;
   font-family: Avocado;
   align-items: center;
@@ -13,8 +13,8 @@ body {
   background-color: rgb(217, 205, 169);
 }
 
-img{
-  max-width:100%;
+img {
+  max-width: 100%;
 }
 
 .nav ul {
@@ -45,7 +45,6 @@ img{
 .menu:hover {
   color: rgb(168, 213, 232);
 }
-
 
 .logo {
   height: 13vh;
@@ -87,14 +86,17 @@ select {
   justify-content: space-around;
 }
 
-.filtros{
+.filtros {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-} 
+}
 
-.filtros1, .filtros2, .filtros3, .filtros4 {
+.filtros1,
+.filtros2,
+.filtros3,
+.filtros4 {
   font-size: 20px;
 }
 
@@ -115,7 +117,7 @@ select {
 .cardsBox {
   background-color: rgb(124, 140, 90);
   border-radius: 3vw;
-  box-shadow: 0 1vw 1vw rgb(106, 105, 105);
+  box-shadow: 0 1vw 1vw rgb(106 105 105);
   border-top: 0.1vw solid rgb(124, 140, 90);
   border-bottom: 0.1vw solid rgb(124, 140, 90);
   text-align: center;
@@ -135,7 +137,7 @@ select {
 
 .imagemCard {
   border-radius: 3vw;
-  height: 200px;
+  height: 200pxh;
   width: 200px;
 }
 
@@ -175,68 +177,80 @@ FALTA AJUSTAR CELULAR:
 
 
 /*Responsividade tablet:*/
-@media (max-width: 768px){
-  body{                        
+@media (max-width: 768px) {
+  body {
     padding: 0%;
     margin: 0%;
-  } 
+  }
 
-  .filtros1,.filtros2,.filtros3,.filtros4{
-  display: inline;
-  margin-left:1vw}
-  
-  .calculo{width: 100%}
+  .filtros1,
+  .filtros2,
+  .filtros3,
+  .filtros4 {
+    display: inline;
+    margin-left: 1vw;
+  }
+
+  .calculo {
+    width: 100%;
+  }
+
 }
 
-
 /*Responsividade celular:*/
-@media (max-width:320px){
-
-  body{                     
+@media (max-width: 320px) {
+  body {
     padding: 0%;
     margin: 0%;
   }
 
-  .logo{
-    display:none;
+  .logo {
+    display: none;
   }
 
-  .nav ul li{
+  .nav ul li {
     width: 100%;
     margin-right: 1px;
     display: inline;
   }
 
-   .menu,.calculo,.filtros1,.filtros2,.filtros3,.filtros4{
-    font-size:20px;
-   }
+  .menu,
+  .calculo,
+  .filtros1,
+  .filtros2,
+  .filtros3,
+  .filtros4 {
+    font-size: 20px;
+  }
 
-   .cardsBox{
+  .cardsBox {
     width: 330px;
     height: 430px;
-    justify-content: space-between; 
-   }
-  
-   .imagemCard{
+    justify-content: space-between;
+  }
+
+  .imagemCard {
     height: 250px;
     width: 250px;
-   }
-
-   .textoCard{
-    font-size: 25px;
-   }
-
-   .nameCard{
-    font-size: 25px;
-   }
-
-  .filtros1,.filtros2,.filtros3,.filtros4{display: block}
-
-  .cards{
-    align-items: center; 
-    flex-direction: column;
-    
   }
-  
- 
+
+  .textoCard {
+    font-size: 25px;
+  }
+
+  .nameCard {
+    font-size: 25px;
+  }
+
+  .filtros1,
+  .filtros2,
+  .filtros3,
+  .filtros4 {
+    display: block;
+  }
+
+  .cards {
+    align-items: center;
+    flex-direction: column;
+  }
 }
