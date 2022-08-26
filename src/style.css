@@ -7,8 +7,8 @@
 
 
 .body-container {    
-    width: 100%;
-    height: 100%;
+    width: auto; 
+    height: auto;
     color: #0A1823;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     background-image: url(background.jpg);
@@ -24,20 +24,6 @@
     
 }
 
-/*.flex-container {
-    width: 80vw;
-    height: 80vw;
-    margin: auto;
-    border: green 10px solid;
-    display:flex; 
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;     
-
-}
-*/
 
 .header-container { /*contém os botões: início, sobre e na mídia*/
     margin: 0 0 auto;
@@ -45,11 +31,17 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    flex-direction: row; /* Adicionado - ajusta o conteúdo em uma fileira */
-    flex-wrap: wrap;  /* Adicionado*/
+    flex-wrap: nowrap;  /* Adicionado*/
+    flex-direction: column;
     border:rgb(255, 255, 255) 10px solid;
     width: 100%;
-    
+
+}
+
+.nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-header { /*botões: início, sobre e na mídia*/
@@ -58,57 +50,50 @@
     border-radius: 20px;
     border: none;
     color: #0A1823;
-    width: 180px;
+    width: 13%;
     height: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;   
+    font-size: large; 
     cursor: pointer;
+    
 
 }
 
 .rick-img {
-    height: 35vh; /*Alterei altura e largura para a imagem ir ajustando conforme a tela for diminuindo, tbm especifiquei abaixo no media queries*/ 
-    width: 50vw;    
+    width: 40%;    
     border: #fbea03 10px solid;   
     padding: 0;
     margin: 0 0;
+    
+    
 }
 
-.img-container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 0 auto;
-    padding:0 0;
-    border: #df5928 10px solid;
-    width: 60vw;
-    height: 40vh;
 
-   
-}
 
 .btn-option {
-    margin: 10px;
+    margin: 0 0 auto;
     background-color: #00B5CC;
     border-radius: 20px;
     border: none;
     color: #0A1823;
-    width: 150px;
-    height: 30px;
+    width: 10vw;
+    height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-size: large;
     text-align: center;   
     cursor: pointer;
 }
 
 .btn-search {
-    margin: 10px;
+    margin: 0 0 auto;
     background-color: white;
     border-radius: 20px;
     border: none;
     color: #0A1823;
-    width: 150px;
-    height: 30px;
+    width: 10vw;
+    height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-size: large;
     text-align: center;   
 }
 
@@ -130,11 +115,14 @@
 .option-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 10px;
-    
+    padding: 10px;
+    border: #f3fb03 10px solid;
+    width: 80%;
+
 }
 
 .percentage-container {
@@ -201,12 +189,16 @@
 
 }
 
-  @media all and (max-width: 500px) { /*Aqui especifiquei que a imagem quando chegar em 500px ela vai diminuir e se ajustar a tela*/
+  @media screen and (min-width: 481px) and (max-width: 768px) { /*Aqui especifiquei que a imagem quando chegar em 500px ela vai diminuir e se ajustar a tela*/
     .rick-img {
       width: 100%;
       height: auto;
     }
+
+
   }  
+
+ 
 
 
 
