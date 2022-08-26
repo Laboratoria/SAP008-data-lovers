@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="img/PokeBall.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/PokeBall.ico" type="image/x-icon"/>
   <title>Pokemon Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -55,11 +55,15 @@
           <option value="fairy">fairy</option>
         </select>
         <select name="select-max-cp" id="select-cp">
-          <option value="order" selected>Order By </option>
-          <option value="biggest-max-cp" id="biggest-cp"> Biggest Max CP </option>
-          <option value="smallest-max-cp" id="smallest-cp"> Smallest Max CP </option>
-          <option value="biggest-max-hp" id="biggest-hp"> Biggest Max HP </option>
-          <option value="smallest-max-hp" id="smallest-hp"> Smallest Max HP </option>
+          <option value="order" disabled selected>Order By </option>
+          <optgroup label="higher to lower">
+            <option value="biggest-max-cp" id="biggest-cp"> Max CP </option>
+            <option value="biggest-max-hp" id="biggest-hp"> Max HP </option>
+          </optgroup>
+          <optgroup label="lower to higher">
+            <option value="smallest-max-cp" id="smallest-cp"> Max CP </option>
+            <option value="smallest-max-hp" id="smallest-hp"> Max HP </option>
+          </optgroup>
         </select>
       </nav>
     </header>
@@ -67,7 +71,7 @@
       <article class="inf-world-pokemon">
         <img id="img-pokemon" src="img/Group 15.png" />
       </article>
-      <P id="statsType"></P>
+      <p id="statsType"></p>
       <output id="cards"> </output>
     </main>
   </div>

@@ -1,7 +1,7 @@
 import { filterByRegion } from "./data.js";
 import { filterByType } from "./data.js";
 import { sortBy } from "./data.js";
-import { calcPercentage } from "./data.js";
+//import { calcPercentage } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 //.log(example, data);
@@ -14,7 +14,8 @@ const cards = document.getElementById("cards");
 const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
 let selectOrder = document.getElementById("select-cp");
-const statsType = document.getElementById("statsType")
+//const statsType = document.getElementById("statsType")
+//let a = parseInt(everyPokemon.length)
 
 //templates dos cards//
 const createCards = listPokemon => {
@@ -66,12 +67,16 @@ const createCards = listPokemon => {
 
 
 let pokemonsToBeShown = []
+let sortpokemon = []
+
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
     pokemonsToBeShown = result
+    sortpokemon = result
+  
 });
 
 //Botão da Região Johto//
@@ -80,6 +85,7 @@ btnJohto.addEventListener("click", function () {
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
     pokemonsToBeShown = result
+    sortpokemon = result
 });
 
 //Cards de todos os pokemon na tela//
@@ -87,37 +93,36 @@ btnWorld.addEventListener("click", function () {
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
     pokemonsToBeShown = everyPokemon
+    resultType = everyPokemon
+    sortpokemon = everyPokemon
 });
 
 //Filtro por tipo//
 let resultType = []
-let a = ""
-//console.log(a)
+
 select.addEventListener("change", function () {
     let type = select.value
     resultType = filterByType(pokemonsToBeShown, type)
     let pokeType = createCards(resultType)
     cards.innerHTML = pokeType;
-    a = resultType.length
-    //console.log(a);
-   
+    sortpokemon = resultType
 
 });
 
 //Ordernar//
 selectOrder.addEventListener("change", function () {
     let maxCp = selectOrder.value
-    //console.log(maxCp)
-    let result = sortBy(pokemonsToBeShown, maxCp)
+    let result = sortBy(sortpokemon, maxCp)
     let pokeCpHp = createCards(result)
     cards.innerHTML = pokeCpHp;
-   // console.log(result)
+   
 })
 
-//Porcentagem por tipo//
-let num = 251
-let typePercentage = calcPercentage(num,a)
-statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
+// //Porcentagem por tipo//
+
+// let typePercentage = calcPercentage(a, b )
+// console.log(a, b)
+// statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
 
 
 

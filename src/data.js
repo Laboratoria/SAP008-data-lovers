@@ -4,9 +4,12 @@ export const filterByRegion = (pokemons, region) =>
 export const filterByType = (pokemons, type) =>
   pokemons.filter((pokemon) => pokemon.type.includes(type));
 
-export const calcPercentage = (pokemonsLength, typeLength) =>
-  pokemonsLength * typeLength / 100
-//console.log (pokemonsLength)
+  export const calcPercentage = (pokemonsLength, typeLength) =>{
+    pokemonsLength * typeLength / 100
+
+
+  }
+
 
 export const sortBy = (pokemons, value) => {
   //console.log(pokemons, value)
