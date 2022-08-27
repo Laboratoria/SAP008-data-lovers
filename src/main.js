@@ -66,12 +66,16 @@ const createCards = listPokemon => {
 
 
 let pokemonsToBeShown = []
+let sortpokemon = []
+
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
     pokemonsToBeShown = result
+    sortpokemon = result
+  
 });
 
 //Botão da Região Johto//
@@ -80,6 +84,7 @@ btnJohto.addEventListener("click", function () {
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
     pokemonsToBeShown = result
+    sortpokemon = result
 });
 
 //Cards de todos os pokemon na tela//
@@ -87,6 +92,7 @@ btnWorld.addEventListener("click", function () {
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
     pokemonsToBeShown = everyPokemon
+    sortpokemon = everyPokemon
 });
 
 //Filtro por tipo//
@@ -96,25 +102,19 @@ select.addEventListener("change", function () {
     const resultType = filterByType(pokemonsToBeShown, type)
     const pokeType = createCards(resultType)
     cards.innerHTML = pokeType;
-    //console.log(a);
+    sortpokemon = resultType
+    
     let typePercentage = calcPercentage(everyPokemon.length,resultType.length)
     statsType.innerHTML = typePercentage + "% dos Pokémon são desse tipo!"
-   
 });
 
 //Ordernar//
 selectOrder.addEventListener("change", function () {
     let maxCp = selectOrder.value
-    //console.log(maxCp)
-    let result = sortBy(pokemonsToBeShown, maxCp)
+    let result = sortBy(sortpokemon, maxCp)
     let pokeCpHp = createCards(result)
     cards.innerHTML = pokeCpHp;
-   // console.log(result)
+   
 })
-
-//Porcentagem por tipo//
-
-
-
 
 

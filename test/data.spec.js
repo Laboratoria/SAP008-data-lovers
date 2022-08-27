@@ -1,6 +1,6 @@
 import { filterByRegion } from "../src/data.js";
 import { filterByType } from "../src/data.js";
-import { sortBy } from "../data.js";
+import { sortBy } from "../src/data.js";
 
 //teste filtro por região//
 const mockPokemons = [
@@ -104,7 +104,7 @@ describe("filterByType", () => {
   });
 });
 
-// Teste para SortBy
+// Teste para SortBy//
 
 const mockCP = [
   {
@@ -125,6 +125,12 @@ const mockCP = [
       "max-hp": "189",
     },
   },
+  {
+    stats:{
+      "max-cp": "1115",
+      "max-hp": "113"
+    },
+  }
 ];
 
 describe("sortBy", () => {
@@ -133,24 +139,140 @@ describe("sortBy", () => {
   });
 
   it("returns the previous array, sorted by biggest max-cp", () => {
-    const result = sortBy(mockCP, "max-cp");
-    const expected = []
+    const result = sortBy(mockCP, "biggest-max-cp");
+    const expected = [
+      {
+        stats: {
+          "max-cp": "3265",
+          "max-hp": "189",
+        },
+      },
+      {
+        stats: {
+          "max-cp": "2720",
+          "max-hp": "162",
+        },
+      },
+      {
+        stats: {
+          "max-cp": "1115",
+          "max-hp": "113",
+        },
+      },
+      { 
+        stats: {
+          "max-cp": "1115",
+          "max-hp": "113",
+        },
 
-  // colocar o array arrumado
-
+      },
+    ];
     expect(result).toEqual(expected);
   });
 
   it("returns the previous array, sorted by smallest max-cp", () => {
-    const result = sortBy(mockCP, "smallest max-cp");
-    const expected = []
-    const obj= {
-      a:1,
-      a:3,
-      a:[]
-    }
-      
+    const result = sortBy(mockCP, "smallest-max-cp")
+    const expected = [
+      {
+        stats: {
+          "max-cp": "1115",
+          "max-hp": "113",
+        },
+      },
+      {
+        stats:{
+          "max-cp": "1115",
+          "max-hp": "113",
+        } 
+      },
+      {
+        stats: {
+          "max-cp": "2720",
+          "max-hp": "162",
+        },
+      },
+      {
+        stats: {
+          "max-cp": "3265",
+          "max-hp": "189",
+        },
+      },
+    ];
 
     expect(result).toEqual(expected);
   });
+    
+  
+  it("returns the previous array, sorted by biggest max-hp", () => {
+    const result = sortBy(mockCP, "biggest-max-hp");
+    const expected = [
+      {
+        stats: {
+          "max-cp": "3265",
+          "max-hp": "189",
+        },
+      },
+      {
+        stats: {
+          "max-cp": "2720",
+          "max-hp": "162",
+        },
+      },
+      {
+        stats: {
+          "max-cp": "1115",
+          "max-hp": "113",
+        },
+      },
+      {
+        stats:{
+          "max-cp": "1115",
+          "max-hp": "113"
+        },
+      },
+    ];
+    
+    expect(result).toEqual(expected);
+  });
+
+  it("returns the previous array, sorted by smallest max-hp", () => {
+    const result = sortBy(mockCP, "smallest-max-hp")
+    const expected = [
+      {
+        stats: {
+          "max-cp": "1115",
+          "max-hp": "113",
+        },
+      },
+      {
+        stats:{
+          "max-cp": "1115",
+          "max-hp": "113"
+        },
+      },
+      {
+        stats: {
+          "max-cp": "2720",
+          "max-hp": "162",
+        },
+      },
+      {
+        stats: {
+          "max-cp": "3265",
+          "max-hp": "189",
+        },
+      },
+    ];
+
+    expect(result).toEqual(expected);
+  });
+
+    
+
 });
+
+
+
+
+
+

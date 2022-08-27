@@ -6,7 +6,8 @@ export const filterByType = (pokemons, type) =>
 
 export const calcPercentage = (pokemonsLength, typeLength) =>
   pokemonsLength * typeLength / 100
-//console.log (pokemonsLength)
+
+
 
 export const sortBy = (pokemons, value) => {
   //console.log(pokemons, value)
