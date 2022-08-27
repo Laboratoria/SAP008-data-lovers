@@ -6,6 +6,9 @@
     <title>Rick and Morty Wikia</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="/img/icon_rm.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -42,21 +45,22 @@
           <option value="dead">Dead</option>
           <option value="unknown">Unknown</option>
         </select>
-        <select name="Episode" id="episode">
+        <select name="Episode" class="selectEpisode" id="episode">
           <option value="" disabled="" selected="">Episode</option>
-          <option value="s0101">S01E01</option>
-          <option value="s0102">S01E02</option>
-          <option value="s0103">S01E03</option>
-          <option value="s0104">S01E04</option>
-          <option value="s0105">S01E05</option>
-          <option value="s0106">S01E06</option>
-          <option value="s0107">S01E07</option>
-          <option value="s0108">S01E08</option>
-          <option value="s0109">S01E09</option>
+          <option value="https://rickandmortyapi.com/api/episode/1">1</option>
+          <option value="https://rickandmortyapi.com/api/episode/2">2</option>
+          <option value="https://rickandmortyapi.com/api/episode/3">3</option>
+          <option value="https://rickandmortyapi.com/api/episode/4">4</option>
+          <option value="https://rickandmortyapi.com/api/episode/5">5</option>
+          <option value="s0106">6</option>
+          <option value="s0107">7</option>
+          <option value="s0108">8</option>
+          <option value="s0109">9</option>
           <option value="undefined">Unknown</option>
         </select>
       </navbar>
       <input id="search" placeholder="🔎 Search" wrap="off"></input>
+      <button id="clean" class="clean">Clean results</button>
     </header>
 
     <p class="statistics">This category represents <b>2%</b> of the characters</p>

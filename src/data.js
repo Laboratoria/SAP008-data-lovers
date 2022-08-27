@@ -8,6 +8,10 @@ export const filterData = (data,typeData,condition) => data.filter((character) =
    return (character[typeData] === condition);
 })
 
+export const filterEpisode = (data,condition) => data.filter((character) => {
+  return character.episode === condition;
+})
+
 export const filterName = (data, search) => data.filter(character => {
   return character.name.toLowerCase().includes(search.toLowerCase());
 })
