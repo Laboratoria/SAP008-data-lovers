@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <title>Rick and Morty Wikia</title>
@@ -15,37 +14,36 @@
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
- 
-    <header>
-      <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
-      <navbar>
-        <select class="select" id="gender">
-          <option value="gender" selected disabled>Gender</option>
-          <option class= "selec-gender" value="female">Female</option>
-          <option class= "selec-gender"value="male">Male</option>
-          <option class= "selec-gender"value="undefined">Undefined</option>
-        </select>
-        <select class="select"name="Species" id="species">
-          <option value="" disabled="" selected="">Species</option>
-          <option value="human">Human</option>
-          <option value="alien">Alien</option>
-          <option value="animal">Animal</option>
-          <option value="robot">Robot</option>
-          <option value="humanoid">Humanoid</option>
-          <option value="vampire">Vampire</option>
-          <option value="illness">Ilness</option>
-          <option value="mythology">Mythology</option>
-          <option value="poopybuthole">Poopybuthole</option>
-          <option value="cronenberg">Cronenberg</option>
-          <option value="undefined">Undefined</option>
-        </select>
-        <select name="Status" id="status">
-          <option value="" disabled="" selected="">Status</option>
-          <option value="alive">Alive</option>
-          <option value="dead">Dead</option>
+
+  <header>
+    <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
+        <select class="select-gender" name="Gender" id="gender">
+        <option value="" disabled="" selected="">Gender</option
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
           <option value="unknown">Unknown</option>
         </select>
-        <select name="Episode" class="selectEpisode" id="episode">
+        <navbar>
+        <select class="select-species" name="Species" id="species">
+          <option value="Species" selected disabled>Species</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+          <option value="Humanoid">Humanoid</option> 
+          <option value="Robot">Robot</option> 
+          <option value="Animal">Animal</option> 
+          <option value="Cronenberg">Cronenberg</option> 
+          <option value="Poopybutthole">Poopybutthole</option>
+          <option value="Mytholog">Mytholog</option>
+          <option value="Vampire">Vampire</option> 
+          <option value="undefined">Undefined</option>
+        </select>
+        <select class="select-status" name="Status" id="status">
+          <option value="" disabled="" selected="">Status</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <select class="select" name="Episode" id="episode">
           <option value="" disabled="" selected="">Episode</option>
           <option value="https://rickandmortyapi.com/api/episode/1">1</option>
           <option value="https://rickandmortyapi.com/api/episode/2">2</option>
@@ -56,11 +54,10 @@
           <option value="s0107">7</option>
           <option value="s0108">8</option>
           <option value="s0109">9</option>
-          <option value="undefined">Unknown</option>
         </select>
-      </navbar>
       <input id="search" placeholder="🔎 Search" wrap="off"></input>
       <button id="clean" class="clean">Clean results</button>
+      </navbar>
     </header>
 
     <p class="statistics">This category represents <b>2%</b> of the characters</p>
@@ -72,8 +69,25 @@
   </body>
 
   <!--<div class="baseboard">
-    <footer >Developed by Andrea dos Santos and Isabella Brambilla 
+=======
+      <input class="typed-text" id="search" placeholder="🔎 Search" wrap="off"></input>
+      <button id="clean" class="clean">Clean results</button>
+      </navbar>
+  </header>
+
+  <p class="stats"></p>
+ 
+  <main class="scroll">
+    <div id="listening"></div>
+  </main>
+</body>
+
+
+  <button id="btn-order-az" class="btnOrder">Order A-Z</button>
+  <button id="btn-order-za" class="btnOrder">Order Z-A</button>
+</aside>
+
+    <footer>Developed by Andrea dos Santos and Isabella Brambilla 
     <br> Source code available on Github</footer>
-  </div>-->
 
 </html>

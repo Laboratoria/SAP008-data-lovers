@@ -1,11 +1,7 @@
 import {sortByAZ, sortByZA, filterData, filterName, computeStats} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
-
-// \d+
-
 function printCards(data) {
-  let ep = [];
   const mapa = data.map(
     (item) => {
     const regex = /\d+/g; 
@@ -36,36 +32,52 @@ printCards(data.results);
 const selectEpisode = document.querySelector(".selectEpisode")
 const selectGender = document.querySelector(".select-gender");
 const selectSpecies = document.querySelector(".select-species");
-  
+const selectStatus = document.querySelector(".select-status"); 
+const searchName = document.querySelector(".btn");
+const stats = document.querySelector(".stats");
+
+function printCharacterAZ() {
+   searchName.style.display = "flex";
+   return printCards(sortByAZ(data.results));
+}
+
+function printCharacterZA() {
+   searchName.style.display = "flex";
+   return printCards(sortByZA(data.results));
+}
+
 function printGenderFiltered() {
-    showCalculation.style.display = "flex";
-    //showCalculation.innerHTML = `This category represents ${computeStats(data.results, "gender", selectGender.value)}`//
-    return printCards(filterData(data.results, "gender", selectGender.value));
-  }
-  
-  function printSpeciesFiltered() {
-    showCalculation.style.display = "flex";
-    //showCalculation.innerHTML = `O número de personagens dessa categoria é ${computeStats(data.results, "species", selectSpecies.value)}`//
-    return printCards(filterData(data.results, "species", selectSpecies.value));
-  }
+  stats.style.display = "flex";
+  stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "gender", selectGender.value)}`
+  return printCards(filterData(data.results, "gender", selectGender.value));
+}
 
-  function printEpisodesFiltered(){
-    return printCards(filterData(data.results, "episode", selectEpisode.value));
-  }
+function printSpeciesFiltered() {
+  stats.style.display = "flex";
+  stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "species", selectSpecies.value)}`
+  return printCards(filterData(data.results, "species", selectSpecies.value));
+}
 
-    document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
-    document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
-    selectGender.addEventListener("change", printGenderFiltered);
-    selectSpecies.addEventListener("change", printSpeciesFiltered);
-    // selectStatus.addEventListener("change", printStatusFiltered);
-    selectEpisode.addEventListener("change", printEpisodesFiltered);
-    searchName.addEventListener("keypress", filterByName);
-    searchName.addEventListener("keydown", event => {
-    if (event.keyCode === 8) {
-        return showCards(data.results);
-  }
+function printStatusFiltered() {
+   stats.style.display = "flex";
+   stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "status", selectStatus.value)}`
+   return printCards(filterData(data.results, "status", selectStatus.value));
+}
+
+function printFilterByName() {
+   stats.style.display = "flex";
+   stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "search", searchName.value)}`
+   return printCards(filterName(data.results, "search", searchName.value));
+}
+ 
+document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
+document.getElementById("btn-order-za").addEventListener("click", printCharacterZA);
+selectGender.addEventListener("change", printGenderFiltered);
+selectSpecies.addEventListener("change", printSpeciesFiltered);
+selectStatus.addEventListener("change", printStatusFiltered);
+searchName.addEventListener("keypress", printFilterByName);
+searchName.addEventListener("keydown", event => {
+   if (eventKeyCode=== 8) {
+     return printCards(data.results);
+   }
 })
-
-  
-   
-    

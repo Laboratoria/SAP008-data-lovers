@@ -29,6 +29,21 @@ select:hover {
     background-color: #83D2E4;
 }
 
+.btnOrder{
+    border: none;
+    background: #ffffff;
+    color: #304B72;
+    font-size: 25px;
+    position: absolute;
+    top: 88%;
+    left: 75%;
+    cursor: pointer;
+}
+
+.btnOrder:hover{
+    color: #83D2E4
+}
+
 #gender{
     position: relative;
     text-align: center;
@@ -93,11 +108,13 @@ select:hover {
     height: 4%;
     left: 62%;
 }
-.statistics{
+
+.stats{
   background-color: #83D2E4; 
   position: absolute;
   text-align: center;
-  margin-top: 4.5%;
+  justify-content: center;
+  align-content: center;
   padding: 10px;
   left: 10%;
   top: 77%;
@@ -108,7 +125,7 @@ select:hover {
 
 .flip-container {
     width: 204px;
-    height: 325px;
+    height: 324px;
     perspective: 1000px;
     display: inline-block;
     margin: 5px 5px 5px 5px;
@@ -116,7 +133,6 @@ select:hover {
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .flipper{
@@ -125,18 +141,12 @@ select:hover {
     transition: transform 0.9s;
 	transform-style: preserve-3d;
     position: relative;
-    flex: 0 1 auto;
-    
+    flex: 0 1 auto
 }
 
 .flip-container:hover .flipper{
 	transform: rotateY(180deg);
 }
-
-p{
-    color: #304B72;
-}
-
 
 .front{
     background: linear-gradient(#8BCF21, #ffff);
@@ -207,12 +217,4 @@ p{
 #listening {
     padding: 0em 12em;
     text-align: center;
- }
-   
- @media (max-width: 600px) {
-     
- }
-
- @media(min-width: 200px) {
-
  }
