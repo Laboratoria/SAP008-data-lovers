@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>PokéL♡VERS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/logo.png" alt="Imagem da logo">
+    </div>
+
+    <ul class="navlist">
+      <li class="list-item"> <a href="./index.html">Home | </a></li>
+      <li class="list-item"> <a href="./news/index.html">News |</a></li>
+      <li class="list-item"> <a target="_blank" href="https://www.pokemothim.net/2013/12/filmes.html">Movies | </a></li>
+      <li class="list-item"> <a target="_blanck" href="https://pokemongolive.com/pt_br/">Pokémon GO </a> </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="find-pokemons">
+      <input type="search" id="findPokemon" name="fpokemon" placeholder="Enter Pokémon's name">
+
+      <select class="orderBy" id="order">
+        <option disabled selected value="">Order by:</option>
+        <option value="name-az"> A - Z </option>
+        <option value="name-za"> Z - A </option>
+      </select>
+
+      <select class="type" id="pokeType">
+        <option disabled selected value="">Type</option>
+        <option value="bug">Bug</option>
+        <option value="dark">Dark</option>
+        <option value="dragon">Dragon</option>
+        <option value="electric">Electric</option>
+        <option value="fairy">Fairy</option>
+        <option value="fighting">Fighting</option>
+        <option value="fire">Fire</option>
+        <option value="flying">Flying</option>
+        <option value="ghost">Ghost</option>
+        <option value="grass">Grass</option>
+        <option value="ground">Ground</option>
+        <option value="ice">Ice</option>
+        <option value="normal">Normal</option>
+        <option value="poison">Poison</option>
+        <option value="psychic">Psychic</option>
+        <option value="rock">Rock</option>
+        <option value="steel">Steel</option>
+        <option value="water">Water</option>
+      </select>
+
+      <select class="pokemon-rarity" id="rarity">
+        <option disabled selected value="">Pokémon Rarity</option>
+        <option value="legendary">Legendary</option>
+        <option value="mythic">Mythic</option>
+        <option value="normal">Normal</option>
+      </select>
+      <div class="imgAsh"> <img id="imgmain" src="./img/ash.png" alt="Imagem do Ash jogandoa pokebola"> </div>
+      <img id="pikachu" src="./img/pika.gif" alt="Gif do pikachu pulando">
+      <button id="newSearch" class="btns">New search</button>
+    </div>
+
+    <div class="pokeCalc"> </div>
+    <div class="result" id="result">
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal_content" id="modal_content"> </div>
+      <span id="close"> <img src="./img/buttonclose.png" alt="button close"></span>
+    </div>
+
+    <div class="modal" id="modal_about">
+      <div class="modal_content" id="modal_content_about"> </div>
+      <span id="closeAbout"> <img src="./img/buttonclose.png" alt="button close"></span>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <img src="./img/lab.png" alt="logo Laboratória">
+      <p id="devTo"> Developed by:</p>
+      <p id="developers">Ellen Cavalcante &gt;&&gt;Vanessa Bueck</p>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

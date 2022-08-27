@@ -1,9 +1,71 @@
-// estas funciones son de ejemplo
+export {printCards, filterPokemon, selectNameAz, selectNameZa, pokeCalc}
 
-export const example = () => {
-  return 'example';
+function printCards(data, rarity, type, name) {
+
+  let pokemons = filterPokemon(data, rarity, type, name)
+  return pokemons.map((item) => {
+    return `<div class="container_item">
+             <div class="boxImg">
+            <p class="pokeNumber">${item.num}</p>
+            <figure class= "pokeData">
+            <img class="poke-img" src='${item.img}' alt=${item.name}>
+            </figure>
+          <div class="items"></div>
+          <h4>  ${item.name[0].toUpperCase() + item.name.substring(1)}</h4>
+          <span class="listName"> Type: ${item.type}</span>
+          <span class="listRarity"> Rarity: ${item["pokemon-rarity"]}</span>
+        </div>
+      </div>
+      </div>
+      `
+  })
+    .join('')
+}
+
+function filterPokemon(data, rarity, type, name) {
+
+  const pokemonData = data.pokemon.filter((pokemon) => {
+
+    if (rarity != "") {
+      if (!pokemon['pokemon-rarity'].includes(rarity)) {
+        return false
+      }
+    }
+    if (type != "") {
+      if (!pokemon.type.includes(type)) {
+        return false
+      }
+    }
+    if (name != "") {
+      if (!pokemon.name.includes(name)) {
+        return false
+      }
+    }
+
+    return true
+  });
+  return pokemonData
+}
+
+const orderName = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
+  }
+  return 0
 };
 
-export const anotherExample = () => {
-  return 'OMG';
+const selectNameAz = (pokemon) => {
+  return pokemon.sort(orderName);
+}
+
+const selectNameZa = (pokemon) => {
+  return pokemon.sort(orderName).reverse();
 };
+
+const pokeCalc = (pokeLenght, filterLenght) =>{
+  const percent = (filterLenght / pokeLenght) * 100
+  const rounded = Math.round(percent * 100) / 100
+  return rounded
+}
