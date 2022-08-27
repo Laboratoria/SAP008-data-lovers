@@ -52,6 +52,7 @@
 }
 .campodebusca{
     background-color: #f5d27c;
+    color: black;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -60,8 +61,7 @@
     border-radius: 5px;
     border: 1px solid #520909 ;
     text-align: center;
-    font-size: 14px;
-    color: ;
+    font-size: 14px small;
 }
 .corpoweb{
     background-color: #F1B415;
