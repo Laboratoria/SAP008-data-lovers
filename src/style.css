@@ -29,19 +29,47 @@ select:hover {
     background-color: #83D2E4;
 }
 
-.btnOrder{
-    border: none;
-    background: #ffffff;
-    color: #304B72;
+.btn{
+    margin-top: 50px;
     font-size: 25px;
     position: absolute;
     top: 88%;
     left: 75%;
     cursor: pointer;
+    color: #304B72;
+    text-decoration: underline;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
 }
 
-.btnOrder:hover{
+.btn:hover{
     color: #83D2E4
+}
+
+.btnZA{
+    color: #304B72;
+    text-decoration: underline;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.btnAZ{
+    color: #304B72;
+    text-decoration: underline;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
 }
 
 #gender{
@@ -110,6 +138,7 @@ select:hover {
 }
 
 .stats{
+  margin-top: 50px;
   background-color: #83D2E4; 
   position: absolute;
   text-align: center;

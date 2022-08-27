@@ -18,7 +18,7 @@
   <header>
     <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
         <select class="select-gender" name="Gender" id="gender">
-        <option value="" disabled="" selected="">Gender</option
+        <option value="" disabled="" selected="">Gender</option>
           <option value="Female">Female</option>
           <option value="Male">Male</option>
           <option value="unknown">Unknown</option>
@@ -55,7 +55,7 @@
           <option value="s0108">8</option>
           <option value="s0109">9</option>
         </select>
-      <input id="search" placeholder="🔎 Search" wrap="off"></input>
+      <input class="typed-text"  id="search" placeholder="🔎 Search" wrap="off"></input>
       <button id="clean" class="clean">Clean results</button>
       </navbar>
     </header>
@@ -68,11 +68,14 @@
 </body>
 
 
-  <button id="btn-order-az" class="btnOrder">Order A-Z</button>
-  <button id="btn-order-za" class="btnOrder">Order Z-A</button>
+<aside class="btn">
+  <button id="btn-order-az" class="btnAZ">Order A-Z</button>	  
+  <button id="btn-order-za" class="btnZA">Order Z-A</button>	  
 </aside>
 
+<!-- <div class="baseboard">
     <footer>Developed by Andrea dos Santos and Isabella Brambilla 
     <br> Source code available on Github</footer>
+    </div> -->
 
 </html>
