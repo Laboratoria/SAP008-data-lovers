@@ -1,85 +1,101 @@
-import {mainFilters} from './data.js';
+import { mainFilters } from './data.js';
 import data from './data/harrypotter/data.js';
- 
+
 const dataBaseCharacters = data.characters;
 const dataBaseBooks = data.books;
-const dataBaseSpells = data.spells; 
+const dataBaseSpells = data.spells;
 
-const btnCharacters = document.getElementById('btn-characters'); 
+function hiddenModals() {
+    document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('books-list').style.display = 'none';
+    document.getElementById('spells-list').style.display = 'none';
+    document.getElementById('characters-list').style.display = 'none';
+}
+function makeMapList(arrayObjects) {
+    return arrayObjects.map(names => `<ul><li> ${names}</li></ul>`).join('');
+}
+
+const btnCharacters = document.getElementById('btn-characters');
 btnCharacters.addEventListener('click',
-function displayCharsResult(){
-    const charactersNames = mainFilters.displayCharactersList(dataBaseCharacters);
-    document.getElementById('welcome-section').style.display = 'none';
-    document.getElementById('books-list').style.display = 'none';
-    document.getElementById('spells-list').style.display = 'none';
-    document.getElementById('characters-list').style.display = 'block';
- 
+    function displayCharsResult() {
+        let charactersNames = mainFilters.displayCharactersList(dataBaseCharacters);
+        hiddenModals()
+        document.getElementById('characters-list').style.display = 'block';
+        const charactersResult = document.getElementById('characters-content');
+        return charactersResult.innerHTML = makeMapList(charactersNames);
+    })
+
+const sortCharacters = document.getElementById('sort')
+sortCharacters.addEventListener('change', () => {
+    let charactersNames = mainFilters.displayCharactersList(dataBaseCharacters);
+    let sortCharactersName;
+    if (sortCharacters.value == 'name-a-z') {
+        sortCharactersName = mainFilters.charactersFromAtoZ(charactersNames);
+    }
+    else if (sortCharacters.value == 'name-z-a') {
+        sortCharactersName = mainFilters.charactersFromZtoA(charactersNames);
+    }
     const charactersResult = document.getElementById('characters-content');
-    return charactersResult.innerHTML = charactersNames.map(names => `<ul><li> ${names}</li></ul>`).join('');
+    return charactersResult.innerHTML = makeMapList(sortCharactersName);
+
 })
- 
-const btnBooks = document.getElementById('btn-books'); 
+
+const btnBooks = document.getElementById('btn-books');
 btnBooks.addEventListener('click',
-function displayBooksList(){
-    const bookTitles = mainFilters.displayBooksList(dataBaseBooks);
-    document.getElementById('welcome-section').style.display = 'none';
-    document.getElementById('characters-list').style.display = 'none';
-    document.getElementById('spells-list').style.display = 'none';
-    document.getElementById('books-list').style.display = 'block';
+    function displayBooksList() {
+        const bookTitles = mainFilters.displayBooksList(dataBaseBooks);
+        hiddenModals()
+        document.getElementById('books-list').style.display = 'block';
 
-    const booksResult = document.getElementById('books-content');
-    return booksResult.innerHTML = bookTitles.map(title => `<ul><li> ${title}</li></ul>`).join('');
- })
- 
-const btnSpells = document.getElementById('btn-spells'); 
+        const booksResult = document.getElementById('books-content');
+        return booksResult.innerHTML = makeMapList(bookTitles);
+    })
+
+const btnSpells = document.getElementById('btn-spells');
 btnSpells.addEventListener('click',
-function displaySpellsList(){
-    const allSpells = mainFilters.displaySpellsList(dataBaseSpells);
-    document.getElementById('welcome-section').style.display = 'none';
-    document.getElementById('books-list').style.display = 'none';
-    document.getElementById('characters-list').style.display = 'none';
-    document.getElementById('spells-list').style.display = 'block';
+    function displaySpellsList() {
+        const allSpells = mainFilters.displaySpellsList(dataBaseSpells);
+        hiddenModals()
+        document.getElementById('spells-list').style.display = 'block';
 
-    const spellsResult = document.getElementById('spells-content');
-    return spellsResult.innerHTML = allSpells.map(spell => `<ul><li> ${spell}</li></ul>`).join('');
-})
+        const spellsResult = document.getElementById('spells-content');
+        return spellsResult.innerHTML = makeMapList(allSpells);
+    })
 
-function displayCharactersByHouse(house){    
+function displayCharactersByHouse(house) {
     const charactersListsByHouse = mainFilters.filterCharactersByHouses(dataBaseCharacters, house)
-    document.getElementById('welcome-section').style.display = 'none';
-    document.getElementById('books-list').style.display = 'none';
-    document.getElementById('spells-list').style.display = 'none';
+    hiddenModals()
     document.getElementById('characters-list').style.display = 'block';
-    document.getElementById('header-modal-characters').innerText = 'Lista de personagens por casa'
-    
+    document.getElementById('header-modal-characters').innerText = 'Characters list by house'
+
     const charactersByHouseResult = document.getElementById('characters-content');
     return charactersByHouseResult.innerHTML = charactersListsByHouse.map((character) => `<ul><li>${character.name}</li></ul>`).join('');
 }
 
 const btnGryffindor = document.getElementById('btn-gryffindor')
 btnGryffindor.addEventListener('click',
-function displayGryffindorCharacters(){
-    const house = 'Gryffindor'
-    displayCharactersByHouse(house)
-})
+    function displayGryffindorCharacters() {
+        const house = 'Gryffindor'
+        displayCharactersByHouse(house)
+    })
 
 const btnSlytherin = document.getElementById('btn-slytherin')
 btnSlytherin.addEventListener('click',
-function displaySlytherinCharacters(){
-    const house = 'Slytherin'
-    displayCharactersByHouse(house)
-})
+    function displaySlytherinCharacters() {
+        const house = 'Slytherin'
+        displayCharactersByHouse(house)
+    })
 
 const btnHufflepuff = document.getElementById('btn-hufflepuff')
 btnHufflepuff.addEventListener('click',
-function displayHufflePuffCharacters(){
-    const house = 'Hufflepuff'
-    displayCharactersByHouse(house)
- })
+    function displayHufflePuffCharacters() {
+        const house = 'Hufflepuff'
+        displayCharactersByHouse(house)
+    })
 
 const btnRavenclaw = document.getElementById('btn-ravenclaw')
 btnRavenclaw.addEventListener('click',
-function displayRavenclawCharacters(){
-    const house = 'Ravenclaw'
-    displayCharactersByHouse(house)
-})
+    function displayRavenclawCharacters() {
+        const house = 'Ravenclaw'
+        displayCharactersByHouse(house)
+    })

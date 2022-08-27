@@ -29,6 +29,7 @@ body {
     margin-inline-start: -4rem;
     margin-inline-end: 25rem;
 }
+
 /* 
 .search-bar {
     border-radius: 5px;
@@ -48,7 +49,7 @@ body {
     text-align: center;
     padding: 0.2rem;
     margin-left: 0.3rem;
-    border-color:#DC9F03;
+    border-color: #DC9F03;
     border-width: 3px;
     border-radius: 5px;
     font-family: 'Harry Potter';
@@ -60,7 +61,8 @@ body {
     color: #193833;
 }
 
-.menu-btns:hover, .search-icon:hover {
+.menu-btns:hover,
+.search-icon:hover {
     cursor: pointer;
     background-color: #0b1c19;
     border-color: #0b1c19;
@@ -121,7 +123,8 @@ body {
     gap: 0.5rem;
 }
 
-.footer-title, .footer-link {
+.footer-title,
+.footer-link {
     font-family: "Harry Potter";
     font-weight: 100;
     font-size: 1.4rem;
@@ -131,7 +134,7 @@ body {
 }
 
 .footer-copyright {
-    color:#ad7d01;
+    color: #ad7d01;
     margin-top: 0.3rem;
     font-size: 0.9rem;
     font-weight: light;
@@ -148,14 +151,15 @@ body {
     justify-content: center;
     display: flex;
     border-radius: 5px;
-    }
+}
 
 .modal-content {
     cursor: pointer;
-    overflow-y: scroll; /* Add vertical scrollbar */
-    font-size:15px;
+    overflow-y: scroll;
+    /* Add vertical scrollbar */
+    font-size: 15px;
     font-family: "Roboto";
-    color:rgb(45, 45, 238);
+    color: rgb(45, 45, 238);
     text-decoration: underline;
     margin: 0 auto;
     padding: 10px;
@@ -169,10 +173,9 @@ body {
     height: 360px;
     background: rgba(245, 245, 245, 0.8);
     z-index: 99999;
-    
-  }
+}
 
-  h1.modal-header {
+h1.modal-header {
     padding-top: 10px;
     position: relative;
     width: 100%;
@@ -180,25 +183,24 @@ body {
     background: #DC9E00;
     text-align: center;
     font-family: "Harry Potter";
-    font-size: 20px;
-    color:#193833;
-  }
+    font-size: 1.5rem;
+    color: #193833;
+}
 
-  .modal-text {
-    width: 100%;
+.modal-text {
     text-align: center;
     margin: 5px 20px 5px;
     font-family: "Nunito";
     color: #F7F7F7;
     font-size: 15px;
     font-style: normal;
-    }
-  
-  .modal-btn {
+}
+
+.modal-btn {
     display: inline-block;
     padding: 0px 10px 0px;
-    margin: 5px auto 5px;   
-    border-color:#DC9F03;
+    margin: 5px auto 5px;
+    border-color: #DC9F03;
     border-width: 3px;
     border-radius: 20px;
     font-family: 'Harry Potter';
@@ -208,40 +210,46 @@ body {
     text-shadow: 2px 1px #1616162e;
     background-color: #DC9F03;
     color: #193833;
-  }
-
-
-@media only screen and (max-width: 600px){
-
-body {
-    background-image: url('./Images/BGMobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.header {
-    min-width: 100%;
-    max-height: 25vh;
-    background-image: url('./Images/Logo.svg');
-    background-position-x: 50%;
-    background-position-y: 1.5vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 9999;
+.sortBy {
+    border-radius: 0.40rem;
 }
 
-.page-logo {
-   visibility: hidden;
-}
 
-.menu-btns {
-    margin-block-start: 1rem;
-    padding: 0.3rem 0.3rem;
-    border-width: 1.5px;
-    border-radius: 30px;
-    font-size: 0.8rem;
-}
-/* 
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-image: url('./Images/BGMobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header {
+        min-width: 100%;
+        max-height: 25vh;
+        background-image: url('./Images/Logo.svg');
+        background-position-x: 50%;
+        background-position-y: 1.5vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 9999;
+    }
+
+    .page-logo {
+        visibility: hidden;
+    }
+
+    .menu-btns {
+        margin-block-start: 1rem;
+        padding: 0.3rem 0.3rem;
+        border-width: 1.5px;
+        border-radius: 30px;
+        font-size: 0.8rem;
+    }
+
+    /* 
 .search-icon {
     margin-inline-start: -12rem;
     color: #fff;
@@ -254,42 +262,42 @@ body {
     visibility: hidden;
 } */
 
-.welcome {
-    margin-block-start: 1.2rem;
-    color: white;
-    max-width: 70%;
-    max-height: 35%;
-    padding: 0.5rem;
-    border-radius: 15px;
-}
+    .welcome {
+        margin-block-start: 1.2rem;
+        color: white;
+        max-width: 70%;
+        max-height: 35%;
+        padding: 0.5rem;
+        border-radius: 15px;
+    }
 
-.welcome-title {
-    margin-block-start: 0.2rem;
-    margin-block-end: 0.3rem;
-    font-size: 1.2rem;
-    font-weight: 150;
-}
+    .welcome-title {
+        margin-block-start: 0.2rem;
+        margin-block-end: 0.3rem;
+        font-size: 1.2rem;
+        font-weight: 150;
+    }
 
-.welcome-description, .welcome-text {
-    margin-block-start: 0.2rem;
-    margin-block-end: 0.2rem;
-    font-size: 0.85rem;
-}
+    .welcome-description,
+    .welcome-text {
+        margin-block-start: 0.2rem;
+        margin-block-end: 0.2rem;
+        font-size: 0.85rem;
+    }
 
-.footer {
-    min-width: 100%;
-    min-height: 2.5rem;
-}
+    .footer {
+        min-width: 100%;
+        min-height: 2.5rem;
+    }
 
-.footer-link {
-    margin-block-end: 0.9rem;
-    color: white;
-    font-size: 1rem;
-}
+    .footer-link {
+        margin-block-end: 0.9rem;
+        color: white;
+        font-size: 1rem;
+    }
 
-.footer-copyright{
-    color: #ad7d01;
-    font-size: 0.7rem;
-}
-
+    .footer-copyright {
+        color: #ad7d01;
+        font-size: 0.7rem;
+    }
 }
