@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rick and Morty Wikia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/img/icon_rm.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Rick and Morty Wikia</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="/img/icon_rm.jpg" />
-</head>
+  <body>
 
-<body>
-
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
 
   <header>
     <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
         <select class="select-gender" name="Gender" id="gender">
-          <option value="Gender" selected disabled>Gender</option>
+        <option value="" disabled="" selected="">Gender</option
           <option value="Female">Female</option>
           <option value="Male">Male</option>
           <option value="unknown">Unknown</option>
         </select>
+        <navbar>
         <select class="select-species" name="Species" id="species">
           <option value="Species" selected disabled>Species</option>
           <option value="Human">Human</option>
@@ -35,19 +38,41 @@
           <option value="undefined">Undefined</option>
         </select>
         <select class="select-status" name="Status" id="status">
-          <option value="Status" selected disabled>Status</option>
+          <option value="" disabled="" selected="">Status</option>
           <option value="Alive">Alive</option>
           <option value="Dead">Dead</option>
           <option value="unknown">Unknown</option>
         </select>
         <select class="select" name="Episode" id="episode">
           <option value="" disabled="" selected="">Episode</option>
-          <option value="S0101">S01E01</option>
-          <option value="female">S01E02</option>
-          <option value="undefined">Unknown</option>
+          <option value="https://rickandmortyapi.com/api/episode/1">1</option>
+          <option value="https://rickandmortyapi.com/api/episode/2">2</option>
+          <option value="https://rickandmortyapi.com/api/episode/3">3</option>
+          <option value="https://rickandmortyapi.com/api/episode/4">4</option>
+          <option value="https://rickandmortyapi.com/api/episode/5">5</option>
+          <option value="s0106">6</option>
+          <option value="s0107">7</option>
+          <option value="s0108">8</option>
+          <option value="s0109">9</option>
         </select>
-      <input class="typed-text" id="search" placeholder="🔎 Search" wrap="off"></input>
+      <input id="search" placeholder="🔎 Search" wrap="off"></input>
+      <button id="clean" class="clean">Clean results</button>
+      </navbar>
+    </header>
 
+    <p class="statistics">This category represents <b>2%</b> of the characters</p>
+
+    <main class="scroll">
+      <!--<div id= "show-calculation"></div>-->
+      <div id="listening"></div>
+    </main>
+  </body>
+
+  <!--<div class="baseboard">
+=======
+      <input class="typed-text" id="search" placeholder="🔎 Search" wrap="off"></input>
+      <button id="clean" class="clean">Clean results</button>
+      </navbar>
   </header>
 
   <p class="stats"></p>
@@ -57,14 +82,12 @@
   </main>
 </body>
 
-<aside class="btn">
-  <button id="btn-order-az" type="button">Order A-Z</button>
-  <button id="btn-order-za" type="button">Order Z-A</button>
+
+  <button id="btn-order-az" class="btnOrder">Order A-Z</button>
+  <button id="btn-order-za" class="btnOrder">Order Z-A</button>
 </aside>
 
-<!--<div class="baseboard">
-    <footer >Developed by Andrea dos Santos and Isabella Brambilla 
+    <footer>Developed by Andrea dos Santos and Isabella Brambilla 
     <br> Source code available on Github</footer>
-  </div>-->
 
 </html>
