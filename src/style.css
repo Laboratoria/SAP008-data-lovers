@@ -148,8 +148,23 @@ hr{
     margin: 0%;
 }
 
-/* #biggest-cp{
-    color: red;
-    background-color: aquamarine;
-    background-image: url() ;
-} */
+/* botão de busca*/
+
+/* #divBusca{
+    background-color:#2F4F4F;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+}
+
+#input-search{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+   */
