@@ -33,7 +33,7 @@ const selectEpisode = document.querySelector(".selectEpisode")
 const selectGender = document.querySelector(".select-gender");
 const selectSpecies = document.querySelector(".select-species");
 const selectStatus = document.querySelector(".select-status"); 
-const searchName = document.querySelector(".btn");
+const searchName = document.getElementById("search");
 const stats = document.querySelector(".stats");
 
 function printCharacterAZ() {
@@ -66,8 +66,8 @@ function printStatusFiltered() {
 
 function printFilterByName() {
    stats.style.display = "flex";
-   stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, "search", searchName.value)}`
-   return printCards(filterName(data.results, "search", searchName.value));
+   stats.innerHTML = `The number of characters in this category is ${computeStats(data.results, searchName.value)}`
+   return printCards(filterName(data.results, searchName.value));
 }
  
 document.getElementById("btn-order-az").addEventListener("click", printCharacterAZ);
