@@ -1,10 +1,19 @@
 export const mainFilters = {
   displayCharactersList, displayBooksList, displaySpellsList,
-  filterCharactersByHouses, charactersFromAtoZ, charactersFromZtoA
+  filterCharactersByHouses, sortBy
 };
 
+function charactersFromAtoZ(charactersNames) {
+  return charactersNames.sort();
+}
+
+function charactersFromZtoA(charactersNames) {
+  return charactersNames.sort().reverse();
+}
+
 function displayCharactersList(names) {
-  return names.map((characters) => characters.name)
+  let characters = names.map((characters) => characters.name);
+  return characters;
 }
 
 function displayBooksList(books) {
@@ -18,17 +27,18 @@ function displaySpellsList(spells) {
 function filterCharactersByHouses(characters, houseToFilterBy) {
   const filteredCharacters = characters.filter((character) => {
     if (character.house === houseToFilterBy && character.house !== null) {
-      console.log(character.house, character.name)
-        return characters
+      return true;
     }
   })
-  return filteredCharacters
+  return filteredCharacters.map((character) => character.name)
 }
 
- function charactersFromAtoZ(charactersNames) {
-  return charactersNames.sort();
-}
-
-function charactersFromZtoA(charactersNames) {
-  return charactersNames.sort().reverse();
+function sortBy(arrObjects, sortByParam) {
+  if (sortByParam == 'asc') {
+    arrObjects = charactersFromAtoZ(arrObjects);
+  }
+  else if (sortByParam == 'desc') {
+    arrObjects = charactersFromZtoA(arrObjects);
+  }
+  return arrObjects
 }
