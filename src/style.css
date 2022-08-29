@@ -175,7 +175,7 @@ body {
     z-index: 99999;
 }
 
-h1.modal-header {
+.modal-header {
     padding-top: 10px;
     position: relative;
     width: 100%;

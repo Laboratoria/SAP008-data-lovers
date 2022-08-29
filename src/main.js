@@ -6,13 +6,13 @@ const dataBaseBooks = data.books;
 const dataBaseSpells = data.spells;
 let charactersNames;
 
-function hiddenModals() {
+function hideModals() {
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('books-list').style.display = 'none';
     document.getElementById('spells-list').style.display = 'none';
     document.getElementById('characters-list').style.display = 'none';
 }
-function makeMapList(arrayObjects) {
+function formatList(arrayObjects) {
     return arrayObjects.map(names => `<ul><li> ${names}</li></ul>`).join('');
 }
 
@@ -20,10 +20,10 @@ function displayCharsResult() {
     const sortBy = document.getElementById('sort').value;
     charactersNames = mainFilters.displayCharactersList(dataBaseCharacters);
     charactersNames = mainFilters.sortBy(charactersNames, sortBy);
-    hiddenModals();
+    hideModals();
     document.getElementById('characters-list').style.display = 'block';
     const charactersResult = document.getElementById('characters-content');
-    return charactersResult.innerHTML = makeMapList(charactersNames);
+    return charactersResult.innerHTML = formatList(charactersNames);
 }
 
 const btnCharacters = document.getElementById('btn-characters');
@@ -34,19 +34,19 @@ sortCharacters.addEventListener('change', () => {
     const sortBy = document.getElementById('sort').value;
     charactersNames = mainFilters.sortBy(charactersNames, sortBy)
     const charactersResult = document.getElementById('characters-content');
-    return charactersResult.innerHTML = makeMapList(charactersNames);
+    return charactersResult.innerHTML = formatList(charactersNames);
 });
 
 function displayCharactersByHouse(house) {
     charactersNames = mainFilters.filterCharactersByHouses(dataBaseCharacters, house)
     const sortBy = document.getElementById('sort').value;
     charactersNames = mainFilters.sortBy(charactersNames, sortBy)
-    hiddenModals()
+    hideModals()
     document.getElementById('characters-list').style.display = 'block';
     document.getElementById('header-modal-characters').innerText = 'Characters list by house'
 
     const charactersByHouseResult = document.getElementById('characters-content');
-    return charactersByHouseResult.innerHTML = makeMapList(charactersNames);
+    return charactersByHouseResult.innerHTML = formatList(charactersNames);
 }
 
 const btnGryffindor = document.getElementById('btn-gryffindor')
@@ -81,20 +81,20 @@ const btnBooks = document.getElementById('btn-books');
 btnBooks.addEventListener('click',
     function displayBooksList() {
         const bookTitles = mainFilters.displayBooksList(dataBaseBooks);
-        hiddenModals()
+        hideModals()
         document.getElementById('books-list').style.display = 'block';
 
         const booksResult = document.getElementById('books-content');
-        return booksResult.innerHTML = makeMapList(bookTitles);
+        return booksResult.innerHTML = formatList(bookTitles);
     })
 
 const btnSpells = document.getElementById('btn-spells');
 btnSpells.addEventListener('click',
     function displaySpellsList() {
-        const allSpells = mainFilters.displaySpellsList(dataBaseSpells);
-        hiddenModals()
+        const spellsNames = mainFilters.displaySpellsList(dataBaseSpells);
+        hideModals()
         document.getElementById('spells-list').style.display = 'block';
 
         const spellsResult = document.getElementById('spells-content');
-        return spellsResult.innerHTML = makeMapList(allSpells);
+        return spellsResult.innerHTML = formatList(spellsNames);
     })
