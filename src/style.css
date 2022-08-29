@@ -2,82 +2,64 @@
 * {
     margin: 0;
     padding:0;
-    
 }
 
-
 .body-container {    
-    width: auto; 
-    height: auto;
     color: #0A1823;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     background-image: url(background.jpg);
     background-color: #0A1823;
-    background-size: fill;    
+    background-size: fill;
     display:flex;    
     flex-wrap: wrap; 
     justify-content: center;    
     align-items: center;
-    margin: auto;
-    padding: auto;
-    border: red 10px solid;
-    
+    /* border: red 10px solid; */
 }
 
-
-.header-container { /*contém os botões: início, sobre e na mídia*/
-    margin: 0 0 auto;
-    padding: 0px;
+.header-container { 
     display: flex;
     justify-content: center;
     align-items: center; 
-    flex-wrap: nowrap;  /* Adicionado*/
+    flex-wrap: nowrap;
     flex-direction: column;
-    border:rgb(255, 255, 255) 10px solid;
+    /* border:rgb(255, 255, 255) 10px solid; */
     width: 100%;
-
 }
 
 .nav {
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
 }
 
-.btn-header { /*botões: início, sobre e na mídia*/
-    margin: 25px; /*diminui essa margem para ajustá-los na responsividade do site, antes estava 40px, muito longe um do outro*/
+.btn-header { 
+    margin: 25px; 
     background-color: #00B5CC;
     border-radius: 20px;
     border: none;
     color: #0A1823;
-    width: 13%;
+    width: 12vw; /*alterado p/ vw*/
     height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;   
     font-size: large; 
     cursor: pointer;
-    
-
 }
 
 .rick-img {
     width: 40%;    
-    border: #fbea03 10px solid;   
-    padding: 0;
-    margin: 0 0;
-    
-    
+    /* border: #fbea03 10px solid;*/
+    object-fit: fill;
 }
 
-
-
 .btn-option {
-    margin: 0 0 auto;
     background-color: #00B5CC;
     border-radius: 20px;
     border: none;
     color: #0A1823;
     width: 10vw;
     height: 40px;
+    margin: 0px 7px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
     font-size: large;
     text-align: center;   
@@ -85,31 +67,28 @@
 }
 
 .btn-search {
-    margin: 0 0 auto;
     background-color: white;
     border-radius: 20px;
     border: none;
     color: #0A1823;
     width: 10vw;
     height: 40px;
+    margin: 0px 7px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
-    font-size: large;
+    font-size: medium;
     text-align: center;   
 }
 
-.main-container {     /*Conteúdo dos cards*/
-    height: auto;
-    width: auto; 
+.main-container {     
     background-color: #0A1823;
-    margin: 0 8vw;
-    padding: 0px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: rgb(219, 158, 17) 10px solid;
+    width: 80%;
+    /* border: rgb(219, 158, 17) 10px solid; */
 }
 
 .option-container {
@@ -120,15 +99,12 @@
     margin-top: 30px;
     margin-bottom: 10px;
     padding: 10px;
-    border: #f3fb03 10px solid;
-    width: 80%;
-
+    /* border: #f3fb03 10px solid; */
+    
 }
 
 .percentage-container {
-    margin: 0px 10px;
-    padding: 10px;
-    width: 500px;
+    width: 100%; /*Alterado de 500px para 100% pois estava ultrapassando o main container e atrapalhando a resposividade, retirei o padding tbm*/
     height: 20px;
     border-radius: 5px;
     display: flex;
@@ -136,7 +112,6 @@
     justify-content: center;
     align-items: center;
     color:#B2DF28 ;
-
 }
 
 .card-container {
@@ -145,11 +120,11 @@
     align-items: center;
     justify-content: center;
     max-height: 100%;
-    border: rgb(237, 27, 177) 10px solid;
+    /* border: rgb(237, 27, 177) 10px solid; */
 }
 
 .card {
-    height: 280px;
+    height: 34vh;
     width: 200px;
     margin: 20px;
     border: 5px solid #B2DF28;    
@@ -157,21 +132,20 @@
     background-color: #B2DF28;  
     display: flex;  
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /*alterado para que as imagens nao ficassem distorcidas para o meio, ficassem com o espaçamento certo
+    considerando desde o início da imagem, antes estava justify-content center*/                         
     text-align: center;
     align-items: center;
-    font-size: 10pt;
+    font-size: 12pt;
     color:#0A1823;
-    border: rgb(255, 255, 255) 10px solid;
-    
+    /* border: rgb(255, 255, 255) 10px solid;  */
 }
 
 .poster-img {
     height: 200px;
     width: 190px;    
     border-radius: 40px;
-    
-    
+    object-fit: cover;
 }
 
 .footer-container {
@@ -186,18 +160,117 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-  @media screen and (min-width: 481px) and (max-width: 768px) { /*Aqui especifiquei que a imagem quando chegar em 500px ela vai diminuir e se ajustar a tela*/
-    .rick-img {
-      width: 100%;
-      height: auto;
+/* ===== Responsividade para dispositivos móveis ===== */
+
+@media screen and (max-width: 480px)  { 
+     
+    .btn-option {
+        width: 25vw;
+        margin: 8px 0px;
     }
 
+    .btn-search {
+        width: 25vw;
+        font-size: 12pt;
+    }
 
-  }  
+    .btn-header {
+        width: 28vw;
+        margin: 10px;
+    }
 
+    .card {
+        height: auto;
+        width: 50vw;
+        font-size: 12pt;
+    }
+
+    .poster-img {
+        height: 24vh;
+        width: 50vw;
+    }
+
+    .rick-img {
+        width: 80vw;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+}
+
+/* ===== Responsividade para Ipads e tablets ===== */
+
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+
+    .btn-option {
+        width: 28vw;
+        margin: 8px 2px;
+    }
+
+    .btn-search {
+        width: 28vw;
+    }
+    
+    .btn-header {
+        width: 20vw;
+        margin: 10px;
+    }
+    
+    .card {
+        height: 35vh;
+        width: 25vw;
+        font-size: 11pt;
+    }
+
+    .poster-img {
+        height: 30vw;
+        width: 24vw;
+    }
+
+    .rick-img {
+        width: 80vw;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+}
+
+/* ===== Responsividade para Telas pequenas e laptops ===== */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .btn-header {
+        width: 15vw;
+    }
+
+    .btn-option {
+        width: 13vw;
+        margin: 0px 7px;
+    }
+
+    .btn-search {
+        width: 13vw;
+        margin: 0px 7px;
+    }
+
+    .card {
+        height: 34vh;
+        font-size: 12pt;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+
+    .rick-img {
+        width: 50vw;
+    }
+}
+
+/*Acima de 1024px já será considerado Desktops e telas grandes*/
  
 
 

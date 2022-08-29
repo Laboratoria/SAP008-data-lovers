@@ -1,4 +1,4 @@
-import {rickAndMorty} from './data.js';
+import { rickAndMorty } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 // ======= Função de gerar templates ======
@@ -22,7 +22,7 @@ function displayCards(list) {
         `;
         return template;
     });
-    return arrayResults.join(""); 
+    return arrayResults.join("");
 }
 
 // ==== constantes e DOM's=====
@@ -43,25 +43,25 @@ cardContainer.innerHTML = displayCards(list);
 selectStatus.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorStatus(list, value);
-    const cards = displayCards(listaFiltrada);    
-    cardContainer.innerHTML = cards;  
-    
+    const cards = displayCards(listaFiltrada);
+    cardContainer.innerHTML = cards;
+
     // === evento para porcentagem ====
-    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);    
-    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";   
+    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);
+    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";
 
 });
 
 // ===== evento para filtrar por especie ====
-selectSpecies.addEventListener('change', (event) => {     
+selectSpecies.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorEspecie(list, value);
     const cards = displayCards(listaFiltrada);
     cardContainer.innerHTML = cards;
 
     // === evento para porcentagem ====
-    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);    
-    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";   
+    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);
+    percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";
 
 });
 
@@ -69,12 +69,11 @@ selectSpecies.addEventListener('change', (event) => {
 selectGender.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.filtrarPorGenero(list, value);
-
     const cards = displayCards(listaFiltrada);
     cardContainer.innerHTML = cards;
 
     // === evento para porcentagem ====
-    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);    
+    const porcentagem = rickAndMorty.calcularPorcentagem(list.length, listaFiltrada.length);
     percentage.innerHTML = "Essa categoria contém " + porcentagem + "% dos personagens totais";
 
 });
@@ -83,19 +82,20 @@ selectGender.addEventListener('change', (event) => {
 selectOrder.addEventListener('change', (event) => {
     const value = event.target.value;
     const listaOrdenada = rickAndMorty.ordenar(list, value);
-        const cards = displayCards(listaOrdenada);
-        cardContainer.innerHTML = cards;
+    const cards = displayCards(listaOrdenada);
+    cardContainer.innerHTML = cards;
+    percentage.innerHTML = ""; /*Adicionei essa string vazia para que apague o texto anterior (no caso as infos de porcentagem*/ 
 });
 
 // ===== evento para limpar filtros ====
 reset.addEventListener('click', (event) => {
-    location.reload(event);    
+    location.reload(event);
 
 });
 
 
 // ===== evento para buscar por nome ====
-searchForName.addEventListener('keyup', function(event) { 
+searchForName.addEventListener('keyup', function (event) {
     const value = event.target.value;
     const listaFiltrada = rickAndMorty.buscarPorNome(list, value);
     const cards = displayCards(listaFiltrada);
