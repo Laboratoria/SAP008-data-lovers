@@ -2,12 +2,14 @@
 
 ## Índice
 
-* [1. Sobre o projeto](#1-sobre-o-projeto)
-* [2. Objetivos de aprendizagem](#2-objetivos-de-aprendizagem)
-* [3. Interface do usuário](#3-interface-do-usuario)
-* [4. Historia do usuário](#4-historia-do-usuário)
-* [5. Protótipo de alta fidelidade](#5-prototipo-de-alta-fidelidade)
-* [6. Responsividade do site](#6-responsividade-do-site)
+- [Data Lovers](#data-lovers)
+  - [Índice](#índice)
+  - [1. Sobre o projeto](#1-sobre-o-projeto)
+  - [2. Objetivos de aprendizagem](#2-objetivos-de-aprendizagem)
+  - [3. Interface do usuário](#3-interface-do-usuário)
+  - [4. História do usuário](#4-história-do-usuário)
+  - [5. Protótipo de alta fidelidade](#5-protótipo-de-alta-fidelidade)
+  - [6. Responsividade do site](#6-responsividade-do-site)
 
 ***
 
@@ -146,4 +148,5 @@ informações ficaram expostas de forma clara.
 Desenvolvemos um site responsivo pensando nas telas: desktop (1400px), tablet (768px) 
 e celulares (320px).
 
-****** PRINT desktop, tablet e celular ********
+![Celular](src/img/mediacelular.png) 
+![Celular](src/img/mediatablet.png) 
