@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Data Seekers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+  @import url('http://fonts.cdnfonts.com/css/harry-potter');
+</style>
+<script src="https://kit.fontawesome.com/5828f9f420.js" crossorigin="anonymous"></script>
+
+<body style="font-size:10px">
+  <header class="header">
+    <img src="Images/Logo.svg" class="page-logo" width="270" height="130">
+    <button type="submit" id="btn-characters" class="menu-btns">Characters</button>
+    <button type="submit" id="btn-books" class="menu-btns">Books</button>
+    <button type="submit" id="btn-spells" class="menu-btns">Spells</button>
+    <!-- <input type="text" id="search-box" placeholder="Pesquisar..." class="search-bar">
+    <button type="submit" id="search-btn" class="search-icon"><i class="fa fa-search"></i></button> -->
+  </header>
+
+  <main class="main-container">
+    <section id="welcome-section" class="welcome">
+      <h1 class="welcome-title">Welcome to Data Seeker!</h1>
+      <h2 class="welcome-description">
+        A reference catalog on the universe of Harry Potter books
+      </h2>
+      <p class="welcome-text">Use the top menu to find information about characters, books and spells of Harry Potter
+        world.</p>
+    </section>
+    <section id="characters-list" class="modal-list" style="display:none">
+      <h1 class="modal-header" id="header-modal-characters">Characters list</h1>
+      <p class="modal-text">Choose a house and/or sort alphabetically
+        <select class="sortBy" id="sort">
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+      </p>
+      <div class="horizontal-center">
+        <button type="submit" id="btn-gryffindor" class="modal-btn">Gryffindor</button>
+        <button type="submit" id="btn-slytherin" class="modal-btn">Slytherin</button>
+        <button type="submit" id="btn-hufflepuff" class="modal-btn">Hufflepuff</button>
+        <button type="submit" id="btn-ravenclaw" class="modal-btn">Ravenclaw</button>
+      </div>
+      <div id="characters-content" class="modal-content">
+      </div>
+    </section>
+
+    <section id="books-list" class="modal-list" style="display:none">
+      <h1 class="modal-header">Books list</h1>
+      <div id="books-content" class="modal-content"></div>
+    </section>
+
+    <section id="spells-list" class="modal-list" style="display:none">
+      <h1 class="modal-header">Spells list</h1>
+      <div id="spells-content" class="modal-content"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <h1 class="footer-title"><a href="https://github.com/GabriellaViroli/SAP008-data-lovers" class="footer-link">Data
+        Seeeker</a></h1>
+    <h2 class="footer-copyright">© 2022 </h2>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
