@@ -1,66 +1,5 @@
 import { mainFilters } from '../src/data.js'
-
-const charactersData = [{
-  "id": 622,
-  "name": "Bellatrix Lestrange",
-  "birth": "1951",
-  "death": "2 May, 1998 (aged 46 - 47)",
-  "species": "Human",
-  "ancestry": "Pure-blood",
-  "gender": "Female",
-  "hair_color": "Black",
-  "eye_color": null,
-  "wand": "12¾\", Walnut, dragon heartstring",
-  "patronus": "None",
-  "house": "House of Black",
-  "associated_groups": [],
-  "books_featured_in": [4, 5, 6, 7]
-},
-{
-  "name": "Luna Lovegood",
-  "house": "Ravenclaw"
-},
-{
-  "name": "Albus Dumbledore",
-  "house": "Gryffindor"
-},
-{
-  "name": "Severus Snape",
-  "house": "Slytherin"
-},
-{
-  "name": "Sirius Black",
-  "house": "Gryffindor"
-},
-{
-  "name": "Cedric Diggory",
-  "house": "Hufflepuff"
-},
-{
-  "name": "Harry Potter",
-  "house": "Gryffindor"
-},
-{
-  "name": "Albus Potter",
-  "house": "Slytherin"
-}]
-
-const booksData = [{
-  "title": "Harry Potter and the Prisoner of Azkaban"
-},
-{
-  "title": "Harry Potter and the Half-Blood Prince"
-}]
-
-const spellsData = [{
-  "name": "Wingardium Leviosa",
-  "spell_type": "Charm"
-},
-{
-  "name": "Toenail-growing hex",
-  "spell_type": "Hex"
-}]
-
+import { charactersData, booksData, spellsData, listToSort } from '../test/data.mock.js'
 
 describe('mainFilters', () => {
   it('should be an object', () => {
@@ -151,7 +90,23 @@ describe('mainFilters.filterCharactersByHouses', () => {
   });
 
   it('should return 02 characters from house Slytherin', () => {
-    const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Slytherin')
-    expect(gryffindorCharacters.length).toBe(2)
+    const slytherinCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Slytherin')
+    expect(slytherinCharacters.length).toBe(2)
   });
 });
+
+describe('mainFilters.sortBy', () => {
+  it('should be a function', () => {
+    expect(typeof mainFilters.sortBy).toBe('function')
+  });
+  it('should return sorted from A to Z', () => {
+    expect(mainFilters.sortBy(listToSort, 'asc')).toStrictEqual([1, 'A', 'B', 'C'])
+  });
+  it('should return sorted from Z to A', () => {
+    expect(mainFilters.sortBy(listToSort, 'desc')).toStrictEqual(['C', 'B', 'A', 1])
+  });
+});
+
+
+
+
