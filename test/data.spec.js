@@ -1,3 +1,4 @@
+
 import { filtrar, ordenar,calculoAgregado1} from "../src/data.js";
 
 const arrayAmostra = [
@@ -56,9 +57,8 @@ describe("filtrar", () => {
     expect(especieEsperada.length).toEqual(1);
     expect(especieEsperada).toEqual([arrayAmostra[2]]);
   });
+
 });
-
-
 
 describe('ordenar', () => {
   it('é uma função', () => {
@@ -93,3 +93,4 @@ describe('calculoAgregado1', () => {
     expect(calculoEsperado).toEqual(25);
   });
 });
+

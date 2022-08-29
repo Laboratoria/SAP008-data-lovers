@@ -146,11 +146,26 @@ select {
 
 a {
   text-decoration: none;
+  color: rgb(217, 205, 169);;
 }
 
 a:hover {
-  color: rgb(217, 205, 169);
+  color: rgb(168, 213, 232);
 }
+
+
+/* FALTA AJUSTAR TABLET:
+- Barra do cálculo agregado
+
+FALTA AJUSTAR CELULAR:
+- Barra do cálculo agregado
+- Tirar espaçamento entre imagem e nav e cálculo agregado
+-Footer: aumentar altura 
+
+Responsividade: Sobre a série e Episódios*/ 
+
+
+
 
 /*Responsividade tablet:*/
 @media (max-width: 768px) {
@@ -179,6 +194,7 @@ a:hover {
     align-items: center;
     font-size: 20px;
   }
+
 }
 
 /*Responsividade celular:*/
@@ -247,6 +263,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
   }
+
 }
 
 

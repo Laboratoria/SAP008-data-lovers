@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Avocado;
+    src: url("./fonts/Hello\ Avocado.ttf");
+  }
+
+
+body{
+   background-image:url(./img/testefundo.jpg);
+   font-family: Avocado;
+}
+
+header{
+    background-color: rgb(168, 213, 232);
+    height: 38px;
+    width: 110vh;
+    margin-left: 2vw;
+    border-radius: 10px;
+    padding-left: 17vw;
+    box-sizing: border-box;
+
+}
+
+article{
+    font-size: 20px;
+    justify-content: center;
+    width: 110vh;
+    height: 50vh;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    padding: 2vw 3vw;
+    box-sizing: border-box;
+    text-align: -webkit-match-parent;
+    line-height: 2vw;
+    border-radius: 10px;
+    background-color: rgb(168, 213, 232);
+}
+
+
+
+
+
