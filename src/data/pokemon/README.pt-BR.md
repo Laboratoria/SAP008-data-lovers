@@ -1,4 +1,4 @@
-# Pokémon
+# Pokémon Lovers
 
 ​Pokémon GO é uma experiência de jogo internacional que tem mais de um bilhão de
 downloads e foi nomeado "o melhor jogo para celular" pelo Game Developers Choice

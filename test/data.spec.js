@@ -1,6 +1,7 @@
 import { filterByRegion } from "../src/data.js";
 import { filterByType } from "../src/data.js";
 import { sortBy } from "../src/data.js";
+import { calcPercentage } from "../src/data.js";
 
 //teste filtro por região//
 const mockPokemons = [
@@ -272,7 +273,85 @@ describe("sortBy", () => {
 });
 
 
+const mockEveryPokemon = [
+  {
+    type: ["grass", "poison"],
+  },
+  {
+    type: ["normal"],
+  },
+  {
+    type: ["fire"],
+  },
+  {
+    type: ["grass", "poison"],
+  },
+  {
+    type: ["normal"],
+  },
+  {
+    type: ["grass"],
+  }, 
+  {
+    type: ["fire"],
+  },
+   {
+    type: ["poison"],
+  }, 
+  {
+    type: ["dark","poison"],
+  },
+  {
+    type: ["flying"],
+  },
+
+];
 
 
 
+const mockTypePercentage = [
+  {
+    type: ["grass", "poison"],
+  },
+  {
+    type: ["grass", "poison"],
+  },
+  {
+    type: ["grass"],
+  }
 
+];
+
+const mockTypePercentage1 = [
+  {
+    type: ["grass", "poison"],
+  },
+  {
+    type: ["grass", "poison"],
+  },
+  {
+    type: ["dark","poison"],
+  }
+
+];
+
+describe("calcPercentage", () => {
+  it("is a function", () => {
+    expect(typeof calcPercentage).toBe("function");
+  });
+
+  it("returns a percentage of pokemon according to the chosen type", () => {
+    const result = calcPercentage(mockEveryPokemon.length, mockTypePercentage.length);
+    const expected = 30
+
+    expect(result).toEqual(expected);
+  });
+
+  it("returns a percentage of pokemon according to the chosen type", () => {
+    const result = calcPercentage(mockEveryPokemon.length, mockTypePercentage1.length);
+    const expected = 30
+
+    expect(result).toEqual(expected);
+  });
+
+});
