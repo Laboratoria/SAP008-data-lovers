@@ -48,6 +48,8 @@ function filtrarGenero(e) {
     document.getElementById("percentualTotal").innerHTML = `o total de personagens nessa categoria é ${computeStats(mostrarEspecie)}`
     mostrarPersonagens(mostrarEspecie);
     }
+
+    
     
     function ordenarPersonagens(e) {
     e.preventDefault();
