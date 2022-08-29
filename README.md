@@ -5,7 +5,8 @@ Segundo a Forbes 90% dos dados que existem hoje foram gerados durante os último
 O objetivo deste projeto é converter **dados** em **informações** compreensível para o usuário.
 ## História do usuário
 ### Produto
-* **Quem são os usuários?**
+* **Quem são os usuários?**  
+
 Fãs da saga Harry Potter  
 
 * **O que os usuários precisam?**  
