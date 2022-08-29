@@ -46,13 +46,6 @@ img {
   color: rgb(168, 213, 232);
 }
 
-.logo {
-  height: 13vh;
-  object-fit: scale-down;
-  margin-right: 5vw;
-  margin-bottom: 0vw;
-}
-
 select {
   border-radius: 5px;
   font-family: Avocado;
@@ -152,26 +145,23 @@ select {
 
 a {
   text-decoration: none;
+  color: rgb(217, 205, 169);;
 }
 
 a:hover {
-  color: rgb(217, 205, 169);
+  color: rgb(168, 213, 232);
 }
 
-/* FALTA AJUSTAR CSS GERAL:
-- Logo
-- Fazer responsividade para telas grandes, delimitar conteúdo
 
-FALTA AJUSTAR TABLET:
-- Barra navegação estranha, diferente de barra do cálculo agregado
+/* FALTA AJUSTAR TABLET:
+- Barra do cálculo agregado
 
 FALTA AJUSTAR CELULAR:
-- Barra navegação estranha, diferente de barra do cálculo agregado
+- Barra do cálculo agregado
 - Tirar espaçamento entre imagem e nav e cálculo agregado
-- Resultado cálculo agregado escapando box, talvez diminuir letra
-- Filtros um abaixo do outro
-- Centralizar cards
--Footer: aumentar altura */
+-Footer: aumentar altura 
+
+Responsividade: Sobre a série e Episódios*/ 
 
 
 
@@ -215,7 +205,6 @@ FALTA AJUSTAR CELULAR:
   }
 
   .menu,
-  .calculo,
   .filtros1,
   .filtros2,
   .filtros3,
@@ -253,4 +242,5 @@ FALTA AJUSTAR CELULAR:
     align-items: center;
     flex-direction: column;
   }
+
 }

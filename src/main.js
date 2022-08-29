@@ -1,4 +1,4 @@
-import { filtrar, ordenar, calculoAgregado1, calculoAgregado2, calculoAgregado3, calculoAgregado4} from "./data.js";
+import { filtrar, ordenar, calculoAgregado1, calculoAgregado2, calculoAgregado3, calculoAgregado4 } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
