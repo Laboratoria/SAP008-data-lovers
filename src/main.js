@@ -72,11 +72,14 @@ let sortpokemon = []
 
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
+    document.querySelector(".inf-world-pokemon").style.display="block"
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
     pokemonsToBeShown = result
     sortpokemon = result
+    searchPokemon = result
+
   
 });
 
@@ -91,6 +94,7 @@ btnJohto.addEventListener("click", function () {
 
 //Cards de todos os pokemon na tela//
 btnWorld.addEventListener("click", function () {
+    document.querySelector(".inf-world-pokemon").style.display="none"
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
     pokemonsToBeShown = everyPokemon
