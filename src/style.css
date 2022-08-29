@@ -91,11 +91,12 @@ select {
 .filtros3,
 .filtros4 {
   font-size: 20px;
+  max-width: 100%;
 }
 
 .calculo {
   background-color: rgb(124, 140, 90);
-  color: rgb(217, 205, 169);
+  color: rgb(168, 213, 232);
   border-radius: 1vw;
   padding: 10px;
   text-align: center;
@@ -104,7 +105,7 @@ select {
 }
 
 .calculo:hover {
-  color: rgb(168, 213, 232);
+  color: rgb(217, 205, 169);
 }
 
 .cardsBox {
@@ -181,8 +182,17 @@ Responsividade: Sobre a série e Episódios*/
     margin-left: 1vw;
   }
 
+  .imagemprincipal {
+    display: flex;
+    justify-content: center;
+  }
+
   .calculo {
-    width: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
   }
 
 }
@@ -194,16 +204,24 @@ Responsividade: Sobre a série e Episódios*/
     margin: 0%;
   }
 
-  .logo {
-    display: none;
-  }
-
   .nav ul li {
     width: 100%;
     margin-right: 1px;
     display: inline;
   }
 
+  .calculo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .filtros {
+    display: flex;
+    flex-direction: column;
+  }
   .menu,
   .filtros1,
   .filtros2,
@@ -213,14 +231,17 @@ Responsividade: Sobre a série e Episódios*/
   }
 
   .cardsBox {
-    width: 330px;
-    height: 430px;
+    width: 250px;
+    height: 400px;
     justify-content: space-between;
   }
-
+  .imagemprincipal {
+    display: flex;
+    justify-content: center;
+  }
   .imagemCard {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
 
   .textoCard {
@@ -244,3 +265,5 @@ Responsividade: Sobre a série e Episódios*/
   }
 
 }
+
+
