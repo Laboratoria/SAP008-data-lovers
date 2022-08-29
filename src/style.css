@@ -1,66 +1,61 @@
-body{
-      background-color: rgba(8, 7, 61, 0.925);
-      background-repeat: no-repeat;
-      background-size: 100% 100vh;
-      font-family: 'font';
-      color: white;
+@charset "UTF-8";
+
+* {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding: 0px;
+}
+
+body,html {
+      background-color: rgb(250, 192, 202);
+}
+
+header {
+      background-color: rgb(218, 118, 134);
+}
+
+header > h1 {
+      padding: 10px;
       text-align: center;
-      font-size: medium;
 }
 
-header{
-      background-color: rgb(196, 44, 196);
-
+menu {
+      display: block;
 }
 
-nav a{
-      text-transform: uppercase;
-      color: white;
-      font-weight: bolder;
-      font-size: 20px;
+menu > ul {
+      list-style-type: none;
+}
+
+menu > ul > li > a {
+      display: block;
+      padding: 10px;
       text-decoration: none;
-      position:absolute
-      left: 60px;
-
-}
-
-.filtro-todos-botoes{
-      display: flex;
-      flex-direction: row;
-}
-
-.filtro-individual-botao{
-      display: flex;
-      flex-direction: row;
-      
-}
-
-.impressao-todos-cards{
-      display: flex;
-      flex direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      align-content: center;
-      row-gap: 10px;
-      column-gap: 30px;
       text-align: center;
+      background-color: blueviolet;
+      color: white;
+      border-top: 2px solid gray;
 }
 
-.impressao-todos-cards-personagens{
-      display: flex;
-      flex direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      align-content: center;
-      row-gap: 10px;
-      column-gap: 30px;
-      text-align: center;
+menu > ul > li > a:hover {
+      background-color: aqua;
 }
 
-@font-face {
-      font-family: font;
-      src: url('fonte/font.ttf');
-      format("truetype');
+main {
+      width: 90vw;
+      background-color: greenyellow;
+      margin: auto;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+}
+
+article > h2 {
+      padding-bottom: 20px;
+}
+
+article > p {
+      text-align: justify;
+      margin-bottom: 10px;
+      text-indent: 20px;
 }
