@@ -8,7 +8,6 @@ function printCards(data) {
     const episodes = item.episode.toString()
     const number = episodes.match(regex)
     const numberBackspace = number.join(", ")
-    console.log(number)
     return `<div class="flip-container">
      <div class="flipper">
         <div class="front">
@@ -29,7 +28,6 @@ document.getElementById('listening').innerHTML = mapa.join(" ");
 
 printCards(data.results);
 
-const selectEpisode = document.querySelector(".selectEpisode")
 const selectGender = document.querySelector(".select-gender");
 const selectSpecies = document.querySelector(".select-species");
 const selectStatus = document.querySelector(".select-status"); 
@@ -77,7 +75,7 @@ selectSpecies.addEventListener("change", printSpeciesFiltered);
 selectStatus.addEventListener("change", printStatusFiltered);
 searchName.addEventListener("keypress", printFilterByName);
 searchName.addEventListener("keydown", event => {
-   if (eventKeyCode=== 8) {
+   if (event.KeyCode=== 8) {
      return printCards(data.results);
    }
 })

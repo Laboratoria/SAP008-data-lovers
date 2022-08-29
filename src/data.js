@@ -1,6 +1,6 @@
-export const alphabeticOrder = (data) => data.sort((a,z) => a.name > z.name ? 1 : -1);
+export const alphabeticOrder = (data) => [...data].sort((a,z) => a.name > z.name ? 1 : -1);
 
-export const sortByAZ = (data) => alphabeticOrder(data).slice(0, 494);
+export const sortByAZ = (data) => alphabeticOrder(data);
 
 export const sortByZA = (data) => sortByAZ(data).reverse();
   
