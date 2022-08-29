@@ -5,10 +5,11 @@ export const filterByType = (pokemons, type) =>
   pokemons.filter((pokemon) => pokemon.type.includes(type));
 
 export const calcPercentage = (pokemonsLength, typeLength) =>
-  pokemonsLength * typeLength / 100
+  (typeLength / pokemonsLength) * 100;
 
 export const filterSearch = (pokemons, name) =>
   pokemons.filter((pokemon) => pokemon.name.includes(name));
+
 
 
 

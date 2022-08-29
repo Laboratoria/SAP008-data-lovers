@@ -61,30 +61,6 @@ Este são os dados que propomos:
   utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
   - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json): Este
-  conjunto mostra a lista de jogadores de uma liga do jogo League of Legends
-  (LoL).
-  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt-BR.md)
-
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json). Lista de
-  personagens da série Rick & Morty. Você pode revisar a documentação da API
-  neste [link](https://rickandmortyapi.com).
-  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt-BR.md)
-
-* [Jogos Olímpicos do Rio de Janeiro](src/data/atletas/atletas.json).
-   Este conjunto nos fornece a lista de atletas que conquistaram medalhas nas
-   Olimpíadas do Rio de Janeiro.
-  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/atletas/README.pt-BR.md)
-
-* [Studio Ghibli](src/data/ghibli/ghibli.json).
-  Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
-  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
-
-* [Harry Potter](src/data/harrypotter/harry.json).
- Este conjunto nos fornece uma lista dos personagens, livros e feitiços de toda
- a saga Harry Potter
-  [Harry Potter](https://harrypotter.fandom.com).
-  - [Pesquisa com seguidores de Harry Potter](src/data/harrypotter/README.md)
 
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma
 interface web onde se possa visualizar e manipular dados, entendendo o que o
