@@ -97,7 +97,7 @@ select {
 .calculo {
   background-color: rgb(124, 140, 90);
   color: rgb(168, 213, 232);
-  border-radius: 1vw;
+  border-radius: 10px;
   padding: 10px;
   text-align: center;
   margin-top: 0vw;
@@ -131,7 +131,7 @@ select {
 
 .imagemCard {
   border-radius: 3vw;
-  height: 200pxh;
+  height: 200px;
   width: 200px;
 }
 
@@ -163,6 +163,7 @@ a:hover {
   .nav ul {
     border-radius: 0%;
   }
+
   .filtros1,
   .filtros2,
   .filtros3,
@@ -201,6 +202,7 @@ a:hover {
   }
 
   .nav ul li {
+    width: 100%;
     margin-right: 1px;
     display: inline;
   }
@@ -217,6 +219,7 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
+
   .menu,
   .filtros1,
   .filtros2,
@@ -230,11 +233,13 @@ a:hover {
     height: 400px;
     justify-content: space-between;
   }
+
   .imagemprincipal {
     display: flex;
     justify-content: center;
     height: auto;
   }
+
   .imagemCard {
     height: 200px;
     width: 200px;
