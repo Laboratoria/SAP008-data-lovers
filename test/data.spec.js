@@ -35,7 +35,7 @@ const charactersData = [{
 {
   "name": "Cedric Diggory",
   "house": "Hufflepuff"
-}, 
+},
 {
   "name": "Harry Potter",
   "house": "Gryffindor"
@@ -46,20 +46,20 @@ const charactersData = [{
 }]
 
 const booksData = [{
-    "title": "Harry Potter and the Prisoner of Azkaban"
-  },
-  {
-    "title": "Harry Potter and the Half-Blood Prince"
-  }]
+  "title": "Harry Potter and the Prisoner of Azkaban"
+},
+{
+  "title": "Harry Potter and the Half-Blood Prince"
+}]
 
-  const spellsData = [{
-    "name": "Wingardium Leviosa",
-    "spell_type": "Charm"
-  }, 
-  {
-    "name": "Toenail-growing hex",
-    "spell_type": "Hex"
-  }]
+const spellsData = [{
+  "name": "Wingardium Leviosa",
+  "spell_type": "Charm"
+},
+{
+  "name": "Toenail-growing hex",
+  "spell_type": "Hex"
+}]
 
 
 describe('mainFilters', () => {
@@ -124,34 +124,34 @@ describe('mainFilters.filterCharactersByHouses', () => {
 
   it('should return Albus Dumbledore, Sirius Black and Harry Potter from house Gryffindor', () => {
     const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Gryffindor')
-    expect(gryffindorCharacters[0].name).toEqual('Albus Dumbledore')
-    expect(gryffindorCharacters[1].name).toEqual('Sirius Black')
-    expect(gryffindorCharacters[2].name).toEqual('Harry Potter')
+    expect(gryffindorCharacters[0]).toEqual('Albus Dumbledore')
+    expect(gryffindorCharacters[1]).toEqual('Sirius Black')
+    expect(gryffindorCharacters[2]).toEqual('Harry Potter')
   });
 
   it('should return Severus Snape and Albus Potter from house Slytherin', () => {
     const slytherinCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Slytherin')
-      expect(slytherinCharacters[0].name).toEqual('Severus Snape')
-      expect(slytherinCharacters[1].name).toEqual('Albus Potter')
+    expect(slytherinCharacters[0]).toEqual('Severus Snape')
+    expect(slytherinCharacters[1]).toEqual('Albus Potter')
   });
 
   it('should return Luna Lovegood from house Ravenclaw', () => {
     const ravenclawCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Ravenclaw')
-      expect(ravenclawCharacters[0].name).toEqual('Luna Lovegood')
+    expect(ravenclawCharacters[0]).toEqual('Luna Lovegood')
   });
 
   it('should return Cedric Diggory from house Hufflepuff', () => {
     const hufflepuffCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Hufflepuff')
-      expect(hufflepuffCharacters[0].name).toEqual('Cedric Diggory')
+    expect(hufflepuffCharacters[0]).toEqual('Cedric Diggory')
   });
 
   it('should return 03 characters from house Gryffindor', () => {
     const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Gryffindor')
-      expect(gryffindorCharacters.length).toBe(3)
+    expect(gryffindorCharacters.length).toBe(3)
   });
 
   it('should return 02 characters from house Slytherin', () => {
     const gryffindorCharacters = mainFilters.filterCharactersByHouses(charactersData, 'Slytherin')
-      expect(gryffindorCharacters.length).toBe(2)
+    expect(gryffindorCharacters.length).toBe(2)
   });
 });

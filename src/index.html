@@ -15,28 +15,30 @@
 <body style="font-size:10px">
   <header class="header">
     <img src="Images/Logo.svg" class="page-logo" width="270" height="130">
-    <button type="submit" id="btn-characters" class="menu-btns">Personagens</button>
-    <button type="submit" id="btn-books" class="menu-btns">Livros</button>
-    <button type="submit" id="btn-spells" class="menu-btns">Feitiços</button>
+    <button type="submit" id="btn-characters" class="menu-btns">Characters</button>
+    <button type="submit" id="btn-books" class="menu-btns">Books</button>
+    <button type="submit" id="btn-spells" class="menu-btns">Spells</button>
     <!-- <input type="text" id="search-box" placeholder="Pesquisar..." class="search-bar">
     <button type="submit" id="search-btn" class="search-icon"><i class="fa fa-search"></i></button> -->
   </header>
 
   <main class="main-container">
     <section id="welcome-section" class="welcome">
-      <h1 class="welcome-title">Bem-vinde ao Data Seeker!</h1>
+      <h1 class="welcome-title">Welcome to Data Seeker!</h1>
       <h2 class="welcome-description">
-        Um catálogo de referência sobre o universo dos livros da saga Harry
-        Potter.
+        A reference catalog on the universe of Harry Potter books
       </h2>
-      <p class="welcome-text">Utilize o menu superior parar encontrar informações sobre os personagens,
-        livros e feitiços do
-        mundo Harry Potter.</p>
+      <p class="welcome-text">Use the top menu to find information about characters, books and spells of Harry Potter
+        world.</p>
     </section>
-
     <section id="characters-list" class="modal-list" style="display:none">
-      <h1 class="modal-header" id="header-modal-characters">Lista de Personagens</h1>
-      <p class="modal-text">Escolha uma casa para filtrar os personagens pertencentes a ela</p>
+      <h1 class="modal-header" id="header-modal-characters">Characters list</h1>
+      <p class="modal-text">Choose a house and/or sort alphabetically
+        <select class="sortBy" id="sort">
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+      </p>
       <div class="horizontal-center">
         <button type="submit" id="btn-gryffindor" class="modal-btn">Gryffindor</button>
         <button type="submit" id="btn-slytherin" class="modal-btn">Slytherin</button>
@@ -48,12 +50,12 @@
     </section>
 
     <section id="books-list" class="modal-list" style="display:none">
-      <h1 class="modal-header">Lista de Livros</h1>
+      <h1 class="modal-header">Books list</h1>
       <div id="books-content" class="modal-content"></div>
     </section>
 
     <section id="spells-list" class="modal-list" style="display:none">
-      <h1 class="modal-header">Lista de Feitiços</h1>
+      <h1 class="modal-header">Spells list</h1>
       <div id="spells-content" class="modal-content"></div>
     </section>
 
