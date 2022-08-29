@@ -1,4 +1,4 @@
-html body {
+body {
   background-color: #f9b798;
   text-align: center;
   font-family: open sans, sans-serif;
@@ -33,10 +33,7 @@ html body {
   padding: 1rem 2rem;
   border: 2px solid #87cc22;
   border-radius: 10px;
-<<<<<<< HEAD
   margin-top: 80px;
-=======
->>>>>>> 79162016d73c8a53ac5807bd6ee29bfa433e2db9
   background: #d9d9d9;
   color: #87cc22;
   font-size: 60px;
@@ -44,7 +41,7 @@ html body {
   text-decoration: none;
 }
 
-.botaoOrder {
+.btnRadio {
 margin-top: -120px;
 font-size: 20px;
 }
