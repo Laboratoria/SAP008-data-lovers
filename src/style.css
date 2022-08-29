@@ -184,19 +184,20 @@
     }
 
     .card {
-        height: auto;
-        width: 50vw;
+        height: 64vh;
+        width: 45vw;
         font-size: 12pt;
         padding: 5px 6px;
     }
 
     .poster-img {
-        height: 24vh;
-        width: 50vw;
+        height: 38vh;
+        width: 40vw;
     }
 
     .rick-img {
         width: 80vw;
+        height: auto;
     }
 
     .main-container {
@@ -223,14 +224,14 @@
     }
     
     .card {
-        height: 35vh;
-        width: 25vw;
+        height: 34vh;
+        width: 34vw;
         font-size: 11pt;
     }
 
     .poster-img {
-        height: 30vw;
-        width: 24vw;
+        height: 20vw;
+        width: 29vw;
     }
 
     .rick-img {
@@ -258,11 +259,18 @@
     .btn-search {
         width: 13vw;
         margin: 0px 7px;
+        font-size: 11pt;
     }
 
     .card {
-        height: 34vh;
+        height: 29vh;
+        width: 23vw;
         font-size: 12pt;
+    }
+
+    .poster-img {
+        height: 16vh;
+        width: 21vw;
     }
 
     .main-container {
