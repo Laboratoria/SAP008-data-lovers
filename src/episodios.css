@@ -1,43 +1,69 @@
 @font-face {
-    font-family: Avocado;
-    src: url("./fonts/Hello\ Avocado.ttf");
+  font-family: Avocado;
+  src: url("./fonts/Hello\ Avocado.ttf");
+}
+
+body {
+  background-image: url(./img/testefundo.jpg);
+  font-family: Avocado;
+}
+
+header {
+  background-color: rgb(168, 213, 232);
+  height: 7vh;
+  width: 50vw;
+  margin-left: 2vw;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+article {
+  font-size: 20px;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  padding: 2vw 3vw;
+  box-sizing: border-box;
+  text-align: -webkit-match-parent;
+  line-height: 2vw;
+  border-radius: 10px;
+  background-color: rgb(168, 213, 232);
+}
+
+/*Responsividade tablet:*/
+@media (max-width: 768px) {
+  header {
+    margin: auto;
+    margin-bottom: 3vw;
+    font-size: 20px;
+    width: 65vw;
+    height: 10vh;
   }
 
-
-body{
-   background-image:url(./img/testefundo.jpg);
-   font-family: Avocado;
-}
-
-header{
-    background-color: rgb(168, 213, 232);
-    height: 38px;
-    width: 110vh;
-    margin-left: 2vw;
-    border-radius: 10px;
-    padding-left: 15vw;
-    box-sizing: border-box;
-    justify-content: center;
-
-}
-
-
-article{
+  article {
+    margin: auto;
+    width: 65vw;
+    height: 65vh;
     font-size: 20px;
-    justify-content: center;
-    width: 110vh;
-    height: 50vh;
-    margin-left: 2vw;
-    margin-top: 2vw;
-    padding: 2vw 3vw;
-    box-sizing: border-box;
-    text-align: -webkit-match-parent;
-    line-height: 2vw;
-    border-radius: 10px;
-    background-color: rgb(168, 213, 232);
+    line-height: 5vh;
+  }
 }
 
+/*Responsividade celular:*/
+@media (max-width: 320px) {
+  header {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
 
-
-
-
+  article {
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 4vh;
+  }
+}
