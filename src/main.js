@@ -3,6 +3,7 @@ import { filterByType } from "./data.js";
 import { sortBy } from "./data.js";
 import { calcPercentage } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
+import { filterSearch } from "./data.js";
 
 //.log(example, data);
 
@@ -15,6 +16,7 @@ const everyPokemon = data.pokemon;
 const select = document.getElementById("selectType");
 let selectOrder = document.getElementById("select-cp");
 const statsType = document.getElementById("statsType")
+const inputSearch = document.getElementById("input-search")
 
 //botão de reset
 btnReset.addEventListener("click",(event) => {
@@ -75,11 +77,14 @@ let sortpokemon = []
 
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
+    document.querySelector(".inf-world-pokemon").style.display="block"
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
     pokemonsToBeShown = result
     sortpokemon = result
+    searchPokemon = result
+
   
 });
 
@@ -94,6 +99,7 @@ btnJohto.addEventListener("click", function () {
 
 //Cards de todos os pokemon na tela//
 btnWorld.addEventListener("click", function () {
+    document.querySelector(".inf-world-pokemon").style.display="none"
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
     pokemonsToBeShown = everyPokemon
@@ -124,4 +130,14 @@ selectOrder.addEventListener("change", function () {
    
 })
 
+inputSearch.addEventListener("input", (e) => {
+    let text = inputSearch.value
+    let textlowercase = text.toLowerCase()
+    console.log(text)
+    console.log(textlowercase)
+    let result = (filterSearch(everyPokemon, textlowercase)); 
+    cards.innerHTML = createCards(result) 
+    console.log(result)
+  });
 
+  
