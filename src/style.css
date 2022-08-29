@@ -75,7 +75,7 @@
     height: 40px;
     margin: 0px 7px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
-    font-size: medium;
+    font-size: large;
     text-align: center;   
 }
 
@@ -127,8 +127,9 @@
     height: 34vh;
     width: 200px;
     margin: 20px;
+    padding: 6px 5px;
     border: 5px solid #B2DF28;    
-    border-radius: 40px;
+    border-radius: 50px;
     background-color: #B2DF28;  
     display: flex;  
     flex-direction: column;
@@ -144,7 +145,8 @@
 .poster-img {
     height: 200px;
     width: 190px;    
-    border-radius: 40px;
+    border-radius: 50px;
+    border: #0A1823 2px solid;
     object-fit: cover;
 }
 
@@ -185,6 +187,7 @@
         height: auto;
         width: 50vw;
         font-size: 12pt;
+        padding: 5px 6px;
     }
 
     .poster-img {
@@ -242,6 +245,7 @@
 /* ===== Responsividade para Telas pequenas e laptops ===== */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) { 
+
     .btn-header {
         width: 15vw;
     }
