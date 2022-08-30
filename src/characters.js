@@ -1,7 +1,7 @@
 import data from "./data/ghibli/ghibli.js"
-function getCharacters (movies){
+function getCharacters (films){
     let characters = []
-    for (let i= 0; i<movies.length; i++){
+    for (let i= 0; i<films.length; i++){
         characters = characters.concat(movies[i].people)
     }
     console.log(characters)
