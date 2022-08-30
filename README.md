@@ -149,11 +149,10 @@ Desenvolvemos um site responsivo pensando nas telas:
 
 - **Desktop (1400px)**
   
-![Celular](src/img/celulalr.jpg) 
-
 - **Celulares (320px)**
 
+![Celular](src/img/celulalr.jpg)
 
-![Tablet](src/img/tablet.jpg) 
-
-- **Tablet (768px)** 
+- **Tablet (768px)**
+  
+![Tablet](src/img/tablet.jpg)
