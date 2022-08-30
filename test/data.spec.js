@@ -107,7 +107,6 @@ describe("filterByType", () => {
 });
 
 // Teste para SortBy//
-
 const mockCP = [
   {
     stats: {
@@ -170,6 +169,12 @@ describe("sortBy", () => {
       },
     ];
     expect(result).toEqual(expected);
+  });
+  //QUando não tiver o que ordenar (mesmo valor ou valor não esperado)
+  it("returns the same array, unordered, when the second parameter is invalid ", () => {
+    const result = sortBy(mockCP, " ");
+    
+    expect(result).toEqual(mockCP);
   });
 
   it("returns the previous array, sorted by smallest max-cp", () => {
@@ -328,9 +333,6 @@ const mockTypePercentage1 = [
   },
   {
     type: ["grass", "poison"],
-  },
-  {
-    type: ["dark","poison"],
   }
 
 ];
@@ -349,7 +351,49 @@ describe("calcPercentage", () => {
 
   it("returns a percentage of pokemon according to the chosen type", () => {
     const result = calcPercentage(mockEveryPokemon.length, mockTypePercentage1.length);
-    const expected = 30
+    const expected = 20
+
+    expect(result).toEqual(expected);
+  });
+
+});
+
+const mockNames = [
+  {
+    name: "pikachu",
+  },
+  {
+    name: "pichu",
+  },
+  {
+    name: "rapidash",
+  },
+  {
+    name: "snorlax",
+  },
+  {
+    name: "articuno",
+  }
+];
+
+describe("filterSearch", () => {
+  it("is a function", () => {
+    expect(typeof filterSearch).toBe("function");
+  });
+
+  it("returns a pokemon, or a group of pokemon, after typping letters related to their names", () => {
+    const result = filterSearch(mockNames, "pi");
+    const expected = [
+      {
+        name: "pikachu",
+      },
+      {
+        name: "pichu",
+      },
+      {
+        name: "rapidash",
+      }
+    ];
 
     expect(result).toEqual(expected);
   });
