@@ -136,9 +136,16 @@ em relação ao total
 ## 5. Protótipo de alta fidelidade
 
 Optamos por trabalhar com a ferramenta Figma para desenvolver o protótipo 
-de alta fidelidade
+de alta fidelidade. Fizemos o protótipo para:
 
-*****IMAGEM DO PROTÓTIPO DE ALTA FIDELIDADE****
+- **Desktop**
+
+![Protótipo desk](src/img/prototipoaltadesk.png) 
+
+- **Celular**
+
+![Protótipo cel](src/img/prototipoaltacell.png) 
+
 
 Fizemos testes de usabilidade e os usuários acharam simples e as 
 informações ficaram expostas de forma clara.
@@ -156,3 +163,6 @@ Desenvolvemos um site responsivo pensando nas telas:
 - **Tablet (768px)**
   
 ![Tablet](src/img/tablet.jpg)
+
+
+*Este projeto foi desenvolvido por Clareana Ribeiro e Isabella Lima.*
