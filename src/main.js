@@ -5,6 +5,9 @@ import data from './data/pokemon/pokemon.js';
 
 console.log(example, data);
 
+const body = document.getElementById("body");
+const menu = document.getElementById("menu");
+
 function clickMenu(){
     if(paginas.style.display == 'block'){
        paginas.style.display = 'none'
@@ -21,3 +24,5 @@ function clickMenu(){
     }
   }
   
+  body.addEventListener("onrisize");
+  menu.addEventListener("clickMenu")
