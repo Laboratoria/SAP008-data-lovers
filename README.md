@@ -112,7 +112,7 @@ usuário necessita.
 
 Iniciamos a interface criando nosso protótipo de baixa fidelidade, pensando 
 na experiência do usuário ao navegar pela web.
-![Protótipo de baixa](src/img/p.baixa.jpg) 
+![Protótipo de baixa](src/img/baixa.jpg) 
 
 Escolhemos fazer uma interface simples e intuitiva. Escolhemos uma paleta de cores 
 suaves para dar uma aparência clean baseada na imagem principal.
@@ -148,8 +148,10 @@ informações ficaram expostas de forma clara.
 
 Desenvolvemos um site responsivo pensando nas telas: 
 
--Desktop (1400px)
--Celulares (320px)
+- **Desktop (1400px)**
+  
+- **Celulares (320px)**
 ![Celular](src/img/celulalr.jpg) 
--Tablet (768px) 
+
+- **Tablet (768px)** 
 ![Tablet](src/img/tablet.jpg) 
