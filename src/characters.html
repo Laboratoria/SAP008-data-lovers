@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="ghibli.ico">
+  <title> Studio Ghibli</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style-primario.css">
+  <link rel="stylesheet" href="style-secundario.css">
+</head>
+<body onresize="responsivo()">
+  <header>
+    <h1>Studio Ghibli</h1>
+    <i id="menu" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="paginas">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="characters.html">Characters</a></li>
+      </ul>
+    </menu>
+  </header>
+  <main class="principal">
+    <article class="principal-home">
+      <p> characters </p>  
+    </article>
+  </main>
+  <footer>
+    <p>"Desenvolvido por" 
+      <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
+      "e"
+      <a href="https://github.com/Thainaprado7"> Thaina Prado</a> "- Turma SAP008
+      - Laboratória Brasil/2022"
+    </p>
+  </footer>
+  <script>
+
+function clickMenu(){
+  if(paginas.style.display == 'block'){
+     paginas.style.display = 'none'
+  } else {
+     paginas.style.display = 'block'
+  }
+}
+
+function responsivo() {
+  if(window.innerWidth >= 768) {
+    paginas.style.display = 'block'
+  } else {
+    paginas.style.display = 'none'
+  }
+}
+
+
+  </script>
+  </body>
+</html>

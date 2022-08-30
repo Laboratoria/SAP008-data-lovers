@@ -11,7 +11,8 @@
 
     menu > ul > li {
         display: inline-block;
-        width: 420px;
+        width: 300px;
+        
     }
     
     main {

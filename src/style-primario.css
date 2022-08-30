@@ -10,7 +10,7 @@ body,html {
       background-color: rgb(250, 192, 202);
 }
 
-header {
+header, footer {
       background-color: rgb(218, 118, 134);
 }
 
@@ -71,4 +71,10 @@ article > p {
       text-align: justify;
       margin-bottom: 10px;
       text-indent: 20px;
+}
+
+footer {
+      text-align: center;
+      padding: 10px;
+
 }
