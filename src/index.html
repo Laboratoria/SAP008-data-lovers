@@ -16,24 +16,24 @@
   </header>
   <main>
     <div class="buttons">
-    <select id="status">
-      <optgroup label="STATUS"></optgroup>
+      <select id="status">
+        <optgroup label="STATUS"></optgroup>
         <option value="0" selected disabled hidden>STATUS</option>
         <option value="Alive">ALIVE</option>
         <option value="Dead">DEAD</option>
         <option value="unknown">UNKNOWN</option>
-    </select>
+      </select>
 
-    <select id="gender">
-      <optgroup label="GENDER"></optgroup>
+      <select id="gender">
+        <optgroup label="GENDER"></optgroup>
         <option value="0" selected disabled hidden>GENDER</option>
         <option value="Male">MALE</option>
         <option value="Female">FEMALE</option>
         <option value="unknown">UNKNOWN</option>
-    </select>
+      </select>
 
-    <select id="specie">
-      <optgroup label="SPECIES"></optgroup>
+      <select id="specie">
+        <optgroup label="SPECIES"></optgroup>
         <option value="0" selected disabled hidden>SPECIES</option>
         <option value="Alien">ALIEN</option>
         <option value="Animal">ANIMAL</option>
@@ -44,30 +44,28 @@
         <option value="Robot">ROBOT</option>
         <option value="Mytholog">MYTHOLOG</option>
         <option value="Poopybutthole">POOPYBUTTHOLE</option>
-        <option value="Disease" >DISEASE</option>
+        <option value="Disease">DISEASE</option>
         <option value="Cronenberg">CRONENBERG</option>
         <option value="Vampire">VAMPIRE</option>
-    </select>
+      </select>
 
-    <select id="order">
-      <optgroup label="ORDER"></optgroup>
-      <option value="0" selected disabled hidden>ORDER</option>
-      <option value="crescente">↻ A-Z</option>
-      <option value="decrescente">↺ Z-A</option>
-    </select>
+      <select id="order">
+        <optgroup label="ORDER"></optgroup>
+        <option value="0" selected disabled hidden>ORDER</option>
+        <option value="crescente">↻ A-Z</option>
+        <option value="decrescente">↺ Z-A</option>
+      </select>
 
-    
-    <input class="search" type="search" placeholder="🔎 SEARCH...">
-    <input type="button" class="searchButton" value="SEARCH">
-    <input type="button" class="clear" value="CLEAR" onClick="window.location = location">
-  </div>
+      <input type="button" class="clear" value="CLEAR" onClick="window.location = location">
 
-    <div class="cards" id="cards">
-    </div>
-  
+      <input class="search" type="search" id="name" placeholder=" &#128270; Search by name" />
+
+      <div class="cards" id="cards">
+      </div>
+
   </main>
-  </body>
-  <script src="main.js" type="module"></script>
+</body>
+<script src="main.js" type="module"></script>
 
 
 </html>

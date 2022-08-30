@@ -1,11 +1,10 @@
 import getCharacters from './data.js';
-import rickandmorty from './data/rickandmorty/rickandmorty.js';
-import rickAndMortyData from './data/rickandmorty/rickandmorty.js'
 
-let selectGender = document.getElementById('gender');
-let selectStatus = document.getElementById('status');
-let selectSpecie = document.getElementById('specie');
-let selectOrderAz = document.getElementById('order');
+const selectGender = document.getElementById('gender');
+const selectStatus = document.getElementById('status');
+const selectSpecie = document.getElementById('specie');
+const selectOrderAz = document.getElementById('order');
+const inputName = document.getElementById('name');
 
 function gerarCard(personagem) {
     return `
@@ -28,16 +27,11 @@ function gerarCard(personagem) {
 const listarCards = () => {
 
     let optionStatus = selectStatus.options[selectStatus.selectedIndex];
-
     let optionGender = selectGender.options[selectGender.selectedIndex];
-
     let optionSpecie = selectSpecie.options[selectSpecie.selectedIndex];
+    let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex]; //index indica a posição do combo que foi selecionada//
 
-    let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex];
-
-    
-
-    let characters = getCharacters(optionGender.value, optionStatus.value, optionSpecie.value, optionOrderAz.value);  //agrupa
+    let characters = getCharacters(optionGender.value, optionStatus.value, optionSpecie.value, optionOrderAz.value, inputName.value);  //agrupa
 
     let cards = document.getElementById('cards');
     cards.innerHTML = '';
@@ -47,53 +41,9 @@ const listarCards = () => {
 };
 
 selectGender.addEventListener('change', listarCards);
-
 selectStatus.addEventListener('change', listarCards);
-
 selectSpecie.addEventListener('change', listarCards);
-
 selectOrderAz.addEventListener('change', listarCards); 
+inputName.addEventListener('keyup', listarCards);
 
 listarCards();
-
-
-const buttonSearch = document.querySelector(".searchButton")
-buttonSearch.addEventListener("click", (e) => {
-    let searchText = document.querySelector(".search").value;
-    searchName (searchText)
-})
-
-function searchName (searchTF) {
-    let characters = rickandmorty.results;
-    
-   /* for (const obj of characters) {
-        console.log(`${obj.name}`)
-    } */
-
-    let searchText = document.querySelector(".search").value;
-    let searchName = searchText.charAt(0).toUpperCase() + searchText.slice(1)
-
-
-    const exibirNomes = characters.map(characters => `${characters.name}`)
-        console.log(exibirNomes
-    )
-
-
-    if (exibirNomes.includes(searchName)) {
-        console.log("Personagem encontrado.")        
-        }
-         else {
-        console.log("Personagem não encontrado.")
-    }
-            
-
-    if (searchName === ("")) {
-        alert ("Insira o nome do personagem.")
-        }
-        else {
-        alert (`${searchName}`)
-    }
-}
-
-
-
