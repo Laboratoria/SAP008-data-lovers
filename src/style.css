@@ -41,6 +41,11 @@ body{
 
 }
 
+.btn-select{
+    display: none;
+}
+
+
 .button{
     cursor: pointer;
     font-size: large;
@@ -52,12 +57,30 @@ body{
     padding: 1%;
 }
 
+
 /*Introdução - main*/
 
 #img-pokemon{
     height: 20%;
     margin-top: 0%;
 }
+/*texto*/
+.inf-world-pokemon{
+    display: inline-flex;
+    align-items: center;
+    margin: 0%;
+}
+
+#inf-pokemon{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: justify;
+    margin: 2%;
+    background-color: #b4c5c5;
+    border-radius: 10px;
+    line-height: 100%;
+}
+
 
 /*Estilização dos cards - output*/
 
@@ -151,8 +174,5 @@ hr{
 
 /* botão de busca*/
 
-#img-busca{
-    border: 2px;
-}
 
 
