@@ -110,13 +110,12 @@ usuário necessita.
 
 Iniciamos a interface criando nosso protótipo de baixa fidelidade, pensando 
 na experiência do usuário ao navegar pela web.
-
-*****IMAGEM PROTÓTIPO BAIXA FIDELIDADE ****
+![Protótipo de baixa](src/img/prototipo.jpg) 
 
 Escolhemos fazer uma interface simples e intuitiva. Escolhemos uma paleta de cores 
 suaves para dar uma aparência clean baseada na imagem principal.
 
-******IMAGEM FOTO PRINCIPAL E PALETA DE CORES *******
+![Paleta de cores](src/img/paleta%20de%20cores.jpg) 
 
 ## 4. História do usuário
 
@@ -138,7 +137,7 @@ em relação ao total
 Optamos por trabalhar com a ferramenta Figma para desenvolver o protótipo 
 de alta fidelidade
 
-*****IMAGEM DO PROTÓTIPO DE ALTA FIDELIDADE
+*****IMAGEM DO PROTÓTIPO DE ALTA FIDELIDADE****
 
 Fizemos testes de usabilidade e os usuários acharam simples e as 
 informações ficaram expostas de forma clara.
@@ -149,4 +148,4 @@ Desenvolvemos um site responsivo pensando nas telas: desktop (1400px), tablet (7
 e celulares (320px).
 
 ![Celular](src/img/mediacelular.png) 
-![Celular](src/img/mediatablet.png) 
+![Tablet](src/img/mediatablet.png) 
