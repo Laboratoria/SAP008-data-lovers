@@ -11,7 +11,7 @@ Fãs da saga Harry Potter
 
 * **O que os usuários precisam?**  
 
-Uma aplicação web que sane todas as suas dúvidas sobre as caracteristicas da série. Como por exemplo, nome de personagens, detalhe de livros, porções e feitiços.
+Uma aplicação web que sane todas as suas dúvidas sobre as caracteristicas da série. Como por exemplo, nome de personagens, detalhe de livros, porções, feitiços e curiodidades.
 # Protótipo
 ## Alta fidelidade  
 
@@ -24,12 +24,12 @@ Uma aplicação web que sane todas as suas dúvidas sobre as caracteristicas da 
 ![]()
 ## Ferramentas
 
-**TRELLO -**  
+* **TRELLO -**  Nos ajudou a fazer o gerenciamento das tasks.
 
-**FIGMA -**  
+* **FIGMA -** Utilizamos este software de design gráfico para criar a prototipagem das interfaces gráficas do projeto.
 
-**METRO RETRO -**  
+* **METRO RETRO -**  Ferramentas que nos ajudou a avaliar as tasks realizadas e os pontos de melhoria.
 
-**VISUAL STUDIO CODE -**
+* **VISUAL STUDIO CODE -** Usamos este editor de código para implementar o HTML, CSS, JavaScript.
 
 ## Teste de usabilidade
