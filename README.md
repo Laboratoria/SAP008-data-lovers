@@ -148,4 +148,4 @@ Desenvolvemos um site responsivo pensando nas telas: desktop (1400px), tablet (7
 e celulares (320px).
 
 ![Celular](src/img/mediacelular.png) 
-![Tablet](src/img/mediatablet.png) 
+![Tablet](src/img/tablet.jpg) 
