@@ -11,7 +11,8 @@ Fãs da saga Harry Potter
 
 * **O que os usuários precisam?**  
 
-Uma aplicação web que sane todas as suas dúvidas sobre as caracteristicas da série. Como por exemplo, nome de personagens, detalhe de livros, porções, feitiços e curiodidades.
+Uma aplicação web que sane todas as suas dúvidas sobre as caracteristicas da série. Como por exemplo, nome de personagens, detalhe de livros, porções, feitiços e curiosidades.
+
 # Protótipo
 ## Alta fidelidade  
 

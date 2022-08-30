@@ -1,16 +1,12 @@
-export default {filters};
-
-const filters = {displayList,filterHouse, filterAll};
-
-function displayList(name){
-  return name.map((characters) => characters.name)
+export function geraCard(character){
+  return `<li>${character.name}"</br>"${character.birth}"</br>"${character.species}"</br>"${character.house}"</br>"${character.gender}</li>`
 }
-function filterHouse(house) {
-  return filters.characters.filter((user) => user.house === house);
+export function filterHouse(characters, house) {
+  return characters.filter((user) => user.house === house);
 }
-function filterAll(value) {
+export function filterAll(characters, value) {
   if (value === "VerTodos") {
-    let todosPersonagens = filters.characters.map((user) => {
+    let todosPersonagens = characters.characters.map((user) => {
       return user.name;
     });
 
