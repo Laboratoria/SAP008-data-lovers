@@ -231,11 +231,11 @@ describe("sortBy", () => {
           "max-hp": "113"
         },
       },
-    ];
-    
+   ];
+
     expect(result).toEqual(expected);
   });
-
+    
   it("returns the previous array, sorted by smallest max-hp", () => {
     const result = sortBy(mockCP, "smallest-max-hp")
     const expected = [

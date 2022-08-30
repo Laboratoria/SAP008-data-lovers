@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="img/PokeBall.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="img/PokeBall.ico" type="image/x-icon" />
   <title>Pokemon Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,44 +33,55 @@
           Johto
         </button>
 
-        <select name="selectType" id="selectType">
-          <option value="type" selected>Type</option>
-          <option value="normal">normal</option>
-          <option value="fire">fire</option>
-          <option value="water">water</option>
-          <option value="flying">flying</option>
-          <option value="fighting">fighting</option>
-          <option value="poison">poison</option>
-          <option value="electric">electric</option>
-          <option value="ground">ground</option>
-          <option value="rock">rock</option>
-          <option value="grass">grass</option>
-          <option value="psychic">psychic</option>
-          <option value="ice">ice</option>
-          <option value="bug">bug</option>
-          <option value="ghost">ghost</option>
-          <option value="steel">steel</option>
-          <option value="dragon">dragon</option>
-          <option value="dark">dark</option>
-          <option value="fairy">fairy</option>
-        </select>
-        <select name="select-max-cp" id="select-cp">
-          <option value="order" disabled selected>Order By </option>
-          <optgroup label="higher to lower">
-            <option value="biggest-max-cp" id="biggest-cp"> Max CP </option>
-            <option value="biggest-max-hp" id="biggest-hp"> Max HP </option>
-          </optgroup>
-          <optgroup label="lower to higher">
-            <option value="smallest-max-cp" id="smallest-cp"> Max CP </option>
-            <option value="smallest-max-hp" id="smallest-hp"> Max HP </option>
-          </optgroup>
-        </select>
-          <input type="text" name="input-search" id="input-search" placeholder="ex: pikachu"/>
+        <div class="btn-select">
+          <select name="selectType" id="selectType">
+            <option value="type" selected>Type</option>
+            <option value="normal">normal</option>
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="flying">flying</option>
+            <option value="fighting">fighting</option>
+            <option value="poison">poison</option>
+            <option value="electric">electric</option>
+            <option value="ground">ground</option>
+            <option value="rock">rock</option>
+            <option value="grass">grass</option>
+            <option value="psychic">psychic</option>
+            <option value="ice">ice</option>
+            <option value="bug">bug</option>
+            <option value="ghost">ghost</option>
+            <option value="steel">steel</option>
+            <option value="dragon">dragon</option>
+            <option value="dark">dark</option>
+            <option value="fairy">fairy</option>
+          </select>
+          <select name="select-max-cp" id="select-cp">
+            <option value="order" disabled selected> Order By </option>
+            <optgroup label="higher to lower">
+              <option value="biggest-max-cp" id="biggest-cp"> Max CP </option>
+              <option value="biggest-max-hp" id="biggest-hp"> Max HP </option>
+            </optgroup>
+            <optgroup label="lower to higher">
+              <option value="smallest-max-cp" id="smallest-cp"> Max CP </option>
+              <option value="smallest-max-hp" id="smallest-hp"> Max HP </option>
+            </optgroup>
+          </select>
+          <input type="text" name="input-search" id="input-search" placeholder="ex: pikachu" />
+
+        </div>
       </nav>
     </header>
     <main>
       <article class="inf-world-pokemon">
         <img id="img-pokemon" src="img/Group 15.png" />
+        <p id="inf-pokemon">O Mundo Pokémon é o principal planeta conhecido, onde os Pokémon e humanos vivem. Este
+          planeta parece e age como o mundo real em termos de geografia.
+          Ambos têm relevo, oceanos e água que suportam a vida, sugerindo que o mundo Pokémon está aproximadamente na
+          mesma distância do nosso ao Sol e também o mesmo tamanho.
+          Os seres humanos e a natureza também estão muito ligados lá, um exemplo disso é que todas as cidades e vilas
+          estão ao redor da natureza. O mundo Pokémon é dividido em
+          regiões, e aqui você pode conhecer os pokemons que vivem em duas delas Kanto e Johto.
+        </p>
       </article>
       <p id="statsType"></p>
       <output id="cards"> </output>
