@@ -77,19 +77,20 @@ let sortpokemon = []
 
 //Botão Região kanto//
 btnKanto.addEventListener("click", function () {
-    document.querySelector(".inf-world-pokemon").style.display="block"
+    document.querySelector(".inf-world-pokemon").style.display="none"
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
     pokemonsToBeShown = result
     sortpokemon = result
-    searchPokemon = result
+    //nsearchPokemon = result
 
   
 });
 
 //Botão da Região Johto//
 btnJohto.addEventListener("click", function () {
+    document.querySelector(".inf-world-pokemon").style.display="none"
     let result = filterByRegion(everyPokemon, "johto")
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
@@ -99,6 +100,7 @@ btnJohto.addEventListener("click", function () {
 
 //Cards de todos os pokemon na tela//
 btnWorld.addEventListener("click", function () {
+    //alterando o display da imagem
     document.querySelector(".inf-world-pokemon").style.display="none"
     let infoPokemons = createCards(everyPokemon)
     cards.innerHTML = infoPokemons
@@ -130,11 +132,11 @@ selectOrder.addEventListener("change", function () {
    
 })
 
-inputSearch.addEventListener("input", (e) => {
+inputSearch.addEventListener("input", () => {
     let text = inputSearch.value
     let textlowercase = text.toLowerCase()
-    console.log(text)
-    console.log(textlowercase)
+    //console.log(text)
+    //console.log(textlowercase)
     let result = (filterSearch(everyPokemon, textlowercase)); 
     cards.innerHTML = createCards(result) 
     console.log(result)
