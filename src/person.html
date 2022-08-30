@@ -12,14 +12,20 @@
     <img src="imagens/tentativa1.png" alt="logo escrito 'Rick and Morty'" class="logo">
   </header>
 
-  <section class="btnRadio">
+  <div id="divBuscar">
+    <img src="./IMG/lupa.png" alt="lupa para busca">
+    <input type="text" id="txtBusca" placeholder="Buscar"/>
+    <button id="btnBusca">Buscar</button>
+  </div>
+
+  <form class="btnRadio">
     <input type="radio">
     <label>A-Z</label>
     <input type="radio">
     <label>Z-A</label>
-  </section>
+  </form>
 
-  <section class="filtro">
+  <form class="filtro">
     <input type="text" placeholder="Gênero" list="opcoesGenero">
     <datalist id="opcoesGenero">
       <option value="Female">Female</option>
@@ -27,6 +33,7 @@
       <option value="Ganderless">Ganderless</option>
       <option value="Unknown">Unknown</option>
     </datalist>
+  </input>
 
     <input type="text" placeholder="Especie" list="opcoesEspecie">
     <datalist id="opcoesEspecie">
@@ -36,11 +43,13 @@
       <option value="Mythological Creature">Mythological Creature</option>
       <option value="Humanoid">Humanoid</option>
     </datalist>
+  </input>
 
     <input type="text" placeholder="Origem" list="opcoesOrigem">
     <datalist id="opcoesOrigem">
       <option value="Planeta Terra">Planeta Terra</option>
     </datalist>
+  </input>
 
     <input type="text" placeholder="Status" list="opcoesStatus">
     <datalist id="opcoesStatus">
@@ -48,14 +57,15 @@
       <option value="Dead">Dead</option>
       <option value="Unknown">Unknown</option>
     </datalist>
-  </section>
+  </input>
+  </form>
 
   <div>
     <button id="limpar" class="btnEnd">Limpar</button>
     <button id="enviar" class="btnEnd">Enviar</button>
   </div>
 
-  <div id="cardsContainer"></div>
+  <div class="cardsTemplate" id="cardsContainer"></div>
 
   <script src="main.js" type="module"></script>
 </body>
