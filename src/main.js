@@ -1,4 +1,5 @@
 import getCharacters from './data.js';
+import rickandmorty from './data/rickandmorty/rickandmorty.js';
 
 const selectGender = document.getElementById('gender');
 const selectStatus = document.getElementById('status');
@@ -47,3 +48,13 @@ selectOrderAz.addEventListener('change', listarCards);
 inputName.addEventListener('keyup', listarCards);
 
 listarCards();
+
+let total = rickandmorty.results;
+let counterTotal = total.length
+let counter = 0;
+    for (let i = 0; i < total.length; i++) {
+    if (total[i].gender === 'Female') counter++;
+    }
+
+console.log ("A porcentagem de personagens femininas é de " + ((counter / counterTotal) * 100).toFixed(2) + "%");
+

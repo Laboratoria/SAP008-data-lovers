@@ -49,6 +49,7 @@ const getCharacters = (gender, status, specie, order, name) => {
 //=== Calculo porcentagem ===/
 
   return characters;
+  
 };
 
 export default getCharacters;
