@@ -10,7 +10,7 @@ function gerarCards(cards){
         const cardsList = `
         <div class="cards">
             <img class="cardsImg" src="${item.image}" alt="${item.name}">
-            <ul class="card-text" style="list-style: none">                       
+            <ul class="cardText" style="list-style: none">                       
             <li>Name: ${item.name}</li>
             <li>Status: ${item.status}</li>
             <li>Species: ${item.species}</li>
