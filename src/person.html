@@ -8,12 +8,11 @@
 </head>
 
 <body>
-
-  <div class="cabecalho">
+  <header>
     <img src="imagens/tentativa1.png" alt="logo escrito 'Rick and Morty'" class="logo">
-  </div>
+  </header>
 
-  <section class="botaoOrder">
+  <section class="btnRadio">
     <input type="radio">
     <label>A-Z</label>
     <input type="radio">
@@ -21,48 +20,42 @@
   </section>
 
   <section class="filtro">
-    <ul>
-      <input type="text" placeholder="Gênero" list="opcoesGenero">
-      <datalist id="opcoesGenero">
-        <option value="Female">Female</option>
-        <option value="Male">Male</option>
-        <option value="Ganderless">Ganderless</option>
-        <option value="Unknown">Unknown</option>
-      </datalist>
-    </ul>
-    <ul>
-      <input type="text" placeholder="Especie" list="opcoesEspecie">
-      <datalist id="opcoesEspecie">
-        <option value="Alien">Alien</option>
-        <option value="Human">Human</option>
-        <option value="Robot">Robot</option>
-        <option value="Mythological Creature">Mythological Creature</option>
-        <option value="Humanoid">Humanoid</option>
-      </datalist>
-    </ul>
+    <input type="text" placeholder="Gênero" list="opcoesGenero">
+    <datalist id="opcoesGenero">
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+      <option value="Ganderless">Ganderless</option>
+      <option value="Unknown">Unknown</option>
+    </datalist>
 
-    <ul>
-      <input type="text" placeholder="Origem" list="opcoesOrigem">
-      <datalist id="opcoesOrigem">
-        <option value="Planeta Terra">Planeta Terra</option>
-      </datalist>
-    </ul>
+    <input type="text" placeholder="Especie" list="opcoesEspecie">
+    <datalist id="opcoesEspecie">
+      <option value="Alien">Alien</option>
+      <option value="Human">Human</option>
+      <option value="Robot">Robot</option>
+      <option value="Mythological Creature">Mythological Creature</option>
+      <option value="Humanoid">Humanoid</option>
+    </datalist>
 
-    <ul>
-      <input type="text" placeholder="Status" list="opcoesStatus">
-      <datalist id="opcoesStatus">
-        <option value="Alive">Alive</option>
-        <option value="Dead">Dead</option>
-        <option value="Unknown">Unknown</option>
-      </datalist>
-    </ul>
+    <input type="text" placeholder="Origem" list="opcoesOrigem">
+    <datalist id="opcoesOrigem">
+      <option value="Planeta Terra">Planeta Terra</option>
+    </datalist>
+
+    <input type="text" placeholder="Status" list="opcoesStatus">
+    <datalist id="opcoesStatus">
+      <option value="Alive">Alive</option>
+      <option value="Dead">Dead</option>
+      <option value="Unknown">Unknown</option>
+    </datalist>
   </section>
 
   <div>
-    <button id="limpar" class="btn">Limpar</button>
-    <button id="enviar" class="btn">Enviar</button>
+    <button id="limpar" class="btnEnd">Limpar</button>
+    <button id="enviar" class="btnEnd">Enviar</button>
   </div>
 
+  <div id="cardsContainer"></div>
 
   <script src="main.js" type="module"></script>
 </body>
