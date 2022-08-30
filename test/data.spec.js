@@ -2,6 +2,7 @@ import { filterByRegion } from "../src/data.js";
 import { filterByType } from "../src/data.js";
 import { sortBy } from "../src/data.js";
 import { calcPercentage } from "../src/data.js";
+import { filterSearch } from "../src/data.js";
 
 //teste filtro por região//
 const mockPokemons = [
@@ -308,7 +309,6 @@ const mockEveryPokemon = [
 ];
 
 
-
 const mockTypePercentage = [
   {
     type: ["grass", "poison"],
@@ -350,6 +350,48 @@ describe("calcPercentage", () => {
   it("returns a percentage of pokemon according to the chosen type", () => {
     const result = calcPercentage(mockEveryPokemon.length, mockTypePercentage1.length);
     const expected = 30
+
+    expect(result).toEqual(expected);
+  });
+
+});
+
+const mockNames = [
+  {
+    name: "pikachu",
+  },
+  {
+    name: "pichu",
+  },
+  {
+    name: "rapidash",
+  },
+  {
+    name: "snorlax",
+  },
+  {
+    name: "articuno",
+  }
+];
+
+describe("filterSearch", () => {
+  it("is a function", () => {
+    expect(typeof filterSearch).toBe("function");
+  });
+
+  it("returns a pokemon, or a group of pokemon, after typping letters related to their names", () => {
+    const result = filterSearch(mockNames, "pi");
+    const expected = [
+      {
+        name: "pikachu",
+      },
+      {
+        name: "pichu",
+      },
+      {
+        name: "rapidash",
+      }
+    ];
 
     expect(result).toEqual(expected);
   });

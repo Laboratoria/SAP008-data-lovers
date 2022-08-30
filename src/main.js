@@ -81,6 +81,8 @@ btnKanto.addEventListener("click", function () {
     document.getElementById("button-kanto").style.background="blue"
     document.getElementById("button-johto").style.background="white"
     document.getElementById("button-world").style.background="white"
+    document.querySelector(".inf-world-pokemon").style.display="none"
+    document.querySelector(".btn-select").style.display="block"
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto
@@ -93,6 +95,8 @@ btnJohto.addEventListener("click", function () {
     document.getElementById("button-johto").style.background="blue"
     document.getElementById("button-kanto").style.background="white"
     document.getElementById("button-world").style.background="white"
+    document.querySelector(".inf-world-pokemon").style.display="none"
+    document.querySelector(".btn-select").style.display="block"
     let result = filterByRegion(everyPokemon, "johto")
     let infoJohto = createCards(result)
     cards.innerHTML = infoJohto;
@@ -105,6 +109,7 @@ btnWorld.addEventListener("click", function () {
     document.getElementById("button-world").style.background="blue"
     document.getElementById("button-kanto").style.background="white"
     document.getElementById("button-johto").style.background="white"
+    //alterando o display da imagem//
     document.querySelector(".inf-world-pokemon").style.display="none"
     document.querySelector(".btn-select").style.display="block"
     let infoPokemons = createCards(everyPokemon)
@@ -137,7 +142,7 @@ selectOrder.addEventListener("change", function () {
    
 })
 
-inputSearch.addEventListener("input", (e) => {
+inputSearch.addEventListener("input", () => {
     let text = inputSearch.value
     let textlowercase = text.toLowerCase()
     //console.log(text)
