@@ -4,8 +4,6 @@
 
 ## Índice
 
-- [Data Lovers - Rick and Morty](#data-lovers---rick-and-morty)
-  - [Índice](#índice)
   - [1. Sobre o projeto](#1-sobre-o-projeto)
   - [2. Objetivos de aprendizagem](#2-objetivos-de-aprendizagem)
   - [3. Interface do usuário](#3-interface-do-usuário)
@@ -112,6 +110,7 @@ usuário necessita.
 
 Iniciamos a interface criando nosso protótipo de baixa fidelidade, pensando 
 na experiência do usuário ao navegar pela web.
+
 ![Protótipo de baixa](src/img/baixa.jpg) 
 
 Escolhemos fazer uma interface simples e intuitiva. Escolhemos uma paleta de cores 
@@ -150,8 +149,11 @@ Desenvolvemos um site responsivo pensando nas telas:
 
 - **Desktop (1400px)**
   
-- **Celulares (320px)**
 ![Celular](src/img/celulalr.jpg) 
 
-- **Tablet (768px)** 
+- **Celulares (320px)**
+
+
 ![Tablet](src/img/tablet.jpg) 
+
+- **Tablet (768px)** 
