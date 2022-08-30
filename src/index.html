@@ -13,14 +13,14 @@
       <h1 class="titulologo"><img src="logoharry.png"></h1>
       <nav>
         <ul class="navbar">
-          <a href="home.html">INICIO</a> |
+          <a href="home.html" class="menu">VOLTAR</a> |
           <a target="_blank" href="https://www.hbomax.com/br/pt/harry-potter?countryRedirect=1&utm_id=sa%7c71700000085056423%7c58700007207970536%7cp66001139249&gclid=Cj0KCQjwxveXBhDDARIsAI0Q0x245efopt0KFfdQIZJZjZv_Fs3YZX4yn6ssLbmWykQGbE6iYGeiphgaAqfFEALw_wcB&gclsrc=aw.ds"> FILMES</a> |
           <a target="_blanck" href="https://www.hogwartslegacy.com/pt-br">JOGOS</a>
         </ul>
       </nav>  
   </header>
   <main class="buttonselect" id = "main-Select">
-    <select class="select" id="Select-Filtros">
+    <select class="select" id="selectFiltros">
       <option disabled selected value="">FILTRAR POR</option>
       <option value="VerTodos" id="Ver-Todos"> Ver Todos</option>
       <option value="Gryffindor" id="FiltrarGrynffindor"> Filtrar por GRIFINÓRIA</option>
@@ -33,9 +33,13 @@
       <option value="tudo" id="az"> A-Z</option>
       <option value="filtrar" id="za"> Z-A</option>
     </select>
-    <input type="search" id="buscar" class="campodebusca" name="harrypt" placeholder="Buscar...">
+    <input type="search" id="buscar" class="campodebusca" placeholder="Buscar">
   </main>
-  <ul id="lista" class="corpoweb">
+  <div class="calc" id="cal"><br>
+    Aqui aparecerá o calculo agregado
+    Exemplo: "50% dos personagens fazer parte da GRIFINÓRIA"
+  </div>
+  <ul id="lista" class="ul">
   </ul>
   </div>
   <footer class="rodape">

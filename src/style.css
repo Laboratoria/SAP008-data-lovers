@@ -72,10 +72,28 @@
     text-align: center;
     font-size: 14px small;
 }
-.corpoweb{
+.calc{
+    background-color: #F1B415;
+    text-align: center;
+    align-items: center;
+    color: black;
+    height: 100px;
+    width: 100%;
+    font-size: 14px small;
+    font-weight: bold;
+}
+.ul{
     background-color: #F1B415;
     width: 100%;
-    color: white;
+    margin: auto;
+}
+.card{
+    padding: 10%;
+    width: 50px;
+    text-align: left;
+    font-size: 20px small;
+    color: :-moz-only-whitespace
+    border: #500909;
 }
 .imgback{
     text-align: 100%;

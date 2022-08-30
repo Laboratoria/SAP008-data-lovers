@@ -1,21 +1,22 @@
 import data from "./data/harrypotter/data.js";
-import {filterAll, filterHouse, geraCard} from "./data.js";
+import {mapAll, filterHouse, createCard} from "./data.js";
 //visualizar todos os personagens
 const fullCast = data.characters;
 function displayCharaList(){
     const charactersPrint = document.getElementById('lista');
-    return charactersPrint.innerHTML = fullCast.map(geraCard).join('');
+    return charactersPrint.innerHTML = fullCast.map(createCard).join('');
 }
 displayCharaList()
 //filtrar todos e por casa  
 let selectCharacters = document.querySelector('.select')
-selectCharacters.addEventListener('change', function(event){
-    if(event.target.value === "VerTodos"){
-        let listAllCharacters = filterAll(event.target.value)
+selectCharacters.addEventListener('change', 
+function select(){
+    if(displayCharaList.value === "VerTodos"){
+        let listAllCharacters = mapAll(displayCharaList.value)
         printName(listAllCharacters)
     }else{
-    let listName = filterHouse(event.target.value)
-    printName(listName)
+    let listName = filterHouse(filterHouse.value)
+        printName(listName)
     }
 })     
 function printName(charactersHouse){
