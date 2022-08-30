@@ -7,9 +7,10 @@
    <link rel="icon" href="ghibli.ico">
   <title> Studio Ghibli</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-primario.css">
+  <link rel="stylesheet" href="style-secundario.css">
 </head>
-<body>
+<body onresize="responsivo()">
   <header>
     <h1>Studio Ghibli</h1>
     <i id="menu" class="material-icons" onclick="clickMenu()">menu</i>
@@ -49,13 +50,24 @@
     </p>
   </footer>
   <script>
-    function clickMenu(){
+
+function clickMenu(){
   if(paginas.style.display == 'block'){
      paginas.style.display = 'none'
   } else {
      paginas.style.display = 'block'
   }
 }
+
+function responsivo() {
+  if(window.innerWidth >= 768) {
+    paginas.style.display = 'block'
+  } else {
+    paginas.style.display = 'none'
+  }
+}
+
+
   </script>
   </body>
 </html>
