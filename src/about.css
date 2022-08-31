@@ -107,13 +107,16 @@ h2 {
 .banner {
   justify-content: center;
   width: 100vh;
+  padding-top: 20px;
 }
 
 .text-about {
   align-items: center;
   text-align: justify;
   padding: 25px;
-  width: 165vh;
+  width: 70%;
+  font-size: 20px;
+  
 }
 
 /* FOOTER */
@@ -126,7 +129,8 @@ h2 {
   color: #000;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 500; 
+  bottom: 0;
 }
 
 a {
