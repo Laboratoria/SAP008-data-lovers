@@ -1,10 +1,8 @@
 import {
   filtrar,
   ordenar,
-  calculoAgregado1,
-  calculoAgregado2,
-  calculoAgregado3,
-  calculoAgregado4,
+  calculoAgregado,
+
 } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
@@ -40,15 +38,13 @@ function criaCard(personagens) {
 // PEGOU VALOR DO QUE USUÁRIO SELECIONOU DE TIPO DE ESPÉCIE:
 document.querySelector("#especie").addEventListener("change", (event) => {
   const valor = event.target.value;
-
   // CHAMANDO A FUNÇÃO FILTERDATABYKEY E DANDO O ARRAY, A PROPRIEDADE DO OBJETO E O VALOR COMO PARÂMETRO
   const especieFiltrada = filtrar(rickandmorty, "species", valor);
-  // CHAMANDO A FUNÇÃO DO MAP E DANDO COMO PARÂMETRO A FUNÇÃO DO FILTER PARA PRINTAR NA TELA
 
-  const calculo = calculoAgregado1(rickandmorty.length, especieFiltrada.length);
+   const calculo = calculoAgregado(rickandmorty.length, especieFiltrada.length);
   document.getElementById("exibirCalculo").innerHTML =
     "Essa categoria representa " + calculo + "% dos personagens";
-
+// CHAMANDO A FUNÇÃO DO MAP E DANDO COMO PARÂMETRO A FUNÇÃO DO FILTER PARA PRINTAR NA TELA
   criaCard(especieFiltrada);
 });
 
@@ -56,7 +52,7 @@ document.querySelector("#genero").addEventListener("change", (event) => {
   const valor = event.target.value;
   const generoFiltrado = filtrar(rickandmorty, "gender", valor);
 
-  const calculo = calculoAgregado2(rickandmorty.length, generoFiltrado.length);
+  const calculo = calculoAgregado(rickandmorty.length, generoFiltrado.length);
   document.getElementById("exibirCalculo").innerHTML =
     "Essa categoria representa " + calculo + "% dos personagens";
 
@@ -67,20 +63,17 @@ document.querySelector("#status").addEventListener("change", (event) => {
   const valor = event.target.value;
   const statusFiltrado = filtrar(rickandmorty, "status", valor);
 
-  const calculo = calculoAgregado3(rickandmorty.length, statusFiltrado.length);
+  const calculo = calculoAgregado(rickandmorty.length, statusFiltrado.length);
   document.getElementById("exibirCalculo").innerHTML =
     "Essa categoria representa " + calculo + "% dos personagens";
 
   criaCard(statusFiltrado);
 });
 
-document
-  .querySelector("#ordemalfabetica")
-  .addEventListener("change", (event) => {
+document.querySelector("#ordemalfabetica").addEventListener("change", (event) => {
     const valor = event.target.value;
     const ordem = ordenar(rickandmorty, valor);
-
-    const calculo = calculoAgregado4(rickandmorty.length, ordem.length);
+    const calculo = calculoAgregado(rickandmorty.length, ordem.length);
     document.getElementById("exibirCalculo").innerHTML =
       "Essa categoria representa " + calculo + "% dos personagens";
 

@@ -15,9 +15,7 @@ export function ordenar(array, value) {
 
 function ordemCrescente(array) {
   const ordem = array.sort(function (a, b) {
-    if (a.name === b.name) {
-      return 0;
-    }
+
 
     if (a.name > b.name) {
       return 1;
@@ -30,9 +28,6 @@ function ordemCrescente(array) {
 
 function ordemDecrescente(array) {
   const ordem = array.sort(function (a, b) {
-    if (a.name === b.name) {
-      return 0;
-    }
 
     if (a.name > b.name) {
       return -1;
@@ -43,18 +38,7 @@ function ordemDecrescente(array) {
   return ordem;
 }
 
-export function calculoAgregado1(tamArray, tamEspecie) {
-  return Math.round((tamEspecie * 100) / tamArray);
+export function calculoAgregado(total, porcentagem) {
+  return Math.round((porcentagem * 100) / total);
 }
 
-export function calculoAgregado2(tamArray, tamGenero) {
-  return Math.round((tamGenero * 100) / tamArray);
-}
-
-export function calculoAgregado3(tamArray, tamStatus) {
-  return Math.round((tamStatus * 100) / tamArray);
-}
-
-export function calculoAgregado4(tamArray, tamOrdem) {
-  return Math.round((tamOrdem * 100) / tamArray);
-}
