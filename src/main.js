@@ -49,12 +49,15 @@ inputName.addEventListener('keyup', listarCards);
 
 listarCards();
 
-let total = rickandmorty.results;
-let counterTotal = total.length
-let counter = 0;
-    for (let i = 0; i < total.length; i++) {
-    if (total[i].gender === 'Female') counter++;
-    }
-
-console.log ("A porcentagem de personagens femininas é de " + ((counter / counterTotal) * 100).toFixed(2) + "%");
+const buttonCuriosity = document.querySelector("#curiosity")
+    let total = rickandmorty.results;
+    let counterTotal = total.length
+    let counter = 0;
+        for (let i = 0; i < total.length; i++) {
+        if (total[i].gender === 'Female') counter++;
+        } 
+    let porcentagem = ((counter / counterTotal) * 100).toFixed(2)
+    
+    buttonCuriosity.addEventListener("click", function (e) { 
+    alert ("The percentage of female characters is " + porcentagem + "%")});
 
