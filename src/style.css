@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & family= Titillium+Web & display=swap');
+
+* {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;
+}
+
+.login-page{
+  background-color: rgb(44, 42, 42);
+  background-image: url(imagens/fundo-1000.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 0px;
+  position:absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  
+}
+
+
+header{
+  background-color: black;
+  padding: 7px 0;
+  border-bottom: 2px solid chartreuse;
+  flex-wrap: wrap;
+
+}
+
+.logo{
+  width: 350px;
+  height: 56px;
+  left: 10%;
+  padding: 25px;
+  flex-wrap: wrap;
+
+}
+
+.menu .btn-menu{
+  background-color: chartreuse;
+  display: inline-block;
+  padding: 6px 16px;
+  color:rgb(13, 13, 12) ;
+  border-radius: 8px;
+  margin-top: 24px;
+  transition: 0.1s;
+  cursor: pointer;
+  flex-wrap: wrap;
+
+}
+
+.menu .btn-menu:hover{
+  color: rgb(28, 172, 172);
+}
+
+#root{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.porcentagem h2{
+  color: white;
+  
+}
+#result{
+  text-align: center;
+  
+  position: absolute;
+  left: 50%;
+  color: white;
+}
+
+.gif  {
+  float: none;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content:right;
+  min-width: 90px;
+  max-width: 200px;
+  
+}
+
+section{
+  float: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex; 
+  border-radius: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  
+  min-width: 200px; /* se tirar largura cresce*/
+  max-width: 900px;
+  margin: auto; 
+ 
+}
+
+
+section h3{
+  color: chartreuse;
+}
+
+
+
+aside{
+  position: fixed;
+  top: 18;
+  left: 0;
+  
+}
+
+.texto h3 {
+  color: chartreuse;
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;
+  
+}
+.texto p{
+  color: white;
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;  
+  margin-left: 20px;
+ 
+}
+.texto a {
+  color:chartreuse ;
+}
+
+.foto{
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px  ;
+
+}
+.card{
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(26, 28, 26);
+  border: 2px solid #000;
+  margin: 10px;  
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px;
+  width: 250px;
+  height: 400px;
+  padding: 5px;
+
+}
+
+.card-conteudo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  float: right;
+  background-color: rgba(61, 60, 60, 0.466);
+  height:450px;
+  overflow: auto;
+
+  align-items: center;
+  justify-content: center;
+  
+}
+/* barra de rolagem*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 4);
+  border-radius: 10px;
+}
+
+
+footer{
+  color: white;
+  background-color: rgba(0, 255, 0, 0.321);
+  bottom: 0;
+  position: fixed;
+  width:100% ;
+  text-align: center;
+  
+}
+footer a{
+  color: rgb(112, 239, 8);
+}
