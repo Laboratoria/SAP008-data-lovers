@@ -11,7 +11,6 @@ const arrAthletes = data.athletes
 
 
 
-
 medal.addEventListener('change', (event) => {
     console.log(event.target.value)
     let medalType = event.target.value
@@ -34,7 +33,7 @@ medal.addEventListener('change', (event) => {
         })
     }
     if(medalType == "Gold"){
-        arrAthletes.forEach((filterAthletics) => {
+        arrAthletes.map((filterAthletics) => {
             if (filterAthletics.medal == "Gold" && filterAthletics.sport == "Athletics") {
                 const template = `
         <div class="card-atleta" id="card-atleta">
@@ -49,6 +48,7 @@ medal.addEventListener('change', (event) => {
                 content.innerHTML += template
             }
         })
+    
 
     }
     if(medalType == "Silver"){
