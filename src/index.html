@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Rick and Morty Wikia</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/img/icon_rm.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icon_rm.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <div id="root"></div>
     <script src="main.js" type="module"></script>
 
-  <header>
-    <img src="./img/logo_header.png" class="logo" alt="rickandmorty">
+    <header>
+      <img src="./img/logo_header.png" class="logo" alt="rickandmorty" />
+      <aside class="menu">
         <select class="select-gender" name="Gender" id="gender">
-        <option value="" disabled="" selected="">Gender</option>
+          <option value="" disabled="" selected="">Gender</option>
           <option value="Female">Female</option>
           <option value="Male">Male</option>
           <option value="unknown">Unknown</option>
         </select>
-        <navbar>
         <select class="select-species" name="Species" id="species">
-          <option value="Species" selected disabled>Species</option>
+          <option value="Species" disabled="" selected="">Species</option>
           <option value="Human">Human</option>
           <option value="Alien">Alien</option>
-          <option value="Humanoid">Humanoid</option> 
-          <option value="Robot">Robot</option> 
-          <option value="Animal">Animal</option> 
-          <option value="Cronenberg">Cronenberg</option> 
+          <option value="Humanoid">Humanoid</option>
+          <option value="Robot">Robot</option>
+          <option value="Animal">Animal</option>
+          <option value="Cronenberg">Cronenberg</option>
           <option value="Poopybutthole">Poopybutthole</option>
           <option value="Mytholog">Mytholog</option>
-          <option value="Vampire">Vampire</option> 
-          <option value="undefined">Undefined</option>
+          <option value="Vampire">Vampire</option>
         </select>
         <select class="select-status" name="Status" id="status">
           <option value="" disabled="" selected="">Status</option>
@@ -43,39 +44,62 @@
           <option value="Dead">Dead</option>
           <option value="unknown">Unknown</option>
         </select>
-        <select class="select" name="Episode" id="episode">
+        <select class="select-episode" name="Episode" id="episode">
           <option value="" disabled="" selected="">Episode</option>
           <option value="https://rickandmortyapi.com/api/episode/1">1</option>
           <option value="https://rickandmortyapi.com/api/episode/2">2</option>
           <option value="https://rickandmortyapi.com/api/episode/3">3</option>
           <option value="https://rickandmortyapi.com/api/episode/4">4</option>
           <option value="https://rickandmortyapi.com/api/episode/5">5</option>
-          <option value="s0106">6</option>
-          <option value="s0107">7</option>
-          <option value="s0108">8</option>
-          <option value="s0109">9</option>
+          <option value="https://rickandmortyapi.com/api/episode/6">6</option>
+          <option value="https://rickandmortyapi.com/api/episode/7">7</option>
+          <option value="https://rickandmortyapi.com/api/episode/8">8</option>
+          <option value="https://rickandmortyapi.com/api/episode/9">9</option>
+          <option value="https://rickandmortyapi.com/api/episode/10">10</option>
+          <option value="https://rickandmortyapi.com/api/episode/11">11</option>
+          <option value="https://rickandmortyapi.com/api/episode/12">12</option>
+          <option value="https://rickandmortyapi.com/api/episode/13">13</option>
+          <option value="https://rickandmortyapi.com/api/episode/14">14</option>
+          <option value="https://rickandmortyapi.com/api/episode/15">15</option>
+          <option value="https://rickandmortyapi.com/api/episode/16">16</option>
+          <option value="https://rickandmortyapi.com/api/episode/17">17</option>
+          <option value="https://rickandmortyapi.com/api/episode/18">18</option>
+          <option value="https://rickandmortyapi.com/api/episode/19">19</option>
+          <option value="https://rickandmortyapi.com/api/episode/20">20</option>
+          <option value="https://rickandmortyapi.com/api/episode/21">21</option>
+          <option value="https://rickandmortyapi.com/api/episode/22">22</option>
+          <option value="https://rickandmortyapi.com/api/episode/23">23</option>
+          <option value="https://rickandmortyapi.com/api/episode/24">24</option>
+          <option value="https://rickandmortyapi.com/api/episode/25">25</option>
+          <option value="https://rickandmortyapi.com/api/episode/26">26</option>
+          <option value="https://rickandmortyapi.com/api/episode/27">27</option>
+          <option value="https://rickandmortyapi.com/api/episode/28">28</option>
+          <option value="https://rickandmortyapi.com/api/episode/29">29</option>
+          <option value="https://rickandmortyapi.com/api/episode/30">30</option>
+          <option value="https://rickandmortyapi.com/api/episode/31">31</option>
         </select>
-      <input class="typed-text"  id="search" placeholder="🔎 Search" wrap="off"/>
-      <button id="clean" class="clean">Clean results</button>
-      </navbar>
+        <input
+          id="search"
+          class="searchByName"
+          placeholder="🔎 Search by name..."
+          wrap="off"
+        />
+        <button id="clear" class="clear">Clear search</button>
+      </aside>
     </header>
+    <p class="stats"></p>
+    <div class="btn">
+      <button id="btn-order-az" class="btnOrder">Order A-Z</button>
+      <button id="btn-order-za" class="btnOrder">Order Z-A</button>
+    </div>
+    <main class="scroll">
+      <div id="listening" class="bodyCards"></div>
+    </main>
+  </body>
 
-  <p class="stats"></p>
- 
-  <main class="scroll">
-    <div id="listening"></div>
-  </main>
-</body>
-
-
-<aside class="btn">
-  <button id="btn-order-az" class="btnAZ">Order A-Z</button>	  
-  <button id="btn-order-za" class="btnZA">Order Z-A</button>	  
-</aside>
-
-<!-- <div class="baseboard">
-    <footer>Developed by Andrea dos Santos and Isabella Brambilla 
-    <br> Source code available on Github</footer>
-    </div> -->
-
+  <footer>
+    Developed by <a href="https://github.com/Canzua">Andrea dos Santos</a> and
+    <a href="https://github.com/bellabrambilla">Isabella Brambilla</a> 👽 <br />
+    Source code available on Github
+  </footer>
 </html>
