@@ -35,7 +35,6 @@ export function printFilmsCards(data ) {
 
 }
 
-
 export function getCharacters (films){
   let characters =[] 
   for (let i = 0; i < films.length; i++ ){

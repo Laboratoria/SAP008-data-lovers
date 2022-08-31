@@ -5,18 +5,18 @@ import data from './data/ghibli/ghibli.js';
 const films = data.films
 
 
-function showFilmsCards () { 
-  document.getElementById('cardsFilms').innerHTML = printFilmsCards(data.films)
+function showFilmsCards (films) { 
+  document.getElementById('cardsFilms').innerHTML = printFilmsCards(films)
 }
 console.log (getCharacters (data.films))
 
 
-showFilmsCards()
+showFilmsCards(data.films)
 
 const searchMovie = () =>{
   const valueSelec = searchFilms.value;
   const movieSelec = filterFilms(films, valueSelec);
-  printCards(movieSelec);
+  showFilmsCards(movieSelec);
 }
 
 const searchFilms = document.querySelector("#filtro");
