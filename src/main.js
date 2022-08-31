@@ -1,5 +1,10 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import { orderCrescente, ordemDecrescente } from "./data.js";
+import {
+  orderCrescente,
+  ordemDecrescente,
+  filterArr,
+  porcentagemCal,
+} from "./data.js";
 
 function renderizaCards(cards) {
   const root = document.getElementById("root");
@@ -50,3 +55,61 @@ function montarCards(param) {
 </div>
 `;
 }
+
+const btnDesconhecido = document.getElementById("desconhecido");
+
+btnDesconhecido.addEventListener("click", function () {
+  const markup = filterArr(data.results, "status", "unknown").map((result) => {
+    return montarCards(result);
+  });
+
+  renderizaCards(markup);
+});
+
+const btnVivo = document.getElementById("vivo");
+
+btnVivo.addEventListener("click", function () {
+  const markup = filterArr(data.results, "status", "Alive").map((result) => {
+    return montarCards(result);
+  });
+  renderizaCards(markup);
+});
+
+const btnMorto = document.getElementById("morto");
+btnMorto.addEventListener("click", function () {
+  const markup = filterArr(data.results, "status", "Dead").map((result) => {
+    return montarCards(result);
+  });
+
+  renderizaCards(markup);
+});
+
+const btnEspecie = document.getElementById("especie");
+
+btnEspecie.addEventListener("click", function () {
+  const markup = filterArr(data.results, "species", "Alien").map((result) => {
+    return montarCards(result);
+  });
+
+  renderizaCards(markup);
+});
+
+document.querySelector("#result").innerHTML = `
+Todos (${data.results.length})
+Desconhecidos (${porcentagemCal(
+  filterArr(data.results, "status", "unknown").length,
+  data.results.length
+)})
+Vivo (${porcentagemCal(
+  filterArr(data.results, "status", "Alive").length,
+  data.results.length
+)})
+Morto (${porcentagemCal(
+  filterArr(data.results, "status", "Dead").length,
+  data.results.length
+)})
+Especie (${porcentagemCal(
+  filterArr(data.results, "species", "Alien").length,
+  data.results.length
+)})
+`;
