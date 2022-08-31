@@ -85,21 +85,22 @@
     background-color: #F1B415;
     text-align: center;
     color: black;
-    height: 60px;
+    height: 30px;
     width: 100%;
     max-width: 1350px;
     font-size: 14px small;
     font-weight: bold;
+    padding bottom: 3%;
 }
 .ul{
     margin-top: auto;
     margin-bottom: auto;
     background-color: #F1B415;
     width: 100%;
-    max-width: 1310px;
+    max-width: 1280px;
     max-height: 100%;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding right: 0;
 }
 .card{

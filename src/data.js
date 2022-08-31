@@ -1,3 +1,4 @@
+import data from "./data/harrypotter/data.js";
 export function createCard(character){
   return `<card class="card">
   <br><strong>Name: </strong>${character.name}
@@ -7,16 +8,10 @@ export function createCard(character){
   </br><strong>Gender: </strong>${character.gender}</br>
   </card>`
 }
-export function filterHouse(characters, house) {
-  return characters.filter((user) => user.house === house);
+export function filterHouse(house) {
+  return data.characters.filter((user) => user.house === house);
 }
-export function mapAll(characters, value) {
-  if (value === "VerTodos") {
-   let todosPersonagens = characters.characters.map((user) => {
-     return user.name;
-   });
-
-    return todosPersonagens;
-  }
+export function countCharactersHogwarts(){
+  return data.characters.filter((user) => user.house ===
+  'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
 }
-//import data from "./data/harrypotter/data.js";
