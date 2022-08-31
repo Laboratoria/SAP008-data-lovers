@@ -140,7 +140,11 @@ de alta fidelidade. Fizemos o protótipo para:
 
 - **Desktop**
 
-![Protótipo desk](src/img/prototipoaltadesk.png) 
+![Protótipo desk](src/img/prototipoaltadesk.png)
+
+![Pagina sobre a série](src/img/paginasobre.png)
+
+![Pagina episódios](src/img/paginaepiso.png)
 
 - **Celular**
 
