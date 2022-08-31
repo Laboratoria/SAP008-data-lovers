@@ -51,17 +51,28 @@
     height: 40px;
 }
 
-.barra-navegacao {
+.lista-navegacao {
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.barra-navegacao a {
+.lista-navegacao a {
+    display: block;
     text-decoration: none;
     color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-navegacao li {
+    list-style: none;
+    padding: 5px 5px;
 }
 
 .secao-olimpiadas {
@@ -86,6 +97,13 @@
     font-family: 'Varela Round', sans-serif;
     font-size: 50px;
     padding: 20px 0;
+}
+
+.inputs-de-filtro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card-atleta {

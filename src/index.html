@@ -20,18 +20,36 @@
       <input class="botao-pesquisar" id="botao-pesquisar" type="image" src="./img/lupa.svg">
     </div>
     <nav class="barra-navegacao" id="barra-navegacao">
-      <a href="#" class="nav-atletas">Atletas</a>
-      <a href="#" class="nav-modalidades">Modalidades</a>
-      <a href="#" class="nav-medalhas">Medalhas</a>
-      <a href="#" class="nav-pais">Países</a>
+      <ul class="lista-navegacao">
+        <li><a href="#" class="nav-atletas">Atletas</a></li>
+        <li><a href="#" class="nav-modalidades">Modalidades &#9660;</a></li>
+        <li><a href="#" class="nav-medalhas">Medalhas</a></li>
+        <li><a href="#" class="nav-pais">Países</a></li>
+      </ul>
     </nav>
   </header>
   <section class="secao-olimpiadas">
     <main class="conteudo-principal">
-      <h1 class="altletas-titulo">Atletas</h1>
+      <h1 class="altletas-titulo">Boxe</h1>
+      <div class="inputs-de-filtro">
+        <label for="medalhas">Selecione a medalha:</label><br />
+        <select id="medalhas">
+          <option value="all">Todas</option>
+          <option value="gold">Ouro</option>
+          <option value="silver">Prata</option>
+          <option value="bronze">Bronze</option>
+        </select>
+        <label for="paises">Selecione um país:</label><br />
+        <select id="paises">
+          <option value="all">Todos</option>
+          <option value="brasil">Brasil</option>
+          <option value="eua">EUA</option>
+          <option value="canada">Canadá</option>
+        </select>
+        <button id="btn-filtro">Filtrar</button>
+      </div>
       <div class="cards-main" id="cards-main">
         <!-- inicio da div do card-->
-      </div>
     </main>
     </div>
   </section>
