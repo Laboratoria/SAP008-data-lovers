@@ -17,10 +17,10 @@ Uma aplicação web que sane todas as suas dúvidas sobre as caracteristicas da 
 ## Alta fidelidade  
 
 ### Web
-![Prototipo alta](src/Prototipo%20de%20alta.png)
+![Prototipo alta](src/imagens/Prototipo%20de%20alta.png)
 
 ### Mobile
-![mobile](src/proto%20mobile.png)
+![mobile](src/imagens/proto%20mobile.png)
 ### Baixa fidelidade
 ![]()
 ## Ferramentas

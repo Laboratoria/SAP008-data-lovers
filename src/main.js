@@ -11,11 +11,11 @@ displayCharaList()
 let selectCharacters = document.querySelector('.select')
 selectCharacters.addEventListener('change', 
 function select(){
-    if(displayCharaList.value === "VerTodos"){
-        let listAllCharacters = mapAll(displayCharaList.value)
+    if(event.target.value === "VerTodos"){
+        let listAllCharacters = characters.mapAll(event.target.value)
         printName(listAllCharacters)
     }else{
-    let listName = filterHouse(filterHouse.value)
+    let listName = characters.filterHouse(event.target.value)
         printName(listName)
     }
 })     
