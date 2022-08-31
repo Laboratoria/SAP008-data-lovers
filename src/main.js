@@ -121,23 +121,3 @@ window.addEventListener("load", function () {
     data.results.length
   )})`;
 });
-
-// document.querySelector("#result").innerHTML = `
-// Todos (${data.results.length})
-// Desconhecidos (${porcentagemCal(
-//   filterArr(data.results, "status", "unknown").length,
-//   data.results.length
-// )})
-// Vivo (${porcentagemCal(
-//   filterArr(data.results, "status", "Alive").length,
-//   data.results.length
-// )})
-// Morto (${porcentagemCal(
-//   filterArr(data.results, "status", "Dead").length,
-//   data.results.length
-// )})
-// Especie (${porcentagemCal(
-//   filterArr(data.results, "species", "Alien").length,
-//   data.results.length
-// )})
-// `;
