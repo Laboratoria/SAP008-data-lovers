@@ -1,13 +1,15 @@
-# Data Lovers
+# Data Lovers - Rick and Morty
+
+![Imagem Principal](src/img/imgtopo.jpg)
 
 ## Índice
 
-* [1. Sobre o projeto](#1-sobre-o-projeto)
-* [2. Objetivos de aprendizagem](#2-objetivos-de-aprendizagem)
-* [3. Interface do usuário](#3-interface-do-usuario)
-* [4. Historia do usuário](#4-historia-do-usuário)
-* [5. Protótipo de alta fidelidade](#5-prototipo-de-alta-fidelidade)
-* [6. Responsividade do site](#6-responsividade-do-site)
+  - [1. Sobre o projeto](#1-sobre-o-projeto)
+  - [2. Objetivos de aprendizagem](#2-objetivos-de-aprendizagem)
+  - [3. Interface do usuário](#3-interface-do-usuário)
+  - [4. História do usuário](#4-história-do-usuário)
+  - [5. Protótipo de alta fidelidade](#5-protótipo-de-alta-fidelidade)
+  - [6. Responsividade do site](#6-responsividade-do-site)
 
 ***
 
@@ -109,12 +111,12 @@ usuário necessita.
 Iniciamos a interface criando nosso protótipo de baixa fidelidade, pensando 
 na experiência do usuário ao navegar pela web.
 
-*****IMAGEM PROTÓTIPO BAIXA FIDELIDADE ****
+![Protótipo de baixa](src/img/baixa.jpg) 
 
 Escolhemos fazer uma interface simples e intuitiva. Escolhemos uma paleta de cores 
 suaves para dar uma aparência clean baseada na imagem principal.
 
-******IMAGEM FOTO PRINCIPAL E PALETA DE CORES *******
+![Paleta de cores](src/img/paleta%20de%20cores.jpg) 
 
 ## 4. História do usuário
 
@@ -136,14 +138,21 @@ em relação ao total
 Optamos por trabalhar com a ferramenta Figma para desenvolver o protótipo 
 de alta fidelidade
 
-*****IMAGEM DO PROTÓTIPO DE ALTA FIDELIDADE
+*****IMAGEM DO PROTÓTIPO DE ALTA FIDELIDADE****
 
 Fizemos testes de usabilidade e os usuários acharam simples e as 
 informações ficaram expostas de forma clara.
 
 ## 6. Responsividade do site
 
-Desenvolvemos um site responsivo pensando nas telas: desktop (1400px), tablet (768px) 
-e celulares (320px).
+Desenvolvemos um site responsivo pensando nas telas: 
 
-****** PRINT desktop, tablet e celular ********
+- **Desktop (1400px)**
+  
+- **Celulares (320px)**
+
+![Celular](src/img/celulalr.jpg)
+
+- **Tablet (768px)**
+  
+![Tablet](src/img/tablet.jpg)

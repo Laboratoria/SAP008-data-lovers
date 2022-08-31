@@ -146,7 +146,7 @@ select {
 
 a {
   text-decoration: none;
-  color: rgb(217, 205, 169);;
+  color: rgb(217, 205, 169);
 }
 
 a:hover {
@@ -160,7 +160,7 @@ a:hover {
     margin: 0%;
   }
 
-  .nav ul{
+  .nav ul {
     border-radius: 0%;
   }
 
@@ -185,10 +185,9 @@ a:hover {
     border-radius: 0%;
   }
 
-.footer{
-  border-radius: 0%;
-}
-
+  .footer {
+    border-radius: 0%;
+  }
 }
 
 /*Responsividade celular:*/
@@ -198,7 +197,7 @@ a:hover {
     margin: 0%;
   }
 
-  .nav ul{
+  .nav ul {
     border-radius: 0%;
   }
 
@@ -214,12 +213,13 @@ a:hover {
     align-items: center;
     font-size: 15px;
     border-radius: 0%;
-  } 
+  }
 
   .filtros {
     display: flex;
     flex-direction: column;
   }
+
   .menu,
   .filtros1,
   .filtros2,
@@ -265,12 +265,9 @@ a:hover {
     flex-direction: column;
   }
 
-  .footer{
+  .footer {
     width: 100%;
     height: 100%;
     border-radius: 0%;
   }
-
 }
-
-

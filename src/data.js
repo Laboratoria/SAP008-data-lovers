@@ -43,19 +43,18 @@ function ordemDecrescente(array) {
   return ordem;
 }
 
-
-export function calculoAgregado1(tamArray,tamEspecie){
-  return Math.round ((tamEspecie*100)/tamArray);
+export function calculoAgregado1(tamArray, tamEspecie) {
+  return Math.round((tamEspecie * 100) / tamArray);
 }
 
-export function calculoAgregado2(tamArray,tamGenero){
-  return Math.round ((tamGenero*100)/tamArray);
+export function calculoAgregado2(tamArray, tamGenero) {
+  return Math.round((tamGenero * 100) / tamArray);
 }
 
-export function calculoAgregado3(tamArray,tamStatus){
-  return Math.round ((tamStatus*100)/tamArray);
+export function calculoAgregado3(tamArray, tamStatus) {
+  return Math.round((tamStatus * 100) / tamArray);
 }
 
-export function calculoAgregado4(tamArray,tamOrdem){
-  return Math.round ((tamOrdem*100)/tamArray);
+export function calculoAgregado4(tamArray, tamOrdem) {
+  return Math.round((tamOrdem * 100) / tamArray);
 }

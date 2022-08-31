@@ -1,4 +1,11 @@
-import { filtrar, ordenar, calculoAgregado1, calculoAgregado2, calculoAgregado3, calculoAgregado4 } from "./data.js";
+import {
+  filtrar,
+  ordenar,
+  calculoAgregado1,
+  calculoAgregado2,
+  calculoAgregado3,
+  calculoAgregado4,
+} from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -38,9 +45,9 @@ document.querySelector("#especie").addEventListener("change", (event) => {
   const especieFiltrada = filtrar(rickandmorty, "species", valor);
   // CHAMANDO A FUNÇÃO DO MAP E DANDO COMO PARÂMETRO A FUNÇÃO DO FILTER PARA PRINTAR NA TELA
 
-  const calculo = calculoAgregado1(rickandmorty.length,especieFiltrada.length);
-  document.getElementById("exibirCalculo").innerHTML= "Essa categoria representa " + calculo + "% dos personagens";
-
+  const calculo = calculoAgregado1(rickandmorty.length, especieFiltrada.length);
+  document.getElementById("exibirCalculo").innerHTML =
+    "Essa categoria representa " + calculo + "% dos personagens";
 
   criaCard(especieFiltrada);
 });
@@ -49,8 +56,9 @@ document.querySelector("#genero").addEventListener("change", (event) => {
   const valor = event.target.value;
   const generoFiltrado = filtrar(rickandmorty, "gender", valor);
 
-  const calculo = calculoAgregado2(rickandmorty.length,generoFiltrado.length);
-  document.getElementById("exibirCalculo").innerHTML= "Essa categoria representa " + calculo + "% dos personagens";
+  const calculo = calculoAgregado2(rickandmorty.length, generoFiltrado.length);
+  document.getElementById("exibirCalculo").innerHTML =
+    "Essa categoria representa " + calculo + "% dos personagens";
 
   criaCard(generoFiltrado);
 });
@@ -59,18 +67,22 @@ document.querySelector("#status").addEventListener("change", (event) => {
   const valor = event.target.value;
   const statusFiltrado = filtrar(rickandmorty, "status", valor);
 
-  const calculo = calculoAgregado3(rickandmorty.length,statusFiltrado.length);
-  document.getElementById("exibirCalculo").innerHTML= "Essa categoria representa " + calculo + "% dos personagens";
+  const calculo = calculoAgregado3(rickandmorty.length, statusFiltrado.length);
+  document.getElementById("exibirCalculo").innerHTML =
+    "Essa categoria representa " + calculo + "% dos personagens";
 
   criaCard(statusFiltrado);
 });
 
-document.querySelector("#ordemalfabetica").addEventListener("change", (event) => {
-  const valor = event.target.value;
-  const ordem = ordenar(rickandmorty,valor);
+document
+  .querySelector("#ordemalfabetica")
+  .addEventListener("change", (event) => {
+    const valor = event.target.value;
+    const ordem = ordenar(rickandmorty, valor);
 
-  const calculo = calculoAgregado4(rickandmorty.length,ordem.length);
-  document.getElementById("exibirCalculo").innerHTML= "Essa categoria representa " + calculo + "% dos personagens";
+    const calculo = calculoAgregado4(rickandmorty.length, ordem.length);
+    document.getElementById("exibirCalculo").innerHTML =
+      "Essa categoria representa " + calculo + "% dos personagens";
 
-  criaCard(ordem);
-});
+    criaCard(ordem);
+  });
