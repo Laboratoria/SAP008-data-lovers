@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.base-template {
+      display: none;
+}
+
 * {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0px;

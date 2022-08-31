@@ -1,4 +1,4 @@
-import data from "./data/ghibli/ghibli.js"
+/*import data from "./data/ghibli/ghibli.js"
 function getCharacters (films){
     let characters = []
     for (let i= 0; i<films.length; i++){
@@ -7,5 +7,4 @@ function getCharacters (films){
     console.log(characters)
     return characters
 }
-getCharacters (data.films)
-
+getCharacters (data.films) */
