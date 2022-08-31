@@ -101,7 +101,7 @@ document
   .addEventListener("click", printCharacterAZ);
 document
   .getElementById("btn-order-za")
-  .addEventListener("change", printCharacterZA);
+  .addEventListener("click", printCharacterZA);
 selectGender.addEventListener("change", printGenderFiltered);
 selectSpecies.addEventListener("change", printSpeciesFiltered);
 selectStatus.addEventListener("change", printStatusFiltered);
