@@ -21,24 +21,31 @@
     align-items: center;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     box-sizing: border-box;
-    padding: 0;
-
+    padding: 10%;
  }
 .navbar{
     display: flex;
+    flex-direction: row;
     color: #F1B415;
-    height: 10%;
-    width: 50%;
-    margin: 100%;
-    margin-right: 5%;
-    margin-left: 250%;
+    margin-top: 100px;
+    margin-left: 500px;
+    width: 100px;
+    padding: 10px;
+}
+.btnmenu{
+    padding: 50%;
+    width: 20%;
+}
+.navbar img:hover{
+    transform: scale(0.9);
+    border: 2px;
 }
 .buttonselect{
     background-color: #F1B415;
     width: 100%;
     max-width: 1350px;
     height: 100%;
-    min-height: 40px;
+    min-height: 60px;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -46,6 +53,7 @@
     text-align: center;
     padding: 0px;
     position: relative;
+    padding-top: 1%;
 }
 .select{
     text-align: center;
@@ -54,7 +62,7 @@
     min-width: 266px;
     height: 40px;
     border-radius: 10px;
-    border-color: #500909;
+    border: 2px solid #520909 ;
     font-weight: 700;
     font-size: small;
 }
@@ -68,32 +76,51 @@
     width: 20%;
     min-width: 266px;
     border-radius: 5px;
-    border: 1px solid #520909 ;
+    border: 2px solid #520909 ;
     text-align: center;
     font-size: 14px small;
 }
 .calc{
+    display: block;
     background-color: #F1B415;
     text-align: center;
-    align-items: center;
     color: black;
-    height: 100px;
+    height: 60px;
     width: 100%;
+    max-width: 1350px;
     font-size: 14px small;
     font-weight: bold;
 }
 .ul{
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: #F1B415;
     width: 100%;
-    margin: auto;
+    max-width: 1310px;
+    max-height: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding right: 0;
 }
 .card{
-    padding: 10%;
-    width: 50px;
+    margin: 15px;
+    width: 300px;
+    height: 20w;
+    display: inline-block;
+    flex-direction: column;
+    padding: 5px 5px 7px 5px;
     text-align: left;
-    font-size: 20px small;
-    color: :-moz-only-whitespace
-    border: #500909;
+    padding-left: 3%;
+    margin: 1%;
+    background-color: #f5d27c;
+    color: black;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px
+}
+.card:hover{
+    transform: scale(0.9);
+    border: 3px;
+    border-color:#500909;
 }
 .imgback{
     text-align: 100%;
@@ -113,7 +140,7 @@
     font-weight: 700;
     font-size: small;
     border-radius: 10px;
-    margin: 50px;
+    margin: 40px;
     margin-top: 500px;
 }
 button:hover {
@@ -142,9 +169,11 @@ button:hover {
 .RedesSociais{
     text-align: right;
     margin-bottom: 10px;
-    margin right: 10px;
+    padding right: 20%;
+    padding left: 70%;
 }
 .RedesSociais img:hover{
+    transform: scale(0.9);
     border: 2px;
 }
 .developed{
@@ -152,7 +181,7 @@ button:hover {
     width: auto;
     margin: auto;
     color: grey;
-    align-items: right;
+    align-items: center;
 }
 .mainback{
     display: flex;
@@ -160,6 +189,6 @@ button:hover {
     flex-direction: row;
     width: 100%;
     max-width: 1350px;
-    min-height: 600px;
-    background-image: url(backcastelo1350.png);
+    height: 600px;
+    background-image: url(imagens/backcastelo1350.png);
 }
