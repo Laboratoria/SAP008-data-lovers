@@ -31,7 +31,7 @@ function boxingTest() {
     console.log(arrayReturn)
     cardsPrint();
 }
-// chamamento da função anterior 
+// chamamento da função anterior de atletas
 boxingTest();
 
 // evento para que quando o botão de filtrar for clicado irá chamar as funções respectivas
