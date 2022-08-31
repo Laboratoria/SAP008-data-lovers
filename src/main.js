@@ -1,6 +1,7 @@
 import data from "./data/harrypotter/data.js";
-import {mapAll, filterHouse, createCard} from "./data.js";
+import {filterHouse, createCard, countCharactersHogwarts} from "./data.js";
 //visualizar todos os personagens
+let calcDisplay = document.getElementById('cal');
 const fullCast = data.characters;
 function displayCharaList(){
     const charactersPrint = document.getElementById('lista');
@@ -10,19 +11,14 @@ displayCharaList()
 //filtrar todos e por casa  
 let selectCharacters = document.querySelector('.select')
 selectCharacters.addEventListener('change', 
-function select(){
-    if(displayCharaList.value === "VerTodos"){
-        let listAllCharacters = mapAll(displayCharaList.value)
-        printName(listAllCharacters)
+function select(event){
+    const charactersPrintFilter = document.getElementById('lista');
+    if(event.target.value === "VerTodos"){
+    displayCharaList()         
     }else{
-    let listName = filterHouse(filterHouse.value)
-        printName(listName)
+    let listName = filterHouse(event.target.value) 
+    let percentCharacters = (listName.length / countCharactersHogwarts()) * 100
+    calcDisplay.innerHTML = percentCharacters + '%' + ' de personagem da ' + event.target.value
+    charactersPrintFilter.innerHTML = listName.map(createCard).join('');
     }
 })     
-function printName(charactersHouse){
-    console.log(charactersHouse)
-    document.getElementById('lista').innerHTML = ""
-    for (let i = 0; i < charactersHouse.length; i++){
-       document.getElementById('lista').innerHTML += charactersHouse[i] + "</br>"
-    }
-}
