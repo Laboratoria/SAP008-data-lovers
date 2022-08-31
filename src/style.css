@@ -9,6 +9,11 @@
     }
 }
 
+@font-face {
+    font-family: RIO2016;
+    src: url(fonts/RIO2016.ttf);
+}
+
 .cabecalho {
     background-color: #fff;
     width: 100%;
@@ -79,6 +84,109 @@
     width: 95%;
     height: 90%;
 }
+
+.titulo-origem {
+    font-family: RIO2016;  
+    text-align: center;
+    line-height: 2cm;
+    font-size: 40px;
+    color: #2381C8;
+}
+
+.historia-olimpiadas {
+    font-family: 'Varela Round', sans-serif;
+    text-align: justify;
+    padding: 5mm;
+    line-height: 7mm;
+}
+
+.img-modal {
+text-align: center;
+}
+
+
+.img-arcos {
+    text-align: center;
+}
+.img-arcos img{
+width: 350px;
+height: 200px;
+}
+
+
+.titulo-rio {
+    font-family: RIO2016;  
+    text-align: center;
+    line-height: 2cm;
+    font-size: 30px;
+    color: #2C89C5;
+}
+
+
+
+.titulo-simbolos {
+    font-family: RIO2016;  
+    text-align: center;
+    line-height: 2cm;
+    font-size: 30px;
+    color: #2C89C5;
+}
+
+.img-tocha{
+    display:flex;
+   justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+
+}
+.img-tocha img{
+    width: 300px;
+    height: 200px;
+    }
+
+.texto-logo  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.texto-logo img{
+    width: 300px;
+    height: 150px;
+}
+
+.img-massacote{
+    text-align: center;
+    float: right;
+}
+
+.titulo-abertura {
+    font-family: RIO2016;  
+    text-align: center;
+    line-height: 2cm;
+    font-size: 30px;
+    color: #2C89C5;
+}
+
+
+
+.titulo-participacao {
+    font-family: RIO2016;  
+    text-align: center;
+    line-height: 2cm;
+    font-size: 30px;
+    color: #2C89C5;
+}
+
+.titulo-classificacao {
+    font-family: RIO2016;  
+    text-align: center;
+    line-height: 2cm;
+    font-size: 30px;
+    color: #2C89C5;
+}
+
+
 
 .altletas-titulo {
     display: flex;
