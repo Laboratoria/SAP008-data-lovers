@@ -1,5 +1,5 @@
 
-import { filtrar, ordenar,calculoAgregado1} from "../src/data.js";
+import { filtrar, ordenar,calculoAgregado} from "../src/data.js";
 
 const arrayAmostra = [
   {
@@ -78,18 +78,18 @@ describe('ordenar', () => {
   });
 });
 
-describe('calculoAgregado1', () => {
+describe('calculoAgregado', () => {
   it('é uma função', () => {
-    expect(typeof ordenar).toBe('function');
+    expect(typeof calculoAgregado).toBe('function');
   });
 
   it("calcula a porcentagem de especie humana", () => {
-    const calculoEsperado = calculoAgregado1(arrayAmostra.length, 3);
+    const calculoEsperado = calculoAgregado(arrayAmostra.length, 3);
     expect(calculoEsperado).toEqual(75);
   });
 
   it("calcula a porcentagem de especie alien ", () => {
-    const calculoEsperado = calculoAgregado1(arrayAmostra.length, 1);
+    const calculoEsperado = calculoAgregado(arrayAmostra.length, 1);
     expect(calculoEsperado).toEqual(25);
   });
 });
