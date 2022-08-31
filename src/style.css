@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-@media screen and (max-width: 1300px) {
-    .corpo {
-        /* width: 900px */
-    }
-}
-
 .cabecalho {
     background-color: #fff;
     width: 100%;
