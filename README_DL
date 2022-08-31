@@ -1,0 +1,94 @@
+## 1. **Resumo do Projeto**
+
+- **Quem são os principais usuários do produto?**
+
+Jovens e adultos que acompanham a série animada Rick and Morty.
+
+- **Quais são os objetivos do usuário em relação com o produto?**
+
+Conhecer um pouco mais os personagens da série.
+
+- **Como você acredita que o produto está resolvendo os problemas do usuário?**
+
+****Disponibilizará um banco de personagens com várias informações relevantes para os fãs da série.
+
+## 2. **Histórias do usuário**
+
+**História do usuário 1:** *"Como usuário, quero encontrar informações sobre os personagens, como temporadas e outras informações atrás dos cards".*
+
+- **O usuário pode virar o cartão para obter mais informações sobre o personagem.**
+- **O usuário pode saber as temporadas e episódios que os personagens aparecem.**
+
+**História do usuário 2:** "*Como usuário, quero pesquisar os cards dos personagens para que eu possa vê-los em ordem alfabética".*
+
+- **O usuário pode escolher se deseja ordenar os caracteres em ordem alfabética ou o contrário**
+
+**História de usuário 3: "***Como fã da série Rick and Morty, quero filtrar os personagens por aspectos como gênero, status ou espécie além de cruzar os filtros  para que eu possa ver todos os personagens que compartilham esse(s) mesmo(s) aspecto(s)"*
+
+- **O usuário pode ver a lista de cards de acordo com os critérios aplicados nos filtros**
+- **O usuário obtém informações estatísticas sobre quantos personagens compartilham as mesmas características no universo da série.**
+
+**História do usuário 4:** "*Como usuário, quero uma entrada de pesquisa para que eu possa encontrar os personagens de acordo com o episódio".*
+
+- **O usuário pode ver o card dos personagens de cada episódio.**
+
+### Pesquisa com usuário: [https://yayforms.link/E7n8MO1](https://yayforms.link/E7n8MO1)
+
+## 3. **Interface do usuário**
+
+### Protótipo de baixa fidelidade:
+
+- [ ]  (Bella: Scanear fotos)
+
+### Protótipo de alta fidelidade:
+
+[https://www.figma.com/file/aPmpDAEkynVHnB5gP3Xp0A/prot%C3%B3tipo?node-id=0%3A1](https://www.figma.com/file/aPmpDAEkynVHnB5gP3Xp0A/prot%C3%B3tipo?node-id=0%3A1)
+
+A paleta de cores foi baseada no desenho animado e personagens principais.
+
+Utilizamos um questionário junto a usuários para saber a melhor forma de disponibilizar as informações e decidimos usar cards para organizar os dados.
+
+[https://lh5.googleusercontent.com/E-PKwiRaDVGjcJB4o9WZXMTqx387reeqEovXUA-j6qG3SmNwEG8HlJl2qmOK1Na6ktGuKJF66U7hOCQmcFma8eQv77fC6MEEbXzvxOWEas9p5HCQ-7ojKFt2ZIi2AWHkOIPrjUinHhcL0_HNjM8Ok3Y](https://lh5.googleusercontent.com/E-PKwiRaDVGjcJB4o9WZXMTqx387reeqEovXUA-j6qG3SmNwEG8HlJl2qmOK1Na6ktGuKJF66U7hOCQmcFma8eQv77fC6MEEbXzvxOWEas9p5HCQ-7ojKFt2ZIi2AWHkOIPrjUinHhcL0_HNjM8Ok3Y)
+
+Para verificar se as cores usadas têm bom contraste para pessoas com daltonismo, a paleta de cores foi testada usando a Ferramenta de acessibilidade da Adobe. O simulador de daltonismo mostra quais cores estão em conflito, atendendo pessoas com Deuteranopia, Protanopia e Tritanopia.
+
+[https://lh3.googleusercontent.com/g5Hl281iAq9RK-c8QHKErnv2hXHhyxRkLvbgDr3_-0HUvaGI1cDxuSnaeFKbH6omfQXbs9QHlf4Lfuwjh2kZiRmenUzzxtBIS5p8zOExZehz77qeZ1BwUqlRq2NJVDJXj1aCbuCIKx2NOYMPhLA9i5o](https://lh3.googleusercontent.com/g5Hl281iAq9RK-c8QHKErnv2hXHhyxRkLvbgDr3_-0HUvaGI1cDxuSnaeFKbH6omfQXbs9QHlf4Lfuwjh2kZiRmenUzzxtBIS5p8zOExZehz77qeZ1BwUqlRq2NJVDJXj1aCbuCIKx2NOYMPhLA9i5o)
+
+## 4. **Estrutura lógica**
+
+- Os filtros (buttons) devem apresentar na página os personagens correspondentes a cada uma das categorias.
+- Deve ser possível cruzar as características dos filtros (ex: espécie + gênero + status).
+- O filtro de episódios deve apresentar uma lista das temporadas e episódios correspondentes.
+- A partir da filtragem devem ser apresentados os personagens participantes do episódio filtrado.
+- Os personagens devem ter a possibilidade de ser apresentados em ordem alfabética de A - Z e de Z - A.
+- Na pesquisa (input) deve ser possível procurar por características ou nomes.
+- Os personagens são apresentados em formato de cards.
+- Os cards devem ser organizados por lista <ul> não ordenada e itens <il>.
+- Os cards devem ser dinâmicos e virar quando o usuário passar o mouse em cima da figura, apresentando informações complementares atrás.
+- A responsividade do site deve se adequar proporcionalmente ao tamanho de cada mídia.
+
+## 5. **Considerações Técnicas**
+
+Figma: protótipo alta - Desktop/Celular
+
+VS code: codificação
+
+Nottion: sprint planning
+
+Google Drive: troca de informações sobre o projeto
+
+## 6. **Processo do Desenvolvimento do Produto**
+
+- Levantamento de problemas
+- Levantamento de informações e dados sobre o problema escolhido
+- Planejamento
+- Definição de público alvo
+- Protótipo do projeto
+- Criação de Logo
+- Codificação
+- Teste de usabilidade
+- Deploy - Git Pages
+
+## 7. **Futuras Implementações**
+
+## 8. **Testes**
