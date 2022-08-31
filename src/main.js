@@ -51,7 +51,7 @@ listarCards();
 
 const buttonCuriosity = document.querySelector("#curiosity")
     let total = rickandmorty.results;
-    let counterTotal = total.length
+    let counterTotal = total.length;
     let counter = 0;
         for (let i = 0; i < total.length; i++) {
         if (total[i].gender === 'Female') counter++;
