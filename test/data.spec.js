@@ -1,5 +1,5 @@
 
-import { filtrar, ordenar,calculoAgregado} from "../src/data.js";
+import {filtrar, ordenar,calculoAgregado} from "../src/data.js";
 
 const arrayAmostra = [
   {

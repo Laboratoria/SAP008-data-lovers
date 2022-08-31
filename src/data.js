@@ -3,20 +3,8 @@ export const filtrar = (array, key, value) => {
   return filtro;
 };
 
-export function ordenar(array, value) {
-  const copiaDaArray = [...array];
-
-  if (value === "A-Z") {
-    return ordemCrescente(copiaDaArray);
-  } else if (value === "Z-A") {
-    return ordemDecrescente(copiaDaArray);
-  }
-}
-
 function ordemCrescente(array) {
   const ordem = array.sort(function (a, b) {
-
-
     if (a.name > b.name) {
       return 1;
     } else {
@@ -36,6 +24,15 @@ function ordemDecrescente(array) {
     }
   });
   return ordem;
+}
+
+export function ordenar(array, value) {
+  const copiaDaArray = [...array];
+  if (value === "A-Z") {
+    return ordemCrescente(copiaDaArray);
+  } else if (value === "Z-A") {
+    return ordemDecrescente(copiaDaArray);
+  }
 }
 
 export function calculoAgregado(total, porcentagem) {
