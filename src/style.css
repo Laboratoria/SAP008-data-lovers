@@ -193,9 +193,11 @@ hr{
     
 } 
 
+/*telas acima de 1700px*/
+
 @media screen and (min-width: 1700px) {
     body{
-        margin: 1%;
+        margin: 0%;
     }
 
     #section-logo{
@@ -251,4 +253,12 @@ hr{
         font-size: large;
         margin-left: 3%;
     }
+
+    #statsType{
+        font-size: 250%;
+        margin: 3%;
+        text-align: center;
+        color: rgb(41, 0, 128);
+    }
+
 }
