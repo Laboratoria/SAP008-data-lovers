@@ -17,7 +17,7 @@
 .cabecalho {
     background-color: #fff;
     width: 100%;
-    height: 130px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -25,13 +25,13 @@
 }
 
 .logo-olimpiadas {
-    width: 132px;
-    height: 102px;
+    width: 60px;
+    height: 45px;
 }
 
 .campo-pesquisar-e-botao {
-    width: 450px;
-    height: 60px;
+    width: 300px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -40,28 +40,73 @@
 }
 
 .barra-pesquisar {
-    width: 300px;
-    height: 40px;
+    width: 200px;
+    height: 15px;
     border: none;
     box-shadow: 0 0 0 0;
     /* para tirar a borda do campo input */
     outline: 0;
     margin: 10px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
+    font-size: 15px;
 }
 
-.botao-pesquisar {
-    width: 40px;
-    height: 40px;
+.botao-lupa {
+    width: 20px;
+    height: 20px;
 }
 
 .barra-navegacao {
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
+}
+
+.menu-principal {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+
+}
+
+
+.submenu-modalidades {
+    display: none;
+    /*display:block; */
+    list-style: none;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.submenu-modalidades li {
+    width: 120px;
+
+}
+
+nav ul li:hover .submenu-modalidades {
+    display: block;
+}
+
+.submenu-modalidades li button:hover{
+    background-color: #2C89C5;
+}
+
+.submenu-modalidades li button {
+    padding: 7px;
+    width: 145px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    background-color: #eeeeee;
+    border: 1px solid #b6b6b6;
+    border-radius: 6px;
+    cursor: pointer;
+
+
 }
 
 .barra-navegacao a {
@@ -81,12 +126,14 @@
 .conteudo-principal {
     background-color: #fff;
     margin: 50px;
-    width: 95%;
+    width: 91%;
     height: 90%;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .titulo-origem {
-    font-family: RIO2016;  
+    font-family: RIO2016;
     text-align: center;
     line-height: 2cm;
     font-size: 40px;
@@ -101,21 +148,22 @@
 }
 
 .img-modal {
-text-align: center;
+    text-align: center;
 }
 
 
 .img-arcos {
     text-align: center;
 }
-.img-arcos img{
-width: 350px;
-height: 200px;
+
+.img-arcos img {
+    width: 350px;
+    height: 200px;
 }
 
 
 .titulo-rio {
-    font-family: RIO2016;  
+    font-family: RIO2016;
     text-align: center;
     line-height: 2cm;
     font-size: 30px;
@@ -125,43 +173,45 @@ height: 200px;
 
 
 .titulo-simbolos {
-    font-family: RIO2016;  
+    font-family: RIO2016;
     text-align: center;
     line-height: 2cm;
     font-size: 30px;
     color: #2C89C5;
 }
 
-.img-tocha{
-    display:flex;
-   justify-content: center;
+.img-tocha {
+    display: flex;
+    justify-content: center;
     gap: 20px;
     padding: 20px 0px;
 
 }
-.img-tocha img{
+
+.img-tocha img {
     width: 300px;
     height: 200px;
-    }
+}
 
-.texto-logo  {
+.texto-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
-.texto-logo img{
+
+.texto-logo img {
     width: 300px;
     height: 150px;
 }
 
-.img-massacote{
+.img-massacote {
     text-align: center;
     float: right;
 }
 
 .titulo-abertura {
-    font-family: RIO2016;  
+    font-family: RIO2016;
     text-align: center;
     line-height: 2cm;
     font-size: 30px;
@@ -171,7 +221,7 @@ height: 200px;
 
 
 .titulo-participacao {
-    font-family: RIO2016;  
+    font-family: RIO2016;
     text-align: center;
     line-height: 2cm;
     font-size: 30px;
@@ -179,7 +229,7 @@ height: 200px;
 }
 
 .titulo-classificacao {
-    font-family: RIO2016;  
+    font-family: RIO2016;
     text-align: center;
     line-height: 2cm;
     font-size: 30px;
