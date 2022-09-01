@@ -32,6 +32,8 @@
         <button type="button" class="button" id="button-johto" name="button-johto">
           Johto
         </button>
+        <input type="text" name="input-search" id="input-search" placeholder="ex: pikachu"/>
+        
         <div class="btn-select">
           <select name="selectType" id="selectType">
             <option value="type" selected>Type</option>
@@ -54,15 +56,13 @@
             <option value="dark">dark</option>
             <option value="fairy">fairy</option>
           </select>
-          <select name="select-max-cp" id="select-cp">
+          <select class="select-max-cp select" id="select-cp">
             <option value="order" disabled selected>Order By </option>
               <option value="biggest-max-cp" id="biggest-cp">&#11014 Max CP </option>
               <option value="smallest-max-cp" id="smallest-cp">&#11015 Max CP </option>
               <option value="biggest-max-hp" id="biggest-hp">&#11014 Max HP </option>
               <option value="smallest-max-hp" id="smallest-hp">&#11015 Max HP </option>
           </select>
-
-            <input type="text" name="input-search" id="input-search" placeholder="ex: pikachu"/>
 
         </div>
       </nav>
@@ -83,6 +83,9 @@
       <p id="statsType"></p>
       <output id="cards"> </output>
     </main>
+    <footer>
+      Desenvolvido por Juliene e Sara &copy
+    </footer>
   </div>
   <script src="main.js" type="module"></script>
 </body>

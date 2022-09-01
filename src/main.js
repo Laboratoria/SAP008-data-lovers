@@ -19,6 +19,7 @@ const statsType = document.getElementById("statsType")
 const inputSearch = document.getElementById("input-search")
 
 
+
 //botão de reset
 btnReset.addEventListener("click",(event) => {
     location.reload(event);
