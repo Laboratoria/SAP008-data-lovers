@@ -19,6 +19,7 @@ const statsType = document.getElementById("statsType")
 const inputSearch = document.getElementById("input-search")
 
 
+
 //botão de reset
 btnReset.addEventListener("click",(event) => {
     location.reload(event);
@@ -83,6 +84,7 @@ btnKanto.addEventListener("click", function () {
     document.getElementById("button-world").style.background="white"
     document.querySelector(".inf-world-pokemon").style.display="none"
     document.querySelector(".btn-select").style.display="block"
+    document.getElementById("section-logo").style.display="none"
     let result = filterByRegion(everyPokemon, "kanto")
     let infoKanto = createCards(result)
     cards.innerHTML = infoKanto

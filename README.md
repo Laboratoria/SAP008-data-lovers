@@ -14,6 +14,16 @@
   complementares](#8-pistas-dicas-e-leituras-complementares)
 * [9. Checklist](#9-checklist)
 
+1. Apresentação do projeto: Banco de dados, 
+2. Objetivos: O que queremos com o projeto?
+3. Definição do produto: protótipo, Hist de usuário, O que é? Para quem? Pq? ***
+4. Funcionalidades da interface: O que faz, botões, possibilidades
+5. Etapas de produção: como foi feito***
+//6. Coisas para fazer....podem ser implementadas depois//
+
+
+
+
 ***
 
 ## 1. Preâmbulo
