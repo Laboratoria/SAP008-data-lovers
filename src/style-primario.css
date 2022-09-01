@@ -6,8 +6,10 @@
 
 * {
       font-family: Arial, Helvetica, sans-serif;
+      color: rgb(100, 92, 92);
       margin: 0px;
       padding: 0px;
+
 }
 
 body,html {
@@ -18,10 +20,11 @@ header, footer {
       background-color: rgb(218, 118, 134);
 }
 
-header > h1 {
+header > h1, h2 {
       padding: 10px;
       text-align: center;
 }
+
 
 i#menu{
       background-color: blue;
@@ -59,6 +62,7 @@ menu > ul > li > a:hover {
 }
 
 main {
+      display: block;
       width: 90vw;
       background-color: greenyellow;
       margin: auto;
@@ -67,6 +71,10 @@ main {
       border-radius: 10px;
 }
 
+section {
+      display: flex;
+
+}
 article > h2 {
       padding-bottom: 20px;
 }
