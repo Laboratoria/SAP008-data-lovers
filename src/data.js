@@ -1,5 +1,5 @@
 import data from "./data/harrypotter/data.js";
-export function createCard(character){
+export function createCard(character) {
   return `<card class="card">
   <br><strong>Name: </strong>${character.name}
   </br><strong>Birth: </strong>${character.birth}
@@ -11,7 +11,10 @@ export function createCard(character){
 export function filterHouse(house) {
   return data.characters.filter((user) => user.house === house);
 }
-export function countCharactersHogwarts(){
+export function countCharactersHogwarts() {
   return data.characters.filter((user) => user.house ===
-  'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
+    'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
+}
+export function filterFind(name, listCharacterHouseFilter) {
+  return listCharacterHouseFilter.filter((user) => user.name.includes(name));
 }
