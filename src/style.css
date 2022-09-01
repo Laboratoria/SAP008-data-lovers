@@ -177,7 +177,6 @@ hr{
         width: 50%;
         height: 100%;
         margin-bottom: 5%;
-        
     }
     #statsType{
         font-size: 30px;
@@ -204,6 +203,7 @@ hr{
     }
 
     #logo-pokemon {
+        margin-top: 1%;
         height: 250px;
         margin-bottom: 0%;
     }
@@ -219,7 +219,7 @@ hr{
     
     .button{
         font-size:xx-large;
-        margin-right: 5%;
+        margin-right: 2%;
         align-items: center;
     }
 
@@ -234,11 +234,21 @@ hr{
     }
 
     #img-pokemon{
-        width: 100%;
+        width: 600%;
     }
 
     #inf-pokemon{
-        font-size: 35px;
-        margin-left: 15%;
+        font-size: 250%; 
+    }
+    
+    footer{
+        margin-bottom: 1%;
+    }
+
+    #selectType, #select-cp{
+        height: 40px;
+        width: 200px;
+        font-size: large;
+        margin-left: 3%;
     }
 }
