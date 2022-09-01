@@ -1,5 +1,5 @@
 import data from "./data/harrypotter/data.js";
-import {filterHouse, createCard, countCharactersHogwarts} from "./data.js";
+import {filterHouse, createCard, countCharactersHogwarts, selectNameAz, selectNameZa} from "./data.js";
 //visualizar todos os personagens
 let calcDisplay = document.getElementById('cal');
 const fullCast = data.characters;
@@ -21,5 +21,17 @@ function select(event){
     countCharactersHogwarts()) * 100
     calcDisplay.innerHTML = percentCharacters + '%' + ' dos personagens fazem parte da ' + event.target.value
     charactersPrintFilter.innerHTML = listName.map(createCard).join('');
+    }
+})
+let order = document.querySelector('#Select-Ordenar')
+order.addEventListener('change',
+function orderName(event) {
+    const charactersPrintFilter = document.getElementById('lista');
+    if (event.target.value === "az") {
+      const selectOrderList = selectNameAz(data.characters)
+      charactersPrintFilter.innerHTML = selectOrderList.map(createCard).join('');
+    } else if (event.target.value === "za") {
+        const selectOrderList = selectNameZa(data.characters)
+        charactersPrintFilter.innerHTML = selectOrderList.map(createCard).join('');
     }
 })
