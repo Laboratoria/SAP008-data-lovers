@@ -7,7 +7,7 @@ function cardsCharacters(films) {
       characters.push(person)
     })
   })
- characters.map((card) => {
+  document.getElementById('cards-characters').innerHTML = characters.map((card) => {
   return `
   <div class="cardContainer">
    <div class="image">
@@ -21,8 +21,7 @@ function cardsCharacters(films) {
    </ul>
  </div>
   `
- })
- document.getElementById('cards-characters').innerHTML = characters.join("")
+ }).join("")
 }
 
 cardsCharacters(data.films)
