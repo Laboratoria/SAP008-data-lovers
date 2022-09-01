@@ -36,27 +36,35 @@ main{
 /*mãe da nav*/
 .section-buttons {
     background-color:#76CCE1;
-    border: 2px dotted #FDDDE2 ; 
+    border: 2px dotted #FDDDE2 ;
 }
 /*filha tods selects*/
 .btn-select{
    margin-top: 1%; 
    display: none;
 }
-/*
+
+/*filha do bnt select e neta da nav*/
+
+.selects{
+    font-size: large;
+    margin-left: 3%;
+}
+
 /*filha só botões*/
 .button{
     cursor: pointer;
-    font-size: large;
+    font-size: 20px;
     background-color: white;
     border-radius: 10%;
-    max-height: fit-content;
-    min-width: fit-content;
     word-spacing:10px ;
+    margin-right: 2%;
 }
 /*filha input*/
 #input-search{
-    width: 200px ;
+    width: 200px;
+    display: none;
+    font-size: 20px;
 }
 /*--------Introdução - main*/
 /*mãe*/
@@ -147,6 +155,11 @@ main{
 hr{
     margin: 0%;
 }
+
+footer{
+    margin-bottom: 1%;
+}
+
 /* botão de busca*/
 
 @media screen and (max-width:1024px) {
@@ -221,8 +234,13 @@ hr{
     
     .button{
         font-size:xx-large;
-        margin-right: 2%;
-        align-items: center;
+    }
+
+    .selects{
+        height: 40px;
+        width: 200px;
+        font-size: large;
+        margin-left: 3%;
     }
 
     #input-search{
@@ -231,28 +249,14 @@ hr{
         font-size: x-large;
     }
 
-    .inf-world-pokemon{
-        align-items: center;
-    }
-
     #img-pokemon{
         width: 600%;
     }
 
     #inf-pokemon{
-        font-size: 250%; 
-    }
-    
-    footer{
-        margin-bottom: 1%;
+        font-size: 225%; 
     }
 
-    #selectType, #select-cp{
-        height: 40px;
-        width: 200px;
-        font-size: large;
-        margin-left: 3%;
-    }
 
     #statsType{
         font-size: 250%;
