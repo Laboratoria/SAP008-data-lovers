@@ -18,3 +18,17 @@ export function countCharactersHogwarts() {
 export function filterFind(name, listCharacterHouseFilter) {
   return listCharacterHouseFilter.filter((user) => user.name.includes(name));
 }
+const orderName = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
+  }
+  return 0
+};
+export const selectNameAz = (characters) => {
+  return characters.sort(orderName);
+}
+export const selectNameZa = (characters) => {
+  return characters.sort(orderName).reverse();
+};

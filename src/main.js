@@ -1,5 +1,5 @@
 import data from "./data/harrypotter/data.js";
-import { filterHouse, createCard, countCharactersHogwarts, filterFind } from "./data.js";
+import { filterHouse, createCard, countCharactersHogwarts, selectNameAz, selectNameZa, filterFind } from "./data.js";
 //visualizar todos os personagens
 let calcDisplay = document.getElementById('cal');
 const charactersPrint = document.getElementById('lista');
@@ -33,3 +33,15 @@ selectCharacters.addEventListener('change',
             charactersPrint.innerHTML = listName.map(createCard).join('');
         }
     })    
+let order = document.querySelector('#Select-Ordenar')
+order.addEventListener('change',
+function orderName(event) {
+    const charactersPrintFilter = document.getElementById('lista');
+    if (event.target.value === "az") {
+      const selectOrderList = selectNameAz(data.characters)
+      charactersPrintFilter.innerHTML = selectOrderList.map(createCard).join('');
+    } else if (event.target.value === "za") {
+        const selectOrderList = selectNameZa(data.characters)
+        charactersPrintFilter.innerHTML = selectOrderList.map(createCard).join('');
+    }
+})
