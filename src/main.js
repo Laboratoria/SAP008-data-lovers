@@ -1,4 +1,4 @@
-import getCharacters from './data.js';
+import {filterCharacters,sortCharacters,searchCharacters} from './data.js';
 import rickandmorty from './data/rickandmorty/rickandmorty.js';
 
 const selectGender = document.getElementById('gender');
@@ -6,6 +6,7 @@ const selectStatus = document.getElementById('status');
 const selectSpecie = document.getElementById('specie');
 const selectOrderAz = document.getElementById('order');
 const inputName = document.getElementById('name');
+let allCharacters = rickandmorty.results
 
 function gerarCard(personagem) {
     return `
@@ -32,7 +33,12 @@ const listarCards = () => {
     let optionSpecie = selectSpecie.options[selectSpecie.selectedIndex];
     let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex]; //index indica a posição do combo que foi selecionada//
 
-    let characters = getCharacters(optionGender.value, optionStatus.value, optionSpecie.value, optionOrderAz.value, inputName.value);  //agrupa
+    let characters = allCharacters;
+    characters = filterCharacters(characters,'gender',optionGender.value);
+    characters = filterCharacters(characters, 'status', optionStatus.value);
+    characters = filterCharacters(characters, 'species', optionSpecie.value);
+    characters = sortCharacters(characters, optionOrderAz.value);
+    characters = searchCharacters(characters, inputName.value);
 
     let cards = document.getElementById('cards');
     cards.innerHTML = '';
@@ -58,6 +64,6 @@ const buttonCuriosity = document.querySelector("#curiosity")
         } 
     let porcentagem = ((counter / counterTotal) * 100).toFixed(2)
     
-    buttonCuriosity.addEventListener("click", function (e) { 
+    buttonCuriosity.addEventListener("click", function () { 
     alert ("The percentage of female characters is " + porcentagem + "%")});
 
