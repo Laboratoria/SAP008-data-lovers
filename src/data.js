@@ -15,3 +15,17 @@ export function countCharactersHogwarts(){
   return data.characters.filter((user) => user.house ===
   'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
 }
+const orderName = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
+  }
+  return 0
+};
+export const selectNameAz = (characters) => {
+  return characters.sort(orderName);
+}
+export const selectNameZa = (characters) => {
+  return characters.sort(orderName).reverse();
+};
