@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="corpo">
+    <header class="cabecalho">
+        <img class="logo-olimpiadas" src="./img/logo-olimpiadas.png"
+            alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul">
+        <div class="campo-pesquisar-e-botao">
+            <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
+            <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
+        </div>
+        <nav class="barra-navegacao" id="barra-navegacao">
+            <ul class="menu-principal">
+                <li>
+                    <a href="#" class="nav-modalidades">Modalidades &#9660;</a>
+                    <ul class="submenu-modalidades">
+                        <li>
+                            <button>Atletismo</button>
+                        </li>
+                        <li>
+                            <button>Luta</button>
+                        </li>
+                        <li>
+                            <button>Boxe</button>
+                        </li>
+                        <li>
+                            <button>Hipismo</button>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="atletismo.html" class="nav-atletas">Atletas &#9660;</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-paises">Países &#9660;</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-curiosidades">Curiosidades</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="secao-olimpiadas">
+        <main class="conteudo-principal">
+            <h1 class="altletas-titulo">---</h1>
+            <div class="inputs-de-filtro">
+                <label for="medalhas">Selecione a medalha:</label><br />
+                <select id="medalhas">
+                    <option value="all">Todas</option>
+                    <option value="gold">Ouro</option>
+                    <option value="silver">Prata</option>
+                    <option value="bronze">Bronze</option>
+                </select>
+                <label for="paises">Selecione um país:</label><br />
+                <select id="paises">
+                    <option value="all">Todos</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="eua">EUA</option>
+                    <option value="canada">Canadá</option>
+                </select>
+                <button id="btn-filtro">Filtrar</button>
+            </div>
+            <div class="cards-main" id="cards-main">
+                <!-- inicio da div do card-->
+            </div>
+        </main>
+    </section>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

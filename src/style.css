@@ -56,12 +56,28 @@
     height: 20px;
 }
 
-.barra-navegacao {
+.lista-navegacao {
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     display: flex;
     flex-direction: row;
     gap: 50px;
+}
+
+.lista-navegacao a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-navegacao li {
+    list-style: none;
 }
 
 .menu-principal {
@@ -74,10 +90,9 @@
 
 }
 
-
 .submenu-modalidades {
     display: none;
-    /*display:block; */
+    /* display:block; */
     list-style: none;
     position: absolute;
     margin-top: 5px;
@@ -92,7 +107,7 @@ nav ul li:hover .submenu-modalidades {
     display: block;
 }
 
-.submenu-modalidades li button:hover{
+.submenu-modalidades li button:hover {
     background-color: #2C89C5;
 }
 
@@ -105,13 +120,6 @@ nav ul li:hover .submenu-modalidades {
     border: 1px solid #b6b6b6;
     border-radius: 6px;
     cursor: pointer;
-
-
-}
-
-.barra-navegacao a {
-    text-decoration: none;
-    color: #000;
 }
 
 .secao-olimpiadas {
@@ -218,8 +226,6 @@ nav ul li:hover .submenu-modalidades {
     color: #2C89C5;
 }
 
-
-
 .titulo-participacao {
     font-family: RIO2016;
     text-align: center;
@@ -236,14 +242,19 @@ nav ul li:hover .submenu-modalidades {
     color: #2C89C5;
 }
 
-
-
 .altletas-titulo {
     display: flex;
     justify-content: center;
     font-family: 'Varela Round', sans-serif;
     font-size: 50px;
     padding: 20px 0;
+}
+
+.inputs-de-filtro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card-atleta {
