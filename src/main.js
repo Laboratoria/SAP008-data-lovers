@@ -2,7 +2,7 @@
 import athletes from './data/athletes/athletes.js';
 import data from './data/athletes/athletes.js';
 
-const content = document.querySelector('.cards-main'); // impressão dos cards
+const content = document.querySelector('#cards-main'); // impressão dos cards
 const btnFilter = document.querySelector('#btn-filtro'); // botão de filtro
 const medalSelector = document.querySelector('#medalhas') // imputs de medalha
 
@@ -11,7 +11,7 @@ let arrayReturn = []
 
 // funções de filtragem
 function boxingFilter(atleta) {
-    return atleta.sport == 'Boxing';
+    return atleta.sport;
     // return atleta.sport
 }
 function goldFilter(atleta) {
@@ -51,7 +51,6 @@ btnFilter.onclick = (event) => {
         arrayReturn = arrayAthletes.filter(bronzeFilter)
         cardsPrint();
     }
-
 }
 
 // função para impressão dos cards
