@@ -1,5 +1,5 @@
 body{
-    background-color: #04ADBF;
+    background-color: aqua;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -10,7 +10,7 @@ img {
     max-width: 300%;
     max-height: 300%;
 }
-   .cat {
+.titulo {
     height: 200px;
     width: 200px;
     display: flex;
@@ -20,6 +20,61 @@ img {
 }
 .cards{
     border-radius: 150px;
-    
-    
+}
+
+.conjuntoPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisar{
+    background-color: darkcyan;
+    border-radius: 15px;
+    width: 700px;
+    height: 50px;
+}
+
+.pesquisar::placeholder{
+    color: lawngreen;
+    text-align: center;
+    font-size: 25px;
+}
+
+.btnSubmit{
+    width: 30px;
+    padding: 10px;
+}
+
+.mostrarCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.nomePersonagem,
+.infos{
+    background-color: darkcyan;
+    color: lawngreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.btnFiltro{
+    background-color: darkcyan;
+    color: lawngreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }

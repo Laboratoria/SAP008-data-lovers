@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" /> 
-  </head>
-  <body>
-    <div class="cat">
-      <img src="img/randm.png">
-    </div>
-    <form class="barra-de-pesquisa">
-      <input class="pesquisar" id="pesquisarNome" type="search" placeholder="Buscar por nome...">
-    </form>
-    <section class="menu">
-        <section class="menu">
-      <select id="selectOrdem" class="btn-filter">
-        <option value="" disabled selected>Ordenar</option>
-        <option value="ordenarAZ">A-Z</option>
-        <option value="ordernarZA">Z-A</option>
-      </select>
-    </select>
-      <select id="selectGenero" class="btn-filter">
-        <option value="" disabled selected>Genero</option>
-        <option value="Female">Femea</option>
-        <option value="Male">Macho</option>
-        <option value="unknown">Indefinido</option>
-      </select>
-      <select id="selectStatus" class="btn-filter">
-        <option value="" disabled selected>Status</option>
-        <option value="Alive">Vivo</option>
-        <option value="Dead">Morto</option>
-        <option value="unknown">Indefinido</option>
-      </select>
-      <select id="selectEspecie" class="btn-filter">
-        <option value="" disabled selected>Especie</option>
-        <option value="unknown">Desconhecido</option>
-        <option value="Human">Humano</option>
-        <option value="Alien">Alien</option>
-        <option value="Robot">Robo</option>
-      </select>
-      <input type="reset" id="limparFiltro" class="btn-filtro" value="Limpar Filtros">
-    </section>
-    <section class="cards">
-      <span id="percentualTotal"></span>
-      <div id="lista-cards">
-      </div>
-    </section>
-    <section class="cards">
-      <span id="percentualTotal"></span>
-      <div id="lista-cards">
-      </div>
-    </section>
 
-    
-    <main id="root"> 
-      <section id="mostrarCards"> </section>
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+      <div class="titulo">
+        <img src="img/randm.png">
+      </div>
+    </header>
+    <main id="root">
+      <form class="conjuntoPesquisa">
+        <input class="pesquisar" id="pesquisarNome" type="search" placeholder="Buscar por nome...">
+        <input type="image" class="btnSubmit" id="btnSubmit" img src="img/search.png">
+      </form>
+      <section class="menu">
+          <select id="selectOrdem" class="btnFiltro">
+            <option value="" disabled selected>Ordenar</option>
+            <option value="ordenarAZ">A-Z</option>
+            <option value="ordernarZA">Z-A</option>
+          </select>
+          </select>
+          <select id="selectGenero" class="btnFiltro">
+            <option value="" disabled selected>Genero</option>
+            <option value="Female">Femea</option>
+            <option value="Male">Macho</option>
+            <option value="unknown">Indefinido</option>
+          </select>
+          <select id="selectStatus" class="btnFiltro">
+            <option value="" disabled selected>Status</option>
+            <option value="Alive">Vivo</option>
+            <option value="Dead">Morto</option>
+            <option value="unknown">Indefinido</option>
+          </select>
+          <select id="selectEspecie" class="btnFiltro">
+            <option value="" disabled selected>Especie</option>
+            <option value="unknown">Desconhecido</option>
+            <option value="Human">Humano</option>
+            <option value="Alien">Alien</option>
+            <option value="Robot">Robo</option>
+          </select>
+          <input type="reset" id="limparFiltro" class="btnFiltro" value="Limpar Filtros">
+      </section>
+        <section class="cards">
+          <span id="percentualTotal"></span>
+          <div id="lista-cards">
+          </div>
+        </section>
+        <section class="cards">
+          <span id="percentualTotal"></span>
+          <div id="lista-cards">
+          </div>
+        </section>
+      
+      <section id="mostrarCards" class="mostrarCards"> </section>
     </main>
     <script src="main.js" type="module"></script>
-  </body>
+</body>
+
 </html>

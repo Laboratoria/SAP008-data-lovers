@@ -7,14 +7,18 @@ const devolvePersonagens = data.results;
 
 function mostrarPersonagens (data){
     document.getElementById("mostrarCards").innerHTML = data.map((personagens) => `
-    <div>
-     <p>${personagens.name}</p>
+     <div>
+     <p class="nomePersonagem">${personagens.name}</p>
      <img class="cards" src="${personagens.image}">
-     <p>Genero:${personagens.gender}</p>
-     <p>Status:${personagens.status}</p>
-     <p>Especie:${personagens.species}</p>
-    
-    </div>
+     
+     <ul class="infos" style="list-style: none">                       
+            <li>Status: ${personagens.status}</li>
+            <li>Species: ${personagens.species}</li>
+            <li>Gender: ${personagens.gender}</li>
+
+            </ul>                
+     </div>
+  
     
     `
  
@@ -69,5 +73,5 @@ function filtrarGenero(e) {
     document.getElementById("selectStatus").addEventListener("change", filtrarStatus);
     document.getElementById("selectGenero").addEventListener("change", filtrarGenero);
     document.getElementById("selectEspecie").addEventListener("change", filtrarEspecie);
-    document.getElementById("pesquisarNome").addEventListener("keyup", pesquisarNome);
+    document.getElementById("pesquisarNome").addEventListener("change", pesquisarNome);
     document.getElementById("limparFiltro").addEventListener("click", () => {window.location.reload()});
