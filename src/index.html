@@ -17,25 +17,180 @@
       alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul">
     <div class="campo-pesquisar-e-botao">
       <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
-      <input class="botao-pesquisar" id="botao-pesquisar" type="image" src="./img/lupa.svg">
+      <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
     </div>
     <nav class="barra-navegacao" id="barra-navegacao">
-      <a href="#" class="nav-atletas">Atletas</a>
-      <a href="#" class="nav-modalidades">Modalidades</a>
-      <a href="#" class="nav-medalhas">Medalhas</a>
-      <a href="#" class="nav-pais">Países</a>
+      <ul class="menu-principal">
+        <li>
+          <a href="#" class="nav-modalidades">Modalidades &#9660;</a>
+          <ul class="submenu-modalidades">
+            <li>
+              <button>Atletismo</button>
+            </li>
+            <li>
+              <button>Luta</button>
+            </li>
+            <li>
+              <button>Boxe</button>
+            </li>
+            <li>
+              <button>Hipismo</button>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="atletismo.html" class="nav-atletas">Atletas &#9660;</a>
+        </li>
+        <li>
+          <a href="#" class="nav-paises">Países &#9660;</a>
+        </li>
+        <li>
+          <a href="#" class="nav-curiosidades">Curiosidades</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <section class="secao-olimpiadas">
     <main class="conteudo-principal">
-      <h1 class="altletas-titulo">Atletas</h1>
-      <div class="cards-main" id="cards-main">
-        <!-- inicio da div do card-->
-      </div>
+      <h1 class="titulo-origem">Origem dos jogos olímpicos</h1>
+      <article class="historia-olimpiadas">
+        <p> Os Jogos Olímpicos se originaram em Olímpia (Grécia antiga) em meados de 776 a.C. Naquele período, os jogos
+          eram realizados em homenagem aos deuses gregos, sendo que Zeus era o mais homenageado. Além disso, os jogos
+          eram
+          realizados com a intenção de promover a amizade e integração entre os povos.
+
+          O único esporte, até a décima terceira competição, era a corrida. No quinto século antes de Cristo, já eram
+          dez
+          modalidades esportivas disputadas: corrida, salto em distância, lançamento de dardo, pentatlo, arremesso de
+          disco, pancrácio, boxe, luta, corrida de bigas e corrida de cavalo.
+
+          Os primeiros jogos olímpicos da era moderna foram realizados em Atenas, em 1896. Os 285 atletas de 13 países
+          disputaram provas de atletismo, esgrima, luta livre, ginástica, halterofilismo, ciclismo, natação e tênis.
+        </p>
+
+        <div class="img-modal">
+          <img src="img/tira-1.png" alt=" modalidades  olimpicas de 2016">
+        </div>
+
+        <p> Com frequência o termo Olimpíada é usado para nomear o evento dos jogos olímpicos. Tecnicamente, olimpíadas
+          corresponde ao período de quatro anos compreendido entre uma edição e outra dos jogos olímpicos.
+
+          Os jogos olímpicos ocorrem de quatro em quatro anos e conta com a participação de atletas de quase todos os
+          países do mundo. Os vencedores das competições sobem ao pódio e recebem diplomas e medalhas, ou seja, para o
+          primeiro colocado, a medalha de ouro, para o segundo a de prata e para o terceiro a de bronze.
+
+          A classificação dos países vai acontecendo de acordo com a quantidade de medalhas de ouro obtidas, em caso de
+          empate são contadas as de prata, persistindo o empate são contadas as de bronze. Depois, segue-se o hastear
+          das
+          bandeiras das nações dos vencedores e ouve-se o hino nacional do 1º classificado.
+
+          O símbolo das olimpíadas é formado por cinco anéis entrelaçados que simbolizam os cinco continentes, cada um
+          representado por uma cor: Oceania (verde), Ásia (amarelo), África (preto), Europa (azul) e América (vermelho).
+        </p>
+
+        <div class="img-arcos">
+          <img src="img/arcos-olimpicos.png.png" alt=" arcos olímpicos">
+        </div>
+
+        <h1 class="titulo-rio">Rio 2016</h1>
+
+        <p> A candidatura do Rio de Janeiro como cidade-sede dos Jogos Olímpicos 2016 foi oficializada em 2007, ao lado
+          das cidades de Madri, na Espanha, Chicago, nos Estados Unidos, e Tóquio, no Japão. Para definir o local, o
+          Comitê Olímpico Internacional (COI) levou em consideração a existência de instalações esportivas na cidade e
+          os
+          projetos de investimento na infraestrutura necessária para o evento.
+
+          Com a realização dos Jogos Pan-americanos no Rio de Janeiro em 2007, a capital fluminense contou com a
+          vantagem
+          de já possuir um legado esportivo que poderia ser usado nas olimpíadas. O resultado da escolha do COI foi
+          divulgado no dia 2 de outubro de 2009, em Copenhague, na Dinamarca.
+
+          Essa foi a primeira edição dos jogos realizada em uma cidade da América do Sul. Los Angeles, Cidade do México
+          e
+          Montreal são algumas das cidades da América do Norte que já receberam o evento. Para testar a estrutura dos
+          jogos, o Comitê Organizador preparou 39 eventos-teste, que ocorreram entre agosto de 2015 e maio de 2016."
+        </p>
+
+        <h1 class="titulo-simbolos">Símbolos do Rio 2016</h1>
+
+        <p> Acesa no dia 21 de abril de 2016, em Olímpia, na Grécia, a Tocha Olímpica dos jogos de 2016 foi conduzida
+          durante cinco dias por cidades da Grécia até embarcar para o Brasil. No país-sede dos jogos, a tocha passou
+          por mais de 300 cidades em todos os estados e no Distrito Federal.
+
+          O objeto que representa o espírito dos jogos foi inspirado na cidade do Rio Janeiro. Cinco segmentos ao longo
+          da tocha abrem-se, expandindo o seu tamanho. A tocha mede 63,5 cm, mas pode chegar a 69 cm. As cores de cada
+          segmento representam o céu, as montanhas, o mar e o chão." </p>
+
+        <div class="img-tocha">
+          <img src="img/tocha-rio-dois.png" alt="chama de uma tocha sendo passada para outra tocha ">
+          <img src="img/tocha-rio.png" alt=" tocha olímpica com suas descrições">
+          <img src="img/tocha-rio-tres.png" alt="atleta ascendendo a tocha da cidade olimpica na cerimonia de abertura">
+        </div>
+
+        <div class="texto-logo">
+          <img src="img/logos-olimpiadas-rio-2016.png" alt="Logo dos Jogos ">
+          <p>A logo dos jogos traz três pessoas de mãos dadas, traduzindo o espírito de coletividade da competição. A
+            imagem lembra também o Pão de Açúcar, um dos principais cartões-postais do Rio de Janeiro. A logo também faz
+            referência ao coração e dá a impressão de estar em constante movimento. </p>
+        </div>
+
+        <div class="texto-massacote>">
+          <p> Outro símbolo que representou os Jogos Olímpicos do Rio foi o mascote. Vinícius é um animal que nasceu da
+            mistura de diversos bichos da fauna brasileira. O nome é inspirado no poeta e compositor Vinícius de Morais
+            e foi escolhido pela população por meio de uma votação. Já Tom é o mascote das Paraolimpíadas, uma homenagem
+            a Tom Jobim, ícone da Bossa Nova, e à fauna brasileira. </p>
+        </div>
+        <div class="img-massacote">
+
+          <img src="img/massacote-dois.png" alt="mascote2">
+        </div>
+
+        <p>A Olimpíada Rio 2016 contou com 41 esportes, incluído duas novidades: o golfe, que voltou a ser disputado
+          depois de 112 anos, e o rúgbi, que não estava entre os jogos desde de 1924. Foram 306 provas diferentes, sendo
+          136 modalidades femininas e 161 masculinas, além de outras nove disputadas de forma mista. Veja abaixo todas
+          as modalidades: </p>
+
+        (img modalidades)
+
+        <h1 class="titulo-abertura">Abertura</h1>
+        <p> A cerimônia de abertura foi realizada no dia 5 de agosto e no Estádio Maracanã. No entanto, algumas
+          competições já haviam iniciado. O futebol, por exemplo, começou no dia 3 de agosto. O encerramento aconteceu
+          no dia 21 do mesmo mês.
+
+          Foram colocados a venda 7,5 milhões de ingressos para os 17 dias de jogos. Além de turistas de diversos
+          estados brasileiros, o Rio de Janeiro também recebeu milhares de visitantes estrangeiros </p>
+
+        ( img da abertura e alguns momentos )
+
+        <h1 class="titulo-participacao">Participação Brasil</h1>
+
+        <p> O desempenho dos brasileiros nesta Olimpíada foi o melhor de toda a história do Brasil nos jogos. Terminando
+          em 13º lugar no ranking geral, o Brasil conquistou 19 medalhas na competição: sete de ouro, seis de prata e
+          seis de bronze. </p>
+
+        (img tab medalhistas)
+
+        <h1 class="titulo-classificacao">Classificação</h1>
+        <p> Entre os países participantes o líder geral da Olmpíada 2016 foi os Estados Unidos, com 121 medalhas (46
+          ouro - 37 prata - 38 bronze). Em seguida veio a Grã-Bretanha, com 67 (27 ouro - 23 prata - 17 bronze), e a
+          China, com 70 (26 ouro - 18 prata - 26 bronze). " </p> <br>
+
+
+        <p> OLÍMPIADAS RIO 2016, disponível em: https://brasilescola.uol.com.br/educacao-fisica/olimpiadas-rio-2016.htm
+          ;
+          https://blog.enem.com.br/olimpiadas-2016-origem-dos-jogos-olimpicos/ Acesso em: 29 de ago. de 2022 </p>
+
+      </article>
+
+
+
+
+
+
     </main>
     </div>
   </section>
-  <script src="main.js" type="module"></script>
+
 </body>
 
 </html>
