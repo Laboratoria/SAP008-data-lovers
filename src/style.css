@@ -85,6 +85,9 @@ body{
     text-align: center;
     font-size: 14px small;
 }
+.option{
+    font-weight: bold;
+}
 .calc{
     display: block;
     background-color: #F1B415;

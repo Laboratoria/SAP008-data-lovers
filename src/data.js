@@ -16,7 +16,7 @@ export function countCharactersHogwarts() {
     'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
 }
 export function filterFind(name, listCharacterHouseFilter) {
-  return listCharacterHouseFilter.filter((user) => user.name.includes(name));
+  return listCharacterHouseFilter.filter((user) => user.name.toUpperCase().includes(name.toUpperCase()));
 }
 const orderName = (a, b) => {
   if (a.name > b.name) {
