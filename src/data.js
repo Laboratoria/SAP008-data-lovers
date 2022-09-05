@@ -1,33 +1,21 @@
-
-export const pokemonByType = (data, type) => {
-  const filteredType = data.filter(pokemonType => pokemonType.type.find(item => item === type) === type)
-  return filteredType;
+export const multFilterPokemon = (data, dataSearch, dataType) => {
+  const filteredPokemons = data.filter(pokemonType => pokemonType[dataSearch].includes(dataType));
+  return filteredPokemons;
 }
 
-export const pokemonByRarity =(data,rarity) => {
-  const filteredRarity = data.filter(pokemonRarity => pokemonRarity["pokemon-rarity"] == rarity)
-  return filteredRarity;
-}
-
-export const pokemonByEgg =(data,egg) => {
-  const filterEggs = data.filter(pokemonEggs => pokemonEggs.egg == egg);
-  return filterEggs;
-}
-
-export const pokemonByName = (data, name) => {
-  const filterName = data.filter(pokemonName => pokemonName.name.includes(name))
-  return filterName;
-}
+export const pokemonAlphabeticalOrder = (data,order) =>{
  
-export const pokemonAlphabeticalOrder = (data) =>{
-  
   const alphabeticalOrder = [...data].sort((a, b) => {
     return (a.name.localeCompare(b.name));
   })
 
-  return alphabeticalOrder; 
-}
+  if(order === "a-z"){
+    return alphabeticalOrder; 
+  }else {
+    return alphabeticalOrder.reverse();
+  }
 
+}
 
 export const pokemonShiny = (data,urlImg) =>{
   const filterShiny = data.filter(pokemonShiny => 
