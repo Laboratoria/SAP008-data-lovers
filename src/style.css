@@ -1,0 +1,295 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & family= Titillium+Web & display=swap');
+
+* {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;
+}
+
+.login-page{
+  background-color: rgb(44, 42, 42);
+  background-image: url(imagens/fundo-1000.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 0px;
+  position:absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  
+}
+
+
+header{
+  background-color: black;    
+  border-bottom: 2px solid chartreuse;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: chartreuse;
+  text-decoration: none;
+}
+
+.navbar{
+  min-height:70px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;  
+  padding:0 34px; 
+                                              
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  
+} 
+
+.nav-link{
+  transition: 0.5s ease;
+}
+
+.nav-link:hover{
+  color:aqua;
+}
+
+.hamburguer{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: chartreuse;
+  transition: all 0.3s ease-in-out;
+}
+
+.foto{
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px  ;
+}
+
+#root{
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+.porcentagem h2{
+  color: white;
+  
+}
+
+#result{
+  text-align: center;
+  color: rgb(234, 226, 226);
+}
+
+.gif  {
+  float: none;
+  height: px;
+  display: flex;
+  flex-direction: column;
+  justify-content:right;
+  
+  max-width: 200px;
+  
+}
+
+section{
+  float: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex; 
+  border-radius: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 900px;
+  margin: auto; 
+}
+
+section h3{
+  color: chartreuse;
+}
+
+aside{
+  position: fixed;
+  top: 18;
+  left: 0;
+  height: 200px;
+  
+}
+
+.texto p{
+  color:white ;
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;  
+  margin-left: 20px;
+  width: 200px;
+}
+
+.texto i{
+  color: chartreuse;
+
+}
+.card{
+  font-family: 'Sriracha', cursive, 'Titillium Web', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(26, 28, 26);
+  border: 2px solid #000;
+  margin: 10px;  
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px;
+  width: 250px;
+  height: 400px;
+  padding: 5px;
+
+}
+
+.card-conteudo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  float: right;
+  background-color: rgba(61, 60, 60, 0.466);
+  height:450px;
+  overflow: auto;
+
+  align-items: center;
+  justify-content: center;
+  
+}
+/* barra de rolagem*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 4);
+  border-radius: 10px;
+}
+
+
+footer{
+  color: white;
+  background-color: rgba(0, 255, 0, 0.321);
+  bottom: 0;
+  position: fixed;
+  width:100% ;
+  text-align: center;
+  
+}
+footer a{
+  color: rgb(112, 239, 8);
+}
+
+
+/* Responsividade*/
+@media (max-width: 600px) {
+  .hamburguer {
+      display:block;
+      margin-right: 3rem;
+  }
+
+.hamburguer.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburguer.active .bar:nth-child(1){
+  transform: translateY(8px) rolate(45deg);
+}
+.hamburguer.active .bar:nth-child(3){
+  transform: translateY(-8px) rolate(-45deg);
+}
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(0, 0, 0, 0.988);
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.nav-item{
+  margin: 16px 0;
+
+}
+.nav-menu.active {
+  left: 0;
+}
+.login-page{
+  background-image: url(imagens/fundoCel.png);
+  background-size: 100%;
+  background-position: left;
+
+}
+
+.gif {
+  width: 150px;
+  position:static;
+}
+.texto p{
+  width: 400px;
+  color: rgb(37, 213, 232);
+  font-size: large;
+  text-align: center;
+  margin-left:-25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.656);
+}
+
+#result{
+  text-align: right;
+  position: static;
+  color: rgb(234, 226, 226);
+  
+}
+
+.texto i{
+  color:chartreuse;
+}
+aside{
+  margin-top:100px;
+}
+
+section {
+  width: 350px;
+}
+
+}
