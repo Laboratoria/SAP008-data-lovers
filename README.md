@@ -38,7 +38,7 @@ PROTÓTIPO DESKTOP
 
 PROTÓTIPO MOBILE
 
-![Mobile](imagens_prototipo/prototipo_cel.PNG)
+![Mobile](imagens_prototipo/prototipo_cel.jpg)
 ## DEFINIÇÃO DE PROTÓTIPO ALTA FIDELIDADE
 
 PROTÓTIPO DESKTOP
