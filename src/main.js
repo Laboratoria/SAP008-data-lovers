@@ -6,6 +6,18 @@ import {
   porcentagemCal,
 } from "./data.js";
 
+//MENU RESPONSIVO
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburguer.addEventListener("click", () => {  
+    hamburguer.classList.toggle('active');
+    navMenu.classList.toggle('active'); 
+})
+
+
+//FUNÇÃO DE 
+
 function renderizaCards(cards) {
   const root = document.getElementById("root");
   root.className = "container";
@@ -17,8 +29,7 @@ const btn = document.getElementById("tudo");
 btn.addEventListener("click", function () {
   const markup = data.results.sort(orderCrescente).map((result) => {
     return montarCards(result);
-  });
-  console.log(markup);
+  }); 
   renderizaCards(markup);
 });
 

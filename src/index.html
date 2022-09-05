@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rick and Morty</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="imagens/iconeFavicon.png" type="image/x-icon" />
-</head>
-
-<body>
-  <div class="login-page">
-    <header>
-      <div class="logo">
-        <img src="imagens/logo.png" alt="logo" />
-      </div>
-      <nav class="menu">
-        <input type="button" value="Tudo" class="btn-menu" id="tudo" />
-        <input type="button" value="Vivos" class="btn-menu" id="vivo" />
-        <input type="button" value="Aliens" class="btn-menu" id="especie" />
-        <input type="button" value="Morto" class="btn-menu" id="morto" />
-        <input type="button" value="Desconhecido" class="btn-menu" id="desconhecido" />
-        <input type="button" value="A-Z" class="btn-menu" id="ordenaz" />
-        <input type="button" value="Z-A" class="btn-menu" id="ordenza" />
-      </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagens/iconeFavicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="('https://fonts.googleapis.com/css2? family= Sriracha & family= Titillium+Web & display=swap')">
+  </head>
+ <body>
+    <div class="login-page">
+      <header>
+        <nav class="navbar">
+          <img src="imagens/logo.png" alt="logo">
+          <ul class="nav-menu">
+              <li class="nav-item"><a href="#" class="nav-link" id="tudo">Tudo</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="vivo">Vivo</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="especie">Especie</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="morto">Morto</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="desconhecido">Desconhecido</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="ordenaz">A-Z</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="ordenza">Z-A</a></li>
+          </ul>
+          <div class="hamburguer">
+              <span class="bar"></span>
+              <span class="bar"></span> 
+              <span class="bar"></span>
+          </div>
+        </nav>
+        </header>
+        <br>
+        <br>
     <main class="conteudo">
       <div id="busca">
         <section class="busca">
@@ -33,29 +38,26 @@
             <aside class="gif">
               <img src="imagens/gif.gif" alt="gif" />
               <div id="texto" class="texto">
-                <h3>Muito mais!</h3>
                 <p>
-                  A API Rick and Morty é uma série baseada no programa de
-                  televisão
-                  <a href="https://www.adultswim.com/videos/rick-and-morty" target="_blank">
-                    Rick and Morty </a> Nesta página você terá acesso a cerca de centenas de personagens,
-                  episódios, jogos e alguns extras sobre <strong>Rick and Morty</strong>
-                </p>
+                    <b>
+                      Esta página foi criada baseada na série <i>Rick and Morty</i>, uma série onde acompanham malucas viagens no tempo-espaço por universos paralelos com <i>Rick</i>, um cientista com problemas com bebidas, e seu neto <i>Morty</i>, um adolecente não tão brilhante quanto seu avô.
+                       Nesta página você terá acesso a cerca de centenas de cards com dados sobre os personagens da série.
+                    </b>
+                  </p>
               </div>
-            </aside>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <p>
-        <a href="https://github.com/marjoryekb" target="_blank"> Marjorye </a> &
-        <a href="https://github.com/TalithaNeves" target="_blank"> Talitha</a> em bootcamp
-        <a href="https://github.com/Laboratoria" target="_blank"> Laboratoria</a>
-      </p>
-    </footer>
-  </div>
-  <script src="main.js" type="module"></script>
-</body>
-
+              </aside>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>
+          <a href="https://github.com/marjoryekb" target="_blank" rel = "noopener noreferrer">Marjorye</a> &
+          <a href="https://github.com/TalithaNeves" target="_blank" rel = "noopener noreferrer"> Talitha</a> em Bootcamp
+          <a href="https://github.com/Laboratoria" target="_blank" rel = "noopener noreferrer"> Laboratoria.</a> 
+        </p>
+      </footer>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
