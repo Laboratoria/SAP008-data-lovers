@@ -11,19 +11,20 @@ export const filterCharacters = (characters, key, value) => {
 export const sortCharacters = (characters, order) => {
   if (order !== '0') {      
     characters = characters.sort((a, b) => {
-      if (a.name > b.name) {
-        if (order === 'crescente') {
+      if (order === 'crescente') {
+        if (a.name > b.name) {
           return 1;
         } else {
-          return -1;
-        }
-      } else {
-        if (order === 'crescente') {
-          return -1;
-        } else {
-          return 1;
-        }
+        return -1;
       }
+      } else if (order === 'decrescente') {
+        if (a.name > b.name) {
+          return -1;
+        } else {
+        return 1;
+      }
+      }
+      
     });
   }
   return characters;
@@ -37,7 +38,7 @@ export const searchCharacters = (characters, name) => {
   }
   return characters;
   
-};
+}
 
   
 
