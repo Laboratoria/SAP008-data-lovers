@@ -13,42 +13,72 @@
 
 <body class="corpo">
     <header class="cabecalho">
-        <img class="logo-olimpiadas" src="./img/logo-olimpiadas.png"
-            alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul">
-        <div class="campo-pesquisar-e-botao">
-            <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
-            <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
-        </div>
-        <nav class="barra-navegacao" id="barra-navegacao">
-            <ul class="menu-principal">
-                <li>
-                    <a href="#" class="nav-modalidades">Modalidades &#9660;</a>
-                    <ul class="submenu-modalidades">
-                        <li>
-                            <button>Atletismo</button>
-                        </li>
-                        <li>
-                            <button>Luta</button>
-                        </li>
-                        <li>
-                            <button>Boxe</button>
-                        </li>
-                        <li>
-                            <button>Hipismo</button>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="atletismo.html" class="nav-atletas">Atletas &#9660;</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-paises">Países &#9660;</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-curiosidades">Curiosidades</a>
-                </li>
+    <a href="index.html"><img class="logo-olimpiadas" src="./img/logo-olimpiadas.png" alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul"></a>
+  
+      <div class="campo-pesquisar-e-botao">
+        <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
+        <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
+      </div>
+      <nav class="lista-navegacao" id="lista-navegacao">
+        <ul class="menu-principal">
+          <li>
+            <label for="btn-menu" class="nav-modalidades">Modalidades
+              <span class="seta-baixo"></span>
+          </label>
+          <input class="btn-menu" type="checkbox" id="btn-menu">
+        
+            <ul class="submenu-modalidades">
+              <li>
+                <button onclick="window.location.href='modalidades.html'">Todas</button>
+              </li>
+              <li>
+                <button>Atletismo</button>
+              </li>
+              <li>
+                <button>Luta</button>
+              </li>
+              <li>
+                <button>Boxe</button>
+              </li>
+              <li>
+                <button>Hipismo</button>
+              </li>
             </ul>
-        </nav>
+          </li>
+  
+          <li>
+            <label for="btn-atletas" class="nav-modalidades">Atletas
+              <span class="seta-baixo"></span>
+          </label>
+          <input class="btn-atletas" type="checkbox" id="btn-atletas">
+            <ul class="submenu-atletas">
+              <li>
+                <button>A-Z</button>
+              </li>
+              <li>
+                <button>Z-A</button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-paises" class="nav-modalidades">Países
+              <span class="seta-baixo"></span>
+          </label>
+          <input class="btn-paises" type="checkbox" id="btn-paises">
+            <ul class="submenu-paises">
+              <li>
+                <button>A-Z</button>
+              </li>
+              <li>
+                <button>Z-A</button>
+              </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="nav-curiosidades">Curiosidades</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="secao-olimpiadas">
         <main class="conteudo-principal">
