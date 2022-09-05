@@ -7,7 +7,7 @@ const fieldSearch = document.getElementById('buscar');
 let listCharacterHouseFilter;
 const fullCast = data.characters;
 
-fieldSearch.addEventListener('keyup', function find(event) {
+fieldSearch.addEventListener('keyup', function find() {
     let filteredCharacter = filterFind(fieldSearch.value, listCharacterHouseFilter);
     charactersPrint.innerHTML = filteredCharacter.map(createCard).join('');
 })
@@ -34,7 +34,6 @@ selectCharacters.addEventListener('change',
 let order = document.querySelector('#Select-Ordenar')
 order.addEventListener('change',
 function orderName(event) {
-    console.log(event.target.value)
     const charactersPrintFilter = document.getElementById('lista');
     if (event.target.value === "az") {
       const selectOrderList = selectNameAz(data.characters)
