@@ -105,30 +105,22 @@ btnEspecie.addEventListener("click", function () {
   renderizaCards(markup);
 });
 
-window.addEventListener("load", function () {
-  btnEspecie.value = `Alien (${porcentagemCal(
-    filterArr(data.results, "species", "Alien").length,
-    data.results.length
-  )})`;
-});
-
-window.addEventListener("load", function () {
-  btnVivo.value = `Vivos (${porcentagemCal(
-    filterArr(data.results, "status", "Alive").length,
-    data.results.length
-  )})`;
-});
-
-window.addEventListener("load", function () {
-  btnMorto.value = `Mortos (${porcentagemCal(
-    filterArr(data.results, "status", "Dead").length,
-    data.results.length
-  )})`;
-});
-
-window.addEventListener("load", function () {
-  btnDesconhecido.value = `Desconhecidos (${porcentagemCal(
-    filterArr(data.results, "status", "unknown").length,
-    data.results.length
-  )})`;
-});
+document.querySelector("#result").innerHTML = `
+Todos (${data.results.length})
+Desconhecidos (${porcentagemCal(
+  filterArr(data.results, "status", "unknown").length,
+  data.results.length
+)})
+Vivo (${porcentagemCal(
+  filterArr(data.results, "status", "Alive").length,
+  data.results.length
+)})
+Morto (${porcentagemCal(
+  filterArr(data.results, "status", "Dead").length,
+  data.results.length
+)})
+Especie (${porcentagemCal(
+  filterArr(data.results, "species", "Alien").length,
+  data.results.length
+)})
+`;
