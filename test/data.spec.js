@@ -6,9 +6,26 @@ describe('Teste FilterHouse', () => {
     expect(typeof filterHouse).toBe('function');
   });
 
-  // it('returns `example`', () => {
-  //   expect(example()).toBe('example');
-  // });
+  const HarryPotterData = [
+    {
+      Nome: "Hermione",
+      House: "Gryffindor"
+  },
+  {
+    Nome: "Draco",
+    House: "Slytherin"
+  },
+  {
+    Nome: "Luna",
+    House: "Hufflepuff"
+  }]
+
+  it('should returns "[{ Name: "Hermione", House: "Gryffindor"}]" ', () => {
+    expect(filterHouse(HarryPotterData)).toBe([{
+      Nome: "Hermione",
+      House: "Gryffindor"
+    }]);
+  });
 });
 
 

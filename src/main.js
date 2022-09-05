@@ -7,7 +7,7 @@ const fieldSearch = document.getElementById('buscar');
 let listCharacterHouseFilter;
 const fullCast = data.characters;
 
-fieldSearch.addEventListener('keyup', function find(event) {
+fieldSearch.addEventListener('keyup', function find() {
     let filteredCharacter = filterFind(fieldSearch.value, listCharacterHouseFilter);
     charactersPrint.innerHTML = filteredCharacter.map(createCard).join('');
 })
