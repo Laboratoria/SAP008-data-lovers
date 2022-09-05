@@ -1,9 +1,19 @@
-import { example, anotherExample } from '../src/data.js';
 
+import {createCard, filterHouse, countCharactersHogwarts, selectNameAz, selectNameZa, filterFind} from '../src/data.js';
 
-describe('example', () => {
+describe('Teste createCard', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof createCard).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(example()).toBe('OMG');
+  });
+});
+
+describe('Teste FilterHouse', () => {
+  it('is a function', () => {
+    expect(typeof filterHouse).toBe('function');
   });
 
   it('returns `example`', () => {
@@ -11,13 +21,42 @@ describe('example', () => {
   });
 });
 
-
-describe('anotherExample', () => {
+describe('Teste countCharactersHogwarts', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof countCharactersHogwarts).toBe('function');
+  });
+
+  it('returns `example`', () => {
+    expect(example()).toBe('example');
+  });
+});
+
+describe('Teste selectNameAz', () => {
+  it('is a function', () => {
+    expect(typeof selectNameAz).toBe('function');
   });
 
   it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    expect(example()).toBe('OMG');
+  });
+});
+
+describe('Teste selectNameZa', () => {
+  it('is a function', () => {
+    expect(typeof selectNameZa).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(example()).toBe('OMG');
+  });
+});
+
+describe('Teste filterFind', () => {
+  it('is a function', () => {
+    expect(typeof filterFind).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(example()).toBe('OMG');
   });
 });

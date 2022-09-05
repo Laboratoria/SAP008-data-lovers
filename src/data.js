@@ -1,4 +1,5 @@
 import data from "./data/harrypotter/data.js";
+//Printando todos na tela
 export function createCard(character) {
   return `<card class="card">
   <br><strong>Name: </strong>${character.name}
@@ -8,16 +9,16 @@ export function createCard(character) {
   </br><strong>Gender: </strong>${character.gender}</br>
   </card>`
 }
+//filtro de casas
 export function filterHouse(house) {
   return data.characters.filter((user) => user.house === house);
 }
+//calculo agregado
 export function countCharactersHogwarts() {
   return data.characters.filter((user) => user.house ===
     'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
 }
-export function filterFind(name, listCharacterHouseFilter) {
-  return listCharacterHouseFilter.filter((user) => user.name.toUpperCase().includes(name.toUpperCase()));
-}
+//ordenamento
 const orderName = (a, b) => {
   if (a.name > b.name) {
     return 1;
@@ -32,3 +33,7 @@ export const selectNameAz = (characters) => {
 export const selectNameZa = (characters) => {
   return characters.sort(orderName).reverse();
 };
+//campo de busca
+export function filterFind(name, listCharacterHouseFilter) {
+  return listCharacterHouseFilter.filter((user) => user.name.toUpperCase().includes(name.toUpperCase()));
+}
