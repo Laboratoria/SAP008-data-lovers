@@ -87,33 +87,84 @@
     flex-direction: row;
     gap: 50px;
     list-style: none;
-
 }
 
+.btn-menu, .btn-atletas, .btn-paises {
+    display: none;
+
+}
 .submenu-modalidades {
     display: none;
-    /* display:block; */
     list-style: none;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 5px; 
 }
 
 .submenu-modalidades li {
     width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-nav ul li:hover .submenu-modalidades {
+[id^=btn-menu]:checked + ul {
     display: block;
 }
 
-.submenu-modalidades li button:hover {
+/*nav ul li:hover .submenu-modalidades {
+    display: block;
+}*/
+
+ul li button:hover {
     background-color: #2C89C5;
 }
 
 .submenu-modalidades li button {
     padding: 7px;
     width: 145px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    background-color: #eeeeee;
+    border: 1px solid #b6b6b6;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.submenu-atletas {
+    display: none;
+    list-style: none;
+    position: absolute;
+    margin-top: 5px; 
+}
+
+[id^=btn-atletas]:checked + ul {
+    display: block;
+}
+.submenu-atletas li button {
+    padding: 7px;
+    width: 70px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    background-color: #eeeeee;
+    border: 1px solid #b6b6b6;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submenu-paises {
+    display: none;
+    list-style: none;
+    position: absolute;
+    margin-top: 5px; 
+}
+
+[id^=btn-paises]:checked + ul {
+    display: block;
+}
+.submenu-paises li button {
+    padding: 7px;
+    width: 70px;
     font-family: 'Varela Round', sans-serif;
     font-size: 15px;
     background-color: #eeeeee;
@@ -258,45 +309,79 @@ nav ul li:hover .submenu-modalidades {
 }
 
 .card-atleta {
-    width: 300px;
-    height: 400px;
+    width: 220px;
+    height: 300px;
     margin: 0 50px;
-    border: #000 solid;
+    padding: 20px 0;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card-atleta:hover .card-efeito{
+    transform: rotateY(180deg);
+}
+
+.card-efeito {
+    position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+    
+    
+}
+
+.card-frente{
+    position: absolute;
+    backface-visibility: hidden;
     border-radius: 20px;
+    background-color:#2C89C5;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    background-image: url(./img/card-frente1.png);
+    background-size: 220px 300px;
+}
+
+.card-verso{
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    background-color:rgb(255, 255, 0);
+    width: 220px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
-    margin: 20px;
-}
-
-.card-imagem-de-fundo {
-    width: 350px;
-    height: 450px;
-    background-color: rgb(255, 63, 63);
-}
-
-.atleta-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
+    background-image: url(./img/card-verso.png);
+    background-size: 220px 300px;
 }
 
 .atributos-atleta {
-    width: 250px;
-    height: 170px;
+    width: 180px;
+    height: 120px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    padding-top: 40px;
+}
+
+.atributos-atleta p{
+    padding: 5px;
+}
+
+strong{
+    color: #2C89C5;
 }
 
 .cards-main {
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

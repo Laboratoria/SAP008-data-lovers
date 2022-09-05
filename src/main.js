@@ -8,10 +8,11 @@ const medalSelector = document.querySelector('#medalhas') // imputs de medalha
 
 const arrayAthletes = data.athletes
 let arrayReturn = []
+let medalicon = ""
 
 // funções de filtragem
 function boxingFilter(atleta) {
-    return atleta.sport;
+    return atleta.sport == "Boxing";
     // return atleta.sport
 }
 function goldFilter(atleta) {
@@ -41,14 +42,17 @@ btnFilter.onclick = (event) => {
     }
     if (medalSelector.value == 'gold') {
         arrayReturn = arrayAthletes.filter(goldFilter)
+        medalicon = "🥇";
         cardsPrint();
     }
     else if (medalSelector.value == 'silver') {
         arrayReturn = arrayAthletes.filter(silverFilter)
+        medalicon ="🥈";
         cardsPrint();
     }
     else if (medalSelector.value == 'bronze') {
         arrayReturn = arrayAthletes.filter(bronzeFilter)
+        medalicon = "🥉";
         cardsPrint();
     }
 }
@@ -58,13 +62,20 @@ function cardsPrint() {
     const cards = arrayReturn.map((element) => {
         return `
             <div class="card-atleta" id="card-atleta">
-                <div class="atributos-atleta">
-                    <p class="nome">${element.name}</p>
-                    <p class="genero">${element.gender}</p>
-                    <p class="esporte">${element.sport}</p>
-                    <p class="pais">${element.team}</p>
-                    <p class="medalha">${element.medal}</p>
-                    <p class="medalha">${element.event}</p>
+                <div class="card-efeito" >
+                    <div class="card-frente">
+      
+                    </div>
+                    <div class="card-verso">    
+                        <div class="atributos-atleta">
+                            <p class="nome"><strong>Nome:</strong> ${element.name}</p>
+                            <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
+                            <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
+                            <p class="pais"><strong>País:</strong> ${element.team}</p>
+                            <p class="medalha"><strong>Medalha:</strong> ${element.medal} ${medalicon}</p>
+                            <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         `
