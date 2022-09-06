@@ -19,7 +19,7 @@ body {
   background: #d9d9d9;
   margin: 0 auto;
   max-width: 60%;
-  margin-top: -65px;
+  margin-top: -6%;
   border-radius: 10px;
   border: 3px solid #87cc22;
 }
@@ -29,15 +29,16 @@ body {
 }
 
 #personagens {
-  padding: 1rem 2rem;
-  border: 2px solid #87cc22;
+  padding: 0.5rem 2rem;
+  border: 8px double #87cc22;
   border-radius: 10px;
   margin-top: 80px;
   background: #d9d9d9;
   color: #87cc22;
-  font-size: 60px;
-  -webkit-text-stroke: 1px black;
+  font-size: 550%;
+  -webkit-text-stroke: 0.2rem black;
   text-decoration: none;
+  font-family: 'MISFITS';
 }
 
 .btnRadio {
@@ -77,8 +78,11 @@ body {
   background-color: white;
   border: solid #87cc22;
   border-radius: 10px;
-  width: 30.2%;
+  width: 30%;
   height: 2rem;
+  display: inline-block;
+  margin-bottom: 12%;
+  margin-top: -10%;
 }
 
 #txtBusca {
@@ -93,15 +97,39 @@ body {
 
 #btnBusca {
   border: none;
-  float: left;
-  height: 2.2rem;
-  border-radius: 0 0rem 0rem 0;
-  width: 23.4%;
+  float: right;
+  height: 2rem;
+  width: 25%;
   font-weight: bold;
   background: #87cc22;
+  font-size: 110%;
+  border-radius: 6%;
 }
 
 #divBuscar img {
   float: left;
-  width: 10.6%;
+
+  width: 8%;
+}
+
+.boxFiltro {
+  background-color: white;
+  border: solid #87cc22;
+  border-radius: 10px;
+  width: 23%;
+  height: 2rem;
+  font-size: 120%;
+}
+
+.btnEnd {
+  border: solid #87cc22;
+  border-radius: 10px;
+  font-size: 130%;
+  margin-top: 2%;
+}
+
+.btnRadio {
+  font-size: 130%;
+  margin-top: -10%;
+  padding: 1rem;
 }

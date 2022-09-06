@@ -1,7 +1,7 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
+import { filtrarGenero, filtrarNome, filtrarEspecie, filtrarOrigin, filtrarStatus} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+
+//document.getElementById("enviar").addEventListener("click", filtrarGenero )
 
 const cardsContainer = document.querySelector("#cardsContainer")
 
@@ -24,6 +24,6 @@ function gerarCards(cards){
     }).join("")
     
     cardsContainer.innerHTML += arrayCards
-};
+}
     
 gerarCards(data.results);
