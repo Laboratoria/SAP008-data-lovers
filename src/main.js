@@ -4,19 +4,40 @@ import data from './data/athletes/athletes.js';
 
 const content = document.querySelector('#cards-main'); // impressão dos cards
 const btnFilter = document.querySelector('#btn-filtro'); // botão de filtro
-const medalSelector = document.querySelector('#medalhas') // imputs de medalha
+const medalSelector = document.querySelector('#medalhas'); // imputs de medalha
+const btnAthletics = document.querySelector('#btn-atletismo'); // botão atletismo
+const btnWrestling = document.querySelector('#btn-luta'); // botão luta
+const btnBoxing = document.querySelector('#btn-boxe');
+const btnEquestrianism = document.querySelector('#btn-hipismo');
 
 const arrayAthletes = data.athletes
 let arrayReturn = []
 let medalicon = ""
 
-// funções de filtragem
-function boxingFilter(atleta) {
-    return atleta.sport == "Boxing";
-    // return atleta.sport
+function dualFilter( esporte, medal) {
+   const modalidade = esporte.sport
+   const medalha = medal.medal 
 }
+
+// funções de filtragem
+function athleticsFilter(atleta) {
+    return atleta.sport == "Athletics";
+}
+
+function wrestlingFilter(atleta) {
+    return atleta.sport == "Wrestling";
+}
+
+function boxingFilter(atleta) {
+    return atleta.sport == 'Boxing';
+}
+
+function equestrianismFilter(atleta) {
+    return atleta.sport == "Equestrianism";
+}
+ 
 function goldFilter(atleta) {
-    return atleta.sport == 'Boxing' && atleta.medal == 'Gold';
+    return  atleta.medal == 'Gold';
     // return atleta.sport && atleta.medal == 'Gold'
 }
 function silverFilter(atleta) {
@@ -28,18 +49,19 @@ function bronzeFilter(atleta) {
 
 // função será chamada assim que a página for carregada
 function boxingTest() {
-    arrayReturn = arrayAthletes.filter(boxingFilter)
-    console.log(arrayReturn)
+    arrayReturn = arrayAthletes.filter(boxingFilter)   
     cardsPrint();
 }
 // chamamento da função anterior de atletas
-boxingTest();
+//boxingTest();
 
 // evento para que quando o botão de filtrar for clicado irá chamar as funções respectivas
 btnFilter.onclick = (event) => {
-    if (medalSelector.value == 'all') {
-        boxingTest();
-    }
+   /* if (medalSelector.value == 'all') {
+        dualFilter(123,321)
+        console.log(dualFilter)
+        
+    }*/
     if (medalSelector.value == 'gold') {
         arrayReturn = arrayAthletes.filter(goldFilter)
         medalicon = "🥇";
@@ -56,6 +78,29 @@ btnFilter.onclick = (event) => {
         cardsPrint();
     }
 }
+
+btnAthletics.onclick = (event) => {
+    arrayReturn = arrayAthletes.filter(athleticsFilter)
+    cardsPrint();
+}
+
+
+btnWrestling.onclick = (event) => {
+    arrayReturn = arrayAthletes.filter(wrestlingFilter)
+    cardsPrint();
+}
+
+btnBoxing.onclick = (event) => {
+    arrayReturn = arrayAthletes.filter(boxingFilter)
+    cardsPrint();
+}
+
+btnEquestrianism.onclick = (event) => {
+    arrayReturn = arrayAthletes.filter(equestrianismFilter)
+    cardsPrint();
+}
+
+
 
 // função para impressão dos cards
 function cardsPrint() {
@@ -81,5 +126,5 @@ function cardsPrint() {
         `
     }).join("")
     content.innerHTML = cards
-    console.log(cards)
+    
 }
