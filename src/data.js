@@ -10,12 +10,12 @@ export function createCard(character) {
   </card>`
 }
 //filtro de casas
-export function filterHouse(house) {
-  return data.characters.filter((user) => user.house === house);
+export function filterHouse(house, characters = data.characters) {
+  return characters.filter((user) => user.house === house);
 }
 //calculo agregado
-export function countCharactersHogwarts() {
-  return data.characters.filter((user) => user.house ===
+export function countCharactersHogwarts(characters = data.characters) {
+  return characters.filter((user) => user.house ===
     'Gryffindor' || user.house === 'Ravenclaw' || user.house === 'Slytherin' || user.house === 'Hufflepuff').length
 }
 //ordenamento

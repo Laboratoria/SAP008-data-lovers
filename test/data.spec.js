@@ -31,7 +31,7 @@ describe('Teste FilterHouse', () => {
   }); 
 
   it('should returns "[{ Name: "Hermione", House: "Gryffindor"}]" ', () => {
-    expect(filterHouse(HarryPotterData)).toBe([{
+    expect(filterHouse('Gryffindor', HarryPotterData)).toStrictEqual([{
       name: "Hermione",
       house: "Gryffindor"
     }]);
@@ -43,9 +43,9 @@ describe('Teste countCharactersHogwarts', () => {
     expect(typeof countCharactersHogwarts).toBe('function');
   });
 
-  // it('returns `example`', () => {
-  //   expect(example()).toBe('example');
-  // });  
+  it('should returns `tamanho da array "3"`', () => {
+    expect(countCharactersHogwarts(HarryPotterData)).toBe(3);
+  });  
 })
 
 describe('Teste selectNameAz', () => {
@@ -69,7 +69,7 @@ describe('Teste selectNameAz', () => {
 
   const listaOrdenada = selectNameAz(HarryPotterAz)
 
-  it('returns `anotherExample`', () => {
+  it('should returns `O primeiro nome da ordem de A-Z "Cedrico"`', () => {
     expect(listaOrdenada[0].name).toBe('Cedrico');
   });
 });
@@ -95,7 +95,7 @@ describe('Teste selectNameZa', () => {
 
   const listaOrdenadaZa = selectNameZa(HarryPotterZa)
 
-  it('returns `anotherExample`', () => {
+  it('should returns `O primeiro nome da ordem de Z-A "Rony"`', () => {
     expect(listaOrdenadaZa[0].name).toBe('Rony');
   });
 });
