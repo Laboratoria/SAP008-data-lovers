@@ -17,6 +17,7 @@
 
 ***
 
+<<<<<<< HEAD
 ## 1. Tema do Projeto: Pokémon GO
 
 Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones, com o objetivo de os jogadores usarem configurações baseadas em localização GPS para capturar e treinar personagens Pokémon. Conforme você se move, diferentes tipos de Pokémon aparecem, dependendo de onde você está e que horas são.
@@ -38,6 +39,20 @@ Os principais usuários são crianças e adultos que jogam Pokémon GO e gostari
 
 
 ## 3. Pesquisa com os usuários
+=======
+## 1. Resumo do projeto
+
+Pokémon GO
+
+Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones, com o objetivo de os jogadores usarem configurações baseadas em localização GPS para capturar e treinar personagens Pokémon. Conforme você se move, diferentes tipos de Pokémon aparecem, dependendo de onde você está e que horas são.
+
+O objetivo deste projeto foi construir uma página onde o usuário fã ou jogador de Pokémon GO,  pudesse ter acesso a diversos dados e realizar pesquisas de acordo com seu interesse, de uma forma simples e de fácil interação.
+
+Para que isso fosse possível, realizamos uma pesquisa com os jogadores de Pokémon GO para entender as principais necessidades 
+
+
+Os principais usuários são crianças e adultos que jogam Pokémon GO e gostariam de melhorar sua performance acessando as informações dos Pokémons por meio do banco de dados do site e manuseando conforme sua necessidade.
+>>>>>>> a6be25cf2dd69b15a81a31c36c93b400b383e963
 
 Para conhecer os usuários, realizamos uma pesquisa com 27 jogadores utilizando a ferramenta Google Forms.
 A partir desta pesquisa foi possível traçar o perfil das personas e identificar as necessidades dos usuários iniciantes e avançados

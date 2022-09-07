@@ -27,15 +27,3 @@ export const calculationPokemon = (data,filteredData) =>{
   const percentageCalculated = ((filteredData * 100) / data).toFixed(2);
   return percentageCalculated;
 }
-
-
-
-
-
-
-
-
-
-
-
-
