@@ -120,7 +120,7 @@ Com base no resultados dos testes e feedbacks dos usuários, inserimos o botão 
 
 Elaboramos protótipos de baixa e alta fidelidade usando a ferramenta FIGMA
 
-** FOTO **
+![Prototipo](https://github.com/Andressaolive/SAP008-data-lovers/blob/main/src/imagem/figma%20smartphone.png)
 
 ## 9. Resultado final
 
