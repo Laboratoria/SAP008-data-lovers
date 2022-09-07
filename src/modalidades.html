@@ -2,110 +2,75 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="corpo">
-    <header class="cabecalho">
-    <a href="index.html"><img class="logo-olimpiadas" src="./img/logo-olimpiadas.png" alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul"></a>
-  
-      <div class="campo-pesquisar-e-botao">
-        <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
-        <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
+  <header class="cabecalho">
+    <a href="index.html"><img class="logo-olimpiadas" src="./img/logo-olimpiadas.png"
+        alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul"></a>
+
+    <div class="campo-pesquisar-e-botao">
+      <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
+      <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
+    </div>
+    <nav class="lista-navegacao" id="lista-navegacao">
+      <select id="modalidades">
+        <option value="Modalidades">Modalidades</option>
+        <option value="All">Todas</option>
+        <a href="./modalidades.html">
+          <option value="Athletics">Atletismo</option>
+        </a>
+        <a href="./modalidades.html">
+        <option value="Wrestling">Luta</option>
+        </a>
+        <a href="./modalidades.html"></a>
+        <option value="Boxing">Boxe</option>
+        </a>
+        <a href="./modalidades.html"></a>
+        <option value="Equestrianism">Hipismo</option>
+        </a>
+        </select>
+
+      </select>
+      <select id="atletas">
+        <option value="Modalidades">Atletas</option>
+        <option value="All">A - Z</option>
+        <option value="Athletics">Z - A</option>
+      </select>
+      <select id="paises">
+        <option value="Modalidades">Países</option>
+        <option value="All">A - Z</option>
+        <option value="Athletics">Z - A</option>
+      </select>
+      <a href="#" class="curiosidades">Curiosidades</a>
+    </nav>
+  </header>
+  <section class="secao-olimpiadas">
+    <main class="conteudo-principal">
+      <h1 class="altletas-titulo"></h1>
+      <div class="inputs-de-filtro">
+        <label for="medalhas">Selecione a medalha:</label><br />
+        <select id="medalhas">
+          <option value="All">Todas</option>
+          <option value="Gold">Ouro</option>
+          <option value="Silver">Prata</option>
+          <option value="Bronze">Bronze</option>
+        </select>
+        <button id="btn-filtro">Filtrar</button>
       </div>
-      <nav class="lista-navegacao" id="lista-navegacao">
-        <ul class="menu-principal">
-          <li>
-            <label for="btn-menu" class="nav-modalidades">Modalidades
-              <span class="seta-baixo"></span>
-          </label>
-          <input class="btn-menu" type="checkbox" id="btn-menu">
-        
-            <ul class="submenu-modalidades">
-              <li>
-                <button onclick="window.location.href='modalidades.html'">Todas</button>
-              </li>
-              <li>
-                <button id="btn-atletismo">Atletismo </button> 
-              </li>
-              <li>
-                <button id="btn-luta">Luta </button> 
-              </li>
-              <li>
-                <button id="btn-boxe" >Boxe </button> 
-              </li>
-              <li>
-                <button id="btn-hipismo">Hipismo </button> 
-              </li>
-            </ul>
-          </li>
-  
-          <li>
-            <label for="btn-atletas" class="nav-modalidades">Atletas
-              <span class="seta-baixo"></span>
-          </label>
-          <input class="btn-atletas" type="checkbox" id="btn-atletas">
-            <ul class="submenu-atletas">
-              <li>
-                <button>A-Z</button>
-              </li>
-              <li>
-                <button>Z-A</button>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <label for="btn-paises" class="nav-modalidades">Países
-              <span class="seta-baixo"></span>
-          </label>
-          <input class="btn-paises" type="checkbox" id="btn-paises">
-            <ul class="submenu-paises">
-              <li>
-                <button>A-Z</button>
-              </li>
-              <li>
-                <button>Z-A</button>
-              </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#" class="nav-curiosidades">Curiosidades</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="secao-olimpiadas">
-        <main class="conteudo-principal">
-            <h1 class="altletas-titulo">---</h1>
-            <div class="inputs-de-filtro">
-                <label for="medalhas">Selecione a medalha:</label><br />
-                <select id="medalhas">
-                    <option value="all">Todas</option>
-                    <option value="gold">Ouro</option>
-                    <option value="silver">Prata</option>
-                    <option value="bronze">Bronze</option>
-                </select>
-                <label for="paises">Selecione um país:</label><br />
-                <select id="paises">
-                    <option value="all">Todos</option>
-                    <option value="brasil">Brasil</option>
-                    <option value="eua">EUA</option>
-                    <option value="canada">Canadá</option>
-                </select>
-                <button id="btn-filtro">Filtrar</button>
-            </div>
-            <div class="cards-main" id="cards-main">
-                <!-- inicio da div do card-->
-            </div>
-        </main>
-    </section>
-    <script src="./main.js" type="module"></script>
+      <div class="cards-main" id="cards-main">
+        <!-- inicio da div do card-->
+      </div>
+    </main>
+  </section>
+  <script src="./main.js" type="module"></script>
 </body>
 
 </html>

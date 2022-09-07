@@ -89,15 +89,18 @@
     list-style: none;
 }
 
-.btn-menu, .btn-atletas, .btn-paises {
+.btn-menu,
+.btn-atletas,
+.btn-paises {
     display: none;
 
 }
+
 .submenu-modalidades {
     display: none;
     list-style: none;
     position: absolute;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
 .submenu-modalidades li {
@@ -109,7 +112,7 @@
 
 }
 
-[id^=btn-menu]:checked + ul {
+[id^=btn-menu]:checked+ul {
     display: block;
 }
 
@@ -131,16 +134,18 @@ ul li button:hover {
     border-radius: 6px;
     cursor: pointer;
 }
+
 .submenu-atletas {
     display: none;
     list-style: none;
     position: absolute;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
-[id^=btn-atletas]:checked + ul {
+[id^=btn-atletas]:checked+ul {
     display: block;
 }
+
 .submenu-atletas li button {
     padding: 7px;
     width: 70px;
@@ -156,12 +161,13 @@ ul li button:hover {
     display: none;
     list-style: none;
     position: absolute;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
-[id^=btn-paises]:checked + ul {
+[id^=btn-paises]:checked+ul {
     display: block;
 }
+
 .submenu-paises li button {
     padding: 7px;
     width: 70px;
@@ -173,19 +179,23 @@ ul li button:hover {
     cursor: pointer;
 }
 
+/* Estilização da do backgrond */
 .secao-olimpiadas {
     width: 100%;
-    height: 100vh;
-    display: table;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 4;
     background-position: 30% 45%;
     background-size: cover;
     background-image: url(./img/fundo-olimpiadas.png);
 }
 
+/* Estilização da main */
 .conteudo-principal {
     background-color: #fff;
     margin: 50px;
-    width: 91%;
+    width: 90%;
     height: 90%;
     border-radius: 20px;
     padding: 20px;
@@ -317,42 +327,42 @@ ul li button:hover {
     perspective: 1000px;
 }
 
-.card-atleta:hover .card-efeito{
+.card-atleta:hover .card-efeito {
     transform: rotateY(180deg);
 }
 
 .card-efeito {
     position: relative;
-	width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
     transition: transform 0.8s;
-	transform-style: preserve-3d;
-    
-    
+    transform-style: preserve-3d;
+
+
 }
 
-.card-frente{
+.card-frente {
     position: absolute;
     backface-visibility: hidden;
     border-radius: 20px;
-    background-color:#2C89C5;
+    background-color: #2C89C5;
     width: 220px;
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
     background-image: url(./img/card-frente1.png);
     background-size: 220px 300px;
 }
 
-.card-verso{
+.card-verso {
     position: absolute;
     backface-visibility: hidden;
     border-radius: 20px;
     transform: rotateY(180deg);
-    background-color:rgb(255, 255, 0);
+    background-color: rgb(255, 255, 0);
     width: 220px;
     height: 300px;
     display: flex;
@@ -373,11 +383,20 @@ ul li button:hover {
     padding-top: 40px;
 }
 
-.atributos-atleta p{
+.atributos-atleta p {
     padding: 5px;
 }
 
-strong{
+/* Estilização do nome a frente dos cards */
+.nome {
+    background-color: #fff;
+    border: #fff 5px solid;
+    border-radius: 20px;
+    margin: 5px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+strong {
     color: #2C89C5;
 }
 
