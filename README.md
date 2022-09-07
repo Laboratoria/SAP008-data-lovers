@@ -6,8 +6,7 @@
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Pesquisa com os usuários](#3-pesquisa-com-os-usuários)
 * [4. História de Usuários](#4-histórias-de-usuários)
-* [5. Critérios mínimos de aceitação do
-  projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
+* [5. Organização e Planejamento](#5-organização-e-planejamento)
 * [6. Teste com os usuários](#6-teste-com-os-usuários)
 * [7. Desenvolvimento](#7-desenvolvimento)
 * [8. Protótipos](#8-protótipos)
@@ -16,6 +15,7 @@
 
 
 ***
+
 ## 1. Tema do Projeto: Pokémon GO
 
 Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones, com o objetivo de os jogadores usarem configurações baseadas em localização GPS para capturar e treinar personagens Pokémon. Conforme você se move, diferentes tipos de Pokémon aparecem, dependendo de onde você está e que horas são.
@@ -37,25 +37,11 @@ Os principais usuários são crianças e adultos que jogam Pokémon GO e gostari
 
 
 ## 3. Pesquisa com os usuários
-=======
-## 1. Resumo do projeto
-
-Pokémon GO
-
-Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones, com o objetivo de os jogadores usarem configurações baseadas em localização GPS para capturar e treinar personagens Pokémon. Conforme você se move, diferentes tipos de Pokémon aparecem, dependendo de onde você está e que horas são.
-
-O objetivo deste projeto foi construir uma página onde o usuário fã ou jogador de Pokémon GO,  pudesse ter acesso a diversos dados e realizar pesquisas de acordo com seu interesse, de uma forma simples e de fácil interação.
-
-Para que isso fosse possível, realizamos uma pesquisa com os jogadores de Pokémon GO para entender as principais necessidades 
-
-
-Os principais usuários são crianças e adultos que jogam Pokémon GO e gostariam de melhorar sua performance acessando as informações dos Pokémons por meio do banco de dados do site e manuseando conforme sua necessidade.
->>>>>>> a6be25cf2dd69b15a81a31c36c93b400b383e963
 
 Para conhecer os usuários, realizamos uma pesquisa com 27 jogadores utilizando a ferramenta Google Forms.
 A partir desta pesquisa foi possível traçar o perfil das personas e identificar as necessidades dos usuários iniciantes e avançados
 
-** imagem gráficos da pesquisa**
+![Pesquisa](https://github.com/Andressaolive/SAP008-data-lovers/commit/dc6bfbd8de48b98b19afd8782add7a38e1330cb0)
 
 ## 4. História de Usuários
 
@@ -88,14 +74,10 @@ Consideramos algumas ações para satisfazer a necessidade das histórias de usu
 
 Para realização deste projeto, utilizamos a ferramenta Trello com a elaboração de plannings divididas em 5 sprints
 
-** Trello (foto do trello) **
-
-  
 ## 6. Testes com os usuários
 
 Durante o desenvolvimento do projeto, realizamos os testes com o usuários e detectamos um ponto de melhoria.
 Com base no resultados dos testes e feedbacks dos usuários, inserimos o botão de voltar para que o usuário possa voltar a tela inicial ou iniciar uma nova pesquisa. Optamos por deixar o botão no topo da página com o mesmo desing do site Pokemon Go Live, pois os usuários já estão habituados com esse botão
-
 
 ## 7. Desenvolvimento
 
@@ -121,6 +103,8 @@ Com base no resultados dos testes e feedbacks dos usuários, inserimos o botão 
 Elaboramos protótipos de baixa e alta fidelidade usando a ferramenta FIGMA
 
 ![Prototipo](https://github.com/Andressaolive/SAP008-data-lovers/blob/main/src/imagem/figma%20smartphone.png)
+
+![Prototipo](https://github.com/Andressaolive/SAP008-data-lovers/blob/main/src/imagem/figma%20desktop%20duas%20telas.png)
 
 ## 9. Resultado final
 
