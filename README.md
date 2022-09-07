@@ -11,13 +11,11 @@
 * [6. Teste com os usuários](#6-teste-com-os-usuários)
 * [7. Desenvolvimento](#7-desenvolvimento)
 * [8. Protótipos](#8-protótipos)
-* [9. Resultado Final](#9-resultado-final)
+* [9. Resultado Final](#9-resultado-final)npm 
 * [10. Desenvolvedoras](#10-desenvolvedoras)
 
 
 ***
-
-<<<<<<< HEAD
 ## 1. Tema do Projeto: Pokémon GO
 
 Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones, com o objetivo de os jogadores usarem configurações baseadas em localização GPS para capturar e treinar personagens Pokémon. Conforme você se move, diferentes tipos de Pokémon aparecem, dependendo de onde você está e que horas são.
@@ -80,11 +78,11 @@ CRITÉRIOS DE ACEITAÇÃO
  
 Consideramos algumas ações para satisfazer a necessidade das histórias de usuário
 
-1. O usuário pode escolher um botão da seleção de filtro para verificar o tipo de Pokémon > Usuário seleciona o filtro desejado > clicar em filtrar a seleção;
+1 -  O usuário pode escolher um botão da seleção de filtro para verificar o tipo de Pokémon > Usuário seleciona o filtro desejado > clicar em filtrar a seleção;
 
-2.  Exibição de CARDS contendo  a informação da quantidade de Candies necessários para evolução;
+2 - Exibição de CARDS contendo  a informação da quantidade de Candies necessários para evolução;
 
-3. O usuário pode escolher a raridade a ser filtrada 
+3 - O usuário pode escolher a raridade a ser filtrada 
 
 ## 5. Organização e Planejamento
 
