@@ -83,8 +83,6 @@ describe('Testing filters', () => {
   it('Must return pokemon percentage', () => {
     const pokemonSelected = multFilterPokemon(pokemons,"type","dragon")
     const calculated = calculationPokemon(pokemons.length,pokemonSelected.length);
-
-    console.log(calculated);
     
     const isCorrectCalculation = calculated == 1.59;
 
