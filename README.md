@@ -41,7 +41,7 @@ Os principais usuários são crianças e adultos que jogam Pokémon GO e gostari
 Para conhecer os usuários, realizamos uma pesquisa com 27 jogadores utilizando a ferramenta Google Forms.
 A partir desta pesquisa foi possível traçar o perfil das personas e identificar as necessidades dos usuários iniciantes e avançados
 
-![Pesquisa](https://github.com/Andressaolive/SAP008-data-lovers/commit/dc6bfbd8de48b98b19afd8782add7a38e1330cb0)
+![Pesquisa](https://github.com/Andressaolive/SAP008-data-lovers/blob/main/src/imagem/imagempesquisa.png)
 
 ## 4. História de Usuários
 
