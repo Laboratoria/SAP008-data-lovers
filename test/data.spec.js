@@ -1,5 +1,5 @@
 
-import {createCard, filterHouse, countCharactersHogwarts, selectNameAz, selectNameZa, filterFind} from '../src/data.js';
+import {filterHouse, countCharactersHogwarts, selectNameAz, selectNameZa, filterFind, calculateCharactersPercentage} from '../src/data.js';
 
 const HarryPotterData = [
 {
@@ -15,14 +15,14 @@ const HarryPotterData = [
   house: "Hufflepuff"
 }]
 
-describe('Teste createCard', () => {
+describe('Teste calculateCharactersPercentage', () => {
   it('is a function', () => {
-    expect(typeof createCard).toBe('function');
+    expect(typeof calculateCharactersPercentage).toBe('function');
   });
 
-  // it('returns `anotherExample`', () => {
-  //   expect(example()).toBe('OMG');
-  // });
+  it('should calculate percentage', () => {
+    expect(calculateCharactersPercentage(5,1)).toBe(20);
+  });
 });
 
 describe('Teste FilterHouse', () => {

@@ -1,11 +1,21 @@
 import data from "./data/harrypotter/data.js";
-import { filterHouse, createCard, countCharactersHogwarts, selectNameAz, selectNameZa, filterFind } from "./data.js";
+import {filterHouse, countCharactersHogwarts, selectNameAz, selectNameZa, filterFind, calculateCharactersPercentage } from "./data.js";
 //visualizar todos os personagens
 const charactersPrint = document.getElementById('lista');
 const fullCast = data.characters;
 let listCharacterHouseFilter;
 let calcDisplay = document.getElementById('cal');
 const fieldSearch = document.getElementById('buscar');
+
+function createCard(character) {
+    return `<card class="card">
+    <br><strong>Name: </strong>${character.name}
+    </br><strong>Birth: </strong>${character.birth}
+    </br><strong>Specie: </strong>${character.species}
+    </br><strong>House: </strong>${character.house}
+    </br><strong>Gender: </strong>${character.gender}</br>
+    </card>`
+  }
 //printar todos
 function displayCharaList() {
     listCharacterHouseFilter = fullCast
@@ -20,10 +30,10 @@ function select(event) {
         displayCharaList()
         calcDisplay.innerHTML = ''
     } else {
-        let listName = filterHouse(event.target.value)
+        let listName = filterHouse(event.target.value, fullCast)
         listCharacterHouseFilter = listName
         //calculo
-        let percentCharacters = parseInt((listName.length / countCharactersHogwarts()) * 100)
+        let percentCharacters = calculateCharactersPercentage(countCharactersHogwarts(fullCast),listName.length)
         calcDisplay.innerHTML = percentCharacters + '%' + ' de personagens que estudam em Hogwarts são da casa ' + event.target.value
         charactersPrint.innerHTML = listName.map(createCard).join('');
     }
