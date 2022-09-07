@@ -52,11 +52,11 @@ function printPokemons(data){
       return `
       <div class="cards" id="cards">
         <section class="front-cards" id="frontCards">
+        <p class="namePokemon">${item.name}</p>
             <picture>
               <img class="image-card" src="${item.img}" alt="imagem do Pokémon" loading = "lazy">
             </picture> 
             <div class="info-cards">
-              <p class="namePokemon">${item.name}</p>
               <p class="info">${item.type.map(type => {
                 return typeTranslated[type];
               })}</p>
@@ -87,7 +87,7 @@ selectRarity.addEventListener('change',function(e){
 selecType.addEventListener('change',function(e){
   const pokemonSelected = multFilterPokemon(pokemons,"type",e.target.value) 
   calculationBar.innerHTML = `${calculationPokemon(data.pokemon.length, pokemonSelected.length)}% 
-  do total sao do tipo ${e.target.value}`
+  do total são do tipo ${e.target.value}`
   printPokemons(pokemonSelected);
 })
 
