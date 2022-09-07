@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     font-family:Arial;
-    background-image: url("./imagem/tela.png");
+    background-image: url("./imagem/aa.png");
     background-size: cover;
     
 }
@@ -21,7 +21,6 @@ body{
 /* ESTILIZAÇÃO DO HEADER */
 header {
     height: 4.5rem;
-    background-color:navy;
 }
 
 .nav-bar-img {
@@ -52,7 +51,12 @@ header {
     margin: 0 1rem 0 1rem;
 }
 
-/* ESTILIZAÇÃO DO button */
+.button-inicio {
+    background-color: red;
+    border: greenyellow solid 3px;
+}
+
+/* ESTILIZAÇÃO DO button 
 .button-initial button {
     font-size: 1.2rem;
     background-color:teal;
@@ -74,12 +78,11 @@ header {
 
 .button-initial a:hover {
     color:black;
-}
+}*/
 
 /* ESTILIZAÇÃO DO FOOTER */
 .footer-navigation {
     color:white;
-    background-color:navy;
     height: 5.0rem;
     width: 100%;
     display: flex;
