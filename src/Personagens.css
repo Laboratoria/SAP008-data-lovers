@@ -5,7 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
-    background-color: aqua;
+    background-color:  rgba(6, 233, 233, 0.548);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -96,6 +96,17 @@ img {
     width: 200px;
 }
 
+#voltar-parao-inicio {
+    background: #B3D929;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    color: #04ADBF;
+    border-radius: 30px;
+    border: 2px solid #618C35;
+    
 @media screen and (min-width: 481px) and (max-width: 768px) {
  /*imagem de titulo*/
 .titulo{
@@ -109,6 +120,7 @@ img {
     height: 6vh;
     width: 50vw;
  }
+
  .btnSubmit{
     width: 3vh;
     margin: 2vh;

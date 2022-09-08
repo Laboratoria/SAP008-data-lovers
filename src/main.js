@@ -75,3 +75,5 @@ function filtrarGenero(e) {
     document.getElementById("selectEspecie").addEventListener("change", filtrarEspecie);
     document.getElementById("pesquisarNome").addEventListener("change", pesquisarNome);
     document.getElementById("limparFiltro").addEventListener("click", () => {window.location.reload()});
+
+    document.getElementById("voltar-parao-inicio").addEventListener("click", () => {window.scrollTo(0, 0)});
