@@ -1,4 +1,4 @@
-import { filterFilms, printFilmsCards, getCharacters } from './data.js';
+import { sortFilms, printFilmsCards, getCharacters} from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
@@ -11,14 +11,17 @@ function showFilmsCards (films) {
 console.log (getCharacters (data.films))
 
 
+
 showFilmsCards(data.films)
-
-const searchMovie = () =>{
-  const valueSelec = searchFilms.value;
-  const movieSelec = filterFilms(films, valueSelec);
-  showFilmsCards(movieSelec);
+const ordenator = (e) =>{
+  const orderSelec = e.target.value;
+  if (orderSelec !== ""){
+    const filterOrder = sortFilms(films, orderSelec)
+    showFilmsCards(filterOrder)
+  }
 }
+const order = document.getElementById("inputOrder")
+order.addEventListener ("change", ordenator)
 
-const searchFilms = document.querySelector("#filtro");
-searchFilms.addEventListener("keyup", searchMovie);
+
 

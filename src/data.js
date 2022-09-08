@@ -9,6 +9,25 @@ export const filterFilms = (films) =>{
   return ' ';
 }
 
+export const sortFilms = (films,order ) => {
+  if (order == "a-z") {
+   return films.sort (function (a,b){
+    if( a.title > b.title ){
+      return 1 
+      
+    }
+    if ( b.title > a.title) {
+      
+      return -1 
+
+    }
+   
+   } ) 
+
+  } 
+
+ } 
+
 export function printFilmsCards(data ) {
   return data.map((item) =>
     `
@@ -43,4 +62,9 @@ export function getCharacters (films){
   } 
   return characters 
 
+
 }
+
+
+
+
