@@ -1,0 +1,139 @@
+body{
+    background-color: #06BFBF;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    max-width: 300%;
+    max-height: 300%;
+}
+.titulo {
+    min-height: 200px;
+    width: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards{
+    border-radius: 150px;
+}
+.conjuntoPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisar{
+    background-color: darkcyan;
+    border-radius: 15px;
+    width: 700px;
+    height: 50px;
+}
+.pesquisar::placeholder{
+    color: lawngreen;
+    text-align: center;
+    font-size: 25px;
+}
+.btnSubmit{
+    width: 30px;
+    padding: 10px;
+}
+.mostrarCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nomePersonagens,
+.infos{
+    background-color: darkcyan;
+    color: lawngreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.btnFiltro{
+    background-color: darkcyan;
+    color: lawngreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#voltar-parao-inicio {
+    background: #B3D929;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    color: #04ADBF;
+    border-radius: 30px;
+    border: 2px solid #618C35;
+}
+ .animação{    
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    font-size: medium;
+    padding: 30px;
+    border-radius: 80px;
+    background-color: #023A40;
+    border-color: #023A40;
+    color:#B3D929;
+}
+.btn{
+    position: relative;
+    right: 200px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.serie{
+    background-color: #023A40;
+    border-color: #023A40;
+    border-radius: 80px;
+    font-size: medium;
+    padding: 30px;
+    color:#B3D929;
+}
+.animação{
+    background-color: #023A40;
+    border-color: #023A40;
+    border-radius: 80px;
+    font-size: medium;
+    padding: 30px;
+    color:#B3D929;
+}
+.onde{
+    background-color: #023A40;
+    border-color: #023A40;
+    border-radius: 80px;
+    font-size: medium;
+    padding: 30px;
+    color:#B3D929;
+}
+.foto{
+   position: relative;
+   left: 400px;
+}
+.textosSerie{
+    color: #B3D929;
+}
+.container{
+    width: 550px;
+    height: 350px;
+    background-color: #023A40;
+    border-radius: 50px;
+}
