@@ -25,9 +25,16 @@ function gerarCards(cards){
     }).join("")
     
     cardsContainer.innerHTML += arrayCards
-}
-    
+} 
 gerarCards(characters);
+
+  const ordenarCards = document.querySelector("#ordenarSelect");
+const printCardsOrdenados =()=>{
+  const ordenarAZ = ordenarCards.value
+  const resultadoAZ = ordenarFunction(characters,ordenarAZ)
+  gerarCards(resultadoAZ)
+}
+ordenarCards.addEventListener("change",printCardsOrdenados);
 
 /*const selectGenero = document.querySelector(".opcoesGenero");
 const generoFiltrado =()=>{
@@ -39,11 +46,3 @@ const resultadoGenero = characters.filter(function(character){
   };
   selectGenero.addEventListener("change",generoFiltrado);
   console.log(generoFiltrado)*/
-
-  const ordenarCards = document.querySelector("#ordenarSelect");
-const printCardsOrdenar =()=>{
-  const orderAZ = ordenarCards.value
-  const resultAZ = orderFunction(characters,orderAZ)
-  gerarCards(resultAZ)
-}
-ordenarCards.addEventListener("change",printCardsOrdenar);
