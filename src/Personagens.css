@@ -106,66 +106,67 @@ img {
     color: #04ADBF;
     border-radius: 30px;
     border: 2px solid #618C35;
-    
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
- /*imagem de titulo*/
-.titulo{
-    height: 29vh;
-    width: 50vw;
+    /*imagem de titulo*/
+    .titulo{
+        height: 29vh;
+        width: 50vw;
 
- }
+    }
 
- /*área de pesquisa*/
- .pesquisar{
-    height: 6vh;
-    width: 50vw;
- }
+    /*área de pesquisa*/
+    .pesquisar{
+        height: 6vh;
+        width: 50vw;
+    }
 
- .btnSubmit{
-    width: 3vh;
-    margin: 2vh;
-}
+    .btnSubmit{
+        width: 3vh;
+        margin: 2vh;
+    }
 
 
- /*filtros*/
+    /*filtros*/
 
- .menu{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
+    .menu{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
 
- .btnFiltro{
-    background-color: darkcyan;
-    color: lawngreen;
-    text-align: center;
-    border-radius: 15px;
-    width: 15vw;
-    margin: 8px 2px;
-    font-size: 0.8rem;
-    height: 4vh;
-}
+    .btnFiltro{
+        background-color: darkcyan;
+        color: lawngreen;
+        text-align: center;
+        border-radius: 15px;
+        width: 15vw;
+        margin: 8px 2px;
+        font-size: 0.8rem;
+        height: 4vh;
+    }
 
-/*Cards*/
- .mostrarCards{
-    display: grid;
-    grid-template-columns: 20vw 20vw;
-    gap: 1vw 20vw;
-    margin: 50px;
-    width: 100%;
-}
-.cards{
-    border-radius: 150px;
-    width: 30vw;
-    margin: 5px;
-}
-.nomePersonagem,
-.infos{
-    background-color: darkcyan;
-    color: lawngreen;
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 15px;
-    width: 30vw;
-}
+    /*Cards*/
+    .mostrarCards{
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        gap: 1vw 20vw;
+        margin: 50px;
+        width: 100%;
+    }
+    .cards{
+        border-radius: 150px;
+        width: 30vw;
+        margin: 5px;
+    }
+    .nomePersonagem,
+    .infos{
+        background-color: darkcyan;
+        color: lawngreen;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 15px;
+        width: 30vw;
+    }
 }
