@@ -5,14 +5,14 @@ body {
   margin: 0px 0px 30px 0px;
 }
 
-.logo {
+.logo{
   max-width: 90%;
-  margin-top: -90px;
+  margin-top: -12%;
 }
 
 .rostoRick {
   width: 35%;
-  margin-top: -130px;
+  margin-top: -100px;
 }
 
 #boxText {
@@ -41,10 +41,17 @@ body {
   font-family: 'MISFITS';
 }
 
+.logo2 {
+  max-width: 90%;
+  margin-top: -12%;
+  margin-bottom: -5%;
+}
+
 .btnRadio {
   margin-top: -120px;
   font-size: 20px;
 }
+
 .cardsContainer {
   overflow-y: scroll;
 }
@@ -80,36 +87,7 @@ body {
   border-radius: 10px;
   width: 30%;
   height: 2rem;
-  display: inline-block;
-  margin-bottom: 12%;
-  margin-top: -10%;
-}
-
-#txtBusca {
-  float: left;
-  background-color: transparent;
-  padding-left: 5px;
-  font-size: 18px;
-  border: none;
-  height: 32px;
-  width: 191px;
-}
-
-#btnBusca {
-  border: none;
-  float: right;
-  height: 2rem;
-  width: 25%;
-  font-weight: bold;
-  background: #87cc22;
-  font-size: 110%;
-  border-radius: 6%;
-}
-
-#divBuscar img {
-  float: left;
-
-  width: 8%;
+  margin-bottom: 5%;
 }
 
 .boxFiltro {
@@ -128,8 +106,4 @@ body {
   margin-top: 2%;
 }
 
-.btnRadio {
-  font-size: 130%;
-  margin-top: -10%;
-  padding: 1rem;
-}
+

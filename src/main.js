@@ -1,9 +1,10 @@
-import { filtrarGenero, filtrarNome, filtrarEspecie, filtrarOrigin, filtrarStatus} from './data.js';
+import {orderFunction, filtrarGenero, filtrarNome, filtrarEspecie, filtrarOrigin, filtrarStatus} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 //document.getElementById("enviar").addEventListener("click", filtrarGenero )
 
 const cardsContainer = document.querySelector("#cardsContainer")
+const characters = data.results;
 
 function gerarCards(cards){  
     const arrayCards = cards.map((item) => {
@@ -26,4 +27,23 @@ function gerarCards(cards){
     cardsContainer.innerHTML += arrayCards
 }
     
-gerarCards(data.results);
+gerarCards(characters);
+
+/*const selectGenero = document.querySelector(".opcoesGenero");
+const generoFiltrado =()=>{
+const gender = selectGenero.value
+const resultadoGenero = characters.filter(function(character){
+  return character.gender === gender
+  })
+  gerarCards(resultadoGenero)
+  };
+  selectGenero.addEventListener("change",generoFiltrado);
+  console.log(generoFiltrado)*/
+
+  const ordenarCards = document.querySelector("#ordenarSelect");
+const printCardsOrdenar =()=>{
+  const orderAZ = ordenarCards.value
+  const resultAZ = orderFunction(characters,orderAZ)
+  gerarCards(resultAZ)
+}
+ordenarCards.addEventListener("change",printCardsOrdenar);
