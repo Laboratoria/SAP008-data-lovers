@@ -1,8 +1,10 @@
-import { sortFilms, printFilmsCards, getCharacters} from './data.js';
+import { sortFilms, printFilmsCards, getCharacters, filterFilms} from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films
+
+
 
 
 function showFilmsCards (films) { 
@@ -23,5 +25,12 @@ const ordenator = (e) =>{
 const order = document.getElementById("inputOrder")
 order.addEventListener ("change", ordenator)
 
+const filterByProducer = (e) => {
+  const producerSelec = e.target.value;
+  const filter = filterFilms (data.films, "producer", producerSelec )
+  showFilmsCards(filter)
+  
 
-
+}
+const producerFilter = document.getElementById("inputProducer")
+producerFilter.addEventListener ("change", filterByProducer)
