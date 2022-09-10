@@ -33,10 +33,17 @@
                 <p>Cálculo agregado: <span id="agreg-calc"></span></p>
             </div>
             <div class="inputs-de-filtro">
-                <label for="ordenacao">Selecione a ordem:</label><br />
-                <select id="ordenacao">
-                    <option value="a-z">A - Z</option>
-                    <option value="z-a">Z - A</option>
+                <label for="pais">Selecione o país: </label><br />
+                <select id="pais">
+                    <!-- início das options do select -->
+                    <!-- <option value="default"></option> -->
+                </select>
+                <label for="medalhas">Selecione a medalha:</label><br />
+                <select id="medalhas">
+                    <option value="All">Todas</option>
+                    <option value="Gold">Ouro</option>
+                    <option value="Silver">Prata</option>
+                    <option value="Bronze">Bronze</option>
                 </select>
                 <button id="btn-filtro">Filtrar</button>
             </div>
@@ -45,7 +52,7 @@
             </div>
         </main>
     </section>
-    <script src="./atletas.js" type="module"></script>
+    <script src="./paises.js" type="module"></script>
 </body>
 
 </html>

@@ -17,27 +17,27 @@
         alt="logo das olimpiadas do Rio de Janeiro 2016, possui as cores verde, amarelo e azul"></a>
 
     <div class="campo-pesquisar-e-botao">
-      <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar">
-      <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg">
+      <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar" onkeyup="search_card()"
+        name="search">
+      <!-- <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg"> -->
     </div>
     <nav class="lista-navegacao" id="lista-navegacao">
+      <a href="./index.html" class="link-nav">Home</a>
       <a href="./modalidades.html" class="link-nav">Modalidades</a>
-      <a href="./atletas.html" class="link-nav">Atletas</a>
       <a href="./paises.html" class="link-nav">Países</a>
       <a href="./curiosidades.html" class="link-nav">Curiosidades</a>
     </nav>
   </header>
   <section class="secao-olimpiadas">
     <main class="conteudo-principal">
-      <h1 class="altletas-titulo"></h1>
+      <div class="calculo-agregado">
+        <p>Cálculo agregado: <span id="agreg-calc"></span></p>
+      </div>
       <div class="inputs-de-filtro">
         <label for="modalidades">Selecione a modalidade:</label><br />
         <select id="modalidades">
-          <option value="Modalidades">Modalidades</option>
-          <option value="Athletics">Atletismo</option>
-          <option value="Wrestling">Luta</option>
-          <option value="Boxing">Boxe</option>
-          <option value="Equestrianism">Hipismo</option>
+          <!-- início das options do select -->
+          <!-- <option value="default"></option> -->
         </select>
         <label for="medalhas">Selecione a medalha:</label><br />
         <select id="medalhas">
