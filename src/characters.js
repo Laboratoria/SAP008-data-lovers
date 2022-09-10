@@ -1,4 +1,6 @@
+
 import data from "./data/ghibli/ghibli.js";
+
 
 function cardsCharacters(films) {
   let characters = [];
@@ -16,7 +18,7 @@ function cardsCharacters(films) {
     <div class="flip-card-inner">
       <div class="flip-card-front">
         <div class="box-image">
-          <div class="image" style="background-image: url(${card.img});"></div>
+          <img class="image" src="${card.img}"/>
         </div>
         <h1>${card.name}</h1>
       </div> 
@@ -38,3 +40,20 @@ function cardsCharacters(films) {
 }
 
 cardsCharacters(data.films);
+const imageValidated = () => {
+
+  let arrayImgs = document.querySelectorAll(".image, .img-back")
+
+  for (let img of arrayImgs ) {
+    const url = img.getAttribute("src")
+    const xhr = new XMLHttpRequest();
+    xhr.onload = () => {
+      if (xhr.status === 404) {
+       img.setAttribute("src", "./assets/image/gifHome.webp")
+      }
+    };
+    xhr.open('GET', url);
+    xhr.send();
+  }
+}
+imageValidated()
