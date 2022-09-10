@@ -1,10 +1,9 @@
-const medalIcon = ['🥇', '🥈', '🥉']
+const medalIcon = [{ 'Gold': '🥇', 'Silver': '🥈', 'Bronze': '🥉' }]
 
 /* ----------------FILTRO DAS MEDALHAS-------------------------- */
 export const medalFilter = (data, condition, subcondition) => {
   const medal = data.map((element) => {
     if (element.medal == condition && (element.sport == subcondition || element.team == subcondition)) {
-
       return `
             <div class="card-atleta" id="card-atleta">
                 <div class="card-efeito" >
@@ -16,7 +15,7 @@ export const medalFilter = (data, condition, subcondition) => {
                             <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
                             <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
                             <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal} ${medalIcon[0]}</p>
+                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
                             <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
                         </div>
                     </div>
@@ -54,7 +53,7 @@ export function filterSport(data, condition) {
                             <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
                             <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
                             <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal} ${medalIcon[0]}</p>
+                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
                             <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
                         </div>
                     </div>
@@ -65,7 +64,6 @@ export function filterSport(data, condition) {
   }).join("")
   return cards;
 };
-/* ------------------------------------------------------- */
 
 /* ----------------FILTRO DOS PAÌSES-------------------------- */
 /* função para caregar os paises no select */
@@ -93,7 +91,7 @@ export function filterTeam(data, condition) {
                             <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
                             <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
                             <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal} ${medalIcon[0]}</p>
+                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
                             <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
                         </div>
                     </div>
@@ -104,11 +102,10 @@ export function filterTeam(data, condition) {
   }).join("");
   return cards;
 }
-/* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
 // esta função receberia os dados e nos retornaria os que cumprem com a condição.
-export const filterData = (data, condition) => {
+export const filterData = (data) => {
   const cards = data.map((element) => {
     return `
             <div class="card-atleta" id="card-atleta">
@@ -121,7 +118,7 @@ export const filterData = (data, condition) => {
                             <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
                             <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
                             <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal} ${medalIcon[0]}</p>
+                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
                             <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
                         </div>
                     </div>
@@ -132,27 +129,24 @@ export const filterData = (data, condition) => {
   return cards;
 }
 
-
-
-
-
-
 // esta função recebe três parâmetros. O primeiro, data, nos entrega os dados. O segundo, sortBy, diz respeito a qual das informações quer usar para ordenar. O terceiro, sortOrder, indica se quer ordenar de maneira crescente ou decrescente.
 export const sortData = (data, sortBy, sortOrder) => {
-  conv.value = '';
-  convidados = data.sort();
-  document.getElementById("presentes").innerHTML = "";
-
-  for (var i = 0; i < convidados.length; i++) {
-    return `
-      
-    `
-  }
-}
+  const item = data.map((element) => {
+    if (sortBy == 'a-z') {
+      return (element.name)
+    }
+  }).sort();
+  return console.log(item)
+};
 
 // essa função nos permite fazer cálculos estatísticos básicos para serem exibidos de acordo com o que os dados permitem.
 export const computeStats = (data) => {
   let test = data.reduce(function (acumulador, valorAtual) {
     return acumulador + valorAtual;
   }, 0)
+}
+
+/* ----------------BARRA DE PESQUISA-------------------------- */
+export const userSearch = (data, condition) => {
+  // ..
 }

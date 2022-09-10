@@ -49,6 +49,7 @@
     margin: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 15px;
+    list-style: none;
 }
 
 .botao-lupa {
@@ -239,8 +240,6 @@ ul li button:hover {
     color: #2C89C5;
 }
 
-
-
 .titulo-simbolos {
     font-family: RIO2016;
     text-align: center;
@@ -406,4 +405,8 @@ strong {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px;
+}
+
+.nome {
+    list-style: none;
 }
