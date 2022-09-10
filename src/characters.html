@@ -49,6 +49,27 @@
       </header>
       <main>
         <section class="container-home">
+          <form id="container-form">
+            <div id="item-search"></div>
+            <div id="find-input">
+              <input
+                type="text"
+                class="search-control"
+                placeholder="Searches for character..."
+                id="search"
+              />
+            </div>
+            <div class="filter-select">
+              <label for="filter">Choose a filter:</label>
+              <select name="filter" id="filter">
+                <option value="a - z">A - Z</option>
+                <option value="film">Film</option>
+                <option value="specie">Specie</option>
+                <option value="gender">Gender</option>
+              </select>
+              <input class="submit" type="submit" value="FILTER" />
+            </div>
+          </form>
           <div id="cards-characters"></div>
         </section>
       </main>
