@@ -217,8 +217,10 @@ ul li button:hover {
     line-height: 7mm;
 }
 
-.img-modal {
-    text-align: center;
+
+.img-modal img{
+    width: 300px;
+    height: 200px;
 }
 
 
@@ -248,11 +250,11 @@ ul li button:hover {
     color: #2C89C5;
 }
 
-.img-tocha {
-    display: flex;
+.img-tocha, .img-abertura, .img-modal, .tabela-medalhas, .img-modalidades{
+   display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px 0px;
+    padding: 50px 0px;
 
 }
 
@@ -270,12 +272,18 @@ ul li button:hover {
 
 .texto-logo img {
     width: 300px;
-    height: 150px;
+    height: 150px;    
 }
 
-.img-massacote {
-    text-align: center;
-    float: right;
+.texto-massacote { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.texto-massacote img{
+    width: 330px;
+    height: 180px;
 }
 
 .titulo-abertura {
@@ -284,6 +292,13 @@ ul li button:hover {
     line-height: 2cm;
     font-size: 30px;
     color: #2C89C5;
+}
+
+
+
+.img-abertura img{
+    width: 300px;
+    height: 200px;
 }
 
 .titulo-participacao {
