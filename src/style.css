@@ -218,11 +218,50 @@ ul li button:hover {
 }
 
 
-.img-modal img{
-    width: 300px;
-    height: 200px;
+.slider-content img {
+    width: 350px;
+    height: 250px;
 }
 
+.slider{
+    overflow: hidden;
+}
+
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+
+.slider > input:nth-child(5):checked ~ .slider-content{
+    transform: translateX(-400%);
+}
+
+.slider > input:nth-child(6):checked ~ .slider-content{
+    transform: translateX(-500%);
+}
 
 .img-arcos {
     text-align: center;
@@ -250,18 +289,44 @@ ul li button:hover {
     color: #2C89C5;
 }
 
-.img-tocha, .img-abertura, .img-modal, .tabela-medalhas, .img-modalidades{
-   display: flex;
+.img-tocha,
+.img-abertura,
+.tabela-medalhas,
+.img-modalidades{
+    display: flex;
     justify-content: center;
     gap: 20px;
     padding: 50px 0px;
 
 }
 
-.img-tocha img {
+.img-tocha img, .img-abertura img  {
     width: 300px;
     height: 200px;
+    overflow: hidden;
+    border: 0px;
 }
+
+.img-tocha-1 img,
+.img-tocha-2 img,
+.img-tocha-3 img,
+.abertura1 img,
+.abertura2 img,
+.abertura3 img{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.img-tocha-1:hover img,
+.img-tocha-2:hover img,
+.img-tocha-3:hover img,
+.abertura1:hover img,
+.abertura2:hover img,
+.abertura3:hover img{
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
 
 .texto-logo {
     display: flex;
@@ -272,16 +337,17 @@ ul li button:hover {
 
 .texto-logo img {
     width: 300px;
-    height: 150px;    
+    height: 150px;
 }
 
-.texto-massacote { 
+.texto-massacote {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }
-.texto-massacote img{
+
+.texto-massacote img {
     width: 330px;
     height: 180px;
 }
@@ -294,12 +360,6 @@ ul li button:hover {
     color: #2C89C5;
 }
 
-
-
-.img-abertura img{
-    width: 300px;
-    height: 200px;
-}
 
 .titulo-participacao {
     font-family: RIO2016;
