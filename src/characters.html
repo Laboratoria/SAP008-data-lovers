@@ -62,15 +62,22 @@
             <div class="filter-select">
               <label for="filter">Choose a filter:</label>
               <select name="filter" id="filter">
-                <option value="a - z">A - Z</option>
-                <option value="film">Film</option>
-                <option value="specie">Specie</option>
-                <option value="gender">Gender</option>
+                <optgroup label="Order">
+                  <option value="ascending" class="title">A ➡ Z</option>
+                  <option value="descending" class="title">Z ➡ A</option>
+                </optgroup>
+
+                <optgroup label="Gender">
+                  <option value="ascending" class="rt_score">Masculine</option>
+                  <option value="descending" class="rt_score">Feminine</option>
+                </optgroup>
               </select>
               <input class="submit" type="submit" value="FILTER" />
             </div>
           </form>
-          <div id="cards-characters"></div>
+          <div class="container-characters">
+            <div id="cards-characters"></div>
+          </div>
         </section>
       </main>
     </div>
