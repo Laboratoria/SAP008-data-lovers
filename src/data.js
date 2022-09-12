@@ -65,7 +65,7 @@ export function filterSport(data, condition) {
   return cards;
 };
 
-/* ----------------FILTRO DOS PAÌSES-------------------------- */
+/* ----------------FILTRO DOS PAÍSES-------------------------- */
 /* função para caregar os paises no select */
 export function stringTeam(data) {
   const item = data.map((element) => {
@@ -103,30 +103,34 @@ export function filterTeam(data, condition) {
   return cards;
 }
 
-/* ------------------------------------------------------- */
-// esta função receberia os dados e nos retornaria os que cumprem com a condição.
-export const filterData = (data) => {
-  const cards = data.map((element) => {
-    return `
-            <div class="card-atleta" id="card-atleta">
-                <div class="card-efeito" >
-                    <div class="card-frente">
-                      <p class="nome"><strong>Nome:</strong> ${element.name}</p>
-                    </div>
-                    <div class="card-verso">    
-                        <div class="atributos-atleta">
-                            <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
-                            <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
-                            <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
-                            <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+/* ----------------CÁLCULO AGREGADO-------------------------- */
+export const computeStats = (data) => {
+  let qtd = data.reduce((total, valor) => {
+    if (valor.gender === "F") {
+      return total + 1;
+    }
+    return total;
+  }, 0);
+  return `
+          <h2 class="estatistica"><i>A porcentagem de atletas mulheres foi de: <strong>${(qtd * 100 / data.length).toFixed(2)}%</strong></i></h2>
         `
-  }).join("");
-  return cards;
+};
+
+export const computeStatsTeam = (data) => {
+  let qtd = data.reduce((total, valor) => {
+    if (valor.team === "Brazil" || valor.team === "Brazil-1") {
+      return total + 1;
+    }
+    return total;
+  }, 0);
+  return `
+          <h2 class="estatistica"><i>A porcentagem de medalhas conquistadas pelo Brasil foi de: <strong>${(qtd * 100 / data.length).toFixed(2)}%</strong></i></h2>
+        `
+};
+
+/* ----------------BARRA DE PESQUISA-------------------------- */
+export const userSearch = (data, condition) => {
+  // ..
 }
 
 // esta função recebe três parâmetros. O primeiro, data, nos entrega os dados. O segundo, sortBy, diz respeito a qual das informações quer usar para ordenar. O terceiro, sortOrder, indica se quer ordenar de maneira crescente ou decrescente.
@@ -138,15 +142,3 @@ export const sortData = (data, sortBy, sortOrder) => {
   }).sort();
   return console.log(item)
 };
-
-// essa função nos permite fazer cálculos estatísticos básicos para serem exibidos de acordo com o que os dados permitem.
-export const computeStats = (data) => {
-  let test = data.reduce(function (acumulador, valorAtual) {
-    return acumulador + valorAtual;
-  }, 0)
-}
-
-/* ----------------BARRA DE PESQUISA-------------------------- */
-export const userSearch = (data, condition) => {
-  // ..
-}
