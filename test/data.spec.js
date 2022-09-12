@@ -1,12 +1,12 @@
-import { filterGenero, filterStatus, filterEspecie, filterNome, sortByName, computeStats } from '../src/data.js';
+import { filterNome, sortByName, computeStats, filterData } from '../src/data.js';
 const personagens = [
   {
     "id": 1,
-    "name": "Rick Sanchez",
+    "name": "Abadango Cluster Princess",
     "status": "Alive",
-    "species": "Human",
+    "species": "Alien",
     "type": "",
-    "gender": "Male",
+    "gender": "Female",
   },
   {
     "id": 2,
@@ -27,43 +27,25 @@ const personagens = [
   }
 ]
 
-// filtro genero
-describe("filtroGenero", () => {
+describe("filtro dos selects, especie, genero, status", () => {
   it("Deverá ser uma função", () => {
-    expect(typeof filterGenero).toBe("function");
+    expect(typeof filterData).toBe("function");
+
   });
 
-  it("Devera filtrar o genero selecionado", () => {
-    const retornoPersonagens = [personagens[2]]
-    expect(filterGenero(personagens, "Female")).toEqual(retornoPersonagens)
+  it("Devera filtrar a especie selecionada", () => {
+    const devolvePersonagens = [personagens[0]]
+    expect(filterData(personagens, "species", "Alien")).toEqual(devolvePersonagens)
   })
 });
-// filtro status
-describe("filtro Status", () => {
-  it("Deverá ser uma função", () => {
-    expect(typeof filterStatus).toBe("function");
-  });
 
-  it("Devera filtrar o status selecionado", () => {
-    const retornoPersonagens = [personagens[0], personagens[1], personagens[2]]
-    expect(filterStatus(personagens, "Alive")).toEqual(retornoPersonagens)
-  })
-});
-// filtro especie
-describe("filtro Especie", () => {
-  it("Deverá ser uma função", () => {
-    expect(typeof filterEspecie).toBe("function");
-  });
 
-  it("Devera filtrar a especie selecionado", () => {
-    const retornoPersonagens = [personagens[0], personagens[1], personagens[2]]
-    expect(filterEspecie(personagens, "Human")).toEqual(retornoPersonagens)
-  })
-});
+
+
 //filtro nome
 describe("filtro nome", () => {
   it("Deverá ser uma função", () => {
-    expect(typeof filterEspecie).toBe("function");
+    expect(typeof filterNome).toBe("function");
 
   });
 
