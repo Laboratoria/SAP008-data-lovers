@@ -1,4 +1,4 @@
-import {orderFunction, filtrarGenero, filtrarNome, filtrarEspecie, filtrarOrigin, filtrarStatus} from './data.js';
+import { sortCharacters, filtrarEspecie, filtrarGenero, filtrarStatus } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 //document.getElementById("enviar").addEventListener("click", filtrarGenero )
@@ -6,9 +6,9 @@ import data from './data/rickandmorty/rickandmorty.js';
 const cardsContainer = document.querySelector("#cardsContainer")
 const characters = data.results;
 
-function gerarCards(cards){  
-    const arrayCards = cards.map((item) => {
-        const cardsList = `
+function gerarCards(cards) {
+  const arrayCards = cards.map((item) => {
+    const cardsList = `
         <div class="cards">
             <img class="cardsImg" src="${item.image}" alt="${item.name}">
             <ul class="cardText" style="list-style: none">                       
@@ -20,29 +20,50 @@ function gerarCards(cards){
             </ul>                
         </div>
         `;
-        return cardsList;
-       
-    }).join("")
-    
-    cardsContainer.innerHTML += arrayCards
-} 
+    return cardsList;
+
+  }).join("")
+
+  cardsContainer.innerHTML = arrayCards
+}
 gerarCards(characters);
 
-  const ordenarCards = document.querySelector("#ordenarSelect");
-const printCardsOrdenados =()=>{
-  const ordenarAZ = ordenarCards.value
-  const resultadoAZ = ordenarFunction(characters,ordenarAZ)
-  gerarCards(resultadoAZ)
+const selectOrderAZ = document.querySelector("#order");
+const printAZOrdered = () => {
+  const orderAZ = selectOrderAZ.value;
+  const resultAZ = sortCharacters(characters, orderAZ);
+  console.log(resultAZ)
+  gerarCards(resultAZ)
 }
-ordenarCards.addEventListener("change",printCardsOrdenados);
+selectOrderAZ.addEventListener("change", printAZOrdered);
 
-/*const selectGenero = document.querySelector(".opcoesGenero");
-const generoFiltrado =()=>{
-const gender = selectGenero.value
-const resultadoGenero = characters.filter(function(character){
-  return character.gender === gender
+const selectGenero = document.querySelector("#opcoesGenero");
+const generoFiltrado = () => {
+  const gender = selectGenero.value
+  const resultadoGenero = characters.filter(function (character) {
+    return character.gender === gender
   })
   gerarCards(resultadoGenero)
-  };
-  selectGenero.addEventListener("change",generoFiltrado);
-  console.log(generoFiltrado)*/
+};
+selectGenero.addEventListener("change", generoFiltrado);
+
+const selectEspecie = document.querySelector("#opcoesEspecie");
+const especieFiltrada = () => {
+  const species = selectEspecie.value
+  const resultadoEspecie = characters.filter(function (character) {
+    return character.species === species
+  })
+  gerarCards(resultadoEspecie)
+};
+selectEspecie.addEventListener("change", especieFiltrada);
+
+const selectStatus = document.querySelector("#opcoesStatus");
+const statusFiltrado = () => {
+  const status = selectStatus.value
+  const resultadoStatus = characters.filter(function (character) {
+    return character.status === status
+  })
+  gerarCards(resultadoStatus)
+};
+selectStatus.addEventListener("change", statusFiltrado);
+
