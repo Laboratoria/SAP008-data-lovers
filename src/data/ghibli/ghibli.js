@@ -2431,5 +2431,5 @@ export default {
       ],
       "vehicles": []
     }
-  ]
+  ],
 }
