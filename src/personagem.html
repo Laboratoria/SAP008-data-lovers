@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Página Personagens</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <main>
+      <div id= "cardsPersonagens"></div>
+      </main >
+    <!--<main class="mainPersonagens">-->
+      <!--<section class="filterPersonagens">-->
+      
+      <input id="filtro" type="text">
+       
+        <select name="filtroOrder" class="filterPersonagens" id="inputOrder">
+          <option value="order">Ordem</option>
+          <option value="a-z" id="alfa">A-Z</option>
+          <option value="z-a" id="zorro">Z-A</option>
+        </select>
+
+        <select name="filterGênero" class="filterGender" id="inputGenero">
+          <option value="gender">Gênero</option>
+          <option value="Male" id="male">Masculino</option>
+          <option value="Female" id="female">Feminino</option>
+
+          </select>
+        </main>
+
+  <p><a href="index.html" >Voltar</p>
+    <div id="root"></div>
+    <script src="personagem.js" type="module"></script>
+  </body>
+</html>
