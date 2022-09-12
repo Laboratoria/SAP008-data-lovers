@@ -1,4 +1,4 @@
-import {filterCharacters,sortCharacters,searchCharacters} from './data.js';
+import { filterCharacters, sortCharacters, searchCharacters } from './data.js';
 import rickandmorty from './data/rickandmorty/rickandmorty.js';
 
 const selectGender = document.getElementById('gender');
@@ -34,11 +34,12 @@ const listarCards = () => {
     let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex]; //index indica a posição do combo que foi selecionada//
 
     let characters = allCharacters;
-    characters = filterCharacters(characters,'gender',optionGender.value);
+    characters = filterCharacters(characters, 'gender', optionGender.value);
     characters = filterCharacters(characters, 'status', optionStatus.value);
     characters = filterCharacters(characters, 'species', optionSpecie.value);
     characters = sortCharacters(characters, optionOrderAz.value);
     characters = searchCharacters(characters, inputName.value);
+    
 
     let cards = document.getElementById('cards');
     cards.innerHTML = '';
@@ -50,20 +51,21 @@ const listarCards = () => {
 selectGender.addEventListener('change', listarCards);
 selectStatus.addEventListener('change', listarCards);
 selectSpecie.addEventListener('change', listarCards);
-selectOrderAz.addEventListener('change', listarCards); 
+selectOrderAz.addEventListener('change', listarCards);
 inputName.addEventListener('keyup', listarCards);
 
 listarCards();
 
 const buttonCuriosity = document.querySelector("#curiosity")
-    let total = rickandmorty.results;
-    let counterTotal = total.length;
-    let counter = 0;
-        for (let i = 0; i < total.length; i++) {
-        if (total[i].gender === 'Female') counter++;
-        } 
-    let porcentagem = ((counter / counterTotal) * 100).toFixed(2)
-    
-    buttonCuriosity.addEventListener("click", function () { 
-    alert ("The percentage of female characters is " + porcentagem + "%")});
+let total = rickandmorty.results;
+let counterTotal = total.length;
+let counter = 0;
+for (let i = 0; i < total.length; i++) {
+    if (total[i].gender === 'Female') counter++;
+}
+let porcentagem = ((counter / counterTotal) * 100).toFixed(2)
+
+buttonCuriosity.addEventListener("click", function () {
+    alert("The percentage of female characters is " + porcentagem + "%")
+});
 

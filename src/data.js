@@ -40,6 +40,5 @@ export const searchCharacters = (characters, name) => {
   
 }
 
-  
 
  
