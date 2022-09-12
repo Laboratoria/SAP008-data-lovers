@@ -1,7 +1,5 @@
-import { sortCharacters, filtrarEspecie, filtrarGenero, filtrarStatus } from './data.js';
+import { calculoAgregado, sortCharacters } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
-
-//document.getElementById("enviar").addEventListener("click", filtrarGenero )
 
 const cardsContainer = document.querySelector("#cardsContainer")
 const characters = data.results;
@@ -32,7 +30,6 @@ const selectOrderAZ = document.querySelector("#order");
 const printAZOrdered = () => {
   const orderAZ = selectOrderAZ.value;
   const resultAZ = sortCharacters(characters, orderAZ);
-  console.log(resultAZ)
   gerarCards(resultAZ)
 }
 selectOrderAZ.addEventListener("change", printAZOrdered);
@@ -42,7 +39,11 @@ const generoFiltrado = () => {
   const gender = selectGenero.value
   const resultadoGenero = characters.filter(function (character) {
     return character.gender === gender
-  })
+  });
+  const calculo = calculoAgregado(characters.length, generoFiltrado.length);
+  document.getElementById("exibirCalculo").innerHTML =
+    "Essa categoria representa " + calculo + "% dos personagens";
+
   gerarCards(resultadoGenero)
 };
 selectGenero.addEventListener("change", generoFiltrado);
@@ -66,4 +67,5 @@ const statusFiltrado = () => {
   gerarCards(resultadoStatus)
 };
 selectStatus.addEventListener("change", statusFiltrado);
+
 
