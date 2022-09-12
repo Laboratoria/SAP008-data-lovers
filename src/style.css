@@ -4,13 +4,14 @@ body {
 
 img {
     width: 100%;
+    
 }
 
-.HOME, .INFO {
+.HOME,
+.INFO {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #bbdfd0;
+    background-color: #9c4085de;
     justify-content: space-between;
-    
     font-size: 25px;
     border-top-style: hidden;
     border-left-style: hidden;
@@ -21,11 +22,11 @@ img {
 }
 
 .buttons {
-    display:flex;
+    display: flex;
     flex-flow: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-top: 10px;
-   }
+}
 
 select {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -41,36 +42,38 @@ select {
     height: 40px;
 }
 
-.clear, .curiosity {
+.clear,
+.curiosity {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     text-align: center;
-    background-color:#71D336; 
-    border-color:#199c24; 
+    background-color: #71D336;
+    border-color: #199c24;
     border-radius: 15px;
     border-width: 2px;
-    color:white; 
-    width: 160px; 
+    color: white;
+    width: 160px;
     height: 40px;
 }
 
-.search, .searchButton {
+.search {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     text-align: center;
-    background-color:#71D336; 
-    border-color:#199c24; 
+    background-color: #71D336;
+    border-color: #199c24;
     border-radius: 15px;
     border-width: 2px;
-    color:white; 
-    width: 250px; 
+    color: white;
+    width: 250px;
     height: 40px;
+
 }
 
 .cards {
-    display:flex;
+    display: flex;
     flex-flow: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
@@ -80,10 +83,10 @@ select {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    height: 421px;
-    width: 292px;
+    height: 390px;
+    width: 250px;
     background-color: #9c4085de;
-    background-image: url(CARD.jpg);
+   background-image: url(CARD.jpg);
     background-repeat: no-repeat;
     background-size: 292px 421px;
     border: 4px solid #810964;
@@ -96,26 +99,24 @@ select {
     background-color: #eeb2e1e0;
     border: 4px solid #820a65;
     border-radius: 25px;
-    height: 208px;
-    width: 275px;
-    margin-top: 8px;
+    height: 190px;
+    width: 220px;
 }
 
 .overLap-group {
-    height: 149px;
-    margin-top: 10px; 
-    position: relative;
-    width: 289px;   
+    width: 200px;
+    height: 160px;
+    position: relative;   /*CAIXAS DE TEXTOS*/
+   
 }
 
 .caixa-de-texto {
-    background-color: #c36676;
-    background-size: cover;
+    background-color: #9c4085de;
     border-radius: 25px;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
 .caixa-de-texto-status {
@@ -123,7 +124,7 @@ select {
     top: 42px;
     left: 0;
     height: 31px;
-    width: 280px;
+    width: 200px;
     padding: 1%;
     margin-top: 10px;
 }
@@ -133,7 +134,7 @@ select {
     top: 4px;
     left: 0;
     height: 31px;
-    width: 280px; 
+    width: 200px;
     padding: 1%;
 }
 
@@ -142,7 +143,7 @@ select {
     top: 80px;
     left: 0;
     height: 31px;
-    width: 280px; 
+    width: 200px;
     padding: 1%;
     margin-top: 20px;
 }
@@ -158,7 +159,45 @@ select {
     top: 118px;
     left: 0;
     height: 31px;
-    width: 280px; 
+    width: 200px;
     padding: 1%;
-    margin-top:30px; 
+    margin-top: 30px;
+}
+
+/*AJUSTE PARA SMARTPHONES*/
+
+@media screen and (max-width: 480px) {
+    
+    .cards {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 2%;
+    }
+
+    .clear, .curiosity {
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 2%;
+    }
+
+    .search {
+        width: 180px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 2%;
+    }
+
+    .INFO, .HOME {
+        font-size: 15px;
+    }
+
 }
