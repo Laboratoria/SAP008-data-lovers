@@ -72,9 +72,9 @@ main {
 }
 
 section {
-      display: flex;
-
+      display: flex
 }
+
 article > h2 {
       padding-bottom: 20px;
 }
@@ -90,3 +90,24 @@ footer {
       padding: 10px;
 
 }
+
+
+.impressao-todos-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      row-gap: 10px;
+      column-gap: 30px;
+      text-align: center;
+}
+
+.impressao-todos-cards > section{
+      width: 40%;
+      display: block;
+      border: 1px solid black;
+      border-radius: 50px;
+}
+

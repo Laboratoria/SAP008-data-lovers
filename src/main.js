@@ -3,9 +3,9 @@ import data from "./data/ghibli/ghibli.js"
 function getCharacters(data) {
     let lista_de_personagens = []
 
-//* criei a função para acessar a lista de personagens e declarei a variavel
-//* a partir disso, crio o contador que irá iterar sobre a lista acessando a lista filmes
-//*dentro da lista de personagens, ele irá iterar os personagens.
+    //* criei a função para acessar a lista de personagens e declarei a variavel
+    //* a partir disso, crio o contador que irá iterar sobre a lista acessando a lista filmes
+    //*dentro da lista de personagens, ele irá iterar os personagens.
 
     for (let contador = 0; contador < data.films.length; contador++) {
         let filme_atual = data.films[contador];
@@ -26,7 +26,7 @@ function printCharacter(data) {
     //* aqui eu chamo a função declarada acima e linko ela com a pagina de personagens
     for (let contador_print = 0; contador_print < data.length; contador_print++) {
         let new_element = document.createElement("section")
-        new_element.innerHTML = `<section>
+        new_element.innerHTML = `
             <p>Nome: ${data[contador_print].name}</p><br>
             <p>Filme: ${data[contador_print].movie}</p><br>
             <p>image: <img src="${data[contador_print].img}"/></p><br>
@@ -34,7 +34,6 @@ function printCharacter(data) {
             <p>Idade: ${data[contador_print].age}</p><br>
             <p>Espécie: ${data[contador_print].specie}</p><br>
                         
-        </section>
         `;
         cards.appendChild(new_element);
     }
