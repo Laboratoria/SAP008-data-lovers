@@ -49,7 +49,28 @@
       </header>
       <main>
         <section class="container-home">
-          <form id="container-form">
+          <form class="filter" id="filter">
+            <label for="filter-gender" class="label">Gênero</label>
+            <select
+              class="dropdown-menu"
+              name="filter-choice"
+              id="filter-gender"
+            >
+              <option value="All">Todos</option>
+              <option value="Female">Feminino</option>
+              <option value="Male">Masculino</option>
+            </select>
+
+            <label for="filter-movie" class="label">Filme</label>
+            <select
+              class="dropdown-menu"
+              name="filter-choice"
+              id="filter-movie"
+            >
+              <option value="All">Todos</option>
+            </select>
+          </form>
+          <!-- <form id="container-form">
             <div id="item-search"></div>
             <div id="find-input">
               <input
@@ -67,14 +88,26 @@
                   <option value="descending" class="title">Z ➡ A</option>
                 </optgroup>
 
-                <optgroup label="Gender">
-                  <option value="ascending" class="rt_score">Masculine</option>
-                  <option value="descending" class="rt_score">Feminine</option>
+                <optgroup label="Gender" id="filter-gender">
+                  <option value="All">All</option>
+                  <option id="gender-masculine" value="ascending" class="title">
+                    Masculine
+                  </option>
+                  <option id="gender-feminine" value="descending" class="title">
+                    Feminine
+                  </option>
                 </optgroup>
               </select>
-              <input class="submit" type="submit" value="FILTER" />
+              <label for="filter-movie" class="label">Filme</label>
+              <select
+                class="dropdown-menu"
+                name="filter-choice"
+                id="filter-movie"
+              >
+                <option value="All">Todos</option>
+              </select>
             </div>
-          </form>
+          </form> -->
           <div class="container-characters">
             <div id="cards-characters"></div>
           </div>
