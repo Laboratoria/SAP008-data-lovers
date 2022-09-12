@@ -37,11 +37,15 @@ export function dataShowCharacters(films){
 
   dataShowCharacters(data.films)
 
- // const searchMovie = () =>{
-  //const valueSelec = searchFilms.value;
-  //const movieSelec = dataShowCharacters(films, valueSelec);
- // showFilmsCards(movieSelec);
-//}
 
-//const searchFilms = document.querySelector("#filtro");
-//searchFilms.addEventListener("keyup", searchMovie);
+  const filterByGenero = (e) => {
+    const filterGêneroSelec = e.target.value;
+    const genderfilter = filterByGenero (data.films,"gender", filterGêneroSelec )
+    dataShowCharacters(genderfilter)
+    
+  
+  }
+  const genderFilter = document.getElementById("inputGenero")
+  genderFilter.addEventListener ("change", filterByGenero)
+  
+

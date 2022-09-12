@@ -10,6 +10,21 @@ export const filterFilms = (films, criterio, valor) => {
   })
 }
 
+
+export const filterDirector = (films, criterio, valor) => {
+  console.log(films, criterio, valor)
+  return films.filter(film => { 
+    return film[criterio] === valor 
+  })
+}
+
+export const filterGender = (peoples, criterio, valor) => {
+  console.log(peoples, criterio, valor)
+  return peoples.filter(film => { 
+    return film[criterio] === valor 
+  })
+}
+
 export const sortFilms = (films, order) => {
   if (order == "a-z") {
     return films.sort(function (a, b) {
