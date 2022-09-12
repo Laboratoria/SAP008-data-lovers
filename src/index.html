@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick and Morty Curiosity</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcute icon" href="favrick.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <a href="second_page.html" class="INFO" value="INFO">INFO</a>
+    <img id="banner" src="banner.jpg" alt="Banner Rick and Morty">
+  </header>
+  <main>
+    <div class="buttons">
+      <select id="status">
+        <optgroup label="STATUS"></optgroup>
+        <option value="0" selected disabled hidden>STATUS</option>
+        <option value="Alive">ALIVE</option>
+        <option value="Dead">DEAD</option>
+        <option value="unknown">UNKNOWN</option>
+      </select>
+
+      <select id="gender">
+        <optgroup label="GENDER"></optgroup>
+        <option value="0" selected disabled hidden>GENDER</option>
+        <option value="Male">MALE</option>
+        <option value="Female">FEMALE</option>
+        <option value="unknown">UNKNOWN</option>
+      </select>
+
+      <select id="specie">
+        <optgroup label="SPECIES"></optgroup>
+        <option value="0" selected disabled hidden>SPECIES</option>
+        <option value="Alien">ALIEN</option>
+        <option value="Animal">ANIMAL</option>
+        <option value="unknown">UNKNOWN</option>
+        <option value="Human">HUMAN</option>
+        <option value="Humanoid">HUMANOID</option>
+        <option value="Parasite">PARASITE</option>
+        <option value="Robot">ROBOT</option>
+        <option value="Mytholog">MYTHOLOG</option>
+        <option value="Poopybutthole">POOPYBUTTHOLE</option>
+        <option value="Disease">DISEASE</option>
+        <option value="Cronenberg">CRONENBERG</option>
+        <option value="Vampire">VAMPIRE</option>
+      </select>
+
+      <select id="order">
+        <optgroup label="ORDER"></optgroup>
+        <option value="0" selected disabled hidden>ORDER</option>
+        <option value="crescente">↻ A-Z</option>
+        <option value="decrescente">↺ Z-A</option>
+      </select>
+
+      <input type="button" class="clear" value="CLEAR" onClick="window.location = location">
+
+      <input type="submit" class="curiosity" id="curiosity" value="CURIOSITY">
+
+      <input class="search" type="search" id="name" placeholder=" &#128270; Search by name" />
+
+      <div class="cards" id="cards">
+      </div>
+    </div>
+
+  </main>
+  
+</body>
+<script src="main.js" type="module"></script>
+
+
 </html>

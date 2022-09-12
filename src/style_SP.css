@@ -1,0 +1,30 @@
+body {
+    background-color: #bbdfd0;
+}
+
+img {
+    width: 100%;
+}
+
+.rickandmortyText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    margin-right: 2%;
+    color: #810964;
+    text-align: center;
+
+}
+
+.HOME {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #9c4085de;
+    justify-content: space-between;
+
+    font-size: 25px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: double, black;
+    margin-bottom: 1%;
+
+}
