@@ -21,7 +21,7 @@ export const sortCharacters = (characters, order) => {
             }
             return 0;
         })
-    };
+    }
     if (order == "Z-A") {
         return characters.sort((a, b) => {
             if (a.name < b.name) {
@@ -34,3 +34,7 @@ export const sortCharacters = (characters, order) => {
         })
     }
 };
+
+export function calculoAgregado(total, porcentagem) {
+    return Math.round((porcentagem *100) / total);
+  }

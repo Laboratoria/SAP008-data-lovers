@@ -106,4 +106,12 @@ body {
   margin-top: 2%;
 }
 
-
+.calculo {
+  background-color: rgb(124, 140, 90);
+  color: rgb(168, 213, 232);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 0vw;
+  font-size: 20px;
+}
