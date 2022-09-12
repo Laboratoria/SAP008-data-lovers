@@ -60,15 +60,20 @@ Os testes foram desenvolvidos para testar as funções implementadas, das quais 
 
 ## 6. Ferramentas utilizadas
 Para a construção desse projeto foram utilizadas as seguintes ferramentas:
+
 •	JavaScript
+
 •	HTML 5
+
 •	CSS
+
 •	Node.JS
+
 •	Figma
 
 ## 7. Desenvolvedoras 
 
 [Thais Cantarelli](https://www.linkedin.com/in/thais-cantarelli-455957247/)
 
-[Anna Clara Andrade](https://github.com/andradeannac)
+[Anna Clara Andrade](https://www.linkedin.com/in/anna-clara-andrade-4867971b3/)
 
