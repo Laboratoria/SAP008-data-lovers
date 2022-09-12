@@ -28,10 +28,12 @@ function printCharacter(data) {
         let new_element = document.createElement("section")
         new_element.innerHTML = `<section>
             <p>Nome: ${data[contador_print].name}</p><br>
+            <p>Filme: ${data[contador_print].movie}</p><br>
             <p>image: <img src="${data[contador_print].img}"/></p><br>
             <p>Gênero: ${data[contador_print].gender}</p><br>
             <p>Idade: ${data[contador_print].age}</p><br>
-            <p>Espécie: ${data[contador_print].specie}</p><br>            
+            <p>Espécie: ${data[contador_print].specie}</p><br>
+                        
         </section>
         `;
         cards.appendChild(new_element);
