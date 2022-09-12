@@ -19,7 +19,6 @@
     <div class="campo-pesquisar-e-botao">
       <input class="barra-pesquisar" id="barra-pesquisar" type="text" placeholder="Pesquisar" onkeyup="search_card()"
         name="search">
-      <!-- <input class="botao-lupa" id="botao-lupa" type="image" src="./img/lupa.svg"> -->
     </div>
     <nav class="lista-navegacao" id="lista-navegacao">
       <a href="./index.html" class="link-nav">Home</a>
@@ -30,8 +29,8 @@
   </header>
   <section class="secao-olimpiadas">
     <main class="conteudo-principal">
-      <div class="calculo-agregado">
-        <p>Cálculo agregado: <span id="agreg-calc"></span></p>
+      <div id="calculo-agregado">
+        <!-- início da porcentagem de cálculo agregado -->
       </div>
       <div class="inputs-de-filtro">
         <label for="modalidades">Selecione a modalidade:</label><br />
@@ -46,7 +45,6 @@
           <option value="Silver">Prata</option>
           <option value="Bronze">Bronze</option>
         </select>
-        <button id="btn-filtro">Filtrar</button>
       </div>
       <div class="cards-main" id="cards-main">
         <!-- inicio da div do card-->

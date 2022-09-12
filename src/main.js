@@ -1,12 +1,11 @@
-import { stringSport, filterSport, medalFilter, userSearch } from './data.js';
+import { stringSport, filterSport, medalFilter, userSearch, computeStats } from './data.js';
 import data from './data/athletes/athletes.js';
 
 const content = document.querySelector('#cards-main'); // impressão dos cards
-//const btnFilter = document.querySelector('#btn-filtro'); // botão de filtro
 const inptSearch = document.querySelector('#barra-pesquisar');
-//const btnSearch = document.querySelector('#botao-lupa');
 const medalSelector = document.querySelector('#medalhas'); // imputs de medalha
 const sportSelector = document.querySelector('#modalidades');
+const statistic = document.querySelector('#calculo-agregado')
 const arrayAthletes = data.athletes;
 
 function startPage() {
@@ -14,6 +13,8 @@ function startPage() {
     content.innerHTML = filterSport(arrayAthletes, sportSelector.value);
     console.log(sportSelector.value);
     console.log('a página carregou');
+
+    statistic.innerHTML = (computeStats(arrayAthletes))
 }
 
 startPage()
@@ -41,3 +42,4 @@ inptSearch.onkeyup = function (e) {
         }
     }
 };
+
