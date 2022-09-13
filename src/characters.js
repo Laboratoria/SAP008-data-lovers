@@ -113,7 +113,7 @@ filterGender.addEventListener("change", () => {
 const arrayTitles = movies.map(movie => movie.title)
 
 arrayTitles.forEach(title => {
-  filterMovie.innerHTML += `<option class="movie-title">${title}</option>`
+  filterMovie.innerHTML += `<option class="title">${title}</option>`
 })
 
 filterMovie.addEventListener("change", () => {
