@@ -36,5 +36,5 @@ export const sortCharacters = (characters, order) => {
 };
 
 export function calculoAgregado(total, porcentagem) {
-    return Math.round((porcentagem *100) / total);
+    return Math.round((porcentagem * 100) / total);
   }

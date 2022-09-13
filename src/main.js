@@ -1,4 +1,4 @@
-import { calculoAgregado, sortCharacters } from './data.js';
+import { calculoAgregado, sortCharacters, filtrarGenero, filtrarEspecie, filtrarStatus} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const cardsContainer = document.querySelector("#cardsContainer")
@@ -37,12 +37,10 @@ selectOrderAZ.addEventListener("change", printAZOrdered);
 const selectGenero = document.querySelector("#opcoesGenero");
 const generoFiltrado = () => {
   const gender = selectGenero.value
-  const resultadoGenero = characters.filter(function (character) {
-    return character.gender === gender
-  });
-  const calculo = calculoAgregado(characters.length, generoFiltrado.length);
+  const resultadoGenero = filtrarGenero(characters, gender)
+  const calculo = calculoAgregado(characters.length, resultadoGenero.length );
   document.getElementById("exibirCalculo").innerHTML =
-    "Essa categoria representa " + calculo + "% dos personagens";
+    "Essa categoria representa " + calculo + "% dos personagens"
 
   gerarCards(resultadoGenero)
 };
@@ -51,9 +49,11 @@ selectGenero.addEventListener("change", generoFiltrado);
 const selectEspecie = document.querySelector("#opcoesEspecie");
 const especieFiltrada = () => {
   const species = selectEspecie.value
-  const resultadoEspecie = characters.filter(function (character) {
-    return character.species === species
-  })
+  const resultadoEspecie = filtrarEspecie(characters, species) 
+  const calculo = calculoAgregado(characters.length, resultadoEspecie.length );
+  document.getElementById("exibirCalculo").innerHTML =
+    "Essa categoria representa " + calculo + "% dos personagens"
+
   gerarCards(resultadoEspecie)
 };
 selectEspecie.addEventListener("change", especieFiltrada);
@@ -61,11 +61,11 @@ selectEspecie.addEventListener("change", especieFiltrada);
 const selectStatus = document.querySelector("#opcoesStatus");
 const statusFiltrado = () => {
   const status = selectStatus.value
-  const resultadoStatus = characters.filter(function (character) {
-    return character.status === status
-  })
+  const resultadoStatus = filtrarStatus(characters, status)
+  const calculo = calculoAgregado(characters.length, resultadoStatus.length );
+  document.getElementById("exibirCalculo").innerHTML =
+    "Essa categoria representa " + calculo + "% dos personagens"
+
   gerarCards(resultadoStatus)
 };
 selectStatus.addEventListener("change", statusFiltrado);
-
-
