@@ -202,6 +202,44 @@ ul li button:hover {
     padding: 20px;
 }
 
+.calculo-agregado{
+    display: flex;
+    justify-content: center;
+}
+
+.estatistica {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    width: 700px;
+    height: 30px;
+    background-color: #009E3C;
+    border-radius: 7px;
+    color: #fff;
+    margin: 20px;
+}
+
+.estatistica strong{
+    color: #fff;
+}
+
+.cx-filtro{
+    width: 100px;
+    height: 25px;
+    border:  1px rgb(197, 196, 196) solid;
+    border-radius: 5px;
+    outline: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    list-style: none;
+}
+
+.cx-etiqueta{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+
 .titulo-origem {
     font-family: RIO2016;
     text-align: center;
