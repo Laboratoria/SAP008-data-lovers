@@ -112,7 +112,7 @@ export const computeStats = (data) => {
     return total;
   }, 0);
   return `
-          <h2 class="estatistica"><i>A porcentagem de atletas mulheres foi de: <strong>${(qtd * 100 / data.length).toFixed(2)}%</strong></i></h2>
+          <h2 class="estatistica"><i>A porcentagem de atletas mulheres medalhistas foi de: <strong>${(qtd * 100 / data.length).toFixed(2)}%</strong></i></h2>
         `
 };
 
