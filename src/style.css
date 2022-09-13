@@ -1,0 +1,111 @@
+body {
+  background-color: #f1bda6;
+  text-align: center;
+  font-family: open sans, sans-serif;
+  margin: 0px 0px 30px 0px;
+}
+
+.logo{
+  max-width: 90%;
+  margin-top: -12%;
+}
+
+.rostoRick {
+  width: 35%;
+  margin-top: -100px;
+}
+
+#boxText {
+  background: #d9d9d9;
+  margin: 0 auto;
+  max-width: 60%;
+  margin-top: -6%;
+  border-radius: 10px;
+  border: 3px solid #87cc22;
+}
+
+.rickAndMortyOlhos {
+  width: 40%;
+}
+
+#personagens {
+  padding: 0.5rem 2rem;
+  border: 8px double #87cc22;
+  border-radius: 10px;
+  margin-top: 80px;
+  background: #d9d9d9;
+  color: #87cc22;
+  font-size: 550%;
+  -webkit-text-stroke: 0.2rem black;
+  text-decoration: none;
+  font-family: 'MISFITS';
+}
+
+.logo2 {
+  max-width: 90%;
+  margin-top: -12%;
+  margin-bottom: -5%;
+}
+
+.btnRadio {
+  margin-top: -120px;
+  font-size: 20px;
+}
+
+.cardsContainer {
+  overflow-y: scroll;
+}
+
+.cards {
+  margin: 20px;
+  width: 27%;
+  background: #d9d9d9;
+  border-radius: 10px;
+  border: 0.7rem double #87cc22;
+}
+
+.cardsTemplate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardsImg {
+  max-width: 100%;
+}
+
+.cardText {
+  font-size: 130%;
+  display: contents;
+  font-family: cursive;
+}
+
+#divBuscar {
+  background-color: white;
+  border: solid #87cc22;
+  border-radius: 10px;
+  width: 30%;
+  height: 2rem;
+  margin-bottom: 5%;
+}
+
+.boxFiltro {
+  background-color: white;
+  border: solid #87cc22;
+  border-radius: 10px;
+  width: 23%;
+  height: 2rem;
+  font-size: 120%;
+}
+
+.btnEnd {
+  margin-bottom: 5%;
+  border: solid #87cc22;
+  border-radius: 10px;
+  font-size: 130%;
+}
+
+.calculo {
+  font-size: 150%;
+}

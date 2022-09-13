@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Personagens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="imagens/tentativa1.png" alt="logo escrito 'Rick and Morty'" class="logo2">
+  </header>
+
+  <input id="divBuscar" class="buscarPorNome" placeholder="🔎 Busque por nome..." wrap="off" />
+      <button type="reset" id="clear" class="clear">Limpar</button>
+    </div>
+
+  <form id="filtro">
+
+    <select class="boxFiltro" id="opcoesGenero">
+      <option value="" disabled="" selected="">Gender</option>
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+      <option value="unknown">Unknown</option>
+      <option value="Genderless">Genderless</option>
+    </select>
+
+    <select class="boxFiltro" id="opcoesEspecie">
+      <option value="Species" disabled="" selected="">Species</option>
+      <option value="Human">Human</option>
+      <option value="Alien">Alien</option>
+      <option value="Humanoid">Humanoid</option>
+      <option value="Robot">Robot</option>
+      <option value="Animal">Animal</option>
+      <option value="Cronenberg">Cronenberg</option>
+      <option value="Poopybutthole">Poopybutthole</option>
+      <option value="Mytholog">Mytholog</option>
+      <option value="Vampire">Vampire</option>
+    </select>
+
+    <select class="boxFiltro" name="Status" id="opcoesStatus">
+      <option value="" disabled="" selected="">Status</option>
+      <option value="Alive">Alive</option>
+      <option value="Dead">Dead</option>
+      <option value="unknown">Unknown</option>
+    </select>
+
+    <select class="boxFiltro" id="order">
+      <option value="" disabled="" selected="">Order</option>
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
+    </select>
+
+    <p class="calculo" id="exibirCalculo"></p>
+
+  </form>
+
+  <div>
+    <button type="reset" id="limpar" class="btnEnd">Limpar</button>
+  </div>
+
+  <div class="cardsTemplate" id="cardsContainer"></div>
+  
+  <nav>
+  <a href="index.html" id="personagens">Voltar</a>
+  </nav>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
