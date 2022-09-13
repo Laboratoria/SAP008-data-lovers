@@ -18,12 +18,14 @@ export const filterDirector = (films, criterio, valor) => {
   })
 }
 
-export const filterGender = (peoples, criterio, valor) => {
+people.forEach = (peoples, criterio, valor) => {
   console.log(peoples, criterio, valor)
   return peoples.filter(film => { 
     return film[criterio] === valor 
   })
 }
+
+//seila
 
 export const sortFilms = (films, order) => {
   if (order == "a-z") {

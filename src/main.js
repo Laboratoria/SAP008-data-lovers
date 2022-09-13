@@ -22,6 +22,7 @@ const ordenator = (e) =>{
     showFilmsCards(filterOrder)
   }
 }
+
 const order = document.getElementById("inputOrder")
 order.addEventListener ("change", ordenator)
 
