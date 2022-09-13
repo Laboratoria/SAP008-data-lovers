@@ -108,14 +108,13 @@ main {
   width: 60%;
 }
 
-
 .container-home p {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  
+
   width: 40%;
   text-align: justify;
 }
@@ -150,7 +149,8 @@ i.fa-brands.fa-github {
 }
 
 .image-lab {
-  width: 18vh;
+  width: 180px;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 2000px) {
@@ -162,10 +162,13 @@ i.fa-brands.fa-github {
     align-items: center;
     height: 90vh;
   }
-
+  .background-home {
+    width: 40%;
+  }
   .container-header {
     border-right: 2px solid #cdcdcd;
-    height: 85vh;
+    height: 86vh;
+    margin-top: -2px;
   }
 
   .menu {
@@ -245,14 +248,17 @@ i.fa-brands.fa-github {
     gap: inherit;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    height: 91vh;
+    height: 89vh;
   }
 
   .container-header {
     border-right: 2px solid #cdcdcd;
-    height: 94%;
+    height: 95%;
   }
 
+  .background-home {
+    width: 50%;
+  }
   .menu {
     width: 105px;
     position: relative;
@@ -303,7 +309,9 @@ i.fa-brands.fa-github {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-
+  .image-lab {
+    width: 160px;
+  }
   .footer {
     border-top: 2px solid #cdcdcd;
     padding: 20px 15px;
@@ -323,7 +331,7 @@ i.fa-brands.fa-github {
     gap: inherit;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    height: 93vh;
+    height: 90vh;
   }
 
   .container-header {
@@ -378,6 +386,8 @@ i.fa-brands.fa-github {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .text-about {
@@ -390,7 +400,7 @@ i.fa-brands.fa-github {
   .footer {
     width: 98vw;
     border-top: 2px solid #cdcdcd;
-    padding: 15px 10px;
+    padding: 15px 5px;
     display: flex;
     align-items: center;
     color: #000;
@@ -407,13 +417,13 @@ i.fa-brands.fa-github {
     gap: inherit;
     grid-template-columns: 110px 1fr;
     align-items: center;
-    height: 90vh;
+    height: 86vh;
   }
 
   .container-header {
     padding: 30px;
     border-right: 2px solid #cdcdcd;
-    height: 31rem;
+    height: 37rem;
   }
 
   .menu {
@@ -462,8 +472,6 @@ i.fa-brands.fa-github {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   .background-home {
@@ -489,7 +497,7 @@ i.fa-brands.fa-github {
     gap: inherit;
     grid-template-columns: 110px 1fr;
     align-items: center;
-    height: 92vh;
+    height: 86vh;
   }
 
   .container-header {
@@ -532,5 +540,99 @@ i.fa-brands.fa-github {
 
   .footer {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .container-header {
+    padding: 0px;
+    border-right: none;
+    height: 100%;
+  }
+  .menu {
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+  .image-logo {
+    position: relative;
+  }
+  .menu-group {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    justify-content: end;
+  }
+  .menu-group-item {
+    width: 90px;
+  }
+  .container-home {
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .title > img {
+    width: 30%;
+  }
+  .background-home {
+    width: 80%;
+  }
+  .container-home p {
+    width: 80%;
+  }
+  .image-lab {
+    width: 145px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+  }
+  .footer p {
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu {
+    width: 100%;
+    justify-content: center;
+  }
+  .menu-group {
+    margin-top: 9rem;
+    justify-content: flex-start;
+  }
+  .container-home {
+    margin-top: 40%;
+  }
+  .container-home p {
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-home {
+    margin-top: 50%;
+  }
+
+  .image-lab {
+    width: 130px;
   }
 }

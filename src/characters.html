@@ -49,65 +49,22 @@
       </header>
       <main>
         <section class="container-home">
-          <form class="filter" id="filter">
-            <label for="filter-gender" class="label">Gênero</label>
-            <select
-              class="dropdown-menu"
-              name="filter-choice"
-              id="filter-gender"
-            >
-              <option value="All">Todos</option>
-              <option value="Female">Feminino</option>
-              <option value="Male">Masculino</option>
-            </select>
-
-            <label for="filter-movie" class="label">Filme</label>
-            <select
-              class="dropdown-menu"
-              name="filter-choice"
-              id="filter-movie"
-            >
-              <option value="All">Todos</option>
-            </select>
-          </form>
-          <!-- <form id="container-form">
-            <div id="item-search"></div>
-            <div id="find-input">
-              <input
-                type="text"
-                class="search-control"
-                placeholder="Searches for character..."
-                id="search"
-              />
-            </div>
-            <div class="filter-select">
-              <label for="filter">Choose a filter:</label>
-              <select name="filter" id="filter">
-                <optgroup label="Order">
-                  <option value="ascending" class="title">A ➡ Z</option>
-                  <option value="descending" class="title">Z ➡ A</option>
-                </optgroup>
-
-                <optgroup label="Gender" id="filter-gender">
-                  <option value="All">All</option>
-                  <option id="gender-masculine" value="ascending" class="title">
-                    Masculine
-                  </option>
-                  <option id="gender-feminine" value="descending" class="title">
-                    Feminine
-                  </option>
-                </optgroup>
+          <form class="filter" id="container-form">
+            <div class="group-select">
+              <label for="filter-gender" class="label">Gênero</label>
+              <select name="filter-choice" id="filter-gender">
+                <option class="title" value="All">Todos</option>
+                <option class="title" value="Female">Feminino</option>
+                <option class="title" value="Male">Masculino</option>
               </select>
+            </div>
+            <div class="group-select">
               <label for="filter-movie" class="label">Filme</label>
-              <select
-                class="dropdown-menu"
-                name="filter-choice"
-                id="filter-movie"
-              >
-                <option value="All">Todos</option>
+              <select name="filter-movie" id="filter-movie">
+                <option value="All" class="title">Todos</option>
               </select>
             </div>
-          </form> -->
+          </form>
           <div class="container-characters">
             <div id="cards-characters"></div>
           </div>
