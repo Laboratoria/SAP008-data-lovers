@@ -3,13 +3,50 @@
 export const example = () => {
   return 'example';
 }; */
-export const filterFilms = (films) =>{
-
-
-  return ' ';
+export const filterFilms = (films, criterio, valor) => {
+  console.log(films, criterio, valor)
+  return films.filter(film => { 
+    return film[criterio] === valor 
+  })
 }
 
-export function printFilmsCards(data ) {
+
+export const filterDirector = (films, criterio, valor) => {
+  console.log(films, criterio, valor)
+  return films.filter(film => { 
+    return film[criterio] === valor 
+  })
+}
+
+people.forEach = (peoples, criterio, valor) => {
+  console.log(peoples, criterio, valor)
+  return peoples.filter(film => { 
+    return film[criterio] === valor 
+  })
+}
+
+//seila
+
+export const sortFilms = (films, order) => {
+  if (order == "a-z") {
+    return films.sort(function (a, b) {
+      if (a.title > b.title) {
+        return 1
+
+      }
+      if (b.title > a.title) {
+
+        return -1
+
+      }
+
+    })
+
+  }
+
+}
+
+export function printFilmsCards(data) {
   return data.map((item) =>
     `
   <div class="cards">
@@ -30,17 +67,22 @@ export function printFilmsCards(data ) {
      </div>
     </div>
     `
-    )
-  .join('');
+  )
+    .join('');
 
 }
 
-export function getCharacters (films){
-  let characters =[] 
-  for (let i = 0; i < films.length; i++ ){
-    characters=characters.concat(films[i].people)
+export function getCharacters(films) {
+  let characters = []
+  for (let i = 0; i < films.length; i++) {
+    characters = characters.concat(films[i].people)
 
-  } 
-  return characters 
+  }
+  return characters
+
 
 }
+
+
+
+
