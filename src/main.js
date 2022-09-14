@@ -1,4 +1,4 @@
-import { calculoAgregado, sortCharacters, filtrarGenero, filtrarEspecie, filtrarStatus} from './data.js';
+import { calculoAgregado, sortCharacters, filtrarGenero, filtrarEspecie, filtrarStatus } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const cardsContainer = document.querySelector("#cardsContainer")
@@ -69,3 +69,4 @@ const statusFiltrado = () => {
   gerarCards(resultadoStatus)
 };
 selectStatus.addEventListener("change", statusFiltrado);
+

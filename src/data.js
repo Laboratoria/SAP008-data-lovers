@@ -10,6 +10,10 @@ export const filtrarStatus = (array, status) => array.filter(personagem => {
     return personagem.status == status
 })
 
+export const filtrarName = (array, name) => array.filter(personagem => {
+    return personagem.name == name
+})
+
 export const sortCharacters = (characters, order) => {
     if (order == "A-Z") {
         return characters.sort((a, b) => {
