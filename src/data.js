@@ -1,4 +1,4 @@
-const medalIcon = [{ 'Gold': '🥇', 'Silver': '🥈', 'Bronze': '🥉' }]
+//const medalIcon = [{ 'Gold': '🥇', 'Silver': '🥈', 'Bronze': '🥉' }]
 
 /* ----------------FILTRO DAS MEDALHAS-------------------------- */
 export const medalFilter = (data, condition, subcondition) => {
@@ -25,7 +25,7 @@ export const medalFilter = (data, condition, subcondition) => {
     }
   }).join("")
   return medal;
-};
+}
 
 /* ----------------FILTRO DAS MODALIDADES-------------------------- */
 /* função para caregar os paises no select */
@@ -36,7 +36,7 @@ export function stringSport(data) {
           `
   });
   return [...new Set(item)].join(""); // ...new Set para remover itens repedidos do array
-};
+}
 
 /* função para filtrar por pais */
 export function filterSport(data, condition) {
@@ -63,7 +63,7 @@ export function filterSport(data, condition) {
     }
   }).join("")
   return cards;
-};
+}
 
 /* ----------------FILTRO DOS PAÍSES-------------------------- */
 /* função para caregar os paises no select */
@@ -74,17 +74,25 @@ export function stringTeam(data) {
           `
   });
   return [...new Set(item)].join(""); // ...new Set para remover itens repedidos do array
-};
+}
 
 /* função para filtrar por pais */
 export function filterTeam(data, condition) {
-  const cards = data.map((element) => {
-    if (condition == element.team) {
-      return `
+  const filter = data.filter((element) => element.team == condition);
+  return filter;
+}
+// filtered
+export function createCards(data) {
+  const cards = data.map(createCardElement).join("")
+  return cards;
+}
+
+function createCardElement(element) {
+  return `
             <div class="card-atleta" id="card-atleta">
                 <div class="card-efeito" >
                     <div class="card-frente">
-                      <p class="nome"><strong>Nome:</strong> ${element.name}</p>
+                        <p class="nome"><strong>Nome:</strong> ${element.name}</p>
                     </div>
                     <div class="card-verso">    
                         <div class="atributos-atleta">
@@ -98,9 +106,6 @@ export function filterTeam(data, condition) {
                 </div>
             </div>
         `
-    }
-  }).join("");
-  return cards;
 }
 
 /* ----------------CÁLCULO AGREGADO-------------------------- */
@@ -114,7 +119,7 @@ export const computeStats = (data) => {
   return `
           <h2 class="estatistica"><i>A porcentagem de atletas mulheres medalhistas foi de: <strong>${(qtd * 100 / data.length).toFixed(2)}%</strong></i></h2>
         `
-};
+}
 
 export const computeStatsTeam = (data) => {
   let qtd = data.reduce((total, valor) => {
@@ -126,19 +131,18 @@ export const computeStatsTeam = (data) => {
   return `
           <h2 class="estatistica"><i>A porcentagem de medalhas conquistadas pelo Brasil foi de: <strong>${(qtd * 100 / data.length).toFixed(2)}%</strong></i></h2>
         `
-};
+}
 
-/* ----------------BARRA DE PESQUISA-------------------------- */
+/* ----------------BARRA DE PESQUISA-------------------------- 
 export const userSearch = (data, condition) => {
   // ..
 }
+*/
 
 // esta função recebe três parâmetros. O primeiro, data, nos entrega os dados. O segundo, sortBy, diz respeito a qual das informações quer usar para ordenar. O terceiro, sortOrder, indica se quer ordenar de maneira crescente ou decrescente.
-export const sortData = (data, sortBy, sortOrder) => {
+export const sortData = (data) => { // add os 2 parametros depois
   const item = data.map((element) => {
-    if (sortBy == 'a-z') {
-      return (element.name)
-    }
+    return element.name;
   }).sort();
-  return console.log(item)
-};
+  return item;
+}

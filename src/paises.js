@@ -1,4 +1,4 @@
-import { medalFilter, filterTeam, stringTeam, computeStatsTeam } from './data.js';
+import { medalFilter, filterTeam, stringTeam, computeStatsTeam, createCards } from './data.js';
 import data from './data/athletes/athletes.js';
 
 const content = document.querySelector('#cards-main'); // impressão dos cards
@@ -10,20 +10,19 @@ const arrayAthletes = data.athletes
 
 function startPage() {
     teamSelector.innerHTML = stringTeam(arrayAthletes)
-    content.innerHTML = filterTeam(arrayAthletes, teamSelector.value)
-    console.log(teamSelector.value)
-    console.log('a página carregou')
+    const filtered = filterTeam(arrayAthletes, teamSelector.value);
+    content.innerHTML = createCards(filtered);
 
     statistic.innerHTML = (computeStatsTeam(arrayAthletes))
 }
 
 startPage()
 
-teamSelector.onchange = (event) => {
-    content.innerHTML = filterTeam(arrayAthletes, teamSelector.value)
-    console.log(teamSelector.value)
+teamSelector.onchange = () => {
+    const filtered = filterTeam(arrayAthletes, teamSelector.value);
+    content.innerHTML = createCards(filtered);
 }
 
-medalSelector.onchange = (event) => {
+medalSelector.onchange = () => {
     content.innerHTML = medalFilter(arrayAthletes, medalSelector.value, teamSelector.value);
 }
