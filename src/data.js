@@ -1,33 +1,13 @@
 //const medalIcon = [{ 'Gold': '🥇', 'Silver': '🥈', 'Bronze': '🥉' }]
 
 /* ----------------FILTRO DAS MEDALHAS-------------------------- */
-export const medalFilter = (data, condition, subcondition) => {
-  const medal = data.map((element) => {
-    if (element.medal == condition && (element.sport == subcondition || element.team == subcondition)) {
-      return `
-            <div class="card-atleta" id="card-atleta">
-                <div class="card-efeito" >
-                    <div class="card-frente">
-                      <p class="nome"><strong>Nome:</strong> ${element.name}</p>
-                    </div>
-                    <div class="card-verso">    
-                        <div class="atributos-atleta">
-                            <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
-                            <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
-                            <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
-                            <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `
-    }
-  }).join("")
-  return medal;
+
+export function filterMedal(data, key, value) {
+  const filter = data.filter((element) => element[key] === value);
+  return filter;
 }
 
-/* ----------------FILTRO DAS MODALIDADES-------------------------- */
+/* ----------------SELECT DAS MODALIDADES----------------------- */
 /* função para caregar os paises no select */
 export function stringSport(data) {
   const item = data.map((element) => {
@@ -35,37 +15,12 @@ export function stringSport(data) {
             <option value="${element.sport}">${element.sport}</option>
           `
   });
-  return [...new Set(item)].join(""); // ...new Set para remover itens repedidos do array
+  return item.join(""); // ...new Set para remover itens repedidos do array
 }
 
-/* função para filtrar por pais */
-export function filterSport(data, condition) {
-  const cards = data.map((element) => {
-    if (condition == element.sport) {
-      return `
-            <div class="card-atleta" id="card-atleta">
-                <div class="card-efeito" >
-                    <div class="card-frente">
-                      <p class="nome"><strong>Nome:</strong> ${element.name}</p>
-                    </div>
-                    <div class="card-verso">    
-                        <div class="atributos-atleta">
-                            <p class="genero"><strong>Gênero:</strong> ${element.gender}</p>
-                            <p class="esporte"><strong>Modalidade:</strong> ${element.sport}</p>
-                            <p class="pais"><strong>País:</strong> ${element.team}</p>
-                            <p class="medalha"><strong>Medalha:</strong> ${element.medal}</p>
-                            <p class="evento"><strong>Categoria:</strong> ${element.event}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `
-    }
-  }).join("")
-  return cards;
-}
+// [...new Set(item)]
 
-/* ----------------FILTRO DOS PAÍSES-------------------------- */
+/* ----------------SELECT DOS PAÍSES-------------------------- */
 /* função para caregar os paises no select */
 export function stringTeam(data) {
   const item = data.map((element) => {
@@ -73,15 +28,16 @@ export function stringTeam(data) {
             <option value="${element.team}">${element.team}</option>
           `
   });
-  return [...new Set(item)].join(""); // ...new Set para remover itens repedidos do array
+  return item.join(""); // ...new Set para remover itens repedidos do array
 }
 
-/* função para filtrar por pais */
-export function filterTeam(data, condition) {
-  const filter = data.filter((element) => element.team == condition);
+/* ----------------FILTRO DOS DADOS-------------------------- */
+export function filterData(data, key, value) {
+  const filter = data.filter((element) => element[key] === value);
   return filter;
 }
-// filtered
+
+/* ----------------GERAÇÃO DOS CARDS-------------------------- */
 export function createCards(data) {
   const cards = data.map(createCardElement).join("")
   return cards;
@@ -140,9 +96,14 @@ export const userSearch = (data, condition) => {
 */
 
 // esta função recebe três parâmetros. O primeiro, data, nos entrega os dados. O segundo, sortBy, diz respeito a qual das informações quer usar para ordenar. O terceiro, sortOrder, indica se quer ordenar de maneira crescente ou decrescente.
-export const sortData = (data) => { // add os 2 parametros depois
-  const item = data.map((element) => {
-    return element.name;
-  }).sort();
-  return item;
+export const ascendingOrder = (data) => {
+  const order = data.sort(function (a, b) {
+    if (a.name > b.name) {
+      return 1;
+    }
+    else {
+      return -1;
+    }
+  })
+  return order;
 }
