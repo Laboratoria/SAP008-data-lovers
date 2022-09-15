@@ -1,4 +1,4 @@
-import { filterData } from '../src/data.js';
+import { filterData, ascendingOrder, descendingOrder } from '../src/data.js';
 
 const arrayTest = [
   {
@@ -18,14 +18,14 @@ const arrayTest = [
   {
     "name": "Luc Abalo",
     "gender": "M",
-    "sport": "Handball",
+    "sport": "Taekwondo",
     "team": "France",
     "medal": "Silver"
   },
   {
     "name": "Saeid Morad Abdevali",
     "gender": "M",
-    "sport": "Wrestling",
+    "sport": "Taekwondo",
     "team": "Iran",
     "medal": "Gold"
   }
@@ -43,5 +43,34 @@ describe('filterData', () => {
       arrayTest[1],
       arrayTest[3]
     ]);
+  })
+  it('filtrar a modalidade do atleta', () => {
+    const modalidadeEsperada = filterData(arrayTest, "sport", "Taekwondo")
+    expect(modalidadeEsperada.length).toEqual(3);
+    expect(modalidadeEsperada).toEqual([
+      arrayTest[1],
+      arrayTest[2],
+      arrayTest[3]
+    ]);
+  })
+  it('filtrar a medalha do atleta', () => {
+    const medalhaEsperada = filterData(arrayTest, "medal", "Bronze")
+    expect(medalhaEsperada.length).toEqual(2);
+    expect(medalhaEsperada).toEqual([
+      arrayTest[0],
+      arrayTest[1]
+    ]);
+  })
+});
+
+describe('ascendingOrder', () => {
+  it('é uma função', () => {
+    expect(typeof ascendingOrder).toBe('function');
+  });
+
+  it('ordenar de z-a', () => {
+    const ordemEsperada = descendingOrder(arrayTest, 'Z-A');
+    expect(ordemEsperada.length).toEqual(4);
+    expect(ordemEsperada).toEqual([arrayTest[3], arrayTest[1], arrayTest[2], arrayTest[0]]);
   })
 });

@@ -107,3 +107,15 @@ export const ascendingOrder = (data) => {
   })
   return order;
 }
+
+export const descendingOrder = (data) => {
+  const order = data.sort(function (a, b) {
+    if (a.name > b.name) {
+      return -1;
+    }
+    else {
+      return 1;
+    }
+  })
+  return order;
+}

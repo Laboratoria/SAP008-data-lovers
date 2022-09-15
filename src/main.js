@@ -1,12 +1,12 @@
-import { stringSport, computeStats, filterData, filterMedal, createCards, ascendingOrder } from './data.js';
+import { stringSport, computeStats, filterData, filterMedal, createCards, ascendingOrder, descendingOrder } from './data.js';
 import data from './data/athletes/athletes.js';
 
 const content = document.querySelector('#cards-main'); // impressão dos cards
-const inptSearch = document.querySelector('#barra-pesquisar');
 const medalSelector = document.querySelector('#medalhas'); // imputs de medalha
 const sportSelector = document.querySelector('#modalidades');
 const orderSelector = document.querySelector('#ordenacao');
 const statistic = document.querySelector('#calculo-agregado');
+const inptSearch = document.querySelector('#barra-pesquisar');
 
 const arrayAthletes = data.athletes;
 
@@ -33,13 +33,13 @@ medalSelector.onchange = () => {
 
 orderSelector.onchange = () => {
     const filtered = filterData(arrayAthletes, "sport", sportSelector.value);
-    const filteredMedal = filterMedal(filtered, "medal", medalSelector.value);
     if (orderSelector.value == 'a-z') {
-        const filterAZ = ascendingOrder(filteredMedal);
+        const filterAZ = ascendingOrder(filtered);
         content.innerHTML = createCards(filterAZ);
     }
     else if (orderSelector.value == 'z-a') {
-        console.log(orderSelector.value)
+        const filterZA = descendingOrder(filtered);
+        content.innerHTML = createCards(filterZA);
     }
 }
 
