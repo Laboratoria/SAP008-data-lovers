@@ -62,7 +62,7 @@ const selectStatus = document.querySelector("#opcoesStatus");
 const statusFiltrado = () => {
   const status = selectStatus.value
   const resultadoStatus = filtrarStatus(characters, status)
-  const calculo = calculoAgregado(characters.length, resultadoStatus.length );
+  const calculo = calculoAgregado(characters.length, resultadoStatus.length);
   document.getElementById("exibirCalculo").innerHTML =
     "Essa categoria representa " + calculo + "% dos personagens"
 
