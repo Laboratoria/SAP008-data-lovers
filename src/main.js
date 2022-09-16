@@ -1,4 +1,4 @@
-import { sortFilms, printFilmsCards, getCharacters, filterFilms, filterDirector} from './data.js';
+import { sortFilms, printFilmsCards, getCharacters, filterByCriteriaValue } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
@@ -28,7 +28,7 @@ order.addEventListener ("change", ordenator)
 
 const filterByProducer = (e) => {
   const producerSelec = e.target.value;
-  const filter = filterFilms (data.films, "producer", producerSelec )
+  const filter = filterByCriteriaValue (data.films, "producer", producerSelec )
   showFilmsCards(filter)
   
 
@@ -42,7 +42,7 @@ producerFilter.addEventListener ("change", filterByProducer)
 
 const filterByDirector = (e) => {
   const directorFilterSelec = e.target.value;
-  const filter = filterDirector (data.films,"director", directorFilterSelec )
+  const filter = filterByCriteriaValue (data.films,"director", directorFilterSelec )
   showFilmsCards(filter)
   
 
