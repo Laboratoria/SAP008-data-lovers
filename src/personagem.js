@@ -1,13 +1,19 @@
-//import { dataShowCharacters }from './data.js';
+import { filterByCriteriaValue } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
-export function dataShowCharacters(films){
-    let characters =[] 
+function dataCharacters (films) {
+  let characters =[] 
     for (let i = 0; i < films.length; i++ ){
       characters=characters.concat(films[i].people)
-  
-    }
+    } 
+    return characters
+}
+
+export function dataShowCharacters(films){
+    let characters = dataCharacters(films) 
+    
+
     document.getElementById ("cardsPersonagens").innerHTML=characters.map(character=>  `
     <div class="cardsPersonagens">
       <div class="flipPersonagens">
@@ -33,19 +39,29 @@ export function dataShowCharacters(films){
   }
 
 
-  //join('');
-
+  
   dataShowCharacters(data.films)
 
 
-  const filterByGenero = (e) => {
-    const filterGêneroSelec = e.target.value;
-    const genderfilter = filterByGenero (data.films,"gender", filterGêneroSelec )
-    dataShowCharacters(genderfilter)
+  
+
+  const filtroGenero = (e) => {
+    let characters = dataCharacters(data.films) 
+    const genderFilterSelec = e.target.value;
+    const filter = filterByCriteriaValue (characters,"gender", genderFilterSelec )
+    console.log(genderFilterSelec)
     
+    
+    
+    console.log(filter)
   
   }
-  const genderFilter = document.getElementById("inputGenero")
-  genderFilter.addEventListener ("change", filterByGenero)
+  const inputElement = document.getElementById("inputGenero")
+  inputElement.addEventListener ("change", filtroGenero)
+
+
+
+ 
+  
   
 

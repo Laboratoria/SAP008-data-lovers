@@ -3,52 +3,48 @@
 export const example = () => {
   return 'example';
 }; */
-export const filterFilms = (films, criterio, valor) => {
+export const filterByCriteriaValue = (list, criteria, value) => {
+  
+  return list.filter(obj => {
+    return obj[criteria] === value
+  })
+}
+
+
+
+
+
+export const filterPersonagens = (films, criterio, valor) => {
   console.log(films, criterio, valor)
-  return films.filter(film => { 
-    return film[criterio] === valor 
+  return films.filter(people => {
+    return people[criterio] === valor
   })
 }
 
 
-export const filterDirector = (films, criterio, valor) => {
-  console.log(films, criterio, valor)
-  return films.filter(film => { 
-    return film[criterio] === valor 
-  })
-}
 
-people.forEach = (peoples, criterio, valor) => {
-  console.log(peoples, criterio, valor)
-  return peoples.filter(film => { 
-    return film[criterio] === valor 
-  })
-}
+  export const sortFilms = (films, order) => {
+    if (order == "a-z") {
+      return films.sort(function (a, b) {
+        if (a.title > b.title) {
+          return 1
 
-//seila
+        }
+        if (b.title > a.title) {
 
-export const sortFilms = (films, order) => {
-  if (order == "a-z") {
-    return films.sort(function (a, b) {
-      if (a.title > b.title) {
-        return 1
+          return -1
 
-      }
-      if (b.title > a.title) {
+        }
 
-        return -1
+      })
 
-      }
-
-    })
+    }
 
   }
 
-}
-
-export function printFilmsCards(data) {
-  return data.map((item) =>
-    `
+  export function printFilmsCards(data) {
+    return data.map((item) =>
+      `
   <div class="cards">
     <div class="cardFlip">
       <div class="front">
@@ -67,21 +63,21 @@ export function printFilmsCards(data) {
      </div>
     </div>
     `
-  )
-    .join('');
-
-}
-
-export function getCharacters(films) {
-  let characters = []
-  for (let i = 0; i < films.length; i++) {
-    characters = characters.concat(films[i].people)
+    )
+      .join('');
 
   }
-  return characters
+
+  export function getCharacters(films) {
+    let characters = []
+    for (let i = 0; i < films.length; i++) {
+      characters = characters.concat(films[i].people)
+
+    }
+    return characters
 
 
-}
+  }
 
 
 
