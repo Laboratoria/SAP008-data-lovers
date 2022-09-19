@@ -50,107 +50,72 @@ body {
   
 }
 
-/*.logo{
-  max-width: 90%;
-  margin-top: -12%;
+@media (min-width: 769px) and (max-width: 1279px) {
+  #personagens {
+    padding: 1px 2px;
+    border: 6px outset #87cc22;
+    border-radius: 10px;
+    margin-top: 80px;
+    background: #d9d9d9;
+    color: #89d72c;
+    font-size: 450%;
+    -webkit-text-stroke: 3px black;
+    text-decoration: none;
+    font-family: 'fontePersonagens';
+    margin-right: 3%;
+  }
+
+  #boxText {
+    background: #d9d9d9;
+    margin: 0 auto;
+    max-width: 50%;
+    margin-top: -6%;
+    border-radius: 10px;
+    border: 6px groove #87cc22;
+    font-size: 130%;
+  }
+
+  .rostoRick {
+    width: 35%;
+    margin-top: -190px;
+  }
+
+  .rickAndMortyOlhos {
+    width: 60%;
+  }
 }
 
-.rostoRick {
-  width: 35%;
-  margin-top: -100px;
-}
+@media (min-width: 1280px) {
+  #personagens {
+    padding: 1px 2px;
+    border: 6px outset #87cc22;
+    border-radius: 10px;
+    margin-top: 80px;
+    background: #d9d9d9;
+    color: #89d72c;
+    font-size: 700%;
+    -webkit-text-stroke: 4px black;
+    text-decoration: none;
+    font-family: 'fontePersonagens';
+    margin-right: 3%;
+  }
 
-#boxText {
-  background: #d9d9d9;
-  margin: 0 auto;
-  max-width: 60%;
-  margin-top: -6%;
-  border-radius: 10px;
-  border: 3px solid #87cc22;
-}
+  #boxText {
+    background: #d9d9d9;
+    margin: 0 auto;
+    max-width: 50%;
+    margin-top: -6%;
+    border-radius: 10px;
+    border: 10px groove #87cc22;
+    font-size: 180%;
+  }
 
-.rickAndMortyOlhos {
-  width: 40%;
-}
+  .rostoRick {
+    width: 35%;
+    margin-top: -190px;
+  }
 
-#personagens {
-  padding: 0.5rem 2rem;
-  border: 8px double #87cc22;
-  border-radius: 10px;
-  margin-top: 80px;
-  background: #d9d9d9;
-  color: #87cc22;
-  font-size: 550%;
-  -webkit-text-stroke: 0.2rem black;
-  text-decoration: none;
-  font-family: 'MISFITS';
+  .rickAndMortyOlhos {
+    width: 55%;
+  }
 }
-
-/*.logo2 {
-  max-width: 90%;
-  margin-top: -12%;
-  margin-bottom: -5%;
-}
-
-.btnRadio {
-  margin-top: -120px;
-  font-size: 20px;
-}
-
-.cardsContainer {
-  overflow-y: scroll;
-}
-
-.cards {
-  margin: 20px;
-  width: 27%;
-  background: #d9d9d9;
-  border-radius: 10px;
-  border: 0.7rem double #87cc22;
-}
-
-.cardsTemplate {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cardsImg {
-  max-width: 100%;
-}
-
-.cardText {
-  font-size: 130%;
-  display: contents;
-  font-family: cursive;
-}
-
-#divBuscar {
-  background-color: white;
-  border: solid #87cc22;
-  border-radius: 10px;
-  width: 30%;
-  height: 2rem;
-  margin-bottom: 5%;
-}
-
-.boxFiltro {
-  background-color: white;
-  border: solid #87cc22;
-  border-radius: 10px;
-  width: 23%;
-  height: 2rem;
-  font-size: 120%;
-}
-
-.btnEnd {
-  margin-bottom: 5%;
-  border: solid #87cc22;
-  border-radius: 10px;
-  font-size: 130%;
-}
-
-.calculo {
-  font-size: 150%;
-}*/
