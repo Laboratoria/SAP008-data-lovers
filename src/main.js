@@ -1,4 +1,4 @@
-import { calculoAgregado, sortCharacters, filtrarGenero, filtrarEspecie, filtrarStatus } from './data.js';
+import { calculoAgregado, ordenarPersonagens, filtrarGenero, filtrarEspecie, filtrarStatus } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const cardsContainer = document.querySelector("#cardsContainer")
@@ -29,7 +29,7 @@ gerarCards(characters);
 const selectOrderAZ = document.querySelector("#order");
 const printAZOrdered = () => {
   const orderAZ = selectOrderAZ.value;
-  const resultAZ = sortCharacters(characters, orderAZ);
+  const resultAZ = ordenarPersonagens(characters, orderAZ);
   gerarCards(resultAZ)
 }
 selectOrderAZ.addEventListener("change", printAZOrdered);
@@ -38,7 +38,7 @@ const selectGenero = document.querySelector("#opcoesGenero");
 const generoFiltrado = () => {
   const gender = selectGenero.value
   const resultadoGenero = filtrarGenero(characters, gender)
-  const calculo = calculoAgregado(characters.length, resultadoGenero.length );
+  const calculo = calculoAgregado(characters.length, resultadoGenero.length);
   document.getElementById("exibirCalculo").innerHTML =
     "Essa categoria representa " + calculo + "% dos personagens"
 
@@ -49,8 +49,8 @@ selectGenero.addEventListener("change", generoFiltrado);
 const selectEspecie = document.querySelector("#opcoesEspecie");
 const especieFiltrada = () => {
   const species = selectEspecie.value
-  const resultadoEspecie = filtrarEspecie(characters, species) 
-  const calculo = calculoAgregado(characters.length, resultadoEspecie.length );
+  const resultadoEspecie = filtrarEspecie(characters, species)
+  const calculo = calculoAgregado(characters.length, resultadoEspecie.length);
   document.getElementById("exibirCalculo").innerHTML =
     "Essa categoria representa " + calculo + "% dos personagens"
 

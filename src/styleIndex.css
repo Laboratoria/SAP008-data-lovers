@@ -5,23 +5,25 @@ body {
   margin: 0px 0px 30px 0px;
 }
 
-@media (min-width: 0px), (max-width: 480px) {
- 
+@media (min-width: 0px),
+(max-width: 480px) {
+
   @font-face {
     font-family: fontePersonagens;
     src: url(./Fontes/MISFITS_.TTF);
   }
-  .logo{
+
+  .logo {
     max-width: 100%;
     margin-top: -12%;
     margin-bottom: 15%;
   }
-  
+
   .rostoRick {
     width: 35%;
     margin-top: -100px;
   }
-  
+
   #boxText {
     background: #d9d9d9;
     margin: 0 auto;
@@ -30,11 +32,11 @@ body {
     border-radius: 10px;
     border: 6px groove #87cc22;
   }
-  
+
   .rickAndMortyOlhos {
     width: 70%;
   }
-  
+
   #personagens {
     padding: 1px 2px;
     border: 6px outset #87cc22;
@@ -47,7 +49,7 @@ body {
     text-decoration: none;
     font-family: 'fontePersonagens';
   }
-  
+
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {

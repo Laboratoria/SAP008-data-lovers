@@ -1,4 +1,4 @@
-import { filtrarGenero, filtrarStatus, filtrarEspecie, sortCharacters, calculoAgregado } from '../src/data.js';
+import { filtrarGenero, filtrarStatus, filtrarEspecie, ordenarPersonagens, calculoAgregado } from '../src/data.js';
 
 const filterGender = [{
   name: "Rick", 
@@ -55,14 +55,14 @@ const personagens = [{
 }
 ]
 
-describe('sortCharacters', () => {
+describe('ordenarPersonagens', () => {
 
   it('é uma função', () => {
-    expect(typeof sortCharacters).toBe('function');
+    expect(typeof ordenarPersonagens).toBe('function');
   });
 
   it('deve retornar "Morty", "Ricky", "Sam" para "Ricky", "Sam", "Morty" com order=="A-Z"', () => {
-    expect(sortCharacters(personagens, "A-Z")).toStrictEqual([{
+    expect(ordenarPersonagens(personagens, "A-Z")).toStrictEqual([{
       name: "Morty"
     }, {
       name: "Ricky"
@@ -83,14 +83,14 @@ const personagens2 = [{
 }
 ]
 
-describe('sortCharacters', () => {
+describe('ordenarPersonagens', () => {
 
   it('é uma função', () => {
-    expect(typeof sortCharacters).toBe('function');
+    expect(typeof ordenarPersonagens).toBe('function');
   });
 
   it('deve retornar "Sam", "Ricky", "Morty" para "Ricky", "Sam", "Morty" com order=="Z-A"', () => {
-    expect(sortCharacters(personagens2, "Z-A")).toStrictEqual([{
+    expect(ordenarPersonagens(personagens2, "Z-A")).toStrictEqual([{
       name: "Sam"
     }, {
       name: "Ricky"
