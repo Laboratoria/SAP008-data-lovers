@@ -1,0 +1,161 @@
+@media (min-width: 0px), (max-width: 768px) {
+
+body {
+  background-color: #f1bda6;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.logo2 {
+    max-width: 100%;
+    margin-top: -12%;
+  }
+  
+  .btnRadio {
+    margin-top: -120px;
+    font-size: 20px;
+  }
+  
+  .cardsContainer {
+    overflow-y: scroll;
+  }
+  
+  .cards {
+    margin: 10px;
+    width: 42%;
+    background: #d9d9d9;
+    border-radius: 10px;
+    border: 8px outset #87cc22;
+  }
+  
+  .cardsTemplate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+  
+  .cardsImg {
+    max-width: 100%;
+  }
+  
+  .cardText {
+    font-size: 130%;
+    display: contents;
+  }
+  
+  
+  .boxFiltro {
+    background-color: white;
+    border: outset #87cc22;
+    border-radius: 10px;
+    width: 23%;
+    height: 2rem;
+    font-size: 110%;
+  }
+  
+  .btnEnd {
+    margin-bottom: 5%;
+    border: outset #87cc22;
+    border-radius: 10px;
+    font-size: 120%;
+    background: white;
+  }
+  
+  .calculo {
+    font-size: 150%;
+  }
+
+.btnVoltar{
+        padding: 1px 2px;
+        border: 6px outset #87cc22;
+        border-radius: 10px;
+        background: white;
+        color: #89d72c;
+        font-size: 350%;
+        -webkit-text-stroke: 2.5px black;
+        text-decoration: none;
+      }
+};
+
+@media (min-width: 769px) and (max-width: 1279px) {
+
+    body {
+        background-color: #f1bda6;
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+      }
+      
+      .logo2 {
+          max-width: 100%;
+          margin-top: -12%;
+        }
+        
+        .btnRadio {
+          margin-top: -120px;
+          font-size: 20px;
+        }
+        
+        .cardsContainer {
+          overflow-y: scroll;
+        }
+        
+        .cards {
+          margin: 10px;
+          width: 100%;
+          background: #d9d9d9;
+          border-radius: 10px;
+          border: 8px outset #87cc22;
+        }
+        
+        .cardsTemplate {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: 10%;
+        }
+        
+        .cardsImg {
+          max-width: 100%;
+        }
+        
+        .cardText {
+          font-size: 130%;
+          display: contents;
+        }
+        
+        
+        .boxFiltro {
+          background-color: white;
+          border: outset #87cc22;
+          border-radius: 10px;
+          width: 23%;
+          height: 2rem;
+          font-size: 110%;
+        }
+        
+        .btnEnd {
+          margin-bottom: 5%;
+          border: outset #87cc22;
+          border-radius: 10px;
+          font-size: 120%;
+          background: white;
+        }
+        
+        .calculo {
+          font-size: 150%;
+        }
+      
+      .btnVoltar{
+              padding: 1px 2px;
+              border: 6px outset #87cc22;
+              border-radius: 10px;
+              background: white;
+              color: #89d72c;
+              font-size: 350%;
+              -webkit-text-stroke: 2.5px black;
+              text-decoration: none;
+            }
+        }

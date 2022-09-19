@@ -5,7 +5,52 @@ body {
   margin: 0px 0px 30px 0px;
 }
 
-.logo{
+@media (min-width: 0px), (max-width: 480px) {
+ 
+  @font-face {
+    font-family: fontePersonagens;
+    src: url(./Fontes/MISFITS_.TTF);
+  }
+  .logo{
+    max-width: 100%;
+    margin-top: -12%;
+    margin-bottom: 15%;
+  }
+  
+  .rostoRick {
+    width: 35%;
+    margin-top: -100px;
+  }
+  
+  #boxText {
+    background: #d9d9d9;
+    margin: 0 auto;
+    max-width: 70%;
+    margin-top: -6%;
+    border-radius: 10px;
+    border: 6px groove #87cc22;
+  }
+  
+  .rickAndMortyOlhos {
+    width: 70%;
+  }
+  
+  #personagens {
+    padding: 1px 2px;
+    border: 6px outset #87cc22;
+    border-radius: 10px;
+    margin-top: 80px;
+    background: #d9d9d9;
+    color: #89d72c;
+    font-size: 350%;
+    -webkit-text-stroke: 2.5px black;
+    text-decoration: none;
+    font-family: 'fontePersonagens';
+  }
+  
+}
+
+/*.logo{
   max-width: 90%;
   margin-top: -12%;
 }
@@ -41,7 +86,7 @@ body {
   font-family: 'MISFITS';
 }
 
-.logo2 {
+/*.logo2 {
   max-width: 90%;
   margin-top: -12%;
   margin-bottom: -5%;
@@ -108,4 +153,4 @@ body {
 
 .calculo {
   font-size: 150%;
-}
+}*/

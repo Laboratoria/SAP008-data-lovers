@@ -69,4 +69,3 @@ const statusFiltrado = () => {
   gerarCards(resultadoStatus)
 };
 selectStatus.addEventListener("change", statusFiltrado);
-

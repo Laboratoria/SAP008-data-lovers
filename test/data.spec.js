@@ -12,7 +12,7 @@ const filterGender = [{
 ];
 
 describe('Testando filtrarGenero', () => {
-  it('is a function', () => {
+  it('é uma função', () => {
     expect(typeof filtrarGenero).toBe('function');
   });
 
@@ -35,7 +35,7 @@ const filterStatus = [{
 ];
 
 describe('Testando filtrarStatus', () => {
-  it('is a function', () => {
+  it('é uma função', () => {
     expect(typeof filtrarStatus).toBe('function');
   });
 
@@ -57,11 +57,11 @@ const personagens = [{
 
 describe('sortCharacters', () => {
 
-  it('should be a function', () => {
+  it('é uma função', () => {
     expect(typeof sortCharacters).toBe('function');
   });
 
-  it('should return "Morty", "Ricky", "Sam" for "Ricky", "Sam", "Morty" with order=="A-Z"', () => {
+  it('deve retornar "Morty", "Ricky", "Sam" para "Ricky", "Sam", "Morty" com order=="A-Z"', () => {
     expect(sortCharacters(personagens, "A-Z")).toStrictEqual([{
       name: "Morty"
     }, {
@@ -85,11 +85,11 @@ const personagens2 = [{
 
 describe('sortCharacters', () => {
 
-  it('should be a function', () => {
+  it('é uma função', () => {
     expect(typeof sortCharacters).toBe('function');
   });
 
-  it('should return "Sam", "Ricky", "Morty" for "Ricky", "Sam", "Morty" with order=="Z-A"', () => {
+  it('deve retornar "Sam", "Ricky", "Morty" para "Ricky", "Sam", "Morty" com order=="Z-A"', () => {
     expect(sortCharacters(personagens2, "Z-A")).toStrictEqual([{
       name: "Sam"
     }, {
@@ -103,7 +103,7 @@ describe('sortCharacters', () => {
 });
 
 describe('calcular a porcentagem', () => {
-  it('is a function', () => {
+  it('é uma função', () => {
     expect(typeof calculoAgregado).toBe('function');
   });
   it('deve calcular uma porcentagem por um valor total e um parcial', () => {
@@ -129,7 +129,7 @@ const filterSpecies = [{
 ];
 
 describe('Testando filtrarEspecie', () => {
-  it('is a function', () => {
+  it('é uma função', () => {
     expect(typeof filtrarEspecie).toBe('function');
   });
 
