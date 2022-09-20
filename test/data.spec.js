@@ -1,23 +1,124 @@
-import { example, anotherExample } from '../src/data.js';
+import { searchCharacters, filterCharacters, sortCharacters, getPercentage } from '../src/data.js';
 
+const newArray = [
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
+  },
+  {
+    "id": 2,
+    "name": "Abadango Cluster Princess",
+    "status": "Alive",
+    "species": "Alien",
+    "gender": "Female",
+  },
+  {
+    "id": 3,
+    "name": "Summer Smith",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Female",
+  },
 
-describe('example', () => {
+]
+
+const names = [
+  { "name": "Rick Sanchez" },
+  { "name": "Abadango Cluster Princess" },
+  { "name": "Summer Smith" },
+
+]
+
+//--Teste buscar por nome--//
+
+describe('functionSearch', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof searchCharacters).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('Deverá buscar por um nome', () => {
+    const expected = searchCharacters(names, 'aranha')
+    expect(expected).toEqual([])
+  });
+  it('Deverá buscar por um nome', () => {
+    const expected = searchCharacters(names, 'Rick')
+    expect(expected).toEqual([{ "name": "Rick Sanchez" }])
   });
 });
 
+//--Teste buscar por status--//
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe('filterStatus', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof filterCharacters).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('Deverá filtrar pelo status Alive', () => {
+    const aliveExpected = "Alive"
+    const expected = filterCharacters(newArray, 'status', aliveExpected);
+    expect(expected.length).toEqual(3);
+    expect(expected[0].status).toEqual(aliveExpected);
+    expect(expected[1].status).toEqual(aliveExpected);
   });
 });
+
+//--Teste buscar por espécie--//
+
+describe('filterSpecies', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof filterCharacters).toBe('function');
+  });
+
+  it('Deverá filtrar pela espécie Humana', () => {
+    const humanExpected = "Human"
+    const expected = filterCharacters(newArray, 'species', humanExpected);
+    expect(expected.length).toEqual(2);
+    expect(expected[0].species).toEqual(humanExpected);
+    expect(expected[1].species).toEqual(humanExpected);
+  });
+});
+
+//--Teste buscar por gênero--//
+
+describe('filterGender', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof filterCharacters).toBe('function');
+  });
+
+  it('Deverá filtrar por Gênero', () => {
+    const femaleExpected = "Female"
+    const expected = filterCharacters(newArray, 'gender', femaleExpected);
+    expect(expected.length).toEqual(2);
+    expect(expected[1].gender).toEqual(femaleExpected);
+    expect(expected[0].gender).toEqual(femaleExpected);
+  });
+});
+
+//--Teste ordenação alfabética--//
+
+describe('sortOrder', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof sortCharacters).toBe('function');
+  });
+
+  it('Deverá retornar em ordem crescente', () => {
+    const namesExpected = [names[1], names[0], names[2]];
+    expect(sortCharacters(names, "crescente")).toEqual( namesExpected );
+  });
+  it('Deverá retornar em ordem decrescente', () => {
+    const namesDecrescente = [names[2], names[1], names[0]];
+    expect(sortCharacters(names, "decrescente")).toEqual(namesDecrescente);
+  });
+});
+
+//--Teste cálculo porcentagem--//
+
+describe('calPercentage', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof getPercentage).toBe('function');
+  });
+
+  
