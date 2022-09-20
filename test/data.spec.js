@@ -113,3 +113,6 @@ describe('sortOrdem', () => {
     expect(sortCharacters(nomes, "decrescente")).toEqual(namesDecrescente);
   });
 });
+
+
+ 
