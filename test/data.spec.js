@@ -1,6 +1,6 @@
-import { searchCharacters, filterCharacters, sortCharacters } from '../src/data.js';
+import { searchCharacters, filterCharacters, sortCharacters, getPercentage } from '../src/data.js';
 
-const dados = [
+const newArray = [
   {
     "id": 1,
     "name": "Rick Sanchez",
@@ -25,94 +25,100 @@ const dados = [
 
 ]
 
-const nomes = [
+const names = [
   { "name": "Rick Sanchez" },
   { "name": "Abadango Cluster Princess" },
   { "name": "Summer Smith" },
 
 ]
 
-//TESTE BUSCAR POR NOME//          
+//--Teste buscar por nome--//
 
-describe('funcaoSearch', () => {
+describe('functionSearch', () => {
   it('is a function', () => {
     expect(typeof searchCharacters).toBe('function');
   });
 
   it('Deverá buscar por um nome', () => {
-    const expected = searchCharacters(nomes, 'aranha')
+    const expected = searchCharacters(names, 'aranha')
     expect(expected).toEqual([])
   });
   it('Deverá buscar por um nome', () => {
-    const expected = searchCharacters(nomes, 'Rick')
+    const expected = searchCharacters(names, 'Rick')
     expect(expected).toEqual([{ "name": "Rick Sanchez" }])
   });
 });
 
-//TESTE BUSCAR STATUS//
+//--Teste buscar por status--//
 
-describe('buscarStatus', () => {
+describe('filterStatus', () => {
   it('Deverá ser uma função', () => {
     expect(typeof filterCharacters).toBe('function');
   });
 
   it('Deverá filtrar pelo status Alive', () => {
     const aliveExpected = "Alive"
-    const expected = filterCharacters(dados, 'status', aliveExpected);
+    const expected = filterCharacters(newArray, 'status', aliveExpected);
     expect(expected.length).toEqual(3);
     expect(expected[0].status).toEqual(aliveExpected);
     expect(expected[1].status).toEqual(aliveExpected);
   });
 });
 
-//TESTE BUSCAR ESPÉCIE//
+//--Teste buscar por espécie--//
 
-describe('buscarEspecie', () => {
+describe('filterSpecies', () => {
   it('Deverá ser uma função', () => {
     expect(typeof filterCharacters).toBe('function');
   });
 
   it('Deverá filtrar pela espécie Humana', () => {
     const humanExpected = "Human"
-    const expected = filterCharacters(dados, 'species', humanExpected);
+    const expected = filterCharacters(newArray, 'species', humanExpected);
     expect(expected.length).toEqual(2);
     expect(expected[0].species).toEqual(humanExpected);
     expect(expected[1].species).toEqual(humanExpected);
   });
 });
 
-//TESTE BUCAR POR GÊNERO//
+//--Teste buscar por gênero--//
 
-describe('buscarGênero', () => {
+describe('filterGender', () => {
   it('Deverá ser uma função', () => {
     expect(typeof filterCharacters).toBe('function');
   });
 
   it('Deverá filtrar por Gênero', () => {
     const femaleExpected = "Female"
-    const expected = filterCharacters(dados, 'gender', femaleExpected);
+    const expected = filterCharacters(newArray, 'gender', femaleExpected);
     expect(expected.length).toEqual(2);
     expect(expected[1].gender).toEqual(femaleExpected);
     expect(expected[0].gender).toEqual(femaleExpected);
   });
 });
 
-//TESTE PARA ORDENAÇÃO ALFABÉTICA//
+//--Teste ordenação alfabética--//
 
-describe('sortOrdem', () => {
+describe('sortOrder', () => {
   it('Deverá ser uma função', () => {
     expect(typeof sortCharacters).toBe('function');
   });
 
   it('Deverá retornar em ordem crescente', () => {
-    const namesExpected = [nomes[1], nomes[0], nomes[2]];
-    expect(sortCharacters(nomes, "crescente")).toEqual( namesExpected );
+    const namesExpected = [names[1], names[0], names[2]];
+    expect(sortCharacters(names, "crescente")).toEqual( namesExpected );
   });
   it('Deverá retornar em ordem decrescente', () => {
-    const namesDecrescente = [nomes[2], nomes[1], nomes[0]];
-    expect(sortCharacters(nomes, "decrescente")).toEqual(namesDecrescente);
+    const namesDecrescente = [names[2], names[1], names[0]];
+    expect(sortCharacters(names, "decrescente")).toEqual(namesDecrescente);
   });
 });
 
+//--Teste cálculo porcentagem--//
 
- 
+describe('calPercentage', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof getPercentage).toBe('function');
+  });
+
+  

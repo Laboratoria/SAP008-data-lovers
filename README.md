@@ -76,7 +76,7 @@ O usuário consegue ver os cards em ordem alfabética na tela.
 O usuário consegue exibir na tela em forma de alert a porcentagem referente aos personagens femininos.
 
 ## 6. Testes Unitários
-Utilizamos dois arrays mock ( dados e nomes) simulando um array para a criação dos testes.
+Utilizamos dois arrays mock ( newArray e names) simulando um array para a criação dos testes.
 
 
 ## 7. Testes de Usabilidade
