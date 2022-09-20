@@ -37,7 +37,7 @@ body {
     width: 70%;
   }
 
-  #personagens {
+  .personagens {
     padding: 1px 2px;
     border: 6px outset #87cc22;
     border-radius: 10px;
@@ -49,22 +49,33 @@ body {
     text-decoration: none;
     font-family: 'fontePersonagens';
   }
+  
 
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
-  #personagens {
-    padding: 1px 2px;
-    border: 6px outset #87cc22;
-    border-radius: 10px;
-    margin-top: 80px;
-    background: #d9d9d9;
-    color: #89d72c;
+
+  .personagens {
     font-size: 450%;
     -webkit-text-stroke: 3px black;
-    text-decoration: none;
-    font-family: 'fontePersonagens';
-    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 6px;
+    border-radius: 20px;
+  }
+
+  .personagens::before, .personagens::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(#76e6d7, #5adf96, #26af48 );
+    border-radius: 20px;
   }
 
   #boxText {
@@ -88,18 +99,27 @@ body {
 }
 
 @media (min-width: 1280px) {
-  #personagens {
-    padding: 1px 2px;
-    border: 6px outset #87cc22;
-    border-radius: 10px;
-    margin-top: 80px;
-    background: #d9d9d9;
-    color: #89d72c;
+  .personagens {
     font-size: 700%;
     -webkit-text-stroke: 4px black;
-    text-decoration: none;
-    font-family: 'fontePersonagens';
-    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 6px;
+    border-radius: 20px;
+  }
+
+  .personagens::before, .personagens::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(#76e6d7, #5adf96, #26af48  );
+    border-radius: 20px;
   }
 
   #boxText {
