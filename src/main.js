@@ -75,10 +75,10 @@ function printMovies (data) {
             <p>Diretor: ${data[contador_print].director}</p><br>  
                                  
         `;
-        cards.appendChild(new_element);
+        movies.appendChild(new_element);
     
     }
 }
 
-const lista_filmes = getMovies (data);
+const lista_filmes = getMovies(data);
 printMovies(lista_filmes);

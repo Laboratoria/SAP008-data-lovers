@@ -1,0 +1,144 @@
+/*@import url('https://fonts.googleapis.com/css2? family= Gaegu & display=swap'); assim não funcionou */
+/* importando as fontes utilizadas no figma  através do google fonts*/
+/*Regras CSS para especificar famílias
+font-family: 'Annie Use Your Telescope', cursiva;
+font-family: 'Euphoria Script', cursiva;
+font-family: 'Gaegu', cursiva; */
+
+@font-face {
+    font-family: 'fontes tx1';
+    src: url('fonts/Gaegu-Light.ttf');
+    /*assim funcionou */
+}
+
+@font-face {
+    font-family: 'fontes tx2';
+    src: url('fonts/EuphoriaScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'fontes tx3';
+    src: url('fonts/AnnieUseYourTelescope-Regular.ttf');
+}
+
+* {
+    margin: 0; /*margem do bloco para a janela */
+    padding: 0; /* margem do conteúdo para o bloco */
+    box-sizing: border-box; /*é uma pré configuração de altura e largura de bordas */
+    text-decoration: none; /*remove toda decoração */
+    /*configuração para zerar e resetar todas as configurações já existentes na criação da page */
+}
+
+body {
+    font-size: 100%; /* tamanho da letra */
+    background: rgb(236,203,232);
+    background: radial-gradient(circle, rgba(236,203,232,1) 34%, rgba(175,148,233,1) 100%);
+}
+
+.cabecalho {
+    display: flex; /* para usar os flexbox */
+    flex-direction: row; /* quero que alinhe na horizontal em linha */
+    align-items: center; /* alinhando os itens no centro entre eles */
+    justify-content: space-around; /* mudando visual do cabecalho */
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 100px; /*tamanho do logo */
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px; /* espaçamento entre as opções do menu */
+}
+
+.cabecalho-menu-item {
+    font-family: 'fontes tx3'; /* font utilizada */
+    color: white; /* cor da letra */
+    font-weight: 400; /*intensidade da font */
+    font-size: 35px; /* tamanho da letra */
+}
+
+.conteudo {
+    border-top: 0.5px solid white; /*linha branca abaixo do nav */
+    margin-bottom: 20px; /*margem entre main e footer */
+    
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.conteudo-principal-escrito {
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'fontes tx3';
+    font-weight: 400;
+    font-size: 50px;
+    color: palevioletred;
+    margin: 20px;
+}
+
+.conteudo-principal-escrito-texto {
+    font-family: 'fontes tx1';
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+
+.conteudo-principal-escrito-botao {
+    font-family: 'fontes tx3';
+    font-weight: 400;
+    font-size: 30px;
+    background-color: palevioletred;
+    color: white;
+    box-shadow: 4px 5px 4px pink;
+    width: 200px ;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+/*
+.conteudo-principal-imagem {
+    width: 300px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+*/
+
+.mensagem-rodape{
+    font-family: 'fontes tx1';
+    font-size: 25px;
+    border-top: 0.5px solid white;
+    color: white;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    
+}
+
+.conteudo-principal-filtros{
+    font-family: 'fontes tx1';
+    font-weight: 400;
+    font-size: 30px;
+    background-color: palevioletred;
+    color: white;
+    width: 300;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+

@@ -1,63 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="ghibli.ico">
-  <title> Studio Ghibli</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="style-primario.css">
-  <link rel="stylesheet" href="style-secundario.css">
-  <script src="main.js" type="module"></script>
-  <script src="nav-bar.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" Um site sobre o Studio Ghibli, com opções de filtragens por personagens, diretores, ano, filmes etc.. + cálculo agragado">
+        <title>Studio Ghibli - Protótipo </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
-<body onresize="responsivo()">
+    <body>
 
-  <header>
-    <h1>Studio Ghibli</h1>
-    <i id="menu" class="material-icons" onclick="clickMenu()">menu</i>
-    <menu id="paginas">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="movies.html">Movies</a></li>
-        <li><a href="characters.html">Characters</a></li>
-      </ul>
-    </menu>
-  </header>
+        <header class="cabecalho">
+            <img class="cabecalho-imagem" src="logo.png" alt="logo do site protótipo">
+            <nav class="cabecalho-menu">
+                <a href="index.html" class="cabecalho-menu-item"> Home </a>
+                <a href="filters.html" class="cabecalho-menu-item"> Filters </a>
+            </nav>
+        </header>
 
-  <main class="principal">
-    <article class="principal-home">
-      <p> Ainda nos anos setenta no estúdio Toei-Toga, trabalhavam com animação para a TV Hayao Miyasaki e Isao Takahata. São deste período as séries Alps no Shojo Haiji (Heidi, a Garota dos Alpes), seriado com 54 capítulos que é uma adaptação da obra da escritora Johanna Spyri, e Haha wo Tazunete Sanzen Ri (3 Mil Léguas em Busca de Mamãe), é de 1977 e tem 51 episódios que contam as andanças de Marco e seu macaquinho, que foram baseadas no romance Cuore de Edmondo De Amicis.
-        Ambas as séries foram exibidas semanalmente na televisão japonesa ao longo de um ano com grande sucesso. Foi daí, a partir de uma idéia de Miyasaki para um filme que os dois se associam, juntamente com a Editora Tokuma de Yasuyoshi Tokuma, e criam o Estúdio Ghibli, que significa “vento quente que sopra através do Sahara”, nome usado para denominar a esquadrilha italiana na Segunda Guerra Mundial.
-        O Estúdio desde então é a produtora responsável pelos clássicos de Hayao Miyazaki e Isao Takahata.
-        Com direção de Miyasaki (imagem ao lado) temos a partir de então: Haze no Tani no Nausicaä (Nausicaa do Vale dos Ventos) de 1984, com 116 min. o filme, baseado em mangá de Miyazaki, teve sua direção, storyboards e scripts e foi o sucesso que consolidou o estúdio.
-        “Meu amigo Totoro” de 1988, que fala de um animalzinho mitológico que foi eleito logotipo do estúdio; “Serviços de Entrega da Kiki” de 1989; Tenkuu no Shiro Laputa“ Laputa, O Castelo dos Céus” de 1991; “Porco Rosso, O Último Herói Romântico” de 1992; “A Princesa Mononoke” de 1997,uma estória fantástica passada no Japão feudal e povoada de animais mitológicos e deuses que defendem a natureza da destruição causada pelos humanos e "A Viajem de Chihiro", de 2001, onde a personagem do título deve recuperar os seus pais que foram transformados em porcos.
-        Takahata dirigiu “Cemitério de Vagalumes” em 1988, que fala da guerra e da solidariedade entre os homens; “Somente Ontem” em 1991 e “Pom Poko” de 1994, considerado uma obra-prima, tem como tema o crescimento econômico do Japão nos últimos 50 anos numa estória com texugos – animais que no folclore japonês são ligados à magia e têm o poder da metamorfose – e seres humanos. O Estúdio produziu ainda o filme “Suspiros do Coração” de Yoshifumi Kondo.
-      </p>
-      <p> O ideal por trás do Ghibli era produzir animação realista e de alta qualidade que mostrasse as alegrias e tristezas da vida como elas realmente são. Por isso a dedicação era ao máximo e havia uma disponibilidade ilimitada de tempo e recursos para que a qualidade das obras não fossem comprometidas.
-        A política do estúdio era a de que se um filme fosse bem sucedido eles fariam outro. Já se ele fracassa-se, ou seja, se não tivesse o retorno financeiro necessário, seria o fim da Ghibli.
-        As primeiras obras do estúdio estão entre os maiores clássicos dos animes por serem obras de grande qualidade.  A bilheteria dos filmes rendeu o retorno esperado e a reação do público a cada lançamento r]era bastante favorável. O merchandising ao redor do Totoro, que se tornou muito popular e foi até adotado como mascote do estúdio, é outra importante fonte de renda para o Ghibli.
-        Em 1989 foi lançado no Japão ``O Serviço de Entregas da Kiki``, que foi o primeiro grande sucesso do estúdio, levando mais de 2 milhões e meio de pessoas para os cinemas. A partir daí os animes que o Ghibli lançava batiam recordes de bilheteria e venciam até mesmo as produções da Disney.
-        Até pouco tempo atrás, os animes do Ghibli eram bem conhecidos somente na Ásia. As poucas vezes que eram lançados no Ocidente, mostravam o seu potencial em agradar o público em qualquer parte do mundo, como o lançamento de Totoro em vídeo nos EUA que logo vendeu mais de meio milhão de cópias e de Pon Poko que se glorificou como um dos finalistas na indicação para `` Melhor filme Estrangeiro`` do Oscar.
-        Porém em 1997 a Disney anunciou a compra dos direitos de distribuição de várias obras da Ghibli para o Ocidente, e afirmou que eles seriam exibidos intactos para alívio dos fãns, que temiam os cortes de cenas mais violentas.
-        Após um tempo os resultados do acordo Disney-Tokuma começaram aparecer, foram lançados Kiki, em vídeo, e Mononoke Hime, ambos causando grande repercussão.
-      </p>  
-    </article>
-  </main>
+        <main class="conteudo">
+            <section class="conteudo-principal">
+                <div class="conteudo-principal-escrito">
+                    <h1 class="conteudo-principal-escrito-titulo"> Studio Ghibli </h1>
+                    <h2 class="conteudo-principal-escrito-texto"> Studio Ghibli, acclaimed Japanese animation film studio that was founded in 1985 by animators and directors Miyazaki Hayao and Takahata Isao and producer Suzuki Toshio. Studio Ghibli is known for the high quality of its filmmaking and its artistry. Its feature films won both critical and popular praise and influenced other animation studios.</h2>
+                    <button class="conteudo-principal-escrito-botao"> Assistir ao Trailer</button>    
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/U9HE1Cr7C3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </main>
 
-  <footer>
-    <p>"Desenvolvido por" 
-      <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
-      "e"
-      <a href="https://github.com/Thainaprado7"> Thaina Prado</a> "- Turma SAP008
-      - Laboratória Brasil/2022"
-    </p>
-  </footer>
+        <footer class="rodape">
+            <p class="mensagem-rodape">"Desenvolvido por" 
+                <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
+                "e"
+                <a href="https://github.com/Thainaprado7"> Thaina Prado</a> "- Turma SAP008
+                - Laboratória Brasil - 2022"
+              </p> 
+        </footer>
+
     </body>
 </html>
-
-
-
