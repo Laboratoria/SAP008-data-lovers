@@ -6,7 +6,7 @@ const selectStatus = document.getElementById('status');
 const selectSpecie = document.getElementById('specie');
 const selectOrderAz = document.getElementById('order');
 const inputName = document.getElementById('name');
-const buttonCuriosity = document.getElementById('curiosity');
+const btnCuriosity = document.getElementById('curiosity');
 let allCharacters = rickandmorty.results
 
 function gerarCard(personagem) {
@@ -57,7 +57,7 @@ inputName.addEventListener('keyup', listarCards);
 
 listarCards();
 
-buttonCuriosity.addEventListener("click", function () {
+btnCuriosity.addEventListener("click", function () {
     const percentage = getPercentage(allCharacters, 'Female');
     alert("The percentage of female characters is " + percentage + "%")
 });
