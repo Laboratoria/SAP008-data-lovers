@@ -7,7 +7,7 @@ function PrintandoCard(filmsList){
     return `
         <article>
             <p>Title: ${filmsList.title}</p>
-            <img src="${filmsList.poster}"/></p>
+            <img id= "poster"src="${filmsList.poster}"/></p>
             <p>Director: ${filmsList.director}</p>
             <p>Release date: ${filmsList.release_date}</p>
         </article>

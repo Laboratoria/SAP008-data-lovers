@@ -153,12 +153,6 @@ body {
 
 }
 
-.printaCards :hover {
-    box-shadow: 4px 5px 4px pink;
-    background-color: rgba(165, 44, 44, 0.342);
-    
-
-}
 
 #charaters {
     font-family: 'fontes tx1';
@@ -192,5 +186,10 @@ body {
     border: 3px solid #b470cbe2;
 }
 #imagem:hover { 
-    box-shadow: 8px 7px 6px pink;
+    box-shadow: 0px 5px 15px 8px #FFFFFF;
     background-color: rgba(165, 44, 44, 0.342);}
+
+    #poster:hover {
+    box-shadow: 0px 5px 15px 8px #FFFFFF;
+    background-color: rgba(165, 44, 44, 0.342);
+    }
