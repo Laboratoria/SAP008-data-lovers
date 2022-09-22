@@ -159,3 +159,34 @@ body {
     
 
 }
+
+#charaters {
+    font-family: 'fontes tx1';
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 40px;
+    margin: 70px;
+}
+
+#printCharacters {
+    font-family: 'fontes tx1';
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 40px;
+    margin: 70px;
+}
+
+#imagem{
+    width: 280px;
+    height: 280px;
+}

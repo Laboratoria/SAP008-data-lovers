@@ -5,8 +5,9 @@ function generateCharactersMovies(movies){
     movies.forEach( movie => {
         movie.people.forEach( p => {
             layout += `<div>
-            <img src = "${p.img}"/>
             <p>${p.name}</p>
+            <p>${p.age}</p>
+            <img id= "imagem" src = "${p.img}"/>
             </div>`
         })
     });
