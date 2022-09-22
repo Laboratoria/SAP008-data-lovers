@@ -1,6 +1,7 @@
 import data from "./data/ghibli/ghibli.js"
 
 let printaCards = document.querySelector('section#printaCards')
+const menu =document.getElementById('menu')
 
 function PrintandoCard(filmsList){
     return `
