@@ -22,3 +22,5 @@ function montaCard(lista) {
 }
 
 printaCards.innerHTML = montaCard(data.films);
+
+
