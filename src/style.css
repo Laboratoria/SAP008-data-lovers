@@ -163,3 +163,17 @@ body {
     min-width: 200px;
 
 }
+
+#imagem{
+    width: 280px;
+    height: 280px;
+    border: 3px solid #b470cbe2;
+
+}
+
+#imagem:hover {
+
+    box-shadow: 8px 7px 6px pink;
+    background-color: rgba(165, 44, 44, 0.342);
+}
+
