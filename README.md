@@ -1,5 +1,5 @@
-# **Rick and Morty!**
-![](1qEO.gif)
+# **Rick and Morty Curiosity!**
+![](rickAndMorty.gif)
 
 
 ## Índice
@@ -10,9 +10,8 @@
 * [4. Paleta de cores](#4-paleta-de-cores)
 * [5. Histórias de usuário](#5-histórias-de-usuário)
 * [6. Testes Unitários](#6-testes-unitários)
-* [7. Ferramentas e metodologia aplicada](#7-ferramentas-e-metodologia-aplicada)
-* [8. Aprendizado adquirido](#8-aprendizado-adquirido)
-* [9. Desenvolvedoras](#9-desenvolvedoras)
+* [7. Testes de Usabilidade](#7-testes-de-usabilidade)
+* [8. Desenvolvedoras](#9-desenvolvedoras)
 
 ***
 
@@ -33,6 +32,14 @@ Este projeto foi idealizado para atender a necessidade do público fã da série
 
 ## 3. Protótipo de alta fidelidade
 Desenhamos uma Interface de Usuário e para isso, utilizamos o Figma e apresentamos o que seria o esperado para nosso projeto.
+
+**Tela Principal versão Mobile**
+
+![](prototipo_Mobile.png)
+
+**Tela Principal versão Desktop**
+
+![](prototipo_Desktop.png)
 
 
 ## 4. Paleta de cores
@@ -62,16 +69,27 @@ O usuário consegue filtrar informações por espécie, gênero e status.
 **Critérios de aceitação:**
 Mostrar na tela os cards referentes ao nome buscado, mostrando todos os cards que incluem o termo da busca.
 
-4."Buscando mais agilidade o usuário gostaria de exibir na tela os personagens em ordem alfabética crescente e decrescente e também exibir na tela a porcentagem de personagens selecionados em cada filtro."	
+4."Buscando mais agilidade o usuário gostaria de exibir na tela os personagens em ordem alfabética crescente e decrescente e também exibir na tela a porcentagem de personagens femininos."	
 
 **Critérios de aceitação:**
 O usuário consegue ver os cards em ordem alfabética na tela.
-O usuário consegue exibir na tela a porcentagem referente a cada filtro.	
+O usuário consegue exibir na tela em forma de alert a porcentagem referente aos personagens femininos.
 
 ## 6. Testes Unitários
+Utilizamos dois arrays mock ( newArray e names) simulando um array para a criação dos testes.
 
-## 7. Ferramentas e metodologia aplicada
 
-## 8. Aprendizado adquirido
+## 7. Testes de Usabilidade
+Foi realizado  o teste de usabilidade com dois usuários onde estão descritos abaixo os problemas detectados e como foram solucionados.
 
-## 9. Desenvolvedoras
+**Primeiro usuário**: 
+Ao iniciar a navegação pela página o usuário sentiu dificuldades na visualização, pois o card apresentava dimensões muito grandes e desproporcionais a tela.
+Buscando uma melhor visualização redimensionamos o card de maneira que a visualização estivesse confortável e clara para o usuário.
+
+**Segundo usuário**: 
+Ao realizar a navegação pela página mobile o usuário identificou que a disposição dos botões estavam gerando dificuldade na hora de clicar, pois estavam muito próximos e pequenos. 
+Para um melhor uso alteramos a disposição dos botões em duas colunas e o campo de busca centralizado abaixo.
+
+## 8. Desenvolvedoras
+"Projeto desenvolvido por Gabriela Araujo da Silva 
+<a href="https://www.linkedin.com/in/gabrielaaraujolink/" rel="nofollow"> Linkedin</a> | <a href="https://github.com/gabriela-araujosilva" rel="nofollow"> Github</a> & Letícia Faria de Souza <a href="https://github.com/yekoshinara" rel="nofollow"> Github</a>"
