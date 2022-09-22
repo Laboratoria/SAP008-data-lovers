@@ -142,3 +142,16 @@ body {
     border-radius: 20px;
 }
 
+.conteudo-filtro-pesquise{
+    font-family: 'fontes tx1';
+    font-weight: 400;
+    font-size: 30px;
+    background-color: palevioletred;
+    color: white;
+    width: 300;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    text-align : center;
+
+}
