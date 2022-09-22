@@ -40,5 +40,16 @@ export const searchCharacters = (characters, name) => {
   
 }
 
+export const calculoAgregado = () => {
+let total = rickandmorty.results;
+let counterTotal = total.length;
+let counter = 0;
+for (let i = 0; i < total.length; i++) {
+    if (total[i].gender === 'Female') counter++;
+}
+let porcentagem = ((counter / counterTotal) * 100).toFixed(2)
+
+}
+
 
  

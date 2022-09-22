@@ -1,4 +1,4 @@
-import { filterCharacters, sortCharacters, searchCharacters } from './data.js';
+import { filterCharacters, sortCharacters, searchCharacters, calculoAgregado } from './data.js';
 import rickandmorty from './data/rickandmorty/rickandmorty.js';
 
 const selectGender = document.getElementById('gender');
@@ -56,16 +56,9 @@ inputName.addEventListener('keyup', listarCards);
 
 listarCards();
 
-const buttonCuriosity = document.querySelector("#curiosity")
-let total = rickandmorty.results;
-let counterTotal = total.length;
-let counter = 0;
-for (let i = 0; i < total.length; i++) {
-    if (total[i].gender === 'Female') counter++;
-}
-let porcentagem = ((counter / counterTotal) * 100).toFixed(2)
 
+const buttonCuriosity = document.querySelector("#curiosity")
 buttonCuriosity.addEventListener("click", function () {
     alert("The percentage of female characters is " + porcentagem + "%")
+    console.log("teste")
 });
-
