@@ -155,3 +155,42 @@ body {
     text-align : center;
 
 }
+
+.printaCards{
+    font-family: 'fonts/tx1';
+    justify-content: center;
+    box-shadow: 4px 5px 4px pink;
+    background-color: rgba(255, 255, 255, 0.342);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+
+.printaCards :hover {
+    box-shadow: 4px 5px 4px pink;
+    background-color: rgba(165, 44, 44, 0.342);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    max-width: 300px;
+    min-width: 200px;
+    cursor: pointer;
+  transform: scale(1,070);
+}
+
+. informação {
+  cor de fundo :  # e8f8fa ;
+  exibição : flexível;
+  justificar-conteúdo : centro;
+  família de fontes : Geórgia;
+}
+
+
+
+
+
+*/
