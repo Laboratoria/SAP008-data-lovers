@@ -80,3 +80,48 @@ function printMovies (data) {
 
 const lista_filmes = getMovies(data);
 printMovies(lista_filmes);
+    return `
+        <acticle>
+            <p>Nome: ${filmsList.name}</p>
+            <p>Filme: ${filmsList.movie}</p>
+            <p>image: <img src="${filmsList.img}"/></p>
+            <p>Gênero: ${filmsList.gender}</p>
+            <p>Idade: ${filmsList.age}</p>
+            <p>Espécie: ${filmsList.specie}</p>
+        </acticle>
+        `;
+}
+
+function montaCard(lista) {
+    return lista
+        .map((filmsList) => {
+            return cardTemplate(filmsList);
+        })
+}
+
+printaCards.innerHTML = montaCard(data.films);
+
+
+
+
+
+
+
+
+
+//function filtrosTemplate(typeList) {
+//    return `<option value="${type}">${type}</option>`;
+//}
+
+//function extraindoListaDeTipo(filmsList) {
+ //   let x = filmsList.map(films => films.name);
+ //   console.log(x);
+//}
+
+// extraindoListaDeTipo(data.films);
+
+
+
+
+//let filtros = document.querySelector('div#filtros');
+//let printaCards = document.querySelector('section#printaCards')
