@@ -63,8 +63,12 @@ body {
     /* cor da letra */
     font-weight: 400;
     /*intensidade da font */
-    font-size: 35px;
+    font-size: 50px;
     /* tamanho da letra */
+}
+
+.cabecalho-menu-item:hover {
+    color: palevioletred;
 }
 
 .conteudo {
@@ -72,7 +76,6 @@ body {
     /*linha branca abaixo do nav */
     margin-bottom: 20px;
     /*margem entre main e footer */
-
 }
 
 .conteudo-principal {
@@ -81,7 +84,6 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-
 }
 
 .conteudo-principal-escrito {
@@ -103,31 +105,24 @@ body {
     font-family: 'fontes tx1';
     font-weight: 400;
     font-size: 30px;
-    color: white;
+    color: purple;
 }
-
-.conteudo-principal-escrito-botao {
-    font-family: 'fontes tx3';
+ /*pagina de filtros */
+.conteudo-filtro-pesquise {
+    font-family: 'fontes tx1';
     font-weight: 400;
     font-size: 30px;
     background-color: palevioletred;
     color: white;
-    box-shadow: 4px 5px 4px pink;
-    width: 200px;
-    height: 50px;
+    width: 300;
+    height: 100%;
     border: none;
     border-radius: 20px;
+    text-align: center;
 }
 
-.mensagem-rodape {
-    font-family: 'fontes tx1';
-    font-size: 25px;
-    border-top: 0.5px solid white;
-    color: white;
-    padding: 30px;
-    display: block;
-    text-align: center;
-
+.conteudo-filtro-pesquise:hover {
+    background-color: pink;
 }
 
 .conteudo-principal-filtros {
@@ -142,33 +137,38 @@ body {
     border-radius: 20px;
 }
 
-.conteudo-filtro-pesquise {
-    font-family: 'fontes tx1';
-    font-weight: 400;
+.conteudo-principal-filtros:hover {
+    background-color: pink;
+}
+
+.conteudo-principal-escrito-botao {
+    font-family: 'fontes tx3';
+    font-weight: 400px;
     font-size: 30px;
     background-color: palevioletred;
     color: white;
-    width: 300;
-    height: 100%;
+    box-shadow: 4px 5px 4px pink;
+    width: 200px;
+    height: 50px;
     border: none;
     border-radius: 20px;
-    text-align: center;
-
 }
 
 .botao-limpar{
     font-family: 'fontes tx1';
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 30px;
     background-color: purple;
     color: white;
-    width: 150px;
-    height: 70px;
+    width: 200px;
+    height: 50px;
     border: none;
     border-radius: 20px;
-
 }
 
+.botao-limpar:hover {
+    background-color: pink;
+}
 .printaCards {
     font-family: 'fontes tx3';
     font-size: 20px;
@@ -182,9 +182,7 @@ body {
     gap: 20px;
     column-gap: 50px 70px;
     margin: 80px;
-
 }
-
 
 #printCharacters{
     font-family: 'fontes tx3';
@@ -197,8 +195,8 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    column-gap: 40px;
-    margin: 70px;
+    column-gap: 50px 70px;
+    margin: 80px;
 }
 
 #imagem1 {
@@ -211,15 +209,20 @@ body {
     width: 200px;
     height: 170px;
     border: 3px solid #b470cbe2;
-
 }
 
-#imagem1:hover {
+#imagem1:hover , #imagem2:hover{
     box-shadow: 0px 5px 15px 8px #FFFFFF;
     background-color: rgba(165, 44, 44, 0.342);
 }
 
-#imagem2:hover {
-    box-shadow: 0px 10px 12px 15px #FFFFFF;
-    background-color: rgba(165, 44, 44, 0.342);
+.mensagem-rodape {
+    font-family: 'fontes tx1';
+    font-size: 25px;
+    border-top: 0.5px solid white;
+    color: white;
+    padding: 30px;
+    display: block;
+    text-align: center;
 }
+
