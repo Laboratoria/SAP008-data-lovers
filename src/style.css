@@ -156,6 +156,19 @@ body {
 
 }
 
+.botao-limpar{
+    font-family: 'fontes tx1';
+    font-weight: 400;
+    font-size: 30px;
+    background-color: purple;
+    color: white;
+    width: 150px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+
+}
+
 .printaCards {
     font-family: 'fontes tx3';
     font-size: 20px;
