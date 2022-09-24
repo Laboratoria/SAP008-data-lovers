@@ -17,8 +17,8 @@
         <img class="cabecalho-imagem" src="img/logo.png" alt="logo do site protótipo">
         <nav class="cabecalho-menu">
             <a href="index.html" class="cabecalho-menu-item"> Home </a>
-            <a href="films.html" class="cabecalho-menu-item"> Movies </a>
-            <a href="personagens.html" class="cabecalho-menu-item"> Characters </a>
+            <a href="movies.html" class="cabecalho-menu-item"> Movies </a>
+            <a href="characters.html" class="cabecalho-menu-item"> Characters </a>
         </nav>
     </header>
 
@@ -26,7 +26,7 @@
         <section class="conteudo-principal">
 
             <div class="conteudo-principal-filtros">
-                <input type="search" class="conteudo-filtro-pesquise" placeholder=" Search by character "
+                <input type="search" class="conteudo-filtro-pesquise" placeholder=" Search by movie "
                     autocomplete="on" spellcheck="true">
             </div>
 
@@ -40,19 +40,13 @@
 
             <div class="conteudo-principa-filtros" id="filtros">
                 <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Age </option>
+                    <option disabled selected value=""> Release date </option>
                 </select>
             </div>
 
             <div class="conteudo-principa-filtros" id="filtros">
                 <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Genre </option>
-                </select>
-            </div>
-
-            <div class="conteudo-principa-filtros" id="filtros">
-                <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Species </option>
+                    <option disabled selected value=""> Director </option>
                 </select>
             </div>
 
@@ -61,10 +55,7 @@
             </div>
         </section>
 
-        <section class="printaCards1" id="printaCard1">
-            <div id="printCharacters"></div>
-        </section> </section>
-
+        <section class="printaCards" id="printaCards"></section> </section>
     </main>
 
     <footer class="rodape">
@@ -75,7 +66,7 @@
             - Laboratória Brazil - 2022"
           </p> 
     </footer>
-    <script src="characters.js" type="module"></script>
+    <script src="movies.js" type="module"></script>
 </body>
 
 </html>
