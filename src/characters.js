@@ -9,7 +9,7 @@ function generateCharactersMovies(movies){
             <img id= "imagem2" src = "${p.img}"/>
             <p> Age: ${p.age}</p>
             <p> Genre: ${p.genre}</p>
-            <p> Specie ${p.specie}</p>
+            <p> Specie: ${p.specie}</p>
             </div>`
         })
     });
