@@ -43,7 +43,7 @@ export const searchCharacters = (characters, name) => {
 export const getPercentage = (characters, gender) => {
   let counterTotal = characters.length;
   let charactersByGender = filterCharacters(characters, 'gender', gender);
-  let percentage = ((charactersByGender.length/ counterTotal) * 100).toFixed(2);
+  let percentage = ((charactersByGender.length / counterTotal) * 100).toFixed(2);
   return percentage;
 }
 

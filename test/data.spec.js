@@ -27,9 +27,8 @@ const newArray = [
 
 const names = [
   { "name": "Rick Sanchez" },
-  { "name": "Abadango Cluster Princess" },
   { "name": "Summer Smith" },
-
+  { "name": "Abadango Cluster Princess" },
 ]
 
 //--Teste buscar por nome--//
@@ -105,12 +104,17 @@ describe('sortOrder', () => {
   });
 
   it('Deverá retornar em ordem crescente', () => {
-    const namesExpected = [names[1], names[0], names[2]];
+    const namesExpected = [names[2], names[0], names[1]];
     expect(sortCharacters(names, "crescente")).toEqual( namesExpected );
   });
   it('Deverá retornar em ordem decrescente', () => {
     const namesDecrescente = [names[2], names[1], names[0]];
     expect(sortCharacters(names, "decrescente")).toEqual(namesDecrescente);
+  });
+  it('Deverá retornar em ordem decrescente linha 24', () => {
+    const namesToSort = [names[0], names[1], names[2]];
+    const namesDecrescente = [namesToSort[0], namesToSort[1], namesToSort[2]];
+    expect(sortCharacters(namesToSort, "decrescente")).toEqual(namesDecrescente);
   });
 });
 
@@ -121,4 +125,8 @@ describe('calPercentage', () => {
     expect(typeof getPercentage).toBe('function');
   });
 
-  
+  it('Deverá retornar  porcentagem de personagens femininos', () => {
+    const percentageExpected = getPercentage(newArray, 'Female');
+    expect(percentageExpected).toEqual('66.67');
+});
+  });
