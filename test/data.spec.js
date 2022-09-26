@@ -98,6 +98,7 @@ describe('filterGender', () => {
 
 //--Teste ordenação alfabética--//
 
+
 describe('sortOrder', () => {
   it('Deverá ser uma função', () => {
     expect(typeof sortCharacters).toBe('function');
