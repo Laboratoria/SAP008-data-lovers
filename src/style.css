@@ -40,8 +40,8 @@ body {
     /* quero que alinhe na horizontal em linha */
     align-items: center;
     /* alinhando os itens no centro entre eles */
-    justify-content: space-around;
-    /* mudando visual do cabecalho */
+    justify-content:space-around;
+       /* mudando visual do cabecalho */
     padding: 24px;
 }
 

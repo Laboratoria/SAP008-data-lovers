@@ -1,9 +1,13 @@
 import data from "./data/ghibli/ghibli.js"
 
-let printaCards = document.querySelector('section#printaCards')
-const menu =document.getElementById('menu')
+function extraindoListas(filmsList) {
+    let x = filmsList.map ((films) => films.release_date);
+    return new Set(x);
+}
 
-function PrintandoCard(filmsList){
+extraindoListas(data.films);
+
+function PrintandoCard(filmsList) {
     return `
         <article>
             <p>Title: ${filmsList.title}</p>

@@ -1,0 +1,6 @@
+let printaCards = document.querySelector('section#printaCards')
+let menu = document.querySelector('section#')
+
+function menuFiltro(films){
+return `<option value="${release_date}"> ${release_date}</option>`;
+}
