@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'fontes tx1';
     src: url('fonts/Gaegu-Light.ttf');
-    /*assim funcionou */
 }
 
 @font-face {
@@ -16,32 +15,24 @@
 
 * {
     margin: 0;
-    /*margem do bloco para a janela */
     padding: 0;
-    /* margem do conteúdo para o bloco */
     box-sizing: border-box;
-    /*é uma pré configuração de altura e largura de bordas */
     text-decoration: none;
-    /*remove toda decoração */
     /*configuração para zerar e resetar todas as configurações já existentes na criação da page */
 }
 
 body {
     font-size: 100%;
     background: #007AA4;
+}
 
-    /* tamanho da letra */
-
-}    
+/*inicio menu todas a paginas*/ 
 .cabecalho {
     display: flex;
-    /* para usar os flexbox */
     flex-direction: row;
-    /* quero que alinhe na horizontal em linha */
     align-items: center;
-    /* alinhando os itens no centro entre eles */
     justify-content: center;
-    /* mudando visual do cabecalho */
+
     padding: 24px;
 }
 
@@ -55,27 +46,24 @@ body {
     font-family: 'fontes tx3';
     font-size: 30px;
     color: white;
-text-align: center;
+    text-align: center;
 }
 
 .cabecalho-menu-item {
     font-family: 'fontes tx3';
-    /* font utilizada */
     color: white;
-    /* cor da letra */
     font-weight: 400;
-    /*intensidade da font */
     font-size: 50px;
-    /* tamanho da letra */
 }
 
 .cabecalho-menu-item:hover {
     color: black;
 }
+/*fim menu todas a paginas*/
 
+/* inicio pagina home */
 .conteudo {
     margin-bottom: 20px;
-    /*margem entre main e footer */
 }
 
 .conteudo-principal {
@@ -87,7 +75,6 @@ text-align: center;
 }
 
 .conteudo-principal-escrito {
-    display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
@@ -108,22 +95,32 @@ text-align: center;
     color: white;
 }
 
-.conteudo-principal-escrito-botao {
-    font-family: 'fontes tx3';
-    font-weight: 400px;
-    font-size: 30px;
-    background-color: white;
-    color: black;
-    box-shadow: 4px 5px 4px black;
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
+.conteudo-principal1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-.conteudo-principal-escrito-botao:hover  {
+.conteudo-principal-escrito1 {
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+}
+
+.conteudo-principal-escrito-titulo1 {
+    font-family: 'fontes tx2';
+    font-weight: 400;
+    font-size: 70px;
+    color: black;
+    margin: 20px;
+}
+
+.conteudo-principal-escrito-texto1 {
+    font-family: 'fontes tx1';
+    font-weight: 400;
+    font-size: 30px;
     color: white;
-    background-color: black  
 }
 
  /*pagina de filtros */

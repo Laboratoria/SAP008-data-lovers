@@ -30,13 +30,32 @@
         </header>
 
         <main class="conteudo">
-            <section class="conteudo-principal">
-                <div class="conteudo-principal-escrito">
-                    <h1 class="conteudo-principal-escrito-titulo"> Studio Ghibli </h1>
-                    <h2 class="conteudo-principal-escrito-texto"> Studio Ghibli, acclaimed Japanese animation film studio that was founded in 1985 by animators and directors Miyazaki Hayao and Takahata Isao and producer Suzuki Toshio. Studio Ghibli is known for the high quality of its filmmaking and its artistry. Its feature films won both critical and popular praise and influenced other animation studios.</h2>
-                    <button class="conteudo-principal-escrito-botao"> Watch </button>    
+            <section class="conteudo-principal1">
+
+                 <div class="conteudo-principal1">
+                    <h1 class="conteudo-principal-escrito-titulo1" id="titleHome">Spirited away</h1>
+                    <p class="conteudo-principal-escrito-texto1" id="description">
+                    is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her
+                    parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents
+                    have been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the
+                    world how it once was? </p>
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/U9HE1Cr7C3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <div class="conteudo-imagem-slide" id="imageSlide">
+                    <img id="image" src="./img/chihiro.jpg" alt="">
+
+                </div>
+                
+                <div id="inputSlide">
+                    <input type="radio" name="slides" id="slide1" onclick="slide()" checked>
+                    <input type="radio" name="slides" id="slide2" onclick="slide()">
+                    <input type="radio" name="slides" id="slide3" onclick="slide()">
+                </div>
+                       
+                <div class="conteudo-principal-escrito-botao1" id="buttonTrailer">
+                    <a id="link" href='https://www.youtube.com/watch?v=SgZI655GgHk'><button id="watchTrailer">Whatch trailer</button></a>
+                </div>    
+
             </section>
         </main>
 
@@ -49,6 +68,6 @@
               </p> 
         </footer>
 
-        <script src="nav-bar.js"></script>
+        <script src="slide.js"></script>
     </body>
 </html>
