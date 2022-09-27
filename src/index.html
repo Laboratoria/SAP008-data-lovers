@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content=" Um site sobre o Studio Ghibli, com opções de filtragens por personagens, diretores, ano, filmes etc.. + cálculo agragado">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="img/ghibli.ico">  
-        <link rel="stylesheet" type="text/css" href="style.css">  
-        <title>Studio Ghibli</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Um site sobre o Studio Ghibli, com opções de filtragens por personagens, diretores, ano, filmes etc.. + cálculo agragado">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/ghibli.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Studio Ghibli</title>
+</head>
 
-    <body>
+<body>
 
-        <header class="cabecalho">
-            <nav class="cabecalho-menu">
-                <a href="index.html" class="cabecalho-menu-item"> Home </a>
-                <a href="movies.html" class="cabecalho-menu-item"> Movies </a>
-                
-                <div class="cabecalho-menu-logo">
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a href="index.html" class="cabecalho-menu-item"> Home </a>
+            <a href="movies.html" class="cabecalho-menu-item"> Movies </a>
+
+            <div class="cabecalho-menu-logo">
                 <h2> Studio Ghibli</h2>
                 <p> 株式会社スタジオジブリ </p>
-                
+
             </div>
-                <a href="characters.html" class="cabecalho-menu-item"> Characters </a>
-                <a href="more.html" class="cabecalho-menu-item"> More </a>
-            </nav>
-        </header>
+            <a href="characters.html" class="cabecalho-menu-item"> Characters </a>
+            <a href="more.html" class="cabecalho-menu-item"> More </a>
+        </nav>
+    </header>
 
-        <main class="conteudo">
-            <section class="conteudo-principal1">
-
-                 <div class="conteudo-principal1">
-                    <h1 class="conteudo-principal-escrito-titulo1" id="titleHome">Spirited away</h1>
-                    <p class="conteudo-principal-escrito-texto1" id="description">
+    <main class="conteudo">
+        <section class="xxx">
+            <div class="conteudo-principal1">
+                <h1 class="conteudo-principal-escrito-titulo1" id="titleHome">Spirited away</h1>
+                <p class="conteudo-principal-escrito-texto1" id="description">
                     is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her
-                    parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents
-                    have been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the
+                    parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her
+                    parents
+                    have been changed into pigs along with others inside a bathhouse full of these creatures. Will she
+                    ever see the
                     world how it once was? </p>
-                </div>
-                
-                <div class="conteudo-imagem-slide" id="imageSlide">
-                    <img id="image" src="./img/chihiro.png" alt="">
+            </div>
+            <div class="conteudo-imagem-slide" id="imageSlide">
+                <img id="image" src="./img/chihiro.png" alt="">
+            </div>
 
-                </div>
-                
-                <div id="inputSlide">
-                    <input type="radio" name="slides" id="slide1" onclick="slide()" checked>
-                    <input type="radio" name="slides" id="slide2" onclick="slide()">
-                    <input type="radio" name="slides" id="slide3" onclick="slide()">
-                </div>
-                       
-                <div class="conteudo-principal-escrito-botao1" id="buttonTrailer">
-                    <a id="link" href='https://www.youtube.com/watch?v=SgZI655GgHk'><button id="watchTrailer">Whatch trailer</button></a>
-                </div>    
+            <div id="inputSlide">
+                <input type="radio" name="slides" id="slide1" onclick="slide()" checked>
+                <input type="radio" name="slides" id="slide2" onclick="slide()">
+                <input type="radio" name="slides" id="slide3" onclick="slide()">
+            </div>
 
-            </section>
-        </main>
+            <div class="conteudo-principal-escrito-botao1" id="buttonTrailer">
+                <a id="link" href='https://www.youtube.com/watch?v=SgZI655GgHk'><button id="watchTrailer">Whatch
+                        trailer</button></a>
+            </div>
 
-        <footer class="rodape">
-            <p class="mensagem-rodape">"Developed by" 
-                <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
-                "e"
-                <a href="https://github.com/Thainaprado7"> Thaina Prado</a> " SAP008
-                - Laboratória Brazil - 2022"
-              </p> 
-        </footer>
+        </section>
+    </main>
 
-        <script src="slide.js"></script>
-    </body>
+    <footer class="rodape">
+        <p class="mensagem-rodape">"Developed by"
+            <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
+            "e"
+            <a href="https://github.com/Thainaprado7"> Thaina Prado</a> " SAP008
+            - Laboratória Brazil - 2022"
+        </p>
+    </footer>
+
+    <script src="slide.js"></script>
+</body>
+
 </html>
