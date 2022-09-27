@@ -7,34 +7,34 @@ const films = data.films
 
 
 
-function showFilmsCards (films) { 
+function showFilmsCards(films) {
   document.getElementById('cardsFilms').innerHTML = printFilmsCards(films)
 }
-console.log (getCharacters (data.films))
+console.log(getCharacters(data.films))
 
 
 
 showFilmsCards(data.films)
-const ordenator = (e) =>{
+const ordenator = (e) => {
   const orderSelec = e.target.value;
-  if (orderSelec !== ""){
+  if (orderSelec !== "") {
     const filterOrder = sortFilms(films, orderSelec)
     showFilmsCards(filterOrder)
   }
 }
 
 const order = document.getElementById("inputOrder")
-order.addEventListener ("change", ordenator)
+order.addEventListener("change", ordenator)
 
 const filterByProducer = (e) => {
   const producerSelec = e.target.value;
-  const filter = filterByCriteriaValue (data.films, "producer", producerSelec )
+  const filter = filterByCriteriaValue(data.films, "producer", producerSelec)
   showFilmsCards(filter)
-  
+
 
 }
 const producerFilter = document.getElementById("inputProducer")
-producerFilter.addEventListener ("change", filterByProducer)
+producerFilter.addEventListener("change", filterByProducer)
 
 
 
@@ -42,10 +42,14 @@ producerFilter.addEventListener ("change", filterByProducer)
 
 const filterByDirector = (e) => {
   const directorFilterSelec = e.target.value;
-  const filter = filterByCriteriaValue (data.films,"director", directorFilterSelec )
+  const filter = filterByCriteriaValue(data.films, "director", directorFilterSelec)
   showFilmsCards(filter)
-  
+
 
 }
 const directorFilter = document.getElementById("inputDirector")
-directorFilter.addEventListener ("change", filterByDirector)
+directorFilter.addEventListener("change", filterByDirector)
+
+
+
+

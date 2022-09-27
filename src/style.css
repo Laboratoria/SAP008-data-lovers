@@ -1,103 +1,348 @@
-body{
-  margin: 0;
-  padding: 0;
-  border: 0;
+/*css hmtl */
 
-  
-  }
-  
-  
-  .imgCabecalho{
-    width: 100vw;
-    height: auto;
-   
-  
-  }
-  
-  .column-nowrap{
-    background-image: url(Imagem/fundo.png);
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh, cover;
-    }
+body {
+  margin: 10px;
+  padding: 80px;
+  border: 40px;
 
-h1{
+}
 
-font-size:  42px; 
-
+.imgCabecalho {
+  width: 85vw;
+  height: 300px;
+  background-image: center;
+  border: 20px;
+  border-radius: 2%;
 }
 
 
 
-
-.segundaPagina{
-	box-shadow: 3px 4px 0px 0px #6B4D3B;
-	background-color:#D09E80;
-	border-radius:15px;
-	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:5px 10px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #8D9B6A;
-   
-}
-.siteSpot {
- height: 300;
- width: 300; 
-}
-
-.siteInsta {
-  height: 300;
-  width: 300; 
+.totoro {
+  text-align: center;
+  margin-top: 10px;
 
 }
 
 
-.terceiraPagina{
+.lista-navegacao {
+  height: 10%;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 300px;
+}
+
+.insta {
+  height: 5%;
+  width: 5%;
+}
+
+.spot {
+  height: 5%;
+  width: 5%;
+
+}
+
+h1 {
+  font: normal 62px sans-serif;
+  transition: .6s;
+  margin-left: 200px;
+  text-align: center;
+  font-family: Bold;
+  text-shadow:
+    0px 0px 10px #9B59B6,
+    0px 0px 20px #9B59B6,
+    0px 0px 30px #9B59B6;
+}
+
+
+
+.filmes {
+  height: 30px;
+  width: 200px;
   box-shadow: 3px 4px 0px 0px #6B4D3B;
-	background-color:#D09E80;
-	border-radius:15px;
-	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:5px 10px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #8D9B6A;
-   
+  background-color: #490723;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8D9B6A;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.personagens {
+  height: 30px;
+  width: 120px;
+  box-shadow: 3px 4px 0px 0px #6B4D3B;
+  background-color: #490723;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8D9B6A;
+  flex-grow: 2;
+  line-height: 25px;
 }
 
 
-.p {
-font:rgba(107, 77, 59, 1)
+
+.filmes:hover {
+  background-color: #813d59;
 }
-.segundaPagina:hover {
-	background-color: #8D9B6A;
+
+.filmes:active {
+  position: relative;
+  top: 1px;
 }
-.segundaPagina:active {
-	position:relative;
-	top:1px;
+
+.personagens:hover {
+  background-color: #813d59;
 }
-.terceiraPagina:hover {
-	background-color: #8D9B6A;
+
+.personagens:active {
+  position: relative;
+  top: 1px;
 }
-.terceiraPagina:active {
-	position:relative;
-	top:1px;
+
+/*css página filmes */
+.container-filter {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10%;
+
+}
+
+#cardsFilms {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cards {
+  margin: 10px;
+}
+
+/*.cardFlip {
+  width: 300px;
+  height: 300px;
+  perspective: 700px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+
+
+}*/
+.back {
+  width: 200px;
+  height: 285px;
+  overflow: auto;
+  background: white;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+}
+
+.cardFlip {
+  width: 200px;
+  height: 285px;
+  perspective: 200px;
+  display: flex;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+
+
+}
+
+.poster {
+  width: 200px;
+  height: 285px;
+  box-shadow: 6px 6px 10px 5px rgba(5, 1, 3, 0.25);
+  border-radius: 5px;
+}
+
+.front {
+  background: transparent;
+  z-index: 1;
 }
 
 
-.cardsFilmsContainer {
+
+/*.back {
+  width: 200px;
+  height: 285px;
+  overflow: auto;
+  background: white;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}*/
+
+.cardFlip:hover .front {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.cardFlip:hover .back {
+  transform: rotateY(0);
+  z-index: 1;
+}
+
+
+/*css página personagens*/
+.container-filter-personagens {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#cardsPersonagens {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.card-poster {
+  width: 200px;
+  height: 285px;
+  box-shadow: 6px 6px 10px 5px rgba(5, 1, 3, 0.25);
+  border-radius: 5px;
+}
+
+
+.flipPersonagens {
+  width: 300px;
+  /*400px;*/
+  height: 300px;
+  perspective: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.front-personagens,
+.back-personagens {
+  position: absolute;
+  width: 200px;
+  height: 285px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+}
+
+.front-personagens,
+.back-personagens {
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front-personagens {
+  background: transparent;
+  z-index: 1;
+}
+
+.back-personagens {
+  background: white;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.flipPersonagens:hover .front {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.flipPersonagens:hover .back-personagens {
+  transform: rotateY(0);
+  z-index: 1
+}
+
+
+/*Botão de voltar dos personagens  e filmes para a página inicial*/
+
+.voltarPersonagens {
+  height: 30px;
+  width: 120px;
+  box-shadow: 3px 4px 0px 0px #312a25;
+  background-color: #490723;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #813d59;
+  ;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.voltarFilmes {
+  height: 30px;
+  width: 120px;
+  box-shadow: 3px 4px 0px 0px #312a25;
+  background-color: #490723;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #813d59;
+  ;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.voltarFilmes:hover {
+  background-color: #813d59;
+}
+
+.voltarFilmes:active {
+  position: relative;
+  top: 1px;
+}
+
+.voltarPersonagens:hover {
+  background-color: #813d59;
+}
+
+.voltarPersonagens:active {
+  position: relative;
+  top: 1px;
+}
+
+
+/*.cardsFilmsContainer {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -109,27 +354,12 @@ font:rgba(107, 77, 59, 1)
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-
-.poster {
-  width: 200px;
-  height: 285px;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
+*/
 
 
-@media (max-width: 767px) {
-  .cardsMoviesContainer {
+
+@media (max-width: 370px) {
+  .container-filmes{
     flex-direction: column;
-  }
-
-  .poster {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .mainInfoAndRating {
-    display: flex;
   }
 }
