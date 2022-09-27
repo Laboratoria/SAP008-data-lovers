@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Página Filmes </title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Página Filmes </title>
 
-  
-     <main>
-    <div id= "cardsFilms"></div>
-    </main >
-    <!--="scroll">-->
-    <!-- <main class="mainFilmes"> -->
-    <!-- <section class="cardFilms"> -->
-    
-    <input id="filtro" type="text">
-     
-      <select name="filtroOrder" class="filterFilms" id="inputOrder">
-        <option value="order">Ordem</option>
-        <option value="a-z" id="rising">A-Z</option>
-        <option value="z-a" id="falling">Z-A</option>
-      </select>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <select name="filter" class="filterProducer" id="inputProducer">
-        <option value="producer">Produtor</option>
-        <option value="Hayao Miyazaki" id="produ1">Hayao Miyazaki</option>
-        <option value="Isao Takahata" id="produ2">Isao Takahata</option>
-        <option value="Toru Hara" id="produ3">Toru Hara</option>
-        <option value="Toshio Suzuki" id="produ4">Toshio Suzuki</option>
-        <option value="Yoshiaki Nishimura" id="produ5">Yoshiaki Nishimura</option>
-        </select>
+<body>
+  <h1>Studio Ghibli スタジオジブリ - Filmes </h1>
+  <p><a href="index.html" class="voltarFilmes">voltar</a></p>
 
-        <select name="directorFilter" class="filterDirector" id="inputDirector">
-          <option value="director">Director</option>
-          <option value="Hayao Miyazaki" id="dir1">Hayao Miyazaki</option>
-          <option value="Isao Takahata" id="dir2">Isao Takahata</option>
-          <option value="Yoshifumi Kondō" id="dir3">Yoshifumi Kondō</option>
-          <option value="Hiroyuki Morita" id="dir4">Hiroyuki Morita</option>
-          <option value="Gorō Miyazaki" id="dir5">Gorō Miyazaki</option>
-          <option value="Hiromasa Yonebayashi" id="dir6">Hiromasa Yonebayashi</option>
-          
-          </select>
+  <div class="container-filter">
 
-      
-     
-    
+    <select name="filtroOrder" class="filterFilms" id="inputOrder">
+      <option value="order">Ordem</option>
+      <option value="a-z" id="rising">A-Z</option>
+      <option value="z-a" id="falling">Z-A</option>
+    </select>
+
+    <select name="filter" class="filterProducer" id="inputProducer">
+      <option value="producer">Produtor</option>
+      <option value="Hayao Miyazaki" id="produ1">Hayao Miyazaki</option>
+      <option value="Isao Takahata" id="produ2">Isao Takahata</option>
+      <option value="Toru Hara" id="produ3">Toru Hara</option>
+      <option value="Toshio Suzuki" id="produ4">Toshio Suzuki</option>
+      <option value="Yoshiaki Nishimura" id="produ5">Yoshiaki Nishimura</option>
+    </select>
+
+    <select name="directorFilter" class="filterDirector" id="inputDirector">
+      <option value="director">Director</option>
+      <option value="Hayao Miyazaki" id="dir1">Hayao Miyazaki</option>
+      <option value="Isao Takahata" id="dir2">Isao Takahata</option>
+      <option value="Yoshifumi Kondō" id="dir3">Yoshifumi Kondō</option>
+      <option value="Hiroyuki Morita" id="dir4">Hiroyuki Morita</option>
+      <option value="Gorō Miyazaki" id="dir5">Gorō Miyazaki</option>
+      <option value="Hiromasa Yonebayashi" id="dir6">Hiromasa Yonebayashi</option>
+
+    </select>
+  </div>
+  <div class="totoro"><img src="Imagem/totoro2.png" alt="plano de fundo totoro"></div>
 
 
-    <p><a href="index.html"></a>Voltar</p>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+  <main>
+    <div id="cardsFilms"></div>
+  </main>
+  <!--="scroll">-->
+  <!-- <main class="mainFilmes"> -->
+  <!-- <section class="cardFilms"> -->
+
+
+
+
+
+
+
+
+  <div id="root"></div>
+
+  <footer>
+    <p> Copyright by ©️ Luciana Chamma e Débora Martins </p>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
