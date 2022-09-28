@@ -1,17 +1,16 @@
-import { filterByCriteriaValue, sortFilms} from './data.js';
+import { filterByCriteriaValue, getCharacters, sortFilms, calculoAgregado} from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
-function dataCharacters (films) {
-  let characters =[] 
-    for (let i = 0; i < films.length; i++ ){
-      characters=characters.concat(films[i].people)
-    } 
-    return characters
-}
 
-export function dataShowCharacters(films){
-    let characters = dataCharacters(films) 
+
+const allCharacters = getCharacters (data.films)
+
+const estatistica = document.getElementById ("calculo")
+
+
+export function dataShowCharacters(characters){
+    
     
 
     document.getElementById ("cardsPersonagens").innerHTML=characters.map(character=>  `
@@ -40,39 +39,50 @@ export function dataShowCharacters(films){
 
 
   
-  dataShowCharacters(data.films)
+  dataShowCharacters(allCharacters)
 
 
   
 
   const filtroGenero = (e) => {
-    let characters = dataCharacters(data.films) 
     const genderFilterSelec = e.target.value;
-    const filter = filterByCriteriaValue (characters,"gender", genderFilterSelec )
-    console.log(genderFilterSelec)
+    const filter = filterByCriteriaValue (allCharacters,"gender", genderFilterSelec )
+    dataShowCharacters (filter)
     
-    
-    
-    console.log(filter)
-  
+    const percent = calculoAgregado (allCharacters,"gender", genderFilterSelec )
+    estatistica.innerHTML= createEstatistica(percent)
+
   }
+
+
+  const createEstatistica = (e) => {
+    return `
+    <h1>${e}%</h1>  
+    `
+  }
+
+
+
   const inputElement = document.getElementById("inputGenero")
   inputElement.addEventListener ("change", filtroGenero)
 
 
 //função ordenar
-dataShowCharacters(data.films)
-const ordenatorPeople = (e) =>{
+
+
+const ordenatorPeople = (e) => {
   const orderPeopleSelec = e.target.value;
-  if (orderPeopleSelec !== ""){
-    const filterOrderGender = sortFilms(data.films, orderPeopleSelec)
-    dataShowCharacters(filterOrderGender)
+  if (orderPeopleSelec !== "") {
+    const filterOrderPeople = sortFilms(data.films, orderPeopleSelec)
+    dataShowCharacters(filterOrderPeople)
+
+    console.log(ordenatorPeople)
   }
 }
 
 
 const order = document.getElementById("inputOrder")
-order.addEventListener ("change", ordenatorPeople)
+order.addEventListener("change", ordenatorPeople)
 
   /*dataShowCharacters(resultGenero)   
   const parcial = resultGenero.length

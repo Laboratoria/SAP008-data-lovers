@@ -1,10 +1,36 @@
-import { sortFilms, printFilmsCards, getCharacters, filterByCriteriaValue } from './data.js';
+import { sortFilms, getCharacters, filterByCriteriaValue } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films
 
+function printFilmsCards(data) {
+  return data.map((item) =>
+    `
+<div class="cards">
+    <div class="cardFlip">
+      <div class="front">
+        <figure>
+          <img src = "${item.poster}" class = "poster">
+        </figure>
+      </div>
+      <div class="back">
+        <p class = "titles"><strong>${item.title} </strong></p>
+        <p class = "infoFilms"><strong>Release Date: </strong>${item.release_date}</p>
+        <p class = "infoFilms"><strong>Description: </strong>${item.description}</p>
+        <p class = "infoFilms"><strong>Director: </strong>${item.director}<p>
+        <p class = "infoFilms"><strong>Producer: </strong>${item.producer}<p>
+        <p class = "infoFilms"><strong>Score: </strong>${item.rt_score}<p>
+      </div>
+     </div>
+    </div>
+    
 
+
+    `
+    )
+      .join('');
+}
 
 
 function showFilmsCards(films) {

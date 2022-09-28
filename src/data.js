@@ -8,16 +8,6 @@ export const filterByCriteriaValue = (list, criteria, value) => {
 
 
 
-
-
-/*export const filterPersonagens = (films, criterio, valor) => {
-  console.log(films, criterio, valor)
-  return films.filter(people => {
-    return people[criterio] === valor
-  })
-}*/
-
-
   export const sortFilms = (films, order) => {
     if (order == "a-z") {
       return films.sort(function (a, b) {
@@ -57,35 +47,6 @@ export const filterByCriteriaValue = (list, criteria, value) => {
 
   
 
-  export function printFilmsCards(data) {
-    return data.map((item) =>
-      `
-
-  <div class="cards">
-    <div class="cardFlip">
-      <div class="front">
-        <figure>
-          <img src = "${item.poster}" class = "poster">
-        </figure>
-      </div>
-      <div class="back">
-        <p class = "titles"><strong>${item.title} </strong></p>
-        <p class = "infoFilms"><strong>Release Date: </strong>${item.release_date}</p>
-        <p class = "infoFilms"><strong>Description: </strong>${item.description}</p>
-        <p class = "infoFilms"><strong>Director: </strong>${item.director}<p>
-        <p class = "infoFilms"><strong>Producer: </strong>${item.producer}<p>
-        <p class = "infoFilms"><strong>Score: </strong>${item.rt_score}<p>
-      </div>
-     </div>
-    </div>
-    
-
-
-    `
-    )
-      .join('');
-
-  }
 
   export function getCharacters(films) {
     let characters = []
@@ -100,6 +61,16 @@ export const filterByCriteriaValue = (list, criteria, value) => {
   }
 
  
+  //allCharacters,"gender", genderFilterSelec
+export const calculoAgregado = (data, key, value) => {
+  let qtd = data.reduce((total, valor) => {
+    if (valor[key] === value) {
+      return total + 1;
+    }
+    return total;
+  }, 0);
+  return Number((qtd * 100 / data.length).toFixed(2));
+}
 
 
 
