@@ -354,12 +354,22 @@ h1 {
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-*/
 
 
 
-@media (max-width: 370px) {
+
+@media (max-width: 480px) {
   .container-filmes{
     flex-direction: column;
   }
-}
+
+  .poster {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainInfoAndRating {
+    display: flex;
+  }
+}*/

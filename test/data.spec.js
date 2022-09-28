@@ -1,6 +1,5 @@
-import { filterByCriteriaValue, sortFilms } from '../src/data.js';
 
-
+import { filterByCriteriaValue, getCharacters, sortFilms, calculoAgregado} from '../src/data.js';
 
 const castle = {
   "title": "Castle in the Sky",
@@ -30,7 +29,9 @@ const pomPoko = {
 };
 
 describe('filterByCriteriaValue', () => {
-  const objCriteriaValue = [castle, fireflies]
+
+  const objCriteriaValue = [castle, fireflies, pomPoko]
+
   it('é função', () => {
 
     expect(typeof filterByCriteriaValue).toBe('function');
@@ -39,8 +40,76 @@ describe('filterByCriteriaValue', () => {
   it('resultado de filterDirector', () => {
     expect(filterByCriteriaValue(objCriteriaValue, "director", "Hayao Miyazaki")).toEqual([castle]);
   });
+
+  it('resultado de filterProducer', () => {
+    expect(filterByCriteriaValue(objCriteriaValue, "producer", "Toru Harai")).toEqual([fireflies]);
+  });
+
 });
 
+ 
+const Lusheeta = {
+  "id": "598f7048-74ff-41e0-92ef-87dc1ad980a9",
+  "name": "Lusheeta Toel Ul Laputa",
+  "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c3/Sheeta.jpg",
+  "gender": "Female",
+  "age": "13",
+  "eye_color": "Black",
+  "hair_color": "Black",
+  "specie": "Human"
+};
+
+const Pazu = {
+  "id": "fe93adf2-2f3a-4ec4-9f68-5422f1b87c01",
+  "name": "Pazu",
+  "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8b/Pazu.jpg",
+  "gender": "Male",
+  "age": "13",
+  "eye_color": "Black",
+  "hair_color": "Brown",
+  "specie": "Human"
+};
+
+
+const objPersonagens = [Lusheeta, Pazu]
+
+describe('filterByCriteriaValue', () => {
+  it('é função', () => {
+
+    expect(typeof filterByCriteriaValue).toBe('function');
+  });
+
+  it('resultado de filterPersonagens', () => {
+    expect(filterByCriteriaValue(objPersonagens, "id", "598f7048-74ff-41e0-92ef-87dc1ad980a9")).toEqual([Lusheeta]);
+  });
+});
+
+
+
+describe('getCharacters', () => {
+  const filmsWithPeople = [
+    
+    {
+      people:[
+        Pazu
+      ]
+    },
+    {people:[Lusheeta]},
+  ]
+  
+
+  it('é função', () => {
+
+
+    expect(typeof getCharacters).toBe('function');
+  });
+
+  it('resultado de getCharacters', () => {
+    expect(getCharacters(filmsWithPeople)).toEqual([Pazu,Lusheeta]);
+  });
+
+
+});
 
 
 describe('sortFilms', () => {
@@ -60,22 +129,17 @@ describe('sortFilms', () => {
 
 
 
+describe('calculoAgregado', () => {
+  const objPersonagens = [Lusheeta, Pazu]
+  it('é função', () => {
 
-/*it('returns `example`', () => {
-  expect(example()).toBe('example');
+    expect(typeof calculoAgregado).toBe('function');
+  });
+
+  it('deve retornar o percentual de personagens do gênero feminino', () => {
+    expect(calculoAgregado(objPersonagens, "gender", "Female")).toEqual(50);
+  });
+  it('deve retornar o percentual de personagens do gênero masculino', () => {
+    expect(calculoAgregado(objPersonagens, "gender", "Male")).toEqual(50);
+  });
 });
-});
-
-
-describe('anotherExample', () => {
-it('is a function', () => {
-  expect(typeof anotherExample).toBe('function');
-});
-
-it('returns `anotherExample`', () => {
-  expect(anotherExample()).toBe('OMG');
-});
-}); */
-
-
-/*let retornoEsperado = [objDirector[0]];*/
