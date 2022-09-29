@@ -1,0 +1,20 @@
+@font-face {
+    font-family: gaegu;
+    src: url(./Gaegu-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: annie;
+    src: url(./AnnieUseYourTelescope.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: euphoria;
+    src: url(./EuphoriaScript-Regular.otf) format('opentype');
+}
+
+
+body {
+    background: linear-gradient(275deg, #003A6F 4.45%, #007BA5 27.47%, #1E7A75 63.85%, #5CAF69 101.72%);
+}
+

@@ -13,58 +13,60 @@
 
 <body>
 
-    <header class="cabecalho">
-        <nav class="cabecalho-menu">
-            <a href="index.html" class="cabecalho-menu-item"> Home </a>
-            <a href="movies.html" class="cabecalho-menu-item"> Movies </a>
-            
-            <div class="cabecalho-menu-logo">
-            <h2> Studio Ghibli</h2>
-            <p> 株式会社スタジオジブリ </p>
-            
+    <header>
+        <h1 id="titleMenu"> Studio Ghibli</h1>
+
+        <div id="menuList">
+            <nav id="menu">
+                <ul class="menu">
+                    <li id="home"><a href="./index.html">HOME</a></li>
+                    <li id="movies"><a href="./movies.html">MOVIES</a></li>
+                    <li>株式会社スタジオジブリ</li>
+                    <li id="character"><a href="./characters.html">CHARACTERS</a></li>
+                    <li id="about"><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </nav>
         </div>
-            <a href="characters.html" class="cabecalho-menu-item"> Characters </a>
-            <a href="more.html" class="cabecalho-menu-item"> More </a>
-        </nav>
     </header>
 
     <main class="conteudo">
         <section class="conteudo-principal">
 
             <div class="conteudo-principal-filtros">
-                <input type="search" class="conteudo-filtro-pesquise" placeholder=" Search by character "
+                <input type="search" class="conteudo-filtro-pesquise" placeholder="SEARCH"
                     autocomplete="on" spellcheck="true">
             </div>
 
             <div class="conteudo-principal-filtros">
-                <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Sort of : </option>
+                <select class="conteudo-principal-filtros" id="filterSortOf">
+                    <option disabled selected value=""> SORT OF</option>
                     <option class="ordem" value="A-Z">A-Z</option>
                     <option class="ordem" value="Z-A">Z-A</option>
                 </select>
             </div>
 
-            <div class="conteudo-principa-filtros" id="filtros">
-                <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Age </option>
-                </select>
-            </div>
-
-            <div class="conteudo-principa-filtros" id="filtros">
-                <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Genre </option>
-                </select>
-            </div>
-
-            <div class="conteudo-principa-filtros" id="filtros">
-                <select class="conteudo-principal-filtros">
-                    <option disabled selected value=""> Species </option>
+            <div class="conteudo-principal-filtros" id="filtros">
+                <select class="conteudo-principal-filtros" id="filterAge">
+                    <option disabled selected value=""> AGE </option>
                 </select>
             </div>
 
             <div class="conteudo-principal-filtros" id="filtros">
-                <button class="botao-limpar"><strong> Clean </strong></button>
+                <select class="conteudo-principal-filtros" id="filterGenre">
+                    <option disabled selected value="">GENRE</option>
+                </select>
             </div>
+
+            <div class="conteudo-principal-filtros" id="filtros">
+                <select class="conteudo-principal-filtros" id="filterSpecies">
+                    <option disabled selected value=""> SPECIES </option>
+                </select>
+            </div>
+
+            <div class="conteudo-principal-filtros" id="buttonClean">
+                <button class="conteudo-principal-filtros" id="buttonClean">CLEAN </button>
+            </div>
+
         </section>
 
         <section class="printaCards1" id="printaCard1">
@@ -74,11 +76,11 @@
     </main>
 
     <footer class="rodape">
-        <p class="mensagem-rodape">"Developed by" 
+        <p class="mensagem-rodape">Developed by
             <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
-            "e"
-            <a href="https://github.com/Thainaprado7"> Thaina Prado</a> " SAP008
-            - Laboratória Brazil - 2022"
+            e
+            <a href="https://github.com/Thainaprado7"> Thaina Prado</a> SAP008
+            - Laboratória Brazil - 2022
           </p> 
     </footer>
     <script src="characters.js" type="module"></script>
