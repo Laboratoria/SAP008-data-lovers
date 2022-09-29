@@ -13,60 +13,60 @@
     <title>Studio Ghibli</title>
 </head>
 
+
 <body>
+    <header>
+        <h1 id="titleMenu"> Studio Ghibli</h1>
 
-    <header class="cabecalho">
-        <nav class="cabecalho-menu">
-            <a href="index.html" class="cabecalho-menu-item"> Home </a>
-            <a href="movies.html" class="cabecalho-menu-item"> Movies </a>
-
-            <div class="cabecalho-menu-logo">
-                <h2> Studio Ghibli</h2>
-                <p> 株式会社スタジオジブリ </p>
-
-            </div>
-            <a href="characters.html" class="cabecalho-menu-item"> Characters </a>
-            <a href="more.html" class="cabecalho-menu-item"> More </a>
-        </nav>
+        <div id="menuList">
+            <nav id="menu">
+                <ul class="menu">
+                    <li id="home"><a href="./index.html">HOME</a></li>
+                    <li id="movies"><a href="./movies.html">MOVIES</a></li>
+                    <li>株式会社スタジオジブリ</li>
+                    <li id="character"><a href="./characters.html">CHARACTERS</a></li>
+                    <li id="about"><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="conteudo">
-        <section class="xxx">
-            <div class="conteudo-principal1">
-                <h1 class="conteudo-principal-escrito-titulo1" id="titleHome">Spirited away</h1>
-                <p class="conteudo-principal-escrito-texto1" id="description">
-                    is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her
-                    parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her
-                    parents
-                    have been changed into pigs along with others inside a bathhouse full of these creatures. Will she
-                    ever see the
-                    world how it once was? </p>
-            </div>
-            <div class="conteudo-imagem-slide" id="imageSlide">
-                <img id="image" src="./img/chihiro.png" alt="">
-            </div>
-
-            <div id="inputSlide">
-                <input type="radio" name="slides" id="slide1" onclick="slide()" checked>
-                <input type="radio" name="slides" id="slide2" onclick="slide()">
-                <input type="radio" name="slides" id="slide3" onclick="slide()">
-            </div>
-
-            <div class="conteudo-principal-escrito-botao1" id="buttonTrailer">
-                <a id="link" href='https://www.youtube.com/watch?v=SgZI655GgHk'><button id="watchTrailer">Watch</button></a>
-            </div>
-
-        </section>
-    </main>
-
-    <footer class="rodape">
-        <p class="mensagem-rodape">"Developed by"
-            <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
-            "e"
-            <a href="https://github.com/Thainaprado7"> Thaina Prado</a> " SAP008
-            - Laboratória Brazil - 2022"
+    <div class="textHome">
+        <h1 id="titleHome">Spirited away</h1>
+        <p id="description">
+            is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her
+            parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents
+            have
+            been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the
+            world
+            how it once was?
         </p>
+    </div>
+
+    <div id="imageSlide">
+        <img id="image" src="./imagens/chirriro.jpg" alt="">
+    </div>
+
+
+    <div id="inputSlide">
+        <input type="radio" name="slides" id="slide1" onclick="slide()" checked>
+        <input type="radio" name="slides" id="slide2" onclick="slide()">
+        <input type="radio" name="slides" id="slide3" onclick="slide()">
+    </div>
+
+    <div id="buttonTrailer">
+        <a id="link" href='https://www.youtube.com/watch?v=SgZI655GgHk'><button id="watchTrailer">Whatch
+                trailer</button></a>
+    </div>
+    <footer class="rodape">
+        <p class="mensagem-rodape">Developed by 
+            <a href="https://github.com/raquelthabata"> Raquel Thabata</a>
+            e
+            <a href="https://github.com/Thainaprado7"> Thaina Prado</a> SAP008
+            - Laboratória Brazil - 2022
+          </p> 
     </footer>
+
 
     <script src="slide.js"></script>
 </body>

@@ -1,65 +1,146 @@
 @font-face {
-    font-family: 'fontes tx1';
-    src: url('fonts/Gaegu-Light.ttf');
+    font-family: gaegu;
+    src: url(./fonts/Gaegu-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'fontes tx2';
-    src: url('fonts/EuphoriaScript-Regular.ttf');
+    font-family: annie;
+    src: url(./fonts/AnnieUseYourTelescope.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'fontes tx3';
-    src: url('fonts/AnnieUseYourTelescope-Regular.ttf');
+    font-family: euphoria;
+    src: url(./fonts/EuphoriaScript-Regular.otf) format('opentype');
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    /*configuração para zerar e resetar todas as configurações já existentes na criação da page */
-}
+/* HOME*/
 
 body {
-    font-size: 100%;
-    background: #007AA4;
+    background: linear-gradient(275deg, #003A6F 4.45%, #007BA5 27.47%, #1E7A75 63.85%, #5CAF69 101.72%);
 }
 
-/*inicio menu todas a paginas*/ 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    padding: 24px;
-}
-
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
-    /* espaçamento entre as opções do menu */
-}
-
-.cabecalho-menu-logo{
-    font-family: 'fontes tx3';
-    font-size: 30px;
-    color: white;
-    text-align: center;
-}
-
-.cabecalho-menu-item {
-    font-family: 'fontes tx3';
-    color: white;
+#titleMenu {
+    padding-left: 530px;
+    font-family: 'annie';
     font-weight: 400;
-    font-size: 50px;
+    font-size: 45px;
+    color: #FFFFFF;
 }
 
-.cabecalho-menu-item:hover {
-    color: black;
+.menu {
+    list-style-type: none;
+    font-size: 25px;
+    font-family: 'gaegu';
+    text-align: center;
+    word-spacing: 90px;
+    margin-top: -50px;
+    color: #FFFFFF;
 }
-/*fim menu todas a paginas*/
+
+ul li {
+    display: inline;
+}
+
+#home :hover {
+    border: solid 2px #003A6F;
+}
+
+#movies :hover {
+    border: solid 2px #ec03ba;
+}
+
+#character :hover {
+    border: solid 2px #ece803;
+}
+
+#about :hover {
+    border: solid 2px #2aec03;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#titleHome {
+    padding-top: 10px;
+    position: absolute;
+    padding-left: 200px;
+    font-family: 'euphoria';
+    font-weight: 400;
+    font-size: 55px;
+}
+
+#description {
+    text-align: justify;
+    width: 464px;
+    height: 300px;
+    padding-left: 170px;
+    padding-top: 100px;
+    font-family: 'gaegu';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+#inputSlide {
+    width: 80px;
+    height: 50px;
+    padding-left: 165px;
+    margin-top: -10px;
+}
+
+#buttonTrailer {
+    padding-left: 64%;
+    margin-top: -50px;
+    width: 170px;
+    height: 75px;
+
+}
+
+#watchTrailer {
+    background: #3532eb5e;
+    border-radius: 20px;
+    width: 170px;
+    height: 35px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+    font-family: 'gaegu';
+}
+
+#watchTrailer:hover {
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.6);
+    background-color: #ef4bf5a2;
+}
+
+#imageSlide {
+    padding-left: 50%;
+
+
+}
+
+#image {
+    width: 500px;
+    height: 300px;
+    border-radius: 100px;
+    position: absolute;
+    border: ridge 10px rgba(156, 10, 156, 0.671);
+    margin-top: -350px;
+}
+
+.mensagem-rodape {
+    font-family: 'gaegu';
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+/* HOME*/
+
 
 /* inicio pagina home */
 .conteudo {
@@ -71,7 +152,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 40px;
 }
 
 .conteudo-principal-escrito {
@@ -81,7 +162,7 @@ body {
 }
 
 .conteudo-principal-escrito-titulo {
-    font-family: 'fontes tx2';
+    font-family: 'gaegu';
     font-weight: 400;
     font-size: 70px;
     color: black;
@@ -89,14 +170,14 @@ body {
 }
 
 .conteudo-principal-escrito-texto {
-    font-family: 'fontes tx1';
+    font-family: 'gaegu';
     font-weight: 400;
     font-size: 30px;
     color: white;
 }
 
-.xxx{
-    font-family: 'fontes tx1';
+.xxx {
+    font-family: 'gaegu';
     font-size: 20px;
     color: white;
     text-align: center;
@@ -134,20 +215,35 @@ body {
 }
 
 .conteudo-principal-escrito-texto1 {
-    font-family: 'fontes tx1';
+    font-family: 'gaegu';
     font-weight: 400;
     font-size: 30px;
     color: white;
 }
 
- /*pagina de filtros */
+/*pagina de filtros */
+
+.conteudo-principal-filtros {
+    font-family: 'gaegu';
+    font-size: 20px;
+    color: white;
+    width: 100;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.conteudo-principal-filtros :hover{
+    border: solid 1px white;
+}
+
 .conteudo-filtro-pesquise {
-    font-family: 'fontes tx1';
-    font-weight: 400;
-    font-size: 30px;
-    background-color: white;
+    font-family: 'gaegu';
+    font-size: 20px;
+    background-color: rgba(217, 217, 217, 0.64);
     color: black;
-    width: 300;
+    width: 120px;
     height: 100%;
     border: none;
     border-radius: 20px;
@@ -156,44 +252,43 @@ body {
 
 .conteudo-filtro-pesquise:hover {
     color: white;
-    background-color: black
+    border: solid 1px white;
 }
 
-.conteudo-principal-filtros {
-    font-family: 'fontes tx1';
-    font-weight: 400;
-    font-size: 30px;
-    background-color: white;
-    color: black;
-    width: 300;
-    height: 100%;
-    border: none;
-    border-radius: 20px;
+#filterSortOf {
+    background-color: rgba(54, 178, 217, 0.6);
 }
 
-.conteudo-principal-filtros:hover {
-    color: white;
-    background-color: black
+#filterAge {
+    background-color: rgba(217, 191, 54, 0.6);
 }
 
-.botao-limpar{
-    font-family: 'fontes tx1';
-    font-weight: 400px;
-    font-size: 30px;
-    background-color: white;
-    color: black;
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
+#filterGenre {
+    background-color: rgba(217, 54, 93, 0.6);
 }
 
-.botao-limpar:hover {
-    color: white;
-    background-color: black
+
+
+#filterSpecies {
+    background-color: rgba(177, 54, 217, 0.6);
 }
+
+#filterYear{
+    background-color: rgba(177, 54, 217, 0.6);
+}
+
+#filterDirector{
+    background-color: rgba(217, 191, 54, 0.6);
+   
+}
+#buttonClean{
+    background-color: rgba(73, 217, 54, 0.6);
+}
+
+
+
 .printaCards {
-    font-family: 'fontes tx1';
+    font-family: 'gaegu';
     font-size: 20px;
     color: white;
     text-align: center;
@@ -207,8 +302,8 @@ body {
     margin: 80px;
 }
 
-#printCharacters{
-    font-family: 'fontes tx1';
+#printCharacters {
+    font-family: 'gaegu';
     font-size: 20px;
     color: white;
     text-align: center;
@@ -234,18 +329,13 @@ body {
     border: 3px solid white;
 }
 
-#imagem1:hover , #imagem2:hover{
-    -webkit-box-shadow: 26px 21px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 26px 21px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 26px 21px 5px 0px rgba(0,0,0,0.75);
+#imagem1:hover {
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.75);
+    width: 235px;
+    height: 285px;
 }
-
-.mensagem-rodape {
-    font-family: 'fontes tx1';
-    font-size: 25px;
-    color: white;
-    padding: 30px;
-    display: block;
-    text-align: center;
+#imagem2:hover {
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    width: 205px;
+    height: 175px;
 }
-
