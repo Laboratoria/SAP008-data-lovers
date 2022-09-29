@@ -69,11 +69,12 @@ a {
     font-family: 'euphoria';
     font-weight: 400;
     font-size: 55px;
+    padding-top: 0.5px;
 }
 
 #description {
     text-align: justify;
-    width: 464px;
+    width: 400px;
     height: 300px;
     padding-left: 170px;
     padding-top: 100px;
