@@ -39,12 +39,12 @@ function showFilmsCards(films) {
 console.log(getCharacters(data.films))
 
 
-
+// ordenar
 showFilmsCards(data.films)
 const ordenator = (e) => {
   const orderSelec = e.target.value;
   if (orderSelec !== "") {
-    const filterOrder = sortFilms(films, orderSelec)
+    const filterOrder = sortFilms(films, orderSelec, "title")
     showFilmsCards(filterOrder)
   }
 }
@@ -52,6 +52,8 @@ const ordenator = (e) => {
 const order = document.getElementById("inputOrder")
 order.addEventListener("change", ordenator)
 
+
+//filtro produtor
 const filterByProducer = (e) => {
   const producerSelec = e.target.value;
   const filter = filterByCriteriaValue(data.films, "producer", producerSelec)
@@ -64,7 +66,7 @@ producerFilter.addEventListener("change", filterByProducer)
 
 
 
-
+// filtro diretor
 
 const filterByDirector = (e) => {
   const directorFilterSelec = e.target.value;

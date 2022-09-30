@@ -73,10 +73,10 @@ export function dataShowCharacters(characters){
 const ordenatorPeople = (e) => {
   const orderPeopleSelec = e.target.value;
   if (orderPeopleSelec !== "") {
-    const filterOrderPeople = sortFilms(data.films, orderPeopleSelec)
+    const filterOrderPeople = sortFilms(allCharacters, orderPeopleSelec, "name")
     dataShowCharacters(filterOrderPeople)
 
-    console.log(ordenatorPeople)
+    console.log(filterOrderPeople)
   }
 }
 

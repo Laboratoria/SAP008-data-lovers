@@ -8,14 +8,14 @@ export const filterByCriteriaValue = (list, criteria, value) => {
 
 
 
-  export const sortFilms = (films, order) => {
+  export const sortFilms = (films, order, key) => {
     if (order == "a-z") {
       return films.sort(function (a, b) {
-        if (a.title > b.title) {
+        if (a[key] > b[key]) {
           return 1
 
         }
-        if (b.title > a.title) {
+        if (b[key] > a[key]) {
 
           return -1
 
@@ -26,11 +26,11 @@ export const filterByCriteriaValue = (list, criteria, value) => {
     }
     if (order == "z-a") {
       return films.sort(function (a, b) {
-        if (a.title > b.title) {
+        if (a[key] > b[key]) {
           return - 1
 
         }
-        if (b.title > a.title) {
+        if (b[key] > a[key]) {
 
           return 1
 
