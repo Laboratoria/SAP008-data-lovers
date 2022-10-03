@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Página Personagens</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Studio Ghibli スタジオジブリ - Personagens </h1> 
-   
-    <p><a href="index.html" class="voltarPersonagens">voltar</a></p>
-    
-<div class="calculo-agregado" id="calculo"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Página Personagens</title>
 
-    <div class="container-filter-personagens">
-    
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Studio Ghibli スタジオジブリ - Personagens </h1>
+
+  <p><a href="index.html" class="voltarPersonagens">voltar</a></p>
+
+  <div class="calculo-agregado" id="calculo"></div>
+
+  <div class="container-filter-personagens">
+
     <select name="filtroOrder" class="filterPersonagens" id="inputOrder">
       <option value="order">Ordem</option>
       <option value="a-z" id="alfa">A-Z</option>
@@ -27,23 +29,24 @@
       <option value="Male" id="male">Masculino</option>
       <option value="Female" id="female">Feminino</option>
 
-      </select>
-    </div>
+    </select>
+  </div>
 
-    <div class="totoro"><img src="Imagem/totoro2.png" alt="plano de fundo totoro"></div>
-    <main>
-      <div id= "cardsPersonagens"></div>
-    
-      </main >
- 
-   
-        
-  
+  <div class="totoro"><img src="Imagem/totoro2.png" alt="plano de fundo totoro"></div>
+  <main>
+    <div id="cardsPersonagens"></div>
 
-    <div id="root"></div>
-    <footer>
-      <p> Copyright by ©️ Luciana Chamma e Débora Martins </p>
-    </footer>
-    <script src="personagem.js" type="module"></script>
-  </body>
+  </main>
+
+
+
+
+
+  <div id="root"></div>
+  <footer>
+    <p> Copyright by ©️ Luciana Chamma e Débora Martins </p>
+  </footer>
+  <script src="personagem.js" type="module"></script>
+</body>
+
 </html>
