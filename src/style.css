@@ -29,6 +29,7 @@ body {
   height: 10%;
   width: 10%;
   display: flex;
+
   flex-direction: row;
   justify-content: space-between;
   gap: 300px;
@@ -61,7 +62,7 @@ h1 {
 
 .filmes {
   height: 30px;
-  width: 200px;
+  width: 100px;
   box-shadow: 3px 4px 0px 0px #6B4D3B;
   background-color: #490723;
   border-radius: 15px;
@@ -95,7 +96,23 @@ h1 {
   line-height: 25px;
 }
 
+.trailers {
+  height: 30px;
+  width: 120px;
+  box-shadow: 3px 4px 0px 0px #6B4D3B;
+  background-color: #490723;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8D9B6A;
+  flex-grow: 2;
 
+}
 
 .filmes:hover {
   background-color: #813d59;
@@ -114,6 +131,40 @@ h1 {
   position: relative;
   top: 1px;
 }
+
+.trailers:hover {
+  background-color: #813d59;
+}
+
+.trailers:active {
+  position: relative;
+  top: 1px;
+}
+
+.botoes-navegacao {
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+
+
+.container-trailers {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10%;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-grow: 20%;
+}
+
+
 
 /*css página filmes */
 .container-filter {
@@ -150,7 +201,8 @@ h1 {
   backface-visibility: hidden;
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -324,6 +376,36 @@ h1 {
   line-height: 25px;
 }
 
+.voltarTrailers {
+  height: 30px;
+  width: 120px;
+  box-shadow: 3px 4px 0px 0px #312a25;
+  background-color: #490723;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #813d59;
+  ;
+  flex-grow: 2;
+  line-height: 25px;
+
+}
+
+.voltarTrailers:hover {
+  background-color: #813d59
+}
+
+.voltarTrailers:active {
+  position: relative;
+  top: 1px;
+
+}
+
 .voltarFilmes:hover {
   background-color: #813d59;
 }
@@ -343,34 +425,33 @@ h1 {
 }
 
 
-/*.cardsFilmsContainer {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  gap: 4vw;
-  width: 70vw;
-  margin-bottom: 4vh;
-  background-color: #ffffff;
-  padding: 5vmin;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+/*select estilizações*/
+
+.filterPersonagens {
+  width: 150px;
+  position: relative;
+  padding: 10px 20px 10px 50px;
+  border-radius: 50px;
+  box-shadow: 20px -16px #9b59b6;
+}
+
+.filterPersonagens option {
+  border-radius: 50px;
+  font: 150 19px Arial;
+  color: #490723;
+  border: #9b325e;
+
 }
 
 
-
-
-@media (max-width: 480px) {
-  .container-filmes{
+@media (max-width: 720px) {
+  body , .imgCabecalho, .lista-navegacao, .botoes-navegacao{
     flex-direction: column;
+   
+  }
+  h1{
+    width: 70%;
+
   }
 
-  .poster {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .mainInfoAndRating {
-    display: flex;
-  }
-}*/
+}

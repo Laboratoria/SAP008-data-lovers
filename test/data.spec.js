@@ -1,5 +1,5 @@
 
-import { filterByCriteriaValue, getCharacters, sortFilms, calculoAgregado} from '../src/data.js';
+import { filterByCriteriaValue, getCharacters, sortFilms, calculoAgregado } from '../src/data.js';
 
 const castle = {
   "title": "Castle in the Sky",
@@ -47,7 +47,7 @@ describe('filterByCriteriaValue', () => {
 
 });
 
- 
+
 const Lusheeta = {
   "id": "598f7048-74ff-41e0-92ef-87dc1ad980a9",
   "name": "Lusheeta Toel Ul Laputa",
@@ -88,15 +88,15 @@ describe('filterByCriteriaValue', () => {
 
 describe('getCharacters', () => {
   const filmsWithPeople = [
-    
+
     {
-      people:[
+      people: [
         Pazu
       ]
     },
-    {people:[Lusheeta]},
+    { people: [Lusheeta] },
   ]
-  
+
 
   it('é função', () => {
 
@@ -105,7 +105,7 @@ describe('getCharacters', () => {
   });
 
   it('resultado de getCharacters', () => {
-    expect(getCharacters(filmsWithPeople)).toEqual([Pazu,Lusheeta]);
+    expect(getCharacters(filmsWithPeople)).toEqual([Pazu, Lusheeta]);
   });
 
 
@@ -120,7 +120,7 @@ describe('sortFilms', () => {
   });
 
   it('deve ordenar o filmes em ordem crescente de nomes', () => {
-    expect(sortFilms(films, "a-z")).toEqual,([castle, fireflies, pomPoko]);
+    expect(sortFilms(films, "a-z")).toEqual, ([castle, fireflies, pomPoko]);
   });
   it('deve ordenar o filmes em ordem decrescente de nomes', () => {
     expect(sortFilms(films, "z-a")).toEqual([pomPoko, fireflies, castle]);

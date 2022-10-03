@@ -28,8 +28,8 @@ function printFilmsCards(data) {
 
 
     `
-    )
-      .join('');
+  )
+    .join('');
 }
 
 
