@@ -15,7 +15,6 @@ function montaCard(lista) {
     let directorFilter = document.getElementById("filterDirector").value;
 
     if (directorFilter){
-        console.log(`O valor do direto é ${directorFilter}`);
         lista =  lista.filter((obj) => obj.director == directorFilter);
     }
 
@@ -29,7 +28,6 @@ function montaCard(lista) {
 printaCards.innerHTML = montaCard(data.films);
 
 // aqui termina a função de printar cards //
-
 // aqui começa a função de filtros //
 
 printaFiltroDirector(data.films);
@@ -42,9 +40,8 @@ function printaFiltroDirector(filmsList){
 }
 
 function printaSelect(objList, campoDoFiltro){
-    console.log(campoDoFiltro)
     objList.forEach((obj)=> {
-        var option = document.createElement("option");
+        let option = document.createElement("option");
         option.text = obj;
         option.value = obj;    
         campoDoFiltro.appendChild(option);
@@ -56,8 +53,10 @@ const classe_filtros = document.querySelectorAll(".conteudo-principal-filtros");
 classe_filtros.forEach((item) => {
     item.addEventListener("change", (e) => {
         printaCards.innerHTML = "";
-        console.log("Limpando a listagem, antes de passar o filtro !")
         printaCards.innerHTML = montaCard(data.films);
     });
 })
+
+// aqui acaba o filtro director
+// aqui começa o filtro de anos
 
