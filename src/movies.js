@@ -13,9 +13,14 @@ function PrintandoCard(film) {
 
 function montaCard(lista) {
     let directorFilter = document.getElementById("filterDirector").value;
+    let yearFilter = document.getElementById("filterYear").value;
 
     if (directorFilter){
         lista =  lista.filter((obj) => obj.director == directorFilter);
+    }
+
+    if (yearFilter){
+        lista = lista.filter((obj) => obj.release_date == yearFilter);
     }
 
     return lista
@@ -28,7 +33,7 @@ function montaCard(lista) {
 printaCards.innerHTML = montaCard(data.films);
 
 // aqui termina a função de printar cards //
-// aqui começa a função de filtros //
+// aqui começa a função de filtrar diretor //
 
 printaFiltroDirector(data.films);
 
@@ -38,6 +43,25 @@ function printaFiltroDirector(filmsList){
     printaSelect(new Set(directorList), filterDirector);
 
 }
+
+// aqui começa a função de filtrar por ano//
+
+printaFiltroRelease(data.films);
+
+function printaFiltroRelease (filmsList) {
+    let filterYear = document.getElementById ("filterYear");
+    let releaseList = filmsList.map((film) => film.release_date);
+    printaSelect(new Set(releaseList), filterYear);
+
+}
+
+
+
+
+
+
+
+// função generalista que será chamada nos filtros // 
 
 function printaSelect(objList, campoDoFiltro){
     objList.forEach((obj)=> {
