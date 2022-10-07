@@ -32,7 +32,7 @@ function printaFiltroAge(filmsList) {
         res.forEach(b => arrIdade.push(b.age))
 
     }
-    a
+    
     for (var i = 0; i < arrIdade.length; i++) {
         if (newArr.indexOf(arrIdade[i]) == -1) {
             newArr.push(arrIdade[i]);
