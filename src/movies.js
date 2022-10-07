@@ -1,4 +1,5 @@
 import data from "./data/ghibli/ghibli.js"
+import { order } from "./data.js";
 
 function PrintandoCard(film) {
     return `
@@ -13,7 +14,8 @@ function PrintandoCard(film) {
 
 function montaCard(lista) {
     let directorFilter = document.getElementById("filterDirector").value;
-    let yearFilter = document.getElementById("filterYear").value;
+    let yearFilter = document.getElementById("filterYear").value;  
+
 
     if (directorFilter){
         lista =  lista.filter((obj) => obj.director == directorFilter);
@@ -22,6 +24,7 @@ function montaCard(lista) {
     if (yearFilter){
         lista = lista.filter((obj) => obj.release_date == yearFilter);
     }
+
 
     return lista
         .map((film) => {
@@ -33,16 +36,16 @@ function montaCard(lista) {
 printaCards.innerHTML = montaCard(data.films);
 
 // aqui termina a função de printar cards //
-// aqui começa a função de filtrar diretor //
 
-printaFiltroDirector(data.films);
 
-function printaFiltroDirector(filmsList){
-    let filterDirector = document.getElementById("filterDirector");
-    let directorList = filmsList.map((film) => film.director);
-    printaSelect(new Set(directorList), filterDirector);
+// aqui começa a função de filtrar por ordem alfabética //
 
+let ordemAlfabetica = document.getElementById("filterSortOf")
+function resultado(){
+    return montaCard(order(data.films, ordemAlfabetica.value))
 }
+
+ordemAlfabetica.addEventListener("change", resultado)
 
 // aqui começa a função de filtrar por ano//
 
@@ -55,10 +58,16 @@ function printaFiltroRelease (filmsList) {
 
 }
 
+// aqui começa a função de filtrar diretor //
 
+printaFiltroDirector(data.films);
 
+function printaFiltroDirector(filmsList){
+    let filterDirector = document.getElementById("filterDirector");
+    let directorList = filmsList.map((film) => film.director);
+    printaSelect(new Set(directorList), filterDirector);
 
-
+}
 
 
 // função generalista que será chamada nos filtros // 
