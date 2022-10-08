@@ -4,13 +4,14 @@ O objetivo principal deste projeto é que aprenda a desenhar e construir uma int
 
 ## Índice
 
-* [1. Introdução ao Projeto](#1-Introdução ao Projeto)
-* [2. Histórias de Usuários](#2-Histórias de Usuários)
-* [3. Desenvolvimento da Interface](#3-Desenvolvimento da interface)
-* [4. Conteúdos implementados no projeto](#4-Conteúdos implementados no projeto)
-* [5. Tecnologias Utilizadas](#5-Tecnologias Utilizadas)
+* [1. Introdução ao Projeto ](#1.Introdução-ao-Projeto)
+* [2. Histórias de Usuários ](#2.Histórias-de-Usuários)
+* [3. Desenvolvimento da Interface ](#3.Desenvolvimento-da-interface)
+* [4. Conteúdos implementados no projeto ](#4.Conteúdos-implementados-no-projeto)
+* [5. Tecnologias Utilizadas ](#5.Tecnologias-Utilizadas)
 
 ***
+
 
 ## 1. Introdução ao Projeto
 
@@ -24,6 +25,9 @@ Studio Ghibli é um estúdio japonês de animação, muito conhecido por seus fi
 Primeiramente, fizemos um fluxograma, para organizarmos cada etapa do projeto :
 
 - imagem do fluxograma 
+
+![Fluxograma]()
+
 
 Depois utilizamos o Trello para organizar cada etapa, desenvolvimento e conclusão .
 
