@@ -1,14 +1,38 @@
 import data from "./data/ghibli/ghibli.js"
+function montaCard(lista) {
+
+    let filterAge = document.getElementById("filterAge").value;
+
+    let listaChar = [];
+
+
+    if (filterAge){
+        listaChar = lista.filter((obj) => obj.people.age == filterAge);
+    }
+
+
+    return listaChar
+        .map((characters) => {
+            return generateCharactersMovies(characters);
+        })
+        .join("");
+}
+
+printaCards1.innerHTML = montaCard(data.films);
+
+
+
+
 const printCharacters = document.getElementById("printCharacters");
 function generateCharactersMovies(movies) {
     let layout = "";
-    movies.forEach(movie => {
+    movies.forEach((movie) => {
         movie.people.forEach(p => {
             layout += `<div>
             <p> Name: ${p.name}</p>
             <img id= "imagem2" src = "${p.img}"/>
             <p> Age: ${p.age}</p>
-            <p> Genre: ${p.genre}</p>
+            <p> Gender: ${p.gender}</p>
             <p> Specie: ${p.specie}</p>
             </div>`
         })
@@ -55,5 +79,13 @@ function printaSelect(objList, campoDoFiltro) {
     })
 }
 
+const classe_filtros = document.querySelectorAll(".conteudo-principal-filtros");
+
+classe_filtros.forEach((item) => {
+    item.addEventListener("change", (e) => {
+        printaCards1.innerHTML = "";
+        printaCards1.innerHTML = montaCard(data.films);
+    });
+})
 
 
