@@ -38,7 +38,7 @@ printaCards.innerHTML = montaCard(data.films);
 // aqui termina a função de printar cards //
 
 
-// aqui começa a função de filtrar por ordem alfabética //
+// aqui começa a função de filtrar por ordem alfabética  A-Z//
 
 let ordemAlfabetica = document.getElementById("filterSortOf")
 function resultado(){
@@ -46,6 +46,17 @@ function resultado(){
 }
 
 ordemAlfabetica.addEventListener("change", resultado)
+
+
+// aqui começa a função de filtrar por ordem alfabética  Z-A//
+
+let ordemAlfabeticaZa = document.getElementById("filterSortOf")
+function resultado1(){
+    return montaCard(order(data.films, ordemAlfabeticaZa.value))
+}
+
+ordemAlfabeticaZa.addEventListener("change", resultado1)
+
 
 // aqui começa a função de filtrar por ano//
 
