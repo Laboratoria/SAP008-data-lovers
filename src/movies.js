@@ -50,6 +50,13 @@ ordemAlfabetica.addEventListener("change", resultado)
 
 // aqui começa a função de filtrar por ordem alfabética  Z-A//
 
+let ordemAlfabeticaZa = document.getElementById("filterSortOf")
+function resultado1(){
+    return montaCard(order(data.films, ordemAlfabeticaZa.value))
+}
+
+ordemAlfabeticaZa.addEventListener("change", resultado1)
+
 
 // aqui começa a função de filtrar por ano//
 
