@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Tema do Projeto: Pokémon GO](#1-tema-do-projeto:-pokémon-gO)
+* [1. Tema do Projeto: Pokémon GO](#1-tema-do-projeto:-pokémon-go)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Pesquisa com os usuários](#3-pesquisa-com-os-usuários)
 * [4. História de Usuários](#4-histórias-de-usuários)
@@ -47,20 +47,20 @@ A partir desta pesquisa foi possível traçar o perfil das personas e identifica
 
 Com base nas pesquisas com os usuários, elaboramos 3 histórias de usuário:
 
-História 1
+**História 1**
 Eu, como jogador de Pokémon Go, quero separar os pokémons por tipo para saber qual tipo de pokémon posso usar em uma batalha para contra atacar;
 
-História 2
+**História 2**
 Eu, como jogador de Pokémon Go, gostaria de saber quantos candies é necessário para evoluir para poder escolher o pokémon que irá evoluir primeiro;
 
-História 3
+**História 3**
 Eu, como jogador de Pokémon Go, gostaria de ver os Pokémons em sua forma shiny para capturá- los de forma mais assertiva porque são raros de se encontrar.
 
 Por meio das histórias dos usuários foi possível estabelecer uma aplicação mais assertiva para sanar as dores do usuário.
 
 Após as pesquisas elaboramos o protótipo com a ferramenta figma e realizamos os ajustes para uma interface objetiva e intuitiva, que atenda desde jogadores amadores a profissionais.
 
-CRITÉRIOS DE ACEITAÇÃO
+**Critérios de aceitação**
  
 Consideramos algumas ações para satisfazer a necessidade das histórias de usuário
 
@@ -112,4 +112,6 @@ https://andressaolive.github.io/SAP008-data-lovers/
 
 ## 10. Desenvolvedoras
 
-Andressa Oliveira & Bruna Nunes
+* Andressa Oliveira [ Linkedin ](https://www.linkedin.com/in/andressa-oliveira-front-end/) | [ GitHub ](https://github.com/Andressaolive)
+* Bruna Nunes [ GitHub ](https://github.com/brunabrubs)
+
