@@ -108,7 +108,7 @@ Elaboramos protótipos de baixa e alta fidelidade usando a ferramenta FIGMA
 
 ## 9. Resultado final
 
-*link deploy
+https://andressaolive.github.io/SAP008-data-lovers/
 
 ## 10. Desenvolvedoras
 
