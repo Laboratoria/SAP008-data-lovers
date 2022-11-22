@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Tema do Projeto: Pokémon GO](#1-tema-do-projeto:-pokémon-go)
+* [1. Tema do Projeto: Pokémon GO](#1-tema-do-projeto)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Pesquisa com os usuários](#3-pesquisa-com-os-usuários)
 * [4. História de Usuários](#4-histórias-de-usuários)
