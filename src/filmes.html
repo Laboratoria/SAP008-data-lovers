@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Página Filmes </title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+  
+     <main>
+    <div id= "cardsFilms"></div>
+    </main >
+    <!--="scroll">-->
+    <!-- <main class="mainFilmes"> -->
+    <!-- <section class="cardFilms"> -->
+    
+    <input id="filtro" type="text">
+     
+      <select name="filtroOrder" class="filterFilms" id="inputOrder">
+        <option value="order">Ordem</option>
+        <option value="a-z" id="rising">A-Z</option>
+        <option value="z-a" id="falling">Z-A</option>
+      </select>
+
+      <select name="filter" class="filterProducer" id="inputProducer">
+        <option value="producer">Produtor</option>
+        <option value="Hayao Miyazaki" id="produ">Hayao Miyazaki</option>
+        <option value="Isao Takahata" id="produ">Isao Takahata</option>
+        <option value="Toru Hara" id="produ">Toru Hara</option>
+        <option value="Toshio Suzuki" id="produ">Toshio Suzuki</option>
+        <option value="Yoshiaki Nishimura" id="produ">Yoshiaki Nishimura</option>
+        </select>
+
+        <select name="directorFilter" class="filterDirector" id="inputDirector">
+          <option value="director">Director</option>
+          <option value="Hayao Miyazaki" id="dir">Hayao Miyazaki</option>
+          <option value="Isao Takahata" id="dir">Isao Takahata</option>
+          <option value="Yoshifumi Kondō" id="dir">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita" id="dir">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki" id="dir">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi" id="dir">Hiromasa Yonebayashi</option>
+          
+          </select>
+
+      </main>
+      
+     
+    
+
+
+    <p><a href="index.html" >Voltar</p>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
