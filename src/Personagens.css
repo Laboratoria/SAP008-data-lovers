@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #06BFBF;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+/*titulo*/
+
+.titulo {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+img {
+    max-width: 50vw;
+    max-height: 50vh;
+}
+/*pesquisa*/
+.conjuntoPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px;
+}
+
+.pesquisar{
+    background-color: darkcyan;
+    border-radius: 15px;
+    width: 700px;
+    height: 50px;
+}
+
+.pesquisar::placeholder{
+    color: lawngreen;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btnSubmit{
+    width: 5vh;
+    margin: 2vh;
+}
+/* filtros*/
+.btnFiltro{
+    background-color: darkcyan;
+    color: lawngreen;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 2vh;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pesquisar:hover,
+.btnFiltro:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+/*cards*/
+.mostrarCards{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 50px 200px;
+    margin: 50px;
+    width: 100%;
+  
+}
+.cards{
+    border-radius: 150px;
+    width: 195px;
+    margin: 5px;
+}
+.nomePersonagem,
+.infos{
+    background-color: darkcyan;
+    color: lawngreen;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+}
+
+#voltar-parao-inicio {
+    background: #B3D929;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    color: #04ADBF;
+    border-radius: 30px;
+    border: 2px solid #618C35;
+}
+
+/* .percentual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /*imagem de titulo*/
+    .titulo{
+        height: 29vh;
+        width: 50vw;
+
+    }
+
+    /*área de pesquisa*/
+    .pesquisar{
+        height: 6vh;
+        width: 50vw;
+    }
+
+    .btnSubmit{
+        width: 3vh;
+        margin: 2vh;
+    }
+
+
+    /*filtros*/
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .btnFiltro{
+        background-color: darkcyan;
+        color: lawngreen;
+        text-align: center;
+        border-radius: 15px;
+        width: 15vw;
+        margin: 8px 2px;
+        font-size: 0.8rem;
+        height: 4vh;
+    }
+
+    /*Cards*/
+    .mostrarCards{
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        gap: 1vw 20vw;
+        margin: 50px;
+        width: 100%;
+    }
+    .cards{
+        border-radius: 150px;
+        width: 30vw;
+        margin: 5px;
+    }
+    .nomePersonagem,
+    .infos{
+        background-color: darkcyan;
+        color: lawngreen;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 15px;
+        width: 30vw;
+    }
+}
