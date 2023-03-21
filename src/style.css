@@ -73,7 +73,6 @@ select {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  cursor: pointer;
   margin-top: 2vh;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -154,7 +153,7 @@ a:hover {
 }
 
 /*Responsividade tablet:*/
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   body {
     padding: 0%;
     margin: 0%;
@@ -191,7 +190,7 @@ a:hover {
 }
 
 /*Responsividade celular:*/
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   body {
     padding: 0%;
     margin: 0%;
