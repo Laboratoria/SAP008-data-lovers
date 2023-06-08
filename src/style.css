@@ -1,30 +1,284 @@
+
+
 /*css hmtl */
+
+.container-página-inicial{
+  border: 5px double #ccc3c3;
+
+}
 
 body {
   margin: 10px;
   padding: 80px;
   border: 40px;
+  background-color: #111010;
 
 }
 
-.imgCabecalho {
-  width: 85vw;
+.cabecalho {
+background-color: black;
+}
+
+.imagem-cabecalho {
+  width: 80vw;
   height: 300px;
   background-image: center;
   border: 20px;
-  border-radius: 2%;
+}
+
+.container-curiosidades {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #141313;
+}
+
+.card{
+  width: 90px;
+  height: 200px;
+  background-color: #141313;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 100px ;
+  
 }
 
 
 
-.totoro {
-  text-align: center;
+.imagem {
+  display: flex;
+  justify-content: center;
+
+}
+
+.personagens-logo, .oscar, .bilheteria, .mascote {
+  width: 120px;
+  height: 120px;
+  border: 50%;
   margin-top: 10px;
+  border-radius: 70%;
 
 }
 
 
+details {
+  color: #ffffff;
+}
+h2{
+color: #ffffff;
+}
 
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 5s;
+}
+
+.slide img {
+  width: 800px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+ .manual-btn {
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+} 
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+#radio6:checked ~ .first{
+  margin-left: -125%;
+}
+#radio7:checked ~ .first{
+  margin-left: -150%;
+}
+#radio8:checked ~ .first{
+  margin-left: -175%;
+}
+#radio9:checked ~ .first{
+  margin-left: -200%;
+}
+#radio10:checked ~ .first{
+  margin-left: -225%;
+}
+#radio11:checked ~ .first{
+  margin-left: -250%;
+}
+#radio12:checked ~ .first{
+  margin-left: -275%;
+}
+#radio13:checked ~ .first{
+  margin-left: -300%;
+}
+
+/* .navigation-auto div{
+  border: 2px solid #20acff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 80px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 150px;
+} */
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn2{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn3{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn4{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn5{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn6{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn7{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn8{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn9{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn10{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn11{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn12{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn13{
+  background-color: #ffffff;
+}
+
+
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+/*css botoes paginas*/
+.espaco {
+  background-color: #ffffff;
+}
 .lista-navegacao {
   height: 10%;
   width: 10%;
@@ -53,19 +307,18 @@ h1 {
   text-align: center;
   font-family: Bold;
   text-shadow:
-    0px 0px 10px #9B59B6,
-    0px 0px 20px #9B59B6,
-    0px 0px 30px #9B59B6;
+    0px 0px 10px #d31919,
+    0px 0px 20px #d31919,
+    0px 0px 30px #d31919;
 }
 
 
 
 .filmes {
   height: 30px;
-  width: 100px;
+  width: 120px;
   box-shadow: 3px 4px 0px 0px #6B4D3B;
-  background-color: #490723;
-  border-radius: 15px;
+  background-color: #523e42;
   border: 1px solid #ffffff;
   cursor: pointer;
   color: #ffffff;
@@ -82,8 +335,7 @@ h1 {
   height: 30px;
   width: 120px;
   box-shadow: 3px 4px 0px 0px #6B4D3B;
-  background-color: #490723;
-  border-radius: 15px;
+  background-color: #523e42;
   border: 1px solid #ffffff;
   cursor: pointer;
   color: #ffffff;
@@ -100,8 +352,7 @@ h1 {
   height: 30px;
   width: 120px;
   box-shadow: 3px 4px 0px 0px #6B4D3B;
-  background-color: #490723;
-  border-radius: 15px;
+  background-color: #523e42;
   border: 1px solid #ffffff;
   cursor: pointer;
   color: #ffffff;
@@ -142,14 +393,14 @@ h1 {
 }
 
 .botoes-navegacao {
-  margin: 20px;
+  margin: 5%;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-content: space-between;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 10px;
 }
 
 
@@ -242,16 +493,6 @@ h1 {
   z-index: 1;
 }
 
-
-
-/*.back {
-  width: 200px;
-  height: 285px;
-  overflow: auto;
-  background: white;
-  transform: rotateY(-180deg);
-  backface-visibility: hidden;
-}*/
 
 .cardFlip:hover .front {
   transform: rotateY(180deg);
