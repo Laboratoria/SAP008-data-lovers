@@ -57,7 +57,7 @@ export function dataShowCharacters(characters){
 
   const createEstatistica = (e) => {
     return `
-    <h1>${e}%</h1>  
+    <h1>Os personagens desse gênero representam ${e}%</h1>  
     `
   }
 
