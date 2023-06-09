@@ -10,44 +10,52 @@
 </head>
 
 <body>
-  <div class="container-personagens">
-  <h1>Studio Ghibli スタジオジブリ - Personagens </h1>
+  <div class="container-página-inicial">
 
-  <p><a href="index.html" class="voltarPersonagens">voltar</a></p>
 
-  <div class="calculo-agregado" id="calculo"></div>
+    <header class="cabecalho">
+      <img class="imagem-cabecalho" src="Imagem/curiosidades-a-viagem-de-chihiro.jpg" alt="imagem-cabecallho">
+      <h1>Studio Ghibli スタジオジブリ</h1>
+    </header>
 
-  <div class="container-filter-personagens">
+    <h2>Personagens</h2>
 
-    <select name="filtroOrder" class="filterPersonagens" id="inputOrder">
-      <option value="order">Ordem</option>
-      <option value="a-z" id="alfa">A-Z</option>
-      <option value="z-a" id="zorro">Z-A</option>
-    </select>
+    <p><a href="index.html" class="voltarPersonagens">Home</a></p>
 
-    <select name="filterGênero" class="filterGender" id="inputGenero">
-      <option value="gender">Gênero</option>
-      <option value="Male" id="male">Masculino</option>
-      <option value="Female" id="female">Feminino</option>
+    <div class="calculo-agregado" id="calculo"></div>
 
-    </select>
+    <div class="container-filter-personagens">
+
+      <select name="filtroOrder" class="filterPersonagens" id="inputOrder">
+        <option value="order">Ordem</option>
+        <option value="a-z" id="alfa">A-Z</option>
+        <option value="z-a" id="zorro">Z-A</option>
+      </select>
+
+      <select name="filterGênero" class="filterGender" id="inputGenero">
+        <option value="gender">Gênero</option>
+        <option value="Male" id="male">Masculino</option>
+        <option value="Female" id="female">Feminino</option>
+
+      </select>
+    </div>
+
+
+    <main>
+      <div id="cardsPersonagens"></div>
+
+    </main>
+
+
+
+
+
+    <div id="root"></div>
+
   </div>
 
- 
-  <main>
-    <div id="cardsPersonagens"></div>
-
-  </main>
-
-</div>
-
-
-
-  <div id="root"></div>
-
-
   <footer>
-    <p> Copyright by ©️ Luciana Chamma e Débora Martins </p>
+    <p> Copyright by ©️ Débora Martins e Luciana Chamma  </p>
   </footer>
   <script src="personagem.js" type="module"></script>
 </body>

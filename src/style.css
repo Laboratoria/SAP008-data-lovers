@@ -1,6 +1,6 @@
 
 
-/*css hmtl */
+/*css html */
 
 
 .filmes {
@@ -55,7 +55,7 @@
 }
 
 .filmes:hover {
-  background-color: #813d59;
+  background-color: #E12444;
 }
 
 .filmes:active {
@@ -64,7 +64,7 @@
 }
 
 .personagens:hover {
-  background-color: #813d59;
+  background-color: #E12444;
 }
 
 .personagens:active {
@@ -73,7 +73,7 @@
 }
 
 .trailers:hover {
-  background-color: #813d59;
+  background-color: #E12444;
 }
 
 .trailers:active {
@@ -83,6 +83,7 @@
 
 .botoes-navegacao {
   margin: 5%;
+  text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -432,17 +433,6 @@ footer{
 color: #ccc3c3;
 }
 
-.container-trailers {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 10%;
-  flex-direction: row;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  flex-grow: 20%;
-}
-
-
 
 /*css página filmes */
 
@@ -510,8 +500,6 @@ color: #ccc3c3;
   padding: 10px;
   border-radius: 10px;
   transition: 700ms;
-
-
 }
 
 .poster {
@@ -701,15 +689,27 @@ color: #ccc3c3;
   top: 1px;
 }
 
+/*css página traillers*/
+.filmes-media{
+  box-shadow: 6px 6px 10px 5px rgba(245, 229, 237, 0.25);
+}
 
+.container-trailers {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10%;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-grow: 20%;
+  
+}
 /*select estilizações*/
 
-.filterPersonagens {
+ .filterPersonagens {
   width: 150px;
   position: relative;
   padding: 10px 20px 10px 50px;
-  border-radius: 50px;
- /*box-shadow: 20px -16px #9b59b6;*/
 }
 
 .filterPersonagens option {
@@ -718,7 +718,7 @@ color: #ccc3c3;
   color: #490723;
   border: #9b325e;
 
-}
+} */
 
 .container-traillers{
   border: 5px double #ccc3c3;
