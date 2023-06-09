@@ -731,6 +731,19 @@ p2 {
   border: 5px double #ccc3c3;
 }
 
+/*estilização card biografia co-fundador*/
+
+.container-biografia{
+  width: 600px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  padding: 14%;
+
+}
+
+
+
 @media (max-width: 720px) {
   body , .imgCabecalho, .lista-navegacao, .botoes-navegacao{
     flex-direction: column;
