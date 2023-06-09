@@ -718,7 +718,14 @@ color: #ccc3c3;
   color: #490723;
   border: #9b325e;
 
-} */
+} 
+
+
+/*estilização dos textos cards*/
+
+p2 {
+ font-family: Arial, Helvetica, sans-serif;
+}
 
 .container-traillers{
   border: 5px double #ccc3c3;

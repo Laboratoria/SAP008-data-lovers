@@ -19,12 +19,12 @@ function printFilmsCards(data) {
         </figure>
       </div>
       <div class="back">
-        <p class = "titles"><strong>${item.title} </strong></p>
-        <p class = "infoFilms"><strong>Release Date: </strong>${item.release_date}</p>
-        <p class = "infoFilms"><strong>Description: </strong>${item.description}</p>
-        <p class = "infoFilms"><strong>Director: </strong>${item.director}<p>
-        <p class = "infoFilms"><strong>Producer: </strong>${item.producer}<p>
-        <p class = "infoFilms"><strong>Score: </strong>${item.rt_score}<p>
+        <p2 class = "titles"><strong>${item.title} </strong></p>
+        <p2 class = "infoFilms"><strong>Release Date: </strong>${item.release_date}</p2>
+        <p2 class = "infoFilms"><strong>Description: </strong>${item.description}</p2>
+        <p2 class = "infoFilms"><strong>Director: </strong>${item.director}<p2>
+        <p2 class = "infoFilms"><strong>Producer: </strong>${item.producer}<p2>
+        <p2 class = "infoFilms"><strong>Score: </strong>${item.rt_score}<p2>
       </div>
      </div>
     </div>

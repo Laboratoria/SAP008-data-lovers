@@ -22,12 +22,12 @@ export function dataShowCharacters(characters){
           </figure>
         </div>
         <div class="back-personagens">
-          <p class = "titles"><strong>${character.name} </strong></p>
-          <p class = "infoPeoples"><strong>Release gender : </strong>${character.gender}</p>
-          <p class = "infoPeoples"><strong> Age: </strong>${character.age}</p>
-          <p class = "infoPeoples"><strong> eye_color : </strong>${character.eye_color}<p>
-          <p class = "infoPeoples"><strong> hair_color: </strong>${character.hair_color}<p>
-          <p class = "infoPeoples"><strong>Specie : </strong>${character.specie}<p>
+          <p2 class = "titles"><strong>${character.name} </strong></p2>
+          <p2 class = "infoPeoples"><strong>Release gender : </strong>${character.gender}</p2>
+          <p2 class = "infoPeoples"><strong> Age: </strong>${character.age}</p2>
+          <p2 class = "infoPeoples"><strong> eye_color : </strong>${character.eye_color}<p2>
+          <p2 class = "infoPeoples"><strong> hair_color: </strong>${character.hair_color}<p2>
+          <p2 class = "infoPeoples"><strong>Specie : </strong>${character.specie}<p2>
         </div>
        </div>
       </div>
