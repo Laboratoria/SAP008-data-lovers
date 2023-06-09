@@ -1,6 +1,6 @@
 # Data Lovers - Studio Ghibli
 
-[ # Link do Projeto em funcionamento](https://deboramds.github.io/SAP008-data-lovers/src/index.html)
+# [ Link do Projeto em funcionamento](https://deboramds.github.io/SAP008-data-lovers/src/index.html)
 
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
 
