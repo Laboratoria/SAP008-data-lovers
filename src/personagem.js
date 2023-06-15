@@ -29,8 +29,8 @@ export function dataShowCharacters(characters){
           <p2 class = "infoPeoples"><strong> hair_color: </strong>${character.hair_color}<p2>
           <p2 class = "infoPeoples"><strong>Specie : </strong>${character.specie}<p2>
         </div>
-       </div>
       </div>
+    </div>
       `
       ).join("")
     return characters
