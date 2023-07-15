@@ -693,14 +693,39 @@ select {
   text-align: center;
 }
 
+/* Estilos para telas maiores que 720px */
+
+/* Estilos para telas de até 720px */
 @media (max-width: 720px) {
-  body , .imgCabecalho, .lista-navegacao, .botoes-navegacao{
+  .cabecalho {
+    text-align: center;
+  }
+
+  .botoes-navegacao {
     flex-direction: column;
-   
-  }
-  h1{
-    width: 70%;
-
+    align-items: center;
   }
 
+  .botoes-navegacao a {
+    margin-bottom: 10px;
+  }
+
+  .imagem-cabecalho {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-biografia img {
+    width: 100%;
+    height: auto;
+  }
 }
