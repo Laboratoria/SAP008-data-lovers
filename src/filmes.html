@@ -10,32 +10,35 @@
 </head>
 
 <body>
+  <p><a href="index.html" class="voltarFilmes">Home</a></p>
   <div class="container-filmes">
 
     <header class="cabecalho">
       <img class="imagem-cabecalho" src="Imagem/imagem-cabecalho.jpg" alt="imagem-cabecallho">
     </header>
-    <p><a href="index.html" class="voltarFilmes">Home</a></p>
+   
 
-    <audio preload="metadata" autoplay controls loop>
-      <source src="midia/audio.mp3" type="audio/mp3">
-      <source src="midia/audio.mp3" type="audio/mpeg">
-      <source src="midia/audio.mp3" type="audio/m.ogg">
-      <p>infelizmente seu navegador não consegue reproduzir áudio</p>
-    </audio>
+    <div class="audio-musica">
+      <audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio.mp3" type="audio/mp3">
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.mp3" type="audio/m.ogg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio</p>
+      </audio>
+    </div>
 
-    <h2>Filmografia</h2>
+    <h2 class="titles">Filmografia</h2>
    
 
     <div class="container-filter">
 
-      <select name="filtroOrder" class="filterFilms" id="inputOrder">
+      <select  name="filtroOrder" class="select-filtros" id="inputOrder">
         <option value="order">Ordem</option>
         <option value="a-z" id="rising">A-Z</option>
         <option value="z-a" id="falling">Z-A</option>
       </select>
 
-      <select name="filter" class="filterProducer" id="inputProducer">
+      <select  name="filter" class="select-filtros" id="inputProducer">
         <option value="producer">Produtor</option>
         <option value="Hayao Miyazaki" id="produ1">Hayao Miyazaki</option>
         <option value="Isao Takahata" id="produ2">Isao Takahata</option>
@@ -44,7 +47,7 @@
         <option value="Yoshiaki Nishimura" id="produ5">Yoshiaki Nishimura</option>
       </select>
 
-      <select name="directorFilter" class="filterDirector" id="inputDirector">
+      <select  name="directorFilter" class="select-filtros" id="inputDirector">
         <option value="director">Director</option>
         <option value="Hayao Miyazaki" id="dir1">Hayao Miyazaki</option>
         <option value="Isao Takahata" id="dir2">Isao Takahata</option>

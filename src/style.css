@@ -115,30 +115,34 @@ body {
 
 
 .container-página-inicial{
-  background-color: #ffffff;
+  background-color: #ffe0e8;
 
 }
 
 
 
 .lista-navegacao {
-  height: 10%;
-  width: 10%;
   display: flex;
-
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.insta {
-  height: 5%;
-  width: 5%;
+.image-1 {
+  width: 164px;
+  height: 101px;
 }
 
-.spot {
-  height: 5%;
-  width: 5%;
+.image-2 {
+  width: 132px;
+  height: 103px;
+}
+
+.audio-musica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
 }
 
@@ -151,6 +155,10 @@ body {
   border: 20px;
 }
 
+.titles {
+  background-color: white;
+}
+
   
 section {
   margin: 0 auto;
@@ -160,36 +168,38 @@ section {
 }
 
 .card {
+  background-color: #ffffff;
+  border: 1px solid black;
   display: inline-block;
   margin: 10px;
-  border: 1px solid #000;
   vertical-align: top;
   max-height: 100%;
+
 }
 
 .card img {
   display: block;
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  object-position: 3%;
 }
 
 .card details {
   width: 300px;
   height: auto;
   display: inline-block;
-  color: #ffffff;
+  color: black ;
 }
 
 .card details summary {
   font-size: 18px;
   padding: 10px;
-  color: #ffffff;
+  color: black;
 }
 
 .card details p {
   padding: 0 10px;
-  color: #ffffff;
+  color: black;
 }
 
 
@@ -290,26 +300,6 @@ section {
 #radio13:checked ~ .first{
   margin-left: -300%;
 }
-
-/* .navigation-auto div{
-  border: 2px solid #20acff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.navigation-auto{
-  position: absolute;
-  width: 80px;
-  margin-top: 360px;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 150px;
-} */
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
   background-color: #ffffff;
@@ -416,15 +406,10 @@ section {
 /*css página filmes */
 
 
-.container-filmes{
-  border: 5px double #ccc3c3;
-}
-
 .container-filter {
   display: flex;
-  justify-content: space-between;
-  border-radius: 10%;
-
+  gap: 5px;
+  justify-content: center;
 }
 
 #cardsFilms {
@@ -436,15 +421,6 @@ section {
   margin: 10px;
 }
 
-/*.cardFlip {
-  width: 300px;
-  height: 300px;
-  perspective: 700px;
-  display: flex;
-  justify-content: space-between;
-
-
-}*/
 .back {
   width: 200px;
   height: 285px;
@@ -510,10 +486,14 @@ section {
   border: 5px double #ccc3c3;
 }
 
+.calculo-agregado {
+  background-color: #ffffff;
+}
 
 .container-filter-personagens {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5px;
 }
 
 
@@ -582,10 +562,8 @@ section {
 .voltarPersonagens {
   height: 30px;
   width: 120px;
-  box-shadow: 3px 4px 0px 0px #312a25;
-  background-color: #c5bdc0;
-  border-radius: 15px;
-  border: 1px solid #c99696;
+  background-color: #ffff;
+  border: 1px solid black;
   cursor: pointer;
   color: #1d1c1c;
   font-family: Arial;
@@ -593,7 +571,6 @@ section {
   padding: 5px 10px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #813d59;
-  ;
   flex-grow: 2;
   line-height: 25px;
 }
@@ -601,10 +578,8 @@ section {
 .voltarFilmes {
   height: 30px;
   width: 120px;
-  box-shadow: 3px 4px 0px 0px #312a25;
-  background-color: #c5bdc0;
-  border-radius: 15px;
-  border: 1px solid #c99696;
+  background-color: #ffff;
+  border: 1px solid black;
   cursor: pointer;
   color: #1d1c1c;
   font-family: Arial;
@@ -619,10 +594,8 @@ section {
 .voltarTrailers {
   height: 30px;
   width: 120px;
-  box-shadow: 3px 4px 0px 0px #312a25;
-  background-color: #c5bdc0;
-  border-radius: 15px;
-  border: 1px solid #c99696;
+  background-color: #ffff;
+  border: 1px solid  black;
   cursor: pointer;
   color: #0f0c0c;
   font-family: Arial;
@@ -636,7 +609,7 @@ section {
 }
 
 .voltarTrailers:hover {
-  background-color: #af97a1;
+  background-color: #E5E1EF;
 }
 
 .voltarTrailers:active {
@@ -646,7 +619,7 @@ section {
 }
 
 .voltarFilmes:hover {
-  background-color: #af97a1;
+  background-color: #E5E1EF;
 }
 
 .voltarFilmes:active {
@@ -655,7 +628,7 @@ section {
 }
 
 .voltarPersonagens:hover {
-  background-color: #af97a1;
+  background-color: #E5E1EF;
 }
 
 .voltarPersonagens:active {
@@ -665,7 +638,10 @@ section {
 
 /*css página traillers*/
 .filmes-media{
-  box-shadow: 6px 6px 10px 5px rgba(245, 229, 237, 0.25);
+  width: 400px;
+  height: 390px;
+  background-color: #ffffff;
+  border: 1px solid black;
 }
 
 .container-trailers {
@@ -676,7 +652,8 @@ section {
   align-items: flex-end;
   flex-wrap: wrap;
   flex-grow: 20%;
-  
+  gap: 30px;
+  object-fit: contain;
 }
 /*select estilizações*/
 
@@ -698,9 +675,6 @@ section {
 /*estilização dos textos cards*/
 
 
-.container-traillers{
-  border: 5px double #ccc3c3;
-}
 
 /*estilização card biografia co-fundador*/
 
@@ -713,7 +687,11 @@ section {
 
 }
 
-
+/*estilização*/
+select {
+  width: 150px;
+  text-align: center;
+}
 
 @media (max-width: 720px) {
   body , .imgCabecalho, .lista-navegacao, .botoes-navegacao{
