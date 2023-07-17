@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Página Filmes </title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <p><a href="index.html" class="voltarFilmes">Home</a></p>
+  <div class="container-filmes">
+
+    <header class="cabecalho">
+      <img class="imagem-cabecalho" src="Imagem/imagem-cabecalho.jpg" alt="imagem-cabecallho">
+    </header>
+   
+
+    <div class="audio-musica">
+      <audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio.mp3" type="audio/mp3">
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.mp3" type="audio/m.ogg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio</p>
+      </audio>
+    </div>
+
+    <h2 class="titles">Filmografia</h2>
+   
+
+    <div class="container-filter">
+
+      <select  name="filtroOrder" class="select-filtros" id="inputOrder">
+        <option value="order">Ordem</option>
+        <option value="a-z" id="rising">A-Z</option>
+        <option value="z-a" id="falling">Z-A</option>
+      </select>
+
+      <select  name="filter" class="select-filtros" id="inputProducer">
+        <option value="producer">Produtor</option>
+        <option value="Hayao Miyazaki" id="produ1">Hayao Miyazaki</option>
+        <option value="Isao Takahata" id="produ2">Isao Takahata</option>
+        <option value="Toru Hara" id="produ3">Toru Hara</option>
+        <option value="Toshio Suzuki" id="produ4">Toshio Suzuki</option>
+        <option value="Yoshiaki Nishimura" id="produ5">Yoshiaki Nishimura</option>
+      </select>
+
+      <select  name="directorFilter" class="select-filtros" id="inputDirector">
+        <option value="director">Director</option>
+        <option value="Hayao Miyazaki" id="dir1">Hayao Miyazaki</option>
+        <option value="Isao Takahata" id="dir2">Isao Takahata</option>
+        <option value="Yoshifumi Kondō" id="dir3">Yoshifumi Kondō</option>
+        <option value="Hiroyuki Morita" id="dir4">Hiroyuki Morita</option>
+        <option value="Gorō Miyazaki" id="dir5">Gorō Miyazaki</option>
+        <option value="Hiromasa Yonebayashi" id="dir6">Hiromasa Yonebayashi</option>
+
+      </select>
+    </div>
+  
+
+
+    <main>
+      <div id="cardsFilms"></div>
+    </main>
+    <!--="scroll">-->
+    <!-- <main class="mainFilmes"> -->
+    <!-- <section class="cardFilms"> -->
+
+
+
+
+
+
+
+
+    <div id="root"></div>
+
+   
+    <script src="main.js" type="module"></script>
+  </div>
+
+  <footer>
+    <p> Copyright by ©️ Débora Martins e Luciana Chamma </p>
+  </footer>
+</body>
+
+</html>

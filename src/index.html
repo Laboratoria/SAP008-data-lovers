@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+                
+  <title>Data Lovers</title>
+  <link href="https://fonts.cdnfonts.com/css/ghibli" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container-página-inicial">
+
+
+
+    <header class="cabecalho">
+      <img class="imagem-cabecalho" src="Imagem/imagem-cabecalho.jpg" alt="imagem-cabecallho">
+      <h1></h1>
+
+      <nav class="botoes-navegacao" id="botoes-navegacao">
+        <a href="filmes.html" class="filmes">Filmografia</a>
+
+        <a href="personagem.html" class="personagens">Personagens</a>
+
+        <a href="trailers.html" class="trailers">Trailers</a>
+
+      </nav>
+    </header>
+
+
+
+
+    <nav class="lista-navegacao" id="lista-navegacao">
+
+      <a href="https://www.instagram.com/ghibliusa/" class="insta"><img class="image-1" src="Imagem/instagram.png"></a>
+
+      <a href="https://open.spotify.com/user/lu4nob7pzxkxihazh3omxld3t?si=LE0-K-TlQdiBHJYQcQcD7w&nd=1" class="spot"><img class="image-2"
+          src="Imagem/spotify.png"></a>
+
+
+    </nav>
+
+    <div class="audio-musica">
+      <audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio-02.mp3" type="audio/mp3">
+        <source src="midia/audio-02.mp3" type="audio/mpeg">
+        <source src="midia/audio-02.mp3" type="audio/m.ogg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio</p>
+      </audio>
+    </div>
+   
+
+    <h2 class="titles">Galeria de Fotos<h2>
+
+        <div class="slider">
+
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+            <input type="radio" name="radio-btn" id="radio9">
+            <input type="radio" name="radio-btn" id="radio10">
+            <input type="radio" name="radio-btn" id="radio11">
+            <input type="radio" name="radio-btn" id="radio12">
+            <input type="radio" name="radio-btn" id="radio13">
+
+
+            <div class="slide first">
+              <img src="Imagem/carrossel001.png" alt="imagem 1">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel002.png" alt="imagem 2">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel003.png" alt="imagem 3">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel004.jpg" alt="imagem 4">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel005.png" alt="imagem 5">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel006.png" alt="imagem 6">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel007.jpg" alt="imagem 7">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel008.png" alt="imagem 8">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel009.png" alt="imagem 9">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel010.png" alt="imagem 10">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel011.png" alt="imagem 11">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel012.jpg" alt="imagem 12">
+            </div>
+            <div class="slide">
+              <img src="Imagem/carrossel013.jpg" alt="imagem 13">
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+              <div class="auto-btn6"></div>
+              <div class="auto-btn7"></div>
+              <div class="auto-btn8"></div>
+              <div class="auto-btn9"></div>
+              <div class="auto-btn10"></div>
+              <div class="auto-btn11"></div>
+              <div class="auto-btn12"></div>
+              <div class="auto-btn13"></div>
+            </div>
+
+          </div>
+
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+            <label for="radio9" class="manual-btn"></label>
+            <label for="radio10" class="manual-btn"></label>
+            <label for="radio11" class="manual-btn"></label>
+            <label for="radio12" class="manual-btn"></label>
+            <label for="radio13" class="manual-btn"></label>
+          </div>
+
+        </div>
+
+
+       
+          <h2 class="titles">Curiosidades<h2>
+       
+
+        <section>
+          <div class="container-curiosidades">
+
+            <div class="card">
+              <img src="Imagem/personagens-filmes.jpg">
+              <details>
+                <summary>Estúdio</summary>
+                <p>Descrição: Studio Ghibli Inc. (株式会社スタジオジブリ Kabushiki-gaisha Sutajio Jiburi?) é estúdio de cinema de
+                  animação japonês com sede em Koganei, Tóquio . O estúdio é mais conhecido por seus filmes de animação
+                  e também produziu vários curtas, comerciais de televisão e um filme de televisão. Foi fundado em 15 de
+                  junho de 1985 pelos diretores Hayao Miyazaki e Isao Takahata e pelo produtor Toshio Suzuki , após o
+                  sucesso do filme de anime de Topcraft, Nausicaä do Vale do Vento(1984) e em seguida a compra da
+                  Topcraft. O Studio Ghibli também colaborou com os estúdios de videogame no desenvolvimento visual de
+                  vários jogos, dentre eles a franquia Ni no Kuni.
+                </p>
+              </details>
+            </div>
+
+            <div class="card">
+              <img src="Imagem/bilheria.jpg">
+              <details>
+                <summary>Bilheteria</summary>
+                <p>Descrição: Seis dos filmes de Studio Ghibli estão entre os 10 filmes de anime com maior bilheteria
+                  produzidos no Japão, sendo Sen to Chihiro no Kamikakushi o segundo mais alto, arrecadando mais de
+                  US$ 360 milhões em todo o mundo.
+                </p>
+              </details>
+            </div>
+
+            <div class="card">
+              <img src="Imagem/chihiro.jpg">
+              <details>
+                <summary>Premiações</summary>
+                <p>Descrição: Cinco dos filmes de Studio Ghibli receberam indicações ao Oscar. Sen to Chihiro no
+                  Kamikakushi ganhou o Urso de Ouro em 2002 e o Oscar de Melhor Filme de Animação em 2003.
+                </p>
+              </details>
+            </div>
+
+            <div class="card">
+              <img src="Imagem/mascote-totoro.jpg">
+              <details>
+                <summary>Mascote</summary>
+                <p>Descrição: Totoro, um personagem de Tonari no Totoro é o mascote do estúdio.
+                </p>
+              </details>
+            </div>
+
+        </section>
+
+        <section>
+          <div class="container-biografia">
+            <img src="Imagem/fundador-corte.png" alt="bio-fundador-studio">
+          </div>
+        </section>
+
+        
+          
+  </div>
+
+
+  <div id="root"></div>
+
+
+
+
+
+
+  <footer>
+    <p> Copyright by ©️ Débora Martins e Luciana Chamma </p>
+  </footer>
+  <script src="photos.js" type="module"></script>
+  <script src="main.js" type="module"></script>
+
+</body>
+
 </html>

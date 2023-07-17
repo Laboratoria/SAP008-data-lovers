@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Página Personagens</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <p><a href="index.html" class="voltarPersonagens">Home</a></p>
+  
+  <div class="container-página-inicial">
+
+
+    <header class="cabecalho">
+      <img class="imagem-cabecalho" src="Imagem/imagem-cabecalho.jpg" alt="imagem-cabecallho">
+    </header>
+
+    <div class="audio-musica">
+      <audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio.mp3" type="audio/mp3">
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.mp3" type="audio/m.ogg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio</p>
+      </audio>
+    </div>
+
+    <h2 class="titles">Personagens</h2>
+
+   
+
+    <div class="calculo-agregado" id="calculo"></div>
+
+    <div class="container-filter-personagens">
+
+      <select name="filtroOrder" class="filterPersonagens" id="inputOrder">
+        <option value="order">Ordem</option>
+        <option value="a-z" id="alfa">A-Z</option>
+        <option value="z-a" id="zorro">Z-A</option>
+      </select>
+
+      <select name="filterGênero" class="filterGender" id="inputGenero">
+        <option value="gender">Gênero</option>
+        <option value="Male" id="male">Masculino</option>
+        <option value="Female" id="female">Feminino</option>
+
+      </select>
+    </div>
+
+
+    <main>
+      <div id="cardsPersonagens"></div>
+
+    </main>
+
+
+
+
+
+    <div id="root"></div>
+
+  </div>
+
+  <footer>
+    <p> Copyright by ©️ Débora Martins e Luciana Chamma  </p>
+  </footer>
+  <script src="personagem.js" type="module"></script>
+</body>
+
+</html>

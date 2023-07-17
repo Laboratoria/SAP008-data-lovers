@@ -1,0 +1,731 @@
+@import url('https://fonts.cdnfonts.com/css/ghibli');
+
+/*css html */
+body {
+  margin: 10px;
+  padding: 30px;
+  border: 40px;
+  background-color: #ffe0e8;
+}
+
+.cabecalho {
+  background-color: #ffffff;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Ghibli', sans-serif;                                          
+    color: black;
+  }
+  
+  p {
+    color: black;
+    font-family: 'Ghibli', sans-serif;                                            
+    text-align: center;
+    font-size: 12px;
+  }
+  
+.filmes {
+  height: 30px;
+  width: 120px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #3f3838;
+  font-family: 'Ghibli', sans-serif;
+  font-size: 19px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8D9B6A;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.personagens {
+  height: 30px;
+  width: 120px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #3f3838;
+  font-family: 'Ghibli', sans-serif;        
+  font-size: 19px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8D9B6A;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.trailers {
+  height: 30px;
+  width: 120px;
+  background-color: #ffff;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #3f3838;
+  font-family: 'Ghibli', sans-serif;                                        
+  font-size: 19px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8D9B6A;
+  flex-grow: 2;
+
+}
+
+.filmes:hover {
+  background-color: #E5E1EF;
+}
+
+.filmes:active {
+  position: relative;
+  top: 1px;
+}
+
+.personagens:hover {
+  background-color: #E5E1EF;
+}
+
+.personagens:active {
+  position: relative;
+  top: 1px;
+}
+
+.trailers:hover {
+  background-color: #E5E1EF;
+}
+
+.trailers:active {
+  position: relative;
+  top: 1px;
+}
+
+.botoes-navegacao {
+  margin: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+
+.container-página-inicial{
+  background-color: #ffe0e8;
+
+}
+
+
+
+.lista-navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-1 {
+  width: 164px;
+  height: 101px;
+}
+
+.image-2 {
+  width: 132px;
+  height: 103px;
+}
+
+.audio-musica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.imagem-cabecalho {
+  display: block;
+  margin: 0px auto;
+  width: 60vw;
+  height: 400px;
+  border: 20px;
+}
+
+.titles {
+  background-color: white;
+}
+
+  
+section {
+  margin: 0 auto;
+  display: block;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  max-height: 100%;
+
+}
+
+.card img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-position: 3%;
+}
+
+.card details {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  color: black ;
+}
+
+.card details summary {
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+}
+
+.card details p {
+  padding: 0 10px;
+  color: black;
+}
+
+
+
+.titulo-curiosidades{
+  background-color: #ffff;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 5s;
+}
+
+.slide img {
+  width: 800px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+ .manual-btn {
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+} 
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+#radio6:checked ~ .first{
+  margin-left: -125%;
+}
+#radio7:checked ~ .first{
+  margin-left: -150%;
+}
+#radio8:checked ~ .first{
+  margin-left: -175%;
+}
+#radio9:checked ~ .first{
+  margin-left: -200%;
+}
+#radio10:checked ~ .first{
+  margin-left: -225%;
+}
+#radio11:checked ~ .first{
+  margin-left: -250%;
+}
+#radio12:checked ~ .first{
+  margin-left: -275%;
+}
+#radio13:checked ~ .first{
+  margin-left: -300%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn2{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn3{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn4{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn5{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn6{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn7{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn8{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn9{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn10{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn11{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn12{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn13{
+  background-color: #ffffff;
+}
+
+
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffffff;
+}
+/*css botoes paginas*/
+.espaco {
+  background-color: #ffffff;
+}
+
+
+
+
+/*css página filmes */
+
+
+.container-filter {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+#cardsFilms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  margin: 10px;
+}
+
+.back {
+  width: 200px;
+  height: 285px;
+  overflow: auto;
+  background: white;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+}
+
+.cardFlip {
+  width: 200px;
+  height: 285px;
+  perspective: 200px;
+  display: flex;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+}
+
+.poster {
+  width: 200px;
+  height: 285px;
+  box-shadow: 6px 6px 10px 5px rgba(252, 240, 245, 0.25);
+  border-radius: 5px;
+}
+
+.front {
+  background: transparent;
+  z-index: 1;
+}
+
+
+.cardFlip:hover .front {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.cardFlip:hover .back {
+  transform: rotateY(0);
+  z-index: 1;
+}
+
+
+/*css página personagens*/
+.container-personagens{
+  border: 5px double #ccc3c3;
+}
+
+.calculo-agregado {
+  background-color: #ffffff;
+}
+
+.container-filter-personagens {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+#cardsPersonagens {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.cardsPersonagens {
+  margin: 10px;
+}
+
+.back-personagens {
+  width: 200px;
+  height: 285px;
+  overflow: auto;
+  background: white;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.front-personagens, .back-personagens {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.flipPersonagens {
+  width: 200px;
+  height: 285px;
+  perspective: 200px;
+  display: flex;
+}
+
+
+
+.card-poster {
+  width: 200px;
+  height: 285px;
+  box-shadow: 6px 6px 10px 5px rgba(231, 223, 227, 0.25);
+  border-radius: 5px;
+}
+
+.front-personagens {
+  background: transparent;
+  z-index: 1;
+}
+
+
+.flipPersonagens:hover .front-personagens {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.flipPersonagens:hover .back-personagens {
+  transform: rotateY(0);
+  z-index: 1;
+}
+
+/*Botão de voltar dos personagens  e filmes para a página inicial*/
+
+.voltarPersonagens {
+  height: 30px;
+  width: 120px;
+  background-color: #ffff;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #1d1c1c;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #813d59;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.voltarFilmes {
+  height: 30px;
+  width: 120px;
+  background-color: #ffff;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #1d1c1c;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #813d59;
+  flex-grow: 2;
+  line-height: 25px;
+}
+
+.voltarTrailers {
+  height: 30px;
+  width: 120px;
+  background-color: #ffff;
+  border: 1px solid  black;
+  cursor: pointer;
+  color: #0f0c0c;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #813d59;
+  flex-grow: 2;
+  line-height: 25px;
+
+}
+
+.voltarTrailers:hover {
+  background-color: #E5E1EF;
+}
+
+.voltarTrailers:active {
+  position: relative;
+  top: 1px;
+
+}
+
+.voltarFilmes:hover {
+  background-color: #E5E1EF;
+}
+
+.voltarFilmes:active {
+  position: relative;
+  top: 1px;
+}
+
+.voltarPersonagens:hover {
+  background-color: #E5E1EF;
+}
+
+.voltarPersonagens:active {
+  position: relative;
+  top: 1px;
+}
+
+/*css página traillers*/
+.filmes-media{
+  width: 400px;
+  height: 390px;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.container-trailers {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10%;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-grow: 20%;
+  gap: 30px;
+  object-fit: contain;
+}
+/*select estilizações*/
+
+ .filterPersonagens {
+  width: 150px;
+  position: relative;
+  padding: 10px 20px 10px 50px;
+}
+
+.filterPersonagens option {
+  border-radius: 50px;
+  font: 150 19px Arial;
+  color: #490723;
+  border: #9b325e;
+
+} 
+
+
+/*estilização dos textos cards*/
+
+
+
+/*estilização card biografia co-fundador*/
+
+.container-biografia{
+  width: 600px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  padding: 14%;
+
+}
+
+/*estilização*/
+select {
+  width: 150px;
+  text-align: center;
+}
+
+/* Estilos para telas maiores que 720px */
+
+/* Estilos para telas de até 720px */
+@media (max-width: 720px) {
+  .cabecalho {
+    text-align: center;
+  }
+
+  .botoes-navegacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botoes-navegacao a {
+    margin-bottom: 10px;
+  }
+
+  .imagem-cabecalho {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-biografia img {
+    width: 100%;
+    height: auto;
+  }
+}
