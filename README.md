@@ -1,6 +1,7 @@
 # Data Lovers - Studio Ghibli
 
 # [ Link do Projeto em funcionamento](https://deboramds.github.io/SAP008-data-lovers/src/index.html)
+# [ Link do Projeto em funcionamento](# [ Link do Projeto em funcionamento](https://github.com/LucianaChamma/SAP008-data-lovers/src/index.html)
 
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
 
@@ -8,12 +9,14 @@ O objetivo principal deste projeto é que aprenda a desenhar e construir uma int
 
 - [Data Lovers - Studio Ghibli](#data-lovers---studio-ghibli)
 - [ Link do Projeto em funcionamento](#-link-do-projeto-em-funcionamento)
+- [\[ Link do Projeto em funcionamento\](#  Link do Projeto em funcionamento](#-link-do-projeto-em-funcionamento--link-do-projeto-em-funcionamento)
   - [Índice](#índice)
   - [1. Introdução ao Projeto](#1-introdução-ao-projeto)
   - [2. Histórias de Usuários](#2-histórias-de-usuários)
   - [3. Desenvolvimento da interface](#3-desenvolvimento-da-interface)
   - [4. Conteúdos implementados no projeto](#4-conteúdos-implementados-no-projeto)
-  - [5 . Tecnologias Utilizadas](#5--tecnologias-utilizadas)
+  - [5 . Tecnologias e Ferramentas Utilizadas](#5--tecnologias-e-ferramentas-utilizadas)
+  - [6 . Colaboradoras](#6--colaboradoras)
 
 ***
 
@@ -41,8 +44,6 @@ A partir dessa proposta definimos que o site seria dividido em 4 páginas:
 Pagina Inicial - Pensando na Fanbase do estúdio, implementamos dois links externos, um onde o fã é redirecionado a playlist dos filmes no spotify, e o outro onde é levado ao instagram oficial, para poderem apreciar imagens de seus filmes favoritos . 
     Ainda na página principal temos três botões, onde são direcionados para outras páginas, que são elas de filmes, traillers e personagens .
 
-![FullPage](src/Imagem/Data-Lovers-full.png)
-
 ![Gif](src/Imagem/Data-Lovers-gif.gif)
 
 Página de filmes - Possibilita a visualização de todos os filmes do estúdio com detalhes sobre cada um. Os filmes podem ser filtrados por diretor e produtor e ordenados de A-Z e Z-A .
@@ -68,26 +69,20 @@ As animações possuem informações relevantes para nossos usuários, como desc
 Cada animação tem seus personagens e para nossos usuários é importante saber quantos e quais são
 Os personagens têm características únicas que o usuário deseja conhecer, como nome, idade, sexo, espécie, etc.
 
-## 3. Desenvolvimento da interface
 
+## 3. Desenvolvimento da interface
 
 Após a primeira análise do projeto e dados disponíveis, fizemos o primeiro protótipo de baixa fidelidade . Decidimos que nossa Home Page contária com informações que o público se interessaria em ler, escutar e ver .
 
 Posteriormente fizemos o protótipo de alta fidelidade no Figma . Nele dividimos em duas telas, a inicial como o protótipo de baixa fidelidade, e a segunda , onde teriamos os posters e informações dos filmes . 
 
-No decorrer do projeto decidimos efetuar algumas mudanças em nosso projeto . A paleta de cores utilizada priorizou a cor roxa, com ilustrações de personagens dos filmes.
+No decorrer do projeto decidimos efetuar algumas mudanças em nosso projeto . A paleta de cores utilizada priorizou a cor rosa, com ilustrações de personagens dos filmes.
 
--imagem da paleta de cores
-
-A imagem a seguir, do filme A Viagem de Chihiro, foi usada como inspiração para a escolha das cores:
-
-
--imagem do cabeçalho
-
+A paleta de cores do filme A Viagem de Chihiro, foi usada como inspiração para a escolha das cores.
 
 Imagens do Projeto Final :
 
--imagens
+![FullPage](src/Imagem/Data-Lovers-full.png)
 
 
 ## 4. Conteúdos implementados no projeto 
@@ -124,16 +119,33 @@ Uso de comandos de git (add | commit | pull | status | push)
 Gerenciar repositórios de GitHub (clone | fork | gh-pages)
 Colaboração no Github (branches | pull requests | |tags)
 
-## 5 . Tecnologias Utilizadas
-
+## 5 . Tecnologias e Ferramentas Utilizadas
 
 Js
+
 Node
+
 HTML
+
 CSS 
+
 Figma 
-vscode 
-github 
-git
-trello
-canva
+
+Vscode 
+
+Github 
+
+Git
+
+Trello
+
+Canva
+
+
+## 6 . Colaboradoras
+
+<Débora Martins>
+<Luciana Chamma Baptista>
+
+
+
