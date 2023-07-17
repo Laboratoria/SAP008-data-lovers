@@ -1,7 +1,7 @@
 # Data Lovers - Studio Ghibli
 
 # [ Link do Projeto em funcionamento](https://deboramds.github.io/SAP008-data-lovers/src/index.html)
-# [ Link do Projeto em funcionamento](https://github.com/LucianaChamma/SAP008-data-lovers/src/index.html)
+
 
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
 
@@ -9,7 +9,6 @@ O objetivo principal deste projeto é que aprenda a desenhar e construir uma int
 
 - [Data Lovers - Studio Ghibli](#data-lovers---studio-ghibli)
 - [ Link do Projeto em funcionamento](#-link-do-projeto-em-funcionamento)
-- [ Link do Projeto em funcionamento](#-link-do-projeto-em-funcionamento-1)
   - [Índice](#índice)
   - [1. Introdução ao Projeto](#1-introdução-ao-projeto)
   - [2. Histórias de Usuários](#2-histórias-de-usuários)
@@ -46,7 +45,7 @@ Pagina Inicial - Pensando na Fanbase do estúdio, implementamos dois links exter
 
 Página de filmes - Possibilita a visualização de todos os filmes do estúdio com detalhes sobre cada um. Os filmes podem ser filtrados por diretor e produtor e ordenados de A-Z e Z-A .
 
-![Filmes](src/Imagem/Página-Filmes.png)
+![Filmes](src/Imagem/pagina-filmes.png)
 
 Página de Personagens - Apresenta cards com todos os personagens que podem ser filtrados por gênero, masculino e feminino, nessa filtragem temos o cálculo em porcentagem de quantos personagens tem de cada gênero .
 
