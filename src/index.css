@@ -1,0 +1,153 @@
+body{
+    height: 100vh;
+    font-family:Arial;
+    background-image: url("./imagem/aa.png");
+    background-size: cover;
+    
+}
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.root {
+    height: 100%;
+}
+
+
+/* ESTILIZAÇÃO DO HEADER */
+header {
+    height: 4.5rem;
+}
+
+.nav-bar-img {
+    height: 3.5rem;
+    margin-top: 0.188rem;
+    margin-left: 0.6rem;
+    align-self: flex-start;
+}
+
+.main-content {
+    color:white;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.main-welcome h1 {
+    font-size: 1.5rem;
+    margin: -2rem 2.5rem 1.5rem 2.5rem;
+    line-height: 2.5rem;
+}
+
+.main-welcome h2 {
+    font-size: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.button-inicio {
+    background-color: red;
+    border: greenyellow solid 3px;
+}
+
+/* ESTILIZAÇÃO DO button 
+.button-initial button {
+    font-size: 1.2rem;
+    background-color:teal;
+    height: 2.3rem;
+    width: 8.375rem;
+    border-radius: 3.125rem;
+    box-shadow: 3px 3px 3px black;
+}
+
+.button-initial button:hover {
+    background-color:navy;
+}
+
+.button-initial a {
+    text-decoration: none;
+    color:black;
+    padding: 0.625rem 2.813rem;
+}
+
+.button-initial a:hover {
+    color:black;
+}*/
+
+/* ESTILIZAÇÃO DO FOOTER */
+.footer-navigation {
+    color:white;
+    height: 5.0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.footer-navigation p {
+    font-size: 0.8rem;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color:white;
+}
+
+.footer-buttonsDownload {
+    display: grid;
+}
+
+@media screen and (min-width: 600px) {
+
+    .footer-navigation {
+        font-size: 0.9rem;
+    }
+    .footer-links {
+        line-height: 1.3rem;
+    }
+    .footer-buttonsDownload {
+        display: flex;
+    }
+    .footer-buttonsDownload button img {
+        height: 2.2rem;
+    }
+    .footer-githubLink a img {
+        height: 3rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body{
+        height: 80vh;
+    }
+    .main-content {
+        height: 100%;
+    }
+
+    .main-welcome h1 {
+        font-size: 2rem;
+    }
+    .main-welcome h2 {
+        font-size: 1.19rem;
+        margin: 2rem 1rem 1rem 1rem;
+    }
+    .logo img {
+        height: 10rem;
+    }
+
+    .footer-navigation {
+        font-size: 1rem;
+    }
+
+}

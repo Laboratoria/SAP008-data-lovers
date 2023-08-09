@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-image: url("./imagem/poke_ceu.jpg");
+height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:black;
+
+}
+
+.pokemonList{
+    
+    width: 100%;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* BARRA DO CÁLCULO AGREGADO */
+.calculation-print {
+    background-color:rgb(7, 114, 114);
+    color: aliceblue;
+    height: 30px;
+    width: 90%;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.main-content {
+    padding-top:25px ;
+}
+
+
+/* ESTILIZAÇÃO DO HEADER 
+
+header {
+    height: 4.5rem;
+    background-color:navy;
+} */
+
+.header,
+.nav-bar {
+    height: 4.375rem;
+}
+
+.nav-bar-img {
+    height: 3.5rem;
+    margin-top: 0.188rem;
+    margin-left: 0.6rem;
+    align-self: flex-start;
+}
+    
+/* ESTILIZAÇÃO DOS CARDS */
+
+.cards {
+    color:black;
+    margin: 8px;
+    height: 310px;
+    width: 210px;
+    align-self: start;
+}
+
+.info-cards:hover,
+.info:hover,
+.front-cards:hover {
+    background-color:rgb(248, 180, 0);
+
+}
+
+  .front-cards {
+    padding: 5px;
+    background-color: antiquewhite;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    display: grid;
+    align-content: space-between;
+    
+  }
+
+.info-cards {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+ 
+.info {
+    font-size: 15px;
+    border-top: 2px solid black;
+    padding: 3px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.namePokemon {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+
+/* BARRA DE FILTRAR */
+.form-search {
+    padding: 15px;
+    background-color:white;
+    font-size: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.form-search .form-field {
+    margin-right: 100px;
+
+}
+.form-search p {
+    display: none;
+}
+
+
+.form-search button {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    background: none;
+}
+
+.form-search button {
+    color:black;
+    border-radius: 50px;
+}
+
+.form-search button:hover {
+    background-color:teal;
+}
+
+/* CONFIGURAÇÃO GERAL */
+
+
+/*RESPONSIVO 
+
+telas
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+1025px — 1200px: desktops, telas grandes */
+
+/*bruna
+@media screen and (min-width: 500px) {
+    .pokemonList {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form-search {
+        font-size: 15px;
+        border-radius: 50px;
+    }
+
+    .form-search select,
+    .form-search input,
+    .form-search button {
+        font-size: 15px;
+        width: 110px;
+    }
+
+    .pokemonList {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form-search {
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .calculation-print {
+        font-size: 15px;
+        top: 150px;
+    }
+
+    .pokemonList {
+        top: 160px;
+        grid-template-columns: auto auto auto auto;
+    }
+} */
+
+@media (max-width: 812px) {
+    body {
+        width: 100vw;   
+    }
+
+    .cards,
+    .pokemonList {
+        width: 295px;
+        height: 330px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 8px;
+    }
+
+   .form-search {
+       flex-direction: column;
+    }
+    .form-search .form-field {
+        margin-right: 0%;
+        width: 100%;
+    }
+    
+    .calculation-print {
+        font-size: 16px;
+    }
+}

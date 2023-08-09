@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amantes de Pokemon Go</title>
+    <link rel="stylesheet" href="pokeinfo.css" />
+    <link rel="shortcut icon" href="./imagem/poke-bola.jpg" type="image/x-icon">
+  </head>
+    
+  <body>
+    <header>
+      <nav class="nav-bar">
+            <a href="./index.html">
+             <img class="nav-bar-img" src="./imagem/logoo.png" alt="Logo da página">
+            </a>
+      </nav>    
+    </header>
+        <form class="form-search">
+          <select class="form-field" id="typeFilter">
+            <option value disabled selected>Tipo</option>
+            <option value="water">Água</option>
+            <option value="dragon">Dragão</option>
+            <option value="electric">Elétrico</option>
+            <option value="ghost">Fantasma</option>
+            <option value="fire">Fogo</option>
+            <option value="ice">Gelo</option>
+            <option value="bug">Inseto</option>
+            <option value="fighting">Lutador</option>
+            <option value="normal">Normal</option>
+            <option value="rock">Pedra</option>
+            <option value="grass">Planta</option>
+            <option value="psychic">Psíquico</option>
+            <option value="ground">Terra</option>
+            <option value="poison">Venenoso</option>
+            <option value="flying">Voador</option>
+            <option value="fairy">Fada</option>
+            <option value="dark">Sombrio</option>
+          </select>
+          <select  class="form-field" id="rarityFilter">
+            <option value disabled selected>Raridade</option>
+            <option value="legendary">Legendário</option>
+            <option value="mythic">Mítico</option>
+            <option value="shiny">Shiny</option>
+          </select>
+          <select class="form-field" id="eggsFilter">
+            <option value disabled selected>Ovos</option>
+            <option value="not in eggs">Não tem ovos</option>
+            <option value="2 km">2Km</option>
+            <option value="5 km">5Km</option>
+            <option value="7 km">7Km</option>
+            <option value="10 km">10Km</option>
+          </select>
+          <select class="form-field" id="orderFilter">
+            <option value disabled selected>Ordem</option>
+            <option value="a-z">A - Z</option>
+            <option value="z-a">Z - A</option>
+          </select>
+          <input type="text" placeholder="Nome"  class="form-field" id="nameFilter">
+          <button type="reset"  class="form-field" id="clearButton">Limpar</button>
+        
+        </form>
+    
+    <main class="main-content">
+      <section class="calculation-print">
+        <p id="calculation"> Porcentagem de Pokémons deste tipo</p>
+      </section>
+      <div class="pokemonList" id="pokemonList"></div>
+    </main>
+    
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
